@@ -103,13 +103,13 @@ bool ProcessGyroZeroOffset(nRF24L01P_PTX& s, L3G::vector const& v)
          // filter step
          GyroOffset += GyroAccumulator /float(GyroCount);
          GyroOffset = GyroOffset / 2;
-         GyroOffsetInt = vector3<short>(GyroOffset);
+         GyroOffsetInt = vector3<short>(round(GyroOffset));
          WriteGyroCalibrationPacket(s, GyroOffset);
       }
       else
       {
          GyroOffset = GyroAccumulator / float(GyroCount);
-         GyroOffsetInt = vector3<short>(GyroOffset);
+         GyroOffsetInt = vector3<short>(round(GyroOffset));
          GyroHasZeroCalibration = true;
          WriteGyroCalibrationPacket(s, GyroOffset);
       }

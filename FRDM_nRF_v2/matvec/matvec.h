@@ -39,6 +39,18 @@ class vector3
 };
 
 template <typename T>
+vector3<decltype(std::round(std::declval<T>()))> round(vector3<T> const& v)
+{
+   return {std::round(v[0]), std::round(v[1]), std::round(v[2])};
+}
+
+template <typename T, typename U>
+vector3<T> round_to(vector3<U> const& v)
+{
+   return vector3<T>(std::round(v[0]), std::round(v[1]), std::round(v(2)));
+}
+
+template <typename T>
 inline
 vector3<T> operator+(vector3<T> const& a, vector3<T> const& b)
 {
