@@ -183,6 +183,18 @@ L3G::FIFOStatus L3G::GetFIFOStatus()
    return FIFOStatus(char(this->readReg(L3G_FIFO_SRC_REG)));
 }
 
+int
+L3G::TempRaw()
+{
+   return this->readReg(L3G_OUT_TEMP);
+}
+
+int
+L3G::Temp()
+{
+   return 50 - this->TempRaw();
+}
+
 // Writes a gyro register
 void L3G::writeReg(int reg, int value)
 {

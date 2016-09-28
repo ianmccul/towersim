@@ -160,6 +160,13 @@ class L3G
 
       FIFOStatus GetFIFOStatus();
 
+      // reads the temperature sensor, returns the raw reading,
+      // which is -1LSB/deg with an offset of 50
+      int TempRaw();
+
+      // Sensor temperature in degrees C
+      int Temp();
+
       void writeReg(int reg, int value);
       int readReg(int reg);
 

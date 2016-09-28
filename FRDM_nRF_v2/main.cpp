@@ -57,6 +57,15 @@ void WriteGyroCalibrationPacket(nRF24L01P_PTX& s, vector3<float> const& v)
    s.StreamPacket(Buffer, PacketSize);
 }
 
+void WriteGyroTemp(nRF24L01P_PTX& s, int T)
+{
+   int const PacketSize = sizeof(T);
+   char Buffer[PacketSize];
+   Buffer[0] = 0x84;
+   memcpy(Buffer+1, static_cast<void const*>(&T), sizeof(T));
+   s.StreamPacket(Buffer, PacketSize);
+}
+
 void WriteTimerPacket(nRF24L01P_PTX& s, Timer& t, char Type)
 {
    int us = t.read_us();
@@ -144,6 +153,9 @@ int main()
    Timer LedTimer;
    LedTimer.start();
 
+   Timer GyroTempTimer;
+   GyroTempTimer.start();
+
    I2C i2c0(PTE25, PTE24);
    i2c0.frequency(1000000);
    MMA8451Q acc(i2c0);
@@ -229,26 +241,19 @@ int main()
          int r = Gyro.Read(v);
          if (r == 0)
          {
-            if (!GyroHasZeroCalibration)
-            {
-               ProcessGyroZeroOffset(PTX, v);
-               if (GyroHasZeroCalibration)
-               {
-                  rled = 1.0;
-                  gled = 0.0;
-                  bled = 1.0;
-               }
-            }
-            else
-               ProcessGyroZeroOffset(PTX, v);
-
-            WriteGyroPacket(PTX, v-GyroOffsetInt);
+            WriteGyroPacket(PTX, v);
             //rled = 0.0;
             //gled = 0.0;
             //bled = 0.0;
          }
          else
             printf("Gyro read failed!\r\n");
+      }
+
+      if (GyroTempTimer.read() > 10)
+      {
+         WriteGyroTemp(PTX, Gyro.device().TempRaw());
+         GyroTempTimer.reset();
       }
    }
 }
