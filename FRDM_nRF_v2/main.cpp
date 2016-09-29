@@ -5,6 +5,7 @@
 #include "nRF24L01P.h"
 #include "nRF24L01P_PTX.h"
 #include "matvec.h"
+#include <cstdint>
 
 #define MMA8451_I2C_ADDRESS (0x1d<<1)
 
@@ -57,7 +58,7 @@ void WriteGyroCalibrationPacket(nRF24L01P_PTX& s, vector3<float> const& v)
    s.StreamPacket(Buffer, PacketSize);
 }
 
-void WriteGyroTemp(nRF24L01P_PTX& s, int T)
+void WriteGyroTemp(nRF24L01P_PTX& s, int8_t T)
 {
    int const PacketSize = sizeof(T);
    char Buffer[PacketSize];
