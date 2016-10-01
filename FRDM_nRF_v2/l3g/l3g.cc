@@ -145,51 +145,19 @@ template <typename BusType>
 short int
 L3G<BusType>::ReadX()
 {
-   short int Result;
-   char reg = char(L3G_OUT_X_L) | (1 << 7);
-   i2c.write(address, &reg, 1, true);
-   i2c.read(address, (char*) &Result, 2);
-   return Result;
+   return this->read16(L3G_OUT_X_L);
 }
 
 template <typename BusType>
 short int
 L3G<BusType>::ReadY()
 {
-   short int Result;
-   char reg = char(L3G_OUT_Y_L) | (1 << 7);
-   i2c.write(address, &reg, 1, true);
-   i2c.read(address, (char*) &Result, 2);
-   return Result;
+   return this->read16(L3G_OUT_Y_L);
 }
 
 template <typename BusType>
 short int
 L3G<BusType>::ReadZ()
 {
-   short int Result;
-   char reg = char(L3G_OUT_Z_L) | (1 << 7);
-   i2c.write(address, &reg, 1, true);
-   i2c.read(address, (char*) &Result, 2);
-   return Result;
-}
-
-
-
-// Reads the 3 gyro channels and stores them in vector g
-template <typename BusType>
-int
-L3G<BusType>::Read(vector& g)
-{
-   // assert the MSB of the address to get the gyro
-   // to do slave-transmit subaddress updating.
-   char reg = char(L3G_OUT_X_L) | (1 << 7);
-   //__disable_irq();
-   int err = i2c.write(address, &reg, 1, true);
-   if (err == 0)
-   {
-      err = i2c.read(address, (char*) &g, 6);
-   }
-   //__enable_irq();
-   return err;
+   return this->read16(L3G_OUT_Z_L);
 }

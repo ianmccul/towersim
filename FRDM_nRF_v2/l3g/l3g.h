@@ -101,6 +101,8 @@ template <>
 class L3G_base<I2C>
 {
    public:
+      typedef vector3<int16_t> vector;
+
       L3G_base(PinName sda, PinName scl);
 
       //L3G_base(PinName sda, PinName scl, int device_, int sa0_);
@@ -111,6 +113,11 @@ class L3G_base<I2C>
 
       void writeReg(int reg, int value);
       int readReg(int reg);
+
+      uint16_t read16(int reg);
+
+      // returns 0 if no error
+      int Read(vector& g);
 
       void hard_reset();
 
@@ -156,7 +163,7 @@ class L3G_common : public  L3G_base<BusType>
 
       L3G_common() = delete;
 
-      typedef vector3<short int> vector;
+      typedef vector3<int16_t> vector;
 
       enum FIFO_Modes { Bypass=0, FIFO=1, Stream=2,
                         StreamFIFO=3, BypassStream=4,
