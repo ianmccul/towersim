@@ -70,7 +70,7 @@ endif
 
 all: $(PROJECT).bin $(PROJECT).hex size
 
-
+%.o : %.cc
 
 .asm.o:
 	+@$(call MAKEDIR,$(dir $@))

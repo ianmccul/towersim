@@ -2,15 +2,15 @@
 
 #include "gyrointerface.h"
 
-GyroInterface::GyroInterface(I2CType& i2c, int Addr, PinName DRdyPin)
-   : Impl(i2c),
+GyroInterface::GyroInterface(PinName sda, PinName scl, int Addr, PinName DRdyPin)
+   : Impl(sda, scl),
      DRdy(DRdyPin),
      Scale(500),
      RateBandwidth(GYRO_DEFAULT_RATE_BANDWIDTH),
      IsFunctional(false),
      LastReadSuccess(true)
 {
-   bool OK = Impl.init(L3G_DEVICE_AUTO, Addr == 0 ? L3G_SA0_LOW : L3G_SA0_HIGH);
+   bool OK = Impl.OK();
    if (!OK)
    {
         printf("Gyro failed to initialize.\r\n");
@@ -46,7 +46,7 @@ GyroInterface::Initialize()
    //Impl.SetBlockDataUpdate(true);  // in case there is lag
    Impl.SetFIFOThreshold(1);
    Impl.EnableFIFO(true);
-   Impl.SetFIFOMode(L3G::Stream);
+   Impl.SetFIFOMode(L3G<I2C>::Stream);
    Impl.EnableAll();
    IsFunctional = true;
    LastReadSuccess = true;
@@ -69,7 +69,7 @@ GyroInterface::DataAvailable()
 }
 
 int
-GyroInterface::Read(L3G::vector& v)
+GyroInterface::Read(vector& v)
 {
    int err = Impl.Read(v);
    if (err == 0)

@@ -11,7 +11,9 @@
 class GyroInterface
 {
    public:
-      GyroInterface(I2CType& i2c, int Addr, PinName DRdyPin);
+      typedef L3G<I2C>::vector vector;
+
+      GyroInterface(PinName sda, PinName scl, int Addr, PinName DRdyPin);
 
       // attempts to initialize the gyro, returns true if successful
       bool Initialize();
@@ -29,12 +31,12 @@ class GyroInterface
       bool Functional();
 
       // reads the velocity from the gyro, returns 0 on success
-      int Read(L3G::vector& v);
+      int Read(vector& v);
 
-      L3G& device() { return Impl; }
+      L3G<I2C>& device() { return Impl; }
 
    private:
-      L3G Impl;
+      L3G<I2C> Impl;
       DigitalIn DRdy;
       int Scale;
       unsigned RateBandwidth;

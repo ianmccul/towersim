@@ -1,4 +1,6 @@
-// -*- C++ -*- $Id$
+//
+// l3g driver
+//
 
 #ifndef L3G_h
 #define L3G_h
@@ -107,7 +109,7 @@ class L3G_base<I2C>
 
       //L3G_base(PinName sda, PinName scl, int device_, int sa0_);
 
-      void SetFrequency(int hz) { Device.frequency(hz); }
+      void SetFrequency(int hz) { i2c.frequency(hz); }
 
       //      bool init(int Device, int sa0);
 
@@ -121,6 +123,7 @@ class L3G_base<I2C>
 
       void hard_reset();
 
+      // returns true if the WHOAMI command returns a valid response
       bool OK();
 
       I2C& bus() { return i2c; }
@@ -129,7 +132,7 @@ class L3G_base<I2C>
       int device;
 
    private:
-      bool init(int Device, int sa0)
+      bool init(int Device, int sa0);
 
       bool AutoDetectAddress();
 
@@ -141,27 +144,31 @@ template <>
 class L3G_base<SPI>
 {
    public:
-      L3G_base(SPI& Device_) : Device(Device_) {}
+      //L3G_base(SPI& Device_) : Device(Device_) {}
 
       bool init();
 
       void writeReg(int reg, int value);
       int readReg(int reg);
 
-      I2C& device() { return Device; }
+      SPI& bus() { return spi; }
+
+   protected:
+      int device;
 
    private:
-      I2C& Device;
+      SPI spi;
 };
 
 
 template <typename BusType>
-class L3G_common : public  L3G_base<BusType>
+class L3G : public  L3G_base<BusType>
 {
    public:
-      using L3G_base<BusTyoe>::L3G_base;
+      using L3G_base<BusType>::L3G_base;
+      using L3G_base<BusType>::device;
 
-      L3G_common() = delete;
+      L3G() = delete;
 
       typedef vector3<int16_t> vector;
 
@@ -189,9 +196,6 @@ class L3G_common : public  L3G_base<BusType>
 
       // Hard reset, L3GD20H only.
       void hard_reset();
-
-      // returns true if the WHOAMI command returns a valid response
-      bool OK();
 
       // Turns on the device and actives all 3 axes
       void EnableAll();
@@ -234,14 +238,11 @@ class L3G_common : public  L3G_base<BusType>
       // Sensor temperature in degrees C
       int Temp();
 
-      // read the velocity vector.  Returns 0 on success, non-zero on failure
-      int Read(vector& v);
-
-      short int ReadX();
-      short int ReadY();
-      short int ReadZ();
+      int16_t ReadX();
+      int16_t ReadY();
+      int16_t ReadZ();
 };
 
-#include "l3g.cc"
+#include "l3g.tcc"
 
 #endif

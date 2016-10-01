@@ -34,7 +34,7 @@ void WriteAccelPacket(nRF24L01P_PTX& s, MMA8451Q::vector const& v)
    s.StreamPacket(Buffer, PacketSize);
 }
 
-void WriteGyroPacket(nRF24L01P_PTX& s, L3G::vector const& v)
+void WriteGyroPacket(nRF24L01P_PTX& s, GyroInterface::vector const& v)
 {
    int const PacketSize = 8;
    char Buffer[PacketSize];
@@ -60,7 +60,7 @@ void WriteGyroCalibrationPacket(nRF24L01P_PTX& s, vector3<float> const& v)
 
 void WriteGyroTemp(nRF24L01P_PTX& s, int8_t T)
 {
-   int const PacketSize = sizeof(T);
+   int const PacketSize = sizeof(T)+1;
    char Buffer[PacketSize];
    Buffer[0] = 0x84;
    memcpy(Buffer+1, static_cast<void const*>(&T), sizeof(T));
@@ -89,7 +89,7 @@ int GyroCount = 0;
 vector3<float> GyroOffset(0,0,0);
 vector3<short> GyroOffsetInt(0,0,0);
 
-bool ProcessGyroZeroOffset(nRF24L01P_PTX& s, L3G::vector const& v)
+bool ProcessGyroZeroOffset(nRF24L01P_PTX& s, GyroInterface::vector const& v)
 {
    GyroMin = min(GyroMin, v);
    GyroMax = max(GyroMax, v);
@@ -162,9 +162,8 @@ int main()
    MMA8451Q acc(i2c0);
 
 
-   I2C i2c1(PTE0, PTE1);
-   i2c1.frequency(1000000);
-   GyroInterface Gyro(i2c1, 0, PTA5);
+   GyroInterface Gyro(PTE0, PTE1, 0, PTA5);
+   Gyro.device().SetFrequency(1000000);
    //   Gyro.SetRateBandwidth(L3G_H_ODR_200_70);
    //   Gyro.SetRateBandwidth(L3G_H_ODR_800_30);
    Gyro.SetRateBandwidth(L3G_H_ODR_800_110);
@@ -238,7 +237,7 @@ int main()
       {
          //L3G::FIFOStatus Stat = Gyro.device().GetFIFOStatus();
          //WriteTimerPacket(PTX, timer, Stat.Reg);
-         L3G::vector v;
+         GyroInterface::vector v;
          int r = Gyro.Read(v);
          if (r == 0)
          {

@@ -1,3 +1,4 @@
+// -*- C++ -*-
 
 // Turns on the L3G's gyro and places it in normal mode.
 template <typename BusType>
@@ -21,7 +22,7 @@ L3G<BusType>::hard_reset()
 
 template <typename BusType>
 void
-L3G_base<BusType>::soft_reset()
+L3G<BusType>::soft_reset()
 {
     if (device == L3GD20_DEVICE)
     {
@@ -122,7 +123,8 @@ void L3G<BusType>::EnableFIFO(bool Enable)
 }
 
 template <typename BusType>
-L3G<BusType>::FIFOStatus L3G<BusType>::GetFIFOStatus()
+typename L3G<BusType>::FIFOStatus
+L3G<BusType>::GetFIFOStatus()
 {
    return FIFOStatus(char(this->readReg(L3G_FIFO_SRC_REG)));
 }
@@ -142,21 +144,21 @@ L3G<BusType>::Temp()
 }
 
 template <typename BusType>
-short int
+int16_t
 L3G<BusType>::ReadX()
 {
    return this->read16(L3G_OUT_X_L);
 }
 
 template <typename BusType>
-short int
+int16_t
 L3G<BusType>::ReadY()
 {
    return this->read16(L3G_OUT_Y_L);
 }
 
 template <typename BusType>
-short int
+int16_t
 L3G<BusType>::ReadZ()
 {
    return this->read16(L3G_OUT_Z_L);

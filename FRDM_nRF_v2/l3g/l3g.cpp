@@ -6,16 +6,14 @@
 //
 
 
-template <>
-L3G_base<I2C>(PinName sda, PinName scl)
-   : i2c(sda, scl),
-     device(L3G_DEVICE_AUTO),
+L3G_base<I2C>::L3G_base(PinName sda, PinName scl)
+   : device(L3G_DEVICE_AUTO),
+     i2c(sda, scl),
      address(L3G_ADDRESS_AUTO)
 {
    this->AutoDetectAddress();
 }
 
-template <>
 bool
 L3G_base<I2C>::AutoDetectAddress(void)
 {
@@ -59,7 +57,6 @@ L3G_base<I2C>::AutoDetectAddress(void)
    return false;
 }
 
-template <>
 bool
 L3G_base<I2C>::init(int Device, int sa0)
 {
@@ -78,7 +75,7 @@ L3G_base<I2C>::init(int Device, int sa0)
          return true;
       }
       else
-         return autoDetectAddress();
+         return this->AutoDetectAddress();
 
    case L3GD20_DEVICE:
    case L3GD20H_DEVICE:
@@ -93,15 +90,22 @@ L3G_base<I2C>::init(int Device, int sa0)
          return true;
       }
       else
-         return autoDetectAddress();
+         return this->AutoDetectAddress();
 
    default:
-      return autoDetectAddress();
+      return this->AutoDetectAddress();
    }
+#if 0
+   else
+   {
+      if (device == L3GD20_DEVICE && this->readReg(L3G_WHO_AM_I) == 0xD4) return true;
+      if (device == L3GD20H_DEVICE && this->readReg(L3G_WHO_AM_I) == 0xD7) return true;
+   }
+#endif
+   return false;
 }
 
 // Writes a gyro register
-template <>
 void
 L3G_base<I2C>::writeReg(int reg, int value)
 {
@@ -112,9 +116,8 @@ L3G_base<I2C>::writeReg(int reg, int value)
 }
 
 // Reads a gyro register
-template <>
 int
-L3G_base<I2C>_base:::readReg(int reg)
+L3G_base<I2C>::readReg(int reg)
 {
    char regc = reg;
    char result;
@@ -126,9 +129,8 @@ L3G_base<I2C>_base:::readReg(int reg)
    return result;
 }
 
-template <>
 uint16_t
-L3G_base<I2C>_base:::read16(int reg)
+L3G_base<I2C>::read16(int reg)
 {
    // assert the MSB of the address to get the gyro
    // to do slave-transmit subaddress updating.
@@ -136,12 +138,11 @@ L3G_base<I2C>_base:::read16(int reg)
    uint16_t Result;
    i2c.write(address, &regc, 1, true);
    i2c.read(address, static_cast<char*>(static_cast<void*>(&Result)), 2);
-   return result;
+   return Result;
 }
 
-template <>
 int
-L3G_base<I2C>_base:::Read(vector& g)
+L3G_base<I2C>::Read(vector& g)
 {
    char reg = char(L3G_OUT_X_L) | 0x80;
    int err = i2c.write(address, &reg, 1, true);
@@ -152,8 +153,6 @@ L3G_base<I2C>_base:::Read(vector& g)
    return err;
 }
 
-
-template <>
 bool
 L3G_base<I2C>::OK()
 {
