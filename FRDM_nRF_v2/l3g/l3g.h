@@ -6,11 +6,6 @@
 #include "mbed.h"
 #include "matvec.h"
 
-//#include "MODI2C.h"
-
-//typedef MODI2C I2CType;
-typedef I2C I2CType;
-
 // device types
 #define L3G_DEVICE_AUTO  0
 #define L3G4200D_DEVICE  1
@@ -90,9 +85,76 @@ typedef I2C I2CType;
 #define L3G_H_ODR_800_35   0x00D0
 #define L3G_H_ODR_800_110  0x00F0
 
-class L3G
+// I2C addresses
+#define L3G4200D_ADDRESS_SA0_LOW  0xD0
+#define L3G4200D_ADDRESS_SA0_HIGH 0xD2
+#define L3GD20_ADDRESS_SA0_LOW    0xD4
+#define L3GD20_ADDRESS_SA0_HIGH   0xD6
+#define L3G_ADDRESS_AUTO          0x00
+
+// use L3G<I2C> or L3G<SPI>
+
+template <typename BusType>
+class L3G_base;
+
+template <>
+class L3G_base<I2C>
 {
    public:
+      L3G_base(PinName sda, PinName scl);
+
+      //L3G_base(PinName sda, PinName scl, int device_, int sa0_);
+
+      void SetFrequency(int hz) { Device.frequency(hz); }
+
+      //      bool init(int Device, int sa0);
+
+      void writeReg(int reg, int value);
+      int readReg(int reg);
+
+      void hard_reset();
+
+      bool OK();
+
+      I2C& bus() { return i2c; }
+
+   protected:
+      int device;
+
+   private:
+      bool init(int Device, int sa0)
+
+      bool AutoDetectAddress();
+
+      I2C i2c;
+      int address;
+};
+
+template <>
+class L3G_base<SPI>
+{
+   public:
+      L3G_base(SPI& Device_) : Device(Device_) {}
+
+      bool init();
+
+      void writeReg(int reg, int value);
+      int readReg(int reg);
+
+      I2C& device() { return Device; }
+
+   private:
+      I2C& Device;
+};
+
+
+template <typename BusType>
+class L3G_common : public  L3G_base<BusType>
+{
+   public:
+      using L3G_base<BusTyoe>::L3G_base;
+
+      L3G_common() = delete;
 
       typedef vector3<short int> vector;
 
@@ -109,8 +171,6 @@ class L3G
          bool threshold() const { return Reg & 0x80; }
          int level() const { return int(Reg & 0x1F); }
       };
-
-      L3G(I2CType& i2c_);
 
       // initializes the L3G device, returns true on success
       bool init(int device = L3G_DEVICE_AUTO, int sa0 = L3G_SA0_AUTO);
@@ -167,22 +227,14 @@ class L3G
       // Sensor temperature in degrees C
       int Temp();
 
-      void writeReg(int reg, int value);
-      int readReg(int reg);
-
       // read the velocity vector.  Returns 0 on success, non-zero on failure
       int Read(vector& v);
 
       short int ReadX();
       short int ReadY();
       short int ReadZ();
-
-   private:
-      I2CType& i2c;
-      int device; // chip type (4200D or D20 or D20H)
-      int address;
-
-      bool autoDetectAddress(void);
 };
+
+#include "l3g.cc"
 
 #endif
