@@ -124,7 +124,9 @@ template <>
 class L3G_base<I2C> : public L3GTypes
 {
    public:
-      using L43GTypes::vector;
+      using L3GTypes::vector;
+      using L3GTypes::FIFO_Modes;
+      using L3GTypes::FIFOStatus;
 
       L3G_base(PinName sda, PinName scl);
 
@@ -163,7 +165,9 @@ template <>
 class L3G_base<SPI> : public L3GTypes
 {
    public:
-      using L43GTypes::vector;
+      using L3GTypes::vector;
+      using L3GTypes::FIFO_Modes;
+      using L3GTypes::FIFOStatus;
 
       L3G_base(PinName mosi, PinName miso, PinName sck, PinName csn_, long SPIFrequency = 2000000);
 
@@ -187,7 +191,7 @@ class L3G_base<SPI> : public L3GTypes
 
    private:
       SPI spi;
-      PinName csn;
+      DigitalOut csn;
 };
 
 
@@ -197,8 +201,9 @@ class L3G : public  L3G_base<BusType>
    public:
       using L3G_base<BusType>::L3G_base;
       using L3G_base<BusType>::device;
-      using L3G_base<BusType>::FIFO_Modes;
-      using L3G_base<BusType>::FIFOStatus;
+
+      using FIFO_Modes = L3GTypes::FIFO_Modes;
+      using FIFOStatus = L3GTypes::FIFOStatus;
 
       L3G() = delete;
 
@@ -235,7 +240,7 @@ class L3G : public  L3G_base<BusType>
 
       // Set the FIFO mode.
       // default: bypass (no FIFO)
-      void SetFIFOMode(FIFO_Modes Mode);
+      void SetFIFOMode(L3GTypes::FIFO_Modes Mode);
 
       // Set the threshold for the FIFO interrupt
       void SetFIFOThreshold(int Threshold);

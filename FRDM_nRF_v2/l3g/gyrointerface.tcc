@@ -30,7 +30,7 @@ GyroInterface<BusType>::Initialize()
    //Impl.SetBlockDataUpdate(true);  // in case there is lag
    Impl.SetFIFOThreshold(1);
    Impl.EnableFIFO(true);
-   Impl.SetFIFOMode(L3G<I2C>::Stream);
+   Impl.SetFIFOMode(L3GTypes::Stream);
    Impl.EnableAll();
    IsFunctional = true;
    LastReadSuccess = true;

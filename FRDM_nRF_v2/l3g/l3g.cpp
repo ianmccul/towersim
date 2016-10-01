@@ -178,7 +178,8 @@ L3G_base<SPI>::L3G_base(PinName mosi, PinName miso, PinName sck, PinName csn_, l
      csn(csn_)
 {
    spi.frequency(SPIFrequency);
-   spi.format(8,0);
+   spi.format(8,3);
+   device = L3GD20H_DEVICE;
 }
 
 void
@@ -195,7 +196,7 @@ L3G_base<SPI>::readReg(int reg)
 {
    csn = 0;
    spi.write(reg | 0x80);
-   int Result = spi.write(reg);
+   int Result = spi.write(0);
    csn = 1;
    return Result;
 }
@@ -215,7 +216,6 @@ int
 L3G_base<SPI>::Read(vector& g)
 {
    csn = 0;
-   int const reg = L3G_OUT_X_L | 0xC0;
    spi.write(L3G_OUT_X_L | 0xC0);
    uint16_t XL = spi.write(0);
    uint16_t XH = spi.write(0);
@@ -227,6 +227,7 @@ L3G_base<SPI>::Read(vector& g)
    g[0] = (XH<<8)+XL;
    g[1] = (YH<<8)+YL;
    g[2] = (ZH<<8)+ZL;
+   return 0;
 }
 
 bool

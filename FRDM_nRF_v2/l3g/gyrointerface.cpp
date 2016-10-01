@@ -2,7 +2,6 @@
 
 #include "gyrointerface.h"
 
-template <>
 GyroInterfaceBase<I2C>::GyroInterfaceBase(PinName sda, PinName scl, int Addr, PinName DRdyPin)
    : Impl(sda, scl),
      DRdy(DRdyPin),
@@ -19,10 +18,9 @@ GyroInterfaceBase<I2C>::GyroInterfaceBase(PinName sda, PinName scl, int Addr, Pi
    Impl.soft_reset();
 }
 
-template <>
 GyroInterfaceBase<SPI>::GyroInterfaceBase(PinName mosi, PinName miso, PinName sck, PinName csn,
                                           PinName DRdyPin)
-   : Impl(mosi, miso, sck, csn),
+   : Impl(mosi, miso, sck, csn, 8000000),
      DRdy(DRdyPin),
      Scale(500),
      RateBandwidth(GYRO_DEFAULT_RATE_BANDWIDTH),

@@ -1,4 +1,4 @@
-// -*- C++ -*- $Id$
+// -*- C++ -*-
 
 #if !defined(GRYOINTERFACE_H_)
 #define GRYOINTERFACE_H_
@@ -46,7 +46,7 @@ class GyroInterfaceBase<SPI>
 };
 
 template <typename BusType>
-class GyroInterface : public GyroInferface<BusType>
+class GyroInterface : public GyroInterfaceBase<BusType>
 {
    public:
       using GyroInterfaceBase<BusType>::GyroInterfaceBase;
@@ -60,10 +60,6 @@ class GyroInterface : public GyroInferface<BusType>
       using GyroInterfaceBase<BusType>::WatchdogTimer;
 
       typedef L3GTypes::vector vector;
-
-      GyroInterface(PinName sda, PinName scl, int Addr, PinName DRdyPin);
-
-      GyroInterface(PinName , PinName scl, int Addr, PinName DRdyPin);
 
       // attempts to initialize the gyro, returns true if successful
       bool Initialize();
