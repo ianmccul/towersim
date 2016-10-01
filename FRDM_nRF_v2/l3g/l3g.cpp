@@ -171,3 +171,68 @@ L3G_base<I2C>::OK()
 //
 // SPI mode
 //
+
+L3G_base<SPI>::L3G_base(PinName mosi, PinName miso, PinName sck, PinName csn_, long SPIFrequency)
+   : device(L3G_DEVICE_AUTO),
+     spi(mosi, miso, sck),
+     csn(csn_)
+{
+   spi.frequency(SPIFrequency);
+   spi.format(8,0);
+}
+
+void
+L3G_base<SPI>::writeReg(int reg, int value)
+{
+   csn = 0;
+   spi.write(reg);
+   spi.write(value);
+   csn = 1;
+}
+
+int
+L3G_base<SPI>::readReg(int reg)
+{
+   csn = 0;
+   spi.write(reg | 0x80);
+   int Result = spi.write(reg);
+   csn = 1;
+   return Result;
+}
+
+uint16_t
+L3G_base<SPI>::read16(int reg)
+{
+   csn = 0;
+   spi.write(reg | 0xC0);
+   uint16_t Low = spi.write(0);
+   uint16_t High = spi.write(0);
+   csn = 1;
+   return (High << 8) + Low;
+}
+
+int
+L3G_base<SPI>::Read(vector& g)
+{
+   csn = 0;
+   int const reg = L3G_OUT_X_L | 0xC0;
+   spi.write(L3G_OUT_X_L | 0xC0);
+   uint16_t XL = spi.write(0);
+   uint16_t XH = spi.write(0);
+   uint16_t YL = spi.write(0);
+   uint16_t YH = spi.write(0);
+   uint16_t ZL = spi.write(0);
+   uint16_t ZH = spi.write(0);
+   csn = 1;
+   g[0] = (XH<<8)+XL;
+   g[1] = (YH<<8)+YL;
+   g[2] = (ZH<<8)+ZL;
+}
+
+bool
+L3G_base<SPI>::OK()
+{
+   if (device == L3GD20_DEVICE && this->readReg(L3G_WHO_AM_I) == 0xD4) return true;
+   if (device == L3GD20H_DEVICE && this->readReg(L3G_WHO_AM_I) == 0xD7) return true;
+   return false;
+}

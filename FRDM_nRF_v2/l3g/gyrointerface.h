@@ -8,12 +8,62 @@
 //#define GYRO_DEFAULT_RATE_BANDWIDTH L3G_ODR_95_25
 #define GYRO_DEFAULT_RATE_BANDWIDTH L3G_ODR_95_25
 
-class GyroInterface
+
+template <typename BusType>
+class GyroInterfaceBase;
+
+template <>
+class GyroInterfaceBase<I2C>
 {
    public:
-      typedef L3G<I2C>::vector vector;
+      GyroInterfaceBase(PinName sda, PinName scl, int Addr, PinName DRdyPin);
+
+   protected:
+      L3G<I2C> Impl;
+      DigitalIn DRdy;
+      int Scale;
+      unsigned RateBandwidth;
+      bool IsFunctional;
+      bool LastReadSuccess;
+      Timer WatchdogTimer;
+};
+
+template <>
+class GyroInterfaceBase<SPI>
+{
+   public:
+      GyroInterfaceBase(PinName mosi, PinName miso, PinName sck, PinName csn,
+                        PinName DRdyPin);
+
+   protected:
+      L3G<SPI> Impl;
+      DigitalIn DRdy;
+      int Scale;
+      unsigned RateBandwidth;
+      bool IsFunctional;
+      bool LastReadSuccess;
+      Timer WatchdogTimer;
+};
+
+template <typename BusType>
+class GyroInterface : public GyroInferface<BusType>
+{
+   public:
+      using GyroInterfaceBase<BusType>::GyroInterfaceBase;
+
+      using GyroInterfaceBase<BusType>::Impl;
+      using GyroInterfaceBase<BusType>::DRdy;
+      using GyroInterfaceBase<BusType>::Scale;
+      using GyroInterfaceBase<BusType>::RateBandwidth;
+      using GyroInterfaceBase<BusType>::IsFunctional;
+      using GyroInterfaceBase<BusType>::LastReadSuccess;
+      using GyroInterfaceBase<BusType>::WatchdogTimer;
+
+      typedef L3GTypes::vector vector;
 
       GyroInterface(PinName sda, PinName scl, int Addr, PinName DRdyPin);
+
+      GyroInterface(PinName , PinName scl, int Addr, PinName DRdyPin);
 
       // attempts to initialize the gyro, returns true if successful
       bool Initialize();
@@ -33,16 +83,10 @@ class GyroInterface
       // reads the velocity from the gyro, returns 0 on success
       int Read(vector& v);
 
-      L3G<I2C>& device() { return Impl; }
+      L3G<BusType>& device() { return Impl; }
 
-   private:
-      L3G<I2C> Impl;
-      DigitalIn DRdy;
-      int Scale;
-      unsigned RateBandwidth;
-      bool IsFunctional;
-      bool LastReadSuccess;
-      Timer WatchdogTimer;
 };
+
+#include "gyrointerface.tcc"
 
 #endif

@@ -96,14 +96,35 @@
 
 // use L3G<I2C> or L3G<SPI>
 
+class L3GTypes
+{
+   public:
+      typedef vector3<int16_t> vector;
+
+      enum FIFO_Modes { Bypass=0, FIFO=1, Stream=2,
+                        StreamFIFO=3, BypassStream=4,
+                        DynamicStream=6, BypassFIFO=7 };
+
+      struct FIFOStatus
+      {
+         FIFOStatus(char r) : Reg(r) {}
+         char Reg;
+         bool empty() const { return Reg & 0x20; }
+         bool overrun() const { return Reg & 0x40; }
+         bool threshold() const { return Reg & 0x80; }
+         int level() const { return int(Reg & 0x1F); }
+      };
+};
+
+
 template <typename BusType>
 class L3G_base;
 
 template <>
-class L3G_base<I2C>
+class L3G_base<I2C> : public L3GTypes
 {
    public:
-      typedef vector3<int16_t> vector;
+      using L43GTypes::vector;
 
       L3G_base(PinName sda, PinName scl);
 
@@ -120,8 +141,6 @@ class L3G_base<I2C>
 
       // returns 0 if no error
       int Read(vector& g);
-
-      void hard_reset();
 
       // returns true if the WHOAMI command returns a valid response
       bool OK();
@@ -141,23 +160,34 @@ class L3G_base<I2C>
 };
 
 template <>
-class L3G_base<SPI>
+class L3G_base<SPI> : public L3GTypes
 {
    public:
-      //L3G_base(SPI& Device_) : Device(Device_) {}
+      using L43GTypes::vector;
 
-      bool init();
+      L3G_base(PinName mosi, PinName miso, PinName sck, PinName csn_, long SPIFrequency = 2000000);
+
+      void SetFrequency(int hz) { spi.frequency(hz); }
 
       void writeReg(int reg, int value);
       int readReg(int reg);
 
       SPI& bus() { return spi; }
 
+      uint16_t read16(int reg);
+
+      // returns 0 if no error
+      int Read(vector& g);
+
+      // returns true if the WHOAMI command returns a valid response
+      bool OK();
+
    protected:
       int device;
 
    private:
       SPI spi;
+      PinName csn;
 };
 
 
@@ -167,27 +197,10 @@ class L3G : public  L3G_base<BusType>
    public:
       using L3G_base<BusType>::L3G_base;
       using L3G_base<BusType>::device;
+      using L3G_base<BusType>::FIFO_Modes;
+      using L3G_base<BusType>::FIFOStatus;
 
       L3G() = delete;
-
-      typedef vector3<int16_t> vector;
-
-      enum FIFO_Modes { Bypass=0, FIFO=1, Stream=2,
-                        StreamFIFO=3, BypassStream=4,
-                        DynamicStream=6, BypassFIFO=7 };
-
-      struct FIFOStatus
-      {
-         FIFOStatus(char r) : Reg(r) {}
-         char Reg;
-         bool empty() const { return Reg & 0x20; }
-         bool overrun() const { return Reg & 0x40; }
-         bool threshold() const { return Reg & 0x80; }
-         int level() const { return int(Reg & 0x1F); }
-      };
-
-      // initializes the L3G device, returns true on success
-      bool init(int device = L3G_DEVICE_AUTO, int sa0 = L3G_SA0_AUTO);
 
       int which_device() const { return device; }
 
