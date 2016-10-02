@@ -139,12 +139,12 @@ MMA8451Q::readAll(MMA8451Q::vector& v)
    int result = this->read_regs(MMA8451_OUT_X_MSB, (char*) &v, 6);
    if (result < 0)
    {
-      v.x = -1;
-      v.y = -1;
-      v.z = -1;
+      v[0] = -1;
+      v[1] = -1;
+      v[2] = -1;
       return;
    }
-   v.x = bswap(v.x);
-   v.y = bswap(v.y);
-   v.z = bswap(v.z);
+   v[0] = bswap(v[0]);
+   v[1] = bswap(v[1]);
+   v[2] = bswap(v[2]);
 }
