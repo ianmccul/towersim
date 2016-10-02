@@ -57,7 +57,7 @@
 class MMA8451Q : public I2CRegisterDevice
 {
    public:
-      typdef vector3<uint16_t> vector;
+      typedef vector3<int16_t> vector;
 
       enum SamplingRate
          {

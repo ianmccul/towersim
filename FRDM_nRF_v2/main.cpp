@@ -6,11 +6,12 @@
 #include "nRF24L01P_PTX.h"
 #include "matvec.h"
 #include <cstdint>
+#include <vector>
 
 //
 // packet format for sensor readings:
 //
-// delay (2 bytes) |flags | seq |  payload (up to 28 bytes)
+// delay (2 bytes) |flags | seq | payload (up to 28 bytes)
 // flags is 8 bits: 0 AAA GGGG
 // seq is a 1-byte sequentially increasing number
 // delay is the number of microseconds that this packet has been delayed (unsigned 16 bit)
@@ -27,6 +28,19 @@
 // X = 0 is reserved for future expansion
 //
 // TODO: a better approach is to ditch the seq number and track sample loss due to lost packets.
+//
+// possible improved packet format:
+// dump the seq in the sensor packet.
+// measure the delay in units of 10 microseconds
+// Have a new packet type for when we have packet loss.
+// flags, 8 bits 0STMNXXX
+// S - start of a new sequence, discard previous state
+// T - a one-byte gyro temperature reading is included at the start of the payload
+// M - accelerometer measurements are missing due to a lost packet,
+// the playload includes a 2-byte count and a 12-byte (4 bytes per sample) cumulative sum
+// N - gyro measurements are missing due to a lost packet,
+// the playload includes an 2-byte count and a 4-byte cumulative sum
+
 
 // a simple LCG for random number generation
 uint32_t Seed = time(NULL);
@@ -169,14 +183,16 @@ PacketScheduler::Poll()
    // Transmit a packet, if we have one ready to go
    if (HaveHighPriorityPacket)
    {
-      *static_cast<uint16_t>(static_cast<void*>(HiBuf)) = HighPriorityTimer.time_ms();
+      uint16_t const d = HighPriorityTimer.read_us();
+      std::memcpy(HiBuf, &d, sizeof(d));
       PTX.TransmitPacketNB(HiBuf, HiBufSz);
       PacketInFlight = 1;
       NewHighPriorityPacket = false;
    }
    else if (HaveLowPriorityPacket)
    {
-      *static_cast<uint16_t>(static_cast<void*>(LoBuf)) = HighPriorityTimer.time_ms();
+      uint16_t const d = LowPriorityTimer.read_us();
+      std::memcpy(LoBuf, &d, sizeof(d));
       PTX.TransmitPacketNB(LoBuf, LoBufSz);
       PacketInFlight = 2;
       NewLowPriorityPacket = false;
@@ -237,9 +253,9 @@ void WriteStatusPacket(PacketScheduler& Scheduler)
 {
    char buf[30];
    buf[0] = 0x80;
-   *static_cast<uint16_t>(static_cast<void*>(buf+1)) = 100;  // accel ODR
-   *static_cast<uint16_t>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
-   *static_cast<uint8_t>(static_cast<void*>(buf+5)) = 100;   // gyro BW
+   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
+   *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
    Scheduler.SendLowPriority(buf, 6);
 }
 
@@ -248,10 +264,10 @@ void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp)
 {
    char buf[30];
    buf[0] = 0xA0;
-   *static_cast<uint16_t>(static_cast<void*>(buf+1)) = 100;  // accel ODR
-   *static_cast<uint16_t>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
-   *static_cast<uint8_t>(static_cast<void*>(buf+5)) = 100;   // gyro BW
-   *static_cast<int8_t>(static_cast<void*>(buf+6)) = Temp;   // gyro temperature
+   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
+   *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
+   *static_cast<int8_t*>(static_cast<void*>(buf+6)) = Temp;   // gyro temperature
    Scheduler.SendLowPriority(buf, 7);
 }
 
@@ -262,6 +278,8 @@ std::vector<int16_t> GyroBuffer;
 
 int const MaxAccelSamples = 4;
 int const MaxGyroSamples = 14;
+
+int const PacketWatermark = 24;
 
 int main()
 {
@@ -288,8 +306,8 @@ int main()
 
    wait_ms(500);   // wait a bit so we initialize the gyro properly
 
-   int Addr = Addr1.read()<<1 + Addr0.read();
-   int Channel = Ch1.read()<<1 + Ch0.read();
+   int Addr = 0;  // (Addr1.read()<<1) + Addr0.read();
+   int Channel = 0; // (Ch1.read()<<1) + Ch0.read();
 
    printf("Initializing.\r\n");
 
@@ -379,20 +397,21 @@ int main()
          int r = Gyro.Read(v);
          if (r == 0)
          {
-            GyroBuffer.push_back(v);
+            GyroBuffer.push_back(v[2]);
          }
          else
             printf("Gyro read failed!\r\n");
       }
 
-      if (AccelBuffer.size()*6 + GyroBuffer.size()*2 > PacketWatermark)
+      if (AccelBuffer.size()*6 + GyroBuffer.size()*2 >= PacketWatermark)
       {
          WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer);
       }
 
-      if (GyroTempTimer.read() > 10)
+      if (GyroTempTimer.read_ms() > 1100)
       {
          WriteStatusPacket(Scheduler, Gyro.device().TempRaw());
+         GyroTempTimer.reset();
       }
 
       Scheduler.Poll();
