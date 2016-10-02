@@ -110,14 +110,14 @@ class PacketScheduler
 };
 
 PacketScheduler::PacketScheduler(nRF24L01P_PTX& PTX_)
-   PTX(PTX_),
-   PacketInFlight(false),
-   HaveHighPriorityPacket(false),
-   NewHighPriorityPacket(false),
-   HaveLowPriorityPacket(false),
-   NewLowpriorityPacket(false),
-   NumRetransmits(0),
-   RetransmitPoint(0)
+   : PTX(PTX_),
+     PacketInFlight(false),
+     HaveHighPriorityPacket(false),
+     NewHighPriorityPacket(false),
+     HaveLowPriorityPacket(false),
+     NewLowPriorityPacket(false),
+     NumRetransmits(0),
+     RetransmitPoint(0)
 {
 }
 
@@ -129,7 +129,6 @@ PacketScheduler::Poll()
       if (!PTX.IsTransmitFinished())
          return;
 
-      PacketInFlight = false;
       int Result = PTX.TransmitWait();
       if (Result == -1)
       {
@@ -155,6 +154,7 @@ PacketScheduler::Poll()
             HaveLowPriorityPacket = false;
          }
       }
+      PacketInFlight = 0;
    }
 
    // Do we need to wait before transmitting?
@@ -165,12 +165,14 @@ PacketScheduler::Poll()
    if (HaveHighPriorityPacket)
    {
       PTX.TransmitPacketNB(HiBuf, HiBufSz);
-      HaveNewHighPriorityPacket = false;
+      PacketInFlight = 1;
+      NewHighPriorityPacket = false;
    }
    else if (HaveLowPriorityPacket)
    {
       PTX.TransmitPacketNB(LoBuf, LoBufSz);
-      HaveNewLowPriorityPacket = false;
+      PacketInFlight = 2;
+      NewLowPriorityPacket = false;
    }
 }
 
@@ -178,6 +180,7 @@ void
 PacketScheduler::SendHighPriority(char const* buf, int Size)
 {
    std::memcpy(HiBuf, buf, Size);
+   HiBufSz = Size;
    HaveHighPriorityPacket = true;
    NewHighPriorityPacket = true;
    HighPriorityTimer.reset();
@@ -185,11 +188,13 @@ PacketScheduler::SendHighPriority(char const* buf, int Size)
    this->Poll();
 }
 
+void
 PacketScheduler::SendLowPriority(char const* buf, int Size)
 {
    std::memcpy(LoBuf, buf, Size);
+   LoBufSz = Size;
    HaveLowPriorityPacket = true;
-   OldLowPriorityPacket = (PacketInFlight == 2);
+   NewLowPriorityPacket = true;
    this->Poll();
 }
 
@@ -233,18 +238,6 @@ void WriteGyroPacket(PacketScheduler& s, L3GTypes::vector const& v)
    s.SendHighPriority(Buffer, PacketSize);
 }
 
-void WriteGyroCalibrationPacket(PacketScheduler& s, vector3<float> const& v)
-{
-   int const PacketSize = sizeof(v) + 2;
-   char Buffer[PacketSize];
-   Buffer[0] = 0x83;
-   Buffer[1] = SeqNum++;
-   memcpy(Buffer+2, static_cast<void const*>(&v), sizeof(v));
-   //s.TransmitWait();
-   //   s.TransmitPacketNB(Buffer, PacketSize);
-   s.SendHighPriority(Buffer, PacketSize);
-}
-
 void WriteGyroTemp(PacketScheduler& s, int8_t T)
 {
    int const PacketSize = sizeof(T)+1;
@@ -266,59 +259,6 @@ void WriteTimerPacket(PacketScheduler& s, Timer& t, char Type)
    //s.TransmitWait();
    //s.TransmitPacketNB(Buffer, PacketSize);
    s.SendHighPriority(Buffer, PacketSize);
-}
-
-vector3<short> GyroMin(SHRT_MAX), GyroMax(SHRT_MIN);
-vector3<int>   GyroAccumulator(0);
-int GyroCount = 0;
-
-// Zero offset calibration of the gyro
-vector3<float> GyroOffset(0,0,0);
-vector3<short> GyroOffsetInt(0,0,0);
-
-bool ProcessGyroZeroOffset(nRF24L01P_PTX& s, L3GTypes::vector const& v)
-{
-   GyroMin = min(GyroMin, v);
-   GyroMax = max(GyroMax, v);
-   if (norm_inf(GyroMax-GyroMin) > GyroZeroMaxDeviation)
-   {
-      // reset the counter
-      GyroMin.fill(SHRT_MAX);
-      GyroMax.fill(SHRT_MIN);
-      GyroAccumulator.fill(0);
-      GyroCount = 0;
-      return false;
-   }
-
-   GyroAccumulator += v;
-   ++GyroCount;
-   if (GyroCount >= GyroZeroRequiredSamples)
-   {
-      // we have calibration, set the GyroOffset
-      if (GyroHasZeroCalibration)
-      {
-         // filter step
-         GyroOffset += GyroAccumulator /float(GyroCount);
-         GyroOffset = GyroOffset / 2;
-         GyroOffsetInt = vector3<short>(round(GyroOffset));
-         WriteGyroCalibrationPacket(s, GyroOffset);
-      }
-      else
-      {
-         GyroOffset = GyroAccumulator / float(GyroCount);
-         GyroOffsetInt = vector3<short>(round(GyroOffset));
-         GyroHasZeroCalibration = true;
-         WriteGyroCalibrationPacket(s, GyroOffset);
-      }
-      // reset the counter
-      GyroMin.fill(SHRT_MAX);
-      GyroMax.fill(SHRT_MIN);
-      GyroAccumulator.fill(0);
-      GyroCount = 0;
-      return true;
-   }
-
-   return false;
 }
 
 int main()
@@ -363,7 +303,7 @@ int main()
    PTX.Initialize();
    PTX.SetDataRate(2000);
    PTX.SetChannel(76);
-   Device.set_retransmit_attempts(2);
+   Device.set_retransmit_attempts(0);
    Device.set_crc_width(2);
    Device.set_tx_power(0);
    PTX.EnableDynamicPayload(0);  // enable dynamic payload on pipe 0
@@ -446,5 +386,7 @@ int main()
          WriteGyroTemp(Scheduler, Gyro.device().TempRaw());
          GyroTempTimer.reset();
       }
+
+      Scheduler.Poll();
    }
 }
