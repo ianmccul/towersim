@@ -7,6 +7,193 @@
 #include "matvec.h"
 #include <cstdint>
 
+//
+// packet format for sensor readings:
+//
+// flags | seq | delay (2 bytes) | payload (up to 28 bytes)
+// flags is 8 bits: 0 AAA GGGG
+// seq is a 1-byte sequentially increasing number
+// delay is the number of microseconds that this packet has been delayed (unsigned 16 bit)
+// AAA is number of 6-byte accelerometer readings (first in the payload)
+// GGGG is the number of 2-byte z-axis gyro readings
+//
+// packet format for status information:
+// 01TCDBXX | acc ODR (2 bytes) | gyro ODR (2 bytes) | gyro bandwidth (1 byte) | payload
+// if T is set, then the payload conains a 1-byte gyro temperature reading
+// if C is set, the charging circuit is active, otherwise it is not active
+// if D is set, the payload contains a 2-byte charging current reading
+// if B is set, the payload contains a 2-byte battery current reading
+// XX = 00 is reserved for future expansion
+
+
+uint32_t Seed = time(NULL);
+
+uint32_t random()
+{
+   Seed = Seed*1664525 + 1013904223;
+   return Seed;
+}
+
+int random(int Min, int Max)
+{
+   uint32_t x = random() >> 16;
+   return x%(Max-Min) + Min;
+}
+
+int RandomSlot(int n)
+{
+   int Max = (1 << std::max(n,5));
+   return random(0, Max);
+}
+
+class PacketScheduler
+{
+   public:
+      PacketScheduler(nRF24L01P_PTX& PTX_);
+
+      // Turns on the device and initializes it
+      //void PowerOn();
+
+      // Turns off the device
+      //void PowerOff();
+
+      // polls the scheduler, to see if we need to do anything.  This should be called
+      // at least once every SlotTime microseconds, if possible
+      void Poll();
+
+      // send a high priority packet.  These packets have a 2-byte 'delay' field
+      // at bytes 2,3 of the packet.  This is zero if the packet is transmitted immediately,
+      // but will be non-zero if there is already a packet in progress or if there is
+      // a retransmit.
+      void SendHighPriority(char const* buf, int Size);
+
+      // send a low priority packet.  There is no packet delay field.  We attempt
+      // to transmit the packet whenever the radio is available, and keep trying until
+      // the packet is sent (or a new low-priority packet it sent).
+      void SendLowPriority(char const* buf, int Size);
+
+   private:
+      // our radio device
+      nRF24L01P_PTX& PTX;
+
+      // 0 of there is no packet in flight.  1 if there is a high priority packet in flight.
+      // 2 if there is a low priority packet in flight.
+      int PacketInFlight;
+
+      // true if we have a high priority packet waiting to be sent
+      bool HaveHighPriorityPacket;
+      Timer HighPriorityTimer;
+
+      // true if the high priority packet in the buffer is new (we haven't attempted a transmit yet)
+      bool NewHighPriorityPacket;
+
+      // true if we have a low priority packet waiting to be sent
+      bool HaveLowPriorityPacket;
+
+      // true if the low priority packet in the buffer is new (we haven't attempted a transmit yet)
+      bool NewLowPriorityPacket;
+
+      // time in microseconds for each slot
+      static uint16_t const SlotTime = 250;
+
+      // number of retransmits since the last successful packet
+      int NumRetransmits;
+
+      Timer RetransmitTimer;
+      int32_t RetransmitPoint;
+
+      // high and low priority buffers
+      char HiBuf[32];
+      int HiBufSz;
+      char LoBuf[32];
+      int LoBufSz;
+};
+
+PacketScheduler::PacketScheduler(nRF24L01P_PTX& PTX_)
+   PTX(PTX_),
+   PacketInFlight(false),
+   HaveHighPriorityPacket(false),
+   NewHighPriorityPacket(false),
+   HaveLowPriorityPacket(false),
+   NewLowpriorityPacket(false),
+   NumRetransmits(0),
+   RetransmitPoint(0)
+{
+}
+
+void
+PacketScheduler::Poll()
+{
+   if (PacketInFlight != 0)
+   {
+      if (!PTX.IsTransmitFinished())
+         return;
+
+      PacketInFlight = false;
+      int Result = PTX.TransmitWait();
+      if (Result == -1)
+      {
+         // packet failed, do a retransmit.
+         ++NumRetransmits;
+         RetransmitTimer.reset();
+         RetransmitTimer.start();
+         int Slot = RandomSlot(NumRetransmits);
+         RetransmitPoint = SlotTime * Slot;
+      }
+      else if (Result == 0)
+      {
+         // successful packet transmission
+         NumRetransmits = 0;
+         RetransmitTimer.stop();
+         if (PacketInFlight == 1 && !NewHighPriorityPacket)
+         {
+            HaveHighPriorityPacket = false;
+            HighPriorityTimer.stop();
+         }
+         else if (PacketInFlight == 2 && !NewLowPriorityPacket)
+         {
+            HaveLowPriorityPacket = false;
+         }
+      }
+   }
+
+   // Do we need to wait before transmitting?
+   if (NumRetransmits > 0 && RetransmitTimer.read_us() < RetransmitPoint)
+      return;
+
+   // Transmit a packet, if we have one ready to go
+   if (HaveHighPriorityPacket)
+   {
+      PTX.TransmitPacketNB(HiBuf, HiBufSz);
+      HaveNewHighPriorityPacket = false;
+   }
+   else if (HaveLowPriorityPacket)
+   {
+      PTX.TransmitPacketNB(LoBuf, LoBufSz);
+      HaveNewLowPriorityPacket = false;
+   }
+}
+
+void
+PacketScheduler::SendHighPriority(char const* buf, int Size)
+{
+   std::memcpy(HiBuf, buf, Size);
+   HaveHighPriorityPacket = true;
+   NewHighPriorityPacket = true;
+   HighPriorityTimer.reset();
+   HighPriorityTimer.start();
+   this->Poll();
+}
+
+PacketScheduler::SendLowPriority(char const* buf, int Size)
+{
+   std::memcpy(LoBuf, buf, Size);
+   HaveLowPriorityPacket = true;
+   OldLowPriorityPacket = (PacketInFlight == 2);
+   this->Poll();
+}
+
+
 #define MMA8451_I2C_ADDRESS (0x1d<<1)
 
 // gyro calibration parameters
@@ -22,7 +209,7 @@ int const GyroZeroRequiredSamples = 800;
 
 unsigned char SeqNum = 0;
 
-void WriteAccelPacket(nRF24L01P_PTX& s, MMA8451Q::vector const& v)
+void WriteAccelPacket(PacketScheduler& s, MMA8451Q::vector const& v)
 {
    int const PacketSize = 8;
    char Buffer[PacketSize];
@@ -31,10 +218,10 @@ void WriteAccelPacket(nRF24L01P_PTX& s, MMA8451Q::vector const& v)
    memcpy(Buffer+2, static_cast<void const*>(&v), 6);
    //   s.TransmitWait();
    //s.TransmitPacketNB(Buffer, PacketSize);
-   s.StreamPacket(Buffer, PacketSize);
+   s.SendHighPriority(Buffer, PacketSize);
 }
 
-void WriteGyroPacket(nRF24L01P_PTX& s, L3GTypes::vector const& v)
+void WriteGyroPacket(PacketScheduler& s, L3GTypes::vector const& v)
 {
    int const PacketSize = 8;
    char Buffer[PacketSize];
@@ -43,10 +230,10 @@ void WriteGyroPacket(nRF24L01P_PTX& s, L3GTypes::vector const& v)
    memcpy(Buffer+2, static_cast<void const*>(&v), 6);
    //   s.TransmitWait();
    //   s.TransmitPacketNB(Buffer, PacketSize);
-   s.StreamPacket(Buffer, PacketSize);
+   s.SendHighPriority(Buffer, PacketSize);
 }
 
-void WriteGyroCalibrationPacket(nRF24L01P_PTX& s, vector3<float> const& v)
+void WriteGyroCalibrationPacket(PacketScheduler& s, vector3<float> const& v)
 {
    int const PacketSize = sizeof(v) + 2;
    char Buffer[PacketSize];
@@ -55,19 +242,19 @@ void WriteGyroCalibrationPacket(nRF24L01P_PTX& s, vector3<float> const& v)
    memcpy(Buffer+2, static_cast<void const*>(&v), sizeof(v));
    //s.TransmitWait();
    //   s.TransmitPacketNB(Buffer, PacketSize);
-   s.StreamPacket(Buffer, PacketSize);
+   s.SendHighPriority(Buffer, PacketSize);
 }
 
-void WriteGyroTemp(nRF24L01P_PTX& s, int8_t T)
+void WriteGyroTemp(PacketScheduler& s, int8_t T)
 {
    int const PacketSize = sizeof(T)+1;
    char Buffer[PacketSize];
    Buffer[0] = 0x84;
    memcpy(Buffer+1, static_cast<void const*>(&T), sizeof(T));
-   s.StreamPacket(Buffer, PacketSize);
+   s.SendLowPriority(Buffer, PacketSize);
 }
 
-void WriteTimerPacket(nRF24L01P_PTX& s, Timer& t, char Type)
+void WriteTimerPacket(PacketScheduler& s, Timer& t, char Type)
 {
    int us = t.read_us();
    t.reset();
@@ -78,7 +265,7 @@ void WriteTimerPacket(nRF24L01P_PTX& s, Timer& t, char Type)
    memcpy(Buffer+2, static_cast<void const*>(&us), sizeof(us));
    //s.TransmitWait();
    //s.TransmitPacketNB(Buffer, PacketSize);
-   s.StreamPacket(Buffer, PacketSize);
+   s.SendHighPriority(Buffer, PacketSize);
 }
 
 vector3<short> GyroMin(SHRT_MAX), GyroMax(SHRT_MIN);
@@ -181,7 +368,10 @@ int main()
    Device.set_tx_power(0);
    PTX.EnableDynamicPayload(0);  // enable dynamic payload on pipe 0
    PTX.PowerUp();
-   PTX.EnableStreamMode();
+
+   PacketScheduler Scheduler(PTX);
+
+   //PTX.EnableStreamMode();
 
    DigitalIn AccINT2(PTA15);
 
@@ -231,7 +421,7 @@ int main()
 #endif
 
          //printf(".");
-         WriteAccelPacket(PTX, Data);
+         WriteAccelPacket(Scheduler, Data);
       }
 
       if (Gyro.DataAvailable())
@@ -242,7 +432,7 @@ int main()
          int r = Gyro.Read(v);
          if (r == 0)
          {
-            WriteGyroPacket(PTX, v);
+            WriteGyroPacket(Scheduler, v);
             //rled = 0.0;
             //gled = 0.0;
             //bled = 0.0;
@@ -253,7 +443,7 @@ int main()
 
       if (GyroTempTimer.read() > 10)
       {
-         WriteGyroTemp(PTX, Gyro.device().TempRaw());
+         WriteGyroTemp(Scheduler, Gyro.device().TempRaw());
          GyroTempTimer.reset();
       }
    }
