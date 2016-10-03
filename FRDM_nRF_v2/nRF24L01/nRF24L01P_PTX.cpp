@@ -62,6 +62,7 @@ void
 nRF24L01P_PTX::SetDestinationAddress(uint64_t Address)
 {
    Device.set_tx_address(Address);
+   Device.set_rx_address(0, Address);
 }
 
 void

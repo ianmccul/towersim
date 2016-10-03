@@ -18,3 +18,7 @@ https://www.gnu.org/licenses/gpl-3.0.en.html
 
 The MBED SDK is licensed under the Apache 2.0 license, see
 https://github.coom/ARMmbed/
+
+JSON for Modern C++ https://github.com/nlohmann/json
+Licensed under the MIT License <http://opensource.org/licenses/MIT>.
+Copyright (c) 2013-2016 Niels Lohmann <http://nlohmann.me>
