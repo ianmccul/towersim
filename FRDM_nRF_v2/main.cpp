@@ -249,26 +249,37 @@ void WriteSamplePacket(PacketScheduler& Scheduler,
    GyroBuffer.clear();
 }
 
+AnalogIn ChargeV(PTB0);
+AnalogIn BatteryV(PTB1);
+
 void WriteStatusPacket(PacketScheduler& Scheduler)
 {
    char buf[30];
-   buf[0] = 0x80;
+   buf[0] = 0x94;
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
    *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
-   Scheduler.SendLowPriority(buf, 6);
+   uint16_t ChV = ChargeV.read_u16();
+   *static_cast<uint16_t*>(static_cast<void*>(buf+7)) = ChV;
+   uint16_t BattV = BatteryV.read_u16();
+   *static_cast<uint16_t*>(static_cast<void*>(buf+6)) = BattV;
+   Scheduler.SendLowPriority(buf, 8);
 }
 
 // write a status packet, including temperature information
 void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp)
 {
    char buf[30];
-   buf[0] = 0xA0;
+   buf[0] = 0xB4;
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
    *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
    *static_cast<int8_t*>(static_cast<void*>(buf+6)) = Temp;   // gyro temperature
-   Scheduler.SendLowPriority(buf, 7);
+   uint16_t ChV = ChargeV.read_u16();
+   *static_cast<uint16_t*>(static_cast<void*>(buf+7)) = ChV;
+   uint16_t BattV = BatteryV.read_u16();
+   *static_cast<uint16_t*>(static_cast<void*>(buf+9)) = BattV;
+   Scheduler.SendLowPriority(buf, 11);
 }
 
 // buffers for accelerometer and gyro data
@@ -306,8 +317,11 @@ int main()
 
    wait_ms(500);   // wait a bit so we initialize the gyro properly
 
-   int Addr = 0;  // (Addr1.read()<<1) + Addr0.read();
-   int Channel = 0; // (Ch1.read()<<1) + Ch0.read();
+   unsigned Addr = (Addr1.read()<<1) + Addr0.read();
+
+   uint64_t PipeAddrs[4] = {0xe7e7e7e7e7ULL, 0xf0f0f0f0f0ULL, 0xf0f0f0f017ULL, 0xf0f0f0f02cULL};
+
+   unsigned Channel = (Ch1.read()<<1) + Ch0.read();
 
    printf("Initializing.\r\n");
 
@@ -335,7 +349,7 @@ int main()
 
    PTX.Initialize();
    PTX.SetDataRate(2000);
-   PTX.SetDestinationAddress(0xe7e7e7e7e7ULL + Addr);
+   PTX.SetDestinationAddress(PipeAddrs[Addr]);
    PTX.SetChannel(76 + Channel*2);
    Device.set_retransmit_attempts(0);
    Device.set_crc_width(2);
