@@ -3,3 +3,6 @@
 *.aux
 *.dvi
 *.figures
+*.d
+*.o
+
