@@ -18,6 +18,11 @@
 // AAA is number of 6-byte accelerometer readings (first in the payload)
 // GGGG is the number of 2-byte z-axis gyro readings
 //
+// packet format after lost sensor packet:
+// delay (2 bytes) | 11000000 | acc lost count (2 bytes) | gyro lost count (2 bytes) | gyro sum (4 bytes)
+
+// but we need to indicate the start of a stream.
+
 // packet format for status information:
 // delay (2 bytes) |10TCDBSX | acc ODR (2 bytes) | gyro ODR (2 bytes) | gyro bandwidth (1 byte) | payload
 // if T is set, then the payload conains a 1-byte gyro temperature reading
