@@ -1,0 +1,12 @@
+{
+   "5" : {
+      "FriendlyName" : "StJ:5",
+      "HandstrokeDelay" : 350,
+      "BackstrokeDelay" : 330
+   },
+   "6" : {
+      "FriendlyName" : "StJ:6",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350
+   }
+}
