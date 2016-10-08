@@ -26,34 +26,11 @@ using namespace std;
 /****************** Raspberry Pi ***********************/
 
 // Radio CE Pin, CSN Pin, SPI Speed
-// See http://www.airspayce.com/mikem/bcm2835/group__constants.html#ga63c029bd6500167152db4e57736d0939 and the related enumerations for pin information.
+// See http://www.airspayce.com/mikem/bcm2835/group__constants.html#ga63c029bd6500167152db4e57736d0939
+// and the related enumerations for pin information.
 
-// Setup for GPIO 22 CE and CE0 CSN with SPI Speed @ 4Mhz
-//RF24 radio(RPI_V2_GPIO_P1_22, BCM2835_SPI_CS0, BCM2835_SPI_SPEED_4MHZ);
-
-
-
-// NEW: Setup for RPi B+
-//RF24 radio(RPI_BPLUS_GPIO_J8_15,RPI_BPLUS_GPIO_J8_24, BCM2835_SPI_SPEED_8MHZ);
-
-
-
-// Setup for GPIO 15 CE and CE0 CSN with SPI Speed @ 8Mhz
-//RF24 radio(RPI_V2_GPIO_P1_15, RPI_V2_GPIO_P1_24, BCM2835_SPI_SPEED_8MHZ);
-
-// RPi generic:
-//RF24 radio(22,0);
-
-/*** RPi Alternate ***/
-//Note: Specify SPI BUS 0 or 1 instead of CS pin number.
-// See http://tmrh20.github.io/RF24/RPi.html for more information on usage
-
-//RPi Alternate, with MRAA
-//RF24 radio(15,0);
-
-//RPi Alternate, with SPIDEV - Note: Edit RF24/arch/BBB/spi.cpp and  set 'this->device = "/dev/spidev0.0";;' or as listed in /dev
+//RPi with SPIDEV - Note: Edit RF24/arch/BBB/spi.cpp and  set 'this->device = "/dev/spidev0.0";;' or as listed in /dev
 RF24 radio(22,0);
-
 
 //returns the system time in microseconds since epoch
 int64_t get_time()
@@ -67,6 +44,111 @@ int64_t get_time()
    s  = spec.tv_sec;
    ms = spec.tv_nsec / 1000; // Convert nanoseconds to microseconds
    return ms + int64_t(s)*1000000;
+}
+
+class Radio
+{
+   public:
+      Radio(int DevMajor, int DevMinor, int Channel);
+
+      Radio(Radio&) = delete;
+      Rado& operator=(Radio const&) = delete;
+      Radio(Radio&& r) = default;
+      Radio& operator=(Radio&& r) = default;
+
+      // power up the radio and start listening for packets
+      void PowerUp();
+
+      // stop listening for packets and power down the radio
+      void PowerDown();
+
+      // returns true if there is a packet available.  If so,
+      // sets the pipe number.
+      bool Available(uint8_t& Pipe);
+
+      // returns the payload size
+      int PayloadSize();
+
+      // reads a packet into the buffer
+      void Read(unsigned char* buf, int len);
+
+   private:
+      RF24 radio;
+};
+
+Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel)
+   : radio(ce_pin, DevMajor*10+DevMinor)
+{
+   radio.begin();
+
+   // optionally, increase the delay between retries & # of retries
+   radio.setRetries(15,15);
+   // Dump the configuration of the rf unit for debugging
+
+   // very important to set the payload size before opening the pipe
+   // even though we use dynamic payloads.  NOTE: this seems to be
+   // a MAXIMUM permitted payload size if we have dynamic payloads.
+   radio.setPayloadSize(32);
+   radio.setAddressWidth(5);
+   radio.enableDynamicPayloads();  // need to do this AFTER opening the pipes!
+   radio.setDataRate(RF24_2MBPS);
+   radio.setChannel(Channel);
+   radio.setCRCLength(RF24_CRC_16);
+   radio.setPALevel(RF24_PA_HIGH);
+   radio.setAutoAck(true);  // probably not needed
+   radio.closeReadingPipe(0);
+   radio.closeReadingPipe(1);
+   radio.closeReadingPipe(2);
+   radio.closeReadingPipe(3);
+   radio.closeReadingPipe(4);
+   radio.closeReadingPipe(5);
+   radio.openReadingPipe(0, 0xe7e7e7e7e7);
+   radio.openReadingPipe(1, 0xf0f0f0f0f0);
+   uint8_t PipeAddr = 0x17;
+   radio.openReadingPipe(2, &PipeAddr);
+   PipeAddr = 0x2c;
+   radio.openReadingPipe(3, &PipeAddr);
+   radio.enableDynamicPayloads();  // need to do this AFTER opening the pipes!
+   std::cout << "Starting radio spidev" << DevMajor << '.' << DevMinor << " ce " << ce_pin << " on channel " << Channel << std::endl;
+   radio.printDetails();
+   radio.powerDown();
+}
+
+inline
+void
+Radio::PowerUp()
+{
+   radio.powerUp();
+   radio.startListening();
+}
+
+inline
+void
+Radio::PowerDown()
+{
+   radio.stopListening();
+   radio.powerDown();
+}
+
+inline
+bool
+Radio::Available(uint8_t& Pipe)
+{
+   return radio.available(Pipe);
+}
+
+inline
+int
+Radio::PayloadSize()
+{
+   return radio.getDynamicPayloadSize();
+}
+
+inline
+void
+Radio::Read(unsigned char* buf, int len)
+{
+   radio.read(buf, len);
 }
 
 void sleep_us(int t)
@@ -98,39 +180,9 @@ int main(int argc, char** argv)
       }
    }
 
-   // Setup and configure rf radio
-   radio.begin();
+   std::vector<Radio> Radios;
 
-   // optionally, increase the delay between retries & # of retries
-   radio.setRetries(15,15);
-   // Dump the configuration of the rf unit for debugging
-
-   // very important to set the payload size before opening the pipe
-   // even though we use dynamic payloads.  NOTE: this seems to be
-   // a MAXIMUM permitted payload size if we have dynamic payloads.
-   radio.setPayloadSize(32);
-   radio.setAddressWidth(5);
-   radio.enableDynamicPayloads();  // need to do this AFTER opening the pipes!
-   radio.setDataRate(RF24_2MBPS);
-   radio.setChannel(76);
-   radio.setCRCLength(RF24_CRC_16);
-   radio.setPALevel(RF24_PA_HIGH);
-   radio.setAutoAck(true);  // probably not needed
-   radio.closeReadingPipe(0);
-   radio.closeReadingPipe(1);
-   radio.closeReadingPipe(2);
-   radio.closeReadingPipe(3);
-   radio.closeReadingPipe(4);
-   radio.closeReadingPipe(5);
-   radio.openReadingPipe(0, 0xe7e7e7e7e7);
-   radio.openReadingPipe(1, 0xf0f0f0f0f0);
-   uint8_t PipeAddr = 0x17;
-   radio.openReadingPipe(2, &PipeAddr);
-   PipeAddr = 0x2c;
-   radio.openReadingPipe(3, &PipeAddr);
-   radio.enableDynamicPayloads();  // need to do this AFTER opening the pipes!
-   radio.printDetails();
-   radio.powerDown();
+   Radios.push_back(22, 0, 0, 76);
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
@@ -171,38 +223,32 @@ int main(int argc, char** argv)
          std::cout << "Accepted connection " << cl << std::endl;
          if (Clients.empty())
          {
-            // first client, start up the radio.
-            std::cout << "Got the first client, powering up radio." << std::endl;
-            radio.powerUp();
-            radio.startListening();
+            // first client, start up the radios
+            std::cout << "Got the first client, powering up radios." << std::endl;
+            for (auto& r : Radios)
+            {
+               r.PowerUp();
+            }
          }
          Clients.insert(cl);
       }
 
-      // check for data on the radio
-      uint8_t PipeNum = 0;
-      while (!Clients.empty() && radio.available(&PipeNum) || (TestMode && (rand() % 50 == 0)))
+      if (Clients.empty())
+         continue;
+
+      for (auto& r : Radios)
       {
-         char buf[33+8];
-         int len = 0;
-         if (TestMode)
+         // check for data on the radio
+         uint8_t PipeNum = 0;
+         while (r.Available(&PipeNum))
          {
-            std::cerr << "Writing test packet.  Number of clients: " << Clients.size() << "\n";
-            *static_cast<int64_t*>(static_cast<void*>(buf)) = get_time();
-            buf[8] = 0x42;
-            buf[9] = SeqNum++;
-            *static_cast<int16_t*>(static_cast<void*>(buf+10)) = ++TestSeq;
-            *static_cast<int16_t*>(static_cast<void*>(buf+12)) = ++TestSeq;
-            *static_cast<int16_t*>(static_cast<void*>(buf+15)) = ++TestSeq;
-            len = 1+1+2+2+2;
-         }
-         else
-         {
-            len = radio.getDynamicPayloadSize();
+            char buf[33+8];
+            int len = 0;
+            len = r.PayloadSize();
 //	    std::cout << len << '\n';
             if (len < 1)
                continue;
-            radio.read(buf+9, len);
+            r.Read(buf+9, len);
             *static_cast<int64_t*>(static_cast<void*>(buf)) = get_time();
             buf[8] = PipeNum;  // bell number
          }
@@ -218,18 +264,20 @@ int main(int argc, char** argv)
                std::cerr << "write failure writing to client " << c << std::endl;
                close(c);
                I = Clients.erase(I);
-               if (Clients.empty())
-               {
-                  std::cout << "Last client has disconnected, powering down radio." << std::endl;
-                  // power off the radio
-                  radio.stopListening();
-                  radio.powerDown();
-               }
             }
             else
             {
                ++I;
             }
+         }
+      }
+
+      if (Clients.empty())
+      {
+         std::cout << "Last client has disconnected, powering down radios." << std::endl;
+         for (auto& r : Radios)
+         {
+            r.PowerDown();
          }
       }
    } // forever loop
