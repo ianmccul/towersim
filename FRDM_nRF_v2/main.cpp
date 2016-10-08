@@ -295,7 +295,7 @@ std::vector<int16_t> GyroBuffer;
 int const MaxAccelSamples = 4;
 int const MaxGyroSamples = 14;
 
-int const PacketWatermark = 24;
+int const PacketWatermark = 23;
 
 int main()
 {

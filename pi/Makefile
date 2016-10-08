@@ -67,18 +67,6 @@ dep : $(cxx_depend)
 
 .SECONDARY: $(cxx_depend)
 
-clean :
-	rm -f *.o
-	rm -f *.d
-
-mrproper :
-	rm -f *.o
-	rm -f *.d
-	rm -f -- $(patsubst %,%/*~, $(subst :, ,$(VPATH)))
-
-depclean :
-	rm -f *.d
-
 LIBS_bellsensorstage1 = -lrf24
 
 accel-bdc-daemon : sensortcpserver.o
@@ -93,7 +81,22 @@ gyrofit-daemon : sensortcpserver.o
 
 LIBS_gyrofit-daemon = -lboost_system -lboost_date_time
 
-all : gyrofit-daemon bellsensorstage1 bellsensorstage2 bellsensorstage1-log bellsensorstage2_stdio
+executable = gyrofit-daemon bellsensorstage1 bellsensorstage2 bellsensorstage1-log bellsensorstage2_stdio
+
+all : $(executable)
+
+clean :
+	rm -f *.o
+	rm -f *.d
+	rm -f $(executable)
+
+mrproper :
+	rm -f *.o
+	rm -f *.d
+	rm -f -- $(patsubst %,%/*~, $(subst :, ,$(VPATH)))
+
+depclean :
+	rm -f *.d
 
 ifeq (,$(filter $(nodep-targets),$(MAKECMDGOALS)))
 -include $(cxx_depend)

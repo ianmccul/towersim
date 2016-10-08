@@ -17,21 +17,6 @@
 #include <sys/un.h>
 #include <cstddef>
 
-using namespace std;
-
-//
-// Hardware configuration
-// Configure the appropriate pins for your connections
-
-/****************** Raspberry Pi ***********************/
-
-// Radio CE Pin, CSN Pin, SPI Speed
-// See http://www.airspayce.com/mikem/bcm2835/group__constants.html#ga63c029bd6500167152db4e57736d0939
-// and the related enumerations for pin information.
-
-//RPi with SPIDEV - Note: Edit RF24/arch/BBB/spi.cpp and  set 'this->device = "/dev/spidev0.0";;' or as listed in /dev
-RF24 radio(22,0);
-
 //returns the system time in microseconds since epoch
 int64_t get_time()
 {
@@ -49,12 +34,12 @@ int64_t get_time()
 class Radio
 {
    public:
-      Radio(int DevMajor, int DevMinor, int Channel);
+      Radio(int ce_pin, int DevMajor, int DevMinor, int Channel);
 
       Radio(Radio&) = delete;
-      Rado& operator=(Radio const&) = delete;
-      Radio(Radio&& r) = default;
-      Radio& operator=(Radio&& r) = default;
+      Radio& operator=(Radio const&) = delete;
+      Radio(Radio&& r) : radio(std::move(r.radio)) {}
+      Radio& operator=(Radio&& r) { radio = std::move(r.radio); }
 
       // power up the radio and start listening for packets
       void PowerUp();
@@ -64,7 +49,7 @@ class Radio
 
       // returns true if there is a packet available.  If so,
       // sets the pipe number.
-      bool Available(uint8_t& Pipe);
+      bool Available(uint8_t* Pipe);
 
       // returns the payload size
       int PayloadSize();
@@ -132,7 +117,7 @@ Radio::PowerDown()
 
 inline
 bool
-Radio::Available(uint8_t& Pipe)
+Radio::Available(uint8_t* Pipe)
 {
    return radio.available(Pipe);
 }
@@ -182,7 +167,9 @@ int main(int argc, char** argv)
 
    std::vector<Radio> Radios;
 
-   Radios.push_back(22, 0, 0, 76);
+   Radios.push_back(Radio(22, 0, 0, 76));
+   Radios.push_back(Radio(27, 0, 1, 78));
+
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
@@ -236,13 +223,14 @@ int main(int argc, char** argv)
       if (Clients.empty())
          continue;
 
-      for (auto& r : Radios)
+      for (unsigned i = 0; i < Radios.size(); ++i)
       {
+         Radio& r = Radios[i];
          // check for data on the radio
          uint8_t PipeNum = 0;
          while (r.Available(&PipeNum))
          {
-            char buf[33+8];
+            unsigned char buf[33+9];
             int len = 0;
             len = r.PayloadSize();
 //	    std::cout << len << '\n';
@@ -250,24 +238,24 @@ int main(int argc, char** argv)
                continue;
             r.Read(buf+9, len);
             *static_cast<int64_t*>(static_cast<void*>(buf)) = get_time();
-            buf[8] = PipeNum;  // bell number
-         }
+            buf[8] = (i*4) + PipeNum;  // bell number
 
-         std::set<int>::iterator I = Clients.begin();
-         while (I != Clients.end())
-         {
-            int c = *I;
-            int rc = send(c, buf, 9+len, MSG_NOSIGNAL);
-            if (rc <= 0)
+            std::set<int>::iterator I = Clients.begin();
+            while (I != Clients.end())
             {
-               //perror("write");
-               std::cerr << "write failure writing to client " << c << std::endl;
-               close(c);
-               I = Clients.erase(I);
-            }
-            else
-            {
-               ++I;
+               int c = *I;
+               int rc = send(c, buf, 9+len, MSG_NOSIGNAL);
+               if (rc <= 0)
+               {
+                  //perror("write");
+                  std::cerr << "write failure writing to client " << c << std::endl;
+                  close(c);
+                  I = Clients.erase(I);
+               }
+               else
+               {
+                  ++I;
+               }
             }
          }
       }

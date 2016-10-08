@@ -363,9 +363,11 @@ int main()
             int NumAccel = (Flags & 0x70) >> 4;
             int NumGyro = Flags & 0x0F;
 
-            if (rc != NumAccel*6 + NumGyro*2 + 4 + 1 + 8)
+            int ExpectedPacketLength = NumAccel*6 + NumGyro*2 + 4 + 1 + 8;
+
+            if (rc != ExpectedPacketLength)
             {
-               std::cerr << "Unexpected packet length!\n";
+               std::cerr << "Unexpected packet length " << rc << " expected " << ExpectedPacketLength << "\n";
                continue;
             }
 
