@@ -68,27 +68,29 @@ int main(int argc, char** argv)
             int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+16));
             int Offset = 17;
             // status packet
+            std::cout << "Gyro " << Bell;
             if (Flags & 0x20)
             {
                // we have a temperature
                int8_t T = *static_cast<int8_t const*>(static_cast<void const*>(buf+Offset));
                ++Offset;
-               std::cout << "Gyro " << Bell << " temperature " << T << '\n';
+               std::cout << " temperature " << int(T);
             }
             if (Flags & 0x10)
             {
                // charging voltage
                uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
                Offset += 2;
-               std::cout << "Gyro " << Bell << " charging " << V << '\n';
+               std::cout << " charging " << V;
             }
             if (Flags & 0x04)
             {
                // battery charge
                uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
                Offset += 2;
-               std::cout << "Gyro " << Bell << " battery " << V << '\n';
+               std::cout << " battery " << V ;
             }
+            std::cout << '\n';
          }
          else
          {
