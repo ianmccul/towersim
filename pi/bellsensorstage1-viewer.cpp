@@ -44,7 +44,7 @@ int main(int argc, char** argv)
 
    while(1)
    {
-      int rc=read(fd, buf+1, sizeof(buf)-1);
+      int rc=read(fd, buf, buf);
 
       if (rc > 0)
       {
@@ -101,7 +101,7 @@ int main(int argc, char** argv)
 
             if (rc != ExpectedPacketLength)
             {
-               std::cerr << "Unexpected packet length " << rc << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
+               std::cerr << "Bell " << Bell << " unexpected packet length " << rc << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
                          << " Delay=" << Delay << " Flags=" << uint16_t(Flags) << " SeqNum=" << uint16_t(SeqNum) << "\n";
                continue;
             }
