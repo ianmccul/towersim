@@ -90,7 +90,7 @@ int main(int argc, char** argv)
                Offset += 2;
                std::cout << " battery " << V ;
             }
-            std::cout << '\n';
+            std::cout << std::endl;
          }
          else
          {
@@ -105,14 +105,13 @@ int main(int argc, char** argv)
             if (rc != ExpectedPacketLength)
             {
                std::cerr << "Bell " << Bell << " unexpected packet length " << rc << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
-                         << " Delay=" << Delay << " Flags=" << uint16_t(Flags) << " SeqNum=" << uint16_t(SeqNum) << "\n";
+                         << " Delay=" << Delay << " Flags=" << uint16_t(Flags) << " SeqNum=" << uint16_t(SeqNum) << std::endl;
                continue;
             }
 
             if (HaveLastSeqNum[Bell] && SeqNum != uint8_t(LastSeqNum[Bell]+1))
             {
-               std::cout << "Packet loss " << (int(uint8_t(SeqNum-LastSeqNum[Bell]))-1) << " on bell " << Bell << '\n';
-               std::cout << "Delay=" << Delay << " old delay=" << LastDelay[Bell] << '\n';
+               std::cout << "Packet loss bell " << Bell << " packets " << (int(uint8_t(SeqNum-LastSeqNum[Bell]))-1) << std::endl;
             }
             LastSeqNum[Bell] = SeqNum;
             HaveLastSeqNum[Bell] = true;
