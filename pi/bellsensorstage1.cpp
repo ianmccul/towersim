@@ -16,6 +16,7 @@
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <cstddef>
+#include <array>
 
 //returns the system time in microseconds since epoch
 int64_t get_time()
@@ -171,7 +172,10 @@ int main(int argc, char** argv)
 {
    bool TestMode = false;
    uint16_t TestSeq = 0;
-   unsigned char SeqNum = 0;
+
+   std::array<unsigned char[32], 16> LastBuf;
+   std::array<int, 16> LastBufSize{};
+
    int Verbose = 0;
    if (argc >= 2)
    {
@@ -274,8 +278,27 @@ int main(int argc, char** argv)
             }
             if (len >= 1)
             {
+               int BellNum = (i*4) + PipeNum;
 
                r.Read(buf+9, len);
+
+               // deduplication
+               if (LastBufSize[BellNum] == len && (LastBuf[BellNum][1]&0x03 == buf[10]&0x03))
+               {
+                  // possible duplicate packet, check the payload
+                  if (memcmp(LastBuf[BellNum]+2, buf+11, len-2) == 0)
+                  {
+                     std::cout << "Ignoring duplicate packet for bell " << BellNum << '\n';
+                  }
+                  continue;
+               }
+
+               // save the packet
+               memcpy(LastBuf[BellNum], buf+9, len);
+               LastBufSize[BellNum] = len;
+
+               // no point removing the sequence number, it only affects us by 0-3 microseconds
+
                *static_cast<int64_t*>(static_cast<void*>(buf)) = get_time();
                buf[8] = (i*4) + PipeNum;  // bell number
 
