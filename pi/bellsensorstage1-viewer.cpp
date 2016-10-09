@@ -106,9 +106,9 @@ int main(int argc, char** argv)
                continue;
             }
 
-            if (HaveLastSeqNum[Bell] && SeqNum != LastSeqNum[Bell]+1)
+            if (HaveLastSeqNum[Bell] && SeqNum != uint8_t(LastSeqNum[Bell]+1))
             {
-               std::cout << "Packet loss " << (SeqNum-LastSeqNum[Bell]) << " on bell " << Bell << '\n';
+               std::cout << "Packet loss " << int(uint8_t(SeqNum-LastSeqNum[Bell])) << " on bell " << Bell << '\n';
             }
             LastSeqNum[Bell] = SeqNum;
             HaveLastSeqNum[Bell] = true;
