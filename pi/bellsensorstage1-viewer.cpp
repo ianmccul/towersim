@@ -44,7 +44,7 @@ int main(int argc, char** argv)
 
    while(1)
    {
-      int rc=read(fd, buf, buf);
+      int rc=read(fd, buf, sizeof(buf));
 
       if (rc > 0)
       {
