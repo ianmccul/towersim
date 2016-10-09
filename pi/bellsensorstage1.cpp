@@ -31,6 +31,19 @@ int64_t get_time()
    return ms + int64_t(s)*1000000;
 }
 
+void sleep_ns(long nanosec)
+{
+   struct timespec spec;
+   spec.tv_sec = 0;
+   spec.tv_nsec = nanosec;
+   nanosleep(&spec, &spec);
+}
+
+void sleep_ms(long microsec)
+{
+   sleep_ns(microsec*1000);
+}
+
 class Radio
 {
    public:
@@ -38,8 +51,8 @@ class Radio
 
       Radio(Radio&) = delete;
       Radio& operator=(Radio const&) = delete;
-      Radio(Radio&& r) : radio(std::move(r.radio)) {}
-      Radio& operator=(Radio&& r) { radio = std::move(r.radio); }
+      Radio(Radio&& r) = default;
+      Radio& operator=(Radio&& r) = default;
 
       // power up the radio and start listening for packets
       void PowerUp();
@@ -59,10 +72,11 @@ class Radio
 
    private:
       RF24 radio;
+      bool ok;
 };
 
 Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel)
-   : radio(ce_pin, DevMajor*10+DevMinor)
+   : radio(ce_pin, DevMajor*10+DevMinor), ok(true)
 {
    radio.begin();
 
@@ -88,7 +102,7 @@ Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel)
    radio.closeReadingPipe(4);
    radio.closeReadingPipe(5);
    radio.openReadingPipe(0, 0xe7e7e7e7e7);
-   radio.openReadingPipe(1, 0xf0f0f0f0f0);
+   radio.openReadingPipe(1, 0x0f0f0f0f0f);
    uint8_t PipeAddr = 0x17;
    radio.openReadingPipe(2, &PipeAddr);
    PipeAddr = 0x2c;
@@ -96,6 +110,13 @@ Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel)
    radio.enableDynamicPayloads();  // need to do this AFTER opening the pipes!
    std::cout << "Starting radio spidev" << DevMajor << '.' << DevMinor << " ce " << ce_pin << " on channel " << Channel << std::endl;
    radio.printDetails();
+   // make sure that all is OK by reading the channel back
+   uint8_t Ch = radio.getChannel();
+   ok = (Ch == Channel);
+   if (!ok)
+   {
+      std::cout << "Failed to configure radio spidev" << DevMajor << '.' << DevMinor << "!\n";
+   }
    radio.powerDown();
 }
 
@@ -119,7 +140,7 @@ inline
 bool
 Radio::Available(uint8_t* Pipe)
 {
-   return radio.available(Pipe);
+   return ok && radio.available(Pipe);
 }
 
 inline
@@ -151,25 +172,30 @@ int main(int argc, char** argv)
    bool TestMode = false;
    uint16_t TestSeq = 0;
    unsigned char SeqNum = 0;
+   int Verbose = 0;
    if (argc >= 2)
    {
-      if (argc == 2 && argv[1] == std::string("--test"))
+      if (argc == 2 && argv[1] == std::string("-v"))
       {
-         TestMode = true;
-         std::cerr << "Enabling test mode.\n";
+         Verbose = 1;
+         std::cerr << "Enabling verbose mode.\n";
       }
       else
       {
-         std::cerr << "usage: bellsensorstage1 [--test]\n";
+         std::cerr << "usage: bellsensorstage1 [-v]\n";
          return 1;
       }
    }
 
    std::vector<Radio> Radios;
+   Radios.reserve(3);
+
+   //
+   // configure the radios
+   //
 
    Radios.push_back(Radio(22, 0, 0, 76));
    Radios.push_back(Radio(27, 0, 1, 78));
-
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
@@ -200,6 +226,15 @@ int main(int argc, char** argv)
       exit(-1);
    }
 
+   // turn on the radios in verbose mode
+   if (Verbose > 0)
+   {
+      for (auto& r : Radios)
+      {
+         r.PowerUp();
+      }
+   }
+
    // forever loop
    while (1)
    {
@@ -208,7 +243,7 @@ int main(int argc, char** argv)
       if (cl >= 0)
       {
          std::cout << "Accepted connection " << cl << std::endl;
-         if (Clients.empty())
+         if (Verbose == 0 && Clients.empty())
          {
             // first client, start up the radios
             std::cout << "Got the first client, powering up radios." << std::endl;
@@ -220,7 +255,7 @@ int main(int argc, char** argv)
          Clients.insert(cl);
       }
 
-      if (Clients.empty())
+      if (Verbose == 0 && Clients.empty())
          continue;
 
       for (unsigned i = 0; i < Radios.size(); ++i)
@@ -228,39 +263,44 @@ int main(int argc, char** argv)
          Radio& r = Radios[i];
          // check for data on the radio
          uint8_t PipeNum = 0;
-         while (r.Available(&PipeNum))
+         if (r.Available(&PipeNum))
          {
             unsigned char buf[33+9];
             int len = 0;
             len = r.PayloadSize();
-//	    std::cout << len << '\n';
-            if (len < 1)
-               continue;
-            r.Read(buf+9, len);
-            *static_cast<int64_t*>(static_cast<void*>(buf)) = get_time();
-            buf[8] = (i*4) + PipeNum;  // bell number
-
-            std::set<int>::iterator I = Clients.begin();
-            while (I != Clients.end())
+            if (Verbose > 0)
             {
-               int c = *I;
-               int rc = send(c, buf, 9+len, MSG_NOSIGNAL);
-               if (rc <= 0)
+               std::cout << "Got a packet, length = " << len << '\n';
+            }
+            if (len >= 1)
+            {
+
+               r.Read(buf+9, len);
+               *static_cast<int64_t*>(static_cast<void*>(buf)) = get_time();
+               buf[8] = (i*4) + PipeNum;  // bell number
+
+               std::set<int>::iterator I = Clients.begin();
+               while (I != Clients.end())
                {
-                  //perror("write");
-                  std::cerr << "write failure writing to client " << c << std::endl;
-                  close(c);
-                  I = Clients.erase(I);
-               }
-               else
-               {
-                  ++I;
+                 int c = *I;
+                  int rc = send(c, buf, 9+len, MSG_NOSIGNAL);
+                  if (rc <= 0)
+                  {
+                     //perror("write");
+                     std::cerr << "write failure writing to client " << c << std::endl;
+                     close(c);
+                     I = Clients.erase(I);
+                  }
+                  else
+                  {
+                     ++I;
+                  }
                }
             }
          }
       }
 
-      if (Clients.empty())
+      if (Verbose == 0 && Clients.empty())
       {
          std::cout << "Last client has disconnected, powering down radios." << std::endl;
          for (auto& r : Radios)
