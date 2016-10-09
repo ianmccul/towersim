@@ -10,6 +10,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <array>
 
 int main(int argc, char** argv)
 {
@@ -38,30 +39,89 @@ int main(int argc, char** argv)
 
    int n = 0;
 
+   std::array<bool, 16> HaveLastSeqNum{};
+   std::array<uint8_t, 16> LastSeqNum;
+
    while(1)
    {
       int rc=read(fd, buf+1, sizeof(buf)-1);
+
       if (rc > 0)
       {
-         if (rc > 255)
+         int Size = rc;
+         int64_t Time = *static_cast<int64_t const*>(static_cast<void const*>(buf));
+         int Bell = buf[8];
+         uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+9));
+         unsigned char Flags = buf[11];
+
+         if (Bell < 0 || Bell > 15)
          {
-            std::cerr << "unexpected: packet too long, size " << rc << "\n";
-            return 3;
+            std::cerr << "unexpected bell number " << Bell << '\n';
+            continue;
          }
-         
-         // include the length
-         buf[0] = rc;
-         if (int k = write(out_fd, buf, rc+1) != rc+1)
+
+         if (Flags & 0x80)
          {
-            std::cout << "error writing to file: " << strerror(errno) << ", bytes written =" << k << " requested = " << rc << '\n';
-            return 2;
+            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
+            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
+            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+16));
+            int Offset = 17;
+            // status packet
+            if (Flags & 0x20)
+            {
+               // we have a temperature
+               int8_t T = *static_cast<int8_t const*>(static_cast<void const*>(buf+Offset));
+               ++Offset;
+               std::cout << "Gyro " << Bell << " temperature " << T << '\n';
+            }
+            if (Flags & 0x10)
+            {
+               // charging voltage
+               uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
+               Offset += 2;
+               std::cout << "Gyro " << Bell << " charging " << V << '\n';
+            }
+            if (Flags & 0x04)
+            {
+               // battery charge
+               uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
+               Offset += 2;
+               std::cout << "Gyro " << Bell << " battery " << V << '\n';
+            }
+         }
+         else
+         {
+            // sensor packet
+            uint8_t SeqNum = buf[12];
+
+            int NumAccel = (Flags & 0x70) >> 4;
+            int NumGyro = Flags & 0x0F;
+
+            int ExpectedPacketLength = NumAccel*6 + NumGyro*2 + 4 + 1 + 8;
+
+            if (rc != ExpectedPacketLength)
+            {
+               std::cerr << "Unexpected packet length " << rc << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
+                         << " Delay=" << Delay << " Flags=" << uint16_t(Flags) << " SeqNum=" << uint16_t(SeqNum) << "\n";
+               continue;
+            }
+
+            if (HaveLastSeqNum[Bell] && SeqNum != LastSeqNum[Bell]+1)
+            {
+               std::cout << "Packet loss " << (SeqNum-LastSeqNum[Bell]) << " on bell " << Bell << '\n';
+            }
+            LastSeqNum[Bell] = SeqNum;
+            HaveLastSeqNum[Bell] = true;
          }
       }
-      else
+      else if (rc < 0)
       {
-         close(out_fd);
-         std::cerr << "error reading from socket: " << strerror(errno) << '\n';
-         return 2;
+         std::cout << "read failed.\n";
+      }
+      else if (rc == 0)
+      {
+         std::cout << "server closed.\n";
+         return 0;
       }
    }
    return 0;

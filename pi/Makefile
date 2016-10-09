@@ -81,7 +81,13 @@ gyrofit-daemon : sensortcpserver.o
 
 LIBS_gyrofit-daemon = -lboost_system -lboost_date_time
 
-executable = gyrofit-daemon bellsensorstage1 bellsensorstage2 bellsensorstage1-log bellsensorstage2_stdio
+stage1 = bellsensorstage1 bellsensorstage1-log bellsensorstage1-viewer
+
+stage2 = bellsensorstage2  bellsensorstage2_stdio
+
+stage3 = gyrofit-daemon
+
+executable = $(stage1) $(stage2) $(stage3)
 
 all : $(executable)
 
