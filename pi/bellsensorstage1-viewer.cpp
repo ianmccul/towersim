@@ -41,6 +41,7 @@ int main(int argc, char** argv)
 
    std::array<bool, 16> HaveLastSeqNum{};
    std::array<uint8_t, 16> LastSeqNum;
+   std::array<uint16_t, 16> LastDelay;
 
    while(1)
    {
@@ -108,10 +109,12 @@ int main(int argc, char** argv)
 
             if (HaveLastSeqNum[Bell] && SeqNum != uint8_t(LastSeqNum[Bell]+1))
             {
-               std::cout << "Packet loss " << int(uint8_t(SeqNum-LastSeqNum[Bell])) << " on bell " << Bell << '\n';
+               std::cout << "Packet loss " << (int(uint8_t(SeqNum-LastSeqNum[Bell]))-1) << " on bell " << Bell << '\n';
+               std::cout << "Delay=" << Delay << " old delay=" << LastDelay[Bell] << '\n';
             }
             LastSeqNum[Bell] = SeqNum;
             HaveLastSeqNum[Bell] = true;
+            LastDelay[Bell] = Delay;
          }
       }
       else if (rc < 0)
