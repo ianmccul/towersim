@@ -11,20 +11,29 @@
 //
 // packet format for sensor readings:
 //
-// delay (2 bytes) |flags | seq | payload (up to 28 bytes)
+// delay (14 bits) seq (2 bits) |flags | seq | payload (up to 28 bytes)
+// delay is a 14-bit unsigned in units of 4 microseconds - maximum value
+// 16383 represents 65.532 miliseconds.
+///
 // flags is 8 bits: 0 AAA GGGG
 // seq is a 1-byte sequentially increasing number
-// delay is the number of microseconds that this packet has been delayed (unsigned 16 bit)
+// delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit)
 // AAA is number of 6-byte accelerometer readings (first in the payload)
 // GGGG is the number of 2-byte z-axis gyro readings
 //
+// Since we are not using the nRF retransmit functionality,
+// on a lost ACK packet we will be unaware that the receive was successful,
+// and thefore we will send the packet again.  The packet will have a different CRC,
+// hence will be picked up by the receiver as a valid packet, rather than
+// intercepted as a duplicate.  Hence we must use a sequence number on all packets
+// (this wouldn't need to be 8 bits, it could be smaller).
 // packet format after lost sensor packet:
 // delay (2 bytes) | 11000000 | acc lost count (2 bytes) | gyro lost count (2 bytes) | gyro sum (4 bytes)
 
 // but we need to indicate the start of a stream.
 
 // packet format for status information:
-// delay (2 bytes) |10TCDBSX | acc ODR (2 bytes) | gyro ODR (2 bytes) | gyro bandwidth (1 byte) | payload
+// delay/seq (2 bytes) |10TCDBSX | acc ODR (2 bytes) | gyro ODR (2 bytes) | gyro bandwidth (1 byte) | payload
 // if T is set, then the payload conains a 1-byte gyro temperature reading
 // if C is set, the charging circuit is active, otherwise it is not active
 // if D is set, the payload contains a 2-byte charging current reading
@@ -125,6 +134,8 @@ class PacketScheduler
       Timer RetransmitTimer;
       int32_t RetransmitPoint;
 
+      uint16_t Seq;  // 2-bit sequence number
+
       // high and low priority buffers
       char HiBuf[32];
       int HiBufSz;
@@ -140,7 +151,8 @@ PacketScheduler::PacketScheduler(nRF24L01P_PTX& PTX_)
      HaveLowPriorityPacket(false),
      NewLowPriorityPacket(false),
      NumRetransmits(0),
-     RetransmitPoint(0)
+     RetransmitPoint(0),
+     Seq(0)
 {
 }
 
@@ -167,6 +179,7 @@ PacketScheduler::Poll()
          // successful packet transmission
          NumRetransmits = 0;
          RetransmitTimer.stop();
+         Seq = (Seq + 1u) & 0x03;
          if (PacketInFlight == 1 && !NewHighPriorityPacket)
          {
             HaveHighPriorityPacket = false;
@@ -188,16 +201,18 @@ PacketScheduler::Poll()
    // Transmit a packet, if we have one ready to go
    if (HaveHighPriorityPacket)
    {
-      uint16_t const d = HighPriorityTimer.read_us();
-      std::memcpy(HiBuf, &d, sizeof(d));
+      uint16_t d = HighPriorityTimer.read_us();
+      d = (d & 0xFFFC) | Seq;
+      std::memcpy(HiBuf, &d, 2);
       PTX.TransmitPacketNB(HiBuf, HiBufSz);
       PacketInFlight = 1;
       NewHighPriorityPacket = false;
    }
    else if (HaveLowPriorityPacket)
    {
-      uint16_t const d = LowPriorityTimer.read_us();
-      std::memcpy(LoBuf, &d, sizeof(d));
+      uint16_t d = LowPriorityTimer.read_us();
+      d = (d & 0xFFFC) | Seq;
+      std::memcpy(LoBuf, &d, 2);
       PTX.TransmitPacketNB(LoBuf, LoBufSz);
       PacketInFlight = 2;
       NewLowPriorityPacket = false;
@@ -242,7 +257,7 @@ void WriteSamplePacket(PacketScheduler& Scheduler,
    char buf[30];
    int BufSz = 2 + AccelBuffer.size()*6 + GyroBuffer.size()*2;
 
-   buf[0] = (AccelBuffer.size() << 4) + GyroBuffer.size();
+   buf[0] = uint8_t(AccelBuffer.size() << 4) + uint8_t(GyroBuffer.size());
    buf[1] = SeqNum++;
 
    std::memcpy(buf+2, AccelBuffer.data(), AccelBuffer.size()*6);
@@ -296,6 +311,7 @@ int const MaxAccelSamples = 4;
 int const MaxGyroSamples = 14;
 
 int const PacketWatermark = 23;
+//int const PacketWatermark = 1;
 
 int main()
 {
@@ -324,7 +340,7 @@ int main()
 
    unsigned Addr = (Addr1.read()<<1) + Addr0.read();
 
-   uint64_t PipeAddrs[4] = {0xe7e7e7e7e7ULL, 0xf0f0f0f0f0ULL, 0xf0f0f0f017ULL, 0xf0f0f0f02cULL};
+   uint64_t PipeAddrs[4] = {0xe7e7e7e7e7ULL, 0x0f0f0f0f0fULL, 0x0f0f0f0f17ULL, 0x0f0f0f0f2cULL};
 
    unsigned Channel = (Ch1.read()<<1) + Ch0.read();
 
@@ -410,6 +426,11 @@ int main()
          AccelBuffer.push_back(Data);
       }
 
+      if ((AccelBuffer.size()*6 + GyroBuffer.size()*2) >= PacketWatermark)
+      {
+         WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer);
+      }
+
       if (Gyro.DataAvailable())
       {
          L3GTypes::vector v;
@@ -422,7 +443,7 @@ int main()
             printf("Gyro read failed!\r\n");
       }
 
-      if (AccelBuffer.size()*6 + GyroBuffer.size()*2 >= PacketWatermark)
+      if ((AccelBuffer.size()*6 + GyroBuffer.size()*2) >= PacketWatermark)
       {
          WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer);
       }
