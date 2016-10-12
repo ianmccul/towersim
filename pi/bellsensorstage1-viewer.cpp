@@ -11,45 +11,111 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <array>
+#include <boost/program_options.hpp>
+
+namespace prog_opt = boost::program_options;
 
 int main(int argc, char** argv)
 {
-   std::string SocketPath{"\0bellsensordaemonsocketraw", 26};
-
-   unsigned char buf[100];
-
-   int fd = socket(AF_UNIX, SOCK_SEQPACKET, 0);
-   if (fd < 0)
+   try
    {
-      perror("socket error");
-      exit(-1);
-   }
+      std::string InFile;
 
-   struct sockaddr_un addr;
-   memset(&addr, 0, sizeof(struct sockaddr_un));
-   addr.sun_family = AF_LOCAL;
-   std::copy(SocketPath.begin(), SocketPath.end(), addr.sun_path);
+      prog_opt::options_description desc("Allowed options");
+      desc.add_options()
+         ("help", "show this help message")
+         ("infile", prog_opt::value(&InFile), "read input from a file rather than a socket")
+         ;
 
-   if (connect(fd, (struct sockaddr*)&addr,
-               SocketPath.size() + offsetof(sockaddr_un, sun_path)) == -1)
-   {
-      perror("connect error");
-      exit(-1);
-   }
+      prog_opt::options_description opt;
+      opt.add(desc);
 
-   int n = 0;
+      prog_opt::variables_map vm;
+      prog_opt::store(prog_opt::command_line_parser(argc, argv).
+                      options(opt).run(), vm);
+      prog_opt::notify(vm);
 
-   std::array<bool, 16> HaveLastSeqNum{};
-   std::array<uint8_t, 16> LastSeqNum;
-   std::array<uint16_t, 16> LastDelay;
-
-   while(1)
-   {
-      int rc=read(fd, buf, sizeof(buf));
-
-      if (rc > 0)
+      if (vm.count("help"))
       {
-         int Size = rc;
+         std::cerr << "usage: bellsensorstage2 [options]\n";
+         std::cerr << desc << "\n";
+         return 1;
+      }
+
+
+      // the input file descriptor
+      bool const ReadFromFile = !InFile.empty();
+
+      int infd = -1;
+      if (ReadFromFile)
+      {
+         infd = open(InFile.c_str(), O_RDONLY);
+         if (infd < 0)
+         {
+            perror("Cannot open input file");
+            exit(1);
+         }
+      }
+      else
+      {
+         // construct the socket
+         std::string SocketPath{"\0bellsensordaemonsocketraw", 26};
+
+         infd = socket(AF_UNIX, SOCK_SEQPACKET, 0);
+         if (infd < 0)
+         {
+            perror("socket error");
+            exit(1);
+         }
+
+         struct sockaddr_un addr;
+         memset(&addr, 0, sizeof(struct sockaddr_un));
+         addr.sun_family = AF_LOCAL;
+         std::copy(SocketPath.begin(), SocketPath.end(), addr.sun_path);
+
+         if (connect(infd, (struct sockaddr*)&addr,
+                     SocketPath.size() + offsetof(sockaddr_un, sun_path)) == -1)
+         {
+            perror("connect error");
+            exit(1);
+         }
+      }
+
+      unsigned char buf[100];
+
+      std::array<bool, 16> HaveLastSeqNum{};
+      std::array<uint8_t, 16> LastSeqNum;
+      std::array<uint16_t, 16> LastDelay;
+
+      while(1)
+      {
+         uint8_t len;
+         if (ReadFromFile)
+         {
+            read(infd, &len, 1);
+            int r = read(infd, buf, len);
+            if (r != len)
+            {
+               perror("Error reading from file");
+               return 1;
+            }
+         }
+         else
+         {
+            len = read(infd, buf, sizeof(buf));
+            if (len < 0)
+            {
+               std::cout << "read failed.\n";
+               return 1;
+            }
+            else if (len == 0)
+            {
+               std::cout << "server closed.\n";
+               return 0;
+            }
+         }
+
+         int Size = len;
          int64_t Time = *static_cast<int64_t const*>(static_cast<void const*>(buf));
          int Bell = buf[8];
          uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+9));
@@ -102,31 +168,36 @@ int main(int argc, char** argv)
 
             int ExpectedPacketLength = NumAccel*6 + NumGyro*2 + 4 + 1 + 8;
 
-            if (rc != ExpectedPacketLength)
+            if (Size != ExpectedPacketLength)
             {
-               std::cerr << "Bell " << Bell << " unexpected packet length " << rc << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
+               std::cerr << Time << " Bell " << Bell << " unexpected packet length " << Size << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
                          << " Delay=" << Delay << " Flags=" << uint16_t(Flags) << " SeqNum=" << uint16_t(SeqNum) << std::endl;
                continue;
             }
 
             if (HaveLastSeqNum[Bell] && SeqNum != uint8_t(LastSeqNum[Bell]+1))
             {
-               std::cout << "Packet loss bell " << Bell << " packets " << (int(uint8_t(SeqNum-LastSeqNum[Bell]))-1) << std::endl;
+               std::cout << Time << " Packet loss bell " << Bell << " packets " << (int(uint8_t(SeqNum-LastSeqNum[Bell]))-1) << std::endl;
             }
             LastSeqNum[Bell] = SeqNum;
             HaveLastSeqNum[Bell] = true;
             LastDelay[Bell] = Delay;
          }
       }
-      else if (rc < 0)
-      {
-         std::cout << "read failed.\n";
-      }
-      else if (rc == 0)
-      {
-         std::cout << "server closed.\n";
-         return 0;
-      }
+   }
+   catch (prog_opt::error& e)
+   {
+      std::cerr << "Exception while processing command line options: " << e.what() << '\n';
+      return 1;
+   }
+   catch(std::exception& e)
+   {
+      std::cerr << "error: " << e.what() << "\n";
+      return 1;
+   }
+   catch(...)
+   {
+      std::cerr << "Exception of unknown type!\n";
    }
    return 0;
 }

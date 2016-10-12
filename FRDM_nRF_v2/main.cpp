@@ -4,7 +4,7 @@
 #include "gyrointerface.h"
 #include "nRF24L01P.h"
 #include "nRF24L01P_PTX.h"
-#include "matvec.h"
+#include "common/matvec/matvec.h"
 #include <cstdint>
 #include <vector>
 

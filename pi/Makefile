@@ -4,13 +4,13 @@ SHELL = /bin/sh
 
 SRCDIR=.
 
-CXXFLAGS:=$(CXXFLAGS) -std=c++11 -pthread
+CXXFLAGS:=$(CXXFLAGS) -std=c++11 -pthread -I..
 
 nodep-targets = clean mrproper dep uninstall dist distclean maintainer-clean dist-dir tar-dir tar
 
 MAKEDEPEND = $(CXX) -MM -MT $@ $(CXXFLAGS) -o $*.Td $<
 
-VPATH = ../
+VPATH = ../ ../common/
 
 # Makedepend with post-processing to add dummy rules for each dependency
 MAKEDEPEND_INFO = $(MAKEDEPEND); \
@@ -86,6 +86,11 @@ stage1 = bellsensorstage1 bellsensorstage1-log bellsensorstage1-viewer
 stage2 = bellsensorstage2  bellsensorstage2_stdio
 
 stage3 = gyrofit-daemon
+
+LIBS_bellsensorstage2 = -lboost_program_options
+
+LIBS_bellsensorstage1-viewer = -lboost_program_options
+
 
 executable = $(stage1) $(stage2) $(stage3)
 

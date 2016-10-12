@@ -7,6 +7,7 @@
 #include <poll.h>
 #include <set>
 #include <cstddef>
+#include "common/matvec/matvec.h"
 
 struct MsgTypes
 {
@@ -15,6 +16,7 @@ struct MsgTypes
    static unsigned char const GyroTemp = 'T';
    static unsigned char const BatteryV = 'B';
    static unsigned char const ChargeV = 'C';
+   static unsigned char const Accel = 'A';
 };
 
 int main()
@@ -56,6 +58,12 @@ int main()
             int Bell = *static_cast<int8_t const*>(static_cast<void const*>(buf+9));
             float z = *static_cast<float const*>(static_cast<void const*>(buf+10));
             std::cout << Time << " G " << Bell << ' ' << z << std::endl;
+         }
+         else if (MsgType == MsgTypes::Accel)
+         {
+            int Bell = *static_cast<int8_t const*>(static_cast<void const*>(buf+9));
+            vector3<int16_t> x = *static_cast<vector3<int16_t> const*>(static_cast<void const*>(buf+10));
+            std::cout << Time << " A " << Bell << ' ' << x[0] << ' ' << x[1] << ' ' << x[2] << std::endl;
          }
          else if (MsgType == MsgTypes::GyroCalibration)
          {

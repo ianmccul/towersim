@@ -119,7 +119,7 @@ GyroBDC::Process(int64_t Time, float z)
             // DS test.  Check that the energy has changed by less than EnergyThreshold (or the LastEnergy is zero).
             if (LastEnergy != 0 && std::abs(V*V-LastEnergy) > EnergyThreshold && TimeEx < LastBDC+ResetTime)
             {
-               std::cerr << "Ignoring local extrema at " << T << " with velocity " << V
+               std::cerr << "Ignoring local extrema near " << CurrentMaxTime << " with velocity " << V
                          << " as the change in energy is too big.  Possible stay event?\n";
             }
             else
