@@ -199,7 +199,8 @@ int main(int argc, char** argv)
    //
 
    Radios.push_back(Radio(22, 0, 0, 76));
-   Radios.push_back(Radio(27, 0, 1, 78));
+   Radios.push_back(Radio(4 , 0, 1, 78));
+   Radios.push_back(Radio(18, 1, 1, 82));
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
