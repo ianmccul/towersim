@@ -10,23 +10,23 @@ else
     RM = $(SHELL) -c "rm -rf \"$(1)\""
 endif
 
-ifeq (,$(filter .build,$(notdir $(CURDIR))))
-.SUFFIXES:
-OBJDIR := .build
-mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
-MAKETARGET = $(MAKE) --no-print-directory -C $(OBJDIR) -f $(mkfile_path) \
-		SRCDIR=$(CURDIR) $(MAKECMDGOALS)
-.PHONY: $(OBJDIR) clean
-all:
-	+@$(call MAKEDIR,$(OBJDIR))
-	+@$(MAKETARGET)
-$(OBJDIR): all
-Makefile : ;
-% :: $(OBJDIR) ; :
-clean :
-	$(call RM,$(OBJDIR))
-
-else
+#ifeq (,$(filter .build,$(notdir $(CURDIR))))
+#.SUFFIXES:
+#OBJDIR := .build
+#mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
+#MAKETARGET = $(MAKE) --no-print-directory -C $(OBJDIR) -f $(mkfile_path) \
+#		SRCDIR=$(CURDIR) $(MAKECMDGOALS)
+#.PHONY: $(OBJDIR) clean
+#all:
+#	+@$(call MAKEDIR,$(OBJDIR))
+#	+@$(MAKETARGET)
+#$(OBJDIR): all
+#Makefile : ;
+#% :: $(OBJDIR) ; :
+#clean :
+#	$(call RM,$(OBJDIR))
+#
+#else
 
 VPATH = .. ../common
 
@@ -34,10 +34,10 @@ GCC_BIN =
 PROJECT = FRDM_nRF_v2
 OBJECTS = ./main.o ./mma8451/MMA8451Q.o ./nRF24L01/nRF24L01P_PTX.o ./nRF24L01/nRF24L01P_PRX.o ./nRF24L01/nRF24L01P.o ./l3g/l3g.o ./l3g/gyrointerface.o 
 SYS_OBJECTS = ./mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/cmsis_nvic.o ./mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/mbed_board.o ./mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/mbed_overrides.o ./mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o ./mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/startup_MKL25Z4.o ./mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/system_MKL25Z4.o 
-INCLUDE_PATHS = -I../. -I.././mma8451 -I.././nRF24L01 -I.././l3g -I.././i2cdevice -I.././mbed -I.././mbed/TARGET_KL25Z -I.././mbed/TARGET_KL25Z/TARGET_Freescale -I.././mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX -I.././mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z -I.././mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM 
-LIBRARY_PATHS = -L.././mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM 
+INCLUDE_PATHS = -I../. -Imma8451 -InRF24L01 -Il3g -Ii2cdevice -Imbed -Imbed/TARGET_KL25Z -Imbed/TARGET_KL25Z/TARGET_Freescale -Imbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX -Imbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z -Imbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM 
+LIBRARY_PATHS = -Lmbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM 
 LIBRARIES = -lmbed 
-LINKER_SCRIPT = .././mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/MKL25Z4.ld
+LINKER_SCRIPT = mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/MKL25Z4.ld
 
 ############################################################################### 
 AS      = $(GCC_BIN)arm-none-eabi-as
@@ -114,4 +114,4 @@ DEPS = $(OBJECTS:.o=.d) $(SYS_OBJECTS:.o=.d)
 -include $(DEPS)
 
 
-endif
+#endif

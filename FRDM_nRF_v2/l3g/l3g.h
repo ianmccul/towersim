@@ -6,7 +6,7 @@
 #define L3G_h
 
 #include "mbed.h"
-#include "matvec.h"
+#include "common/matvec/matvec.h"
 
 // device types
 #define L3G_DEVICE_AUTO  0
