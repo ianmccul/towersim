@@ -2,7 +2,7 @@
 #define MMA8451_H
 
 #include "i2cdevice.h"
-#include "matvec.h"
+#include "common/matvec/matvec.h"
 
 #define MMA8451_I2C_ADDRESS (0x1d<<1)
 

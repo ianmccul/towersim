@@ -29,7 +29,7 @@ L3G_base<I2C>::AutoDetectAddress(void)
    {
       device = L3G4200D_DEVICE;
       return true;
-   }
+  }
    address = L3GD20_ADDRESS_SA0_LOW;
    if (readReg(L3G_WHO_AM_I) == 0xD4)
    {

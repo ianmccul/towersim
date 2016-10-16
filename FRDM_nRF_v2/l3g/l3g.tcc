@@ -130,6 +130,39 @@ L3G<BusType>::GetFIFOStatus()
 }
 
 template <typename BusType>
+void
+L3G<BusType>::EnableInt1(bool Enable)
+{
+   char Reg3 = this->readReg(L3G_CTRL_REG3);
+   this->writeReg(L3G_CTRL_REG3, (Reg3 & 0x7F) | (char(Enable) << 7));
+}
+
+template <typename BusType>
+void
+L3G<BusType>::SetInt1ActiveLow(bool Low)
+{
+   char Reg3 = this->readReg(L3G_CTRL_REG3);
+   this->writeReg(L3G_CTRL_REG3, (Reg3 & 0xDF) | (char(Enable) << 5));
+}
+
+template <typename BusType>
+void
+L3G<BusType>::SetInt1ThresholdHighZ(uint16_t Thresh)
+{
+   char r = this->readReg(L3G_INT1_THS_ZH);
+   this->writeReg(L3G_INT1_THS_ZH, (r & 0x80) | (char(Thresh >> 8) & 0x7F));
+   this->writeReg(L3G_INT1_THS_ZL, char(Thresh & 0x00FF));
+}
+
+template <typename BusType>
+void
+L3G<BusType>::EnableInt1ThresholdHighZ(bool Enable)
+{
+   char r = this->readReg(L3G_INT1_CFG);
+   this->writeReg(L3G_INT1_CFG, (r & 0xDF) | (char(Enable) << 5));
+}
+
+template <typename BusType>
 int
 L3G<BusType>::TempRaw()
 {

@@ -16,11 +16,13 @@ template <>
 class GyroInterfaceBase<I2C>
 {
    public:
-      GyroInterfaceBase(PinName sda, PinName scl, int Addr, PinName DRdyPin);
+      GyroInterfaceBase(PinName sda, PinName scl, int Addr, PinName DRdyPin,
+                        PinName Int1Pin);
 
    protected:
       L3G<I2C> Impl;
       DigitalIn DRdy;
+      DigitalIn Int1;
       int Scale;
       unsigned RateBandwidth;
       bool IsFunctional;
@@ -33,11 +35,12 @@ class GyroInterfaceBase<SPI>
 {
    public:
       GyroInterfaceBase(PinName mosi, PinName miso, PinName sck, PinName csn,
-                        PinName DRdyPin);
+                        PinName DRdyPin, PinName Int1Pin);
 
    protected:
       L3G<SPI> Impl;
       DigitalIn DRdy;
+      DigitalIn Int1;
       int Scale;
       unsigned RateBandwidth;
       bool IsFunctional;
@@ -78,6 +81,12 @@ class GyroInterface : public GyroInterfaceBase<BusType>
 
       // reads the velocity from the gyro, returns 0 on success
       int Read(vector& v);
+
+      // Goes into sleep mode with int1 interrupt generation
+      void Sleep_EnableIntWakeup(uint16_t Threshold);
+
+      // recover from sleep mode and renable normal operation
+      void Wakeup();
 
       L3G<BusType>& device() { return Impl; }
 

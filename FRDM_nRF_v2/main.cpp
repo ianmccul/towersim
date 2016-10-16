@@ -269,9 +269,6 @@ void WriteSamplePacket(PacketScheduler& Scheduler,
    GyroBuffer.clear();
 }
 
-AnalogIn ChargeV(PTB0);
-AnalogIn BatteryV(PTB1);
-
 void WriteStatusPacket(PacketScheduler& Scheduler)
 {
    char buf[30];
@@ -279,15 +276,15 @@ void WriteStatusPacket(PacketScheduler& Scheduler)
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
    *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
-   uint16_t ChV = ChargeV.read_u16();
+   uint16_t ChV = 0;
    *static_cast<uint16_t*>(static_cast<void*>(buf+7)) = ChV;
-   uint16_t BattV = BatteryV.read_u16();
+   uint16_t BattV = 0;
    *static_cast<uint16_t*>(static_cast<void*>(buf+6)) = BattV;
    Scheduler.SendLowPriority(buf, 8);
 }
 
-// write a status packet, including temperature information
-void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp)
+// write a status packet, including temperature information and charging info
+void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp, bool CoilDetect, bool Charging)
 {
    char buf[30];
    buf[0] = 0xB4;
@@ -295,12 +292,14 @@ void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp)
    *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
    *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
    *static_cast<int8_t*>(static_cast<void*>(buf+6)) = Temp;   // gyro temperature
-   uint16_t ChV = ChargeV.read_u16();
+   uint16_t ChV = Charging; //ChargeV.read_u16();
    *static_cast<uint16_t*>(static_cast<void*>(buf+7)) = ChV;
-   uint16_t BattV = BatteryV.read_u16();
+   uint16_t BattV = CoilDetect; //BatteryV.read_u16();
    *static_cast<uint16_t*>(static_cast<void*>(buf+9)) = BattV;
    Scheduler.SendLowPriority(buf, 11);
 }
+
+void SleepMode(nRF24L01_PTX& PTX,
 
 // buffers for accelerometer and gyro data
 
@@ -324,6 +323,19 @@ int main()
 
    DigitalIn Ch0(PTE29, PullUp);
    DigitalIn Ch1(PTE30, PullUp);
+
+   AnalogIn AnalogBattery(PTB0);
+   DigitalIn CoilDetectBar(PTE5, PullNone);
+   DigitalOut BatteryDetectEnable(PTE21);
+   DigitalOut ChargeEnable(PTE20);
+
+   BatteryDetectEnable = 0;
+   ChargeEnable = 0;
+   int const CoilDetectTimeDelay = 20000;  // milliseconds
+   bool CoilDetectOK = false;  // true if the coil is enabled for more than 20 seconds
+   Timer CoilDetectTimer;
+   CoilDetectTimer.reset();
+   CoilDetectTimer.start();
 
    PwmOut rled(LED_RED);
    PwmOut gled(LED_GREEN);
@@ -450,10 +462,31 @@ int main()
 
       if (GyroTempTimer.read_ms() > 1100)
       {
-         WriteStatusPacket(Scheduler, Gyro.device().TempRaw());
+         WriteStatusPacket(Scheduler, Gyro.device().TempRaw(), CoilDetectBar == 0, CoilDetectOK);
          GyroTempTimer.reset();
       }
 
       Scheduler.Poll();
+
+      // CoilDetectBar active low
+      if (CoilDetectBar == 0)
+      {
+         if (!CoilDetectOK && CoilDetectTimer.read_ms() > CoilDetectTimeDelay)
+         {
+            // start the charging circuit
+            CoilDetectOK = true;
+            ChargeEnable = true;
+         }
+      }
+      else
+      {
+         CoilDetectTimer.reset();
+         if (CoilDetectOK)
+         {
+            CoilDetectOK = false;
+            ChargeEnable = false;
+         }
+      }
+
    }
 }

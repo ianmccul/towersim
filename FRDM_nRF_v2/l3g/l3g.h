@@ -6,7 +6,7 @@
 #define L3G_h
 
 #include "mbed.h"
-#include "matvec.h"
+#include "common/matvec/matvec.h"
 
 // device types
 #define L3G_DEVICE_AUTO  0
@@ -235,7 +235,7 @@ class L3G : public  L3G_base<BusType>
       void SetInt2DataReady(bool Enable);
 
       // enable/disable FIFO threshold interrupt
-      // default: disalbe
+      // default: disable
       void SetInt2FTH(bool Enable);
 
       // Set the FIFO mode.
@@ -248,6 +248,24 @@ class L3G : public  L3G_base<BusType>
       void EnableFIFO(bool Enable);
 
       FIFOStatus GetFIFOStatus();
+
+      // Enables interrupt pin 1
+      // Default: disable
+      void EnableInt1(bool Enable);
+
+      // Int1 line active low
+      // default: active high (false)
+      void SetInt1ActiveLow(bool Low);
+
+      // Set the threshold for int1 generation on a high event
+      // (magnitude of gyro reading larger than threshold).
+      // The Threshold is an unsigned 15-bits.
+      // The sensitivity is slightly different, see
+      // datasheet for details.
+      void SetInt1ThresholdHighZ(uint16_t Thresh);
+
+      // Enable triggering int1 line on a high gyro Z event
+      void EnableInt1ThresholdHighZ(bool Enable);
 
       // reads the temperature sensor, returns the raw reading,
       // which is -1LSB/deg with an offset of 50
