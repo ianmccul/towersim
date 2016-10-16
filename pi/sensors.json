@@ -5,6 +5,11 @@
    },
    "3" : {
       "Bell" : 5,
-      "Polarity" : 1
+      "Polarity" : 1,
+      "GyroScale" : 3295.0,
+      "AXScale" : 1671.0,
+      "AXOffset" : 0,
+      "AYScale" : -1670.0,
+      "AYOffset" : 0
    }
 }
