@@ -299,6 +299,8 @@ void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp, bool CoilDetect,
    Scheduler.SendLowPriority(buf, 11);
 }
 
+void SleepMode(nRF24L01_PTX& PTX,
+
 // buffers for accelerometer and gyro data
 
 std::vector<vector3<int16_t>> AccelBuffer;
@@ -323,7 +325,7 @@ int main()
    DigitalIn Ch1(PTE30, PullUp);
 
    AnalogIn AnalogBattery(PTB0);
-   DigitalIn CoilDetectBar(PTE5);
+   DigitalIn CoilDetectBar(PTE5, PullNone);
    DigitalOut BatteryDetectEnable(PTE21);
    DigitalOut ChargeEnable(PTE20);
 
