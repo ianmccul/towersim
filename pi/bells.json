@@ -2,7 +2,10 @@
    "5" : {
       "FriendlyName" : "StJ:5",
       "HandstrokeDelay" : 350,
-      "BackstrokeDelay" : 330
+      "BackstrokeDelay" : 330,
+      "ThetaR" : 0.2,
+      "HandstrokeStay" : 188.5,
+      "BackstrokeStay" : -187.3
    },
    "6" : {
       "FriendlyName" : "StJ:6",
