@@ -299,7 +299,9 @@ void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp, bool CoilDetect,
    Scheduler.SendLowPriority(buf, 11);
 }
 
-void SleepMode(nRF24L01_PTX& PTX,
+void SleepMode(nRF24L01P_PTX& PTX)
+{
+}
 
 // buffers for accelerometer and gyro data
 
@@ -370,7 +372,8 @@ int main()
 
 
    //GyroInterface<I2C> Gyro(PTE0, PTE1, 0, PTA5);
-   GyroInterface<SPI> Gyro(PTE1, PTE3, PTE2, PTE4, PTA5);
+
+   GyroInterface<SPI> Gyro(PTE1, PTE3, PTE2, PTE4, PTA5, PTA4);
    //   Gyro.device().SetFrequency(1000000);
    //   Gyro.SetRateBandwidth(L3G_H_ODR_200_70);
    //   Gyro.SetRateBandwidth(L3G_H_ODR_800_30);
