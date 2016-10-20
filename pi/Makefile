@@ -89,7 +89,15 @@ stage3 = gyrofit-daemon
 
 LIBS_bellsensorstage2 = -lboost_program_options
 
+LIBS_gyrofit-reader = -lboost_program_options
+
 LIBS_bellsensorstage1-viewer = -lboost_program_options
+
+stage1: $(stage1)
+
+stage2: $(stage2)
+
+stage3: $(stage3)
 
 
 executable = $(stage1) $(stage2) $(stage3)

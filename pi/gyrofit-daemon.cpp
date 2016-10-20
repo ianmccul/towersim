@@ -20,49 +20,17 @@
 #include "json.hpp"
 #include <fstream>
 #include <string>
-
-using json = nlohmann::json;
-
-boost::posix_time::time_duration BellDelayHand;
-boost::posix_time::time_duration BellDelayBack;
-
-bool HandstrokePositive = false;
+#include "bellinfo.h"
+#include "sensorinfo.h"
 
 int const MaxBells = 16;
 std::vector<GyroBDC> BDC(16);
-
-struct BellInfoType
-{
-   BellInfoType() : BellNumber(0) {}
-   BellInfoType(int BellNumber_, std::string const& FriendlyName_, int HDelay, int BDelay)
-      : BellNumber(BellNumber_),
-        FriendlyName(FriendlyName_),
-        HandstrokeDelay(boost::posix_time::milliseconds(HDelay)),
-        BackstrokeDelay(boost::posix_time::milliseconds(BDelay))
-   {
-      if (FriendlyName.empty())
-         FriendlyName = std::to_string(BellNumber);
-   }
-
-   int BellNumber;
-   std::string FriendlyName;
-   // delays from bottom dead centre
-   boost::posix_time::time_duration HandstrokeDelay;
-   boost::posix_time::time_duration BackstrokeDelay;
-};
-
-struct SensorInfoType
-{
-   int Bell;
-   int Polarity;
-};
 
 // map from actual bell number to BellInfoType
 std::map<int, BellInfoType> BellInfo;
 
 // map from raw bell number to SensorInfoType
 std::map<int,SensorInfoType> SensorInfo;
-
 
 void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
 {
