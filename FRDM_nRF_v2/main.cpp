@@ -5,6 +5,7 @@
 #include "nRF24L01P.h"
 #include "nRF24L01P_PTX.h"
 #include "common/matvec/matvec.h"
+#include "uid.h"
 #include <cstdint>
 #include <vector>
 
@@ -27,34 +28,17 @@
 // hence will be picked up by the receiver as a valid packet, rather than
 // intercepted as a duplicate.  Hence we must use a sequence number on all packets
 // (this wouldn't need to be 8 bits, it could be smaller).
-// packet format after lost sensor packet:
-// delay (2 bytes) | 11000000 | acc lost count (2 bytes) | gyro lost count (2 bytes) | gyro sum (4 bytes)
-
-// but we need to indicate the start of a stream.
 
 // packet format for status information:
-// delay/seq (2 bytes) |10TCDBSX | acc ODR (2 bytes) | gyro ODR (2 bytes) | gyro bandwidth (1 byte) | payload
+// delay/seq (2 bytes) | 10DCTBSX | UID (2 bytes) | acc ODR (2 bytes) | gyro ODR (2 bytes)
+// | gyro bandwidth (1 byte) | payload
+// UID is a 16-bit hash of the microcontroller unique ID
+// if D is set, the device is receiving power
+// if C is set, the charging circuit is active and charging the battery, otherwise it is not active
 // if T is set, then the payload conains a 1-byte gyro temperature reading
-// if C is set, the charging circuit is active, otherwise it is not active
-// if D is set, the payload contains a 2-byte charging current reading
 // if B is set, the payload contains a 2-byte battery current reading
 // if S is set, then the sensor is preparing for sleep mode
 // X = 0 is reserved for future expansion
-//
-// TODO: a better approach is to ditch the seq number and track sample loss due to lost packets.
-//
-// possible improved packet format:
-// dump the seq in the sensor packet.
-// measure the delay in units of 10 microseconds
-// Have a new packet type for when we have packet loss.
-// flags, 8 bits 0STMNXXX
-// S - start of a new sequence, discard previous state
-// T - a one-byte gyro temperature reading is included at the start of the payload
-// M - accelerometer measurements are missing due to a lost packet,
-// the playload includes a 2-byte count and a 12-byte (4 bytes per sample) cumulative sum
-// N - gyro measurements are missing due to a lost packet,
-// the playload includes an 2-byte count and a 4-byte cumulative sum
-
 
 // a simple LCG for random number generation
 uint32_t Seed = time(NULL);
@@ -269,33 +253,31 @@ void WriteSamplePacket(PacketScheduler& Scheduler,
    GyroBuffer.clear();
 }
 
-void WriteStatusPacket(PacketScheduler& Scheduler)
+// write a status packet, including temperature information and charging info
+void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Charging, int8_t Temp)
 {
    char buf[30];
-   buf[0] = 0x94;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
-   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
-   *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
-   uint16_t ChV = 0;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+7)) = ChV;
-   uint16_t BattV = 0;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+6)) = BattV;
-   Scheduler.SendLowPriority(buf, 8);
+   buf[0] = 0x88 | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
+   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;  // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
+   *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
+   *static_cast<int8_t*>(static_cast<void*>(buf+8)) = Temp;   // gyro temperature
+   Scheduler.SendLowPriority(buf, 9);
 }
 
 // write a status packet, including temperature information and charging info
-void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp, bool CoilDetect, bool Charging)
+void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Charging, int8_t Temp,
+                       uint16_t BatteryCharge)
 {
    char buf[30];
-   buf[0] = 0xB4;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
-   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
-   *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
-   *static_cast<int8_t*>(static_cast<void*>(buf+6)) = Temp;   // gyro temperature
-   uint16_t ChV = Charging; //ChargeV.read_u16();
-   *static_cast<uint16_t*>(static_cast<void*>(buf+7)) = ChV;
-   uint16_t BattV = CoilDetect; //BatteryV.read_u16();
-   *static_cast<uint16_t*>(static_cast<void*>(buf+9)) = BattV;
+   buf[0] = 0x8A | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
+   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;  // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
+   *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
+   *static_cast<int8_t*>(static_cast<void*>(buf+8)) = Temp;   // gyro temperature
+   *static_cast<uint16_t*>(static_cast<void*>(buf+9)) = BatteryCharge;
    Scheduler.SendLowPriority(buf, 11);
 }
 
@@ -313,6 +295,15 @@ int const MaxGyroSamples = 14;
 
 int const PacketWatermark = 23;
 //int const PacketWatermark = 1;
+
+uint16_t MeasureBatteryCharge(DigitalOut& BatteryDetectEnable, AnalogIn& AnalogBattery)
+{
+   BatteryDetectEnable = 1;
+   wait_us(20);
+   uint16_t x = AnalogBattery.read_u16();
+   BatteryDetectEnable = 0;
+   return x;
+}
 
 int main()
 {
@@ -465,7 +456,7 @@ int main()
 
       if (GyroTempTimer.read_ms() > 1100)
       {
-         WriteStatusPacket(Scheduler, Gyro.device().TempRaw(), CoilDetectBar == 0, CoilDetectOK);
+         WriteStatusPacket(Scheduler, CoilDetectBar == 0, CoilDetectOK, Gyro.device().TempRaw());
          GyroTempTimer.reset();
       }
 
