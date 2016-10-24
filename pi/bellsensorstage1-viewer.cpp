@@ -145,7 +145,7 @@ int main(int argc, char** argv)
                // we have a temperature
                int8_t T = *static_cast<int8_t const*>(static_cast<void const*>(buf+Offset));
                ++Offset;
-               std::cout << " Temp " << T;
+               std::cout << " Temp " << int(T);
             }
             if (Flags & 0x04)
             {

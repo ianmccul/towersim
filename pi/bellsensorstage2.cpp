@@ -358,7 +358,7 @@ int main(int argc, char** argv)
       bool const WriteToFile = !OutFile.empty();
       if (WriteToFile)
       {
-         int outfd = open(OutFile.c_str(), O_WRONLY | O_TRUNC, 0666);
+         int outfd = open(OutFile.c_str(), O_CREAT | O_WRONLY | O_TRUNC, 0666);
          if (outfd < 0)
          {
             perror("Cannot open output file");
