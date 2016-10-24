@@ -25,8 +25,8 @@ struct MsgTypes
    static unsigned char const Gyro = 'G';
    static unsigned char const GyroCalibration = 'H';
    static unsigned char const GyroTemp = 'T';
+   static unsigned char const Status = 'S';
    static unsigned char const BatteryV = 'B';
-   static unsigned char const ChargeV = 'C';
    static unsigned char const Accel = 'A';
 };
 
@@ -78,8 +78,8 @@ void WriteGyroCalibrationMsg(bool WriteToFile, std::set<int>& Clients, int64_t T
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::GyroCalibration;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::GyroCalibration;
    *static_cast<float*>(static_cast<void*>(Buf+10)) = GyroOffset;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
 }
@@ -88,8 +88,8 @@ void WriteGyroMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Be
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::Gyro;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::Gyro;
    *static_cast<float*>(static_cast<void*>(Buf+10)) = z;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
 }
@@ -98,28 +98,36 @@ void WriteGyroTempMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, in
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::GyroTemp;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::GyroTemp;
    *static_cast<int16_t*>(static_cast<void*>(Buf+10)) = T;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(int16_t));
+}
+
+void WriteStatusMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, uint16_t uid, int16_t AccODR,
+                    int16_t GryoODR, int8_t GyroBW,
+                    bool Power, bool Charging, bool Sleeping)
+{
+   unsigned char Buf[100];
+   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::Status;
+   *static_cast<uint16_t*>(static_cast<void*>(Buf+10)) = uid;
+   *static_cast<int16_t*>(static_cast<void*>(Buf+12)) = AccODR;
+   *static_cast<int16_t*>(static_cast<void*>(Buf+14)) = GryoODR;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+16)) = GyroBW;
+   *static_cast<uint8_t*>(static_cast<void*>(Buf+17)) = Power;
+   *static_cast<uint8_t*>(static_cast<void*>(Buf+18)) = Charging;
+   *static_cast<uint8_t*>(static_cast<void*>(Buf+19)) = Sleeping;
+   WriteMsgToClients(WriteToFile, Clients, Buf, 20);
 }
 
 void WriteBatteryVMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, uint16_t V)
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::BatteryV;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
-   *static_cast<int16_t*>(static_cast<void*>(Buf+10)) = V;
-   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(uint16_t));
-}
-
-void WriteChargeVMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, uint16_t V)
-{
-   unsigned char Buf[100];
-   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::ChargeV;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::BatteryV;
    *static_cast<int16_t*>(static_cast<void*>(Buf+10)) = V;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(uint16_t));
 }
@@ -128,8 +136,8 @@ void WriteAccelMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int B
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::Accel;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::Accel;
    *static_cast<vector3<int16_t>*>(static_cast<void*>(Buf+10)) = x;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+6);
 }
@@ -443,24 +451,23 @@ int main(int argc, char** argv)
 
          if (Flags & 0x80)
          {
-            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
-            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
-            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+16));
-            int Offset = 17;
             // status packet
-            if (Flags & 0x20)
+            uint16_t uid = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
+            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
+            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+16));
+            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+18));
+            bool Power = Flags & 0x20;
+            bool Charging = Flags & 0x10;
+            bool Sleeping = Flags & 0x02;
+            WriteStatusMsg(WriteToFile, Clients, Time-Delay, Bell, uid, AccODR, GyroODR, GyroBW, Power, Charging, Sleeping);
+            int Offset = 19;
+            // status packet
+            if (Flags & 0x08)
             {
                // we have a temperature
                int8_t T = *static_cast<int8_t const*>(static_cast<void const*>(buf+Offset));
                ++Offset;
                WriteGyroTempMsg(WriteToFile, Clients, Time-Delay, Bell, T);
-            }
-            if (Flags & 0x10)
-            {
-               // charging voltage
-               uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
-               Offset += 2;
-               WriteChargeVMsg(WriteToFile, Clients, Time-Delay, Bell, V);
             }
             if (Flags & 0x04)
             {

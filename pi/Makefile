@@ -83,7 +83,7 @@ LIBS_gyrofit-daemon = -lboost_system -lboost_date_time
 
 stage1 = bellsensorstage1 bellsensorstage1-log bellsensorstage1-viewer
 
-stage2 = bellsensorstage2  bellsensorstage2_stdio
+stage2 = bellsensorstage2  bellsensorstage2-viewer
 
 stage3 = gyrofit-daemon
 
@@ -91,6 +91,11 @@ LIBS_bellsensorstage2 = -lboost_program_options
 
 LIBS_bellsensorstage1-viewer = -lboost_program_options
 
+LIBS_bellsensorstage2-viewer = -lboost_program_options
+
+stage1 : $(stage1)
+stage2 : $(stage2)
+stage3 : $(stage3)
 
 executable = $(stage1) $(stage2) $(stage3)
 
