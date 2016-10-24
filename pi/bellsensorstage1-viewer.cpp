@@ -129,32 +129,30 @@ int main(int argc, char** argv)
 
          if (Flags & 0x80)
          {
-            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
-            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
-            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+16));
-            int Offset = 17;
             // status packet
-            std::cout << "Gyro " << Bell;
-            if (Flags & 0x20)
+            uint16_t uid = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
+            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
+            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+16));
+            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+18));
+            bool Power = Flags & 0x20;
+            bool Charging = Flags & 0x10;
+            bool Sleeping = Flags & 0x02;
+            std::cout << "Status " << Bell << " power " << Power << " charging " << Charging << " Sleeping " << Sleeping;
+            int Offset = 19;
+            // status packet
+            if (Flags & 0x08)
             {
                // we have a temperature
                int8_t T = *static_cast<int8_t const*>(static_cast<void const*>(buf+Offset));
                ++Offset;
-               std::cout << " temperature " << int(T);
-            }
-            if (Flags & 0x10)
-            {
-               // charging voltage
-               uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
-               Offset += 2;
-               std::cout << " charging " << V;
+               std::cout << " Temp " << T;
             }
             if (Flags & 0x04)
             {
                // battery charge
                uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
                Offset += 2;
-               std::cout << " battery " << V ;
+               std::cout << " Battery " << V;
             }
             std::cout << std::endl;
          }

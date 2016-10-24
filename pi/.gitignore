@@ -1,7 +1,7 @@
 bellsensorstage1
 bellsensorstage1-log
 bellsensorstage2
-bellsensorstage2_stdio
+bellsensorstage2-viewer
 gyrofit-daemon
 bellsensorstage1-viewer
 gyrofit-reader
