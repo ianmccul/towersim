@@ -145,9 +145,9 @@ int main(int argc, char** argv)
             int16_t AccODR = *static_cast<uint16_t const*>(static_cast<void const*>(buf+12));
             int16_t GyroODR = *static_cast<uint16_t const*>(static_cast<void const*>(buf+14));
             int8_t GyroBW = *static_cast<uint16_t const*>(static_cast<void const*>(buf+16));
-            bool Power = *static_cast<uint16_t const*>(static_cast<void const*>(buf+17));
-            bool Charging = *static_cast<uint16_t const*>(static_cast<void const*>(buf+18));
-            bool Sleeping = *static_cast<uint16_t const*>(static_cast<void const*>(buf+19));
+            bool Power = *static_cast<uint8_t const*>(static_cast<void const*>(buf+17));
+            bool Charging = *static_cast<uint8_t const*>(static_cast<void const*>(buf+18));
+            bool Sleeping = *static_cast<uint8_t const*>(static_cast<void const*>(buf+19));
             std::cout << Time << Bell << " S " << ' ' << std::hex << uid << std::dec << ' ' << AccODR
                       << ' ' << GyroODR << ' ' << int(GyroBW) << ' ' << Power << ' ' << Charging << ' ' << Sleeping << std::endl;
          }
