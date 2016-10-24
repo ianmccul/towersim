@@ -489,8 +489,8 @@ int main(int argc, char** argv)
 
             if (len != ExpectedPacketLength)
             {
-               std::cerr << "Unexpected packet length " << len << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
-                         << " Delay=" << Delay << " Flags=" << uint16_t(Flags) << " SeqNum=" << uint16_t(SeqNum) << "\n";
+               std::cerr << "Unexpected packet length " << int(len) << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
+                         << " Delay=" << Delay << " Flags=" << std::hex << uint16_t(Flags) << " SeqNum=" << std::dec << uint16_t(SeqNum) << "\n";
                continue;
             }
 

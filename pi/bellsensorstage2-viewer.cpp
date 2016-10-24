@@ -95,10 +95,12 @@ int main(int argc, char** argv)
       while(1)
       {
          // read a message
-         uint8_t len;
+         uint8_t len = 0;
          if (ReadFromFile)
          {
             int r = read(infd, &len, 1);
+            if (r == 1)
+               r = read(infd, buf, len);
             if (r != len)
             {
                perror("Error reading from file");
