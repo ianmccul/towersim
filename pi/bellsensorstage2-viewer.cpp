@@ -149,7 +149,7 @@ int main(int argc, char** argv)
             bool Charging = *static_cast<uint16_t const*>(static_cast<void const*>(buf+18));
             bool Sleeping = *static_cast<uint16_t const*>(static_cast<void const*>(buf+19));
             std::cout << Time << Bell << " S " << ' ' << std::hex << uid << std::dec << ' ' << AccODR
-                      << ' ' << GyroODR << ' ' << GyroBW << ' ' << Power << ' ' << Charging << ' ' << Sleeping << std::endl;
+                      << ' ' << GyroODR << ' ' << int(GyroBW) << ' ' << Power << ' ' << Charging << ' ' << Sleeping << std::endl;
          }
          else if (MsgType == MsgTypes::GyroTemp)
          {

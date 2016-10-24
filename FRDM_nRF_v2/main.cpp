@@ -274,7 +274,7 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
                        uint16_t BatteryCharge)
 {
    char buf[30];
-   buf[0] = 0x8A | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
+   buf[0] = 0x8C | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
    *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;  // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
