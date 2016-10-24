@@ -18,16 +18,10 @@
 ///
 // flags is 8 bits: 0 AAA GGGG
 // seq is a 1-byte sequentially increasing number
-// delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit)
+// delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit
+// delay shifted left 2 bits, with 2-bit sequence number).
 // AAA is number of 6-byte accelerometer readings (first in the payload)
 // GGGG is the number of 2-byte z-axis gyro readings
-//
-// Since we are not using the nRF retransmit functionality,
-// on a lost ACK packet we will be unaware that the receive was successful,
-// and thefore we will send the packet again.  The packet will have a different CRC,
-// hence will be picked up by the receiver as a valid packet, rather than
-// intercepted as a duplicate.  Hence we must use a sequence number on all packets
-// (this wouldn't need to be 8 bits, it could be smaller).
 
 // packet format for status information:
 // delay/seq (2 bytes) | 10DCTBSX | UID (2 bytes) | acc ODR (2 bytes) | gyro ODR (2 bytes)
@@ -40,8 +34,16 @@
 // if S is set, then the sensor is preparing for sleep mode
 // X = 0 is reserved for future expansion
 
+// Since we are not using the nRF retransmit functionality,
+// on a lost ACK packet we will be unaware that the receive was successful,
+// and thefore we will send the packet again.  This is the purpose of the 2-bit
+// seq number.  If the receiver gets two packets with the same seq number then
+// it will check the entire packet, and assume that identical packets with the same
+// seq number are duplicates.  Packets that have a different seq number but are otherwise
+// identical are allowed.
+
 // a simple LCG for random number generation
-uint32_t Seed = time(NULL);
+uint32_t Seed = UniqueID32;
 
 uint32_t random()
 {
@@ -55,6 +57,7 @@ int random(int Min, int Max)
    return x%(Max-Min) + Min;
 }
 
+// random slot number for exponential backoff retransmit.
 int RandomSlot(int n)
 {
    int Max = (1 << std::max(n,5));
@@ -456,7 +459,9 @@ int main()
 
       if (GyroTempTimer.read_ms() > 1100)
       {
-         WriteStatusPacket(Scheduler, CoilDetectBar == 0, CoilDetectOK, Gyro.device().TempRaw());
+         uint16_t Charge = MeasureBatteryCharge(BatteryDetectEnable, AnalogBattery);
+         WriteStatusPacket(Scheduler, CoilDetectBar == 0, CoilDetectOK, Gyro.device().TempRaw(),
+                           Charge);
          GyroTempTimer.reset();
       }
 

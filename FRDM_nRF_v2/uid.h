@@ -6,7 +6,7 @@
 
 // FNV-32 hashing algorithm
 constexpr
-uint32_t hash_fnv(uint32_t const* Beg, uint32_t const* End);
+uint32_t hash_fnv32(uint32_t const* Beg, uint32_t const* End);
 
 constexpr
 uint16_t hash16(uint32_t x)
@@ -18,7 +18,9 @@ uint16_t hash16(uint32_t x)
 uint32_t const UniqueID80[3] = { SIM->UIDMH, SIM->UIDML, SIM->UIDL };
 
 // a 16-bit hash of the 80-bit UID
-uint16_t const UniqueID16 = hash16(hash_fnv(&UniqueID80[0], &UniqueID80[3]));
+uint16_t const UniqueID16 = hash16(hash_fnv32(&UniqueID80[0], &UniqueID80[3]));
+
+uint32_t const UniqueID32 = hash_fnv32(&UniqueID80[0], &UniqueID80[3]);
 
 #include "uid.tcc"
 
