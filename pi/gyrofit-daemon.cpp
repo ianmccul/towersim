@@ -67,10 +67,10 @@ std::map<int,SensorInfoType> SensorInfo;
 void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
 {
    int64_t Time = *static_cast<int64_t const*>(static_cast<void const*>(Buf.data()));
-   char PacketType = Buf[8];
+   int Bell = Buf[8];
+   char PacketType = Buf[9];
    if (PacketType != 'G')
       return;
-   int Bell = Buf[9];
    float z = *static_cast<float const*>(static_cast<void const*>(Buf.data()+10));
 
    if (BDC[Bell].Process(Time, z))
