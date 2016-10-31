@@ -23,17 +23,13 @@
 
 using json = nlohmann::json;
 
-boost::posix_time::time_duration BellDelayHand;
-boost::posix_time::time_duration BellDelayBack;
-
-bool HandstrokePositive = false;
-
 int const MaxBells = 16;
 std::vector<GyroBDC> BDC(16);
 
 struct BellInfoType
 {
    BellInfoType() : BellNumber(0) {}
+   BellInfoType(int BellNumber_, json const& j);
    BellInfoType(int BellNumber_, std::string const& FriendlyName_, int HDelay, int BDelay)
       : BellNumber(BellNumber_),
         FriendlyName(FriendlyName_),
@@ -49,13 +45,35 @@ struct BellInfoType
    // delays from bottom dead centre
    boost::posix_time::time_duration HandstrokeDelay;
    boost::posix_time::time_duration BackstrokeDelay;
+   double HandstrokeCutoff;
+   double BackstrokeCutoff;
 };
+
+BellInfoType::BellInfoType(int BellNumber_, json const& j)
+   : BellNumber(BellNumber_),
+     FriendlyName(j["FriendlyName"].get<std::string>()),
+     HandstrokeDelay(boost::posix_time::milliseconds(int64_t(j["HandstrokeDelay"]))),
+     BackstrokeDelay(boost::posix_time::milliseconds(int64_t(j["BackstrokeDelay"]))),
+     HandstrokeCutoff(j["HandstrokeCutoff"]),
+     BackstrokeCutoff(j["BackstrokeCutoff"])
+{
+}
 
 struct SensorInfoType
 {
    int Bell;
    int Polarity;
+   double GyroScale;
+   SensorInfoType() {}
+   SensorInfoType(json const& j);
 };
+
+SensorInfoType::SensorInfoType(json const& j)
+   : Bell(j["Bell"]),
+     Polarity(j["Polarity"]),
+     GyroScale(j["GyroScale"])
+{
+}
 
 // map from actual bell number to BellInfoType
 std::map<int, BellInfoType> BellInfo;
@@ -81,7 +99,16 @@ void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
       int ActualBell = SensorInfo[Bell].Bell;
       bool Handstroke = (V>0) ^ (SensorInfo[Bell].Polarity == -1);
 
-      std::cout << "TRIGGER BELL " << ActualBell << " at " << T << " V: " << V << (Handstroke ? " Handstroke" : " Backstroke") << '\n';
+      double Velocity = SensorInfo[Bell].Polarity * V / SensorInfo[Bell].GyroScale;
+
+      // if we're below the cutoff then quit
+      if (Handstroke && std::abs(Velocity) < BellInfo[Bell].HandstrokeCutoff)
+         return;
+
+      if (!Handstroke && std::abs(Velocity) < BellInfo[Bell].BackstrokeCutoff)
+         return;
+
+      std::cout << "TRIGGER BELL " << ActualBell << " at " << T << " V: " << Velocity << (Handstroke ? " Handstroke" : " Backstroke") << '\n';
 
       boost::posix_time::ptime StrikeTime = boost::posix_time::from_time_t(T/1000000) +
          boost::posix_time::microseconds(T % 1000000);
@@ -102,7 +129,8 @@ int main(int argc, char** argv)
    for (json::iterator it = Bells.begin(); it != Bells.end(); ++it)
    {
       int Bell = std::stoi(it.key());
-      BellInfo[Bell] = BellInfoType(Bell, it.value()["FriendlyName"], it.value()["HandstrokeDelay"], it.value()["BackstrokeDelay"]);
+      std::cout << it.key() << " : " << it.value() << "\n";
+      BellInfo[Bell] = BellInfoType(Bell, it.value());
       std::cout << it.key() << " : " << it.value() << "\n";
    }
 
@@ -114,7 +142,7 @@ int main(int argc, char** argv)
 
    for (json::iterator it = Sensors.begin(); it != Sensors.end(); ++it)
    {
-      SensorInfo[std::stoi(it.key())] = {it.value()["Bell"], it.value()["Polarity"]};
+      SensorInfo[std::stoi(it.key())] = SensorInfoType(it.value());
       std::cout << it.key() << " : " << it.value() << "\n";
    }
 

@@ -99,6 +99,11 @@ int main(int argc, char** argv)
          if (ReadFromFile)
          {
             int r = read(infd, &len, 1);
+            if (r == 0)
+            {
+               std::cerr << "reached end of file.\n";
+               return 0;
+            }
             if (r == 1)
                r = read(infd, buf, len);
             if (r != len)
@@ -113,12 +118,12 @@ int main(int argc, char** argv)
             len = read(infd, buf, sizeof(buf));
             if (len < 0)
             {
-               std::cout << "read failed.\n";
+               std::cerr << "read failed.\n";
                return 1;
             }
             else if (len == 0)
             {
-               std::cout << "server closed.\n";
+               std::cerr << "server closed.\n";
                return 0;
             }
          }

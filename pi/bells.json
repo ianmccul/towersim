@@ -5,11 +5,15 @@
       "BackstrokeDelay" : 330,
       "ThetaR" : 0.2,
       "HandstrokeStay" : 188.5,
-      "BackstrokeStay" : -187.3
+      "BackstrokeStay" : -187.3,
+      "HandstrokeCutoff" : 217,
+      "BackstrokeCutoff" : 50
    },
    "6" : {
       "FriendlyName" : "StJ:6",
       "HandstrokeDelay" : 310,
-      "BackstrokeDelay" : 350
+      "BackstrokeDelay" : 350,
+      "HandstrokeCutoff" : 217,
+      "BackstrokeCutoff" : 50
    }
 }

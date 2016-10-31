@@ -1,12 +1,13 @@
 {
    "0" : {
       "Bell" : 6,
-      "Polarity" : -1
+      "Polarity" : -1,
+      "GyroScale" : 57.1429
    },
    "3" : {
       "Bell" : 5,
       "Polarity" : 1,
-      "GyroScale" : 3295.0,
+      "GyroScale" : 55.447,
       "AXScale" : 1671.0,
       "AXOffset" : 0,
       "AYScale" : -1670.0,

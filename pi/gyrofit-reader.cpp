@@ -42,7 +42,8 @@ int main(int argc, char** argv)
 
       if (BDC.Process(Tm-Epoch, z))
       {
-         std::cout << double(BDC.BDCPoints.front().first)/1E6 << ' ' <<  BDC.BDCPoints.front().second << '\n';
+         //         std::cout << double(BDC.BDCPoints.front().first)/1E6 << ' ' <<  BDC.BDCPoints.front().second << '\n';
+         std::cout << (BDC.BDCPoints.front().first+Epoch) << ' ' <<  BDC.BDCPoints.front().second << '\n';
          BDC.BDCPoints.pop_front();
       }
    }
