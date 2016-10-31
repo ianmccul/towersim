@@ -1,10 +1,20 @@
 {
    "0" : {
-      "Bell" : 6,
-      "Polarity" : -1,
+      "Bell" : 3,
+      "Polarity" : 1,
       "GyroScale" : 57.1429
    },
-   "3" : {
+   "1" : {
+      "Bell" : 4,
+      "Polarity" : 1,
+      "GyroScale" : 57.1429
+   },
+   "11" : {
+      "Bell" : 6,
+      "Polarity" : 1,
+      "GyroScale" : 57.1429
+   },
+   "10" : {
       "Bell" : 5,
       "Polarity" : 1,
       "GyroScale" : 55.447,
@@ -12,5 +22,15 @@
       "AXOffset" : 0,
       "AYScale" : -1670.0,
       "AYOffset" : 0
+   },
+   "2" : {
+      "Bell" : 7,
+      "Polarity" : 1,
+      "GyroScale" : 57.1429
+   },
+   "3" : {
+      "Bell" : 8,
+      "Polarity" : 1,
+      "GyroScale" : 57.1429
    }
 }

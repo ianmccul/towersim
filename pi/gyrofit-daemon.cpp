@@ -73,6 +73,7 @@ SensorInfoType::SensorInfoType(json const& j)
      Polarity(j["Polarity"]),
      GyroScale(j["GyroScale"])
 {
+   std::cout << Bell << ' ' << Polarity << ' ' << GyroScale << '\n';
 }
 
 // map from actual bell number to BellInfoType
@@ -93,29 +94,40 @@ void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
 
    if (BDC[Bell].Process(Time, z))
    {
+//      std::cout << Bell << ' ' << z <<  '\n';
+
       int64_t T = BDC[Bell].BDCPoints.front().first;
       double V = BDC[Bell].BDCPoints.front().second;
+
+      BDC[Bell].BDCPoints.pop_front();
+
+     // std::cout << V << '\n';
 
       int ActualBell = SensorInfo[Bell].Bell;
       bool Handstroke = (V>0) ^ (SensorInfo[Bell].Polarity == -1);
 
       double Velocity = SensorInfo[Bell].Polarity * V / SensorInfo[Bell].GyroScale;
 
+
       // if we're below the cutoff then quit
-      if (Handstroke && std::abs(Velocity) < BellInfo[Bell].HandstrokeCutoff)
+      if (Handstroke && std::abs(Velocity) < BellInfo[ActualBell].HandstrokeCutoff)
+      {
+         std::cout << "Ignoring handstroke bell " << ActualBell << " velocity " << Velocity << " too low.\n";
          return;
-
-      if (!Handstroke && std::abs(Velocity) < BellInfo[Bell].BackstrokeCutoff)
+      }
+      if (!Handstroke && std::abs(Velocity) < BellInfo[ActualBell].BackstrokeCutoff)
+      {
+         std::cout << "Ignoring backstroke bell " << ActualBell << " velocity " << Velocity << " too low.\n";
          return;
+      }
 
-      std::cout << "TRIGGER BELL " << ActualBell << " at " << T << " V: " << Velocity << (Handstroke ? " Handstroke" : " Backstroke") << '\n';
+      std::cout << "TRIGGER BELL " << Bell << ' ' << ActualBell << " at " << T << " V: " << Velocity << (Handstroke ? " Handstroke" : " Backstroke") << '\n';
 
       boost::posix_time::ptime StrikeTime = boost::posix_time::from_time_t(T/1000000) +
          boost::posix_time::microseconds(T % 1000000);
       StrikeTime += Handstroke ? BellInfo[ActualBell].HandstrokeDelay : BellInfo[ActualBell].BackstrokeDelay;
       MyServer.TriggerSensor(BellInfo[ActualBell].FriendlyName, StrikeTime);
 
-      BDC[Bell].BDCPoints.pop_front();
    }
 }
 
@@ -129,7 +141,6 @@ int main(int argc, char** argv)
    for (json::iterator it = Bells.begin(); it != Bells.end(); ++it)
    {
       int Bell = std::stoi(it.key());
-      std::cout << it.key() << " : " << it.value() << "\n";
       BellInfo[Bell] = BellInfoType(Bell, it.value());
       std::cout << it.key() << " : " << it.value() << "\n";
    }
@@ -150,8 +161,12 @@ int main(int argc, char** argv)
    PacketHandler Sensor(io);
    SensorTCPServer MyServer(io, "0.0.0.0", "5700");
 
+   MyServer.Attach("StJ:3", 0, 0);
+   MyServer.Attach("StJ:4", 0, 0);
    MyServer.Attach("StJ:5", 0, 0);
    MyServer.Attach("StJ:6", 0, 0);
+   MyServer.Attach("StJ:7", 0, 0);
+   MyServer.Attach("StJ:8", 0, 0);
    Sensor.Connect(std::string("\0bellsensordaemonsocket", 23));
 
    // And start the loop
