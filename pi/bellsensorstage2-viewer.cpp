@@ -167,7 +167,7 @@ int main(int argc, char** argv)
          }
          else if (MsgType == MsgTypes::BatteryV)
          {
-            uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+10));
+            float V = *static_cast<float const*>(static_cast<void const*>(buf+10));
             std::cout << Time << ' ' << Bell << " B " << V << '\n';
          }
          else if (MsgType == MsgTypes::BellAvail)
