@@ -1,4 +1,4 @@
-// -*- C++ -*- $Id: gyrofit-daemon.cpp 1891 2016-10-03 06:05:03Z uqimccul $
+// -*- C++ -*-
 //
 // daemon for a 'bottom dead centre' sensor via gyro, using
 // a quadratic fit.  By inspection, we judge a reasonable fitting
@@ -30,15 +30,6 @@ struct BellInfoType
 {
    BellInfoType() : BellNumber(0) {}
    BellInfoType(int BellNumber_, json const& j);
-   BellInfoType(int BellNumber_, std::string const& FriendlyName_, int HDelay, int BDelay)
-      : BellNumber(BellNumber_),
-        FriendlyName(FriendlyName_),
-        HandstrokeDelay(boost::posix_time::milliseconds(HDelay)),
-        BackstrokeDelay(boost::posix_time::milliseconds(BDelay))
-   {
-      if (FriendlyName.empty())
-         FriendlyName = std::to_string(BellNumber);
-   }
 
    int BellNumber;
    std::string FriendlyName;

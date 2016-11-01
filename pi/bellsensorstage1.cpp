@@ -199,8 +199,8 @@ int main(int argc, char** argv)
    //
 
    Radios.push_back(Radio(22, 0, 0, 76));
-   Radios.push_back(Radio(4 , 0, 1, 78));
-   Radios.push_back(Radio(18, 1, 1, 82));
+   Radios.push_back(Radio(4 , 0, 1, 82));
+   Radios.push_back(Radio(18, 1, 1, 70));
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
@@ -289,7 +289,7 @@ int main(int argc, char** argv)
                   // possible duplicate packet, check the payload
                   if (memcmp(LastBuf[BellNum]+2, buf+11, len-2) == 0)
                   {
-                     std::cout << "Ignoring duplicate packet for bell " << BellNum 
+                     std::cout << "Ignoring duplicate packet for bell " << BellNum
                                << " seq " << int(uint8_t(buf[9]&0x03)) << std::endl;
                      continue;
                   }

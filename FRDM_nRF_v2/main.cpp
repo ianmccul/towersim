@@ -352,6 +352,8 @@ int main()
 
    unsigned Channel = (Ch1.read()<<1) + Ch0.read();
 
+   unsigned Channels[4] = {76, 82, 70, 0};
+
    printf("Initializing.\r\n");
 
    Timer LedTimer;
@@ -380,7 +382,7 @@ int main()
    PTX.Initialize();
    PTX.SetDataRate(2000);
    PTX.SetDestinationAddress(PipeAddrs[Addr]);
-   PTX.SetChannel(76 + Channel*2);
+   PTX.SetChannel(Channels[Channel]);
    Device.set_retransmit_attempts(0);
    Device.set_crc_width(2);
    Device.set_tx_power(0);
