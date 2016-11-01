@@ -11,6 +11,7 @@ void ReadSensorInfo(json const& j)
    {
       SensorInfoType S(it.value());
       std::cout << it.value() << '\n';
+      std::cout << S.uid << ' ' << S.Bell << '\n';
       if (S.UID != 0)
          SensorFromUID[S.UID] = S;
       if (S.Bell >= 0)
