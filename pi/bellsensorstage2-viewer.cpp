@@ -23,7 +23,7 @@ struct MsgTypes
    static unsigned char const Status = 'S';
    static unsigned char const BatteryV = 'B';
    static unsigned char const Accel = 'A';
-   static unsigned char const BellAvail = 'B';
+   static unsigned char const BellAvail = 'E';
 };
 
 int main(int argc, char** argv)
