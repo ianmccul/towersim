@@ -25,9 +25,9 @@
 #include <list>
 #include "quadfit.h"
 
-double const ThresholdVelocity = 1000;
+double const ThresholdVelocity = 17.5;   // degrees per second
 int64_t const HalfTimeLagMicrosec = 80000;  // 0.08 seconds
-double const EnergyThreshold = 2.0e8;
+double const EnergyThreshold = 61250.0;
 
 
 // After ResetTime seconds since a BDC trigger, we accept a BDC even
@@ -49,7 +49,7 @@ class GyroBDC
       bool Process(int64_t Time, float z);
 
    private:
-      boost::circular_buffer<std::pair<int64_t, short>> SampleBuf;
+      boost::circular_buffer<std::pair<int64_t, float>> SampleBuf;
       float CurrentMax;
       int64_t CurrentMaxTime;
       int LastSign;

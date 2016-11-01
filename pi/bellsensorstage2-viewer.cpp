@@ -138,8 +138,9 @@ int main(int argc, char** argv)
          }
          else if (MsgType == MsgTypes::Accel)
          {
-            vector3<int16_t> x = *static_cast<vector3<int16_t> const*>(static_cast<void const*>(buf+10));
-            std::cout << Time << ' ' << Bell << " A " << x[0] << ' ' << x[1] << ' ' << x[2] << std::endl;
+            float Ax = *static_cast<float const*>(static_cast<void const*>(buf+10));
+            float Ay = *static_cast<float const*>(static_cast<void const*>(buf+14));
+            std::cout << Time << ' ' << Bell << " A " << Ax << ' ' << Ay << std::endl;
          }
          else if (MsgType == MsgTypes::GyroCalibration)
          {

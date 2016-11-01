@@ -17,7 +17,8 @@
 #include <cmath>
 #include "gyro-bdc.h"
 #include <boost/date_time/posix_time/posix_time.hpp>
-#include "json.hpp"
+#include "bells.h"
+#include "sensors.h"
 #include <fstream>
 #include <string>
 
@@ -25,54 +26,6 @@ using json = nlohmann::json;
 
 int const MaxBells = 16;
 std::vector<GyroBDC> BDC(16);
-
-struct BellInfoType
-{
-   BellInfoType() : BellNumber(0) {}
-   BellInfoType(int BellNumber_, json const& j);
-
-   int BellNumber;
-   std::string FriendlyName;
-   // delays from bottom dead centre
-   boost::posix_time::time_duration HandstrokeDelay;
-   boost::posix_time::time_duration BackstrokeDelay;
-   double HandstrokeCutoff;
-   double BackstrokeCutoff;
-};
-
-BellInfoType::BellInfoType(int BellNumber_, json const& j)
-   : BellNumber(BellNumber_),
-     FriendlyName(j["FriendlyName"].get<std::string>()),
-     HandstrokeDelay(boost::posix_time::milliseconds(int64_t(j["HandstrokeDelay"]))),
-     BackstrokeDelay(boost::posix_time::milliseconds(int64_t(j["BackstrokeDelay"]))),
-     HandstrokeCutoff(j["HandstrokeCutoff"]),
-     BackstrokeCutoff(j["BackstrokeCutoff"])
-{
-}
-
-struct SensorInfoType
-{
-   int Bell;
-   int Polarity;
-   double GyroScale;
-   SensorInfoType() {}
-   SensorInfoType(json const& j);
-};
-
-SensorInfoType::SensorInfoType(json const& j)
-   : Bell(j["Bell"]),
-     Polarity(j["Polarity"]),
-     GyroScale(j["GyroScale"])
-{
-   std::cout << Bell << ' ' << Polarity << ' ' << GyroScale << '\n';
-}
-
-// map from actual bell number to BellInfoType
-std::map<int, BellInfoType> BellInfo;
-
-// map from raw bell number to SensorInfoType
-std::map<int,SensorInfoType> SensorInfo;
-
 
 void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
 {
@@ -89,35 +42,34 @@ void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
 
       int64_t T = BDC[Bell].BDCPoints.front().first;
       double V = BDC[Bell].BDCPoints.front().second;
-
       BDC[Bell].BDCPoints.pop_front();
 
      // std::cout << V << '\n';
 
-      int ActualBell = SensorInfo[Bell].Bell;
-      bool Handstroke = (V>0) ^ (SensorInfo[Bell].Polarity == -1);
+      // positive velocity is backstroke (bell is moving up towards handstroke say)
+      // negative velocity is handstroke (bell is moving back towards backstroke stay)
 
-      double Velocity = SensorInfo[Bell].Polarity * V / SensorInfo[Bell].GyroScale;
-
+      bool Handstroke = V<0;
 
       // if we're below the cutoff then quit
-      if (Handstroke && std::abs(Velocity) < BellInfo[ActualBell].HandstrokeCutoff)
+      if (Handstroke && std::abs(V) < BellInfo[Bell].HandstrokeCutoff)
       {
-         std::cout << "Ignoring handstroke bell " << ActualBell << " velocity " << Velocity << " too low.\n";
+         std::cout << "Ignoring handstroke bell " << Bell << " velocity " << V << " too low.\n";
          return;
       }
-      if (!Handstroke && std::abs(Velocity) < BellInfo[ActualBell].BackstrokeCutoff)
+      if (!Handstroke && std::abs(V) < BellInfo[Bell].BackstrokeCutoff)
       {
-         std::cout << "Ignoring backstroke bell " << ActualBell << " velocity " << Velocity << " too low.\n";
+         std::cout << "Ignoring backstroke bell " << Bell << " velocity " << V << " too low.\n";
          return;
       }
 
-      std::cout << "TRIGGER BELL " << Bell << ' ' << ActualBell << " at " << T << " V: " << Velocity << (Handstroke ? " Handstroke" : " Backstroke") << '\n';
+      std::cout << "TRIGGER BELL " << Bell << ' ' << " at " << T << " V: "
+                << V << (Handstroke ? " Handstroke" : " Backstroke") << '\n';
 
       boost::posix_time::ptime StrikeTime = boost::posix_time::from_time_t(T/1000000) +
          boost::posix_time::microseconds(T % 1000000);
-      StrikeTime += Handstroke ? BellInfo[ActualBell].HandstrokeDelay : BellInfo[ActualBell].BackstrokeDelay;
-      MyServer.TriggerSensor(BellInfo[ActualBell].FriendlyName, StrikeTime);
+      StrikeTime += Handstroke ? BellInfo[Bell].HandstrokeDelay : BellInfo[Bell].BackstrokeDelay;
+      MyServer.TriggerSensor(BellInfo[Bell].FriendlyName, StrikeTime);
 
    }
 }
@@ -129,35 +81,19 @@ int main(int argc, char** argv)
    std::ifstream BellsConfig("bells.json");
    json Bells;
    BellsConfig >> Bells;
-   for (json::iterator it = Bells.begin(); it != Bells.end(); ++it)
-   {
-      int Bell = std::stoi(it.key());
-      BellInfo[Bell] = BellInfoType(Bell, it.value());
-      std::cout << it.key() << " : " << it.value() << "\n";
-   }
-
-   // load the sensor configuration
-   std::cout << "Reading sensor configurations\n";
-   std::ifstream SensorsConfig("sensors.json");
-   json Sensors;
-   SensorsConfig >> Sensors;
-
-   for (json::iterator it = Sensors.begin(); it != Sensors.end(); ++it)
-   {
-      SensorInfo[std::stoi(it.key())] = SensorInfoType(it.value());
-      std::cout << it.key() << " : " << it.value() << "\n";
-   }
+   ReadBellInfo(Bells["Bells"]);
 
    boost::asio::io_service io;
    PacketHandler Sensor(io);
    SensorTCPServer MyServer(io, "0.0.0.0", "5700");
 
-   MyServer.Attach("StJ:3", 0, 0);
-   MyServer.Attach("StJ:4", 0, 0);
-   MyServer.Attach("StJ:5", 0, 0);
-   MyServer.Attach("StJ:6", 0, 0);
-   MyServer.Attach("StJ:7", 0, 0);
-   MyServer.Attach("StJ:8", 0, 0);
+   // attach the bells to the server.
+   for (auto const& x : BellInfo)
+   {
+      MyServer.Attach(x.FriendlyName, 0, 0);
+   }
+
+   // connect to the local stage 2 socket
    Sensor.Connect(std::string("\0bellsensordaemonsocket", 23));
 
    // And start the loop

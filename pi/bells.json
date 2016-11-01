@@ -1,19 +1,39 @@
 {
-   "3" : {
+   "Bells" : [
+   {
+      "Bell" : 1,
+      "FriendlyName" : "StJ:1",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50
+   },
+   {
+      "Bell" : 2,
+      "FriendlyName" : "StJ:2",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50
+   },
+   {
+      "Bell" : 3,
       "FriendlyName" : "StJ:3",
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50
    },
-   "4" : {
+   {
+      "Bell" : 4,
       "FriendlyName" : "StJ:4",
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50
    },
-   "5" : {
+   {
+      "Bell" : 5,
       "FriendlyName" : "StJ:5",
       "HandstrokeDelay" : 350,
       "BackstrokeDelay" : 330,
@@ -23,25 +43,61 @@
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50
    },
-   "6" : {
+   {
+      "Bell" : 6,
       "FriendlyName" : "StJ:6",
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50
    },
-   "7" : {
+   {
+      "Bell" : 7,
       "FriendlyName" : "StJ:7",
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50
    },
-   "8" : {
+   {
+      "Bell" : 8,
       "FriendlyName" : "StJ:8",
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50
+   },
+   {
+      "Bell" : 9,
+      "FriendlyName" : "StJ:9",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50
+   },
+   {
+      "Bell" : 10,
+      "FriendlyName" : "StJ:10",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50
+   },
+   {
+      "Bell" : 11,
+      "FriendlyName" : "StJ:11",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50
+   },
+   {
+      "Bell" : 12,
+      "FriendlyName" : "StJ:12",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50
    }
+   ]
 }
