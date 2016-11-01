@@ -40,7 +40,7 @@ SensorInfoType::SensorInfoType()
 }
 
 SensorInfoType::SensorInfoType(json const& j)
-   : UID(std::stoul(j.value("UID", "0x0000"))),
+   : UID(std::stoul(j.value("UID", "0x0000"), 0, 0)),
      BatteryScale(j.value("BatteryScale", 1.0)),
      Bell(j.value("Bell", -1)),
      Polarity(j.value("Polarity", 1)),
