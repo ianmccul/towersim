@@ -198,8 +198,8 @@ int main(int argc, char** argv)
    // configure the radios
    //
 
-   Radios.push_back(Radio(22, 0, 0, 76));
-   Radios.push_back(Radio(4 , 0, 1, 82));
+   Radios.push_back(Radio(4 , 0, 1, 76));
+   Radios.push_back(Radio(22, 0, 0, 82));
    Radios.push_back(Radio(18, 1, 1, 70));
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
