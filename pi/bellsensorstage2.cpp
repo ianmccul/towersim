@@ -516,7 +516,8 @@ int main(int argc, char** argv)
                // changed on a sensor but we didn't restart the server.
                Bell = SensorFromUID[uid].Bell;
                BellNumber[PipeNumber] = Bell;
-               std::cerr << "Associating sensor " << std::hex << uid << " with pipe " << PipeNumber << " and bell " << Bell << std::dec << "\n";
+               std::cerr << "Associating sensor " << std::hex << uid << " with pipe " << PipeNumber
+                         << " and bell " << std::dec << Bell << "\n";
                if (Bell != -1)
                {
                   WriteBellAvailMsg(WriteToFile, Clients, Time-Delay, Bell);
