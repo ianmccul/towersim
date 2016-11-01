@@ -49,8 +49,8 @@ struct MsgTypes
    // float Ax in m/s^2
    // float Ay in m/s^2
 
-   static unsigned char const Bell = 'B';
-   // int8_t BellNumber
+   static unsigned char const BellAvail = 'E';
+   // no payload required
 };
 
 void WriteMsgToClients(bool WriteToFile, std::set<int>& Clients, unsigned char const* Buf, int Sz)
@@ -165,6 +165,15 @@ void WriteAccelMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int B
    *static_cast<float*>(static_cast<void*>(Buf+10)) = Ax;
    *static_cast<float*>(static_cast<void*>(Buf+14)) = Ay;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+4+4);
+}
+
+void WriteBellAvailMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int8_t Bell)
+{
+   unsigned char Buf[100];
+   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::BellAvail;
+   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1);
 }
 
 class GyroProcessor
@@ -450,7 +459,15 @@ int main(int argc, char** argv)
                   // first client, start up the radio.
                }
                Clients.insert(cl);
-               // TODO: First connected, send the 'B' messages
+               // send the 'B' messages to indicate which bells we have available
+               for (unsigned i = 0; i < 16; ++i)
+               {
+                  if (BellNumber[i] != -1)
+                  {
+                     std::set<int> TempC;  TempC.insert(cl);
+                     WriteBellAvailMsg(WriteToFile, TempC, 0, BellNumber[i]);
+                  }
+               }
             }
          }
 
@@ -500,6 +517,10 @@ int main(int argc, char** argv)
                Bell = SensorFromUID[uid].Bell;
                BellNumber[PipeNumber] = Bell;
                std::cerr << "Associating sensor " << std::hex << uid << " with pipe " << PipeNumber << " and bell " << Bell << std::dec << "\n";
+               if (Bell != -1)
+               {
+                  WriteBellAvailMsg(WriteToFile, Clients, Time-Delay, Bell);
+               }
             }
             if (Bell == -1)
             {

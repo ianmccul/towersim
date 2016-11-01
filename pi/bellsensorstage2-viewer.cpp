@@ -23,6 +23,7 @@ struct MsgTypes
    static unsigned char const Status = 'S';
    static unsigned char const BatteryV = 'B';
    static unsigned char const Accel = 'A';
+   static unsigned char const BellAvail = 'B';
 };
 
 int main(int argc, char** argv)
@@ -134,18 +135,18 @@ int main(int argc, char** argv)
          if (MsgType == MsgTypes::Gyro)
          {
             float z = *static_cast<float const*>(static_cast<void const*>(buf+10));
-            std::cout << Time << ' ' << Bell <<  " G " << z << std::endl;
+            std::cout << Time << ' ' << Bell <<  " G " << z << '\n';
          }
          else if (MsgType == MsgTypes::Accel)
          {
             float Ax = *static_cast<float const*>(static_cast<void const*>(buf+10));
             float Ay = *static_cast<float const*>(static_cast<void const*>(buf+14));
-            std::cout << Time << ' ' << Bell << " A " << Ax << ' ' << Ay << std::endl;
+            std::cout << Time << ' ' << Bell << " A " << Ax << ' ' << Ay << '\n';
          }
          else if (MsgType == MsgTypes::GyroCalibration)
          {
             float Offset = *static_cast<float const*>(static_cast<void const*>(buf+10));
-            std::cout << Time << ' ' << Bell << " H " << Offset << std::endl;
+            std::cout << Time << ' ' << Bell << " H " << Offset << '\n';
          }
          else if (MsgType == MsgTypes::Status)
          {
@@ -157,17 +158,21 @@ int main(int argc, char** argv)
             bool Charging = *static_cast<uint8_t const*>(static_cast<void const*>(buf+18));
             bool Sleeping = *static_cast<uint8_t const*>(static_cast<void const*>(buf+19));
             std::cout << Time << ' ' << Bell << " S " << std::hex << uid << std::dec << ' ' << AccODR
-                      << ' ' << GyroODR << ' ' << int(GyroBW) << ' ' << Power << ' ' << Charging << ' ' << Sleeping << std::endl;
+                      << ' ' << GyroODR << ' ' << int(GyroBW) << ' ' << Power << ' ' << Charging << ' ' << Sleeping << '\n';
          }
          else if (MsgType == MsgTypes::GyroTemp)
          {
             int8_t T = *static_cast<int8_t const*>(static_cast<void const*>(buf+10));
-            std::cout << Time << ' ' << Bell << " T " << int(T) << std::endl;
+            std::cout << Time << ' ' << Bell << " T " << int(T) << '\n';
          }
          else if (MsgType == MsgTypes::BatteryV)
          {
             uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+10));
-            std::cout << Time << ' ' << Bell << " B " << V << std::endl;
+            std::cout << Time << ' ' << Bell << " B " << V << '\n';
+         }
+         else if (MsgType == MsgTypes::BellAvail)
+         {
+            std::cout << Time << ' ' << Bell << " E" << '\n';
          }
          else
          {

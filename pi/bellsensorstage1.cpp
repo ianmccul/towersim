@@ -289,7 +289,7 @@ int main(int argc, char** argv)
                   // possible duplicate packet, check the payload
                   if (memcmp(LastBuf[BellNum]+2, buf+11, len-2) == 0)
                   {
-                     std::cout << "Ignoring duplicate packet for bell " << BellNum
+                     std::cout << "Ignoring duplicate packet for pipe " << BellNum
                                << " seq " << int(uint8_t(buf[9]&0x03)) << std::endl;
                      continue;
                   }
