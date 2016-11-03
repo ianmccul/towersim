@@ -276,7 +276,7 @@ void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int6
       }
    }
 
-   float ZCal = float((z - GyroOffset) / SensorFromBell[Bell].GyroScale);
+   float ZCal = float((z - GyroOffset) / SensorFromBell[Bell].GyroScale) * SensorFromBell[Bell].Polarity;
    WriteGyroMsg(WriteToFile, Clients, Time, Bell, ZCal);
 }
 

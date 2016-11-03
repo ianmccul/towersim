@@ -6,7 +6,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.4
    },
    {
       "Bell" : 2,
@@ -14,7 +15,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.4
    },
    {
       "Bell" : 3,
@@ -22,7 +24,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.4
    },
    {
       "Bell" : 4,
@@ -30,14 +33,17 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "HandstrokeStay" : 186.5,
+      "BackstrokeStay" : -189.9,
+      "ThetaR" : 0.3
    },
    {
       "Bell" : 5,
       "FriendlyName" : "StJ:5",
       "HandstrokeDelay" : 350,
       "BackstrokeDelay" : 330,
-      "ThetaR" : 0.2,
+      "ThetaR" : 0.3,
       "HandstrokeStay" : 188.5,
       "BackstrokeStay" : -187.3,
       "BackstrokeCutoff" : 217,
@@ -49,7 +55,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.3
    },
    {
       "Bell" : 7,
@@ -57,7 +64,10 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "HandstrokeStay" : 188.4,
+      "BackstrokeStay" : 186.8,
+      "ThetaR" : 0.3
    },
    {
       "Bell" : 8,
@@ -65,7 +75,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.2
    },
    {
       "Bell" : 9,
@@ -73,7 +84,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.1
    },
    {
       "Bell" : 10,
@@ -81,7 +93,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.2
    },
    {
       "Bell" : 11,
@@ -89,7 +102,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.1
    },
    {
       "Bell" : 12,
@@ -97,7 +111,8 @@
       "HandstrokeDelay" : 310,
       "BackstrokeDelay" : 350,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.1
    }
    ]
 }
