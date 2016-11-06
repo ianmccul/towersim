@@ -10,6 +10,8 @@ BellInfoType::BellInfoType(json const& j) : BellInfoType(j["Bell"], j)
 BellInfoType::BellInfoType(int BellNumber_, json const& j)
    : Bell(BellNumber_),
      FriendlyName(j["FriendlyName"].get<std::string>()),
+     HandstrokeDelay_ms(j["HandstrokeDelay"]),
+     BackstrokeDelay_ms(j["HandstrokeDelay"]),
      HandstrokeDelay(boost::posix_time::milliseconds(int64_t(j["HandstrokeDelay"]))),
      BackstrokeDelay(boost::posix_time::milliseconds(int64_t(j["BackstrokeDelay"]))),
      HandstrokeCutoff(j["HandstrokeCutoff"]),

@@ -19,6 +19,8 @@ struct BellInfoType
    int Bell;
    std::string FriendlyName;
    // delays from bottom dead centre
+   int64_t HandstrokeDelay_ms;
+   int64_t BackstrokeDelay_ms;
    boost::posix_time::time_duration HandstrokeDelay;
    boost::posix_time::time_duration BackstrokeDelay;
    double HandstrokeCutoff;
