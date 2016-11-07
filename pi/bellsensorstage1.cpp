@@ -76,7 +76,7 @@ class Radio
       bool ok;
 };
 
-Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel)
+Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel, uint64_t PAddr)
    : radio(ce_pin, DevMajor*10+DevMinor), ok(true)
 {
    radio.begin();
@@ -102,8 +102,8 @@ Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel)
    radio.closeReadingPipe(3);
    radio.closeReadingPipe(4);
    radio.closeReadingPipe(5);
-   radio.openReadingPipe(0, 0xe7e7e7e7e7);
-   radio.openReadingPipe(1, 0x0f0f0f0f0f);
+   radio.openReadingPipe(0, (PAddr & 0xffffffff00) | 0xe7);
+   radio.openReadingPipe(1, (PAddr & 0xffffffff00) | 0x0f);
    uint8_t PipeAddr = 0x17;
    radio.openReadingPipe(2, &PipeAddr);
    PipeAddr = 0x2c;
@@ -198,9 +198,9 @@ int main(int argc, char** argv)
    // configure the radios
    //
 
-   Radios.push_back(Radio(4 , 0, 1, 76));
-   Radios.push_back(Radio(22, 0, 0, 82));
-   Radios.push_back(Radio(18, 1, 1, 70));
+   Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
+   Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
+   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;

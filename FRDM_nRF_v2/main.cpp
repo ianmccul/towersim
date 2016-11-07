@@ -348,7 +348,11 @@ int main()
 
    unsigned Addr = (Addr1.read()<<1) + Addr0.read();
 
-   uint64_t PipeAddrs[4] = {0xe7e7e7e7e7ULL, 0x0f0f0f0f0fULL, 0x0f0f0f0f17ULL, 0x0f0f0f0f2cULL};
+   uint64_t PipeAddrs[4][4] = {{0xe7e7e7e7e7ULL, 0xe7e7e7e70fULL, 0xe7e7e7e717ULL, 0xe7e7e7e72cULL},
+                               {0x0f0f0f0fe7ULL, 0x0f0f0f0f0fULL, 0x0f0f0f0f17ULL, 0x0f0f0f0f2cULL},
+                               {0x7e7e7ef0e7ULL, 0x7e7e7ef00fULL, 0x7e7e7ef017ULL, 0x7e7e7ef02cULL},
+                               {0xf0f0f0f0e7ULL, 0xf0f0f0f00fULL, 0xf0f0f0f017ULL, 0xf0f0f0f02cULL}};
+
 
    unsigned Channel = (Ch1.read()<<1) + Ch0.read();
 
@@ -381,7 +385,7 @@ int main()
 
    PTX.Initialize();
    PTX.SetDataRate(2000);
-   PTX.SetDestinationAddress(PipeAddrs[Addr]);
+   PTX.SetDestinationAddress(PipeAddrs[Addr][Channel]);
    PTX.SetChannel(Channels[Channel]);
    Device.set_retransmit_attempts(0);
    Device.set_crc_width(2);

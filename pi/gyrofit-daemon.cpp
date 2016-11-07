@@ -25,7 +25,7 @@
 using json = nlohmann::json;
 
 int const MaxBells = 16;
-std::vector<GyroBDC> BDC(16);
+std::array<GyroBDC, 16> BDC{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
 
 void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
 {
