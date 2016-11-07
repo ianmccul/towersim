@@ -71,7 +71,7 @@ int main(int argc, char** argv)
       std::cerr.precision(16);
       int64_t Epoch = 0;
 
-      std::array<GyroBDC, 13> BDC;
+      std::array<GyroBDC, 13> BDC{0,1,2,3,4,5,6,7,8,9,10,11,12};
 
 
       std::string s;
@@ -92,7 +92,7 @@ int main(int argc, char** argv)
 
          if (ThisBell != -1 && ThisBell != Bell)
             continue;
-a
+
          In >> z;
 
          if (BDC[Bell].Process(Tm-Epoch, z))

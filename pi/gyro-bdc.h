@@ -40,6 +40,8 @@ class GyroBDC
    public:
       GyroBDC();
 
+      GyroBDC(int Bell_);
+
       typedef std::pair<int64_t, double> VelocityPoint;
 
       std::list<VelocityPoint> BDCPoints;
@@ -55,6 +57,7 @@ class GyroBDC
       int LastSign;
       double LastEnergy;
       int64_t LastBDC;
+      int Bell;
 };
 
 inline
@@ -64,7 +67,20 @@ GyroBDC::GyroBDC()
      CurrentMaxTime(0),
      LastSign(0),
      LastEnergy(0),
-     LastBDC(0)
+     LastBDC(0),
+     Bell(0)
+{
+}
+
+inline
+GyroBDC::GyroBDC(int Bell_)
+   : SampleBuf(HalfTimeLagMicrosec*2/760+20),
+     CurrentMax(0),
+     CurrentMaxTime(0),
+     LastSign(0),
+     LastEnergy(0),
+     LastBDC(0),
+     Bell(Bell_)
 {
 }
 
@@ -119,7 +135,8 @@ GyroBDC::Process(int64_t Time, float z)
             // DS test.  Check that the energy has changed by less than EnergyThreshold (or the LastEnergy is zero).
             if (LastEnergy != 0 && std::abs(V*V-LastEnergy) > EnergyThreshold && TimeEx < LastBDC+ResetTime)
             {
-               std::cerr << "Ignoring local extrema near " << CurrentMaxTime << " with velocity " << V
+               std::cerr << "Bell " << Bell << ": inoring local extrema near " << CurrentMaxTime
+                         << " with velocity " << V
                          << " as the change in energy is too big.  Possible stay event?\n";
             }
             else

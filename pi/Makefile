@@ -89,7 +89,7 @@ stage1 = bellsensorstage1 bellsensorstage1-log bellsensorstage1-viewer
 
 stage2 = bellsensorstage2 bellsensorstage2-viewer
 
-stage3 = gyrofit-daemon
+stage3 = gyrofit-daemon gyrofit-reader
 
 LIBS_bellsensorstage2 = -lboost_program_options
 
