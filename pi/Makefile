@@ -77,7 +77,7 @@ gyro-bdc-daemon : sensortcpserver.o sensors.o bells.o
 
 LIBS_gyro-bdc-daemon = -lboost_system -lboost_date_time
 
-gyrofit-daemon : sensortcpserver.o bells.o
+gyrofit-daemon : sensortcpserver.o bells.o bdc-tcpserver.o
 
 gyrofit-reader : bells.o
 

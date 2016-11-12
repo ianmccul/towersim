@@ -11,6 +11,7 @@
 
 #include "asio_handler.h"
 #include "sensortcpserver.h"
+#include "bdc-tcpserver.h"
 #include <iostream>
 #include <boost/lexical_cast.hpp>
 #include <cstdint>
@@ -27,7 +28,7 @@ using json = nlohmann::json;
 int const MaxBells = 16;
 std::array<GyroBDC, 16> BDC{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
 
-void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
+void Process(SensorTCPServer& MyServer, BDC_TCPServer& BDCServer, std::vector<char> const& Buf)
 {
    int64_t Time = *static_cast<int64_t const*>(static_cast<void const*>(Buf.data()));
    int Bell = Buf[8];
@@ -43,6 +44,11 @@ void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
       int64_t T = BDC[Bell].BDCPoints.front().first;
       double V = BDC[Bell].BDCPoints.front().second;
       BDC[Bell].BDCPoints.pop_front();
+
+      boost::posix_time::ptime Time = boost::posix_time::from_time_t(T/1000000) +
+         boost::posix_time::microseconds(T % 1000000);
+
+      BDCServer.TriggerBDC(Bell, Time, V);
 
      // std::cout << V << '\n';
 
@@ -66,9 +72,8 @@ void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
       std::cout << "TRIGGER BELL " << Bell << ' ' << " at " << T << " V: "
                 << V << (Handstroke ? " Handstroke" : " Backstroke") << '\n';
 
-      boost::posix_time::ptime StrikeTime = boost::posix_time::from_time_t(T/1000000) +
-         boost::posix_time::microseconds(T % 1000000);
-      StrikeTime += Handstroke ? BellInfo[Bell].HandstrokeDelay : BellInfo[Bell].BackstrokeDelay;
+      boost::posix_time::ptime StrikeTime = Time +
+	 (Handstroke ? BellInfo[Bell].HandstrokeDelay : BellInfo[Bell].BackstrokeDelay);
       MyServer.TriggerSensor(BellInfo[Bell].FriendlyName, StrikeTime);
 
    }
@@ -85,19 +90,21 @@ int main(int argc, char** argv)
 
    boost::asio::io_service io;
    PacketHandler Sensor(io);
-   SensorTCPServer MyServer(io, "0.0.0.0", "5700");
+   SensorTCPServer MySensorServer(io, "0.0.0.0", "5700");
+   BDC_TCPServer MyBDCServer(io, "0.0.0.0", "5701");
 
    // attach the bells to the server.
    for (auto const& x : BellInfo)
    {
-      MyServer.Attach(x.FriendlyName, 0, 0);
+      MySensorServer.Attach(x.FriendlyName, 0, 0);
+      //      MyBDCServer.Attach(x.FriendlyName, 0, 0);
    }
 
    // connect to the local stage 2 socket
    Sensor.Connect(std::string("\0bellsensordaemonsocket", 23));
 
    // And start the loop
-   Sensor.AsyncRead(boost::bind(&Process, boost::ref(MyServer), _1));
+   Sensor.AsyncRead(boost::bind(&Process, boost::ref(MySensorServer), boost::ref(MyBDCServer), _1));
 
    // run the io server to wait for triggers
    io.run();
