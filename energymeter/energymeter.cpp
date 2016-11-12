@@ -12,10 +12,10 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     QMainWindow window;
     Chart *chart = new Chart;
-    chart->setTitle("Dynamic spline chart");
+    chart->setTitle("Energy Meter");
     chart->legend()->hide();
     chart->setAnimationOptions(QChart::AllAnimations);
-    chart->ConnectTo("127.0.0.1", 5701);
+    chart->ConnectTo("192.168.0.20", 5701);
     QChartView chartView(chart);
     chartView.setRenderHint(QPainter::Antialiasing);
     window.setCentralWidget(&chartView);

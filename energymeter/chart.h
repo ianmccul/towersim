@@ -4,6 +4,7 @@
 #define CHART_H
 
 #include <QtCharts/QChart>
+#include <QtCharts/QCategoryAxis>
 #include <QtCore/QTimer>
 #include <QtCore/QObject>
 #include <QtNetwork/QTcpServer>
@@ -43,6 +44,7 @@ class Chart: public QChart
       QSplineSeries *m_series;
       QStringList m_titles;
       QValueAxis *m_axis;
+      QCategoryAxis *m_axis_critical;
       qreal m_step;
       qreal m_x;
       qreal m_y;

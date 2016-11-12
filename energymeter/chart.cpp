@@ -13,6 +13,7 @@ Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
     QChart(QChart::ChartTypeCartesian, parent, wFlags),
     m_series(0),
     m_axis(new QValueAxis),
+    m_axis_critical(new QCategoryAxis),
     m_step(0),
     m_x(3),
     m_y(1),
@@ -27,18 +28,44 @@ Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
 
     m_series = new QSplineSeries(this);
     QPen green(Qt::red);
-    green.setWidth(3);
+    green.setWidth(5);
     m_series->setPen(green);
     m_series->append(m_x, m_y);
 
     addSeries(m_series);
     createDefaultAxes();
+    QPen GridLine(Qt::black);
+    GridLine.setWidth(2);
+    m_axis->setGridLinePen(GridLine);
     setAxisX(m_axis, m_series);
     m_axis->setTickCount(5);
     axisX()->setRange(0, 5);
-    axisY()->setRange(0, 500*500);
 
-    m_timer.start();
+    // bell 9
+    //    axisY()->setRange(400*400, 410*410);
+    //axisY()->setRange(0, 410*410);
+
+    // bell 5
+    axisY()->setRange(460*460, 475*475);
+
+    axisY()->setGridLinePen(GridLine);
+
+    QPen Marker(Qt::blue);
+    Marker.setWidth(2);
+    m_axis_critical->setGridLinePen(Marker);
+
+    // bell 9
+    //    m_axis_critical->append("Handstroke", 164050);
+    // m_axis_critical->append("Backstroke", 165500);
+
+    // bell 5
+    m_axis_critical->append("Handstroke", 465*465);
+    m_axis_critical->append("Backstroke", 469*469);
+
+    this->addAxis(m_axis_critical, Qt::AlignRight);
+    m_series->attachAxis(m_axis_critical);
+
+    //    m_timer.start();
 }
 
 Chart::~Chart()
@@ -124,9 +151,10 @@ Chart::ReadCommand(QObject* SocketObj)
       int Bell;
       double V;
       Str >> BDC >> Bell >> At >> V;
-      TRACE(V);
+      TRACE(Bell)(V);
 
-      this->PlotPoint(V*V);
+      if (Bell == 5)
+	this->PlotPoint(V*V);
 
 
       Avail = Socket->bytesAvailable();
