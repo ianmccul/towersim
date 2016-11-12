@@ -1,4 +1,9 @@
 QT += charts
+QT += core gui widgets
+QT += network
+
 TARGET = energymeter
-SOURCES += energymeter.cpp
-INCLUDEPATH += /usr/include/qt5
+HEADERS += chart.h
+SOURCES += energymeter.cpp chart.cpp
+
+INCLUDEPATH += ../
