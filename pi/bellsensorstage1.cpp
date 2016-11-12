@@ -48,7 +48,7 @@ void sleep_ms(long microsec)
 class Radio
 {
    public:
-      Radio(int ce_pin, int DevMajor, int DevMinor, int Channel);
+      Radio(int ce_pin, int DevMajor, int DevMinor, int Channel, uint64_t PAddr);
 
       Radio(Radio&) = delete;
       Radio& operator=(Radio const&) = delete;

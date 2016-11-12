@@ -82,7 +82,7 @@ BDC_TCPServer::TriggerBDC(int Bell, boost::posix_time::ptime At, double Velocity
 {
    std::ostringstream Msg;
    Msg << "BDC " << Bell << " "
-       << to_iso_string(At)
+       << to_iso_string(At) << " "
        << std::setprecision(6) << Velocity
        << '\n';
    std::string Str = Msg.str();
