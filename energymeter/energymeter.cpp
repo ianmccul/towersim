@@ -1,5 +1,7 @@
 // -*- C++ -*-
 
+// to inhibit screensaver: qdbus org.freedesktop.ScreenSaver /ScreenSaver SimulateUserActivity
+
 #include "chart.h"
 #include <QtCharts/QChartView>
 #include <QtWidgets/QApplication>
