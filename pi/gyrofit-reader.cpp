@@ -27,6 +27,7 @@
 #include <fstream>
 #include <string>
 #include <boost/program_options.hpp>
+#include "common/trace.h"
 
 namespace prog_opt = boost::program_options;
 
@@ -118,8 +119,10 @@ int main(int argc, char** argv)
                   std::cerr << "Ignoring backstroke bell " << Bell << " velocity " << V << " too low.\n";
                   continue;
                }
-
-               T += Handstroke ? BellInfo[Bell].HandstrokeDelay_ms : BellInfo[Bell].BackstrokeDelay_ms;
+               //TRACE(T);
+               T += 1000*(Handstroke ? BellInfo[Bell].HandstrokeDelay_ms
+                          : BellInfo[Bell].BackstrokeDelay_ms);
+               //TRACE(T);
             }
             std::cout << (T + Epoch) << ' ' << Bell << ' ' << V << '\n';
          }
