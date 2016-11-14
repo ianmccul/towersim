@@ -7,35 +7,39 @@
 #include <QtCore/QTime>
 #include <QtCore/QDebug>
 #include <QtNetwork/QTcpSocket>
+#include <QtDBus/QtDBus>
 #include "common/trace.h"
 
 Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
     QChart(QChart::ChartTypeCartesian, parent, wFlags),
     m_series(0),
     m_axis(new QValueAxis),
-    m_axis_critical(new QCategoryAxis),
+    m_axis_thresholds(new QCategoryAxis),
     m_step(0),
     m_x(3),
     m_y(1),
     ConnectionMapper(new QSignalMapper(this)),
     ConnectionCompletedMapper(new QSignalMapper(this)),
-    Server(new QTcpServer(this))
+    Server(new QTcpServer(this)),
+    yMax(0.0),
+    yMin(-1.0)
 {
     qsrand((uint) QTime::currentTime().msec());
 
-    //QObject::connect(&m_timer, SIGNAL(timeout()), this, SLOT(handleTimeout()));
-    //m_timer.setInterval(1000);
+    // Timer to prevent screen saver
+    QObject::connect(&m_timer, SIGNAL(timeout()), this, SLOT(handleTimeout()));
+    m_timer.setInterval(10000);
 
     m_series = new QSplineSeries(this);
     QPen green(Qt::red);
-    green.setWidth(5);
+    green.setWidth(10);
     m_series->setPen(green);
     m_series->append(m_x, m_y);
 
     addSeries(m_series);
     createDefaultAxes();
     QPen GridLine(Qt::black);
-    GridLine.setWidth(2);
+    GridLine.setWidth(4);
     m_axis->setGridLinePen(GridLine);
     setAxisX(m_axis, m_series);
     m_axis->setTickCount(5);
@@ -51,42 +55,82 @@ Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
     axisY()->setGridLinePen(GridLine);
 
     QPen Marker(Qt::blue);
-    Marker.setWidth(2);
-    m_axis_critical->setGridLinePen(Marker);
+    Marker.setWidth(8);
+    m_axis_thresholds->setGridLinePen(Marker);
+    m_axis_thresholds->setLabelsPosition(QCategoryAxis::AxisLabelsPositionOnValue);
 
     // bell 9
-    //    m_axis_critical->append("Handstroke", 164050);
-    // m_axis_critical->append("Backstroke", 165500);
+    //    m_axis_thresholds->append("Handstroke", 164050);
+    // m_axis_thresholds->append("Backstroke", 165500);
 
     // bell 5
-    m_axis_critical->append("Handstroke", 465*465);
-    m_axis_critical->append("Backstroke", 469*469);
+    m_axis_thresholds->append("Handstroke", 465*465);
+    m_axis_thresholds->append("Backstroke", 469*469);
 
-    this->addAxis(m_axis_critical, Qt::AlignRight);
-    m_series->attachAxis(m_axis_critical);
+    this->addAxis(m_axis_thresholds, Qt::AlignRight);
+    m_series->attachAxis(m_axis_thresholds);
 
-    //    m_timer.start();
+    m_timer.start();
 }
 
 Chart::~Chart()
 {
-
 }
 
-void Chart::handleTimeout()
+void
+Chart::handleTimeout()
 {
-   qreal x = 1; // plotArea().width() / m_axis->tickCount();
-   qreal y = (m_axis->max() - m_axis->min()) / m_axis->tickCount();
-   m_x += y;
-   m_y = qrand() % 5 - 2.5;
-   m_series->append(m_x, m_y);
-   scroll(x, 0);
-   if (m_x == 100)
-      m_timer.stop();
+   // Stop the screen saver from kicking in
+   // system("qdbus org.freedesktop.ScreenSaver /ScreenSaver SimulateUserActivity");
+   QDBusInterface dbus_iface("org.freedesktop.ScreenSaver", "/ScreenSaver",
+                             "org.freedesktop.ScreenSaver");
+   dbus_iface.call("SimulateUserActivity");
 }
 
-void Chart::PlotPoint(double v)
+void
+Chart::SetThreshold(QString const& Str)
 {
+   m_axis_thresholds->remove(Str);
+   m_axis_thresholds->append(Str, m_y);
+}
+
+void
+Chart::ResetView()
+{
+   this->DisableAnimations();
+   this->axisY()->setRange(0.0, yMax+2000);
+}
+
+void
+Chart::NarrowView()
+{
+   this->DisableAnimations();
+   this->axisY()->setRange(std::max(0.0, yMin-2000), yMax+2000);
+}
+
+void
+Chart::DisableAnimations()
+{
+   this->setAnimationOptions(QChart::NoAnimation);
+}
+
+void
+Chart::EnableAnimations()
+{
+   this->setAnimationOptions(QChart::SeriesAnimations);
+}
+
+void
+Chart::PlotPoint(double v)
+{
+   yMax = std::max(v, yMax);
+   if (yMin == -1.0)
+      yMin = v;
+   else
+      yMin = std::min(v, yMin);
+
+   this->setAnimationOptions(QChart::AllAnimations);
+
    qreal x = plotArea().width() / m_axis->tickCount();
    TRACE(x);
    qreal y = (m_axis->max() - m_axis->min()) / m_axis->tickCount();
@@ -97,7 +141,8 @@ void Chart::PlotPoint(double v)
    scroll(x, 0);
 }
 
-void Chart::ConnectTo(QString const& Host, int Port)
+void
+Chart::ConnectTo(QString const& Host, int Port)
 {
    QTcpSocket* Connection = new QTcpSocket(this);
    connect(Connection, SIGNAL(error(QAbstractSocket::SocketError)), Connection, SLOT(deleteLater()));

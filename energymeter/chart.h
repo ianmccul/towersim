@@ -32,6 +32,16 @@ class Chart: public QChart
 
       void PlotPoint(double v);
 
+      void SetThreshold(QString const& Str);
+
+      // resets the view
+      void ResetView();
+
+      void NarrowView();
+
+      void DisableAnimations();
+      void EnableAnimations();
+
    public slots:
       void handleTimeout();
 
@@ -44,7 +54,7 @@ class Chart: public QChart
       QSplineSeries *m_series;
       QStringList m_titles;
       QValueAxis *m_axis;
-      QCategoryAxis *m_axis_critical;
+      QCategoryAxis *m_axis_thresholds;
       qreal m_step;
       qreal m_x;
       qreal m_y;
@@ -52,6 +62,9 @@ class Chart: public QChart
       QSignalMapper* ConnectionMapper;
       QSignalMapper* ConnectionCompletedMapper;
       QTcpServer* Server;
+
+      double yMax;
+      double yMin;
 };
 
 #endif /* CHART_H */
