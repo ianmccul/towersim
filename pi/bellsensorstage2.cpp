@@ -317,8 +317,6 @@ GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t T
 
 std::array<int, 16> BellSeqNum {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
 
-std::array<std::array<std::array<unsigned char, 64>, 256>, 16> OldBuf;
-
 int main(int argc, char** argv)
 {
    try
@@ -353,6 +351,7 @@ int main(int argc, char** argv)
       std::ifstream SensorsConfig("sensors.json");
       json Sensors;
       SensorsConfig >> Sensors;
+ 
       ReadSensorInfo(Sensors["Sensors"]);
 
       // mapping of stage 1 channel number to bell number
@@ -608,21 +607,13 @@ int main(int argc, char** argv)
                             << " packets " << int(uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1))
                             << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
 
+	       std::cerr << "Seq numbers: ";
 	       for (int i = 0; i < len; ++i)
 	       {
-		  std::cerr << int(buf[i]) << ' ' << int(OldBuf[Bell][SeqNum][i]) << "  ";
+		  std::cerr << BellSeqNum[i] << ' ';
 	       }
-
-	       // check and see if we had this packet before
-	       if (std::memcmp(buf, OldBuf[Bell][SeqNum].data(), len) == 0)
-	       {
-		  std::cerr << "MATCH identical to old packet with seq " << SeqNum << '\n';
-	       }
-	       else
-		  std::cerr << "NO MATCH\n";
+	       std::cerr << '\n';
             }
-
-	    std::memcpy(OldBuf[Bell][SeqNum].data(), buf, len);
 
             BellSeqNum[Bell] = SeqNum;
 
