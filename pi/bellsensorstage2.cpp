@@ -608,11 +608,18 @@ int main(int argc, char** argv)
                             << " packets " << int(uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1))
                             << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
 
+	       for (int i = 0; i < len; ++i)
+	       {
+		  std::cerr << int(buf[i]) << ' ' << int(OldBuf[Bell][SeqNum][i]) << "  ";
+	       }
+
 	       // check and see if we had this packet before
 	       if (std::memcmp(buf, OldBuf[Bell][SeqNum].data(), len) == 0)
 	       {
 		  std::cerr << "MATCH identical to old packet with seq " << SeqNum << '\n';
 	       }
+	       else
+		  std::cerr << "NO MATCH\n";
             }
 
 	    std::memcpy(OldBuf[Bell][SeqNum].data(), buf, len);
