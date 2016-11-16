@@ -6,6 +6,7 @@
 #include <QtCharts/QChart>
 #include <QtCharts/QCategoryAxis>
 #include <QtCharts/QLineSeries>
+#include <QtCharts/QScatterSeries>
 #include <QtCore/QTimer>
 #include <QtCore/QObject>
 #include <QtNetwork/QTcpServer>
@@ -46,6 +47,7 @@ class Chart: public QChart
       void EnableAnimations();
 
    public slots:
+      void handleScreensaver();
       void handleTimeout();
 
    private slots:
@@ -53,10 +55,12 @@ class Chart: public QChart
       void ReadCommand(QObject* Socket);
 
    private:
+      QTimer screenTimer;
       QTimer m_timer;
-      QSplineSeries *m_series;
-      QLineSeries* m_hseries;
-      QLineSeries* m_bseries;
+      QScatterSeries* handPoints;
+      QScatterSeries* backPoints;
+      QLineSeries* hthresh;
+      QLineSeries* bthresh;
       double HEnergy, BEnergy;
       QStringList m_titles;
       QValueAxis *m_axis;

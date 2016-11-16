@@ -2,7 +2,6 @@
 
 #include "chart.h"
 #include <QtCharts/QAbstractAxis>
-#include <QtCharts/QSplineSeries>
 #include <QtCharts/QValueAxis>
 #include <QtCore/QTime>
 #include <QtCore/QDebug>
@@ -12,16 +11,16 @@
 
 Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
     QChart(QChart::ChartTypeCartesian, parent, wFlags),
-    m_series(0),
-    m_hseries(0),
-    m_bseries(0),
+    handPoints(0),
+    backPoints(0),
+    hthresh(0),
+    bthresh(0),
     HEnergy(465*465),
     BEnergy(469*469),
     m_axis(new QValueAxis),
     m_step(0),
-    m_x(3),
+    m_x(3.5),
     m_y(1),
-    gradient(
     ConnectionMapper(new QSignalMapper(this)),
     ConnectionCompletedMapper(new QSignalMapper(this)),
     Server(new QTcpServer(this)),
@@ -31,39 +30,55 @@ Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
     qsrand((uint) QTime::currentTime().msec());
 
     // Timer to prevent screen saver
-    QObject::connect(&m_timer, SIGNAL(timeout()), this, SLOT(handleTimeout()));
-    m_timer.setInterval(10000);
+    QObject::connect(&m_timer, SIGNAL(timeout()), this, SLOT(handleScreensaver()));
+    screenTimer.setInterval(10000);
 
-    m_series = new QSplineSeries(this);
-    QPen green(Qt::red);
-    green.setWidth(10);
-    m_series->setPen(green);
-    m_series->append(m_x, m_y);
+    QObject::connect(&m_timer, SIGNAL(timeout()), this, SLOT(handleTimeout()));
+    m_timer.setInterval(10);
+
+    handPoints = new QScatterSeries(this);
+    handPoints->setMarkerShape(QScatterSeries::MarkerShapeCircle);
+    handPoints->setMarkerSize(30.0);
+    QBrush b(Qt::red);
+    QPen p(Qt::red);
+    handPoints->setPen(p);
+    handPoints->setBrush(b);
+    this->addSeries(handPoints);
+
+    backPoints = new QScatterSeries(this);
+    p = QPen(Qt::blue);
+    b = QBrush(Qt::blue);
+    backPoints->setPen(p);
+    backPoints->setBrush(b);
+    backPoints->setMarkerShape(QScatterSeries::MarkerShapeCircle);
+    backPoints->setMarkerSize(30.0);
+    this->addSeries(backPoints);
 
     QPen HPen(Qt::red);
     HPen.setWidth(6);
-    m_hseries = new QLineSeries();
-    m_hseries->setPen(HPen);
-    m_hseries->append(0, HEnergy);
-    m_hseries->append(5, HEnergy);
-    this->addSeries(m_hseries);
+    hthresh = new QLineSeries();
+    hthresh->setPen(HPen);
+    hthresh->append(0, HEnergy);
+    hthresh->append(5, HEnergy);
+    this->addSeries(hthresh);
 
     QPen BPen(Qt::blue);
     BPen.setWidth(6);
-    m_bseries = new QLineSeries();
-    m_bseries->setPen(BPen);
-    m_bseries->append(0, BEnergy);
-    m_bseries->append(5, BEnergy);
-    this->addSeries(m_bseries);
+    bthresh = new QLineSeries();
+    bthresh->setPen(BPen);
+    bthresh->append(0, BEnergy);
+    bthresh->append(5, BEnergy);
+    this->addSeries(bthresh);
 
-    addSeries(m_series);
     createDefaultAxes();
     QPen GridLine(Qt::black);
     GridLine.setWidth(4);
     m_axis->setGridLinePen(GridLine);
-    setAxisX(m_axis, m_series);
-    m_axis->setTickCount(5);
-    axisX()->setRange(0, 5);
+    setAxisX(m_axis);
+    m_axis->setTickCount(11);
+    axisX()->setRange(0, 10);
+    handPoints->attachAxis(m_axis);
+    backPoints->attachAxis(m_axis);
 
     // bell 5
     axisY()->setRange(460*460, 475*475);
@@ -80,6 +95,19 @@ Chart::~Chart()
 void
 Chart::handleTimeout()
 {
+   double const f = 0.85;
+   qreal xMiddle = f*m_axis->max() + (1-f)*m_axis->min();
+   if (m_x > xMiddle)
+   {
+     double Scale = (this->plotArea().right() - this->plotArea().left()) / 
+       (m_axis->max() - m_axis->min());
+     this->scroll(std::min(10.0, Scale*(m_x-xMiddle)), 0);
+   }
+}
+
+void
+Chart::handleScreensaver()
+{
    // Stop the screen saver from kicking in
    // system("qdbus org.freedesktop.ScreenSaver /ScreenSaver SimulateUserActivity");
    QDBusInterface dbus_iface("org.freedesktop.ScreenSaver", "/ScreenSaver",
@@ -91,35 +119,35 @@ void
 Chart::SetHandstroke()
 {
   HEnergy = m_y;
-  m_hseries->clear();
-  m_hseries->append(0, HEnergy);
-  m_hseries->append(this->plotArea().right(), HEnergy);
+  hthresh->clear();
+  hthresh->append(0, HEnergy);
+  hthresh->append(this->plotArea().right(), HEnergy);
 }
 
 void
 Chart::SetBackstroke()
 {
   BEnergy = m_y;
-  m_bseries->clear();
-  m_bseries->append(0, BEnergy);
-  m_bseries->append(this->plotArea().right(), BEnergy);
+  bthresh->clear();
+  bthresh->append(0, BEnergy);
+  bthresh->append(this->plotArea().right(), BEnergy);
 }
 
 void
 Chart::Reset()
 {
-   m_series->clear();
+   handPoints->clear();
+   backPoints->clear();
    m_x = 3;
-   m_series->append(m_x, m_y);
-   axisX()->setRange(0, 5);
+   axisX()->setRange(0, 10);
 
-   m_hseries->clear();
-   m_hseries->append(0, HEnergy);
-   m_hseries->append(5, HEnergy);
+   hthresh->clear();
+   hthresh->append(0, HEnergy);
+   hthresh->append(5, HEnergy);
 
-   m_bseries->clear();
-   m_bseries->append(0, BEnergy);
-   m_bseries->append(5, BEnergy);
+   bthresh->clear();
+   bthresh->append(0, BEnergy);
+   bthresh->append(5, BEnergy);
 
    yMin = m_y;
    yMax = m_y;
@@ -149,7 +177,7 @@ Chart::DisableAnimations()
 void
 Chart::EnableAnimations()
 {
-   this->setAnimationOptions(QChart::SeriesAnimations);
+   this->setAnimationOptions(QChart::NoAnimation);
 }
 
 void
@@ -162,23 +190,20 @@ Chart::PlotPoint(double v)
    else
       yMin = std::min(E, yMin);
 
-   this->setAnimationOptions(QChart::AllAnimations);
-
-   qreal x = plotArea().width() / m_axis->tickCount();
-   TRACE(x);
-   qreal y = (m_axis->max() - m_axis->min()) / m_axis->tickCount();
-   TRACE(y);
-   m_x += y;
+   m_x += 1;
    m_y = E;
    
-   QPen p(v > 0 ? Qt::red : Qt::blue);
-   p.setWidth(10);
-   m_series->setPen(p);
+   if (v < 0)
+   {
+     backPoints->append(m_x, m_y);
+   }
+   else
+   {
+     handPoints->append(m_x, m_y);
+   }
 
-   m_series->append(m_x, m_y);
-   scroll(x, 0);
-   m_hseries->append(plotArea().right(), HEnergy);
-   m_bseries->append(plotArea().right(), BEnergy);
+   hthresh->append(plotArea().right(), HEnergy);
+   bthresh->append(plotArea().right(), BEnergy);
 }
 
 void
