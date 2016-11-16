@@ -108,8 +108,14 @@ void WriteGyroCalibrationMsg(bool WriteToFile, std::set<int>& Clients, int64_t T
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
 }
 
+std::array<double, 16> GyroDiff{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+std::array<double, 16> GyroLast{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
 void WriteGyroMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float z)
 {
+   GyroDiff[Bell] = std::max(GyroDiff[Bell], std::abs(GyroLast[Bell]-z));
+   GyroLast[Bell] = z;
+
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
@@ -309,6 +315,8 @@ GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t T
    LastSeqNum = SeqNum;
 }
 
+std::array<int, 16> BellSeqNum {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+
 int main(int argc, char** argv)
 {
    try
@@ -480,6 +488,10 @@ int main(int argc, char** argv)
             if (r != len)
             {
                perror("Error reading from file");
+               for (int i = 1; i <= 12; ++i)
+               {
+                  std::cout << "Gyro " << i << " max change " << GyroDiff[i] << '\n';
+               }
                return 1;
             }
          }
@@ -505,6 +517,13 @@ int main(int argc, char** argv)
          uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+9));
          unsigned char Flags = buf[11];
 
+         if (PipeNumber > 11)
+         {
+            // invalid pipe - this should't happen, but for bugs in stage 1...
+            std::cerr << "Invalid pipe " << PipeNumber << '\n';
+            continue;
+         }
+
          if (Flags & 0x80)
          {
             // status packet
@@ -516,7 +535,7 @@ int main(int argc, char** argv)
                // changed on a sensor but we didn't restart the server.
                Bell = SensorFromUID[uid].Bell;
                BellNumber[PipeNumber] = Bell;
-               std::cerr << "Associating sensor " << std::hex << uid << " with pipe " << PipeNumber
+               std::cerr << "Associating sensor " << std::hex << uid << " with pipe " << std::dec << PipeNumber
                          << " and bell " << std::dec << Bell << "\n";
                if (Bell != -1)
                {
@@ -526,6 +545,7 @@ int main(int argc, char** argv)
             if (Bell == -1)
             {
                // if we still don't have a bell number, then we can't do anything useful
+               std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
                continue;
             }
             int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
@@ -554,9 +574,11 @@ int main(int argc, char** argv)
          }
          else
          {
-            // can't do anything yet, we don't know what bell we have
-            if (Bell == -1)
+            if (Bell == -1)  // can't do anything yet, we don't know what bell we have
+            {
+               std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
                continue;
+            }
             // sensor packet
             uint8_t SeqNum = buf[12];
 
@@ -567,10 +589,21 @@ int main(int argc, char** argv)
 
             if (len != ExpectedPacketLength)
             {
-               std::cerr << "Unexpected packet length " << int(len) << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
+               std::cerr << Time << " bell " << Bell << " pipe " << PipeNumber << " unexpected packet length " << int(len) << " expected "
+                         << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
                          << " Delay=" << Delay << " Flags=" << std::hex << uint16_t(Flags) << " SeqNum=" << std::dec << uint16_t(SeqNum) << "\n";
                continue;
             }
+
+            if (BellSeqNum[Bell] != -1 && SeqNum != uint8_t(BellSeqNum[Bell]+1))
+            {
+               int LostPackets = uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1);
+               if (LostPackets > 0)
+                  std::cerr << Time << " Packet loss bell " << Bell << " pipe " << PipeNumber << " delay " << Delay
+                            << " packets " << int(uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1))
+                            << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
+            }
+            BellSeqNum[Bell] = SeqNum;
 
             std::vector<int16_t> GyroMeasurements(NumGyro);
             std::memcpy(GyroMeasurements.data(), buf+13+NumAccel*6, NumGyro*2);

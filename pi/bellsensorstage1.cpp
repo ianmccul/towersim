@@ -268,7 +268,7 @@ int main(int argc, char** argv)
          Radio& r = Radios[i];
          // check for data on the radio
          uint8_t PipeNum = 0;
-         if (r.Available(&PipeNum))
+         if (r.Available(&PipeNum) && PipeNum <= 3)  // PipeNum of 7 also indicates RX_FIFO is empty.
          {
             unsigned char buf[33+9];
             int len = 0;
