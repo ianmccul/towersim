@@ -18,6 +18,7 @@
 #include "sensors.h"
 #include <boost/program_options.hpp>
 #include "common/matvec/matvec.h"
+#include "common/prog_opt_accum.h"
 
 namespace prog_opt = boost::program_options;
 
@@ -323,12 +324,14 @@ int main(int argc, char** argv)
    {
       std::string InFile;
       std::string OutFile;
+      int Verbose;
 
       prog_opt::options_description desc("Allowed options");
       desc.add_options()
          ("help", "show this help message")
          ("infile", prog_opt::value(&InFile), "read input from a file rather than a socket")
          ("outfile", prog_opt::value(&OutFile), "direct output to a file rather than a socket")
+         ("verbose,v", prog_opt_ext::accum_value(&Verbose), "verbose output")
          ;
 
       prog_opt::options_description opt;
@@ -351,7 +354,7 @@ int main(int argc, char** argv)
       std::ifstream SensorsConfig("sensors.json");
       json Sensors;
       SensorsConfig >> Sensors;
- 
+
       ReadSensorInfo(Sensors["Sensors"]);
 
       // mapping of stage 1 channel number to bell number
@@ -555,7 +558,7 @@ int main(int argc, char** argv)
             bool Power = Flags & 0x20;
             bool Charging = Flags & 0x10;
             bool Sleeping = Flags & 0x02;
-            WriteStatusMsg(WriteToFile, Clients, Time-Delay, Bell, uid, AccODR, GyroODR, GyroBW, 
+            WriteStatusMsg(WriteToFile, Clients, Time-Delay, Bell, uid, AccODR, GyroODR, GyroBW,
 			   Power, Charging, Sleeping);
             int Offset = 19;
             // status packet
@@ -591,28 +594,57 @@ int main(int argc, char** argv)
 
             if (len != ExpectedPacketLength)
             {
-               std::cerr << Time << " bell " << Bell << " pipe " << PipeNumber 
+               std::cerr << Time << " bell " << Bell << " pipe " << PipeNumber
 			 << " unexpected packet length " << int(len) << " expected "
                          << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
-                         << " Delay=" << Delay << " Flags=" << std::hex << uint16_t(Flags) << " SeqNum=" 
+                         << " Delay=" << Delay << " Flags=" << std::hex << uint16_t(Flags) << " SeqNum="
 			 << std::dec << uint16_t(SeqNum) << "\n";
+               if (Verbose > 2)
+               {
+                  std::cerr << "Seq numbers: ";
+                  for (int i = 1; i <= 12; ++i)
+                  {
+                     std::cerr << BellSeqNum[i] << ' ';
+                  }
+                  std::cerr << '\n';
+                  std::cerr << "Packet: ";
+                  for (int i = 0; i < len; ++i)
+                  {
+                     std::cerr << int(buf[i]) << ' ';
+                  }
+                  std::cerr << '\n';
+               }
                continue;
             }
 
-            if (BellSeqNum[Bell] != -1 && SeqNum != uint8_t(BellSeqNum[Bell]+1))
+            if (Verbose > 0 && BellSeqNum[Bell] != -1 && SeqNum != uint8_t(BellSeqNum[Bell]+1))
             {
                int LostPackets = uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1);
-               if (LostPackets > 0)
+               if (LostPackets > (Verbose > 2 ? 0 : (Verbose > 1 ? 1 : 5)))
+               {
                   std::cerr << Time << " Packet loss bell " << Bell << " pipe " << PipeNumber << " delay " << Delay
-                            << " packets " << int(uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1))
+                            << " packets " << LostPackets
                             << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
+               }
 
-	       std::cerr << "Seq numbers: ";
-	       for (int i = 1; i < 12; ++i)
-	       {
-		  std::cerr << BellSeqNum[i] << ' ';
-	       }
-	       std::cerr << '\n';
+               if (Verbose > 2)
+               {
+                  std::cerr << "Seq numbers: ";
+                  for (int i = 1; i <= 12; ++i)
+                  {
+                     std::cerr << BellSeqNum[i] << ' ';
+                  }
+                  std::cerr << '\n';
+                  if (int(uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1)) == 254)
+                  {
+                     std::cerr << "Packet: ";
+                     for (int i = 0; i < len; ++i)
+                     {
+                        std::cerr << int(buf[i]) << ' ';
+                     }
+                     std::cerr << '\n';
+                  }
+               }
             }
 
             BellSeqNum[Bell] = SeqNum;
