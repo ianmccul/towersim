@@ -317,6 +317,8 @@ GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t T
 
 std::array<int, 16> BellSeqNum {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
 
+std::array<std::array<std::array<unsigned char, 64>, 256>, 16> OldBuf;
+
 int main(int argc, char** argv)
 {
    try
@@ -554,7 +556,8 @@ int main(int argc, char** argv)
             bool Power = Flags & 0x20;
             bool Charging = Flags & 0x10;
             bool Sleeping = Flags & 0x02;
-            WriteStatusMsg(WriteToFile, Clients, Time-Delay, Bell, uid, AccODR, GyroODR, GyroBW, Power, Charging, Sleeping);
+            WriteStatusMsg(WriteToFile, Clients, Time-Delay, Bell, uid, AccODR, GyroODR, GyroBW, 
+			   Power, Charging, Sleeping);
             int Offset = 19;
             // status packet
             if (Flags & 0x08)
@@ -589,9 +592,11 @@ int main(int argc, char** argv)
 
             if (len != ExpectedPacketLength)
             {
-               std::cerr << Time << " bell " << Bell << " pipe " << PipeNumber << " unexpected packet length " << int(len) << " expected "
+               std::cerr << Time << " bell " << Bell << " pipe " << PipeNumber 
+			 << " unexpected packet length " << int(len) << " expected "
                          << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
-                         << " Delay=" << Delay << " Flags=" << std::hex << uint16_t(Flags) << " SeqNum=" << std::dec << uint16_t(SeqNum) << "\n";
+                         << " Delay=" << Delay << " Flags=" << std::hex << uint16_t(Flags) << " SeqNum=" 
+			 << std::dec << uint16_t(SeqNum) << "\n";
                continue;
             }
 
@@ -602,7 +607,16 @@ int main(int argc, char** argv)
                   std::cerr << Time << " Packet loss bell " << Bell << " pipe " << PipeNumber << " delay " << Delay
                             << " packets " << int(uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1))
                             << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
+
+	       // check and see if we had this packet before
+	       if (std::memcmp(buf, OldBuf[Bell][SeqNum].data(), len) == 0)
+	       {
+		  std::cerr << "MATCH identical to old packet with seq " << SeqNum << '\n';
+	       }
             }
+
+	    std::memcpy(OldBuf[Bell][SeqNum].data(), buf, len);
+
             BellSeqNum[Bell] = SeqNum;
 
             std::vector<int16_t> GyroMeasurements(NumGyro);
