@@ -268,8 +268,13 @@ int main(int argc, char** argv)
          Radio& r = Radios[i];
          // check for data on the radio
          uint8_t PipeNum = 0;
-         if (r.Available(&PipeNum) && PipeNum <= 3)  // PipeNum of 7 also indicates RX_FIFO is empty.
+         if (r.Available(&PipeNum))
          {
+            if (PipeNum > 3)  // PipeNum of 7 also indicates RX_FIFO is empty.
+            {
+               std::cerr << "Pipe not available on radio " << i << '\n';
+               continue;
+            }
             unsigned char buf[33+9];
             int len = 0;
             len = r.PayloadSize();
