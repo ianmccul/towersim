@@ -608,7 +608,7 @@ int main(int argc, char** argv)
                             << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
 
 	       std::cerr << "Seq numbers: ";
-	       for (int i = 0; i < len; ++i)
+	       for (int i = 1; i < 12; ++i)
 	       {
 		  std::cerr << BellSeqNum[i] << ' ';
 	       }
