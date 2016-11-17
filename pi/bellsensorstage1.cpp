@@ -17,6 +17,7 @@
 #include <sys/un.h>
 #include <cstddef>
 #include <array>
+#include <fstream>
 
 //returns the system time in microseconds since epoch
 int64_t get_time()
@@ -70,9 +71,6 @@ class Radio
 
       // reads a packet into the buffer
       void Read(unsigned char* buf, int len);
-
-      // flush the RX fifo, need to do this if we read an invalid packet length
-      void FlushRX();
 
    private:
       RF24 radio;
@@ -161,13 +159,6 @@ Radio::Read(unsigned char* buf, int len)
    radio.read(buf, len);
 }
 
-inline
-void
-Radio::FlushRX()
-{
-   radio.flush_rx();
-}
-
 void sleep_us(int t)
 {
    struct timespec req;
@@ -191,12 +182,13 @@ int main(int argc, char** argv)
    int Verbose = 0;
    if (argc >= 2)
    {
-      if (argc == 2 && argv[1] == std::string("-v"))
+      int n = 1;
+      while (n < argc && argv[n] == std::string("-v"))
       {
-         Verbose = 1;
-         std::cerr << "Enabling verbose mode.\n";
+         ++Verbose;
+         std::cerr << "Enabling verbose mode " << Verbose << "\n";
       }
-      else
+      if (n < argc)
       {
          std::cerr << "usage: bellsensorstage1 [-v]\n";
          return 1;
@@ -296,13 +288,15 @@ int main(int argc, char** argv)
             {
                std::cout << "Got a packet, length = " << len << '\n';
             }
-            if (len > 32)
+            // we don't need to detect the case len > 32, the RF24 lib does that for us and
+            // flushes the buffer.  But if that lappens, then we get a length of 0.
+            if (len == 0)
             {
-               Log << "Packet too long, ignoring.  Time = " << get_time() << std::endl;
-               std::cerr << "Packet too long!\n";
-               r.FlushRX();
+               Log << "Discarded invalid packet on pipe " << PipeNum << " at time " << get_time() << std::endl;
+               if (Verbose > 0)
+                  std::cerr << "Discarded invalid packet on pipe " << PipeNum << " at time " << get_time() << std::endl;
             }
-            else if (len >= 1)
+            if (len >= 1)
             {
                int BellNum = (i*4) + PipeNum;
 
@@ -314,8 +308,9 @@ int main(int argc, char** argv)
                   // possible duplicate packet, check the payload
                   if (memcmp(LastBuf[BellNum]+2, buf+11, len-2) == 0)
                   {
-                     std::cout << "Ignoring duplicate packet for pipe " << BellNum
-                               << " seq " << int(uint8_t(buf[9]&0x03)) << std::endl;
+                     if (Verbose > 0)
+                        std::cout << "Ignoring duplicate packet for pipe " << BellNum
+                                  << " seq " << int(uint8_t(buf[9]&0x03)) << std::endl;
                      continue;
                   }
                }

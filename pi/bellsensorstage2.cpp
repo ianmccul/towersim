@@ -549,7 +549,8 @@ int main(int argc, char** argv)
             if (Bell == -1)
             {
                // if we still don't have a bell number, then we can't do anything useful
-               std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
+               if (Verbose > 1)
+                  std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
                continue;
             }
             int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
@@ -581,7 +582,8 @@ int main(int argc, char** argv)
          {
             if (Bell == -1)  // can't do anything yet, we don't know what bell we have
             {
-               std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
+               if (Verbose > 1)
+                  std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
                continue;
             }
             // sensor packet
