@@ -71,6 +71,9 @@ class Radio
       // reads a packet into the buffer
       void Read(unsigned char* buf, int len);
 
+      // flush the RX fifo, need to do this if we read an invalid packet length
+      void FlushRX();
+
    private:
       RF24 radio;
       bool ok;
@@ -158,6 +161,13 @@ Radio::Read(unsigned char* buf, int len)
    radio.read(buf, len);
 }
 
+inline
+void
+Radio::FlushRX()
+{
+   radio.flush_rx();
+}
+
 void sleep_us(int t)
 {
    struct timespec req;
@@ -175,6 +185,8 @@ int main(int argc, char** argv)
 
    std::array<unsigned char[32], 16> LastBuf;
    std::array<int, 16> LastBufSize{};
+
+   std::ofstream Log("stage1log.txt", std::ofstream::out | std::ofstream::ate);
 
    int Verbose = 0;
    if (argc >= 2)
@@ -248,6 +260,7 @@ int main(int argc, char** argv)
       if (cl >= 0)
       {
          std::cout << "Accepted connection " << cl << std::endl;
+         Log << "Accepted connection " << cl << std::endl;
          if (Verbose == 0 && Clients.empty())
          {
             // first client, start up the radios
@@ -272,7 +285,8 @@ int main(int argc, char** argv)
          {
             if (PipeNum > 3)  // PipeNum of 7 also indicates RX_FIFO is empty.
             {
-               std::cerr << "Pipe not available on radio " << i << '\n';
+               Log << "Pipe not available on radio " << i << " time " << get_time() << std::endl;
+               std::cerr << "Pipe not available on radio " << i << std::endl;
                continue;
             }
             unsigned char buf[33+9];
@@ -282,7 +296,13 @@ int main(int argc, char** argv)
             {
                std::cout << "Got a packet, length = " << len << '\n';
             }
-            if (len >= 1)
+            if (len > 32)
+            {
+               Log << "Packet too long, ignoring.  Time = " << get_time() << std::endl;
+               std::cerr << "Packet too long!\n";
+               r.FlushRX();
+            }
+            else if (len >= 1)
             {
                int BellNum = (i*4) + PipeNum;
 
