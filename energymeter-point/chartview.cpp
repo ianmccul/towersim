@@ -92,6 +92,42 @@ void ChartView::keyPressEvent(QKeyEvent *event)
    case Qt::Key_N:
       m_chart->NarrowView();
       break;
+   case Qt::Key_1:
+      m_chart->SetBell(1);
+      break;
+   case Qt::Key_2:
+      m_chart->SetBell(2);
+      break;
+   case Qt::Key_3:
+      m_chart->SetBell(3);
+      break;
+   case Qt::Key_4:
+      m_chart->SetBell(4);
+      break;
+   case Qt::Key_5:
+      m_chart->SetBell(5);
+      break;
+   case Qt::Key_6:
+      m_chart->SetBell(6);
+      break;
+   case Qt::Key_7:
+      m_chart->SetBell(7);
+      break;
+   case Qt::Key_8:
+      m_chart->SetBell(8);
+      break;
+   case Qt::Key_9:
+      m_chart->SetBell(9);
+      break;
+   case Qt::Key_0:
+      m_chart->SetBell(10);
+      break;
+   case Qt::Key_E:
+      m_chart->SetBell(11);
+      break;
+   case Qt::Key_T:
+      m_chart->SetBell(12);
+      break;
    default:
       QGraphicsView::keyPressEvent(event);
       break;

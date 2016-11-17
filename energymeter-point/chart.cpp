@@ -25,7 +25,8 @@ Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
     ConnectionCompletedMapper(new QSignalMapper(this)),
     Server(new QTcpServer(this)),
     yMax(475.0*475.0),
-    yMin(-1.0)
+    yMin(-1.0),
+    WatchBell(5)
 {
     qsrand((uint) QTime::currentTime().msec());
 
@@ -81,11 +82,12 @@ Chart::Chart(QGraphicsItem *parent, Qt::WindowFlags wFlags):
     backPoints->attachAxis(m_axis);
 
     // bell 5
+    this->SetBell(5);
     axisY()->setRange(460*460, 475*475);
-
     axisY()->setGridLinePen(GridLine);
 
     m_timer.start();
+
 }
 
 Chart::~Chart()
@@ -99,7 +101,7 @@ Chart::handleTimeout()
    qreal xMiddle = f*m_axis->max() + (1-f)*m_axis->min();
    if (m_x > xMiddle)
    {
-     double Scale = (this->plotArea().right() - this->plotArea().left()) / 
+     double Scale = (this->plotArea().right() - this->plotArea().left()) /
        (m_axis->max() - m_axis->min());
      this->scroll(std::min(10.0, Scale*(m_x-xMiddle)), 0);
    }
@@ -131,6 +133,13 @@ Chart::SetBackstroke()
   bthresh->clear();
   bthresh->append(0, BEnergy);
   bthresh->append(this->plotArea().right(), BEnergy);
+}
+
+void
+Chart::SetBell(int B)
+{
+   WatchBell = B;
+   this->setTitle(("Energy Meter Bell " + std::to_string(B)).c_str());
 }
 
 void
@@ -192,7 +201,7 @@ Chart::PlotPoint(double v)
 
    m_x += 1;
    m_y = E;
-   
+
    if (v < 0)
    {
      backPoints->append(m_x, m_y);
@@ -263,7 +272,7 @@ Chart::ReadCommand(QObject* SocketObj)
       Str >> BDC >> Bell >> At >> V;
       TRACE(Bell)(V);
 
-      if (Bell == 7)
+      if (Bell == WatchBell)
 	this->PlotPoint(V);
 
 

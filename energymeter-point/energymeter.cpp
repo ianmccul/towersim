@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     QMainWindow window;
     Chart *chart = new Chart;
-    chart->setTitle("Energy Meter");
     chart->legend()->hide();
     chart->EnableAnimations();
     chart->ConnectTo("192.168.0.20", 5701);

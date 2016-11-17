@@ -37,6 +37,8 @@ class Chart: public QChart
       void SetHandstroke();
       void SetBackstroke();
 
+      void SetBell(int Bell);
+
       void Reset();
 
       void ZeroView();
@@ -76,6 +78,8 @@ class Chart: public QChart
 
       double yMax;
       double yMin;
+
+      int WatchBell;
 };
 
 #endif /* CHART_H */
