@@ -187,6 +187,7 @@ int main(int argc, char** argv)
       {
          ++Verbose;
          std::cerr << "Enabling verbose mode " << Verbose << "\n";
+         ++n;
       }
       if (n < argc)
       {
@@ -284,7 +285,7 @@ int main(int argc, char** argv)
             unsigned char buf[33+9];
             int len = 0;
             len = r.PayloadSize();
-            if (Verbose > 0)
+            if (Verbose > 3)
             {
                std::cout << "Got a packet, length = " << len << '\n';
             }

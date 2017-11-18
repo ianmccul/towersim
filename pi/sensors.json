@@ -10,7 +10,7 @@
       "AYScale" : -1670.0,
       "AYOffset" : 0,
       "Polarity" : -1,
-      "Bell" : 5
+      "Bell" : 4
    },
    {
       "UID" : "0x64b7",
@@ -24,20 +24,20 @@
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 3
+      "Bell" : 6
    },
    {
       "UID" : "0xe3cf",
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 4
+      "Bell" : 7
    },
    {
       "UID" : "0xb79f",
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
-      "Polarity" : -1,
+      "Polarity" : 1,
       "Bell" : 1
    },
    {
@@ -45,14 +45,14 @@
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 6
+      "Bell" : 5
    },
    {
       "UID" : "0xf27a",
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 7
+      "Bell" : 3
    },
    {
       "UID" : "0x063f",
@@ -80,14 +80,14 @@
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 11
+      "Bell" : 12
    },
    {
       "UID" : "0x8058",
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 12
+      "Bell" : 11
    }
    ]
 }
