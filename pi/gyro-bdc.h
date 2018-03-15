@@ -24,6 +24,7 @@
 #include <boost/circular_buffer.hpp>
 #include <list>
 #include "quadfit.h"
+#include "common/trace.h"
 
 double const ThresholdVelocity = 17.5;   // degrees per second
 int64_t const HalfTimeLagMicrosec = 80000;  // 0.08 seconds
@@ -84,10 +85,25 @@ GyroBDC::GyroBDC(int Bell_)
 {
 }
 
+namespace std
+{
+inline
+std::ostream& operator<<(std::ostream& Out, std::vector<double> const& v)
+{
+   for (auto x : v)
+   {
+      Out << x << ' ';
+   }
+   Out << '\n';
+   return Out;
+}
+}
+
 inline
 bool
 GyroBDC::Process(int64_t Time, float z)
 {
+   //   TRACE(z);
    bool Found = false;
    SampleBuf.push_back({Time, z});
    if (z*LastSign < 0)
@@ -132,10 +148,15 @@ GyroBDC::Process(int64_t Time, float z)
             double T = -R.b / (2*R.a);
             int64_t TimeEx = int64_t(round(T*1E6)) + CurrentMaxTime;
             double V = R.c - R.b*R.b/(4*R.a);
+
+            //TRACE(R.a)(R.b)(R.c);
+            //TRACE(CurrentMax)(Time)(CurrentMaxTime);
+            //TRACE(x)(y);
+
             // DS test.  Check that the energy has changed by less than EnergyThreshold (or the LastEnergy is zero).
             if (LastEnergy != 0 && std::abs(V*V-LastEnergy) > EnergyThreshold && TimeEx < LastBDC+ResetTime)
             {
-               std::cerr << "Bell " << Bell << ": inoring local extrema near " << CurrentMaxTime
+               std::cerr << "Bell " << Bell << ": ignoring local extrema near " << CurrentMaxTime
                          << " with velocity " << V
                          << " as the change in energy is too big.  Possible stay event?\n";
             }

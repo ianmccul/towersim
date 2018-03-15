@@ -46,6 +46,33 @@ void sleep_ms(long microsec)
    sleep_ns(microsec*1000);
 }
 
+void swap_endian(uint32_t& x)
+{
+   unsigned char* xx = static_cast<unsigned char*>(static_cast<void*>(&x));
+   std::swap(xx[0], xx[3]);
+   std::swap(xx[1], xx[2]);
+}
+
+namespace detail
+{
+
+constexpr uint32_t Prime = 16777619;
+constexpr uint32_t Offset = 2166136261;
+
+constexpr
+uint32_t hash_fnv32(uint32_t Value, uint32_t const* Beg, uint32_t const* End)
+{
+   return (Beg == End) ? Value : hash_fnv32((Value ^ (*Beg)) * Prime, Beg+1, End);
+}
+
+} // namespace detail
+
+constexpr
+uint32_t hash_fnv32(uint32_t const* Beg, uint32_t const* End)
+{
+   return detail::hash_fnv32(detail::Offset, Beg, End);
+}
+
 class Radio
 {
    public:
@@ -167,6 +194,21 @@ void sleep_us(int t)
 
    struct timespec rem;
    nanosleep(&req, &rem);
+}
+
+void debug_packet(unsigned char const* buf, int len, std::ostream& out)
+{
+   std::ios::fmtflags f(out.flags());
+   if (len > 32)
+   {
+      out << "packet too long (" << len << "), truncating ";
+      len = 32;
+   }
+   for (int i = 0; i < len; ++i)
+   {
+      out << std::hex << buf[i] << ' ';
+   }
+   out.flags(f);
 }
 
 int main(int argc, char** argv)
@@ -302,6 +344,23 @@ int main(int argc, char** argv)
                int BellNum = (i*4) + PipeNum;
 
                r.Read(buf+9, len);
+
+               // checksum
+               uint32_t CheckBuf[8];
+               std::memset(CheckBuf, 0, 32);
+               std::memcpy(CheckBuf, buf+9, len);
+               // endian swap
+               std::memset(buf+9+len, 0, 33-9-len);
+               for (int i = 0; i < 8; ++i)
+               {
+                  swap_endian(CheckBuf[i]);
+               }
+               if (hash_fvn32(&CheckBuf[1], &CheckBuf[8]) != CheckBuf[0])
+               {
+                  sd::cout << "FVN hash failed for packet on pipe " << BellNum << ' ';
+                  debug_packet(buf+9, len, std::cout);
+                  continue;
+               }
 
                // deduplication
                if (LastBufSize[BellNum] == len && (uint8_t(LastBuf[BellNum][0]&0x03) == uint8_t(buf[9]&0x03)))

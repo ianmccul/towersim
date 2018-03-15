@@ -19,6 +19,7 @@
 #include <boost/program_options.hpp>
 #include "common/matvec/matvec.h"
 #include "common/prog_opt_accum.h"
+#include "common/trace.h"
 
 namespace prog_opt = boost::program_options;
 
@@ -287,6 +288,21 @@ void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int6
    WriteGyroMsg(WriteToFile, Clients, Time, Bell, ZCal);
 }
 
+
+namespace std
+{
+template <typename T>
+std::ostream& operator<<(std::ostream& Out, std::vector<T> const& v)
+{
+   for (auto x : v)
+   {
+      Out << x << ' ';
+   }
+   Out << '\n';
+   return Out;
+}
+}
+
 void
 GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t Time, uint8_t SeqNum, std::vector<int16_t> const& GyroMeasurements)
 {
@@ -299,6 +315,12 @@ GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t T
       // either we are initializing, or packet loss.  Reset the stream.
       for (int i = 0; i < GyroMeasurements.size(); ++i)
       {
+         if (Time - int64_t(std::round((GyroMeasurements.size()-i-1) * GyroDelta)) == 1479609706936045ull)
+         {
+            TRACE("Got the packet")(Time)(int(SeqNum));
+            TRACE(GyroMeasurements);
+            abort();
+         }
          this->ProcessPacket(WriteToFile, Clients, Time - int64_t(std::round((GyroMeasurements.size()-i-1) * GyroDelta)),
                              GyroMeasurements[i]);
       }
@@ -653,6 +675,17 @@ int main(int argc, char** argv)
 
             std::vector<int16_t> GyroMeasurements(NumGyro);
             std::memcpy(GyroMeasurements.data(), buf+13+NumAccel*6, NumGyro*2);
+
+         if (Time-Delay == 1479609706946571ull)
+         {
+            std::cerr << "got the packet " << Time << '\n';
+            for (unsigned i = 0; i < len; ++i)
+            {
+               std::cerr << int(buf[i]) << ' ' << '\n';
+            }
+         }
+
+
 
             GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements);
 

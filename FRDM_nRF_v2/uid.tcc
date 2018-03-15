@@ -3,8 +3,8 @@
 namespace detail
 {
 
-uint32_t const Prime = 16777619;
-uint32_t const Offset = 2166136261;
+constexpr uint32_t Prime = 16777619;
+constexpr uint32_t Offset = 2166136261;
 
 constexpr
 uint32_t hash_fnv32(uint32_t Value, uint32_t const* Beg, uint32_t const* End)

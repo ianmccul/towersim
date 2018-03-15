@@ -37,12 +37,15 @@ int main(int argc, char** argv)
    {
       int ThisBell = -1;
       bool bdc = false;
+      bool Raw = false;
+      bool AbsoluteTime = false;
 
       prog_opt::options_description desc("Allowed options");
       desc.add_options()
          ("help", "show this help message")
          ("bell", prog_opt::value(&ThisBell), "show output only for this bell")
          ("bdc", prog_opt::bool_switch(&bdc), "emit bottom dead centre times, instead of strike times")
+         ("raw", prog_opt::bool_switch(&Raw), "raw mode; two columns <time> <z>")
          ;
 
       prog_opt::options_description opt;
@@ -78,23 +81,31 @@ int main(int argc, char** argv)
       std::string s;
       while (std::getline(std::cin, s))
       {
+         //         TRACE(s);
          std::istringstream In(s);
          int64_t Tm;
          float z;
          char G;
-         int Bell;
-         In >> Tm >> Bell >> G;
+         int Bell = 0;
+         if (!Raw)
+         {
+            In >> Tm >> Bell >> G;
 
-         if (Epoch == 0)
+            if (Epoch == 0)
             Epoch = Tm;
 
-         if (G != 'G')
-            continue;
+            if (G != 'G')
+               continue;
 
-         if (ThisBell != -1 && ThisBell != Bell)
-            continue;
+            if (ThisBell != -1 && ThisBell != Bell)
+               continue;
 
-         In >> z;
+            In >> z;
+         }
+         else
+         {
+            In >> Tm >> z;
+         }
 
          if (BDC[Bell].Process(Tm-Epoch, z))
          {
@@ -124,7 +135,7 @@ int main(int argc, char** argv)
                           : BellInfo[Bell].BackstrokeDelay_ms);
                //TRACE(T);
             }
-            std::cout << (T + Epoch) << ' ' << Bell << ' ' << V << '\n';
+            std::cout << (AbsoluteTime ? (T+Epoch) : T) << ' ' << Bell << ' ' << V << '\n';
          }
       }
    }

@@ -12,7 +12,8 @@ using json = nlohmann::json;
 
 struct BellInfoType
 {
-   BellInfoType() : Bell(0) {}
+   BellInfoType() : Bell(0), HandstrokeDelay_ms(0), BackstrokeDelay_ms(0), HandstrokeCutoff(0),
+                    BackstrokeCutoff(0), ThetaR(0), Omega(0), WheelRadius(0) {}
    BellInfoType(int BellNumber_, json const& j);
    BellInfoType(json const& j);
 

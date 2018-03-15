@@ -4,14 +4,14 @@
 #if !defined(UID_H)
 #define UID_H
 
-// FNV-32 hashing algorithm
+// FNV-32-1a hashing algorithm
 constexpr
 uint32_t hash_fnv32(uint32_t const* Beg, uint32_t const* End);
 
 constexpr
 uint16_t hash16(uint32_t x)
 {
-   return (x & 0xFF) ^ (x >> 16);
+   return (x & 0xFFFF) ^ (x >> 16);
 }
 
 // 80-bit UID
