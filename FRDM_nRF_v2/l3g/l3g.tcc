@@ -142,7 +142,7 @@ void
 L3G<BusType>::SetInt1ActiveLow(bool Low)
 {
    char Reg3 = this->readReg(L3G_CTRL_REG3);
-   this->writeReg(L3G_CTRL_REG3, (Reg3 & 0xDF) | (char(Enable) << 5));
+   this->writeReg(L3G_CTRL_REG3, (Reg3 & 0xDF) | (char(Low) << 5));
 }
 
 template <typename BusType>

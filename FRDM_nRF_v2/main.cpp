@@ -5,59 +5,49 @@
 #include "nRF24L01P.h"
 #include "nRF24L01P_PTX.h"
 #include "common/matvec/matvec.h"
+#include "uid.h"
 #include <cstdint>
 #include <vector>
 
 //
 // packet format for sensor readings:
+// Bulti-byte sequences are in network order (big-endian).  This is the native format for
+// the FRDM-KL28z.
 //
-// delay (14 bits) seq (2 bits) |flags | seq | payload (up to 28 bytes)
+// hash (4 bytes) | delay (14 bits) seq (2 bits) |flags | seq | payload (up to 28 bytes)
+// hash is the FNV-1a-32 hash of the remaining bytes in the packet (with extra bytes set to zero to make
+// 32 bytes in total, even though we don't transmit extra bytes)
 // delay is a 14-bit unsigned in units of 4 microseconds - maximum value
 // 16383 represents 65.532 miliseconds.
 ///
 // flags is 8 bits: 0 AAA GGGG
 // seq is a 1-byte sequentially increasing number
-// delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit)
+// delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit
+// delay shifted left 2 bits, with 2-bit sequence number).
 // AAA is number of 6-byte accelerometer readings (first in the payload)
 // GGGG is the number of 2-byte z-axis gyro readings
-//
-// Since we are not using the nRF retransmit functionality,
-// on a lost ACK packet we will be unaware that the receive was successful,
-// and thefore we will send the packet again.  The packet will have a different CRC,
-// hence will be picked up by the receiver as a valid packet, rather than
-// intercepted as a duplicate.  Hence we must use a sequence number on all packets
-// (this wouldn't need to be 8 bits, it could be smaller).
-// packet format after lost sensor packet:
-// delay (2 bytes) | 11000000 | acc lost count (2 bytes) | gyro lost count (2 bytes) | gyro sum (4 bytes)
-
-// but we need to indicate the start of a stream.
 
 // packet format for status information:
-// delay/seq (2 bytes) |10TCDBSX | acc ODR (2 bytes) | gyro ODR (2 bytes) | gyro bandwidth (1 byte) | payload
+// hash (4 bytes) | delay/seq (2 bytes) | 10DCTBSX | UID (2 bytes) | acc ODR (2 bytes) | gyro ODR (2 bytes)
+// | gyro bandwidth (1 byte) | payload
+// UID is a 16-bit hash of the microcontroller unique ID
+// if D is set, the device is receiving power
+// if C is set, the charging circuit is active and charging the battery, otherwise it is not active
 // if T is set, then the payload conains a 1-byte gyro temperature reading
-// if C is set, the charging circuit is active, otherwise it is not active
-// if D is set, the payload contains a 2-byte charging current reading
 // if B is set, the payload contains a 2-byte battery current reading
 // if S is set, then the sensor is preparing for sleep mode
 // X = 0 is reserved for future expansion
-//
-// TODO: a better approach is to ditch the seq number and track sample loss due to lost packets.
-//
-// possible improved packet format:
-// dump the seq in the sensor packet.
-// measure the delay in units of 10 microseconds
-// Have a new packet type for when we have packet loss.
-// flags, 8 bits 0STMNXXX
-// S - start of a new sequence, discard previous state
-// T - a one-byte gyro temperature reading is included at the start of the payload
-// M - accelerometer measurements are missing due to a lost packet,
-// the playload includes a 2-byte count and a 12-byte (4 bytes per sample) cumulative sum
-// N - gyro measurements are missing due to a lost packet,
-// the playload includes an 2-byte count and a 4-byte cumulative sum
 
+// Since we are not using the nRF retransmit functionality,
+// on a lost ACK packet we will be unaware that the receive was successful,
+// and thefore we will send the packet again.  This is the purpose of the 2-bit
+// seq number.  If the receiver gets two packets with the same seq number then
+// it will check the entire packet, and assume that identical packets with the same
+// seq number are duplicates.  Packets that have a different seq number but are otherwise
+// identical are allowed.
 
 // a simple LCG for random number generation
-uint32_t Seed = time(NULL);
+uint32_t Seed = UniqueID32;
 
 uint32_t random()
 {
@@ -71,11 +61,17 @@ int random(int Min, int Max)
    return x%(Max-Min) + Min;
 }
 
+// random slot number for exponential backoff retransmit.
 int RandomSlot(int n)
 {
    int Max = (1 << std::max(n,5));
    return random(0, Max);
 }
+
+// we reserve 6 bytes, the 4-byte hash and 2 bites for delay and seq number
+constexpr int ReservedBufSize = 6;
+constexpr int HashOffset = 0;
+constexpr int DelayOffset = 4;
 
 class PacketScheduler
 {
@@ -107,7 +103,8 @@ class PacketScheduler
       // our radio device
       nRF24L01P_PTX& PTX;
 
-      // 0 of there is no packet in flight.  1 if there is a high priority packet in flight.
+      // 0 of there is no packet in flight.
+      // 1 if there is a high priority packet in flight.
       // 2 if there is a low priority packet in flight.
       int PacketInFlight;
 
@@ -137,8 +134,10 @@ class PacketScheduler
       uint16_t Seq;  // 2-bit sequence number
 
       // high and low priority buffers
+      uint32_t Pad1;    // make sure we have 32-bit alignment
       char HiBuf[32];
       int HiBufSz;
+      uint32_t Pad2;    // make sure we have 32-bit alignment
       char LoBuf[32];
       int LoBufSz;
 };
@@ -203,7 +202,9 @@ PacketScheduler::Poll()
    {
       uint16_t d = HighPriorityTimer.read_us();
       d = (d & 0xFFFC) | Seq;
-      std::memcpy(HiBuf, &d, 2);
+      std::memcpy(HiBuf+4, &d, 2);
+      uint32_t hash = hash_fnv32((uint32_t const*)(HiBuf+4), (uint32_t const*)(HiBuf+32));
+      std::memcpy(HiBuf, &hash, 4);
       PTX.TransmitPacketNB(HiBuf, HiBufSz);
       PacketInFlight = 1;
       NewHighPriorityPacket = false;
@@ -212,7 +213,9 @@ PacketScheduler::Poll()
    {
       uint16_t d = LowPriorityTimer.read_us();
       d = (d & 0xFFFC) | Seq;
-      std::memcpy(LoBuf, &d, 2);
+      std::memcpy(LoBuf+4, &d, 2);
+      uint32_t hash = hash_fnv32((uint32_t const*)(LoBuf+4), (uint32_t const*)(LoBuf+32));
+      std::memcpy(LoBuf, &hash, 4);
       PTX.TransmitPacketNB(LoBuf, LoBufSz);
       PacketInFlight = 2;
       NewLowPriorityPacket = false;
@@ -222,8 +225,10 @@ PacketScheduler::Poll()
 void
 PacketScheduler::SendHighPriority(char const* buf, int Size)
 {
-   std::memcpy(HiBuf+2, buf, Size);
-   HiBufSz = Size+2;
+   std::memcpy(HiBuf+ReservedBufSize, buf, Size);
+   // zero out the remaining
+   HiBufSz = Size+ReservedBufSize;
+   std::memset(HiBuf+HiBufSz, 0, 32-HiBufSz);
    HaveHighPriorityPacket = true;
    NewHighPriorityPacket = true;
    HighPriorityTimer.reset();
@@ -234,8 +239,9 @@ PacketScheduler::SendHighPriority(char const* buf, int Size)
 void
 PacketScheduler::SendLowPriority(char const* buf, int Size)
 {
-   std::memcpy(LoBuf+2, buf, Size);
-   LoBufSz = Size+2;
+   std::memcpy(LoBuf+ReservedBufSize, buf, Size);
+   LoBufSz = Size+ReservedBufSize;
+   std::memset(LoBuf+HiBufSz, 0, 32-HiBufSz);
    HaveLowPriorityPacket = true;
    NewLowPriorityPacket = true;
    LowPriorityTimer.reset();
@@ -254,7 +260,7 @@ void WriteSamplePacket(PacketScheduler& Scheduler,
                        std::vector<int16_t>& GyroBuffer)
 {
    // assemble our packet
-   char buf[30];
+   char buf[32-ReservedBufSize];
    int BufSz = 2 + AccelBuffer.size()*6 + GyroBuffer.size()*2;
 
    buf[0] = uint8_t(AccelBuffer.size() << 4) + uint8_t(GyroBuffer.size());
@@ -269,48 +275,60 @@ void WriteSamplePacket(PacketScheduler& Scheduler,
    GyroBuffer.clear();
 }
 
-void WriteStatusPacket(PacketScheduler& Scheduler)
+// write a status packet, including temperature information and charging info
+void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Charging, int8_t Temp)
 {
-   char buf[30];
-   buf[0] = 0x94;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
-   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
-   *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
-   uint16_t ChV = 0;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+7)) = ChV;
-   uint16_t BattV = 0;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+6)) = BattV;
-   Scheduler.SendLowPriority(buf, 8);
+   char buf[32-ReservedBufSize];
+   buf[0] = 0x88 | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
+   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;  // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
+   *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
+   *static_cast<int8_t*>(static_cast<void*>(buf+8)) = Temp;   // gyro temperature
+   Scheduler.SendLowPriority(buf, 9);
 }
 
 // write a status packet, including temperature information and charging info
-void WriteStatusPacket(PacketScheduler& Scheduler, int8_t Temp, bool CoilDetect, bool Charging)
+void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Charging, int8_t Temp,
+                       uint16_t BatteryCharge)
 {
-   char buf[30];
-   buf[0] = 0xB4;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = 100;  // accel ODR
-   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 760;  // gyro ODR
-   *static_cast<uint8_t*>(static_cast<void*>(buf+5)) = 100;   // gyro BW
-   *static_cast<int8_t*>(static_cast<void*>(buf+6)) = Temp;   // gyro temperature
-   uint16_t ChV = Charging; //ChargeV.read_u16();
-   *static_cast<uint16_t*>(static_cast<void*>(buf+7)) = ChV;
-   uint16_t BattV = CoilDetect; //BatteryV.read_u16();
-   *static_cast<uint16_t*>(static_cast<void*>(buf+9)) = BattV;
+   char buf[32-ReservedBufSize];
+   buf[0] = 0x8C | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
+   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;  // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
+   *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
+   *static_cast<int8_t*>(static_cast<void*>(buf+8)) = Temp;   // gyro temperature
+   *static_cast<uint16_t*>(static_cast<void*>(buf+9)) = BatteryCharge;
    Scheduler.SendLowPriority(buf, 11);
 }
 
-void SleepMode(nRF24L01_PTX& PTX,
+void SleepMode(nRF24L01P_PTX& PTX)
+{
+}
 
 // buffers for accelerometer and gyro data
 
 std::vector<vector3<int16_t>> AccelBuffer;
 std::vector<int16_t> GyroBuffer;
 
+// maximum sizes that we can send in a single packet - only used to reserve buffer sizes
 int const MaxAccelSamples = 4;
 int const MaxGyroSamples = 14;
 
-int const PacketWatermark = 23;
+// once we've written this many bytes, send the packet.  This is obtained from the maximum
+// buffer size (32 - ReservedBufSize) minus the overhead (2 bytes) minus the size of an accelerometer sample (6 bytes)
+int const PacketWatermark = 32 - ReservedBufSize - 2 - 6;
 //int const PacketWatermark = 1;
+
+uint16_t MeasureBatteryCharge(DigitalOut& BatteryDetectEnable, AnalogIn& AnalogBattery)
+{
+   BatteryDetectEnable = 1;
+   wait_us(20);
+   uint16_t x = AnalogBattery.read_u16();
+   BatteryDetectEnable = 0;
+   return x;
+}
 
 int main()
 {
@@ -352,9 +370,15 @@ int main()
 
    unsigned Addr = (Addr1.read()<<1) + Addr0.read();
 
-   uint64_t PipeAddrs[4] = {0xe7e7e7e7e7ULL, 0x0f0f0f0f0fULL, 0x0f0f0f0f17ULL, 0x0f0f0f0f2cULL};
+   uint64_t PipeAddrs[4][4] = {{0xe7e7e7e7e7ULL, 0xe7e7e7e70fULL, 0xe7e7e7e717ULL, 0xe7e7e7e72cULL},
+                               {0x0f0f0f0fe7ULL, 0x0f0f0f0f0fULL, 0x0f0f0f0f17ULL, 0x0f0f0f0f2cULL},
+                               {0x7e7e7ef0e7ULL, 0x7e7e7ef00fULL, 0x7e7e7ef017ULL, 0x7e7e7ef02cULL},
+                               {0xf0f0f0f0e7ULL, 0xf0f0f0f00fULL, 0xf0f0f0f017ULL, 0xf0f0f0f02cULL}};
+
 
    unsigned Channel = (Ch1.read()<<1) + Ch0.read();
+
+   unsigned Channels[4] = {76, 82, 70, 0};
 
    printf("Initializing.\r\n");
 
@@ -370,7 +394,8 @@ int main()
 
 
    //GyroInterface<I2C> Gyro(PTE0, PTE1, 0, PTA5);
-   GyroInterface<SPI> Gyro(PTE1, PTE3, PTE2, PTE4, PTA5);
+
+   GyroInterface<SPI> Gyro(PTE1, PTE3, PTE2, PTE4, PTA5, PTA4);
    //   Gyro.device().SetFrequency(1000000);
    //   Gyro.SetRateBandwidth(L3G_H_ODR_200_70);
    //   Gyro.SetRateBandwidth(L3G_H_ODR_800_30);
@@ -382,8 +407,8 @@ int main()
 
    PTX.Initialize();
    PTX.SetDataRate(2000);
-   PTX.SetDestinationAddress(PipeAddrs[Addr]);
-   PTX.SetChannel(76 + Channel*2);
+   PTX.SetDestinationAddress(PipeAddrs[Addr][Channel]);
+   PTX.SetChannel(Channels[Channel]);
    Device.set_retransmit_attempts(0);
    Device.set_crc_width(2);
    Device.set_tx_power(0);
@@ -400,7 +425,8 @@ int main()
    acc.set_range(2);
    acc.set_low_noise_mode(true);
    acc.set_sampling_rate(MMA8451Q::RATE_100);
-   acc.set_oversampling_mode(MMA8451Q::OSMODE_HighResolution);
+   //   acc.set_oversampling_mode(MMA8451Q::OSMODE_HighResolution);
+   acc.set_oversampling_mode(MMA8451Q::OSMODE_Normal);
    acc.set_int_data_ready_pin(2);
    acc.set_int_polarity(true);
    acc.set_int_data_ready(true);
@@ -438,7 +464,7 @@ int main()
          AccelBuffer.push_back(Data);
       }
 
-      if ((AccelBuffer.size()*6 + GyroBuffer.size()*2) >= PacketWatermark)
+      if ((AccelBuffer.size()*6 + GyroBuffer.size()*2) > PacketWatermark)
       {
          WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer);
       }
@@ -455,14 +481,16 @@ int main()
             printf("Gyro read failed!\r\n");
       }
 
-      if ((AccelBuffer.size()*6 + GyroBuffer.size()*2) >= PacketWatermark)
+      if ((AccelBuffer.size()*6 + GyroBuffer.size()*2) > PacketWatermark)
       {
          WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer);
       }
 
       if (GyroTempTimer.read_ms() > 1100)
       {
-         WriteStatusPacket(Scheduler, Gyro.device().TempRaw(), CoilDetectBar == 0, CoilDetectOK);
+         uint16_t Charge = MeasureBatteryCharge(BatteryDetectEnable, AnalogBattery);
+         WriteStatusPacket(Scheduler, CoilDetectBar == 0, CoilDetectOK, Gyro.device().TempRaw(),
+                           Charge);
          GyroTempTimer.reset();
       }
 

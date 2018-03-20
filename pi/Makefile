@@ -73,32 +73,35 @@ accel-bdc-daemon : sensortcpserver.o
 
 LIBS_accel-bdc-daemon = -lboost_system -lboost_date_time
 
-gyro-bdc-daemon : sensortcpserver.o
+gyro-bdc-daemon : sensortcpserver.o sensors.o bells.o
 
 LIBS_gyro-bdc-daemon = -lboost_system -lboost_date_time
 
-gyrofit-daemon : sensortcpserver.o
+gyrofit-daemon : sensortcpserver.o bells.o bdc-tcpserver.o
+
+gyrofit-reader : bells.o
 
 LIBS_gyrofit-daemon = -lboost_system -lboost_date_time
 
+LIBS_gyrofit-reader =  -lboost_program_options
+
 stage1 = bellsensorstage1 bellsensorstage1-log bellsensorstage1-viewer
 
-stage2 = bellsensorstage2  bellsensorstage2_stdio
+stage2 = bellsensorstage2 bellsensorstage2-viewer
 
-stage3 = gyrofit-daemon
+stage3 = gyrofit-daemon gyrofit-reader
 
 LIBS_bellsensorstage2 = -lboost_program_options
 
-LIBS_gyrofit-reader = -lboost_program_options
+bellsensorstage2: sensors.o
 
 LIBS_bellsensorstage1-viewer = -lboost_program_options
 
-stage1: $(stage1)
+LIBS_bellsensorstage2-viewer = -lboost_program_options
 
-stage2: $(stage2)
-
-stage3: $(stage3)
-
+stage1 : $(stage1)
+stage2 : $(stage2)
+stage3 : $(stage3)
 
 executable = $(stage1) $(stage2) $(stage3)
 

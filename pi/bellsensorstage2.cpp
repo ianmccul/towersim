@@ -14,8 +14,12 @@
 #include <vector>
 #include <cmath>
 #include <cstring>
+#include <fstream>
+#include "sensors.h"
 #include <boost/program_options.hpp>
 #include "common/matvec/matvec.h"
+#include "common/prog_opt_accum.h"
+#include "common/trace.h"
 
 namespace prog_opt = boost::program_options;
 
@@ -23,11 +27,32 @@ namespace prog_opt = boost::program_options;
 struct MsgTypes
 {
    static unsigned char const Gyro = 'G';
+   // float DegreesPerSecond
+
    static unsigned char const GyroCalibration = 'H';
+   // float GyroZeroValue
+   // float GyroScaleFactor
+
    static unsigned char const GyroTemp = 'T';
+   // int8_t GyroTemp
+
+   static unsigned char const Status = 'S';
+   // int16_t AccelODR
+   // int16_t GyroODR
+   // int8_t GyroBW
+   // uint8_t Power (bool)
+   // uint8_t Charging (bool)
+   // uint8_t Sleeping (bool)
+
    static unsigned char const BatteryV = 'B';
-   static unsigned char const ChargeV = 'C';
+   // float BatteryVoltage (battery, in Volts)
+
    static unsigned char const Accel = 'A';
+   // float Ax in m/s^2
+   // float Ay in m/s^2
+
+   static unsigned char const BellAvail = 'E';
+   // no payload required
 };
 
 void WriteMsgToClients(bool WriteToFile, std::set<int>& Clients, unsigned char const* Buf, int Sz)
@@ -74,22 +99,29 @@ int const GyroZeroRequiredSamples = 800;
 // require this many samples to also satisfy the threshold before we commit the calibration
 int const GyroZeroLagSamples = 800;
 
-void WriteGyroCalibrationMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float GyroOffset)
+void WriteGyroCalibrationMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float GyroOffset, float GyroScale)
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::GyroCalibration;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::GyroCalibration;
    *static_cast<float*>(static_cast<void*>(Buf+10)) = GyroOffset;
+   *static_cast<float*>(static_cast<void*>(Buf+14)) = GyroScale;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
 }
 
+std::array<double, 16> GyroDiff{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+std::array<double, 16> GyroLast{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
 void WriteGyroMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float z)
 {
+   GyroDiff[Bell] = std::max(GyroDiff[Bell], std::abs(GyroLast[Bell]-z));
+   GyroLast[Bell] = z;
+
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::Gyro;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::Gyro;
    *static_cast<float*>(static_cast<void*>(Buf+10)) = z;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
 }
@@ -98,40 +130,58 @@ void WriteGyroTempMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, in
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::GyroTemp;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::GyroTemp;
    *static_cast<int16_t*>(static_cast<void*>(Buf+10)) = T;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(int16_t));
 }
 
-void WriteBatteryVMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, uint16_t V)
+void WriteStatusMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, uint16_t uid, int16_t AccODR,
+                    int16_t GryoODR, int8_t GyroBW,
+                    bool Power, bool Charging, bool Sleeping)
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::BatteryV;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
-   *static_cast<int16_t*>(static_cast<void*>(Buf+10)) = V;
-   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(uint16_t));
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::Status;
+   *static_cast<uint16_t*>(static_cast<void*>(Buf+10)) = uid;
+   *static_cast<int16_t*>(static_cast<void*>(Buf+12)) = AccODR;
+   *static_cast<int16_t*>(static_cast<void*>(Buf+14)) = GryoODR;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+16)) = GyroBW;
+   *static_cast<uint8_t*>(static_cast<void*>(Buf+17)) = Power;
+   *static_cast<uint8_t*>(static_cast<void*>(Buf+18)) = Charging;
+   *static_cast<uint8_t*>(static_cast<void*>(Buf+19)) = Sleeping;
+   WriteMsgToClients(WriteToFile, Clients, Buf, 20);
 }
 
-void WriteChargeVMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, uint16_t V)
+void WriteBatteryVMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float V)
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::ChargeV;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
-   *static_cast<int16_t*>(static_cast<void*>(Buf+10)) = V;
-   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(uint16_t));
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::BatteryV;
+   *static_cast<float*>(static_cast<void*>(Buf+10)) = V;
+   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
 }
 
-void WriteAccelMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, vector3<int16_t> const& x)
+void WriteAccelMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float Ax, float Ay)
 {
    unsigned char Buf[100];
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
-   Buf[8] = MsgTypes::Accel;
-   *static_cast<int8_t*>(static_cast<void*>(Buf+9)) = Bell;
-   *static_cast<vector3<int16_t>*>(static_cast<void*>(Buf+10)) = x;
-   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+6);
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::Accel;
+   *static_cast<float*>(static_cast<void*>(Buf+10)) = Ax;
+   *static_cast<float*>(static_cast<void*>(Buf+14)) = Ay;
+   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+4+4);
+}
+
+void WriteBellAvailMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int8_t Bell)
+{
+   unsigned char Buf[100];
+   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::BellAvail;
+   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1);
 }
 
 class GyroProcessor
@@ -213,7 +263,7 @@ void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int6
             GyroOffset= GyroOffsetNext;
             GyroHasZeroCalibration = true;
          }
-         WriteGyroCalibrationMsg(WriteToFile, Clients, Time, Bell, GyroOffset);
+         WriteGyroCalibrationMsg(WriteToFile, Clients, Time, Bell, GyroOffset, SensorFromBell[Bell].GyroScale);
          // reset the counters
          GyroOffsetPending = false;
          GyroMin = INT16_MAX;
@@ -234,8 +284,23 @@ void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int6
       }
    }
 
-   float ZCal = float(z) - GyroOffset;
+   float ZCal = float((z - GyroOffset) / SensorFromBell[Bell].GyroScale) * SensorFromBell[Bell].Polarity;
    WriteGyroMsg(WriteToFile, Clients, Time, Bell, ZCal);
+}
+
+
+namespace std
+{
+template <typename T>
+std::ostream& operator<<(std::ostream& Out, std::vector<T> const& v)
+{
+   for (auto x : v)
+   {
+      Out << x << ' ';
+   }
+   Out << '\n';
+   return Out;
+}
 }
 
 void
@@ -250,6 +315,12 @@ GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t T
       // either we are initializing, or packet loss.  Reset the stream.
       for (int i = 0; i < GyroMeasurements.size(); ++i)
       {
+         if (Time - int64_t(std::round((GyroMeasurements.size()-i-1) * GyroDelta)) == 1479609706936045ull)
+         {
+            TRACE("Got the packet")(Time)(int(SeqNum));
+            TRACE(GyroMeasurements);
+            abort();
+         }
          this->ProcessPacket(WriteToFile, Clients, Time - int64_t(std::round((GyroMeasurements.size()-i-1) * GyroDelta)),
                              GyroMeasurements[i]);
       }
@@ -267,18 +338,22 @@ GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t T
    LastSeqNum = SeqNum;
 }
 
+std::array<int, 16> BellSeqNum {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+
 int main(int argc, char** argv)
 {
    try
    {
       std::string InFile;
       std::string OutFile;
+      int Verbose;
 
       prog_opt::options_description desc("Allowed options");
       desc.add_options()
          ("help", "show this help message")
          ("infile", prog_opt::value(&InFile), "read input from a file rather than a socket")
          ("outfile", prog_opt::value(&OutFile), "direct output to a file rather than a socket")
+         ("verbose,v", prog_opt_ext::accum_value(&Verbose), "verbose output")
          ;
 
       prog_opt::options_description opt;
@@ -295,6 +370,19 @@ int main(int argc, char** argv)
          std::cerr << desc << "\n";
          return 1;
       }
+
+      // load the sensor configuration
+      std::cout << "Reading sensor configurations\n";
+      std::ifstream SensorsConfig("sensors.json");
+      json Sensors;
+      SensorsConfig >> Sensors;
+
+      ReadSensorInfo(Sensors["Sensors"]);
+
+      // mapping of stage 1 channel number to bell number
+      std::vector<int8_t> BellNumber(16, -1);
+      // UID of the given channel number
+      std::vector<uint16_t> SensorUID(16, -1);
 
       // initialize the GyroList
       std::vector<GyroProcessor> GyroList;
@@ -350,7 +438,7 @@ int main(int argc, char** argv)
       bool const WriteToFile = !OutFile.empty();
       if (WriteToFile)
       {
-         int outfd = open(OutFile.c_str(), O_WRONLY | O_TRUNC, 0666);
+         int outfd = open(OutFile.c_str(), O_CREAT | O_WRONLY | O_TRUNC, 0666);
          if (outfd < 0)
          {
             perror("Cannot open output file");
@@ -405,6 +493,15 @@ int main(int argc, char** argv)
                   // first client, start up the radio.
                }
                Clients.insert(cl);
+               // send the 'B' messages to indicate which bells we have available
+               for (unsigned i = 0; i < 16; ++i)
+               {
+                  if (BellNumber[i] != -1)
+                  {
+                     std::set<int> TempC;  TempC.insert(cl);
+                     WriteBellAvailMsg(WriteToFile, TempC, 0, BellNumber[i]);
+                  }
+               }
             }
          }
 
@@ -417,6 +514,10 @@ int main(int argc, char** argv)
             if (r != len)
             {
                perror("Error reading from file");
+               for (int i = 1; i <= 12; ++i)
+               {
+                  std::cout << "Gyro " << i << " max change " << GyroDiff[i] << '\n';
+               }
                return 1;
             }
          }
@@ -437,41 +538,76 @@ int main(int argc, char** argv)
          }
 
          int64_t Time = *static_cast<int64_t const*>(static_cast<void const*>(buf));
-         int Bell = buf[8];
+         int PipeNumber = buf[8];
+         int Bell = BellNumber[PipeNumber];
          uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+9));
          unsigned char Flags = buf[11];
 
+         if (PipeNumber > 11)
+         {
+            // invalid pipe - this should't happen, but for bugs in stage 1...
+            std::cerr << "Invalid pipe " << PipeNumber << '\n';
+            continue;
+         }
+
          if (Flags & 0x80)
          {
-            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
-            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
-            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+16));
-            int Offset = 17;
             // status packet
-            if (Flags & 0x20)
+            uint16_t uid = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
+            if (Bell == -1 || uid != SensorFromBell[Bell].UID)
+            {
+               // associate the pipe number with the correct bell number, by looking up the sensor UID.
+               // It is also possible that pipe assignments have changed.  This might have happened if a pipe has been
+               // changed on a sensor but we didn't restart the server.
+               Bell = SensorFromUID[uid].Bell;
+               BellNumber[PipeNumber] = Bell;
+               std::cerr << "Associating sensor " << std::hex << uid << " with pipe " << std::dec << PipeNumber
+                         << " and bell " << std::dec << Bell << "\n";
+               if (Bell != -1)
+               {
+                  WriteBellAvailMsg(WriteToFile, Clients, Time-Delay, Bell);
+               }
+            }
+            if (Bell == -1)
+            {
+               // if we still don't have a bell number, then we can't do anything useful
+               if (Verbose > 1)
+                  std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
+               continue;
+            }
+            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
+            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+16));
+            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+18));
+            bool Power = Flags & 0x20;
+            bool Charging = Flags & 0x10;
+            bool Sleeping = Flags & 0x02;
+            WriteStatusMsg(WriteToFile, Clients, Time-Delay, Bell, uid, AccODR, GyroODR, GyroBW,
+			   Power, Charging, Sleeping);
+            int Offset = 19;
+            // status packet
+            if (Flags & 0x08)
             {
                // we have a temperature
                int8_t T = *static_cast<int8_t const*>(static_cast<void const*>(buf+Offset));
                ++Offset;
                WriteGyroTempMsg(WriteToFile, Clients, Time-Delay, Bell, T);
             }
-            if (Flags & 0x10)
-            {
-               // charging voltage
-               uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
-               Offset += 2;
-               WriteChargeVMsg(WriteToFile, Clients, Time-Delay, Bell, V);
-            }
             if (Flags & 0x04)
             {
                // battery charge
                uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
                Offset += 2;
-               WriteBatteryVMsg(WriteToFile, Clients, Time-Delay, Bell, V);
+               WriteBatteryVMsg(WriteToFile, Clients, Time-Delay, Bell, float(V / SensorFromBell[Bell].BatteryScale));
             }
          }
          else
          {
+            if (Bell == -1)  // can't do anything yet, we don't know what bell we have
+            {
+               if (Verbose > 1)
+                  std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
+               continue;
+            }
             // sensor packet
             uint8_t SeqNum = buf[12];
 
@@ -482,13 +618,74 @@ int main(int argc, char** argv)
 
             if (len != ExpectedPacketLength)
             {
-               std::cerr << "Unexpected packet length " << len << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
-                         << " Delay=" << Delay << " Flags=" << uint16_t(Flags) << " SeqNum=" << uint16_t(SeqNum) << "\n";
+               std::cerr << Time << " bell " << Bell << " pipe " << PipeNumber
+			 << " unexpected packet length " << int(len) << " expected "
+                         << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
+                         << " Delay=" << Delay << " Flags=" << std::hex << uint16_t(Flags) << " SeqNum="
+			 << std::dec << uint16_t(SeqNum) << "\n";
+               if (Verbose > 2)
+               {
+                  std::cerr << "Seq numbers: ";
+                  for (int i = 1; i <= 12; ++i)
+                  {
+                     std::cerr << BellSeqNum[i] << ' ';
+                  }
+                  std::cerr << '\n';
+                  std::cerr << "Packet: ";
+                  for (int i = 0; i < len; ++i)
+                  {
+                     std::cerr << int(buf[i]) << ' ';
+                  }
+                  std::cerr << '\n';
+               }
                continue;
             }
 
+            if (Verbose > 0 && BellSeqNum[Bell] != -1 && SeqNum != uint8_t(BellSeqNum[Bell]+1))
+            {
+               int LostPackets = uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1);
+               if (LostPackets > (Verbose > 2 ? 0 : (Verbose > 1 ? 1 : 5)))
+               {
+                  std::cerr << Time << " Packet loss bell " << Bell << " pipe " << PipeNumber << " delay " << Delay
+                            << " packets " << LostPackets
+                            << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
+               }
+
+               if (Verbose > 2)
+               {
+                  std::cerr << "Seq numbers: ";
+                  for (int i = 1; i <= 12; ++i)
+                  {
+                     std::cerr << BellSeqNum[i] << ' ';
+                  }
+                  std::cerr << '\n';
+                  if (int(uint8_t(SeqNum-uint8_t(BellSeqNum[Bell])-1)) == 254)
+                  {
+                     std::cerr << "Packet: ";
+                     for (int i = 0; i < len; ++i)
+                     {
+                        std::cerr << int(buf[i]) << ' ';
+                     }
+                     std::cerr << '\n';
+                  }
+               }
+            }
+
+            BellSeqNum[Bell] = SeqNum;
+
             std::vector<int16_t> GyroMeasurements(NumGyro);
             std::memcpy(GyroMeasurements.data(), buf+13+NumAccel*6, NumGyro*2);
+
+         if (Time-Delay == 1479609706946571ull)
+         {
+            std::cerr << "got the packet " << Time << '\n';
+            for (unsigned i = 0; i < len; ++i)
+            {
+               std::cerr << int(buf[i]) << ' ' << '\n';
+            }
+         }
+
+
 
             GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements);
 
@@ -496,7 +693,9 @@ int main(int argc, char** argv)
             std::memcpy(AccelMeasurements.data(), buf+13, NumAccel*6);
             for (auto const& x : AccelMeasurements)
             {
-               WriteAccelMsg(WriteToFile, Clients, Time-Delay, Bell, x);
+               float Ax = (x[0] - SensorFromBell[Bell].AXOffset) / SensorFromBell[Bell].AXScale;
+               float Ay = (x[1] - SensorFromBell[Bell].AYOffset) / SensorFromBell[Bell].AYScale;
+               WriteAccelMsg(WriteToFile, Clients, Time-Delay, Bell, Ax, Ay);
             }
          }
       }

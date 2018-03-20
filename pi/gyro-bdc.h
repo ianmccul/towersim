@@ -24,10 +24,11 @@
 #include <boost/circular_buffer.hpp>
 #include <list>
 #include "quadfit.h"
+#include "common/trace.h"
 
-double const ThresholdVelocity = 1000;
+double const ThresholdVelocity = 17.5;   // degrees per second
 int64_t const HalfTimeLagMicrosec = 80000;  // 0.08 seconds
-double const EnergyThreshold = 2.0e8;
+double const EnergyThreshold = 61250.0;
 
 
 // After ResetTime seconds since a BDC trigger, we accept a BDC even
@@ -40,6 +41,8 @@ class GyroBDC
    public:
       GyroBDC();
 
+      GyroBDC(int Bell_);
+
       typedef std::pair<int64_t, double> VelocityPoint;
 
       std::list<VelocityPoint> BDCPoints;
@@ -49,12 +52,13 @@ class GyroBDC
       bool Process(int64_t Time, float z);
 
    private:
-      boost::circular_buffer<std::pair<int64_t, short>> SampleBuf;
+      boost::circular_buffer<std::pair<int64_t, float>> SampleBuf;
       float CurrentMax;
       int64_t CurrentMaxTime;
       int LastSign;
       double LastEnergy;
       int64_t LastBDC;
+      int Bell;
 };
 
 inline
@@ -64,14 +68,42 @@ GyroBDC::GyroBDC()
      CurrentMaxTime(0),
      LastSign(0),
      LastEnergy(0),
-     LastBDC(0)
+     LastBDC(0),
+     Bell(0)
 {
+}
+
+inline
+GyroBDC::GyroBDC(int Bell_)
+   : SampleBuf(HalfTimeLagMicrosec*2/760+20),
+     CurrentMax(0),
+     CurrentMaxTime(0),
+     LastSign(0),
+     LastEnergy(0),
+     LastBDC(0),
+     Bell(Bell_)
+{
+}
+
+namespace std
+{
+inline
+std::ostream& operator<<(std::ostream& Out, std::vector<double> const& v)
+{
+   for (auto x : v)
+   {
+      Out << x << ' ';
+   }
+   Out << '\n';
+   return Out;
+}
 }
 
 inline
 bool
 GyroBDC::Process(int64_t Time, float z)
 {
+   //   TRACE(z);
    bool Found = false;
    SampleBuf.push_back({Time, z});
    if (z*LastSign < 0)
@@ -116,10 +148,16 @@ GyroBDC::Process(int64_t Time, float z)
             double T = -R.b / (2*R.a);
             int64_t TimeEx = int64_t(round(T*1E6)) + CurrentMaxTime;
             double V = R.c - R.b*R.b/(4*R.a);
+
+            //TRACE(R.a)(R.b)(R.c);
+            //TRACE(CurrentMax)(Time)(CurrentMaxTime);
+            //TRACE(x)(y);
+
             // DS test.  Check that the energy has changed by less than EnergyThreshold (or the LastEnergy is zero).
             if (LastEnergy != 0 && std::abs(V*V-LastEnergy) > EnergyThreshold && TimeEx < LastBDC+ResetTime)
             {
-               std::cerr << "Ignoring local extrema near " << CurrentMaxTime << " with velocity " << V
+               std::cerr << "Bell " << Bell << ": ignoring local extrema near " << CurrentMaxTime
+                         << " with velocity " << V
                          << " as the change in energy is too big.  Possible stay event?\n";
             }
             else

@@ -17,6 +17,7 @@
 #include <sys/un.h>
 #include <cstddef>
 #include <array>
+#include <fstream>
 
 //returns the system time in microseconds since epoch
 int64_t get_time()
@@ -45,10 +46,37 @@ void sleep_ms(long microsec)
    sleep_ns(microsec*1000);
 }
 
+void swap_endian(uint32_t& x)
+{
+   unsigned char* xx = static_cast<unsigned char*>(static_cast<void*>(&x));
+   std::swap(xx[0], xx[3]);
+   std::swap(xx[1], xx[2]);
+}
+
+namespace detail
+{
+
+constexpr uint32_t Prime = 16777619;
+constexpr uint32_t Offset = 2166136261;
+
+constexpr
+uint32_t hash_fnv32(uint32_t Value, uint32_t const* Beg, uint32_t const* End)
+{
+   return (Beg == End) ? Value : hash_fnv32((Value ^ (*Beg)) * Prime, Beg+1, End);
+}
+
+} // namespace detail
+
+constexpr
+uint32_t hash_fnv32(uint32_t const* Beg, uint32_t const* End)
+{
+   return detail::hash_fnv32(detail::Offset, Beg, End);
+}
+
 class Radio
 {
    public:
-      Radio(int ce_pin, int DevMajor, int DevMinor, int Channel);
+      Radio(int ce_pin, int DevMajor, int DevMinor, int Channel, uint64_t PAddr);
 
       Radio(Radio&) = delete;
       Radio& operator=(Radio const&) = delete;
@@ -76,7 +104,7 @@ class Radio
       bool ok;
 };
 
-Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel)
+Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel, uint64_t PAddr)
    : radio(ce_pin, DevMajor*10+DevMinor), ok(true)
 {
    radio.begin();
@@ -102,8 +130,8 @@ Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel)
    radio.closeReadingPipe(3);
    radio.closeReadingPipe(4);
    radio.closeReadingPipe(5);
-   radio.openReadingPipe(0, 0xe7e7e7e7e7);
-   radio.openReadingPipe(1, 0x0f0f0f0f0f);
+   radio.openReadingPipe(0, (PAddr & 0xffffffff00) | 0xe7);
+   radio.openReadingPipe(1, (PAddr & 0xffffffff00) | 0x0f);
    uint8_t PipeAddr = 0x17;
    radio.openReadingPipe(2, &PipeAddr);
    PipeAddr = 0x2c;
@@ -168,6 +196,21 @@ void sleep_us(int t)
    nanosleep(&req, &rem);
 }
 
+void debug_packet(unsigned char const* buf, int len, std::ostream& out)
+{
+   std::ios::fmtflags f(out.flags());
+   if (len > 32)
+   {
+      out << "packet too long (" << len << "), truncating ";
+      len = 32;
+   }
+   for (int i = 0; i < len; ++i)
+   {
+      out << std::hex << buf[i] << ' ';
+   }
+   out.flags(f);
+}
+
 int main(int argc, char** argv)
 {
    bool TestMode = false;
@@ -176,15 +219,19 @@ int main(int argc, char** argv)
    std::array<unsigned char[32], 16> LastBuf;
    std::array<int, 16> LastBufSize{};
 
+   std::ofstream Log("stage1log.txt", std::ofstream::out | std::ofstream::ate);
+
    int Verbose = 0;
    if (argc >= 2)
    {
-      if (argc == 2 && argv[1] == std::string("-v"))
+      int n = 1;
+      while (n < argc && argv[n] == std::string("-v"))
       {
-         Verbose = 1;
-         std::cerr << "Enabling verbose mode.\n";
+         ++Verbose;
+         std::cerr << "Enabling verbose mode " << Verbose << "\n";
+         ++n;
       }
-      else
+      if (n < argc)
       {
          std::cerr << "usage: bellsensorstage1 [-v]\n";
          return 1;
@@ -198,9 +245,9 @@ int main(int argc, char** argv)
    // configure the radios
    //
 
-   Radios.push_back(Radio(22, 0, 0, 76));
-   Radios.push_back(Radio(4 , 0, 1, 78));
-   Radios.push_back(Radio(18, 1, 1, 82));
+   Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
+   Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
+   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
@@ -248,6 +295,7 @@ int main(int argc, char** argv)
       if (cl >= 0)
       {
          std::cout << "Accepted connection " << cl << std::endl;
+         Log << "Accepted connection " << cl << std::endl;
          if (Verbose == 0 && Clients.empty())
          {
             // first client, start up the radios
@@ -270,12 +318,26 @@ int main(int argc, char** argv)
          uint8_t PipeNum = 0;
          if (r.Available(&PipeNum))
          {
+            if (PipeNum > 3)  // PipeNum of 7 also indicates RX_FIFO is empty.
+            {
+               Log << "Pipe not available on radio " << i << " time " << get_time() << std::endl;
+               std::cerr << "Pipe not available on radio " << i << std::endl;
+               continue;
+            }
             unsigned char buf[33+9];
             int len = 0;
             len = r.PayloadSize();
-            if (Verbose > 0)
+            if (Verbose > 3)
             {
                std::cout << "Got a packet, length = " << len << '\n';
+            }
+            // we don't need to detect the case len > 32, the RF24 lib does that for us and
+            // flushes the buffer.  But if that lappens, then we get a length of 0.
+            if (len == 0)
+            {
+               Log << "Discarded invalid packet on pipe " << PipeNum << " at time " << get_time() << std::endl;
+               if (Verbose > 0)
+                  std::cerr << "Discarded invalid packet on pipe " << PipeNum << " at time " << get_time() << std::endl;
             }
             if (len >= 1)
             {
@@ -283,14 +345,32 @@ int main(int argc, char** argv)
 
                r.Read(buf+9, len);
 
+               // checksum
+               uint32_t CheckBuf[8];
+               std::memset(CheckBuf, 0, 32);
+               std::memcpy(CheckBuf, buf+9, len);
+               // endian swap
+               std::memset(buf+9+len, 0, 33-9-len);
+               for (int i = 0; i < 8; ++i)
+               {
+                  swap_endian(CheckBuf[i]);
+               }
+               if (hash_fvn32(&CheckBuf[1], &CheckBuf[8]) != CheckBuf[0])
+               {
+                  sd::cout << "FVN hash failed for packet on pipe " << BellNum << ' ';
+                  debug_packet(buf+9, len, std::cout);
+                  continue;
+               }
+
                // deduplication
                if (LastBufSize[BellNum] == len && (uint8_t(LastBuf[BellNum][0]&0x03) == uint8_t(buf[9]&0x03)))
                {
                   // possible duplicate packet, check the payload
                   if (memcmp(LastBuf[BellNum]+2, buf+11, len-2) == 0)
                   {
-                     std::cout << "Ignoring duplicate packet for bell " << BellNum 
-                               << " seq " << int(uint8_t(buf[9]&0x03)) << std::endl;
+                     if (Verbose > 0)
+                        std::cout << "Ignoring duplicate packet for pipe " << BellNum
+                                  << " seq " << int(uint8_t(buf[9]&0x03)) << std::endl;
                      continue;
                   }
                }

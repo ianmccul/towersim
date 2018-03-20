@@ -23,51 +23,29 @@
 #include <cmath>
 #include <boost/circular_buffer.hpp>
 #include "gyro-bdc.h"
+#include "bells.h"
 #include <fstream>
-#include "bellinfo.h"
-#include "sensorinfo.h"
+#include <string>
 #include <boost/program_options.hpp>
+#include "common/trace.h"
 
 namespace prog_opt = boost::program_options;
 
 int main(int argc, char** argv)
 {
-   std::cout.precision(16);
-   std::cerr.precision(16);
-
-   std::map<int, BellInfoType> BellInfo;
-   std::map<int,SensorInfoType> SensorInfo;
-
-   std::ifstream BellsConfig("bells.json");
-   json Bells;
-   BellsConfig >> Bells;
-   for (json::iterator it = Bells.begin(); it != Bells.end(); ++it)
-   {
-      int Bell = std::stoi(it.key());
-      BellInfo[Bell] = BellInfoType(Bell, it.value()["FriendlyName"], it.value()["HandstrokeDelay"], it.value()["BackstrokeDelay"]);
-   }
-
-   // load the sensor configuration
-   std::ifstream SensorsConfig("sensors.json");
-   json Sensors;
-   SensorsConfig >> Sensors;
-
-   for (json::iterator it = Sensors.begin(); it != Sensors.end(); ++it)
-   {
-      SensorInfo[std::stoi(it.key())] = {it.value()["Bell"], it.value()["Polarity"]};
-   }
-
    try
    {
-      bool Relative = false;
-      bool MeasureBDC = false;
+      int ThisBell = -1;
+      bool bdc = false;
+      bool Raw = false;
+      bool AbsoluteTime = false;
 
       prog_opt::options_description desc("Allowed options");
       desc.add_options()
          ("help", "show this help message")
-         //("binary", prog_opt::bool_switch(&Raw), "read binary rather than text")
-         ("bdc",  prog_opt::bool_switch(&MeasureBDC), "emit bottom-dead-centre times rather than bell strike times")
-         ("relative,r",  prog_opt::bool_switch(&Relative), "outpit times relative to the initial time")
+         ("bell", prog_opt::value(&ThisBell), "show output only for this bell")
+         ("bdc", prog_opt::bool_switch(&bdc), "emit bottom dead centre times, instead of strike times")
+         ("raw", prog_opt::bool_switch(&Raw), "raw mode; two columns <time> <z>")
          ;
 
       prog_opt::options_description opt;
@@ -85,44 +63,79 @@ int main(int argc, char** argv)
          return 1;
       }
 
-      int64_t Epoch = 0;
-      int64_t Tm;
-      std::string G;
-      float z;
 
-      std::vector<GyroBDC> BDC(16);
+      // load the bells configuration
+      std::cout << "Reading bell configurations\n";
+      std::ifstream BellsConfig("bells.json");
+      json Bells;
+      BellsConfig >> Bells;
+      ReadBellInfo(Bells["Bells"]);
+
+      std::cout.precision(16);
+      std::cerr.precision(16);
+      int64_t Epoch = 0;
+
+      std::array<GyroBDC, 13> BDC{0,1,2,3,4,5,6,7,8,9,10,11,12};
+
 
       std::string s;
       while (std::getline(std::cin, s))
       {
+         //         TRACE(s);
          std::istringstream In(s);
          int64_t Tm;
-         char S;
-         int Bell;
-         In >> Tm >> S >> Bell;
-         if (S == 'G')
+         float z;
+         char G;
+         int Bell = 0;
+         if (!Raw)
          {
-            double z;
+            In >> Tm >> Bell >> G;
+
+            if (Epoch == 0)
+            Epoch = Tm;
+
+            if (G != 'G')
+               continue;
+
+            if (ThisBell != -1 && ThisBell != Bell)
+               continue;
+
             In >> z;
+         }
+         else
+         {
+            In >> Tm >> z;
+         }
 
-            //std::cout << S << ' ' << Bell << ' ' << z << '\n';
+         if (BDC[Bell].Process(Tm-Epoch, z))
+         {
+            int64_t T = BDC[Bell].BDCPoints.front().first;
+            double V = BDC[Bell].BDCPoints.front().second;
+            BDC[Bell].BDCPoints.pop_front();
 
-            z *= SensorInfo[Bell].Polarity;
+            bool Handstroke = V<0;
 
-            if (Epoch == 0 && Relative)
-               Epoch = Tm;
+            int64_t StrikeTime = T;
 
-            if (BDC[Bell].Process(Tm-Epoch, z))
+            if (!bdc)
             {
-               uint64_t t = BDC[Bell].BDCPoints.front().first;
-               double v = BDC[Bell].BDCPoints.front().second;
-               if (!MeasureBDC)
+               // if we're below the cutoff then quit
+               if (Handstroke && std::abs(V) < BellInfo[Bell].HandstrokeCutoff)
                {
-                  t += (v > 0) ? BellInfo[Bell].HandstrokeDelay_ms : BellInfo[Bell].BackstrokeDelay_ms;
+                  std::cerr << "Ignoring handstroke bell " << Bell << " velocity " << V << " too low.\n";
+                  continue;
                }
-               std::cout << t << ' ' << int(Bell) << ' ' << v << '\n';
-               BDC[Bell].BDCPoints.pop_front();
+               if (!Handstroke && std::abs(V) < BellInfo[Bell].BackstrokeCutoff)
+               {
+                  std::cerr << "Ignoring backstroke bell " << Bell << " velocity " << V << " too low.\n";
+                  continue;
+               }
+               //TRACE(T);
+               T += 1000*(Handstroke ? BellInfo[Bell].HandstrokeDelay_ms
+                          : BellInfo[Bell].BackstrokeDelay_ms);
+               //TRACE(T);
             }
+            std::cout << (AbsoluteTime ? (T+Epoch) : T) << ' ' << Bell << ' ' << V << '\n';
          }
       }
    }
@@ -141,4 +154,5 @@ int main(int argc, char** argv)
       std::cerr << "Exception of unknown type!\n";
    }
    return 0;
+
 }
