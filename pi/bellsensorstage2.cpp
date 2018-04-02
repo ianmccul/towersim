@@ -560,13 +560,16 @@ int main(int argc, char** argv)
                // It is also possible that pipe assignments have changed.  This might have happened if a pipe has been
                // changed on a sensor but we didn't restart the server.
                Bell = SensorFromUID[uid].Bell;
+               if (Bell == -1)
+               {
+                  // unrecognised UID
+                  std::cerr << "Unrecognised sensor UID: 0x" << std::hex << uid << std::dec << " on pipe " << PipeNumber << "\n";
+                  continue;
+               }
                BellNumber[PipeNumber] = Bell;
                std::cerr << "Associating sensor " << std::hex << uid << " with pipe " << std::dec << PipeNumber
                          << " and bell " << std::dec << Bell << "\n";
-               if (Bell != -1)
-               {
-                  WriteBellAvailMsg(WriteToFile, Clients, Time-Delay, Bell);
-               }
+               WriteBellAvailMsg(WriteToFile, Clients, Time-Delay, Bell);
             }
             if (Bell == -1)
             {

@@ -138,7 +138,7 @@ int main(int argc, char** argv)
             bool Power = Flags & 0x20;
             bool Charging = Flags & 0x10;
             bool Sleeping = Flags & 0x02;
-            std::cout << "UID 0x" << std::hex << uid << " Status " << std::dec << Bell
+            std::cout << "STATUS UID 0x" << std::hex << uid << " Pipe " << std::dec << Bell
                       << " power " << Power << " charging " << Charging << " Sleeping " << Sleeping;
             int Offset = 23;
             // status packet
