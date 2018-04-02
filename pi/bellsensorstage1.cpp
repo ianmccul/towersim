@@ -5,8 +5,8 @@
 #include <unistd.h>
 #include <RF24/RF24.h>
 
-#include <math.h>
-#include <stdio.h>
+#include <cmath>
+#include <cstdio>
 #include <time.h>
 
 #include <cstdint>
@@ -357,7 +357,7 @@ int main(int argc, char** argv)
                }
                if (hash_fvn32(&CheckBuf[1], &CheckBuf[8]) != CheckBuf[0])
                {
-                  sd::cout << "FVN hash failed for packet on pipe " << BellNum << ' ';
+                  std::cout << "FVN hash failed for packet on pipe " << BellNum << ' ';
                   debug_packet(buf+9, len, std::cout);
                   continue;
                }
