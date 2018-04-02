@@ -207,9 +207,10 @@ void debug_packet(unsigned char const* buf, int len, std::ostream& out)
    }
    for (int i = 0; i < len; ++i)
    {
-      out << std::hex << buf[i] << ' ';
+      out << std::hex << "0x" << int(buf[i]) << ' ';
    }
    out.flags(f);
+   out << std::endl;
 }
 
 int main(int argc, char** argv)
