@@ -348,7 +348,8 @@ int main(int argc, char** argv)
                r.Read(buf+9, len);
 
                // checksum
-               uint32_t Checksum = *static_cast<uint32_t const*>(static_cast<void const*>(buf));
+               uint32_t Checksum;
+               std::memcpy(&Checksum, buf+9, 4);
                swap_endian(Checksum);
                if (hash_fnv32(buf+9+4, buf+9+32) != Checksum)
                {
