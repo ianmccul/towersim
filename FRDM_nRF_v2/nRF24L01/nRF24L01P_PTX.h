@@ -47,11 +47,13 @@ class nRF24L01P_PTX
       // Returns 0 on success.
       // Returns -1 if the packet wasn't successfully acknowledged.
       int TransmitPacket(char* Buf, int Size);
+      int TransmitPacket(unsigned char* Buf, int Size);
 
       // Transmits a packet in non-blocking mode.
       // returns 0 if the packet was successful, -1 on some error (eg
       // if the device isn't ready to transmit).
       int TransmitPacketNB(char* Buf, int Size);
+      int TransmitPacketNB(unsigned char* Buf, int Size);
 
       void EnableStreamMode();
 

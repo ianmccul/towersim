@@ -163,6 +163,12 @@ nRF24L01P_PTX::TransmitPacket(char* Buf, int Size)
 }
 
 int
+nRF24L01P_PTX::TransmitPacket(unsigned char* Buf, int Size)
+{
+   return this->TransmitPacket(static_cast<char*>(static_cast<void*>(Buf)), Size);
+}
+
+int
 nRF24L01P_PTX::TransmitPacketNB(char* Buf, int Size)
 {
    // If the device isn't powered up then there is a logic error
@@ -188,6 +194,12 @@ nRF24L01P_PTX::TransmitPacketNB(char* Buf, int Size)
    CE = 0;
 
    return 0;
+}
+
+int
+nRF24L01P_PTX::TransmitPacketNB(unsigned char* Buf, int Size)
+{
+   return this->TransmitPacketNB(static_cast<char*>(static_cast<void*>(Buf)), Size);
 }
 
 void nRF24L01P_PTX::EnableStreamMode()

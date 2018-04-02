@@ -135,10 +135,10 @@ class PacketScheduler
 
       // high and low priority buffers
       uint32_t Pad1;    // make sure we have 32-bit alignment
-      char HiBuf[32];
+      uint8_t HiBuf[32];
       int HiBufSz;
       uint32_t Pad2;    // make sure we have 32-bit alignment
-      char LoBuf[32];
+      uint8_t LoBuf[32];
       int LoBufSz;
 };
 
@@ -203,7 +203,7 @@ PacketScheduler::Poll()
       uint16_t d = HighPriorityTimer.read_us();
       d = (d & 0xFFFC) | Seq;
       std::memcpy(HiBuf+4, &d, 2);
-      uint32_t hash = hash_fnv32((uint32_t const*)(HiBuf+4), (uint32_t const*)(HiBuf+32));
+      uint32_t hash = hash_fnv32(HiBuf+4, HiBuf+32);
       std::memcpy(HiBuf, &hash, 4);
       PTX.TransmitPacketNB(HiBuf, HiBufSz);
       PacketInFlight = 1;
@@ -214,7 +214,7 @@ PacketScheduler::Poll()
       uint16_t d = LowPriorityTimer.read_us();
       d = (d & 0xFFFC) | Seq;
       std::memcpy(LoBuf+4, &d, 2);
-      uint32_t hash = hash_fnv32((uint32_t const*)(LoBuf+4), (uint32_t const*)(LoBuf+32));
+      uint32_t hash = hash_fnv32(LoBuf+4, LoBuf+32);
       std::memcpy(LoBuf, &hash, 4);
       PTX.TransmitPacketNB(LoBuf, LoBufSz);
       PacketInFlight = 2;

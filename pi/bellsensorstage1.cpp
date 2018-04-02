@@ -61,15 +61,15 @@ constexpr uint32_t Prime = 16777619;
 constexpr uint32_t Offset = 2166136261;
 
 constexpr
-uint32_t hash_fnv32(uint32_t Value, uint32_t const* Beg, uint32_t const* End)
+uint32_t hash_fnv32(uint32_t Value, uint8_t const* Beg, uint8_t const* End)
 {
-   return (Beg == End) ? Value : hash_fnv32((Value ^ (*Beg)) * Prime, Beg+1, End);
+   return (Beg == End) ? Value : hash_fnv32((Value ^ uint32_t(*Beg)) * Prime, Beg+1, End);
 }
 
 } // namespace detail
 
 constexpr
-uint32_t hash_fnv32(uint32_t const* Beg, uint32_t const* End)
+uint32_t hash_fnv32(uint8_t const* Beg, uint8_t const* End)
 {
    return detail::hash_fnv32(detail::Offset, Beg, End);
 }
@@ -325,7 +325,7 @@ int main(int argc, char** argv)
                std::cerr << "Pipe not available on radio " << i << std::endl;
                continue;
             }
-            unsigned char buf[33+9];
+            unsigned char buf[33+9] = { 0 };
             int len = 0;
             len = r.PayloadSize();
             if (Verbose > 3)
@@ -347,18 +347,11 @@ int main(int argc, char** argv)
                r.Read(buf+9, len);
 
                // checksum
-               uint32_t CheckBuf[8];
-               std::memset(CheckBuf, 0, 32);
-               std::memcpy(CheckBuf, buf+9, len);
-               // endian swap
-               std::memset(buf+9+len, 0, 33-9-len);
-               for (int i = 0; i < 8; ++i)
+               uint32_t Checksum = *static_cast<uing32_t const*>(static_cast<void const*>(buf));
+               swap_endian(Checksum);
+               if (hash_fnv32(buf+9+4, buf+9+32)CheckBuf[1], &CheckBuf[8]) != Checksum)
                {
-                  swap_endian(CheckBuf[i]);
-               }
-               if (hash_fnv32(&CheckBuf[1], &CheckBuf[8]) != CheckBuf[0])
-               {
-                  std::cout << "FVN hash failed for packet on pipe " << BellNum << ' ';
+                  std::cout << "FNV hash failed for packet on pipe " << BellNum << ' ';
                   debug_packet(buf+9, len, std::cout);
                   continue;
                }
