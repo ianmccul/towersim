@@ -360,14 +360,14 @@ int main(int argc, char** argv)
                }
 
                // deduplication
-               if (LastBufSize[BellNum] == len && (uint8_t(LastBuf[BellNum][0]&0x03) == uint8_t(buf[9]&0x03)))
+               if (LastBufSize[BellNum] == len && (uint8_t(LastBuf[BellNum][0]&0x03) == uint8_t(buf[9+4]&0x03)))
                {
                   // possible duplicate packet, check the payload
-                  if (memcmp(LastBuf[BellNum]+2, buf+11, len-2) == 0)
+                  if (memcmp(LastBuf[BellNum]+2, buf+9+4+2, len-(4+2)) == 0)
                   {
                      if (Verbose > 0)
                         std::cout << "Ignoring duplicate packet for pipe " << BellNum
-                                  << " seq " << int(uint8_t(buf[9]&0x03)) << std::endl;
+                                  << " seq " << int(uint8_t(buf[9+4]&0x03)) << std::endl;
                      continue;
                   }
                }

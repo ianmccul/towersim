@@ -14,14 +14,14 @@
 // Bulti-byte sequences are in network order (big-endian).  This is the native format for
 // the FRDM-KL28z.
 //
-// hash (4 bytes) | delay (14 bits) seq (2 bits) |flags | seq | payload (up to 28 bytes)
+// hash (4 bytes) | delay (14 bits) seq (2 bits) |flags | seq1 | payload (up to 28 bytes)
 // hash is the FNV-1a-32 hash of the remaining bytes in the packet (with extra bytes set to zero to make
 // 32 bytes in total, even though we don't transmit extra bytes)
 // delay is a 14-bit unsigned in units of 4 microseconds - maximum value
 // 16383 represents 65.532 miliseconds.
 //
 // flags is 8 bits: 0 AAA GGGG
-// seq is a 1-byte sequentially increasing number
+// seq1 is a 1-byte sequentially increasing number
 // delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit
 // delay shifted left 2 bits, with 2-bit sequence number).
 // AAA is number of 6-byte accelerometer readings (first in the payload)

@@ -19,12 +19,20 @@ uint16_t hash16(uint32_t x)
    return (x & 0xFFFF) ^ (x >> 16);
 }
 
+// and we previously also messed up the conversion from 32 to 16 byte hash, we drop accidentally the second
+// 8 bits.  But shouldn't matter with the FNV hash.
+constexpr
+uint16_t hash16_incorrect(uint32_t x)
+{
+   return (x & 0xFF) ^ (x >> 16);
+}
+
 // 80-bit UID
 uint32_t const UniqueID80_32[3] = { SIM->UIDMH, SIM->UIDML, SIM->UIDL };
 uint8_t const* UniqueID80 = static_cast<uint8_t const*>(static_cast<void const*>(UniqueID80_32));
 
 // a 16-bit hash of the 80-bit UID
-uint16_t const UniqueID16 = hash16(hash_fnv32_incorrect(&UniqueID80_32[0], &UniqueID80_32[3]));
+uint16_t const UniqueID16 = hash16_incorrect(hash_fnv32_incorrect(&UniqueID80_32[0], &UniqueID80_32[3]));
 
 uint32_t const UniqueID32 = hash_fnv32_incorrect(&UniqueID80_32[0], &UniqueID80_32[3]);
 
