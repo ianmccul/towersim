@@ -356,7 +356,7 @@ int main(int argc, char** argv)
                {
                   swap_endian(CheckBuf[i]);
                }
-               if (hash_fvn32(&CheckBuf[1], &CheckBuf[8]) != CheckBuf[0])
+               if (hash_fnv32(&CheckBuf[1], &CheckBuf[8]) != CheckBuf[0])
                {
                   std::cout << "FVN hash failed for packet on pipe " << BellNum << ' ';
                   debug_packet(buf+9, len, std::cout);
