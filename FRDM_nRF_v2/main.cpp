@@ -19,7 +19,7 @@
 // 32 bytes in total, even though we don't transmit extra bytes)
 // delay is a 14-bit unsigned in units of 4 microseconds - maximum value
 // 16383 represents 65.532 miliseconds.
-///
+//
 // flags is 8 bits: 0 AAA GGGG
 // seq is a 1-byte sequentially increasing number
 // delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit
