@@ -572,7 +572,8 @@ int main(int argc, char** argv)
             {
                // if we still don't have a bell number, then we can't do anything useful
                if (Verbose > 1)
-                  std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
+                  std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber
+                            << " UID 0x" << std::hex << uid << std::dec << '\n';
                continue;
             }
             int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14+4));
