@@ -614,7 +614,7 @@ int main(int argc, char** argv)
             int NumAccel = (Flags & 0x70) >> 4;
             int NumGyro = Flags & 0x0F;
 
-            int ExpectedPacketLength = NumAccel*6 + NumGyro*2 + 4 + 1 + 8;
+            int ExpectedPacketLength = NumAccel*6 + NumGyro*2 + 4 + 1 + 8 + 4;
 
             if (len != ExpectedPacketLength)
             {
