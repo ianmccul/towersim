@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <cstring>
 #include <unistd.h>
 #include <RF24/RF24.h>
 
