@@ -347,9 +347,9 @@ int main(int argc, char** argv)
                r.Read(buf+9, len);
 
                // checksum
-               uint32_t Checksum = *static_cast<uing32_t const*>(static_cast<void const*>(buf));
+               uint32_t Checksum = *static_cast<uint32_t const*>(static_cast<void const*>(buf));
                swap_endian(Checksum);
-               if (hash_fnv32(buf+9+4, buf+9+32)CheckBuf[1], &CheckBuf[8]) != Checksum)
+               if (hash_fnv32(buf+9+4, buf+9+32) != Checksum)
                {
                   std::cout << "FNV hash failed for packet on pipe " << BellNum << ' ';
                   debug_packet(buf+9, len, std::cout);
