@@ -354,6 +354,8 @@ int main(int argc, char** argv)
                if (hash_fnv32(buf+9+4, buf+9+32) != Checksum)
                {
                   std::cout << "FNV hash failed for packet on pipe " << BellNum << ' ';
+                  std::cout << "Expected " << std::hex << Checksum
+                            << " got " << std::hex << hash_fnv32(buf+9+4, buf+9+32) << ' ';
                   debug_packet(buf+9, len, std::cout);
                   continue;
                }
