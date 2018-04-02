@@ -118,8 +118,9 @@ int main(int argc, char** argv)
          int Size = len;
          int64_t Time = *static_cast<int64_t const*>(static_cast<void const*>(buf));
          int Bell = buf[8];
-         uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+9));
-         unsigned char Flags = buf[11];
+         // 4-byte checksum comes next
+         uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+13));
+         unsigned char Flags = buf[15];
 
          if (Bell < 0 || Bell > 15)
          {
@@ -130,15 +131,15 @@ int main(int argc, char** argv)
          if (Flags & 0x80)
          {
             // status packet
-            uint16_t uid = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
-            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
-            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+16));
-            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+18));
+            uint16_t uid = *static_cast<int16_t const*>(static_cast<void const*>(buf+16));
+            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+18));
+            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+20));
+            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+22));
             bool Power = Flags & 0x20;
             bool Charging = Flags & 0x10;
             bool Sleeping = Flags & 0x02;
             std::cout << "Status " << Bell << " power " << Power << " charging " << Charging << " Sleeping " << Sleeping;
-            int Offset = 19;
+            int Offset = 23;
             // status packet
             if (Flags & 0x08)
             {
@@ -159,7 +160,7 @@ int main(int argc, char** argv)
          else
          {
             // sensor packet
-            uint8_t SeqNum = buf[12];
+            uint8_t SeqNum = buf[16];
 
             int NumAccel = (Flags & 0x70) >> 4;
             int NumGyro = Flags & 0x0F;

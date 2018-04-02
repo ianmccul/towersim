@@ -540,8 +540,8 @@ int main(int argc, char** argv)
          int64_t Time = *static_cast<int64_t const*>(static_cast<void const*>(buf));
          int PipeNumber = buf[8];
          int Bell = BellNumber[PipeNumber];
-         uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+9));
-         unsigned char Flags = buf[11];
+         uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+9+4));
+         unsigned char Flags = buf[11+4];
 
          if (PipeNumber > 11)
          {
@@ -553,7 +553,7 @@ int main(int argc, char** argv)
          if (Flags & 0x80)
          {
             // status packet
-            uint16_t uid = *static_cast<int16_t const*>(static_cast<void const*>(buf+12));
+            uint16_t uid = *static_cast<int16_t const*>(static_cast<void const*>(buf+12+4));
             if (Bell == -1 || uid != SensorFromBell[Bell].UID)
             {
                // associate the pipe number with the correct bell number, by looking up the sensor UID.
@@ -575,15 +575,15 @@ int main(int argc, char** argv)
                   std::cerr << "Discarding packet with no associated bell number from pipe " << PipeNumber << '\n';
                continue;
             }
-            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14));
-            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+16));
-            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+18));
+            int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14+4));
+            int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+16+4));
+            int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+18+4));
             bool Power = Flags & 0x20;
             bool Charging = Flags & 0x10;
             bool Sleeping = Flags & 0x02;
             WriteStatusMsg(WriteToFile, Clients, Time-Delay, Bell, uid, AccODR, GyroODR, GyroBW,
 			   Power, Charging, Sleeping);
-            int Offset = 19;
+            int Offset = 19+4;
             // status packet
             if (Flags & 0x08)
             {
@@ -609,7 +609,7 @@ int main(int argc, char** argv)
                continue;
             }
             // sensor packet
-            uint8_t SeqNum = buf[12];
+            uint8_t SeqNum = buf[12+4];
 
             int NumAccel = (Flags & 0x70) >> 4;
             int NumGyro = Flags & 0x0F;

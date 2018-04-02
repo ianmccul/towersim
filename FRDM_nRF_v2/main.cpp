@@ -241,7 +241,7 @@ PacketScheduler::SendLowPriority(char const* buf, int Size)
 {
    std::memcpy(LoBuf+ReservedBufSize, buf, Size);
    LoBufSz = Size+ReservedBufSize;
-   std::memset(LoBuf+HiBufSz, 0, 32-HiBufSz);
+   std::memset(LoBuf+LoBufSz, 0, 32-LoBufSz);
    HaveLowPriorityPacket = true;
    NewLowPriorityPacket = true;
    LowPriorityTimer.reset();
