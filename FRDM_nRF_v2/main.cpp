@@ -11,8 +11,8 @@
 
 //
 // packet format for sensor readings:
-// Bulti-byte sequences are in network order (big-endian).  This is the native format for
-// the FRDM-KL28z.
+// Multi-byte sequences are in little-endian format, which is the default
+// for the KL25z and also the raspberry pi.
 //
 // hash (4 bytes) | delay (14 bits) seq (2 bits) |flags | seq1 | payload (up to 28 bytes)
 // hash is the FNV-1a-32 hash of the remaining bytes in the packet (with extra bytes set to zero to make

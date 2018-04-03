@@ -347,15 +347,23 @@ int main(int argc, char** argv)
 
                r.Read(buf+9, len);
 
+               if (DebugNextPacket)
+               {
+                  std::cout << "Showing next packet: ";
+                  debug_packet(buf+9, len, std::cout);
+                  DebugNextPacket = false;
+               }
+
                // checksum
                uint32_t Checksum;
                std::memcpy(&Checksum, buf+9, 4);
                if (hash_fnv32(buf+9+4, buf+9+32) != Checksum)
                {
-                  std::cout << "FNV hash failed for packet on pipe " << BellNum << ' ';
-                  std::cout << "Expected " << std::hex << Checksum
-                            << " got " << std::hex << hash_fnv32(buf+9+4, buf+9+32) << ' ';
+                  std::cout << "FNV hash failed for packet on pipe " << BellNum
+                            << " Expected " << std::hex << hash_fnv32(buf+9+4, buf+9+32)
+                            << " received checksum " << std::hex << Checksum << ' ';
                   debug_packet(buf+9, len, std::cout);
+                  DebugNextPacket = true;
                   continue;
                }
 
