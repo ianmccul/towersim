@@ -20,6 +20,9 @@
 #include <array>
 #include <fstream>
 
+// debug flag to show the packet immediately following a packet of interest
+bool DebugNextPacket = false;
+
 //returns the system time in microseconds since epoch
 int64_t get_time()
 {
