@@ -40,42 +40,42 @@ GyroInterface<BusType>::Initialize()
 }
 
 template <typename BusType>
-bool
+void
 GyroInterface<BusType>::EnableAll()
 {
    Impl.EnableAll();
 }
 
 template <typename BusType>
-bool
+void
 GyroInterface<BusType>::EnableX()
 {
    Impl.EnableX();
 }
 
 template <typename BusType>
-bool
+void
 GyroInterface<BusType>::EnableY()
 {
    Impl.EnableY();
 }
 
 template <typename BusType>
-bool
+void
 GyroInterface<BusType>::EnableZ()
 {
    Impl.EnableZ();
 }
 
 template <typename BusType>
-bool
+void
 GyroInterface<BusType>::Sleep()
 {
    Impl.PowerDown();
 }
 
 template <typename BusType>
-bool
+void
 GyroInterface<BusType>::Wakeup()
 {
    Impl.PowerUp();
@@ -120,7 +120,47 @@ template <typename BusType>
 int
 GyroInterface<BusType>::ReadX(int16_t& x)
 {
-   int err = Impl.Read(v);
+   int err = Impl.ReadX(x);
+   if (err == 0)
+   {
+      // if we succeeded, reset the watchdog
+      WatchdogTimer.reset();
+   }
+   else if (!LastReadSuccess)
+   {
+      // if we fail a read twice in a row, assume that the gyro is non-functional
+      //      IsFunctional = false;
+      //WatchdogTimer.stop();
+   }
+   LastReadSuccess = (err == 0);
+   return err;
+}
+
+template <typename BusType>
+int
+GyroInterface<BusType>::ReadY(int16_t& x)
+{
+   int err = Impl.ReadY(x);
+   if (err == 0)
+   {
+      // if we succeeded, reset the watchdog
+      WatchdogTimer.reset();
+   }
+   else if (!LastReadSuccess)
+   {
+      // if we fail a read twice in a row, assume that the gyro is non-functional
+      //      IsFunctional = false;
+      //WatchdogTimer.stop();
+   }
+   LastReadSuccess = (err == 0);
+   return err;
+}
+
+template <typename BusType>
+int
+GyroInterface<BusType>::ReadZ(int16_t& x)
+{
+   int err = Impl.ReadZ(x);
    if (err == 0)
    {
       // if we succeeded, reset the watchdog

@@ -144,6 +144,10 @@ class L3G_base<I2C> : public L3GTypes
       // returns 0 if no error
       int Read(vector& g);
 
+      int ReadX(int16_t& x);
+      int ReadY(int16_t& y);
+      int ReadZ(int16_t& z);
+
       // returns true if the WHOAMI command returns a valid response
       bool OK();
 
@@ -182,6 +186,10 @@ class L3G_base<SPI> : public L3GTypes
 
       // returns 0 if no error
       int Read(vector& g);
+
+      int ReadX(int16_t& x);
+      int ReadY(int16_t& y);
+      int ReadZ(int16_t& z);
 
       // returns true if the WHOAMI command returns a valid response
       bool OK();
@@ -287,10 +295,6 @@ class L3G : public  L3G_base<BusType>
 
       // Sensor temperature in degrees C
       int Temp();
-
-      int16_t ReadX();
-      int16_t ReadY();
-      int16_t ReadZ();
 };
 
 #include "l3g.tcc"

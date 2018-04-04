@@ -704,7 +704,7 @@ int main(int argc, char** argv)
             BellSeqNum[Bell] = SeqNum;
 
             std::vector<int16_t> GyroMeasurements(NumGyro);
-            std::memcpy(GyroMeasurements.data(), buf+13+NumAccel*6, NumGyro*2);
+            std::memcpy(GyroMeasurements.data(), buf+17+NumAccel*6, NumGyro*2);
 
             // debugging duplicate packets
             memcpy(LastBuf[PipeNumber], buf, len);
@@ -713,7 +713,7 @@ int main(int argc, char** argv)
             GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements);
 
             std::vector<vector3<int16_t>> AccelMeasurements(NumAccel);
-            std::memcpy(AccelMeasurements.data(), buf+13, NumAccel*6);
+            std::memcpy(AccelMeasurements.data(), buf+17, NumAccel*6);
             for (auto const& x : AccelMeasurements)
             {
                float Ax = (x[0] - SensorFromBell[Bell].AXOffset) / SensorFromBell[Bell].AXScale;

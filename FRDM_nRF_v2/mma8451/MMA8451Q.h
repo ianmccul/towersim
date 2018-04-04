@@ -144,7 +144,8 @@ class MMA8451Q : public I2CRegisterDevice
       // Read all of the accelerometer axes
       void readAll(vector& v);
 
-      void set_int_
+      // Enables or disables motion detection on X,Y,Z axes.
+      void set_int_motion_detect(bool Enable, bool X, bool Y, bool Z);
 };
 
 #endif

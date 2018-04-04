@@ -23,14 +23,14 @@ void L3G<BusType>::EnableX()
 }
 
 template <typename BusType>
-void L3G<BusType>::EnableX()
+void L3G<BusType>::EnableY()
 {
    char Reg1 = this->readReg(L3G_CTRL_REG1);
    this->writeReg(L3G_CTRL_REG1, Reg1 | 0x02);
 }
 
 template <typename BusType>
-void L3G<BusType>::EnableX()
+void L3G<BusType>::EnableZ()
 {
    char Reg1 = this->readReg(L3G_CTRL_REG1);
    this->writeReg(L3G_CTRL_REG1, Reg1 | 0x04);
@@ -209,25 +209,4 @@ int
 L3G<BusType>::Temp()
 {
    return 50 - this->TempRaw();
-}
-
-template <typename BusType>
-int16_t
-L3G<BusType>::ReadX()
-{
-   return this->read16(L3G_OUT_X_L);
-}
-
-template <typename BusType>
-int16_t
-L3G<BusType>::ReadY()
-{
-   return this->read16(L3G_OUT_Y_L);
-}
-
-template <typename BusType>
-int16_t
-L3G<BusType>::ReadZ()
-{
-   return this->read16(L3G_OUT_Z_L);
 }

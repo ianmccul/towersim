@@ -359,7 +359,7 @@ void SleepMode(nRF24L01P_PTX& PTX, MMA8451Q& Acc, GyroInterface<SPI>& Gyro, Digi
    PTX.PowerDown();
 
    // Turn off the gyro
-   Gyro.sleep();
+   Gyro.Sleep();
 
    // Set the accelerometer to low power mode with interrupts enabled
 
@@ -514,7 +514,6 @@ int main()
    if (Gyro.Initialize())
    {
       printf("Gyro initialization successful.\r\n");
-      Gyro.PowerUp();
       Gyro.EnableZ();
    }
    else

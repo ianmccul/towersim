@@ -266,20 +266,6 @@ L3G_base<SPI>::ReadZ(int16_t& g)
    return 0;
 }
 
-int
-L3G_base<SPI>::ReadY(int16_t& g)
-{
-   csn = 0;
-   spi.write(L3G_OUT_X_L | 0xC0);
-   uint16_t XL = spi.write(0);
-   uint16_t XH = spi.write(0);
-   csn = 1;
-   g = (XH<<8)+XL;
-   return 0;
-}
-
-
-
 bool
 L3G_base<SPI>::OK()
 {
