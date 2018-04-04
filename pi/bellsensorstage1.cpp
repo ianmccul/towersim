@@ -377,8 +377,10 @@ int main(int argc, char** argv)
                   if (memcmp(LastBuf[BellNum]+4+2, buf+9+4+2, len-(4+2)) == 0)
                   {
                      if (Verbose > 0)
-                        std::cout << "Ignoring duplicate packet for pipe " << BellNum
+                     {
+                        std::cout << get_time() << ": ignoring duplicate packet for pipe " << BellNum
                                   << " seq " << int(uint8_t(buf[9+4]&0x03)) << std::endl;
+                     }
                      continue;
                   }
                }

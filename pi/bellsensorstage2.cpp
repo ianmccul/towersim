@@ -651,6 +651,7 @@ int main(int argc, char** argv)
                if (LostPackets > (Verbose > 2 ? 0 : (Verbose > 1 ? 1 : 5)))
                {
                   std::cerr << Time << " Packet loss bell " << Bell << " pipe " << PipeNumber << " delay " << Delay
+                            << " basic_seq " << (Delay & 0x03)
                             << " packets " << LostPackets
                             << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
                }
