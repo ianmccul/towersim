@@ -14,7 +14,7 @@
 // Multi-byte sequences are in little-endian format, which is the default
 // for the KL25z and also the raspberry pi.
 //
-// hash (4 bytes) | delay (14 bits) seq (2 bits) |flags | seq1 | payload (up to 28 bytes)
+// hash (4 bytes) | delay (14 bits) seq (2 bits) |flags | seq1 | payload (up to 24 bytes)
 // hash is the FNV-1a-32 hash of the remaining bytes in the packet (with extra bytes set to zero to make
 // 32 bytes in total, even though we don't transmit extra bytes)
 // delay is a 14-bit unsigned in units of 4 microseconds - maximum value

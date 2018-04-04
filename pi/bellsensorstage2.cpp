@@ -86,9 +86,29 @@ void WriteMsgToClients(bool WriteToFile, std::set<int>& Clients, unsigned char c
    }
 }
 
+void debug_packet(unsigned char const* buf, int len, std::ostream& out)
+{
+   std::ios::fmtflags f(out.flags());
+   if (len > 41)
+   {
+      out << "packet too long (" << len << "), truncating ";
+      len = 41;
+   }
+   for (int i = 0; i < len; ++i)
+   {
+      out << std::hex << "0x" << int(buf[i]) << ' ';
+   }
+   out.flags(f);
+   out << std::endl;
+}
+
 //
 // gyro calibration
 //
+
+// debugging duplicate packets
+std::array<unsigned char[41], 16> LastBuf;
+std::array<int, 16> LastBufSize{};
 
 // maximum swing values that are still considered to be zero
 int const GyroZeroMaxDeviation = 80;
@@ -603,6 +623,7 @@ int main(int argc, char** argv)
                Offset += 2;
                WriteBatteryVMsg(WriteToFile, Clients, Time-Delay, Bell, float(V / SensorFromBell[Bell].BatteryScale));
             }
+            std::cout << "Status." << std::endl;
          }
          else
          {
@@ -654,6 +675,10 @@ int main(int argc, char** argv)
                             << " basic_seq " << (Delay & 0x03)
                             << " packets " << LostPackets
                             << " last seq " << int(BellSeqNum[Bell]) << " next seq " << int(SeqNum) << '\n';
+                  std::cerr << "Packet: ";
+                  debug_packet(buf, len, std::cerr);
+                  std::cerr << "Previous packet on this pipe: ";
+                  debug_packet(LastBuf[PipeNumber], LastBufSize[PipeNumber]);
                }
 
                if (Verbose > 2)
@@ -681,16 +706,9 @@ int main(int argc, char** argv)
             std::vector<int16_t> GyroMeasurements(NumGyro);
             std::memcpy(GyroMeasurements.data(), buf+13+NumAccel*6, NumGyro*2);
 
-         if (Time-Delay == 1479609706946571ull)
-         {
-            std::cerr << "got the packet " << Time << '\n';
-            for (unsigned i = 0; i < len; ++i)
-            {
-               std::cerr << int(buf[i]) << ' ' << '\n';
-            }
-         }
-
-
+            // debugging duplicate packets
+            memcpy(LastBuf[PipeNumber], buf, buf+len);
+            LastBufSize[PipeNumber] = len;
 
             GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements);
 
