@@ -623,7 +623,7 @@ int main(int argc, char** argv)
                Offset += 2;
                WriteBatteryVMsg(WriteToFile, Clients, Time-Delay, Bell, float(V / SensorFromBell[Bell].BatteryScale));
             }
-            std::cout << "Status." << std::endl;
+            //std::cout << "Status." << std::endl;
          }
          else
          {
