@@ -1,13 +1,48 @@
 // -*- C++ -*-
 
-// Turns on the L3G's gyro and places it in normal mode.
+template <typename BusType>
+void L3G<BusType>::PowerUp()
+{
+   char Reg1 = this->readReg(L3G_CTRL_REG1);
+   this->writeReg(L3G_CTRL_REG1, Reg1 | 0x08);
+}
+
+template <typename BusType>
+void L3G<BusType>::PowerDown()
+{
+   char Reg1 = this->readReg(L3G_CTRL_REG1);
+   this->writeReg(L3G_CTRL_REG1, Reg1 & 0xF7);
+}
+
+
+template <typename BusType>
+void L3G<BusType>::EnableX()
+{
+   char Reg1 = this->readReg(L3G_CTRL_REG1);
+   this->writeReg(L3G_CTRL_REG1, Reg1 | 0x01);
+}
+
+template <typename BusType>
+void L3G<BusType>::EnableX()
+{
+   char Reg1 = this->readReg(L3G_CTRL_REG1);
+   this->writeReg(L3G_CTRL_REG1, Reg1 | 0x02);
+}
+
+template <typename BusType>
+void L3G<BusType>::EnableX()
+{
+   char Reg1 = this->readReg(L3G_CTRL_REG1);
+   this->writeReg(L3G_CTRL_REG1, Reg1 | 0x04);
+}
+
 template <typename BusType>
 void L3G<BusType>::EnableAll()
 {
-  // 0x0F = 0b00001111
+  // 0x07 = 0b00000111
   // Normal power mode, all axes enabled
    char Reg1 = this->readReg(L3G_CTRL_REG1);
-   this->writeReg(L3G_CTRL_REG1, Reg1 | 0x0F);
+   this->writeReg(L3G_CTRL_REG1, Reg1 | 0x07);
 }
 
 template <typename BusType>

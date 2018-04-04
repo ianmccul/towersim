@@ -67,6 +67,14 @@ class GyroInterface : public GyroInterfaceBase<BusType>
       // attempts to initialize the gyro, returns true if successful
       bool Initialize();
 
+      // enables all of the axes
+      void EnableAll();
+
+      // Enable individual axes
+      void EnableX();
+      void EnableY();
+      void EnableZ();
+
       // changes the scale of the gyro.  Default 500 degress/sec
       void SetScale(int Scale_);
 
@@ -82,8 +90,13 @@ class GyroInterface : public GyroInterfaceBase<BusType>
       // reads the velocity from the gyro, returns 0 on success
       int Read(vector& v);
 
-      // Goes into sleep mode with int1 interrupt generation
-      void Sleep_EnableIntWakeup(uint16_t Threshold);
+      // reads the velocity from the X gyro, returns 0 on success
+      int ReadX(int16_t& x);
+      int ReadY(int16_t& y);
+      int ReadZ(int16_t& z);
+
+      // sleep mode - this powers down the device
+      void Sleep();
 
       // recover from sleep mode and renable normal operation
       void Wakeup();

@@ -281,7 +281,7 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
    char buf[32-ReservedBufSize];
    buf[0] = 0x88 | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;  // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 50;   // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
    *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
    *static_cast<int8_t*>(static_cast<void*>(buf+8)) = Temp;   // gyro temperature
@@ -295,7 +295,7 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
    char buf[32-ReservedBufSize];
    buf[0] = 0x8C | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;  // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 50;   // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
    *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
    *static_cast<int8_t*>(static_cast<void*>(buf+8)) = Temp;   // gyro temperature
@@ -303,8 +303,97 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
    Scheduler.SendLowPriority(buf, 11);
 }
 
-void SleepMode(nRF24L01P_PTX& PTX)
+void SetupAccelerometer(MMA8451Q& acc)
 {
+   acc.reset();
+   acc.set_range(2);
+   acc.set_low_noise_mode(true);
+   acc.set_sampling_rate(MMA8451Q::RATE_50);
+   //   acc.set_oversampling_mode(MMA8451Q::OSMODE_HighResolution);
+   acc.set_oversampling_mode(MMA8451Q::OSMODE_Normal);
+   acc.set_int_data_ready_pin(2);
+   acc.set_int_polarity(true);
+   acc.set_int_data_ready(true);
+   acc.set_active(true);
+   //acc.set_active(false);
+   if (acc.OK())
+   {
+      printf("Accelerometer initialized.\r\n");
+   }
+   else
+   {
+      printf("Accelerometer initialization failed!\r\n");
+   }
+}
+
+void SleepMode(nRF24L01P_PTX& PTX, MMA8451Q& Acc, GyroInterface<SPI>& Gyro, DigitalIn& CoilDetectBar,
+               PwmOut& rled, PwmOut& gled, PwmOut bled)
+{
+   // Basic strategy for sleep mode:
+   // We can seep when charging, or not charging.  We assume this is set up before
+   // calling this function, so we don't attempt to manipulate the charging state, just
+   // leave it as is.  But we can use CoilDetect as an interrput status, so we wake up if this changes.
+   // (In fact, the only situation we care about is if power is attached, that is, CoilDetectBar
+   // transitions from high to low.).
+
+   // flash the led to indicate that we are sleeping
+   // Turn off the nRF24L01
+   // Turn off the gyro
+   // Set the accelerometer to low power mode with interrupts enabled
+   // turn off the led
+
+   // flash led
+   rled = 1.0;
+   gled = 0.0;
+   bled = 0.0;
+   wait(200);
+   rled = 0.0;
+   wait(200);
+   rled = 1.0;
+   wait(200);
+   rled = 0.0;
+   wait(200);
+   rled = 1.0;
+
+   // Turn off the nRF24L01
+   PTX.PowerDown();
+
+   // Turn off the gyro
+   Gyro.sleep();
+
+   // Set the accelerometer to low power mode with interrupts enabled
+
+
+   // turn off the led
+   rled.write(0);
+   gled.write(0);
+   bled.write(0);
+
+   // turn off
+   deepsleep();
+
+   // Wake up procedure:
+   // Flash the led to indicate that we are powering on
+   rled = 0.0;
+   gled = 1.0;
+   bled = 0.0;
+   wait(200);
+   gled = 0.0;
+   wait(200);
+   gled = 1.0;
+   wait(200);
+   gled = 0.0;
+   wait(200);
+   gled = 1.0;
+
+   // turn on the nRF24L01
+   PTX.PowerUp();
+
+   // turn on the gyro
+   Gyro.Wakeup();
+
+   // reset the accelerometer settings
+   SetupAccelerometer(Acc);
 }
 
 // buffers for accelerometer and gyro data
@@ -420,30 +509,13 @@ int main()
    //PTX.EnableStreamMode();
 
    DigitalIn AccINT2(PTA15);
-
-   acc.reset();
-   acc.set_range(2);
-   acc.set_low_noise_mode(true);
-   acc.set_sampling_rate(MMA8451Q::RATE_100);
-   //   acc.set_oversampling_mode(MMA8451Q::OSMODE_HighResolution);
-   acc.set_oversampling_mode(MMA8451Q::OSMODE_Normal);
-   acc.set_int_data_ready_pin(2);
-   acc.set_int_polarity(true);
-   acc.set_int_data_ready(true);
-   acc.set_active(true);
-   //acc.set_active(false);
-   if (acc.OK())
-   {
-      printf("Accelerometer initialized.\r\n");
-   }
-   else
-   {
-      printf("Accelerometer initialization failed!\r\n");
-   }
+   SetupAccelerometer(acc);
 
    if (Gyro.Initialize())
    {
       printf("Gyro initialization successful.\r\n");
+      Gyro.PowerUp();
+      Gyro.EnableZ();
    }
    else
    {
@@ -471,11 +543,11 @@ int main()
 
       if (Gyro.DataAvailable())
       {
-         L3GTypes::vector v;
-         int r = Gyro.Read(v);
+         int16_t z;
+         int r = Gyro.ReadZ(z);
          if (r == 0)
          {
-            GyroBuffer.push_back(v[2]);
+            GyroBuffer.push_back(z);
          }
          else
             printf("Gyro read failed!\r\n");

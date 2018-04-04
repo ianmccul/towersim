@@ -215,7 +215,21 @@ class L3G : public  L3G_base<BusType>
       // Hard reset, L3GD20H only.
       void hard_reset();
 
-      // Turns on the device and actives all 3 axes
+      // Powers up the device.  From the reset state, this switches the device into sleep mode,
+      // where the X,Y,Z gyros are operating but not ready to send data.  To send data,
+      // each axis needs to be enabled.
+      void PowerUp();
+
+      // Powers down the device.  When powered down, the masses of the gyros are not moving,
+      // and most functions are powered off.  Content of registers is preserved.
+      void PowerDown();
+
+      // Enables the X, Y, or Z axes.
+      void EnableX();
+      void EnableY();
+      void EnableZ();
+
+      // Actives all 3 axes.
       void EnableAll();
 
       // sets the scale of the gyro; valid values are 250, 500, 2000 degrees

@@ -31,12 +31,54 @@ GyroInterface<BusType>::Initialize()
    Impl.SetFIFOThreshold(1);
    Impl.EnableFIFO(true);
    Impl.SetFIFOMode(L3GTypes::Stream);
-   Impl.EnableAll();
+   Impl.PowerUp();
    IsFunctional = true;
    LastReadSuccess = true;
    WatchdogTimer.reset();
    WatchdogTimer.start();
    return true;
+}
+
+template <typename BusType>
+bool
+GyroInterface<BusType>::EnableAll()
+{
+   Impl.EnableAll();
+}
+
+template <typename BusType>
+bool
+GyroInterface<BusType>::EnableX()
+{
+   Impl.EnableX();
+}
+
+template <typename BusType>
+bool
+GyroInterface<BusType>::EnableY()
+{
+   Impl.EnableY();
+}
+
+template <typename BusType>
+bool
+GyroInterface<BusType>::EnableZ()
+{
+   Impl.EnableZ();
+}
+
+template <typename BusType>
+bool
+GyroInterface<BusType>::Sleep()
+{
+   Impl.PowerDown();
+}
+
+template <typename BusType>
+bool
+GyroInterface<BusType>::Wakeup()
+{
+   Impl.PowerUp();
 }
 
 template <typename BusType>
@@ -57,6 +99,26 @@ GyroInterface<BusType>::DataAvailable()
 template <typename BusType>
 int
 GyroInterface<BusType>::Read(vector& v)
+{
+   int err = Impl.Read(v);
+   if (err == 0)
+   {
+      // if we succeeded, reset the watchdog
+      WatchdogTimer.reset();
+   }
+   else if (!LastReadSuccess)
+   {
+      // if we fail a read twice in a row, assume that the gyro is non-functional
+      //      IsFunctional = false;
+      //WatchdogTimer.stop();
+   }
+   LastReadSuccess = (err == 0);
+   return err;
+}
+
+template <typename BusType>
+int
+GyroInterface<BusType>::ReadX(int16_t& x)
 {
    int err = Impl.Read(v);
    if (err == 0)

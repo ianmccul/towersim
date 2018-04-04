@@ -123,7 +123,7 @@ class MMA8451Q : public I2CRegisterDevice
       // Enables low noise mode, with maximum range +/- 4g (default: false)
       void set_low_noise_mode(bool Enable);
 
-      // Sets the sampling rate, 800Hz, 400Hz, 200Hz, 100Hz, 60Hz, 12.5Hz, 6.25Hz, 1.563Hz (default: 800Hz)
+      // Sets the sampling rate, 800Hz, 400Hz, 200Hz, 100Hz, 50Hz, 12.5Hz, 6.25Hz, 1.563Hz (default: 800Hz)
       void set_sampling_rate(SamplingRate r);
 
       // Sets the oversampling mode for ACTIVE operation
@@ -143,6 +143,8 @@ class MMA8451Q : public I2CRegisterDevice
 
       // Read all of the accelerometer axes
       void readAll(vector& v);
+
+      void set_int_
 };
 
 #endif
