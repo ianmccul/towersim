@@ -678,7 +678,7 @@ int main(int argc, char** argv)
                   std::cerr << "Packet: ";
                   debug_packet(buf, len, std::cerr);
                   std::cerr << "Previous packet on this pipe: ";
-                  debug_packet(LastBuf[PipeNumber], LastBufSize[PipeNumber]);
+                  debug_packet(LastBuf[PipeNumber], LastBufSize[PipeNumber], std::cerr);
                }
 
                if (Verbose > 2)
