@@ -707,7 +707,7 @@ int main(int argc, char** argv)
             std::memcpy(GyroMeasurements.data(), buf+13+NumAccel*6, NumGyro*2);
 
             // debugging duplicate packets
-            memcpy(LastBuf[PipeNumber], buf, buf+len);
+            memcpy(LastBuf[PipeNumber], buf, len);
             LastBufSize[PipeNumber] = len;
 
             GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements);
