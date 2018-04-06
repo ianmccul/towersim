@@ -289,6 +289,10 @@ class L3G : public  L3G_base<BusType>
       // Enable triggering int1 line on a high gyro Z event
       void EnableInt1ThresholdHighZ(bool Enable);
 
+      // Set the duration for threshold detection, in units of the data rate.
+      // Default is no wait, interrupt immediately
+      void SetInt1ThresholdDuration(bool Enable, uint8_t Duration);
+
       // reads the temperature sensor, returns the raw reading,
       // which is -1LSB/deg with an offset of 50
       int TempRaw();

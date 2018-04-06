@@ -1,4 +1,5 @@
 #include "mbed.h"
+#include "WakeUp.h"
 #include "limits.h"
 #include "MMA8451Q.h"
 #include "gyrointerface.h"
@@ -6,6 +7,7 @@
 #include "nRF24L01P_PTX.h"
 #include "common/matvec/matvec.h"
 #include "uid.h"
+#include "rgbled.h"
 #include <cstdint>
 #include <vector>
 
@@ -81,8 +83,8 @@ class PacketScheduler
       // Turns on the device and initializes it
       //void PowerOn();
 
-      // Turns off the device
-      //void PowerOff();
+      void Sleep();
+      void Wakeup();
 
       // polls the scheduler, to see if we need to do anything.  This should be called
       // at least once every SlotTime microseconds, if possible
@@ -153,6 +155,30 @@ PacketScheduler::PacketScheduler(nRF24L01P_PTX& PTX_)
      RetransmitPoint(0),
      Seq(0)
 {
+}
+
+void
+PacketScheduler::Sleep()
+{
+   if (PacketInFlight != 0)
+   {
+      // we don't care what the result was, we're sleeping anyway
+      PTX.TransmitWait();
+   }
+
+   PTX.PowerDown();
+   PacketInFlight = false;
+   HaveHighPriorityPacket = false;
+   NewHighPriorityPacket = false;
+   HaveLowPriorityPacket = false;
+   NewLowPriorityPacket = false;
+   NumRetransmits = 0;
+   RetransmitPoint = 0;
+}
+
+void PacketScheduler::Wakeup()
+{
+   PTX.PowerUp();
 }
 
 void
@@ -281,7 +307,7 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
    char buf[32-ReservedBufSize];
    buf[0] = 0x88 | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 50;   // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;   // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
    *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
    *static_cast<int8_t*>(static_cast<void*>(buf+8)) = Temp;   // gyro temperature
@@ -290,12 +316,12 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
 
 // write a status packet, including temperature information and charging info
 void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Charging, int8_t Temp,
-                       uint16_t BatteryCharge)
+                       uint16_t BatteryCharge, bool PrepareSleep)
 {
    char buf[32-ReservedBufSize];
-   buf[0] = 0x8C | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
+   buf[0] = 0x8C | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4) | (uint8_t(PrepareSleep) << 2);
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
-   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 50;   // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;   // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
    *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
    *static_cast<int8_t*>(static_cast<void*>(buf+8)) = Temp;   // gyro temperature
@@ -303,12 +329,15 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
    Scheduler.SendLowPriority(buf, 11);
 }
 
+RGBLED* MyLed;
+
 void SetupAccelerometer(MMA8451Q& acc)
 {
    acc.reset();
    acc.set_range(2);
    acc.set_low_noise_mode(true);
    acc.set_sampling_rate(MMA8451Q::RATE_50);
+   acc.set_sampling_rate(MMA8451Q::RATE_100);
    //   acc.set_oversampling_mode(MMA8451Q::OSMODE_HighResolution);
    acc.set_oversampling_mode(MMA8451Q::OSMODE_Normal);
    acc.set_int_data_ready_pin(2);
@@ -322,12 +351,22 @@ void SetupAccelerometer(MMA8451Q& acc)
    }
    else
    {
+      MyLed->magenta();
       printf("Accelerometer initialization failed!\r\n");
    }
 }
 
-void SleepMode(nRF24L01P_PTX& PTX, MMA8451Q& Acc, GyroInterface<SPI>& Gyro, DigitalIn& CoilDetectBar,
-               PwmOut& rled, PwmOut& gled, PwmOut bled)
+volatile bool WakeFlag = false;
+
+// interrupt function when we wake from sleep.  This doesn't need to do anything
+void WakeFromSleepINT()
+{
+   MyLed->blue();
+   WakeFlag = true;
+}
+
+void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gyro, DigitalIn& CoilDetectBar,
+               RGBLED& led, bool AboveThreshold, float Threshold)
 {
    // Basic strategy for sleep mode:
    // We can seep when charging, or not charging.  We assume this is set up before
@@ -336,64 +375,104 @@ void SleepMode(nRF24L01P_PTX& PTX, MMA8451Q& Acc, GyroInterface<SPI>& Gyro, Digi
    // (In fact, the only situation we care about is if power is attached, that is, CoilDetectBar
    // transitions from high to low.).
 
+   // There are two approaches to using the accelerometer to wake up.  if the bell is set, then
+   // the X axis is going to be slightly off zero, ie at sin(stay_position).  Hence we can do a zero-detect
+   // (well, below threshold, AboveThreshold parameter == false)
+   // on the X axis to wake up when the bell gets near the balance point.
+   // On the other hand, if the bell is down, then the X axis should be reading very close to zero, and we can
+   // use an above-threshold reading to detect that the bell is being raised (AboveThreshold == true).
+   // The threshold is measured in units of acceleration in meters per second^2.
+
    // flash the led to indicate that we are sleeping
    // Turn off the nRF24L01
    // Turn off the gyro
    // Set the accelerometer to low power mode with interrupts enabled
    // turn off the led
 
-   // flash led
-   rled = 1.0;
-   gled = 0.0;
-   bled = 0.0;
-   wait(200);
-   rled = 0.0;
-   wait(200);
-   rled = 1.0;
-   wait(200);
-   rled = 0.0;
-   wait(200);
-   rled = 1.0;
+   // An improvement would be to set an interrupt on the CoilDetectBar.
+   // But in the current circuit it is on GPIO block E, and only blocks A and D can be used
+   // for interrupts. So instead we just detect it when we periodically wake up.
+
+   bool CoilDetectOrigin = CoilDetectBar;
+
+   WakeFlag = false;
+   InterruptIn AccINT1(PTA14);
+   AccINT1.mode(PullNone);
 
    // Turn off the nRF24L01
-   PTX.PowerDown();
+   Scheduler.Sleep();
 
    // Turn off the gyro
    Gyro.Sleep();
 
+   // ** Need to deactivate the accelerometer before changing settings
+   Acc.set_active(false);
    // Set the accelerometer to low power mode with interrupts enabled
-
+   Acc.set_sleep_oversampling_mode(MMA8451Q::OSMODE_LowPower);
+   Acc.set_int_data_ready(false);
+   // Motion threshold 1.  Each unit corresponds to (roughly) 0.063 radians = 2.1 degrees
+   Acc.set_motion_detect_threshold(AboveThreshold ? 1 : 2);
+   Acc.enable_int_motion_sleep(true);
+   Acc.set_debounce_time(2);
+   Acc.enable_motion_detect(AboveThreshold, true, false, false);
+   AccINT1.rise(&WakeFromSleepINT);
+   Acc.set_int_motion_detect(true);
+   Acc.set_active(true);
 
    // turn off the led
-   rled.write(0);
-   gled.write(0);
-   bled.write(0);
+   led.off();
 
    // turn off
-   deepsleep();
+   //   wait_ms(10000);
 
-   // Wake up procedure:
-   // Flash the led to indicate that we are powering on
-   rled = 0.0;
-   gled = 1.0;
-   bled = 0.0;
-   wait(200);
-   gled = 0.0;
-   wait(200);
-   gled = 1.0;
-   wait(200);
-   gled = 0.0;
-   wait(200);
-   gled = 1.0;
+   int SleepCycles = 0;
+   while (!WakeFlag)
+   {
+      WakeUp::set(5);
+      if (!WakeFlag)
+         deepsleep();
+      WakeUp::set(0);
+
+      // force a wakeup if the coil has been attached while we were sleeping
+      if (CoilDetectOrigin && !CoilDetectBar)
+         WakeFlag = true;
+
+      // flash the led
+      if (!WakeFlag)
+      {
+         led.green();
+         wait_ms(200);
+         led.off();
+      }
+
+      ++SleepCycles;
+
+      // for debugging
+      if (SleepCycles > 1)
+         WakeFlag = true;
+   }
+
+   // turn off acceleromter interrupt
+   AccINT1.rise(NULL);
+
+   // Turn on the led, hopefully this all happens fast enough that we don't see
+   // the green colour
+   led.white();
 
    // turn on the nRF24L01
-   PTX.PowerUp();
+   Scheduler.Wakeup();
+
+   led.cyan();
 
    // turn on the gyro
    Gyro.Wakeup();
 
+   led.magenta();
+
    // reset the accelerometer settings
    SetupAccelerometer(Acc);
+
+   led.yellow();
 }
 
 // buffers for accelerometer and gyro data
@@ -419,6 +498,21 @@ uint16_t MeasureBatteryCharge(DigitalOut& BatteryDetectEnable, AnalogIn& AnalogB
    return x;
 }
 
+// if the bell is down, then treat motion larger than 2 degrees
+// enough to wake up the sensor
+float ZeroMotionThreshold = (2.0 * 3.14159 / 180);
+
+// if the bell is up, then treat motion closer to zero than 8 degrees
+// as enough to wake up the sensor. This is in units of g.
+float StayMotionThreshold = (8.0 * 3.14159 / 180);
+
+float SleepDelaySeconds = 10; // start going to sleep after this many seconds
+float SleepExtraTime = 10; // go to sleep after this many additional seconds
+
+// For controlling the led via the gyro, we need to scale to the range [0,1],
+// hence need the maximum deflection.  Pick a sensible starting value.
+int16_t GyroMaxDeflection = 5000;
+
 int main()
 {
    AccelBuffer.reserve(MaxAccelSamples);
@@ -436,6 +530,12 @@ int main()
    DigitalOut BatteryDetectEnable(PTE21);
    DigitalOut ChargeEnable(PTE20);
 
+   // Sleep inhibit
+   DigitalOut SleepInhibitSupply(PTC3);
+   DigitalIn SleepInhibitDetect(PTC0, PullNone);
+   SleepInhibitSupply = 1;  // put 1 on the supply, and if there is a jumper then
+   // we will detect 1 on SleepInhibitDetect
+
    BatteryDetectEnable = 0;
    ChargeEnable = 0;
    int const CoilDetectTimeDelay = 20000;  // milliseconds
@@ -444,18 +544,12 @@ int main()
    CoilDetectTimer.reset();
    CoilDetectTimer.start();
 
-   PwmOut rled(LED_RED);
-   PwmOut gled(LED_GREEN);
-   PwmOut bled(LED_BLUE);
+   //   Timer timer;
+   //   timer.start();
 
-   rled = 0.0;
-   gled = 1.0;
-   bled = 1.0;
+   RGBLED led(LED_RED, LED_GREEN, LED_BLUE);
+   MyLed = &led;
 
-   Timer timer;
-   timer.start();
-
-   wait_ms(500);   // wait a bit so we initialize the gyro properly
 
    unsigned Addr = (Addr1.read()<<1) + Addr0.read();
 
@@ -491,7 +585,7 @@ int main()
    Gyro.SetRateBandwidth(L3G_H_ODR_800_110);
 
 
-   nRF24L01P Device(PTD2, PTD3, PTD1, PTD5, 8000000);
+   nRF24L01P Device(PTD2, PTD3, PTC5, PTD5, 8000000);
    nRF24L01P_PTX PTX(Device, PTA13, PTD0);
 
    PTX.Initialize();
@@ -508,6 +602,7 @@ int main()
 
    //PTX.EnableStreamMode();
 
+   DigitalIn AccINT1(PTA14);
    DigitalIn AccINT2(PTA15);
    SetupAccelerometer(acc);
 
@@ -515,15 +610,47 @@ int main()
    {
       printf("Gyro initialization successful.\r\n");
       Gyro.EnableZ();
+      led.green();
    }
    else
    {
       printf("Gyro initialization failed!\r\n");
+      led.red();
    }
 
-   rled = 1.0;
-   gled = 0.0;
-   bled = 1.0;
+   // we need to wait a bit so we initialize the gyro properly anyway,
+   // so put on a light show
+
+   led.red();     wait_ms(500);
+   led.green();   wait_ms(500);
+   led.blue();    wait_ms(500);
+   led.cyan();    wait_ms(500);
+   led.yellow();  wait_ms(500);
+   led.magenta(); wait_ms(500);
+   led.white();   wait_ms(500);
+   WakeUp::calibrate();
+
+   led.off();
+
+   // To detect if we should go to sleep, we have two possibilities.  If the
+   // bell is down, then the X component of the acceleration should be zero.
+   // So we can detect for a non-zero X, via the ZeroMotionThreshold.
+   // If the bell spends more than ??? minutes within the ZeroMotionThreshold, then
+   // sleep.
+   Timer ZeroMotionDetectTimer;
+   ZeroMotionDetectTimer.start();
+
+   // Alternatively, if the bell is set then the X component of the acceleration will
+   // be non-zero and stable.  If the X acceleration hasn't changed sign and is
+   // consistently larger than StayMotionThreshold then sleep.
+   Timer StayMotionDetectTimer;
+   StayMotionDetectTimer.start();
+   int AccLastSign = 1;
+
+   bool CurrentlyPreparingSleep = false;
+
+   // for flashing the led in preparation for sleep
+   bool BlinkState = false;
 
    while (true)
    {
@@ -533,6 +660,63 @@ int main()
          acc.readAll(Data);
 
          AccelBuffer.push_back(Data);
+
+         // Get X acceleration in units of g
+         float Xaccel = Data[0] * (2.0 / 32768.0);
+         if (std::abs(Xaccel) > ZeroMotionThreshold)
+         {
+            ZeroMotionDetectTimer.reset();
+         }
+         int Sign = (Xaccel > 0) ? 1 : -1;
+         if ((Sign != AccLastSign) || (std::abs(Xaccel) < StayMotionThreshold))
+         {
+            StayMotionDetectTimer.reset();
+         }
+         AccLastSign = Sign;
+      }
+
+      // Are we preparing to sleep?
+      bool ZeroMotionTimedOut = ZeroMotionDetectTimer.read() > SleepDelaySeconds;
+      bool StayMotionTimedOut = StayMotionDetectTimer.read() > SleepDelaySeconds;
+
+      if (SleepInhibitDetect == 1)
+      {
+         ZeroMotionTimedOut = false;
+         StayMotionTimedOut = false;
+      }
+
+      CurrentlyPreparingSleep = ZeroMotionTimedOut || StayMotionTimedOut;
+
+      if (CurrentlyPreparingSleep)
+      {
+         if (ZeroMotionTimedOut)
+         {
+            bool LedOn = fmod(ZeroMotionDetectTimer.read() - SleepDelaySeconds, 0.4) < 0.2;
+            if (LedOn && !BlinkState)
+            {
+               led.yellow();
+               BlinkState = true;
+            }
+            if (!LedOn && BlinkState)
+            {
+               led.off();
+               BlinkState = false;
+            }
+         }
+         else if (StayMotionTimedOut)
+         {
+            bool LedOn = fmod(StayMotionDetectTimer.read() - SleepDelaySeconds, 0.4) < 0.2;
+            if (LedOn && !BlinkState)
+            {
+               led.magenta();
+               BlinkState = true;
+            }
+            if (!LedOn && BlinkState)
+            {
+               led.off();
+               BlinkState = false;
+            }
+         }
       }
 
       if ((AccelBuffer.size()*6 + GyroBuffer.size()*2) > PacketWatermark)
@@ -547,9 +731,19 @@ int main()
          if (r == 0)
          {
             GyroBuffer.push_back(z);
+
+            if (!CurrentlyPreparingSleep)
+            {
+               GyroMaxDeflection = std::max(z, GyroMaxDeflection);
+               GyroMaxDeflection = std::max(int16_t(-z), GyroMaxDeflection);
+               led.write_hsv( z / float(2*GyroMaxDeflection) + 0.5, 1.0, 1.0);
+            }
          }
          else
+         {
             printf("Gyro read failed!\r\n");
+            led.white();
+         }
       }
 
       if ((AccelBuffer.size()*6 + GyroBuffer.size()*2) > PacketWatermark)
@@ -561,7 +755,7 @@ int main()
       {
          uint16_t Charge = MeasureBatteryCharge(BatteryDetectEnable, AnalogBattery);
          WriteStatusPacket(Scheduler, CoilDetectBar == 0, CoilDetectOK, Gyro.device().TempRaw(),
-                           Charge);
+                           Charge, ZeroMotionTimedOut || StayMotionTimedOut);
          GyroTempTimer.reset();
       }
 
@@ -585,6 +779,22 @@ int main()
             CoilDetectOK = false;
             ChargeEnable = false;
          }
+      }
+
+      // should we sleep?
+      if ((ZeroMotionTimedOut && ZeroMotionDetectTimer.read() > SleepDelaySeconds+SleepExtraTime)
+          || (StayMotionTimedOut && StayMotionDetectTimer.read() > SleepDelaySeconds+SleepExtraTime))
+      {
+         // why are we sleeping?  If the bell is down, and we've satisfied
+         // the zero motion condition, then detect motion that is above threshold.
+         bool AboveThreshold = ZeroMotionDetectTimer.read() > (SleepDelaySeconds+SleepExtraTime);
+         SleepMode(Scheduler, acc, Gyro, CoilDetectBar, led, AboveThreshold,
+                   AboveThreshold ? ZeroMotionThreshold : StayMotionThreshold);
+
+         ZeroMotionDetectTimer.reset();
+         StayMotionDetectTimer.reset();
+         GyroTempTimer.reset();
+         CurrentlyPreparingSleep = false;
       }
 
    }

@@ -175,3 +175,20 @@ GyroInterface<BusType>::ReadZ(int16_t& x)
    LastReadSuccess = (err == 0);
    return err;
 }
+
+template <typename BusType>
+void
+GyroInterface<BusType>::SleepForMotionInterrupt(uint16_t Threshold)
+{
+   Impl.SetInt1ThresholdHighZ(Threshold);
+   Impl.EnableInt1ThresholdHighZ(true);
+   Impl.EnableInt1(true);
+}
+
+template <typename BusType>
+void
+GyroInterface<BusType>::DisableMotionInterrupt()
+{
+   Impl.EnableInt1ThresholdHighZ(false);
+   Impl.EnableInt1(false);
+}

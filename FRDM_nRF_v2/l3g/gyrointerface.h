@@ -101,6 +101,13 @@ class GyroInterface : public GyroInterfaceBase<BusType>
       // recover from sleep mode and renable normal operation
       void Wakeup();
 
+      // Enters low power mode with interupt generation on INT1 for Z-axis motion
+      // larger than Threshold
+      void SleepForMotionInterrupt(uint16_t Threshold);
+
+      // Disables the low power interrupt mode
+      void DisableMotionInterrupt();
+
       L3G<BusType>& device() { return Impl; }
 
 };

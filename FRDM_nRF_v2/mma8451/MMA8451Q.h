@@ -145,7 +145,32 @@ class MMA8451Q : public I2CRegisterDevice
       void readAll(vector& v);
 
       // Enables or disables motion detection on X,Y,Z axes.
-      void set_int_motion_detect(bool Enable, bool X, bool Y, bool Z);
+      // If AboveThreshold is true, then we trigger detection when the reading is above the thrshold.
+      // Otherwise we trigger if it is below the threshold (freefall detection).
+      void enable_motion_detect(bool AboveThreshold, bool X, bool Y, bool Z);
+
+      // Set the 7-bit unsigned threshold for motion/freefall detection. This is in units of
+      // 0.063g / lsb independent of the current sensitivity of the accelerometer.
+      void set_motion_detect_threshold(uint8_t Threshold);
+
+      // sets the debouncing time in timesteps.  The timestep unit depends on the data rate and power mode:
+      // ODR   Normal  LowPLowNoise  HighRes  LowPower
+      // 800   1.25    1.25          1.25     1.25
+      // 400   2.5     2.5           2.5      2.5
+      // 200   5       5             2.5      5
+      // 100   10      10            2.5      10
+      // 50    20      20            2.5      20
+      // 12.5  20      80            2.5      80
+      // 6.25  20      80            2.5      160
+      // 1.56  20      80            2.5      160
+      void set_debounce_time(uint8_t steps);
+
+      // Enable or disable motion detection on interrupt pin
+      void set_int_motion_detect(bool Enable);
+
+      // enable or disable motion/freefall interrupt while sleeping
+      void enable_int_motion_sleep(bool Enable);
+
 };
 
 #endif

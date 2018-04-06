@@ -13,19 +13,19 @@ class I2CRegisterDevice
 
       // write a register, assuming the caller has disabled interrupts
       int write_reg_IRQ(int reg, int value);
-      
+
       // read from a register, assuming the caller has disabled interrupts
       int read_reg_IRQ(int reg);
 
       // write a register
       int write_reg(int reg, int value);
-      
+
       // read from a register.  -ve value on error
       int read_reg(int reg);
 
       // reads a 32-bit register
       int read_reg16(int reg);
-      
+
       // Writes a sequence of registers, returns 0 on success, <0 on failure
       // int write_regs(int reg, char const* buf, int length);  - not yet implemented
 
@@ -46,10 +46,10 @@ class I2CRegisterDevice
 
       // direct reference to the device
       I2C& device();
-      
+
       // returns the I2C address of this device
       int address() const;
-      
+
       // resets the I2C address of this device
       void set_address(int NewAddress);
 
@@ -127,7 +127,7 @@ int I2CRegisterDevice::read_reg16(int reg)
 }
 
 #if 0
-inline 
+inline
 void
 I2CRegisterDevice::write_regs(int reg, char const* buf, int length)
 {
@@ -173,7 +173,7 @@ I2CRegisterDevice::write_bit(int Register, int Bit, bool Value)
    int x = this->read_reg_IRQ(Register);
    if (x < 0)
    {
-      __enable_irq();
+      //      __enable_irq();
       return x;
    }
    x = Value ? (x | (1 << Bit)) : (x & ~(1 << Bit));
@@ -215,5 +215,5 @@ I2CRegisterDevice::set_address(int NewAddress)
 {
    Address = NewAddress;
 }
- 
+
 #endif

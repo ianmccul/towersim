@@ -34,7 +34,7 @@ class nRF24L01P
 
       // Clears the TX and RX FIFOs and resets all registers to their power-on values
       void reset();
-      
+
       // change the SPI frequency
       void set_spi_frequency(long Freq);
 
@@ -43,13 +43,13 @@ class nRF24L01P
       // set the data rate in kb/s, valid values are 250 (nRF24L01+ only), 1000, 2000.
       // DEFAULT:
       void set_air_data_rate(int Rate);
-      
+
       // set the RF channel, 0 .. 125.
       // The frequency in MHz is 2400 + Channel.
       // In 2Mbps mode, you must use channels at least 2MHz appart to avoid overlap
       // DEFAULT: channel 2
       void set_channel(int Channel);
-      
+
       // PRECONDITION: Mode = Receive.  True if a signal higher than -64bB is detected by the receiver
       bool received_power_detector();
 
@@ -57,7 +57,7 @@ class nRF24L01P
       // DEFAULT: 0dB
       void set_tx_power(int Power);
 
- 
+
       // enable or disable dynamic payload size on the given pipe
       // DEFAULT: false
       void enable_dynamic_payload(int Pipe, bool Enable);
@@ -73,24 +73,24 @@ class nRF24L01P
       //
       // receive functionality
       //
-      
+
       // set the width in bytes for addresses.  Valid values are 3,4,5
       // DEFAULT: 5
       void set_address_width(int Width);
-      
+
       // returns the width in bytes for addresses.  Valid values are 3,4,5
       int get_address_width();
 
       // set the receive address of the given pipe.  Pipes 0,1 have 3,4 or 5 byte addresses
       // as specified by set_address_width().  Pipes 2,3,4,5 can only set the low order byte of the
       // address, the other bytes are shared with pipe 1.
-      
+
       // Set the rx address for pipe 0 or 1
       void set_rx_address(int Pipe, uint64_t Address);
-      
+
       // Set the low byte of the address for pipe 2,3,4,5
       void set_rx_address_low(int Pipe, uint8_t Address);
-      
+
       // Set the payload size for the receive buffer for the given pipe
       // (not used if dynamic payload size is used)
       void set_rx_payload_bytes(int Pipe, int Bytes);
@@ -108,9 +108,9 @@ class nRF24L01P
 
       // clear the RX_DR bit
       void clear_rx_ready();
-      
+
       // if Enable, reflect RX_DR as active low on the INT line.  The procedure to read a packet is:
-      // 1) Read payload through SPI, 2) clear_rc_ready(), read is_rx_ready() to see if there is another 
+      // 1) Read payload through SPI, 2) clear_rc_ready(), read is_rx_ready() to see if there is another
       // packet waiting
       // DEFAULT: enabled
       void set_interrupt_rx_ready(bool Enable);
@@ -126,7 +126,7 @@ class nRF24L01P
       // reads the status register and returns true if a packet has been transmitted. (TX_DS)  If auto-acknowledge
       // is set, then this is only asserted when an ack is received.
       bool is_tx_sent();
-      
+
       // Clear the TX_DS bit
       void clear_tx_sent();
 
@@ -135,8 +135,8 @@ class nRF24L01P
       void set_interrupt_tx(bool Enable);
 
       // retransmit behaviour
-      
-      // set the auto-retransmit delay, in units of 250 microseconds.  
+
+      // set the auto-retransmit delay, in units of 250 microseconds.
       // Valid input is 0,1,...,15 (for 250 .. 4000 us)
       // DEFAULT: 0 (250us)
       void set_retransmit_delay(int Delay);
@@ -157,8 +157,8 @@ class nRF24L01P
 
       // enable or disable the CRC check.  Auto-acknowledge forces CRC enabled.
       // DEFAULT: true
-      void enable_crc(bool Enable);      
-      
+      void enable_crc(bool Enable);
+
       // set the CRC width, either 1 byte or 2 bytes
       // DEFAULT: 1 byte
       void set_crc_width(int width);
@@ -168,7 +168,7 @@ class nRF24L01P
 
       // turn off power (PWR_UP=0)
       void set_power_down();
-      
+
       // set as primary receiver (disables transmit mode)
       void set_prx_mode();
 
@@ -182,27 +182,27 @@ class nRF24L01P
       // Enable or disable auto-acknowledge on the given pipe 0,1,2,3,4,5
       // DEFAULT: Enabled on all pipes
       void set_auto_acknowledge(int Pipe, bool Enable);
-      
+
       // returns the pipe number for the payload available on the rx pipe, or -1 if the rx fifo is empty
       int which_rx_pipe();
 
       // returns true if the transmit fifo is full
-      bool tx_full();   
-      
+      bool tx_full();
+
       // returns the number of transmitted but lost packets.  Capped at 15, reset by writing the channel number.
       int num_lost_packets();
-      
+
       // returns the number of times the current packet has been retransmitted.  Reset when a new packet starts
       int num_retransmitted_packets();
 
-       
-      // Set the tx address.  Used only for a PTX, set this the same as the rx_address of pipe 0 to enable 
+
+      // Set the tx address.  Used only for a PTX, set this the same as the rx_address of pipe 0 to enable
       // auto-acknowledge with Enhanced ShockBurst(TM)
       // DEFAULT: 0xE7E7E7E7E
       void set_tx_address(uint64_t Address);
-      
+
       // commands
-      
+
       // read a byte from the given register
       int read_register(int Register);
 
@@ -240,14 +240,14 @@ class nRF24L01P
       // read 1-32 bytes from the RX FIFO.  The payload is deleted after it is read.  The user must
       // know how many bytes to read.
       void read_rx_payload(char* Buf, int Bytes);
-      
+
       // this version reads the complete payload into Buf, and returns the number of bytes in the payload
       int read_rx_payload(char* Buf);
 
       // flush the receive FIFO
       void flush_rx_fifo();
-      
-      // set the ACK payload for the given pipe.  
+
+      // set the ACK payload for the given pipe.
       void write_ack_payload(int Pipe, char const* Buf, int Bytes);
 
 

@@ -148,3 +148,43 @@ MMA8451Q::readAll(MMA8451Q::vector& v)
    v[1] = bswap(v[1]);
    v[2] = bswap(v[2]);
 }
+
+void
+MMA8451Q::enable_motion_detect(bool AboveThreshold, bool X, bool Y, bool Z)
+{
+   uint8_t x = AboveThreshold ? 0x40 : 0x00;
+   if (X)
+      x |= 0x08;
+   if (Y)
+      x |= 0x10;
+   if (Z)
+      x |= 0x20;
+   this->write_reg(MMA8451_FF_MT_CFG, x);
+}
+
+void
+MMA8451Q::set_motion_detect_threshold(uint8_t Threshold)
+{
+   this->write_reg(MMA8451_FF_MT_THS, Threshold);
+}
+
+void
+MMA8451Q::set_debounce_time(uint8_t steps)
+{
+   this->write_reg(MMA8451_FF_MT_COUNT, steps);
+}
+
+
+void
+MMA8451Q::set_int_motion_detect(bool Enable)
+{
+   this->write_bit(MMA8451_CTRL_REG4, 2, Enable);
+   this->write_bit(MMA8451_CTRL_REG5, 2, Enable);  // set to pin 1
+}
+
+void
+MMA8451Q::enable_int_motion_sleep(bool Enable)
+{
+   this->write_bit(MMA8451_CTRL_REG3, 3, Enable);
+}
+
