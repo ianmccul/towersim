@@ -75,6 +75,35 @@ constexpr int ReservedBufSize = 6;
 constexpr int HashOffset = 0;
 constexpr int DelayOffset = 4;
 
+// current charge reading on the battery
+// Standard scaling for the battery: divider is 4.7 : 1, max input is 65535 = 3.3v nominal,
+// but the actual supply voltage on the kl25z is closer to s.95v.  Also 5 ohm drain-source
+// resistance in the mosfet, makes the divider 475 : 100
+// analog_batt = (batt / 5.7), output is (batt / 5.7) * (65535 / 3.3) = batt * 3484 nominal,
+// analog_batt = (batt / 5.7), output is (batt / 5.7) * (65535 / 2.95) = batt * 3897.4 actual
+// analog_batt = (batt / 5.75), output is (batt / 5.75) * (65535 / 2.95) = batt * 3863.5 actual
+// analog_batt = (batt / 5.75), output is (batt / 5.75) * (65535 / 2.93) = batt * 3889.9 actual
+// 3863.5 agrees reasonably well with measurements.
+// So the analog in threshold is 15067.
+constexpr float ChargeScaling = 3863.5;
+
+// Automatic recharge on the battery circuit happens at V = 96.5% of full (spec >= 94%),
+// which is 4.2V.  We want to follow the same, and not initiate a recharge until V falls
+// to at least 3.948v.  We choose Vthreshold = 3.9v.
+constexpr float Vthreshold = 3.9;
+constexpr uint16_t ChargeThreshold = uint16_t(Vthreshold * ChargeScaling);
+
+uint16_t MeasureBatteryCharge(DigitalOut& BatteryDetectEnable, AnalogIn& AnalogBattery)
+{
+   BatteryDetectEnable = 1;
+   wait_us(40);
+   uint16_t x = AnalogBattery.read_u16();
+   wait_us(40);
+   uint16_t y = AnalogBattery.read_u16();
+   BatteryDetectEnable = 0;
+   return (x+y) / 2;
+}
+
 class PacketScheduler
 {
    public:
@@ -329,6 +358,23 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
    Scheduler.SendLowPriority(buf, 11);
 }
 
+// write a status packet when we are currently in a sleep state
+void WriteSleepingStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Charging, uint16_t BatteryCharge)
+{
+   char buf[32-ReservedBufSize];
+   buf[0] = 0x86 | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4);
+   *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
+   *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;   // accel ODR
+   *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
+   *static_cast<uint8_t*>(static_cast<void*>(buf+7)) = 100;   // gyro BW
+   *static_cast<uint16_t*>(static_cast<void*>(buf+8)) = BatteryCharge;
+   Scheduler.Wakeup();
+   Scheduler.SendLowPriority(buf, 10);
+   // We have only one attempt at sending the packet - if it didn't make it then too bad
+   Scheduler.Sleep();
+}
+
+
 RGBLED* MyLed;
 
 void SetupAccelerometer(MMA8451Q& acc)
@@ -356,17 +402,19 @@ void SetupAccelerometer(MMA8451Q& acc)
    }
 }
 
-volatile bool WakeFlag = false;
+volatile bool WakeOnMotion = false;
 
 // interrupt function when we wake from sleep.  This doesn't need to do anything
 void WakeFromSleepINT()
 {
    MyLed->blue();
-   WakeFlag = true;
+   WakeOnMotion = true;
 }
 
-void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gyro, DigitalIn& CoilDetectBar,
-               RGBLED& led, bool AboveThreshold, float Threshold)
+void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gyro,
+               RGBLED& led, bool AboveThreshold,
+               DigitalOut& BatteryDetectEnable, AnalogIn& AnalogBattery,
+               DigitalIn& CoilDetectBar, DigitalOut& ChargeEnable)
 {
    // Basic strategy for sleep mode:
    // We can seep when charging, or not charging.  We assume this is set up before
@@ -393,9 +441,13 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
    // But in the current circuit it is on GPIO block E, and only blocks A and D can be used
    // for interrupts. So instead we just detect it when we periodically wake up.
 
-   bool CoilDetectOrigin = CoilDetectBar;
+   // TODO: put the accelerometer into sleep mode
+   // TODO: when sleeping, occasionally send a battery status message
+   // TODO: If we were charging previously and stopped charging, then we should
+   // also wakeup, since we then want to turn off the charging circuit.
+   // TODO: The LiPo charger isn't designed for load sharing - we should only recharge when sleeping.
 
-   WakeFlag = false;
+   WakeOnMotion = false;
    InterruptIn AccINT1(PTA14);
    AccINT1.mode(PullNone);
 
@@ -425,32 +477,42 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
    // turn off
    //   wait_ms(10000);
 
-   int SleepCycles = 0;
-   while (!WakeFlag)
+   bool Charging = false;
+
+   while (!WakeOnMotion)
    {
-      WakeUp::set(5);
-      if (!WakeFlag)
+
+      // See if we want to turn on or off the charger
+      // and flash the led
+      led.green();
+      uint16_t BatteryCharge = MeasureBatteryCharge(BatteryDetectEnable, AnalogBattery);
+      // see if we want to enter charging mode
+      if (CoilDetectBar == 0 && BatteryCharge <= ChargeThreshold)
+      {
+         Charging = true;
+         ChargeEnable = 1;
+      }
+      if (CoilDetectBar == 1)
+      {
+         Charging = false;
+         ChargeEnable = 0;
+      }
+      WriteSleepingStatusPacket(Scheduler, CoilDetectBar == 0, Charging, BatteryCharge);
+      led.off();
+
+      // Go to sleep
+      WakeUp::set(30);
+      if (!WakeOnMotion)
          deepsleep();
       WakeUp::set(0);
 
-      // force a wakeup if the coil has been attached while we were sleeping
-      if (CoilDetectOrigin && !CoilDetectBar)
-         WakeFlag = true;
-
-      // flash the led
-      if (!WakeFlag)
-      {
-         led.green();
-         wait_ms(200);
-         led.off();
-      }
-
-      ++SleepCycles;
-
       // for debugging
-      if (SleepCycles > 1)
-         WakeFlag = true;
+      //      if (SleepCycles > 1)
+      //         WakeFlag = true;
    }
+
+   // Disable charging
+   ChargeEnable = 0;
 
    // turn off acceleromter interrupt
    AccINT1.rise(NULL);
@@ -489,15 +551,9 @@ int const MaxGyroSamples = 14;
 int const PacketWatermark = 32 - ReservedBufSize - 2 - 6;
 //int const PacketWatermark = 1;
 
-uint16_t MeasureBatteryCharge(DigitalOut& BatteryDetectEnable, AnalogIn& AnalogBattery)
-{
-   BatteryDetectEnable = 1;
-   wait_us(20);
-   uint16_t x = AnalogBattery.read_u16();
-   BatteryDetectEnable = 0;
-   return x;
-}
-
+// Thresholds for going to sleep.  These should correspond with the
+// accelerometer thresholds in the SleepMode() function
+// TODO: they probably do not
 // if the bell is down, then treat motion larger than 2 degrees
 // enough to wake up the sensor
 float ZeroMotionThreshold = (2.0 * 3.14159 / 180);
@@ -506,7 +562,7 @@ float ZeroMotionThreshold = (2.0 * 3.14159 / 180);
 // as enough to wake up the sensor. This is in units of g.
 float StayMotionThreshold = (8.0 * 3.14159 / 180);
 
-float SleepDelaySeconds = 10; // start going to sleep after this many seconds
+float SleepDelaySeconds = 120; // start going to sleep after this many seconds
 float SleepExtraTime = 10; // go to sleep after this many additional seconds
 
 // For controlling the led via the gyro, we need to scale to the range [0,1],
@@ -537,15 +593,6 @@ int main()
    // we will detect 1 on SleepInhibitDetect
 
    BatteryDetectEnable = 0;
-   ChargeEnable = 0;
-   int const CoilDetectTimeDelay = 20000;  // milliseconds
-   bool CoilDetectOK = false;  // true if the coil is enabled for more than 20 seconds
-   Timer CoilDetectTimer;
-   CoilDetectTimer.reset();
-   CoilDetectTimer.start();
-
-   //   Timer timer;
-   //   timer.start();
 
    RGBLED led(LED_RED, LED_GREEN, LED_BLUE);
    MyLed = &led;
@@ -754,32 +801,12 @@ int main()
       if (GyroTempTimer.read_ms() > 1100)
       {
          uint16_t Charge = MeasureBatteryCharge(BatteryDetectEnable, AnalogBattery);
-         WriteStatusPacket(Scheduler, CoilDetectBar == 0, CoilDetectOK, Gyro.device().TempRaw(),
-                           Charge, ZeroMotionTimedOut || StayMotionTimedOut);
+         WriteStatusPacket(Scheduler, CoilDetectBar == 0, false, Gyro.device().TempRaw(),
+                           Charge, CurrentlyPreparingSleep);
          GyroTempTimer.reset();
       }
 
       Scheduler.Poll();
-
-      // CoilDetectBar active low
-      if (CoilDetectBar == 0)
-      {
-         if (!CoilDetectOK && CoilDetectTimer.read_ms() > CoilDetectTimeDelay)
-         {
-            // start the charging circuit
-            CoilDetectOK = true;
-            ChargeEnable = true;
-         }
-      }
-      else
-      {
-         CoilDetectTimer.reset();
-         if (CoilDetectOK)
-         {
-            CoilDetectOK = false;
-            ChargeEnable = false;
-         }
-      }
 
       // should we sleep?
       if ((ZeroMotionTimedOut && ZeroMotionDetectTimer.read() > SleepDelaySeconds+SleepExtraTime)
@@ -788,8 +815,8 @@ int main()
          // why are we sleeping?  If the bell is down, and we've satisfied
          // the zero motion condition, then detect motion that is above threshold.
          bool AboveThreshold = ZeroMotionDetectTimer.read() > (SleepDelaySeconds+SleepExtraTime);
-         SleepMode(Scheduler, acc, Gyro, CoilDetectBar, led, AboveThreshold,
-                   AboveThreshold ? ZeroMotionThreshold : StayMotionThreshold);
+         SleepMode(Scheduler, acc, Gyro,led, AboveThreshold,
+                   BatteryDetectEnable, AnalogBattery, CoilDetectBar, ChargeEnable);
 
          ZeroMotionDetectTimer.reset();
          StayMotionDetectTimer.reset();
