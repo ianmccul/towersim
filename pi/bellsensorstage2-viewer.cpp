@@ -31,10 +31,12 @@ int main(int argc, char** argv)
    try
    {
       std::string InFile;
+      bool NoFlush = false;
 
       prog_opt::options_description desc("Allowed options");
       desc.add_options()
          ("help", "show this help message")
+         ("noflush", prog_opt::bool_switch(&NoFlush), "don't flush standard output after each packet")
          ("infile", prog_opt::value(&InFile), "read input from a file rather than a socket")
          ;
 
@@ -178,6 +180,8 @@ int main(int argc, char** argv)
          {
             std::cerr << "Unknown packet " << int(MsgType) << " at " << Time << '\n';
          }
+         if (!NoFlush)
+            std::cout << std::flush;
       }
    }
    catch (prog_opt::error& e)

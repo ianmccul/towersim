@@ -11,6 +11,8 @@
 #include <cstdint>
 #include <vector>
 
+RGBLED* MyLed;
+
 //
 // packet format for sensor readings:
 // Multi-byte sequences are in little-endian format, which is the default
@@ -112,7 +114,7 @@ class PacketScheduler
       // Turns on the device and initializes it
       //void PowerOn();
 
-      void Sleep();
+      void Sleep(int WaitRetransmits = 0);
       void Wakeup();
 
       // polls the scheduler, to see if we need to do anything.  This should be called
@@ -187,11 +189,19 @@ PacketScheduler::PacketScheduler(nRF24L01P_PTX& PTX_)
 }
 
 void
-PacketScheduler::Sleep()
+PacketScheduler::Sleep(int WaitRetransmits)
 {
+   float c = 1.0;
+   // Keep sending the packet until at most WaitRetransmits attempts
+   while (PacketInFlight != 0 && NumRetransmits < WaitRetransmits)
+   {
+      MyLed->yellow(c);
+      c *= 0.99;
+      this->Poll();
+   }
    if (PacketInFlight != 0)
    {
-      // we don't care what the result was, we're sleeping anyway
+      // Finish the packet, we don't care if it didn't make it
       PTX.TransmitWait();
    }
 
@@ -208,6 +218,12 @@ PacketScheduler::Sleep()
 void PacketScheduler::Wakeup()
 {
    PTX.PowerUp();
+   // We must wait until ready to transmit here, or we cause problems later on
+   // if the transmit fails unexpectedly (which Poll() doesn't handle)
+   while (!PTX.IsReadyTransmit())
+   {
+      wait_us(10);
+   }
 }
 
 void
@@ -348,7 +364,7 @@ void WriteStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool Chargin
                        uint16_t BatteryCharge, bool PrepareSleep)
 {
    char buf[32-ReservedBufSize];
-   buf[0] = 0x8C | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4) | (uint8_t(PrepareSleep) << 2);
+   buf[0] = 0x8C | (uint8_t(CoilDetect) << 5) | (uint8_t(Charging) << 4) | (uint8_t(PrepareSleep) << 1);
    *static_cast<uint16_t*>(static_cast<void*>(buf+1)) = UniqueID16;
    *static_cast<uint16_t*>(static_cast<void*>(buf+3)) = 100;   // accel ODR
    *static_cast<uint16_t*>(static_cast<void*>(buf+5)) = 760;  // gyro ODR
@@ -370,12 +386,8 @@ void WriteSleepingStatusPacket(PacketScheduler& Scheduler, bool CoilDetect, bool
    *static_cast<uint16_t*>(static_cast<void*>(buf+8)) = BatteryCharge;
    Scheduler.Wakeup();
    Scheduler.SendLowPriority(buf, 10);
-   // We have only one attempt at sending the packet - if it didn't make it then too bad
-   Scheduler.Sleep();
+   Scheduler.Sleep(5);  // a few attempts at sending the packet
 }
-
-
-RGBLED* MyLed;
 
 void SetupAccelerometer(MMA8451Q& acc)
 {

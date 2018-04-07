@@ -602,9 +602,9 @@ int main(int argc, char** argv)
             int16_t AccODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+14+4));
             int16_t GyroODR = *static_cast<int16_t const*>(static_cast<void const*>(buf+16+4));
             int8_t GyroBW = *static_cast<int8_t const*>(static_cast<void const*>(buf+18+4));
-            bool Power = (Flags & 0x20) != 0;
-            bool Charging = (Flags & 0x10) != 0;
-            bool Sleeping = (Flags & 0x02) != 0;
+            bool Power = (Flags & 0x20) == 0x20;
+            bool Charging = (Flags & 0x10) == 0x10;
+            bool Sleeping = (Flags & 0x02) == 0x02;
             WriteStatusMsg(WriteToFile, Clients, Time-Delay, Bell, uid, AccODR, GyroODR, GyroBW,
 			   Power, Charging, Sleeping);
             int Offset = 19+4;
