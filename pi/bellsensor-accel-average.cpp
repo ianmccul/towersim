@@ -178,8 +178,8 @@ int main(int argc, char** argv)
                double AyMean = mean(AyVec);
                double AxStdev = stdev(AxVec, AxMean);
                double AyStdev = stdev(AyVec, AyMean);
-               std::cout << "\nXaccel = " << AxMean << " +- " << AxMean
-                         << "\nYaccel = " << AyMean << " +- " << AyMean << std::endl;
+               std::cout << "\nXaccel = " << AxMean << " +- " << AxStdev
+                         << "\nYaccel = " << AyMean << " +- " << AyStdev << std::endl;
                AxVec.clear();
                AyVec.clear();
             }
