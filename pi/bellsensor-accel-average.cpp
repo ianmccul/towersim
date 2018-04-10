@@ -12,6 +12,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <cassert>
 
 /*
 Program to calculate an average of accelerometer readings, for calibration.  Uses the stage 2 data.
@@ -63,7 +64,8 @@ double covariance(std::vector<double> const& x, double xmean, std::vector<double
    {
       covar += (x[i] - xmean) * (y[i] - ymean);
    }
-   return covar /
+   return covar / (x.size()-1);
+}
 
 int main(int argc, char** argv)
 {
