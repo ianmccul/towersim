@@ -144,6 +144,9 @@ class MMA8451Q : public I2CRegisterDevice
       // Read all of the accelerometer axes
       void readAll(vector& v);
 
+      // Read the X and Y axes
+      void readXY(vector& v);
+
       // Enables or disables motion detection on X,Y,Z axes.
       // If AboveThreshold is true, then we trigger detection when the reading is above the thrshold.
       // Otherwise we trigger if it is below the threshold (freefall detection).

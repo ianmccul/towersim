@@ -150,6 +150,21 @@ MMA8451Q::readAll(MMA8451Q::vector& v)
 }
 
 void
+MMA8451Q::readXY(MMA8451Q::vector& v)
+{
+   int result = this->read_regs(MMA8451_OUT_X_MSB, (char*) &v, 4);
+   if (result < 0)
+   {
+      v[0] = -1;
+      v[1] = -1;
+      v[2] = -1;
+      return;
+   }
+   v[0] = bswap(v[0]);
+   v[1] = bswap(v[1]);
+}
+
+void
 MMA8451Q::enable_motion_detect(bool AboveThreshold, bool X, bool Y, bool Z)
 {
    uint8_t x = AboveThreshold ? 0x40 : 0x00;

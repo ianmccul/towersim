@@ -154,7 +154,7 @@ int main(int argc, char** argv)
                // battery charge
                uint16_t V = *static_cast<uint16_t const*>(static_cast<void const*>(buf+Offset));
                Offset += 2;
-               std::cout << " Battery " << V;
+               std::cout << " Battery " << (V * 0.001);
             }
             std::cout << std::endl;
          }
@@ -166,7 +166,7 @@ int main(int argc, char** argv)
             int NumAccel = (Flags & 0x70) >> 4;
             int NumGyro = Flags & 0x0F;
 
-            int ExpectedPacketLength = NumAccel*6 + NumGyro*2 + 4 + 1 + 8 + 4;
+            int ExpectedPacketLength = NumAccel*4 + NumGyro*2 + 4 + 1 + 8 + 4;
 
             if (Size != ExpectedPacketLength)
             {
