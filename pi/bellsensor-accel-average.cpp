@@ -43,13 +43,27 @@ double mean(std::vector<double> const& v)
 
 double stdev(std::vector<double> const& v, double mean)
 {
+   if (v.size() <= 1)
+      return 0;
    double sumsq = 0;
    for (double x : v)
    {
       sumsq += std::pow(x-mean, 2);
    }
-   return std::sqrt(sumsq / v.size());
+   return std::sqrt(sumsq / (v.size()-1));
 }
+
+double covariance(std::vector<double> const& x, double xmean, std::vector<double> const& y, double ymean)
+{
+   if (x.size() <= 1)
+      return 0;
+   std::assert(x.size() == y.size());
+   double covar = 0;
+   for (unsigned i = 0; i < x.size(); ++i)
+   {
+      covar += (x[i] - xmean) * (y[i] - ymean);
+   }
+   return covar /
 
 int main(int argc, char** argv)
 {
@@ -179,7 +193,8 @@ int main(int argc, char** argv)
                double AxStdev = stdev(AxVec, AxMean);
                double AyStdev = stdev(AyVec, AyMean);
                std::cout << "\nXaccel = " << AxMean << " +- " << AxStdev
-                         << "\nYaccel = " << AyMean << " +- " << AyStdev << std::endl;
+                         << "\nYaccel = " << AyMean << " +- " << AyStdev
+                         << "\nXWcovariance = " << covariance(AxVec, AxMean, AyVec, AyMean) << std::endl;
                AxVec.clear();
                AyVec.clear();
             }
