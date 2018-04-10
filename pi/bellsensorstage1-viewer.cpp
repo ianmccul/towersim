@@ -122,7 +122,7 @@ int main(int argc, char** argv)
          uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+13));
          unsigned char Flags = buf[15];
 
-         if (Pipe < 0 || Bell > 15)
+         if (Pipe < 0 || Pipe > 15)
          {
             std::cerr << "unexpected pipe number " << Pipe << '\n';
             continue;
