@@ -712,7 +712,7 @@ int main(int argc, char** argv)
 
             GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements);
 
-            std::vector<vector3<int16_t>> AccelMeasurements(NumAccel);
+            std::vector<vector2<int16_t>> AccelMeasurements(NumAccel);
             std::memcpy(AccelMeasurements.data(), buf+17, NumAccel*4);
             for (auto const& x : AccelMeasurements)
             {
