@@ -712,12 +712,12 @@ int main(int argc, char** argv)
 
             GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements);
 
-            std::vector<vector2<int16_t>> AccelMeasurements(NumAccel);
+            std::vector<int16_t> AccelMeasurements(NumAccel*2);
             std::memcpy(AccelMeasurements.data(), buf+17, NumAccel*4);
-            for (auto const& x : AccelMeasurements)
+            for (int i = 0; i < NumAccel; ++i)
             {
-               float Ax = (x[0] - SensorFromBell[Bell].AXOffset) / SensorFromBell[Bell].AXScale;
-               float Ay = (x[1] - SensorFromBell[Bell].AYOffset) / SensorFromBell[Bell].AYScale;
+               float Ax = (AccelMeasurements[i*2+0] - SensorFromBell[Bell].AXOffset) / SensorFromBell[Bell].AXScale;
+               float Ay = (AccelMeasurements[i*2+1] - SensorFromBell[Bell].AYOffset) / SensorFromBell[Bell].AYScale;
                WriteAccelMsg(WriteToFile, Clients, Time-Delay, Bell, Ax, Ay);
             }
          }
