@@ -294,11 +294,8 @@ class L3G : public  L3G_base<BusType>
       void SetInt1ThresholdDuration(bool Enable, uint8_t Duration);
 
       // reads the temperature sensor, returns the raw reading,
-      // which is -1LSB/deg with an offset of 50
+      // which is -1LSB/deg, unspecified offset (supposed to be 25?)
       int TempRaw();
-
-      // Sensor temperature in degrees C
-      int Temp();
 };
 
 #include "l3g.tcc"

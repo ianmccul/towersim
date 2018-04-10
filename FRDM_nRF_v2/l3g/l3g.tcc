@@ -203,10 +203,3 @@ L3G<BusType>::TempRaw()
 {
    return this->readReg(L3G_OUT_TEMP);
 }
-
-template <typename BusType>
-int
-L3G<BusType>::Temp()
-{
-   return 50 - this->TempRaw();
-}

@@ -117,14 +117,14 @@ int main(int argc, char** argv)
 
          int Size = len;
          int64_t Time = *static_cast<int64_t const*>(static_cast<void const*>(buf));
-         int Bell = buf[8];
+         int Pipe = buf[8];
          // 4-byte checksum comes next
          uint16_t Delay = *static_cast<uint16_t const*>(static_cast<void const*>(buf+13));
          unsigned char Flags = buf[15];
 
-         if (Bell < 0 || Bell > 15)
+         if (Pipe < 0 || Bell > 15)
          {
-            std::cerr << "unexpected bell number " << Bell << '\n';
+            std::cerr << "unexpected pipe number " << Pipe << '\n';
             continue;
          }
 
@@ -138,7 +138,7 @@ int main(int argc, char** argv)
             bool Power = Flags & 0x20;
             bool Charging = Flags & 0x10;
             bool Sleeping = Flags & 0x02;
-            std::cout << "STATUS UID 0x" << std::hex << uid << " Pipe " << std::dec << Bell
+            std::cout << Time << " STATUS UID 0x" << std::hex << uid << " Pipe " << std::dec << Pipe
                       << " power " << Power << " charging " << Charging << " Sleeping " << Sleeping;
             int Offset = 23;
             // status packet
@@ -170,18 +170,18 @@ int main(int argc, char** argv)
 
             if (Size != ExpectedPacketLength)
             {
-               std::cerr << Time << " Bell " << Bell << " unexpected packet length " << Size << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
+               std::cerr << Time << " Pipe " << Pipe << " unexpected packet length " << Size << " expected " << ExpectedPacketLength << ", NumAccel=" << NumAccel << ", NumGyro=" << NumGyro
                          << " Delay=" << Delay << " Flags=" << uint16_t(Flags) << " SeqNum=" << uint16_t(SeqNum) << std::endl;
                continue;
             }
 
-            if (HaveLastSeqNum[Bell] && SeqNum != uint8_t(LastSeqNum[Bell]+1))
+            if (HaveLastSeqNum[Pipe] && SeqNum != uint8_t(LastSeqNum[Pipe]+1))
             {
-               std::cout << Time << " Packet loss bell " << Bell << " packets " << (int(uint8_t(SeqNum-LastSeqNum[Bell]))-1) << std::endl;
+               std::cout << Time << " Packet loss pipe " << Pipe << " packets " << (int(uint8_t(SeqNum-LastSeqNum[Pipe]))-1) << std::endl;
             }
-            LastSeqNum[Bell] = SeqNum;
-            HaveLastSeqNum[Bell] = true;
-            LastDelay[Bell] = Delay;
+            LastSeqNum[Pipe] = SeqNum;
+            HaveLastSeqNum[Pipe] = true;
+            LastDelay[Pipe] = Delay;
          }
       }
    }

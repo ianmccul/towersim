@@ -334,7 +334,7 @@ void WriteSamplePacket(PacketScheduler& Scheduler,
 {
    // assemble our packet
    char buf[32-ReservedBufSize];
-   int BufSz = 2 + AccelBuffer.size()*6 + GyroBuffer.size()*2;
+   int BufSz = 2 + AccelBuffer.size()*4 + GyroBuffer.size()*2;
 
    buf[0] = uint8_t(AccelBuffer.size() << 4) + uint8_t(GyroBuffer.size());
    buf[1] = SeqNum++;
@@ -562,8 +562,8 @@ int const MaxAccelSamples = 4;
 int const MaxGyroSamples = 14;
 
 // once we've written this many bytes, send the packet.  This is obtained from the maximum
-// buffer size (32 - ReservedBufSize) minus the overhead (2 bytes) minus the size of an accelerometer sample (6 bytes)
-int const PacketWatermark = 32 - ReservedBufSize - 2 - 6;
+// buffer size (32 - ReservedBufSize) minus the overhead (2 bytes) minus the size of an accelerometer sample (4 bytes)
+int const PacketWatermark = 32 - ReservedBufSize - 2 - 4;
 //int const PacketWatermark = 1;
 
 // Thresholds for going to sleep.  These should correspond with the
@@ -727,7 +727,7 @@ int main()
       if (AccINT2)
       {
          MMA8451Q::vector Data;
-         acc.readXY(Data);
+         acc.readAll(Data);
 
          AccelBuffer.push_back(Data);
 
