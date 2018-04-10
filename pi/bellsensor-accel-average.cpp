@@ -58,7 +58,7 @@ double covariance(std::vector<double> const& x, double xmean, std::vector<double
 {
    if (x.size() <= 1)
       return 0;
-   std::assert(x.size() == y.size());
+   assert(x.size() == y.size());
    double covar = 0;
    for (unsigned i = 0; i < x.size(); ++i)
    {
