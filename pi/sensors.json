@@ -2,7 +2,6 @@
    "Sensors" : [
    {
       "UID" : "0xe58a",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "GyroScale" : 55.447,
       "AXScale" : 1671.0,
@@ -28,63 +27,55 @@
    },
    {
       "UID" : "0xe3cf",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
       "Bell" : 7
    },
    {
       "UID" : "0xb79f",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : 1,
       "Bell" : 1
    },
    {
       "UID" : "0x0ee2",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
       "Bell" : 5
    },
    {
       "UID" : "0xf27a",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
       "Bell" : 3
    },
    {
       "UID" : "0x063f",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
       "Bell" : 8
    },
    {
       "UID" : "0x43a0",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
       "Bell" : 9
    },
    {
       "UID" : "0xcf18",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
       "Bell" : 10
    },
    {
       "UID" : "0x7c2a",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 12
+      "Bell" : 8,
+      "AccelCalibration" : [ [ -0.0514275, 9.97862 ], [ 6.85363, 7.10654 ], [ 9.7007, 0.23371 ], [ 6.86051, -6.67679 ], [ 0.019824, -9.55605 ], [ -6.9213, -6.65655 ], [ -9.77663, 0.195415 ], [ -6.91841, 7.11772 ] ]
    },
    {
       "UID" : "0x8058",
-      "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
       "Bell" : 11

@@ -196,7 +196,7 @@ int main(int argc, char** argv)
                double AyStdev = stdev(AyVec, AyMean);
                std::cout << "\nXaccel = " << AxMean << " +- " << AxStdev
                          << "\nYaccel = " << AyMean << " +- " << AyStdev
-                         << "\nXWcovariance = " << covariance(AxVec, AxMean, AyVec, AyMean) << std::endl;
+                         << "\nXY-covariance = " << covariance(AxVec, AxMean, AyVec, AyMean) << std::endl;
                AxVec.clear();
                AyVec.clear();
             }
