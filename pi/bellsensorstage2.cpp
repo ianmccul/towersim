@@ -335,12 +335,6 @@ GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t T
       // either we are initializing, or packet loss.  Reset the stream.
       for (int i = 0; i < GyroMeasurements.size(); ++i)
       {
-         if (Time - int64_t(std::round((GyroMeasurements.size()-i-1) * GyroDelta)) == 1479609706936045ull)
-         {
-            TRACE("Got the packet")(Time)(int(SeqNum));
-            TRACE(GyroMeasurements);
-            abort();
-         }
          this->ProcessPacket(WriteToFile, Clients, Time - int64_t(std::round((GyroMeasurements.size()-i-1) * GyroDelta)),
                              GyroMeasurements[i]);
       }

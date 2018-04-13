@@ -4,7 +4,7 @@ SHELL = /bin/sh
 
 SRCDIR=.
 
-CXXFLAGS:=$(CXXFLAGS) -std=c++11 -pthread -I..
+CXXFLAGS:=$(CXXFLAGS) -std=c++11 -pthread -I.. -O3
 
 nodep-targets = clean mrproper dep uninstall dist distclean maintainer-clean dist-dir tar-dir tar
 
@@ -100,6 +100,8 @@ bellsensorstage2: sensors.o
 LIBS_bellsensorstage1-viewer = -lboost_program_options
 
 LIBS_bellsensorstage2-viewer = -lboost_program_options
+
+particlefilter : randutil.o
 
 stage1 : $(stage1)
 stage2 : $(stage2)

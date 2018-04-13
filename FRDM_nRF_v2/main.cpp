@@ -421,6 +421,15 @@ void SetupAccelerometer(MMA8451Q& acc)
 
 volatile bool WakeOnMotion = false;
 
+// minimum battery charge; below this, we force deep sleep mode
+constexpr float BattMinimum = 3.1;
+constexpr float BattMinimumHysteresis = 3.2;
+
+// if we measure the battery charge < BattMinimum for BatMinumumCountThreshold times in a row,
+// then force emergency sleep mode
+constexpr int BatMinimumCountThreshold = 10;
+int BattMinimumCount = 0;
+
 // interrupt function when we wake from sleep.  This doesn't need to do anything
 void WakeFromSleepINT()
 {
@@ -473,21 +482,22 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
    // ** Need to deactivate the accelerometer before changing settings
    Acc.set_active(false);
 
+   // Set the accelerometer to low power mode with interrupts enabled
+   Acc.set_sleep_oversampling_mode(MMA8451Q::OSMODE_LowPower);
+   Acc.set_int_data_ready(false);
+   // Motion threshold 1.  Each unit corresponds to (roughly) 0.063 radians = 2.1 degrees
+   Acc.set_motion_detect_threshold(AboveThreshold ? 1 : 2);
+   Acc.enable_int_motion_sleep(true);
+   Acc.set_debounce_time(2);
+   Acc.enable_motion_detect(AboveThreshold, true, false, false);
+
    // if we're in emergency sleep mode, don't set the accelerometer interrupt
    if (!Emergency)
    {
-      // Set the accelerometer to low power mode with interrupts enabled
-      Acc.set_sleep_oversampling_mode(MMA8451Q::OSMODE_LowPower);
-      Acc.set_int_data_ready(false);
-      // Motion threshold 1.  Each unit corresponds to (roughly) 0.063 radians = 2.1 degrees
-      Acc.set_motion_detect_threshold(AboveThreshold ? 1 : 2);
-      Acc.enable_int_motion_sleep(true);
-      Acc.set_debounce_time(2);
-      Acc.enable_motion_detect(AboveThreshold, true, false, false);
       AccINT1.rise(&WakeFromSleepINT);
       Acc.set_int_motion_detect(true);
-      Acc.set_active(true);
    }
+   Acc.set_active(true);
 
    // turn off the led
    led.off();
@@ -514,6 +524,25 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
       }
       WriteSleepingStatusPacket(Scheduler, CoilDetectBar == 0, Charging, BatteryCharge);
       led.off();
+
+      // if the battery charge is above the emergency threshold then turn on the interrupt
+      if (BatteryCharge > BattMinimumHysteresis)
+      {
+         Emergency = false;
+         Acc.set_active(false);
+         AccINT1.rise(&WakeFromSleepINT);
+         Acc.set_int_motion_detect(true);
+         Acc.set_active(true);
+      }
+      else if (BatteryCharge < BattMinimum)
+      {
+         Emergency = true;
+         WakeOnMotion = false;
+         Acc.set_active(false);
+         AccINT1.rise(NULL);
+         Acc.set_int_motion_detect(false);
+         Acc.set_active(true);
+      }
 
       // Go to sleep
       WakeUp::set(30);
@@ -583,14 +612,6 @@ float SleepExtraTime = 10; // go to sleep after this many additional seconds
 // For controlling the led via the gyro, we need to scale to the range [0,1],
 // hence need the maximum deflection.  Pick a sensible starting value.
 int16_t GyroMaxDeflection = 5000;
-
-// minimum battery charge; below this, we force deep sleep mode
-constexpr float BattMinimum = 3.0;
-
-// if we measure the battery charge < BattMinimum for BatMinumumCountThreshold times in a row,
-// then force emergency sleep mode
-constexpr int BatMinimumCountThreshold = 10;
-int BattMinimumCount = 0;
 
 int main()
 {
@@ -715,7 +736,7 @@ int main()
    // consistently larger than StayMotionThreshold then sleep.
    Timer StayMotionDetectTimer;
    StayMotionDetectTimer.start();
-   int AccLastSign = 1;
+  int AccLastSign = 1;
 
    bool CurrentlyPreparingSleep = false;
 
