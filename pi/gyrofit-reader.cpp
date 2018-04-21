@@ -35,7 +35,7 @@ int main(int argc, char** argv)
 {
    try
    {
-      int ThisBell = -1;
+      std::string ThisBell = "";
       bool bdc = false;
       bool Raw = false;
       bool AbsoluteTime = false;
@@ -45,7 +45,7 @@ int main(int argc, char** argv)
          ("help", "show this help message")
          ("bell", prog_opt::value(&ThisBell), "show output only for this bell")
          ("bdc", prog_opt::bool_switch(&bdc), "emit bottom dead centre times, instead of strike times")
-         ("raw", prog_opt::bool_switch(&Raw), "raw mode; two columns <time> <z>")
+         ("raw", prog_opt::bool_switch(&Raw), "raw mode; read data in two columns <time> <z>")
          ;
 
       prog_opt::options_description opt;
@@ -65,18 +65,17 @@ int main(int argc, char** argv)
 
 
       // load the bells configuration
-      std::cout << "Reading bell configurations\n";
+      std::cerr << "Reading bell configurations\n";
       std::ifstream BellsConfig("bells.json");
       json Bells;
       BellsConfig >> Bells;
-      ReadBellInfo(Bells["Bells"]);
+      LoadBellsJSON(Bells);
 
       std::cout.precision(16);
       std::cerr.precision(16);
       int64_t Epoch = 0;
 
-      std::array<GyroBDC, 13> BDC{0,1,2,3,4,5,6,7,8,9,10,11,12};
-
+      std::map<std::string, GyroBDC> BDC;
 
       std::string s;
       while (std::getline(std::cin, s))
@@ -86,18 +85,18 @@ int main(int argc, char** argv)
          int64_t Tm;
          float z;
          char G;
-         int Bell = 0;
+         std::string Bell = ThisBell;
          if (!Raw)
          {
             In >> Tm >> Bell >> G;
 
-            if (Epoch == 0)
-            Epoch = Tm;
+            //if (Epoch == 0)
+            //Epoch = Tm;
 
             if (G != 'G')
                continue;
 
-            if (ThisBell != -1 && ThisBell != Bell)
+            if (!ThisBell.empty() && ThisBell != Bell)
                continue;
 
             In >> z;
@@ -119,20 +118,21 @@ int main(int argc, char** argv)
 
             if (!bdc)
             {
+               BellInfoType const& B = BellByName(Bell);
                // if we're below the cutoff then quit
-               if (Handstroke && std::abs(V) < BellInfo[Bell].HandstrokeCutoff)
+               if (!ThisBell.empty() && Handstroke && std::abs(V) < B.HandstrokeCutoff)
                {
                   std::cerr << "Ignoring handstroke bell " << Bell << " velocity " << V << " too low.\n";
                   continue;
                }
-               if (!Handstroke && std::abs(V) < BellInfo[Bell].BackstrokeCutoff)
+               if (!ThisBell.empty() && !Handstroke && std::abs(V) < B.BackstrokeCutoff)
                {
                   std::cerr << "Ignoring backstroke bell " << Bell << " velocity " << V << " too low.\n";
                   continue;
                }
                //TRACE(T);
-               T += 1000*(Handstroke ? BellInfo[Bell].HandstrokeDelay_ms
-                          : BellInfo[Bell].BackstrokeDelay_ms);
+               T += 1000*(Handstroke ? B.HandstrokeDelay_ms
+                          : B.BackstrokeDelay_ms);
                //TRACE(T);
             }
             std::cout << (AbsoluteTime ? (T+Epoch) : T) << ' ' << Bell << ' ' << V << '\n';

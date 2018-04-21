@@ -58,12 +58,12 @@ void Process(SensorTCPServer& MyServer, BDC_TCPServer& BDCServer, std::vector<ch
       bool Handstroke = V<0;
 
       // if we're below the cutoff then quit
-      if (Handstroke && std::abs(V) < BellInfo[Bell].HandstrokeCutoff)
+      if (Handstroke && std::abs(V) < BellByNumber(Bell).HandstrokeCutoff)
       {
          std::cout << "Ignoring handstroke bell " << Bell << " velocity " << V << " too low.\n";
          return;
       }
-      if (!Handstroke && std::abs(V) < BellInfo[Bell].BackstrokeCutoff)
+      if (!Handstroke && std::abs(V) < BellByNumber(Bell).BackstrokeCutoff)
       {
          std::cout << "Ignoring backstroke bell " << Bell << " velocity " << V << " too low.\n";
          return;
@@ -73,8 +73,8 @@ void Process(SensorTCPServer& MyServer, BDC_TCPServer& BDCServer, std::vector<ch
                 << V << (Handstroke ? " Handstroke" : " Backstroke") << '\n';
 
       boost::posix_time::ptime StrikeTime = Time +
-	 (Handstroke ? BellInfo[Bell].HandstrokeDelay : BellInfo[Bell].BackstrokeDelay);
-      MyServer.TriggerSensor(BellInfo[Bell].FriendlyName, StrikeTime);
+	 (Handstroke ? BellByNumber(Bell).HandstrokeDelay() : BellByNumber(Bell).BackstrokeDelay());
+      MyServer.TriggerSensor(BellByNumber(Bell).FriendlyName, StrikeTime);
 
    }
 }
@@ -86,7 +86,7 @@ int main(int argc, char** argv)
    std::ifstream BellsConfig("bells.json");
    json Bells;
    BellsConfig >> Bells;
-   ReadBellInfo(Bells["Bells"]);
+   LoadBellsJSON(Bells);
 
    boost::asio::io_service io;
    PacketHandler Sensor(io);
@@ -94,7 +94,7 @@ int main(int argc, char** argv)
    BDC_TCPServer MyBDCServer(io, "0.0.0.0", "5701");
 
    // attach the bells to the server.
-   for (auto const& x : BellInfo)
+   for (auto const& x : AllBells())
    {
       MySensorServer.Attach(x.FriendlyName, 0, 0);
       //      MyBDCServer.Attach(x.FriendlyName, 0, 0);

@@ -3,6 +3,15 @@
 #if !defined(TOWERSIM_PI_SENSORS_H)
 #define TOWERSIM_PI_SENSORS_H
 
+// Data for each sensor
+
+// Field            Type       Description
+// UID              uint16     unique ID of the sensor
+// Bell             integer    bell number that this sensor is attached to
+// Polarity         integer    +/- 1
+// GyroScale        float      Gyroscope scaling coefficient
+// AccelCalibration 2x8 matrix matrix of accelerometer readings
+
 #include <cstdint>
 #include "json.hpp"
 

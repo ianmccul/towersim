@@ -1,39 +1,85 @@
 
 #include "bells.h"
+#include "common/trace.h"
 
-std::vector<BellInfoType> BellInfo(16);
+std::vector<BellInfoType> BellInfo;
 
-BellInfoType::BellInfoType(json const& j) : BellInfoType(j["Bell"], j)
-{
-}
+std::set<BellInfoType> BellInfoSet;
 
-BellInfoType::BellInfoType(int BellNumber_, json const& j)
-   : Bell(BellNumber_),
+BellInfoType::BellInfoType(json const& j)
+   : Number(j["Number"].get<int>()),
+     Name(j["Name"].get<std::string>()),
      FriendlyName(j["FriendlyName"].get<std::string>()),
-     HandstrokeDelay_ms(j["HandstrokeDelay"]),
-     BackstrokeDelay_ms(j["HandstrokeDelay"]),
-     HandstrokeDelay(boost::posix_time::milliseconds(int64_t(j["HandstrokeDelay"]))),
-     BackstrokeDelay(boost::posix_time::milliseconds(int64_t(j["BackstrokeDelay"]))),
-     HandstrokeCutoff(j["HandstrokeCutoff"]),
-     BackstrokeCutoff(j["BackstrokeCutoff"]),
-     ThetaR(j.value("BackstrokeCutoff", 0.0)),
-     Omega(j.value("Omega", 0.0)),
-     WheelRadius(j.value("WheelRadius", 0.0))
+     HandstrokeDelay_ms(j.value("HandstrokeDelay", 300)),
+     BackstrokeDelay_ms(j.value("HandstrokeDelay", 300)),
+     HandstrokeCutoff(j.value("HandstrokeCutoff", 0.0)),
+     BackstrokeCutoff(j.value("BackstrokeCutoff", 0.0)),
+     HandstrokeStay(j.value("HandstrokeStay", 186.0)),
+     BackstrokeStay(j.value("BackstrokeStay", -186.0)),
+     ThetaR(j.value("ThetaR", 0.2)),
+     Gamma(j.value("Gamma", -135.0)),
+     WheelRadius(j.value("WheelRadius", 0.75)),
+     lb(j.value("lb", 0.72)),
+     kb(j.value("kb", 0.0)),
+     Y(j.value("Y", 240))
 {
 }
 
-void
-ReadBellInfo(json const& j)
+void to_json(json& j, BellInfoType const& b)
 {
-   for (json::const_iterator it = j.begin(); it != j.end(); ++it)
+   j = json{{"Number", b.Number},
+            {"Name", b.Name},
+            {"FriendlyName", b.FriendlyName},
+            {"HandstrokeDelay", b.HandstrokeDelay_ms},
+            {"BackstrokeDelay", b.BackstrokeDelay_ms},
+            {"HandstrokeCutoff", b.HandstrokeCutoff},
+            {"BackstrokeCutoff", b.BackstrokeCutoff},
+            {"HandstrokeStay", b.HandstrokeStay},
+            {"BackstrokeStay", b.BackstrokeStay},
+            {"ThetaR", b.ThetaR},
+            {"Gamma", b.Gamma},
+            {"WheelRadius", b.WheelRadius},
+            {"lb", b.lb},
+            {"kb", b.kb},
+            {"Y", b.Y}};
+}
+
+void from_json(json const& j, BellInfoType& b)
+{
+   b = BellInfoType(j);
+}
+
+void LoadBellsJSON(json const& j)
+{
+   for (auto const& J : j["Bells"])
    {
-      BellInfoType Bell(it.value());
-      std::cout << it.value() << '\n';
-      if (Bell.Bell < 0 || Bell.Bell >= BellInfo.size())
+      BellInfoType b(J);
+      BellInfoSet.insert(b);
+      while (b.Number >= BellInfo.size())
       {
-         std::cerr << "warning: ignoring out of range bell number " << Bell.Bell << '\n';
+         BellInfo.push_back(BellInfoType());
       }
-      else
-         BellInfo[Bell.Bell] = Bell;
+      BellInfo[b.Number] = b;
    }
+}
+
+BellInfoType& BellByName(std::string const& Name)
+{
+   for (auto& i : BellInfo)
+   {
+      if (i.Name == Name)
+         return i;
+   }
+}
+
+BellInfoType& BellByNumber(int n)
+{
+   CHECK(n >= 0 && n < BellInfo.size());
+   return BellInfo[n];
+}
+
+
+std::set<BellInfoType> const& AllBells()
+{
+   return BellInfoSet;
 }
