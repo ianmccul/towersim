@@ -35,6 +35,10 @@ void Process(SensorTCPServer& MyServer, BDC_TCPServer& BDCServer, std::vector<ch
    char PacketType = Buf[9];
    if (PacketType != 'G')
       return;
+   if (Buf.size() != 8+1+1+sizeof(float))
+   {
+      std::cerr << "unexpected stage 2 packet length!";
+   }
    float z = *static_cast<float const*>(static_cast<void const*>(Buf.data()+10));
 
    if (BDC[Bell].Process(Time, z))
