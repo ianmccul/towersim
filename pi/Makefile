@@ -4,7 +4,7 @@ SHELL = /bin/sh
 
 SRCDIR=.
 
-CXXFLAGS:=$(CXXFLAGS) -std=c++11 -pthread -I.. -O3 -g
+CXXFLAGS:=$(CXXFLAGS) -std=c++11 -pthread -I.. -O2 -g
 
 nodep-targets = clean mrproper dep uninstall dist distclean maintainer-clean dist-dir tar-dir tar
 
