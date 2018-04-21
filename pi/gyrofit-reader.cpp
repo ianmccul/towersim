@@ -128,6 +128,7 @@ int main(int argc, char** argv)
                if (!ThisBell.empty() && !Handstroke && std::abs(V) < B.BackstrokeCutoff)
                {
                   std::cerr << "Ignoring backstroke bell " << Bell << " velocity " << V << " too low.\n";
+                  std::cerr << B.BackstrokeCutoff << '\n';
                   continue;
                }
                //TRACE(T);

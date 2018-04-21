@@ -11,8 +11,8 @@
 // FriendlyName     string   name of the bell that appears in the sensor configuration
 // HandstrokeDelay  integer  delay from bottom dead centre to bell sound at handstroke (ms)
 // BackstrokeDelay  integer  delay from bottom dead centre to bell sound at backstroke (ms)
-// HandstrokeCutoff float    cutoff velocity below which the bell doesn't sound when approaching handstroke (dps)
-// BackstrokeCutoff float    cutoff velocity below which the bell doesn't sound when approaching backstroke (dps)
+// HandstrokeCutoff float    BDC cutoff velocity below which the bell doesn't sound at handstroke (v<0) (dps)
+// BackstrokeCutoff float    BDC cutoff velocity below which the bell doesn't sound at backstroke (v>0) (dps)
 // HandstrokeStay   float    angle of the bell when resting against the stay at handstroke (degrees)
 // BackstrokeStay   float    angle of the bell when resting against the stay at backstroke (degrees)
 // ThetaR           float    shift in angle of the bell due to the rope (degrees)
@@ -24,10 +24,6 @@
 // ks               float    coefficient of friction of the stay (seconds^-1)
 
 // NOTES:
-// The HandstrokeCutoff and BackstrokeCutoff are arguably misnamed,
-// the HandstrokeCutoff is relevant as the bell is approaching handstroke, meaning the strike
-// is the previous backstroke.
-//
 // By convention, the angle of the bell when over the balance at handstroke is > 180 degrees,
 // and < -180 degrees when over the balance at backstroke.  The garter hole angle is negative,
 // typically around -135 degrees
