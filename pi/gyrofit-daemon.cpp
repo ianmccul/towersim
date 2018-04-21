@@ -40,7 +40,9 @@ void Process(SensorTCPServer& MyServer, BDC_TCPServer& BDCServer, std::vector<ch
       std::cerr << "unexpected stage 2 packet length!";
       return;
    }
-   float z = *static_cast<float const*>(static_cast<void const*>(Buf.data()+10));
+   float z;
+   // avoid direct cast due to alignment issues
+   std::memcpy(&z, Buf.data()+10, sizeof(float));
 
    if (BDC[Bell].Process(Time, z))
    {

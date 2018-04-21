@@ -125,8 +125,8 @@ void WriteGyroCalibrationMsg(bool WriteToFile, std::set<int>& Clients, int64_t T
    *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
    Buf[9] = MsgTypes::GyroCalibration;
-   *static_cast<float*>(static_cast<void*>(Buf+10)) = GyroOffset;
-   *static_cast<float*>(static_cast<void*>(Buf+14)) = GyroScale;
+   std::memcpy(Buf+10, &GyroOffset, sizeof(float));
+   std::memcpy(Buf+14, &GyroScale, sizeof(float));
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
 }
 
@@ -139,17 +139,17 @@ void WriteGyroMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Be
    GyroLast[Bell] = z;
 
    unsigned char Buf[100];
-   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   std::memcpy(Buf, &Time, sizeof(Time));
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
    Buf[9] = MsgTypes::Gyro;
-   *static_cast<float*>(static_cast<void*>(Buf+10)) = z;
+   std::memcpy(Buf+10, &z, sizeof(float));
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
 }
 
 void WriteGyroTempMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, int16_t T)
 {
    unsigned char Buf[100];
-   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   std::memcpy(Buf, &Time, sizeof(Time));
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
    Buf[9] = MsgTypes::GyroTemp;
    *static_cast<int16_t*>(static_cast<void*>(Buf+10)) = T;
@@ -157,16 +157,16 @@ void WriteGyroTempMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, in
 }
 
 void WriteStatusMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, uint16_t uid, int16_t AccODR,
-                    int16_t GryoODR, int8_t GyroBW,
+                    int16_t GyroODR, int8_t GyroBW,
                     bool Power, bool Charging, bool Sleeping)
 {
    unsigned char Buf[100];
-   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   std::memcpy(Buf, &Time, sizeof(Time));
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
    Buf[9] = MsgTypes::Status;
-   *static_cast<uint16_t*>(static_cast<void*>(Buf+10)) = uid;
-   *static_cast<int16_t*>(static_cast<void*>(Buf+12)) = AccODR;
-   *static_cast<int16_t*>(static_cast<void*>(Buf+14)) = GryoODR;
+   std::memcpy(Buf+10, &uid, sizeof(uid));
+   std::memcpy(Buf+12, &AccODR, sizeof(AccODR));
+   std::memcpy(Buf+14, &GyroODR, sizeof(GyroODR));
    *static_cast<int8_t*>(static_cast<void*>(Buf+16)) = GyroBW;
    *static_cast<uint8_t*>(static_cast<void*>(Buf+17)) = Power;
    *static_cast<uint8_t*>(static_cast<void*>(Buf+18)) = Charging;
@@ -177,7 +177,7 @@ void WriteStatusMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int 
 void WriteBatteryVMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float V)
 {
    unsigned char Buf[100];
-   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   std::memcpy(Buf, &Time, sizeof(Time));
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
    Buf[9] = MsgTypes::BatteryV;
    *static_cast<float*>(static_cast<void*>(Buf+10)) = V;
@@ -187,7 +187,7 @@ void WriteBatteryVMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, in
 void WriteAccelMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float Ax, float Ay)
 {
    unsigned char Buf[100];
-   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   std::memcpy(Buf, &Time, sizeof(Time));
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
    Buf[9] = MsgTypes::Accel;
    *static_cast<float*>(static_cast<void*>(Buf+10)) = Ax;
@@ -198,7 +198,7 @@ void WriteAccelMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int B
 void WriteBellAvailMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int8_t Bell)
 {
    unsigned char Buf[100];
-   *static_cast<int64_t*>(static_cast<void*>(Buf)) = Time;
+   std::memcpy(Buf, &Time, sizeof(Time));
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
    Buf[9] = MsgTypes::BellAvail;
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1);
