@@ -336,7 +336,7 @@ int main(int argc, char** argv)
       {
          Radio& r = Radios[i];
 
-         r.debug();
+         r.Debug();
 
          // check for data on the radio
          uint8_t PipeNum = 0;
