@@ -110,7 +110,7 @@ class Radio
 };
 
 Radio::Radio(int ce_pin, int DevMajor, int DevMinor, int Channel, uint64_t PAddr)
-   : radio(ce_pin, DevMajor*10+DevMinor), ok(true)
+   : radio(ce_pin, DevMajor*10+DevMinor, 2000000), ok(true)
 {
    radio.begin();
 
@@ -259,6 +259,8 @@ int main(int argc, char** argv)
    // channel 76 pipe 0, channel 82 pipe 1, channel 70 pipe 2
 
    // In this format, pipes 2,4,9 worked
+
+   // in this format, pipe 9 works.  That is radio on cs 4, pipe 2
    Radios.push_back(Radio(22, 0, 0, 70, 0xe7e7e7e7e7ULL));
    Radios.push_back(Radio(18, 1, 1, 76, 0x0f0f0f0fe7ULL));
    Radios.push_back(Radio(4 , 0, 1, 82, 0x7e7e7ef0e7ULL));
