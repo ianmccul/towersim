@@ -251,10 +251,14 @@ int main(int argc, char** argv)
    // configure the radios
    //
 
+   // in this format, pipes 0,5,10 worked
    Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
-   Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
-   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
+   //   Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
+   //   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
 
+   // channel 76 pipe 0, channel 82 pipe 1, channel 70 pipe 2
+
+   // In this format, pipes 2,4,9 worked
    //   Radios.push_back(Radio(4 , 0, 1, 70, 0xe7e7e7e7e7ULL));
    //   Radios.push_back(Radio(22, 0, 0, 76, 0x0f0f0f0fe7ULL));
    //   Radios.push_back(Radio(18, 1, 1, 82, 0x7e7e7ef0e7ULL));
@@ -342,7 +346,7 @@ int main(int argc, char** argv)
                std::cout << "Got a packet, length = " << len << '\n';
             }
             // we don't need to detect the case len > 32, the RF24 lib does that for us and
-            // flushes the buffer.  But if that lappens, then we get a length of 0.
+            // flushes the buffer.  But if that happens, then we get a length of 0.
             if (len == 0)
             {
                Log << "Discarded invalid packet on pipe " << PipeNum << " at time " << get_time() << std::endl;
