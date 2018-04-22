@@ -100,7 +100,7 @@ class Radio
 
       void Debug()
       {
-         radio.print_status(radio.get_status());
+         //radio.print_status(radio.get_status());
       }
 
       // returns the payload size
