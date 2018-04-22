@@ -18,7 +18,7 @@ RGBLED* MyLed;
 // Multi-byte sequences are in little-endian format, which is the default
 // for the KL25z and also the raspberry pi.
 //
-// hash (4 bytes) | delay (14 bits) seq (2 bits) |flags | seq1 | payload (up to 24 bytes)
+// hash (4 bytes) | delay (14 bits) seq (2 bits) |flags | seq1 | seq2 (2 bytes) | payload (up to 22 bytes)
 // hash is the FNV-1a-32 hash of the remaining bytes in the packet (with extra bytes set to zero to make
 // 32 bytes in total, even though we don't transmit extra bytes)
 // delay is a 14-bit unsigned in units of 4 microseconds - maximum value
@@ -26,6 +26,8 @@ RGBLED* MyLed;
 //
 // flags is 8 bits: 0 AAA GGGG
 // seq1 is a 1-byte sequentially increasing number
+// seq2 is a 32-bit unsigned sequentially increasing record number that counts the record number
+// of gyro measurements
 // delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit
 // delay shifted left 2 bits, with 2-bit sequence number).
 // AAA is number of 6-byte accelerometer readings (first in the payload)
@@ -49,6 +51,8 @@ RGBLED* MyLed;
 // it will check the entire packet, and assume that identical packets with the same
 // seq number are duplicates.  Packets that have a different seq number but are otherwise
 // identical are allowed.
+
+constexpr float pi = 3.141592653589323;
 
 // a simple LCG for random number generation
 uint32_t Seed = UniqueID32;
@@ -330,20 +334,22 @@ unsigned char SeqNum = 0;
 
 void WriteSamplePacket(PacketScheduler& Scheduler,
                        std::vector<vector3<int16_t>>& AccelBuffer,
-                       std::vector<int16_t>& GyroBuffer)
+                       std::vector<int16_t>& GyroBuffer,
+                       uint16_t GyroSampleCount)
 {
    // assemble our packet
    char buf[32-ReservedBufSize];
-   int BufSz = 2 + AccelBuffer.size()*4 + GyroBuffer.size()*2;
+   int BufSz = 4 + AccelBuffer.size()*4 + GyroBuffer.size()*2;
 
    buf[0] = uint8_t(AccelBuffer.size() << 4) + uint8_t(GyroBuffer.size());
    buf[1] = SeqNum++;
+   std::memcpy(buf+2, &GyroSampleCount, 2);
 
    for (unsigned i = 0; i < AccelBuffer.size(); ++i)
    {
-      std::memcpy(buf+2+i*4, &AccelBuffer[i], 4);
+      std::memcpy(buf+4+i*4, &AccelBuffer[i], 4);
    }
-   std::memcpy(buf+2+AccelBuffer.size()*4, GyroBuffer.data(), GyroBuffer.size()*2);
+   std::memcpy(buf+4+AccelBuffer.size()*4, GyroBuffer.data(), GyroBuffer.size()*2);
 
    Scheduler.SendHighPriority(buf, BufSz);
 
@@ -485,8 +491,8 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
    // Set the accelerometer to low power mode with interrupts enabled
    Acc.set_sleep_oversampling_mode(MMA8451Q::OSMODE_LowPower);
    Acc.set_int_data_ready(false);
-   // Motion threshold 1.  Each unit corresponds to (roughly) 0.063 radians = 2.1 degrees
-   Acc.set_motion_detect_threshold(AboveThreshold ? 1 : 2);
+   // Motion threshold 1.  Each unit corresponds to (roughly) 0.063 radians = 3.6 degrees
+   Acc.set_motion_detect_threshold(AboveThreshold ? 1 : 1);
    Acc.enable_int_motion_sleep(true);
    Acc.set_debounce_time(2);
    Acc.enable_motion_detect(AboveThreshold, true, false, false);
@@ -592,7 +598,8 @@ int const MaxGyroSamples = 14;
 
 // once we've written this many bytes, send the packet.  This is obtained from the maximum
 // buffer size (32 - ReservedBufSize) minus the overhead (2 bytes) minus the size of an accelerometer sample (4 bytes)
-int const PacketWatermark = 32 - ReservedBufSize - 2 - 4;
+// minus 2-byte sequence number
+int const PacketWatermark = 32 - ReservedBufSize - 2 - 4 - 2;
 //int const PacketWatermark = 1;
 
 // Thresholds for going to sleep.  These should correspond with the
@@ -600,11 +607,11 @@ int const PacketWatermark = 32 - ReservedBufSize - 2 - 4;
 // TODO: they probably do not
 // if the bell is down, then treat motion larger than 2 degrees
 // enough to wake up the sensor
-float ZeroMotionThreshold = (2.0 * 3.14159 / 180);
+float ZeroMotionThreshold = 2 * pi / 180;
 
-// if the bell is up, then treat motion closer to zero than 8 degrees
-// as enough to wake up the sensor. This is in units of g.
-float StayMotionThreshold = (8.0 * 3.14159 / 180);
+// if the bell is up, then treat motion closer to zero than 4 degrees
+// as enough to keep the sensor awake. This is in units of g.
+float StayMotionThreshold = 4 * pi / 180;
 
 float SleepDelaySeconds = 120; // start going to sleep after this many seconds
 float SleepExtraTime = 10; // go to sleep after this many additional seconds
@@ -612,6 +619,16 @@ float SleepExtraTime = 10; // go to sleep after this many additional seconds
 // For controlling the led via the gyro, we need to scale to the range [0,1],
 // hence need the maximum deflection.  Pick a sensible starting value.
 int16_t GyroMaxDeflection = 5000;
+
+// for a fancy LED output, we do our own zero calibration of the gyro
+constexpr int16_t GyroZeroMaxDeviation = 80;
+constexpr int16_t GyroZeroRequiredSamples = 800;
+int16_t GyroMin = INT16_MAX;
+int16_t GyroMax = INT16_MIN;
+int16_t GyroOffset = 0;
+int GyroZeroCount = 0;
+int32_t GyroAccumulator = 0;
+float LedColor;
 
 int main()
 {
@@ -674,6 +691,8 @@ int main()
    //   Gyro.SetRateBandwidth(L3G_H_ODR_200_70);
    //   Gyro.SetRateBandwidth(L3G_H_ODR_800_30);
    Gyro.SetRateBandwidth(L3G_H_ODR_800_110);
+
+   uint16_t GyroSampleCount = 0;
 
 
    nRF24L01P Device(PTD2, PTD3, PTC5, PTD5, 8000000);
@@ -810,9 +829,10 @@ int main()
          }
       }
 
+      // do we nede to write the packet?
       if ((AccelBuffer.size()*4 + GyroBuffer.size()*2) > PacketWatermark)
       {
-         WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer);
+         WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer, GyroSampleCount);
       }
 
       if (Gyro.DataAvailable())
@@ -822,12 +842,40 @@ int main()
          if (r == 0)
          {
             GyroBuffer.push_back(z);
+            ++GyroSampleCount;
+
+            GyroMin = std::min(GyroMin, z);
+            GyroMax = std::max(GyroMax, z);
+
+            if (std::abs(GyroMax-GyroMin) <= GyroZeroMaxDeviation)
+            {
+               GyroAccumulator += z;
+               ++GyroZeroCount;
+
+               if (GyroZeroCount > GyroZeroRequiredSamples)
+               {
+                  GyroOffset =  GyroAccumulator / GyroZeroCount;
+               }
+            }
+
+            if (std::abs(GyroMax-GyroMin) > GyroZeroMaxDeviation || GyroZeroCount >= GyroZeroRequiredSamples)
+            {
+               // reset the counter
+               GyroMin = INT16_MAX;
+               GyroMax = INT16_MIN;
+               GyroAccumulator = 0;
+               GyroZeroCount = 0;
+            }
 
             if (!CurrentlyPreparingSleep)
             {
-               GyroMaxDeflection = std::max(z, GyroMaxDeflection);
-               GyroMaxDeflection = std::max(int16_t(-z), GyroMaxDeflection);
-               led.write_hsv( z / float(2*GyroMaxDeflection) + 0.5, 1.0, 1.0);
+               float g = z - GyroOffset;
+               g = 1e-6 * std::sqrt(std::abs(g));
+
+               LedColor += g;
+               while (LedColor > 1)
+                  LedColor -= 1;
+               led.write_hsv(LedColor, 1.0, 1.0);
             }
          }
          else
@@ -837,9 +885,10 @@ int main()
          }
       }
 
+      // do we nede to write the packet?
       if ((AccelBuffer.size()*4 + GyroBuffer.size()*2) > PacketWatermark)
       {
-         WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer);
+         WriteSamplePacket(Scheduler, AccelBuffer, GyroBuffer, GyroSampleCount);
       }
 
       if (GyroTempTimer.read_ms() > 1100)

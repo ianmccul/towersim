@@ -209,7 +209,8 @@ class GyroProcessor
    public:
       GyroProcessor(int Bell_);
 
-      void ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t Time, uint8_t SeqNum, std::vector<int16_t> const& GyroMeasurements);
+      void ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t Time, uint8_t SeqNum,
+                         std::vector<int16_t> const& GyroMeasurements, uint16_t GyroSampleNumber);
 
    private:
       void ProcessPacket(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t z);
@@ -324,7 +325,8 @@ std::ostream& operator<<(std::ostream& Out, std::vector<T> const& v)
 }
 
 void
-GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t Time, uint8_t SeqNum, std::vector<int16_t> const& GyroMeasurements)
+GyroProcessor::ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t Time, uint8_t SeqNum,
+                             std::vector<int16_t> const& GyroMeasurements, uint16_t GyroSampleNumber)
 {
    float Delta = GyroMeasurements.size() * GyroDelta;
    if (LastPacketTime == 0 || (SeqNum - LastSeqNum != 1))
@@ -633,7 +635,7 @@ int main(int argc, char** argv)
             int NumAccel = (Flags & 0x70) >> 4;
             int NumGyro = Flags & 0x0F;
 
-            int ExpectedPacketLength = NumAccel*4 + NumGyro*2 + 4 + 1 + 8 + 4;
+            int ExpectedPacketLength = NumAccel*4 + NumGyro*2 + 4 + 1 + 8 + 4  2;
 
             if (len != ExpectedPacketLength)
             {
@@ -697,17 +699,19 @@ int main(int argc, char** argv)
 
             BellSeqNum[Bell] = SeqNum;
 
+            uint16_t GyroSampleNumber;
+            std::memcpy(&GyroSampleNumber, buf+17, 2);
             std::vector<int16_t> GyroMeasurements(NumGyro);
-            std::memcpy(GyroMeasurements.data(), buf+17+NumAccel*4, NumGyro*2);
+            std::memcpy(GyroMeasurements.data(), buf+19+NumAccel*4, NumGyro*2);
 
             // debugging duplicate packets
             memcpy(LastBuf[PipeNumber], buf, len);
             LastBufSize[PipeNumber] = len;
 
-            GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements);
+            GyroList[Bell].ProcessStream(WriteToFile, Clients, Time-Delay, SeqNum, GyroMeasurements, GyroSampleNumber);
 
             std::vector<int16_t> AccelMeasurements(NumAccel*2);
-            std::memcpy(AccelMeasurements.data(), buf+17, NumAccel*4);
+            std::memcpy(AccelMeasurements.data(), buf+19, NumAccel*4);
             for (int i = 0; i < NumAccel; ++i)
             {
                float Ax = (AccelMeasurements[i*2+0] - SensorFromBell[Bell].AXOffset) / SensorFromBell[Bell].AXScale;

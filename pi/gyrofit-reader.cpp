@@ -108,8 +108,9 @@ int main(int argc, char** argv)
 
          if (BDC[Bell].Process(Tm-Epoch, z))
          {
-            int64_t T = BDC[Bell].BDCPoints.front().first;
-            double V = BDC[Bell].BDCPoints.front().second;
+            int64_t T = std::get<0>(BDC[Bell].BDCPoints.front());
+            double V = std::get<1>(BDC[Bell].BDCPoints.front());
+            double C = std::get<2>(BDC[Bell].BDCPoints.front());
             BDC[Bell].BDCPoints.pop_front();
 
             bool Handstroke = V<0;
@@ -136,7 +137,7 @@ int main(int argc, char** argv)
                           : B.BackstrokeDelay_ms);
                //TRACE(T);
             }
-            std::cout << (AbsoluteTime ? (T+Epoch) : T) << ' ' << Bell << ' ' << V << '\n';
+            std::cout << (AbsoluteTime ? (T+Epoch) : T) << ' ' << Bell << ' ' << V << ' ' << C << '\n';
          }
       }
    }

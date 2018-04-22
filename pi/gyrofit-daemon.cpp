@@ -48,8 +48,8 @@ void Process(SensorTCPServer& MyServer, BDC_TCPServer& BDCServer, std::vector<ch
    {
 //      std::cout << Bell << ' ' << z <<  '\n';
 
-      int64_t T = BDC[Bell].BDCPoints.front().first;
-      double V = BDC[Bell].BDCPoints.front().second;
+      int64_t T = std::get<0>(BDC[Bell].BDCPoints.front());
+      double V = std::get<1>(BDC[Bell].BDCPoints.front());
       BDC[Bell].BDCPoints.pop_front();
 
       boost::posix_time::ptime Time = boost::posix_time::from_time_t(T/1000000) +

@@ -120,9 +120,9 @@ RGBLED::write_hsv(float hue, float saturation, float value)
    else if (h <= 4)
       this->write(v-c  , x+v-c, v    );
    else if (h <= 5)
-      this->write(v    , v-c  , x+v-c);
-   else
       this->write(x+v-c, v-c  , v    );
+   else
+      this->write(v    , v-c  , x+v-c);
 }
 
 #endif

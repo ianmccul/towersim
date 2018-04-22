@@ -18,6 +18,7 @@
 #include "quarticfit.h"
 #include "common/trace.h"
 #include <fstream>
+#include <tuple>
 
 constexpr double pi = M_PI;
 
@@ -56,7 +57,8 @@ class GyroBDC
 
       GyroBDC(int Bell_);
 
-      typedef std::pair<int64_t, double> VelocityPoint;
+      // the BDC records are the time, velocity and ratio of C/V
+      typedef std::tuple<int64_t, double, double> VelocityPoint;
 
       std::list<VelocityPoint> BDCPoints;
 
@@ -211,7 +213,7 @@ GyroBDC::FitBufferQuadratic()
    // we have a valid minima
    LastEvent = EventTime;
    LastEnergy = Energy;
-   BDCPoints.push_back({EventTime,V});
+   BDCPoints.push_back({EventTime,V, CurvatureRatio});
 
    //   std::cout << "Quadratic found " << LastEvent << ' ' << V << '\n';
 
@@ -236,9 +238,10 @@ GyroBDC::TryRoot(quartic_fit_result const& Res, double T)
 
    // When the bell is freely swinging, the ratio of the curvature to the velocity
    // is equal to -g/l_b.  The bell might not be freely swinging, eg if it is being chimed,
-   // and we don't know l_b here, but a valid range would be around
+   // and we don't know l_b here, but a valid range of l_b would be around
    // 0.1 to 10 from the smallest to largest bells in existence.  So check that the
    // ratio is < -0.1 and > -100
+   // TODO: there was a typo here, the ratio limit is actually -1 to -100, need to check this!
    double CurvatureRatio = C / V;
    //   if (CurvatureRatio > -0.1 || CurvatureRatio < -100)
    //      return false;
@@ -253,7 +256,7 @@ GyroBDC::TryRoot(quartic_fit_result const& Res, double T)
    // we have a valid minima
    LastEvent = EventTime;
    LastEnergy = Energy;
-   BDCPoints.push_back({EventTime,V});
+   BDCPoints.push_back({EventTime,V,CurvatureRatio});
 
    //   std::cout << EventTime << ' ' << V << ' ' << C << ' ' << '\n';
 
@@ -277,7 +280,7 @@ GyroBDC::FitBufferQuartic()
    quartic_fit_result Res = quartic_fit(x,y);
 
    // Quadratic is ax^4 + bx^3 + cx^2 + dx + e
-   // The minima is at derivative = 0, so
+   // The minima is when the derivative is zero, so
    // 4ax^3 + 3bx^2 + 2cx + d = 0,
    // write this in the form of
    // x^3 + a2*x^2 + a1*x + a0
@@ -285,11 +288,11 @@ GyroBDC::FitBufferQuartic()
    double a1 = 2.0*Res.c / (4.0*Res.a);
    double a0 = Res.d / (4.0*Res.a);
 
-   double Delta = 18*a2*a1*a0 - 4*std::pow(a2,3)*a0 + std::pow(a2*a1,2) - 4*std::pow(a1,3) - 27*a0*a0;
-
-   // we expect that the 4-th order term will have the opposite sign, so it increases slower than
+   // we expect that the 4-th order term will have the opposite sign to the 2nd order term,
+   // so it increases slower than
    // a quadratic away from the minimum.  Hence it should have 3 real roots.
    // this means that the discriminant should be positive.
+   double Delta = 18*a2*a1*a0 - 4*std::pow(a2,3)*a0 + std::pow(a2*a1,2) - 4*std::pow(a1,3) - 27*a0*a0;
    if (Delta <= 0)
       return false;
 
