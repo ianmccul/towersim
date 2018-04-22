@@ -98,6 +98,11 @@ class Radio
       // sets the pipe number.
       bool Available(uint8_t* Pipe);
 
+      void Debug()
+      {
+         radio.print_status(radio.get_status());
+      }
+
       // returns the payload size
       int PayloadSize();
 
@@ -330,6 +335,9 @@ int main(int argc, char** argv)
       for (unsigned i = 0; i < Radios.size(); ++i)
       {
          Radio& r = Radios[i];
+
+         r.debug();
+
          // check for data on the radio
          uint8_t PipeNum = 0;
          if (r.Available(&PipeNum))
