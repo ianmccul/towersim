@@ -13,11 +13,14 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <cassert>
+#include <cmath>
+#include <Eigen/Dense>
 
 /*
 Program to calculate an average of accelerometer readings, for calibration.  Uses the stage 2 data.
 */
 
+constexpr double pi = M_PI;
 
 namespace prog_opt = boost::program_options;
 
@@ -67,6 +70,10 @@ double covariance(std::vector<double> const& x, double xmean, std::vector<double
    return covar / (x.size()-1);
 }
 
+std::array<double, 8> AxMeanOctant = {0,0,0,0,0,0,0,0};
+std::array<double, 8> AyMeanOctant = {0,0,0,0,0,0,0,0};
+std::array<double, 8> StdevOctant = {0,0,0,0,0,0,0,0};
+
 void Process(double AxMean, double AyMean, double AxStdev, double AyStdev)
 {
    // For the sensor at rest, we expect that the s.d. will be
@@ -78,15 +85,79 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev)
    if (AxStdev < StdevThreshold && AyStdev < StdevThreshold)
    {
       std::cout << "Got a good sample.\n";
-   }
 
-   std::cout << "\nXaccel = " << AxMean << " +- " << AxStdev
-             << "\nYaccel = " << AyMean << " +- " << AyStdev
-             << std::endl;
+      // get the angle.  Theta=0 is vertical.  In the polarity +1 sense,
+      // when the sensor box is facing you, an anticlockwise rotation increases the angle.
+      double Theta = std::atan2(AxMean, -AyMean);
+
+      double ThetaDeg = Theta*180/pi;
+
+      // round to nearest 45 degrees
+      int Octant = int(std::round(ThetaDeg / 45));
+
+      double ThetaError = std::abs(ThetaDeg - Octant*45);
+
+      if (ThetaError > 10)
+      {
+         std::cout << "Angle is not close to canonical.\n";
+         return;
+      }
+
+      // normalize octant
+      if (Octant < 0) Octant += 8;
+
+      double TotalStdev = std::hypot(AxStdev, AyStdev);
+      if (StdevOctant[Octant] == 0 || TotalStdev < StdevOctant[Octant])
+      {
+         std::cout << "Got a sample at angle " << Octant*45 << '\n'
+                   << "\nXaccel = " << AxMean << " stdev " << AxStdev
+                   << "\nYaccel = " << AyMean << " stedv " << AyStdev
+                   << '\n';
+         // update the record
+         AxMeanOctant[Octant] = AxMean;
+         AyMeanOctant[Octant] = AyMean;
+         StdevOctant[Octant] = TotalStdev;
+      }
+   }
+   else
+   {
+      std::cout << "stdev is too big " << AxStdev << ' ' << AyStdev << '\n';
+   }
 }
 
-   // get the approximate angle
-//   double Theta = std::atan2(AyMean, AxMean);
+void SolveCalibrationParameters()
+{
+   Eigen::MatrixXf A(6,16);
+   Eigen::VectorXf b(16);
+
+   for (int i = 0; i < 8; ++i)
+   {
+      A(i*2, 0) = AxMeanOctant[0];
+      A(i*2, 1) = AyMeanOctant[0];
+      A(i*2, 2) = 0.0;
+      A(i*2, 3) = 0.0;
+      A(i*2, 4) = 1.0;
+      A(i*2, 5) = 0.0;
+
+      b[i*2] = std::sin(i*pi/4.0);
+
+      A(i*2+1, 0) = 0.0;
+      A(i*2+1, 1) = 0.0;
+      A(i*2+1, 2) = AxMeanOctant[0];
+      A(i*2+1, 3) = AyMeanOctant[0];
+      A(i*2+1, 4) = 0.0;
+      A(i*2+1, 5) = 1.0;
+
+      b[i*2] = std::cos(i*pi/4.0);
+   }
+
+   Eigen::VectorXf x = A.bdcSvd(Eigen::ComputeThinU | Eigen::ComputeThinV).solve(b);
+
+   std::cout << "Matrix is\n"
+             << x[0] << ' ' << x[1] << '\n'
+             << x[2] << ' ' << x[3] << '\n'
+             << "Offset is " << x[4] << " , " << x[5] << '\n';
+}
 
 int main(int argc, char** argv)
 {
@@ -223,6 +294,17 @@ int main(int argc, char** argv)
 
                AxVec.clear();
                AyVec.clear();
+
+               bool Complete = false;
+               for (auto x : StdevOctant)
+               {
+                  if (x == 0)
+                     Complete = false;
+               }
+               if (Complete)
+               {
+                  SolveCalibrationParameters();
+               }
             }
          }
       }
