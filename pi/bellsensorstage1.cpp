@@ -252,9 +252,9 @@ int main(int argc, char** argv)
    //
 
    // in this format, pipes 0,5,10 worked
-   //Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
+   Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
    Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
-   //   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
+   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
 
    // channel 76 pipe 0, channel 82 pipe 1, channel 70 pipe 2
 
