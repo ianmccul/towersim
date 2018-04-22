@@ -87,11 +87,13 @@ LIBS_gyrofit-reader =  -lboost_program_options
 
 LIBS_bellsensor-accel-average =  -lboost_program_options
 
+LIBS_calibrate-accel =  -lboost_program_options
+
 stage1 = bellsensorstage1 bellsensorstage1-log bellsensorstage1-viewer
 
-stage2 = bellsensorstage2 bellsensorstage2-viewer bellsensor-accel-average
+stage2 = bellsensorstage2 bellsensorstage2-viewer
 
-stage3 = gyrofit-daemon gyrofit-reader
+stage3 = gyrofit-daemon gyrofit-reader bellsensor-accel-average calibrate-accel
 
 LIBS_bellsensorstage2 = -lboost_program_options
 
