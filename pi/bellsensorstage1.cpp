@@ -251,13 +251,13 @@ int main(int argc, char** argv)
    // configure the radios
    //
 
-   //   Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
-   //   Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
-   //   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
+   Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
+   Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
+   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
 
-   Radios.push_back(Radio(4 , 0, 1, 70, 0xe7e7e7e7e7ULL));
-   Radios.push_back(Radio(22, 0, 0, 76, 0x0f0f0f0fe7ULL));
-   Radios.push_back(Radio(18, 1, 1, 82, 0x7e7e7ef0e7ULL));
+   //   Radios.push_back(Radio(4 , 0, 1, 70, 0xe7e7e7e7e7ULL));
+   //   Radios.push_back(Radio(22, 0, 0, 76, 0x0f0f0f0fe7ULL));
+   //   Radios.push_back(Radio(18, 1, 1, 82, 0x7e7e7ef0e7ULL));
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
