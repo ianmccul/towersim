@@ -268,8 +268,8 @@ int main(int argc, char** argv)
 
    // in this format, pipe 9 works.  That is radio on cs 4, pipe 2
    Radios.push_back(Radio(22, 0, 0, 70, 0xe7e7e7e7e7ULL));
-   Radios.push_back(Radio(18, 1, 1, 76, 0x0f0f0f0fe7ULL));
-   Radios.push_back(Radio(4 , 0, 1, 82, 0x7e7e7ef0e7ULL));
+   //   Radios.push_back(Radio(18, 1, 1, 76, 0x0f0f0f0fe7ULL));
+   //   Radios.push_back(Radio(4 , 0, 1, 82, 0x7e7e7ef0e7ULL));
 
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
