@@ -327,7 +327,6 @@ int main(int argc, char** argv)
          uint8_t PipeNum = 0;
          if (r.Available(&PipeNum))
          {
-            std::cout << int(PipeNum) << '\n';
             if (PipeNum > 3)  // PipeNum of 7 also indicates RX_FIFO is empty.
             {
                Log << "Pipe not available on radio " << i << " time " << get_time() << std::endl;
