@@ -98,12 +98,6 @@ class Radio
       // sets the pipe number.
       bool Available(uint8_t* Pipe);
 
-      void Debug()
-      {
-         radio.printDetails();
-         //radio.print_status(radio.get_status());
-      }
-
       // returns the payload size
       int PayloadSize();
 
@@ -257,22 +251,9 @@ int main(int argc, char** argv)
    // configure the radios
    //
 
-   // in this format, pipes 0,5,10 worked
-   //Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
-   //Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
-   //Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
-
-   // channel 76 pipe 0, channel 82 pipe 1, channel 70 pipe 2
-
-   // In this format, pipes 2,4,9 worked
-
-   // in this format, pipe 9 works.  That is radio on cs 4, pipe 2
-
-   // devices connected to this one
-   Radios.push_back(Radio(22, 0, 0, 70, 0xe7e7e7e7e7ULL));
-
-   Radios.push_back(Radio(4 , 0, 1, 82, 0x7e7e7ef0e7ULL));
-
+   Radios.push_back(Radio(4 , 0, 1, 76, 0xe7e7e7e7e7ULL));
+   Radios.push_back(Radio(22, 0, 0, 82, 0x0f0f0f0fe7ULL));
+   Radios.push_back(Radio(18, 1, 1, 70, 0x7e7e7ef0e7ULL));
 
    //   Radios.push_back(Radio(18, 1, 1, 76, 0x0f0f0f0fe7ULL));
 
@@ -341,8 +322,6 @@ int main(int argc, char** argv)
       for (unsigned i = 0; i < Radios.size(); ++i)
       {
          Radio& r = Radios[i];
-
-         r.Debug();
 
          // check for data on the radio
          uint8_t PipeNum = 0;

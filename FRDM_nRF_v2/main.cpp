@@ -700,7 +700,7 @@ int main()
 
    PTX.Initialize();
    PTX.SetDataRate(2000);
-   PTX.SetDestinationAddress(PipeAddrs[Addr][Channel]);
+   PTX.SetDestinationAddress(PipeAddrs[Channel][Addr]);
    PTX.SetChannel(Channels[Channel]);
    Device.set_retransmit_attempts(0);
    Device.set_crc_width(2);
