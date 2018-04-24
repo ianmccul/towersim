@@ -74,17 +74,19 @@ std::array<double, 8> AxMeanOctant = {0,0,0,0,0,0,0,0};
 std::array<double, 8> AyMeanOctant = {0,0,0,0,0,0,0,0};
 std::array<double, 8> StdevOctant = {0,0,0,0,0,0,0,0};
 
-void Process(double AxMean, double AyMean, double AxStdev, double AyStdev)
+void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolUse)
 {
    // For the sensor at rest, we expect that the s.d. will be
-   // 126 micro g per sqrt(bandwidth).  Bandwidth is output rate / 2.5 so
-   // expect the standard deviation is 8e-4 g.
+   // 99 micro g per sqrt(bandwidth) in low noise mode.  
+   // Bandwidth is output rate / (something from 2 to 3), 
+   // worst case 3, so expect standard deviation to be around 7e-4.
+   // But this is typical, there is no rated maximum on the noise density.
 
    double StdevThreshold = 8e-4;
 
    if (AxStdev < StdevThreshold && AyStdev < StdevThreshold)
    {
-      std::cout << "Got a good sample.\n";
+      std::cout << "Got a good sample,";
 
       // get the angle.  Theta=0 is vertical.  In the polarity +1 sense,
       // when the sensor box is facing you, an anticlockwise rotation increases the angle.
@@ -113,6 +115,16 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev)
                    << "\nXaccel = " << AxMean << " stdev " << AxStdev
                    << "\nYaccel = " << AyMean << " stedv " << AyStdev
                    << '\n';
+
+	 if (Use)
+	 {
+	    std::cout << "Using sample. " << std::endl;
+	    if (StdevOctant[Octant] != 0)
+	    {
+	       std::cout << "This sample has stdev " << TotalStdev << " replaces previous sample "
+			 << "with stdev " << StdevOctant[Octant] << std::endl;
+	    }
+	 }
          // update the record
          AxMeanOctant[Octant] = AxMean;
          AyMeanOctant[Octant] = AyMean;
