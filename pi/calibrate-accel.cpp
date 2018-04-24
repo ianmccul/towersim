@@ -86,8 +86,6 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolU
 
    if (AxStdev < StdevThreshold && AyStdev < StdevThreshold)
    {
-      std::cout << "Got a good sample,";
-
       // get the angle.  Theta=0 is vertical.  In the polarity +1 sense,
       // when the sensor box is facing you, an anticlockwise rotation increases the angle.
       double Theta = std::atan2(AxMean, -AyMean);
@@ -109,12 +107,9 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolU
       if (Octant < 0) Octant += 8;
 
       double TotalStdev = std::hypot(AxStdev, AyStdev);
-      if (StdevOctant[Octant] == 0 || TotalStdev < StdevOctant[Octant])
-      {
-         std::cout << "Got a sample at angle " << Octant*45 << '\n'
-                   << "\nXaccel = " << AxMean << " stdev " << AxStdev
-                   << "\nYaccel = " << AyMean << " stedv " << AyStdev
-                   << '\n';
+
+      std::cout << "Got a good sample at angle " << Octant*45 << " stdev " << TotalStdev
+		<< std::endl;
 
 	 if (Use)
 	 {
@@ -124,11 +119,15 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolU
 	       std::cout << "This sample has stdev " << TotalStdev << " replaces previous sample "
 			 << "with stdev " << StdevOctant[Octant] << std::endl;
 	    }
+
+	    std::cout MM << "\nXaccel = " << AxMean << " stdev " << AxStdev
+			 << "\nYaccel = " << AyMean << " stedv " << AyStdev
+			 << std::endl;
+	    // update the record
+	    AxMeanOctant[Octant] = AxMean;
+	    AyMeanOctant[Octant] = AyMean;
+	    StdevOctant[Octant] = TotalStdev;
 	 }
-         // update the record
-         AxMeanOctant[Octant] = AxMean;
-         AyMeanOctant[Octant] = AyMean;
-         StdevOctant[Octant] = TotalStdev;
       }
    }
    else
