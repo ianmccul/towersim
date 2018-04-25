@@ -306,7 +306,7 @@ int main(int argc, char** argv)
                bool Use = kbhit();
                if (Use)
                {
-                  char c readch();
+                  char c = readch();
                   if (c == '\r')
                      return;
                   else std::cout << int(c) << '\n';
