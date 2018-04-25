@@ -20,6 +20,7 @@
 #include "common/matvec/matvec.h"
 #include "common/prog_opt_accum.h"
 #include "common/trace.h"
+#include <boost/circular_buffer.hpp>
 
 namespace prog_opt = boost::program_options;
 
@@ -27,7 +28,11 @@ constexpr float pi = M_PI;
 
 constexpr float AxScale = 1670.7;
 constexpr float AyScale = 1670.7;
-constexpr int AccelNumSamples = 1;
+constexpr int AccelNumSamples = 100;
+
+// standard deviation of the accelerometer when stationary.
+// Theoretical value is 31.74
+constexpr float AccelStdevThreshold = 33.0;
 
 // for output
 struct MsgTypes
@@ -122,8 +127,7 @@ std::array<int, 16> LastBufSize{};
 // maximum swing values that are still considered to be zero
 int const GyroZeroMaxDeviation = 80;
 
-int16_t const AccelMaxDeviation = 40;
-int const AccelRequredSamples = 100;
+// TODO: Use the max deviation as a rough criteria, also look at the variance and fix this bound.
 
 // number of samples required that satisfy GyroZeroMaxDeviation
 // to count as a successful zero calibration
@@ -239,9 +243,6 @@ class GyroProcessor
    private:
       void ProcessPacket(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t z);
 
-      // returns true if we need to clear the accel data
-      bool PreprocessAccel(int16_t Ax, int16_t Ay);
-
       int Bell;
 
       int16_t GyroMin, GyroMax;
@@ -265,14 +266,7 @@ class GyroProcessor
 
       uint64_t StreamStartTime;
 
-      int16_t AxMin;
-      int16_t AxMax;
-      int16_t AyMin;
-      int16_t AyMax;
-
-      int32_t AxAccumulator;
-      int32_t AyAccumulator;
-      int AccelCount;
+      boost::circular_buffer<std::pair<int16_t, int16_t>> AccelBuffer;
 };
 
 GyroProcessor::GyroProcessor(int Bell_)
@@ -290,69 +284,69 @@ GyroProcessor::GyroProcessor(int Bell_)
 
      LastPacketTime(0),
      LastSeqNum(0),
-     StreamStartTime(0)
+     StreamStartTime(0),
+
+     AccelBuffer(AccelNumSamples+10)
 {
 }
 
 void GyroProcessor::ProcessAccel(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t Ax, int16_t Ay)
 {
-   if (PreprocessAccel(Ax, Ay))
+   if (!GyroSteady)
    {
-      AccelCount = 0;
-      AxAccumulator = 0;
-      AyAccumulator = 0;
-      AxMin = INT16_MAX;
-      AxMax = INT16_MIN;
-      AyMin = INT16_MAX;
-      AyMax = INT16_MIN;
+      AccelBuffer.clear();
+      return;
    }
-   else
+
+   AccelBuffer.push_back(std::make_pair(Ax, Ay));
+
+   if (AccelBuffer.size() >= AccelNumSamples)
    {
-      if (AccelCount >= AccelNumSamples)
+      int32_t x = 0, y = 0;
+      int64_t x2 = 0, y2 = 0;
+      for (auto const& c : AccelBuffer)
       {
-         float Axc = SensorFromBell[Bell].AccelTransformation[0][0]*(AxAccumulator/(AxScale*AccelCount))
-            + SensorFromBell[Bell].AccelTransformation[0][1]*(AyAccumulator/(AyScale*AccelCount))
+         x += c.first;
+         y += c.second;
+         x2 += int32_t(x)*int32_t(x);
+         y2 += int32_t(y)*int32_t(y);
+      }
+
+      float XStdev = float(x2) / AccelBuffer.size();
+      float YStdev = float(y2) / AccelBuffer.size();
+      float AX = float(x) / AccelBuffer.size();
+      float AY = float(y) / AccelBuffer.size();
+
+      if (XStdev < AccelStdevThreshold && YStdev < AccelStdevThreshold)
+      {
+         float Axc = SensorFromBell[Bell].AccelTransformation[0][0]*(AX/AxScale)
+            + SensorFromBell[Bell].AccelTransformation[0][1]*(AY/AyScale)
             + SensorFromBell[Bell].AccelOffset[0];
-         float Ayc = SensorFromBell[Bell].AccelTransformation[1][0]*(AxAccumulator/(AxScale*AccelCount))
-            + SensorFromBell[Bell].AccelTransformation[1][1]*(AyAccumulator/(AyScale*AccelCount))
+         float Ayc = SensorFromBell[Bell].AccelTransformation[1][0]*(AX/AxScale)
+            + SensorFromBell[Bell].AccelTransformation[1][1]*(AY/AyScale)
             + SensorFromBell[Bell].AccelOffset[1];
 
-         float Theta = atan2(-Axc, -Ayc)*SensorFromBell[Bell].Polarity*180/pi - SensorFromBell[Bell].AccelBDC;
+         // Flip the signs if we have the opposite polarity, this amounts
+         // to adding 180 degrees to the angle, on the assimption that polarity -1
+         // has the sensor power button facing the same way, but on the other side of the bell.
+         // We also need to negate the angle (which is the real effect of the polarity).
+         Axc *= SensorFromBell[Bell].Polarity;
+         Ayc *= SensorFromBell[Bell].Polarity;
+         float Theta = atan2(Axc, Ayc)*SensorFromBell[Bell].Polarity*180/pi - SensorFromBell[Bell].AccelBDC;
 
          // normalize Theta to [-180,180]
          Theta = std::fmod(std::fmod(Theta+180, 360)+720, 360)-180;
 
          WriteAngleMsg(WriteToFile, Clients, Time, Bell, Theta);
 
-         AccelCount = 0;
-         AxAccumulator = 0;
-         AyAccumulator = 0;
-         AxMin = INT16_MAX;
-         AxMax = INT16_MIN;
-         AyMin = INT16_MAX;
-         AyMax = INT16_MIN;
+         AccelBuffer.clear();
+      }
+      else
+      {
+         while (AccelBuffer.size() > AccelNumSamples)
+            AccelBuffer.pop_front();
       }
    }
-}
-
-bool GyroProcessor::PreprocessAccel(int16_t Ax, int16_t Ay)
-{
-   //   if (!GyroSteady)
-   //      return true;
-
-   AxMin = std::min(AxMin, Ax);
-   AxMax = std::max(AxMax, Ax);
-   AyMin = std::min(AyMin, Ay);
-   AyMax = std::max(AyMax, Ay);
-
-   //   if (std::abs(AxMax-AxMin) > AccelMaxDeviation || std::abs(AxMax-AxMin) > AccelMaxDeviation)
-   //      return true;
-
-   ++AccelCount;
-   AxAccumulator += Ax;
-   AyAccumulator += Ay;
-
-   return false;
 }
 
 void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t z)
