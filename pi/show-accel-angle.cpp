@@ -28,7 +28,7 @@ int main(int argc, char** argv)
    double last_gyro = -1000;
    while (std::cin >> Time >> ax >> ay)
    {
-      std::tie(ax, ay) = Correction(ax, -ay);
+      std::tie(ax, ay) = Correction(-ax, -ay);
       std::cout << Time << ' ' << std::atan2(ax,ay) * 180.0 / M_PI << std::endl;
    }
 }

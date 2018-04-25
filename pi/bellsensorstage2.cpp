@@ -23,6 +23,12 @@
 
 namespace prog_opt = boost::program_options;
 
+constexpr float pi = M_PI;
+
+constexpr float AxScale = 1670.7;
+constexpr float AyScale = 1670.7;
+constexpr int AccelNumSamples = 1;
+
 // for output
 struct MsgTypes
 {
@@ -53,6 +59,9 @@ struct MsgTypes
 
    static unsigned char const BellAvail = 'E';
    // no payload required
+
+   static unsigned char const AccelAngle = 'X';
+   // float angle
 };
 
 void WriteMsgToClients(bool WriteToFile, std::set<int>& Clients, unsigned char const* Buf, int Sz)
@@ -61,8 +70,8 @@ void WriteMsgToClients(bool WriteToFile, std::set<int>& Clients, unsigned char c
    {
       int fd = *Clients.begin();
       uint8_t len = Sz;
-      write(fd, &len, 1);
-      write(fd, Buf, Sz);
+      int r = write(fd, &len, 1);
+      r = write(fd, Buf, Sz);
    }
    else
    {
@@ -112,6 +121,9 @@ std::array<int, 16> LastBufSize{};
 
 // maximum swing values that are still considered to be zero
 int const GyroZeroMaxDeviation = 80;
+
+int16_t const AccelMaxDeviation = 40;
+int const AccelRequredSamples = 100;
 
 // number of samples required that satisfy GyroZeroMaxDeviation
 // to count as a successful zero calibration
@@ -195,6 +207,16 @@ void WriteAccelMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int B
    WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+4+4);
 }
 
+void WriteAngleMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float Theta)
+{
+   unsigned char Buf[100];
+   std::memcpy(Buf, &Time, sizeof(Time));
+   *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
+   Buf[9] = MsgTypes::AccelAngle;
+   std::memcpy(Buf+10, &Theta, sizeof(Theta));
+   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+4);
+}
+
 void WriteBellAvailMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int8_t Bell)
 {
    unsigned char Buf[100];
@@ -212,8 +234,13 @@ class GyroProcessor
       void ProcessStream(bool WriteToFile, std::set<int>& Clients, int64_t Time, uint8_t SeqNum,
                          std::vector<int16_t> const& GyroMeasurements, uint16_t GyroSampleNumber);
 
+      void ProcessAccel(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t Ax, int16_t Ay);
+
    private:
       void ProcessPacket(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t z);
+
+      // returns true if we need to clear the accel data
+      bool PreprocessAccel(int16_t Ax, int16_t Ay);
 
       int Bell;
 
@@ -229,6 +256,8 @@ class GyroProcessor
 
       bool GyroHasZeroCalibration;
 
+      // true if the gyro is reading close to zero
+      bool GyroSteady;
 
       int64_t LastPacketTime;
       static float constexpr GyroDelta = 1e6 / 760.0;
@@ -236,6 +265,14 @@ class GyroProcessor
 
       uint64_t StreamStartTime;
 
+      int16_t AxMin;
+      int16_t AxMax;
+      int16_t AyMin;
+      int16_t AyMax;
+
+      int32_t AxAccumulator;
+      int32_t AyAccumulator;
+      int AccelCount;
 };
 
 GyroProcessor::GyroProcessor(int Bell_)
@@ -249,11 +286,73 @@ GyroProcessor::GyroProcessor(int Bell_)
      GyroOffsetNext(0.0),
      GyroOffset(0.0),
      GyroHasZeroCalibration(false),
+     GyroSteady(false),
 
      LastPacketTime(0),
      LastSeqNum(0),
      StreamStartTime(0)
 {
+}
+
+void GyroProcessor::ProcessAccel(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t Ax, int16_t Ay)
+{
+   if (PreprocessAccel(Ax, Ay))
+   {
+      AccelCount = 0;
+      AxAccumulator = 0;
+      AyAccumulator = 0;
+      AxMin = INT16_MAX;
+      AxMax = INT16_MIN;
+      AyMin = INT16_MAX;
+      AyMax = INT16_MIN;
+   }
+   else
+   {
+      if (AccelCount >= AccelNumSamples)
+      {
+         float Axc = SensorFromBell[Bell].AccelTransformation[0][0]*(AxAccumulator/(AxScale*AccelCount))
+            + SensorFromBell[Bell].AccelTransformation[0][1]*(AyAccumulator/(AyScale*AccelCount))
+            + SensorFromBell[Bell].AccelOffset[0];
+         float Ayc = SensorFromBell[Bell].AccelTransformation[1][0]*(AxAccumulator/(AxScale*AccelCount))
+            + SensorFromBell[Bell].AccelTransformation[1][1]*(AyAccumulator/(AyScale*AccelCount))
+            + SensorFromBell[Bell].AccelOffset[1];
+
+         float Theta = atan2(-Axc, -Ayc)*SensorFromBell[Bell].Polarity*180/pi - SensorFromBell[Bell].AccelBDC;
+
+         // normalize Theta to [-180,180]
+         Theta = std::fmod(std::fmod(Theta+180, 360)+720, 360)-180;
+
+         WriteAngleMsg(WriteToFile, Clients, Time, Bell, Theta);
+
+         AccelCount = 0;
+         AxAccumulator = 0;
+         AyAccumulator = 0;
+         AxMin = INT16_MAX;
+         AxMax = INT16_MIN;
+         AyMin = INT16_MAX;
+         AyMax = INT16_MIN;
+      }
+   }
+}
+
+bool GyroProcessor::PreprocessAccel(int16_t Ax, int16_t Ay)
+{
+   //   if (!GyroSteady)
+   //      return true;
+
+   AxMin = std::min(AxMin, Ax);
+   AxMax = std::max(AxMax, Ax);
+   AyMin = std::min(AyMin, Ay);
+   AyMax = std::max(AyMax, Ay);
+
+   //   if (std::abs(AxMax-AxMin) > AccelMaxDeviation || std::abs(AxMax-AxMin) > AccelMaxDeviation)
+   //      return true;
+
+   ++AccelCount;
+   AxAccumulator += Ax;
+   AyAccumulator += Ay;
+
+   return false;
 }
 
 void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t z)
@@ -268,9 +367,11 @@ void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int6
       GyroAccumulator = 0;
       GyroCount = 0;
       GyroOffsetPending = false;
+      GyroSteady = false;
    }
    else if (GyroOffsetPending)
    {
+      GyroSteady = true;
       ++GyroLagCount;
       if (GyroLagCount >= GyroZeroLagSamples)
       {
@@ -295,6 +396,7 @@ void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int6
    }
    else
    {
+      GyroSteady = true;
       GyroAccumulator += z;
       ++GyroCount;
       if (GyroCount >= GyroZeroRequiredSamples)
@@ -362,7 +464,7 @@ int main(int argc, char** argv)
    {
       std::string InFile;
       std::string OutFile;
-      int Verbose;
+      int Verbose = 0;
 
       prog_opt::options_description desc("Allowed options");
       desc.add_options()
@@ -525,8 +627,8 @@ int main(int argc, char** argv)
          uint8_t len;
          if (ReadFromFile)
          {
-            read(infd, &len, 1);
-            int r = read(infd, buf, len);
+            int r = read(infd, &len, 1);
+            r = read(infd, buf, len);
             if (r != len)
             {
                perror("Error reading from file");
@@ -714,9 +816,11 @@ int main(int argc, char** argv)
             std::memcpy(AccelMeasurements.data(), buf+19, NumAccel*4);
             for (int i = 0; i < NumAccel; ++i)
             {
-               float Ax = (AccelMeasurements[i*2+0] - SensorFromBell[Bell].AXOffset) / SensorFromBell[Bell].AXScale;
-               float Ay = (AccelMeasurements[i*2+1] - SensorFromBell[Bell].AYOffset) / SensorFromBell[Bell].AYScale;
-               WriteAccelMsg(WriteToFile, Clients, Time-Delay, Bell, Ax, Ay);
+               int16_t Ax = AccelMeasurements[i*2];
+               int16_t Ay = AccelMeasurements[i*2+1];
+               WriteAccelMsg(WriteToFile, Clients, Time-Delay, Bell, Ax/AxScale, Ay/AyScale);
+
+               GyroList[Bell].ProcessAccel(WriteToFile, Clients, Time-Delay, Ax, Ay);
             }
          }
       }

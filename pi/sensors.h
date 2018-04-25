@@ -35,10 +35,9 @@ struct SensorInfoType
    double GyroScale;
    double GyroQuadratic;
 
-   double AXScale;
-   double AYScale;
-   double AXOffset;
-   double AYOffset;
+   std::vector<std::vector<double>> AccelTransformation;
+   std::vector<double> AccelOffset;
+   double AccelBDC;
 };
 
 // The SensorInfo indexed by bell number

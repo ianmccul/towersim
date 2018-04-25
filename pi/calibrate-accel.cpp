@@ -178,7 +178,7 @@ int main(int argc, char** argv)
    try
    {
       std::string InFile;
-      int RunLength = 100;
+      int RunLength = 200;  // number of samples to average over
       int WhichBell = 0;
 
       prog_opt::options_description desc("Allowed options");

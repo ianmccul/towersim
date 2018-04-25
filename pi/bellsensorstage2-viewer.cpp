@@ -24,6 +24,7 @@ struct MsgTypes
    static unsigned char const BatteryV = 'B';
    static unsigned char const Accel = 'A';
    static unsigned char const BellAvail = 'E';
+   static unsigned char const AccelAngle = 'X';
 };
 
 int main(int argc, char** argv)
@@ -175,6 +176,12 @@ int main(int argc, char** argv)
          else if (MsgType == MsgTypes::BellAvail)
          {
             std::cout << Time << ' ' << Bell << " E" << '\n';
+         }
+         else if (MsgType == MsgTypes::AccelAngle)
+         {
+            float Theta;
+            std::memcpy(&Theta, buf+10, sizeof(Theta));
+            std::cout << Time << ' ' << Bell << " X " << Theta << '\n';
          }
          else
          {
