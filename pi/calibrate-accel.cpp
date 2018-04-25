@@ -308,7 +308,7 @@ int main(int argc, char** argv)
                {
                   char c = readch();
                   if (c == '\r')
-                     return;
+                     return 0;
                   else std::cout << int(c) << '\n';
                }
 
