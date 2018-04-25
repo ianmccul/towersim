@@ -139,7 +139,7 @@ bool Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
 
 void SolveCalibrationParameters()
 {
-   Eigen::MatrixXf A(6,16);
+   Eigen::MatrixXf A(16,6);
    Eigen::VectorXf b(16);
 
    for (int i = 0; i < 8; ++i)
