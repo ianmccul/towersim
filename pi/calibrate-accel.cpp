@@ -74,7 +74,7 @@ std::array<double, 8> AxMeanOctant = {0,0,0,0,0,0,0,0};
 std::array<double, 8> AyMeanOctant = {0,0,0,0,0,0,0,0};
 std::array<double, 8> StdevOctant = {0,0,0,0,0,0,0,0};
 
-void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolUse)
+void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool Use)
 {
    // For the sensor at rest, we expect that the s.d. will be
    // 99 micro g per sqrt(bandwidth) in low noise mode.
