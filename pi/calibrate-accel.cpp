@@ -15,6 +15,7 @@
 #include <cassert>
 #include <cmath>
 #include <Eigen/Dense>
+#include "common/kbhit.h"
 
 /*
 Program to calculate an average of accelerometer readings, for calibration.  Uses the stage 2 data.
@@ -74,7 +75,7 @@ std::array<double, 8> AxMeanOctant = {0,0,0,0,0,0,0,0};
 std::array<double, 8> AyMeanOctant = {0,0,0,0,0,0,0,0};
 std::array<double, 8> StdevOctant = {0,0,0,0,0,0,0,0};
 
-void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool Use)
+bool Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool Use)
 {
    // For the sensor at rest, we expect that the s.d. will be
    // 99 micro g per sqrt(bandwidth) in low noise mode.
@@ -99,7 +100,7 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
       if (ThetaError > 10)
       {
          std::cout << "Angle is not close to canonical.\n";
-         return;
+         return false;
       }
 
       // normalize octant
@@ -126,12 +127,14 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
 	    AxMeanOctant[Octant] = AxMean;
 	    AyMeanOctant[Octant] = AyMean;
 	    StdevOctant[Octant] = TotalStdev;
+            return true;
 	 }
       }
    else
    {
       std::cout << "stdev is too big " << AxStdev << ' ' << AyStdev << '\n';
    }
+   return false;
 }
 
 void SolveCalibrationParameters()
@@ -170,6 +173,7 @@ void SolveCalibrationParameters()
 
 int main(int argc, char** argv)
 {
+   init_keyboard();
    try
    {
       std::string InFile;
@@ -299,7 +303,13 @@ int main(int argc, char** argv)
                double AxStdev = stdev(AxVec, AxMean);
                double AyStdev = stdev(AyVec, AyMean);
 
-               Process(AxMean, AyMean, AxStdev, AyStdev);
+               bool Use = kbhit();
+               if (Use)
+               {
+                  readch();
+               }
+
+               Process(AxMean, AyMean, AxStdev, AyStdev, Use);
 
                AxVec.clear();
                AyVec.clear();

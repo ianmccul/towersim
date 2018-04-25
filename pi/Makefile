@@ -87,6 +87,8 @@ LIBS_gyrofit-reader =  -lboost_program_options
 
 LIBS_bellsensor-accel-average =  -lboost_program_options
 
+calibrate-accel : kbhit.o
+
 LIBS_calibrate-accel =  -lboost_program_options
 
 stage1 = bellsensorstage1 bellsensorstage1-log bellsensorstage1-viewer
