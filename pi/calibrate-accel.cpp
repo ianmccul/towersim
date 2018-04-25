@@ -87,8 +87,9 @@ bool Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
    if (AxStdev < StdevThreshold && AyStdev < StdevThreshold)
    {
       // get the angle.  Theta=0 is vertical.  In the polarity +1 sense,
-      // when the sensor box is facing you, an anticlockwise rotation increases the angle.
-      double Theta = std::atan2(-AxMean, -AyMean);
+      // when the sensor box is facing you, an anticlockwise rotation increases the angle,
+      // with zero angle when the button is on the right hand side, power port on the left.
+      double Theta = std::atan2(AxMean, AyMean);
 
       double ThetaDeg = Theta*180/pi;
 
@@ -151,7 +152,7 @@ void SolveCalibrationParameters()
       A(i*2, 4) = 1.0;
       A(i*2, 5) = 0.0;
 
-      b[i*2] = -std::sin(i*pi/4.0);
+      b[i*2] = std::sin(i*pi/4.0);
 
       A(i*2+1, 0) = 0.0;
       A(i*2+1, 1) = 0.0;
@@ -160,7 +161,7 @@ void SolveCalibrationParameters()
       A(i*2+1, 4) = 0.0;
       A(i*2+1, 5) = 1.0;
 
-      b[i*2+1] = -std::cos(i*pi/4.0);
+      b[i*2+1] = std::cos(i*pi/4.0);
    }
 
    Eigen::VectorXf x(6);

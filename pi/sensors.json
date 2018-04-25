@@ -72,8 +72,8 @@
       "GyroScale" : 57.1429,
       "Polarity" : -1,
       "Bell" : 5,
-      "AccelTransformation" : [ [ 1.026667e-1, 1.951888e-4 ], [ -4.200339e-5, 1.025088e-1 ] ],
-      "AccelOffset" : [ 2.9487651e-3, -2.2330396e-2 ],
+      "AccelTransformation" : [ [ -1.026667e-1, -1.951888e-4 ], [ 4.200339e-5, -1.025088e-1 ] ],
+      "AccelOffset" : [ -2.9487651e-3, 2.2330396e-2 ],
       "AccelBDC" : -1.87
    },
    {
