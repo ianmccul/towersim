@@ -144,8 +144,8 @@ void SolveCalibrationParameters()
 
    for (int i = 0; i < 8; ++i)
    {
-      A(i*2, 0) = AxMeanOctant[0];
-      A(i*2, 1) = AyMeanOctant[0];
+      A(i*2, 0) = AxMeanOctant[i];
+      A(i*2, 1) = AyMeanOctant[i];
       A(i*2, 2) = 0.0;
       A(i*2, 3) = 0.0;
       A(i*2, 4) = 1.0;
@@ -155,8 +155,8 @@ void SolveCalibrationParameters()
 
       A(i*2+1, 0) = 0.0;
       A(i*2+1, 1) = 0.0;
-      A(i*2+1, 2) = AxMeanOctant[0];
-      A(i*2+1, 3) = AyMeanOctant[0];
+      A(i*2+1, 2) = AxMeanOctant[i];
+      A(i*2+1, 3) = AyMeanOctant[i];
       A(i*2+1, 4) = 0.0;
       A(i*2+1, 5) = 1.0;
 
