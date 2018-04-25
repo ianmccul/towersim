@@ -319,12 +319,21 @@ private:
    private slots:
       void readCommand()
       {
-         while (TimeOffset == 0 || get_time() > NextTime+TimeOffset)
+	if (TimeOffset == 0)
+	  {
+	    TimeOffset = 1;
+	    Epoch = get_time();
+	  }
+	int count = 0;
+         while (TimeOffset == 0 || get_time() > NextTime+TimeOffset && ++count < 2)
          {
             if (TimeOffset != 0)
                BellPos.theta = NextAngle*math_const::pi/180;
 
             std::cin >> NextTime >> NextAngle;
+
+	    //std::cout << "got something" << std::endl;
+	    std::cout << NextTime << ' ' <<  get_time() << std::endl;
 
             if (TimeOffset == 0)
             {
