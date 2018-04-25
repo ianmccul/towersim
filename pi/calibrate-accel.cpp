@@ -163,7 +163,8 @@ void SolveCalibrationParameters()
       b[i*2] = std::cos(i*pi/4.0);
    }
 
-   Eigen::VectorXf x = A.bdcSvd(Eigen::ComputeThinU | Eigen::ComputeThinV).solve(b);
+   Eigen::VectorXf x(6);
+   x = A.bdcSvd(Eigen::ComputeThinU | Eigen::ComputeThinV).solve(b);
 
    std::cout << "Matrix is\n"
              << x[0] << ' ' << x[1] << '\n'
@@ -307,7 +308,7 @@ int main(int argc, char** argv)
                if (Use)
                {
                   char c = readch();
-                  if (c == '\r')
+                  if (c == '\n')
                      return 0;
                   else std::cout << int(c) << '\n';
                }
@@ -326,6 +327,7 @@ int main(int argc, char** argv)
                if (Complete)
                {
                   SolveCalibrationParameters();
+                  return 0;
                }
                else if (Got)
                {
@@ -333,7 +335,7 @@ int main(int argc, char** argv)
                   for (int Octant = 0; Octant < 8; ++Octant)
                   {
                      if (StdevOctant[Octant] == 0)
-                        std::cout << ' ' << ((+4)%8-4)*45;
+                        std::cout << ' ' << ((Octant+4)%8-4)*45;
                   }
                   std::cout << std::endl;
                }
