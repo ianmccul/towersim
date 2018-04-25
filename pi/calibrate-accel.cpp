@@ -128,8 +128,7 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
 	    StdevOctant[Octant] = TotalStdev;
 	 }
       }
-   }
- else
+   else
    {
       std::cout << "stdev is too big " << AxStdev << ' ' << AyStdev << '\n';
    }
