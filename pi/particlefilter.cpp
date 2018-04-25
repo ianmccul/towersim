@@ -343,7 +343,7 @@ Particle::UpdateWeight(double v, double vWidth)
 
    // Default value for the force arbitarily chosen to be 200
    ForceOffset = 0;
-   ForceWidth = 300*pi/180;
+   ForceWidth = 500*pi/180;
    // if the velocity is bigger than 300, then we expect that the force will be small
    if (std::abs(v) > (1000.0*pi/180.0))  // this doesn't seem to work, probably needs better calibration
    {
