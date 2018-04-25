@@ -52,7 +52,11 @@
       "HandstrokeStay" : 187.88,
       "BackstrokeStay" : -187.16,
       "BackstrokeCutoff" : 217,
-      "HandstrokeCutoff" : 50
+      "HandstrokeCutoff" : 50,
+      "lb" : 0.640,
+      "kb" : 0.03,
+      "Y" : 240,
+      "StayFriction" : 0
    },
    {
       "Name" : "6",

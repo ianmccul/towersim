@@ -42,6 +42,48 @@ RungeKutta(double& x1, double& x2, F1 f1, F2 f2, double step)
    x2 += (k12 + 2*k22 + 2*k32 + k42)/6.0;
 }
 
+template <typename F1, typename F2, typename F3, typename F4>
+void
+RungeKutta(double& x1, double& x2, double& x3, double& x4, F1 f1, F2 f2, F3 f3, F4 f4, double step)
+{
+   double k11 = step*f1(x1,x2,x3,x4);
+   double k12 = step*f2(x1,x2,x3,x4);
+   double k13 = step*f3(x1,x2,x3,x4);
+   double k14 = step*f4(x1,x2,x3,x4);
+
+   double x11 = x1+0.5*k11;
+   double x12 = x2+0.5*k12;
+   double x13 = x3+0.5*k13;
+   double x14 = x4+0.5*k14;
+   double k21 = step*f1(x11, x12, x13, x14);
+   double k22 = step*f2(x11, x12, x13, x14);
+   double k23 = step*f3(x11, x12, x13, x14);
+   double k24 = step*f4(x11, x12, x13, x14);
+
+   double x21 = x1+0.5*k21;
+   double x22 = x2+0.5*k22;
+   double x23 = x3+0.5*k23;
+   double x24 = x4+0.5*k24;
+   double k31 = step*f1(x21, x22, x23, x24);
+   double k32 = step*f2(x21, x22, x23, x24);
+   double k33 = step*f3(x21, x22, x23, x24);
+   double k34 = step*f4(x21, x22, x23, x24);
+
+   double x31 = x1+k31;
+   double x32 = x2+k32;
+   double x33 = x3+k33;
+   double x34 = x4+k34;
+   double k41 = step*f1(x31, x32, x33, x34);
+   double k42 = step*f2(x31, x32, x33, x34);
+   double k43 = step*f3(x31, x32, x33, x34);
+   double k44 = step*f4(x31, x32, x33, x34);
+
+   x1 += (k11 + 2*k21 + 2*k31 + k41)/6.0;
+   x2 += (k12 + 2*k22 + 2*k32 + k42)/6.0;
+   x3 += (k13 + 2*k23 + 2*k33 + k43)/6.0;
+   x4 += (k14 + 2*k24 + 2*k34 + k44)/6.0;
+}
+
 // time-dependent case
 
 template <typename F>

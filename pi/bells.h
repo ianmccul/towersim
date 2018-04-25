@@ -35,6 +35,7 @@
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include "json.hpp"
 #include <set>
+#include <iostream>
 
 using json = nlohmann::json;
 
@@ -59,6 +60,7 @@ struct BellInfoType
    double      lb;
    double      kb;
    double      Y;
+   double      ks;
 
    boost::posix_time::time_duration HandstrokeDelay()
    {
@@ -69,6 +71,8 @@ struct BellInfoType
       return boost::posix_time::milliseconds(BackstrokeDelay_ms);
    }
 };
+
+std::ostream& operator<<(std::ostream& out, BellInfoType const& b);
 
 inline
 bool operator<(BellInfoType const& x, BellInfoType const& y)

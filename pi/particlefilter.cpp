@@ -14,6 +14,7 @@
 #include <cmath>
 #include <deque>
 #include "bells.h"
+#include "common/trace.h"
 
 timeval Epoch;
 
@@ -137,6 +138,8 @@ struct Particle
 
    double Theta;
    double Velocity;
+   double StayDeflection;
+   double StayVelocity;
    double Force;
 
    // sensor parameters
@@ -151,17 +154,14 @@ struct Particle
    double HandstrokeStay;
    double BackstrokeStay;
    double Y;
+   double k_s;
 
    double ForceOffset;
    double ForceWidth;
 
    double l_r() const { return WheelRadius * ThetaR; }
 
-   Particle(BellInfoType const& b, double t, double v, double f, double w = 1, double go = 0)
-      : Weight(w), Theta(t), Velocity(v), Force(f), GyroOffset(go),
-        ThetaR(to_rad(b.ThetaR)), WheelRadius(b.WheelRadius), l_b(b.lb), k_b(b.kb), Gamma(to_rad(b.Gamma)),
-        HandstrokeStay(to_rad(b.HandstrokeStay)), BackstrokeStay(to_rad(b.BackstrokeStay)),
-        Y(b.Y) {}
+   Particle(BellInfoType const& b, double t, double v, double f, double w = 1, double go = 0);
 
    // Some of the parameters are adjustable by the filter
    void Adjust_l_b();
@@ -191,6 +191,14 @@ std::ostream& operator<<(std::ostream& out, Particle const& p)
        << " Weight: " << p.Weight;
 }
 
+Particle::Particle(BellInfoType const& b, double t, double v, double f, double w, double go)
+   : Weight(w), Theta(t), Velocity(v), StayDeflection(0), StayVelocity(0), Force(f), GyroOffset(go),
+     ThetaR(to_rad(b.ThetaR)), WheelRadius(b.WheelRadius), l_b(b.lb), k_b(b.kb), Gamma(to_rad(b.Gamma)),
+     HandstrokeStay(b.HandstrokeStay), BackstrokeStay(b.BackstrokeStay),
+     Y(b.Y), k_s(b.ks)
+{
+}
+
 double
 Particle::VelocityDot(double theta, double velocity)
 {
@@ -215,19 +223,20 @@ Particle::VelocityDot(double theta, double velocity)
    // Force due to bell is -(g/(l_b+this->l_r()))*(sin(HandstrokeStay) + ThetaR)
    // at theta=HandstrokeStay, this is exactly balanced by the restoring force
    // (HandstrokeStayNoForce - HandstrokeStay) * Y
-   // Hence
-   double HandstrokeStayNoForce = (g/(l_b+this->l_r()))*(sin(HandstrokeStay) + ThetaR)/Y + HandstrokeStay;
+   // Adjust the raw positions of the stay to the Young's modulus
+   double hs = (g/(l_b+this->l_r()))*(sin(HandstrokeStay) + ThetaR)/Y + HandstrokeStay;
+   double bs = (g/(l_b+this->l_r()))*(sin(BackstrokeStay) - ThetaR)/Y + BackstrokeStay;
 
-   if (theta > HandstrokeStayNoForce)
+   if (theta > hs)
    {
-      VelocityDot -= (Theta - HandstrokeStayNoForce) * Y;
+      // restoring force and friction from the stay
+      VelocityDot -= (Theta - hs) * Y + velocity*k_s;
    }
    else
    {
-      double BackstrokeStayNoForce = (g/(l_b+this->l_r()))*(sin(BackstrokeStay) - ThetaR)/Y + BackstrokeStay;
-      if (theta < BackstrokeStayNoForce)
+      if (theta < bs)
       {
-         VelocityDot -= (-Theta + BackstrokeStayNoForce) * Y;
+         VelocityDot -= (-Theta + bs) * Y + velocity*k_s;
       }
    }
 
@@ -281,7 +290,8 @@ Particle::Evolve(double Timestep)
    // If the temperature is changing 1 degree in 10 minutes then this is a change of 0.04 in 10 minutes,
    // so a variance of (0.04)^2 / (10*60) per second
    // = 2.67e-6, so rate 0.0016 degrees per sqrt(t)
-   //GyroOffset += sqrt(Timestep) * (0.0016 * pi / 180) * randutil::randn();// * 10;
+
+   GyroOffset += sqrt(Timestep) * (0.01 * pi / 180) * randutil::randn();
 
    // Put some noise on theta - if this is too small then we can't correct without
    // crazy forces.
@@ -295,7 +305,7 @@ Particle::Evolve(double Timestep)
    // Theta += std::sqrt(Timestep) * 1 * (pi / 180.0) * randutil::randn();
 
    // IDEA: adjust the force to compensate when we adjust theta.
-   double ThetaAdjust = std::sqrt(Timestep) * 0.02 * (pi / 180.0) * randutil::randn();
+   double ThetaAdjust = std::sqrt(Timestep) * 0.08 * (pi / 180.0) * randutil::randn();
    double OldForce = this->VelocityDot(Theta, Velocity);
    Theta += ThetaAdjust;
    Force = 0;
@@ -319,8 +329,10 @@ Particle::Evolve(double Timestep)
    constexpr int N = 1;
    for (int i = 0; i < N; ++i)
    {
-      RungeKutta(Theta, Velocity, [this](double t, double v){return this->ThetaDot(t,v);},
-                 [this](double t, double v){return this->VelocityDot(t,v);}, Timestep/N);
+      RungeKutta(Theta, Velocity,
+                 [this](double t, double v){return this->ThetaDot(t,v);},
+                 [this](double t, double v){return this->VelocityDot(t,v);},
+                 Timestep/N);
    }
 }
 
@@ -329,7 +341,6 @@ Particle::UpdateWeight(double v, double vWidth)
 {
    double RelWeight = NormalPDF(Velocity, vWidth, v-GyroOffset);
 
-#if 0
    // Default value for the force arbitarily chosen to be 200
    ForceOffset = 0;
    ForceWidth = 300*pi/180;
@@ -338,61 +349,8 @@ Particle::UpdateWeight(double v, double vWidth)
    {
       ForceWidth = 50*pi/180;
    }
-#endif
-
-#if 0
-   // filter function for the force width
-   double FilterMax = 300*pi/180;
-   double FilterCorner = 40*pi/180;
-   double FilterCutoff = 300*pi/180;
-   double b = FilterCutoff*FilterCorner / (FilterMax-FilterCorner);
-   ForceWidth = b*FilterMax / (b + std::abs(v));
-#endif
-
-   double Offset = to_rad(11);
-
-   // gaussian for forces > 0 (which are unphysical),
-   // uniform for forces < 0
-   double Above = 5*pi/180;
-   double Below = 100*pi/180;
-   if (Force > Offset)
-   {
-      RelWeight *= NormalPDF(Force, Above, Offset);
-   }
-   else
-   {
-      RelWeight *= (NormalPDF(Force, Below, Offset) / NormalPDF(Offset, Below, Offset)) * NormalPDF(Offset, Above, Offset);
-   }
-
-#if 0
-#if 0
-   // if we're over the balance?
-   if (Theta > pi || Theta < -pi)
-   {
-      ForceOffset = (g/l_b)*sin(Theta) / RopeToBell(Gamma, Theta);
-   }
-   // If we're against the stay
-   if (std::abs(v) < 2*pi/180)
-   {
-      if (std::abs(Theta - HandstrokeStay) < 2*pi/180)
-      {
-         ForceOffset = (g/(l_b))*sin(HandstrokeStay) / RopeToBell(Gamma, Theta);
-         ForceWidth = 2*std::abs(ForceOffset);
-      }
-      else if (std::abs(Theta - BackstrokeStay) < 2*pi/180)
-      {
-         ForceOffset = (g/(l_b))*sin(BackstrokeStay) / RopeToBell(Gamma, Theta);
-         ForceWidth = 2*std::abs(ForceOffset);
-      }
-   }
 
    RelWeight *= NormalPDF(Force, ForceWidth, ForceOffset);
-#else
-   ForceOffset = 0;
-   ForceWidth = 50*pi/180;
-   RelWeight *= NormalPDF(Force, ForceWidth, ForceOffset);
-#endif
-#endif
 
    Weight *= RelWeight;
    //   std::cout << Weight << std::endl;
@@ -509,7 +467,7 @@ void Initialize(BellInfoType const& b)
    {
       FilterState.push_back(Particle(b, 0, 0, 1, 0));
    }
-         //   FilterState = CreateRandomParticles(b, NumParticles);
+   FilterState = CreateRandomParticles(b, NumParticles);
    Bell = b;
 }
 
@@ -584,8 +542,8 @@ double stdev(V const& v, double mean)
    return std::sqrt(sumsq / (v.size()-1));
 }
 
-//bool Adjust_l_b = true;
-bool Adjust_l_b = false;
+bool Adjust_l_b = true;
+//bool Adjust_l_b = false;
 
 //bool Adjust_Friction = true;
 bool Adjust_Friction = false;
@@ -654,10 +612,15 @@ void Process(uint64_t Time, double gyro, double last_gyro)
       p.Weight *= 1.0 / CumulativeWeight;
    }
    //   std::cerr << "Effective N: " << ((CumulativeWeight * CumulativeWeight) / CumulativeWeight2) << '\n';
-   if (CumulativeWeight2 == 0)
+   if (CumulativeWeight2 < 1e-100)
    {
       // catastrophic loss of accuracy, start again
       std::cerr << "Reset!\n";
+      // update the bell parameters
+      Bell.lb = StateEstimate<&Particle::l_b>(FilterState);
+      Bell.kb = StateEstimate<&Particle::k_b>(FilterState);
+      Bell.ThetaR = StateEstimate<&Particle::ThetaR>(FilterState);
+      TRACE(Bell);
       FilterState = CreateRandomParticles(Bell, FilterState.size(), gyro);
    }
    else if ((CumulativeWeight * CumulativeWeight) / CumulativeWeight2 < (FilterState.size()/2))
@@ -679,33 +642,30 @@ void Process(uint64_t Time, double gyro, double last_gyro)
    double Lb = StateEstimate_l_b(FilterState);
    double Kb = StateEstimate_k_b(FilterState);
    double Tr = StateEstimate_ThetaR(FilterState);
-
-   double FOffset = StateEstimate<&Particle::ForceOffset>(FilterState);
-   double FWidth = StateEstimate<&Particle::ForceWidth>(FilterState);
+   double GOffset = StateEstimate<&Particle::GyroOffset>(FilterState);
 
    double YY = StateEstimate<&Particle::Y>(FilterState);
 
    std::cout << Time << ' ' << to_deg(t) << ' ' << to_deg(v) << ' ' << to_deg(gyro) << ' ' << to_deg(f) << ' '
              << to_deg(err) << ' ' << to_deg(GyroWidth) << ' ' << (energy+RKE+RPE)
              << ' ' << (KE+PE) << ' ' << (RKE+RPE) << ' '
-             << ' ' << Lb << ' ' << Kb << ' ' << to_deg(Tr)
-             << ' ' << to_deg(FOffset)
-             << ' ' << to_deg(FWidth)
+             << ' ' << Lb << ' ' << Kb << ' ' << to_deg(Tr) << ' ' << to_deg(GOffset)
              << ' ' << YY
       //             << ' ' << KE << ' ' << PE << ' ' << RKE << ' ' << RPE
              << std::endl;
 }
 
 double GainFactor = 1.0;
+double GyroQuadraticCorrection = 0;
 
 int main(int argc, char** argv)
 {
    std::ifstream BellsConfig("bells.json");
    json Bells;
    BellsConfig >> Bells;
-   std::vector<BellInfoType> BellInfo(Bells["Bells"].begin(), Bells["Bells"].end());
+   LoadBellsJSON(Bells);
 
-   BellInfoType ThisBell = FindByName(BellInfo, "8");
+   BellInfoType ThisBell = BellByName("5");
    //ThisBell.kb = 0;
 
    if (argc >= 2)
@@ -727,6 +687,7 @@ int main(int argc, char** argv)
    while (std::cin >> Time >> gyro)
    {
       gyro *= GainFactor;
+      gyro += GyroQuadraticCorrection * gyro*gyro;
       if (last_gyro == -1000)
          last_gyro = gyro;
       Process(Time, gyro * pi / 180.0, last_gyro);

@@ -21,27 +21,31 @@ BellInfoType::BellInfoType(json const& j)
      WheelRadius(j.value("WheelRadius", 0.75)),
      lb(j.value("lb", 0.72)),
      kb(j.value("kb", 0.0)),
-     Y(j.value("Y", 240))
+     Y(j.value("Y", 240)),
+     ks(j.value("ks", 0.01))
 {
 }
 
 void to_json(json& j, BellInfoType const& b)
 {
-   j = json{{"Number", b.Number},
-            {"Name", b.Name},
-            {"FriendlyName", b.FriendlyName},
-            {"HandstrokeDelay", b.HandstrokeDelay_ms},
-            {"BackstrokeDelay", b.BackstrokeDelay_ms},
-            {"HandstrokeCutoff", b.HandstrokeCutoff},
-            {"BackstrokeCutoff", b.BackstrokeCutoff},
-            {"HandstrokeStay", b.HandstrokeStay},
-            {"BackstrokeStay", b.BackstrokeStay},
-            {"ThetaR", b.ThetaR},
-            {"Gamma", b.Gamma},
-            {"WheelRadius", b.WheelRadius},
-            {"lb", b.lb},
-            {"kb", b.kb},
-            {"Y", b.Y}};
+   j = json{
+      {"Number", b.Number},
+      {"Name", b.Name},
+      {"FriendlyName", b.FriendlyName},
+      {"HandstrokeDelay", b.HandstrokeDelay_ms},
+      {"BackstrokeDelay", b.BackstrokeDelay_ms},
+      {"HandstrokeCutoff", b.HandstrokeCutoff},
+      {"BackstrokeCutoff", b.BackstrokeCutoff},
+      {"HandstrokeStay", b.HandstrokeStay},
+      {"BackstrokeStay", b.BackstrokeStay},
+      {"ThetaR", b.ThetaR},
+      {"Gamma", b.Gamma},
+      {"WheelRadius", b.WheelRadius},
+      {"lb", b.lb},
+      {"kb", b.kb},
+      {"Y", b.Y},
+      {"ks", b.ks}
+   };
 }
 
 void from_json(json const& j, BellInfoType& b)
@@ -83,3 +87,10 @@ std::set<BellInfoType> const& AllBells()
 {
    return BellInfoSet;
 }
+
+std::ostream& operator<<(std::ostream& out, BellInfoType const& b)
+{
+   out << "Name: " << b.Name << " lb: " << b.lb;
+   return out;
+}
+

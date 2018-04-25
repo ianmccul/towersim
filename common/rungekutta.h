@@ -25,6 +25,11 @@ template <typename F1, typename F2>
 void
 RungeKutta(double& x1, double& x2, F1 f1, F2 f2, double step);
 
+template <typename F1, typename F2, typename F3, typename F4>
+void
+RungeKutta(double& x1, double& x2, double& x3, double& x4, F1 f1, F2 f2, F3 f3, F4 f4, double step);
+
+
 // Time-dependent forms dx/dt = f(x,t)
 template <typename F>
 void

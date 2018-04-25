@@ -217,6 +217,22 @@ void debug_packet(unsigned char const* buf, int len, std::ostream& out)
    out << std::endl;
 }
 
+// set blocking mode on a file descriptor
+int fd_set_blocking(int fd, bool blocking)
+{
+   // get the current flags and modify them
+   int flags = fcntl(fd, F_GETFL, 0);
+   if (flags == -1)
+      return 0;
+
+   if (blocking)
+      flags &= ~O_NONBLOCK;
+   else
+      flags |= O_NONBLOCK;
+   return fcntl(fd, F_SETFL, flags) != -1;
+}
+
+
 int main(int argc, char** argv)
 {
    bool TestMode = false;
@@ -260,7 +276,8 @@ int main(int argc, char** argv)
    std::string SocketPath("\0bellsensordaemonsocketraw", 26);
    std::set<int> Clients;
 
-   int fd = socket(AF_UNIX, SOCK_SEQPACKET | SOCK_NONBLOCK, 0);
+   // start in blocking mode - set to non-blocking once we have the first client
+   int fd = socket(AF_UNIX, SOCK_SEQPACKET, 0);
    if (fd < 0)
    {
       perror("socket error");
@@ -314,6 +331,7 @@ int main(int argc, char** argv)
             }
          }
          Clients.insert(cl);
+         fd_set_blocking(fd, false);
       }
 
       if (Verbose == 0 && Clients.empty())
@@ -426,6 +444,8 @@ int main(int argc, char** argv)
          {
             r.PowerDown();
          }
+         // set the socket to blocking
+         fd_set_blocking(fd, true);
       }
    } // forever loop
 

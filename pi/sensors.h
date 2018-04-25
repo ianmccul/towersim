@@ -5,12 +5,14 @@
 
 // Data for each sensor
 
-// Field            Type       Description
-// UID              uint16     unique ID of the sensor
-// Bell             integer    bell number that this sensor is attached to
-// Polarity         integer    +/- 1
-// GyroScale        float      Gyroscope scaling coefficient
-// AccelCalibration 2x8 matrix matrix of accelerometer readings
+// Field                Type        Description
+// UID                  uint16      unique ID of the sensor
+// Bell                 integer     bell number that this sensor is attached to
+// Polarity             integer     +/- 1
+// GyroScale            float       Gyroscope scaling coefficient
+// GyroQuadratic        float       Gyroscope quadratic correction
+// AccelTransformation  2x2 matrix  Accelerometer linear transform
+// AccelOffset          2-vector    Accelerometer offset.  Real reading = Transformation*A + Offset
 
 #include <cstdint>
 #include "json.hpp"
@@ -19,6 +21,7 @@ using json = nlohmann::json;
 
 double const DefaultGyroScale = 57.1429;
 double const DefaultAccScale = 1670.7; // 16384/g
+double const DefaultGyroQuadratic = 0;
 
 struct SensorInfoType
 {
@@ -30,6 +33,8 @@ struct SensorInfoType
    int Bell;
    int Polarity;
    double GyroScale;
+   double GyroQuadratic;
+
    double AXScale;
    double AYScale;
    double AXOffset;
