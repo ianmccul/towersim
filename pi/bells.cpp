@@ -90,7 +90,7 @@ std::set<BellInfoType> const& AllBells()
 
 std::ostream& operator<<(std::ostream& out, BellInfoType const& b)
 {
-   out << "Name: " << b.Name << " lb: " << b.lb;
+   out << "Name: " << b.Name << " lb: " << b.lb << " kb: " << b.kb << " ThetaR: " << b.ThetaR;
    return out;
 }
 

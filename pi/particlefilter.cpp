@@ -315,7 +315,7 @@ Particle::Evolve(double Timestep)
    Force = (OldForce - NewForce) / RopeToBell(Gamma,Theta);
 
    // adjust the Young's modulus
-#if 0
+#if 1
    double HandstrokeStayNoForce = (g/(l_b+this->l_r()))*(sin(HandstrokeStay) + ThetaR)/Y + HandstrokeStay;
    double BackstrokeStayNoForce = (g/(l_b+this->l_r()))*(sin(BackstrokeStay) - ThetaR)/Y + BackstrokeStay;
    if (Theta > HandstrokeStayNoForce || Theta < BackstrokeStayNoForce)
@@ -619,7 +619,7 @@ void Process(uint64_t Time, double gyro, double last_gyro)
       // update the bell parameters
       Bell.lb = StateEstimate<&Particle::l_b>(FilterState);
       Bell.kb = StateEstimate<&Particle::k_b>(FilterState);
-      Bell.ThetaR = StateEstimate<&Particle::ThetaR>(FilterState);
+      Bell.ThetaR = to_deg(StateEstimate<&Particle::ThetaR>(FilterState));
       TRACE(Bell);
       FilterState = CreateRandomParticles(Bell, FilterState.size(), gyro);
    }
