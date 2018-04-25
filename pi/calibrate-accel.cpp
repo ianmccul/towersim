@@ -119,9 +119,9 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
 			 << "with stdev " << StdevOctant[Octant] << std::endl;
 	    }
 
-	    std::cout MM << "\nXaccel = " << AxMean << " stdev " << AxStdev
-			 << "\nYaccel = " << AyMean << " stedv " << AyStdev
-			 << std::endl;
+	    std::cout << "\nXaccel = " << AxMean << " stdev " << AxStdev
+                      << "\nYaccel = " << AyMean << " stedv " << AyStdev
+                      << std::endl;
 	    // update the record
 	    AxMeanOctant[Octant] = AxMean;
 	    AyMeanOctant[Octant] = AyMean;
