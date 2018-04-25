@@ -330,10 +330,10 @@ int main(int argc, char** argv)
                else if (Got)
                {
                   std::cout << "Mossing angles:";
-                  for (auto x : StdevOctant)
+                  for (int Octant = 0; Octant < 8; ++Octant)
                   {
-                     if (x == 0)
-                        std::cout << ' ' << ((Octant+4)%8-4)*45;
+                     if (StdevOctant[Octant] == 0)
+                        std::cout << ' ' << ((+4)%8-4)*45;
                   }
                   std::cout << std::endl;
                }
