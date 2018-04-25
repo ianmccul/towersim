@@ -77,12 +77,11 @@ std::array<double, 8> StdevOctant = {0,0,0,0,0,0,0,0};
 void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolUse)
 {
    // For the sensor at rest, we expect that the s.d. will be
-   // 99 micro g per sqrt(bandwidth) in low noise mode.  
-   // Bandwidth is output rate / (something from 2 to 3), 
-   // worst case 3, so expect standard deviation to be around 7e-4.
-   // But this is typical, there is no rated maximum on the noise density.
+   // 99 micro g per sqrt(bandwidth) in low noise mode.
+   // Bandwidth is 400Hz.  So noise threshold is
+   // around 0.019.
 
-   double StdevThreshold = 8e-4;
+   double StdevThreshold = 0.02;
 
    if (AxStdev < StdevThreshold && AyStdev < StdevThreshold)
    {
@@ -130,7 +129,7 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolU
 	 }
       }
    }
-   else
+ else
    {
       std::cout << "stdev is too big " << AxStdev << ' ' << AyStdev << '\n';
    }
