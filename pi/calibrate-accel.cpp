@@ -88,7 +88,7 @@ bool Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
    {
       // get the angle.  Theta=0 is vertical.  In the polarity +1 sense,
       // when the sensor box is facing you, an anticlockwise rotation increases the angle.
-      double Theta = std::atan2(AxMean, -AyMean);
+      double Theta = std::atan2(-AxMean, -AyMean);
 
       double ThetaDeg = Theta*180/pi;
 
@@ -108,7 +108,7 @@ bool Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
 
       double TotalStdev = std::hypot(AxStdev, AyStdev);
 
-      std::cout << "Got a good sample at angle " << Octant*45 << " stdev " << TotalStdev
+      std::cout << "Got a good sample at angle " << ((Octant+4)%8-4)*45 << " stdev " << TotalStdev
 		<< std::endl;
 
 	 if (Use)
@@ -309,12 +309,12 @@ int main(int argc, char** argv)
                   readch();
                }
 
-               Process(AxMean, AyMean, AxStdev, AyStdev, Use);
+               bool Got = Process(AxMean, AyMean, AxStdev, AyStdev, Use);
 
                AxVec.clear();
                AyVec.clear();
 
-               bool Complete = false;
+               bool Complete = true;
                for (auto x : StdevOctant)
                {
                   if (x == 0)
@@ -323,6 +323,16 @@ int main(int argc, char** argv)
                if (Complete)
                {
                   SolveCalibrationParameters();
+               }
+               else if (Got)
+               {
+                  std::cout << "Mossing angles:";
+                  for (auto x : StdevOctant)
+                  {
+                     if (x == 0)
+                        std::cout << ' ' << ((Octant+4)%8-4)*45;
+                  }
+                  std::cout << std::endl;
                }
             }
          }
