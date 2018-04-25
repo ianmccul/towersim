@@ -151,7 +151,7 @@ void SolveCalibrationParameters()
       A(i*2, 4) = 1.0;
       A(i*2, 5) = 0.0;
 
-      b[i*2] = std::sin(i*pi/4.0);
+      b[i*2] = -std::sin(i*pi/4.0);
 
       A(i*2+1, 0) = 0.0;
       A(i*2+1, 1) = 0.0;
@@ -160,7 +160,7 @@ void SolveCalibrationParameters()
       A(i*2+1, 4) = 0.0;
       A(i*2+1, 5) = 1.0;
 
-      b[i*2+1] = std::cos(i*pi/4.0);
+      b[i*2+1] = -std::cos(i*pi/4.0);
    }
 
    Eigen::VectorXf x(6);
