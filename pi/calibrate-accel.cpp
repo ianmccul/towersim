@@ -167,10 +167,9 @@ void SolveCalibrationParameters()
    Eigen::VectorXf x(6);
    x = A.bdcSvd(Eigen::ComputeThinU | Eigen::ComputeThinV).solve(b);
 
-   std::cout << "Matrix is\n"
-             << x[0] << ' ' << x[1] << '\n'
-             << x[2] << ' ' << x[3] << '\n'
-             << "Offset is " << x[4] << " , " << x[5] << '\n';
+   std::cout << "      \"AccelTransformation\" : [ [ "
+             << x[0] << ", " << x[1] << " ], [ " << x[2] << ", " << x[3] << " ] ],\n"
+             << "      \"AccelOffset\" : [ " << x[4] << ", " << x[5] << " ] \n";
 }
 
 int main(int argc, char** argv)
