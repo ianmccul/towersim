@@ -32,7 +32,7 @@ constexpr int AccelNumSamples = 100;
 
 // standard deviation of the accelerometer when stationary.
 // Theoretical value is 31.74
-constexpr float AccelStdevThreshold = 33.0;
+constexpr float AccelStdevThreshold = 35.0;
 
 // Bandwidth and noise density from the datasheet, in Hz and dps / sqrt(Hz)
 constexpr float GyroBandwidth = 100;
@@ -329,7 +329,7 @@ void GyroProcessor::ProcessAccel(bool WriteToFile, std::set<int>& Clients, int64
       float XStdev = std::sqrt(float(x2) / AccelBuffer.size());
       float YStdev = std::sqrt(float(y2) / AccelBuffer.size());
 
-      std::cout << XStdev << ' ' << YStdev << '\n';
+      //std::cout << XStdev << ' ' << YStdev << '\n';
 
       if (XStdev < AccelStdevThreshold && YStdev < AccelStdevThreshold)
       {
