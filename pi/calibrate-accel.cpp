@@ -82,7 +82,7 @@ bool Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool 
    // Bandwidth is 400Hz.  So noise threshold is
    // around 0.019.
 
-   double StdevThreshold = 0.02;
+   double StdevThreshold = 0.025;
 
    if (AxStdev < StdevThreshold && AyStdev < StdevThreshold)
    {
