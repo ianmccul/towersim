@@ -40,7 +40,7 @@ struct SensorInfoType
    double AccelBDC;
 };
 
-// The SensorInfo indexed by bell number
+// The SensorInfo indexed by bell number.  This is deprecated.
 extern std::vector<SensorInfoType> SensorFromBell;
 
 // The SensorInfo indexed by UID

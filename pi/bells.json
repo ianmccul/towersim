@@ -50,13 +50,13 @@
       "BackstrokeDelay" : 330,
       "ThetaR" : 0.3,
       "HandstrokeStay" : 187.57,
-      "BackstrokeStay" : -187.16,
+      "BackstrokeStay" : -192.16,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50,
-      "lb" : 0.640,
+      "lb" : 0.655,
       "kb" : 0.03,
-      "Y" : 240,
-      "StayFriction" : 0
+      "ks" : 1.8,
+      "Y" : 400
    },
    {
       "Name" : "6",

@@ -34,11 +34,32 @@ constexpr int AccelNumSamples = 100;
 // Theoretical value is 31.74
 constexpr float AccelStdevThreshold = 33.0;
 
+// Bandwidth and noise density from the datasheet, in Hz and dps / sqrt(Hz)
+constexpr float GyroBandwidth = 100;
+constexpr float GyroNoiseDensity = 0.011;
+
+constexpr float GyroStdevMin = GyroNoiseDensity * std::sqrt(2*GyroBandwidth);
+
+constexpr float GyroStdevThreshold = GyroStdevMin * 1.2;
+//constexpr int GyroNumSamples = 800;
+constexpr int GyroZeroRequiredSamples = 1600;
+
+// once the gyro is calibrated we can detect if it is close to zero,
+// which is when tilt detection on the accelerometer is likely to be effective.
+constexpr float GyroZeroThreshold = GyroStdevThreshold * 2;
+
+// fast path - if the raw gyro reading is bigger than this then it is not close to zero
+constexpr int16_t GyroZeroMaxDeviation = 200;
+
 // for output
 struct MsgTypes
 {
+   // Gyro messages contain the adjusted gyro reading and the offset.
+   // The original gyro reading can be recovered from adjusted+offset.
+   // The current version of stage2 doesn't use GyroCalibration messages.
    static unsigned char const Gyro = 'G';
    // float DegreesPerSecond
+   // float OffsetDegreesPerSecond
 
    static unsigned char const GyroCalibration = 'H';
    // float GyroZeroValue
@@ -124,17 +145,6 @@ void debug_packet(unsigned char const* buf, int len, std::ostream& out)
 std::array<unsigned char[41], 16> LastBuf;
 std::array<int, 16> LastBufSize{};
 
-// maximum swing values that are still considered to be zero
-int const GyroZeroMaxDeviation = 80;
-
-// TODO: Use the max deviation as a rough criteria, also look at the variance and fix this bound.
-
-// number of samples required that satisfy GyroZeroMaxDeviation
-// to count as a successful zero calibration
-int const GyroZeroRequiredSamples = 800;
-// require this many samples to also satisfy the threshold before we commit the calibration
-int const GyroZeroLagSamples = 800;
-
 void WriteGyroCalibrationMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float GyroOffset, float GyroScale)
 {
    unsigned char Buf[100];
@@ -149,7 +159,7 @@ void WriteGyroCalibrationMsg(bool WriteToFile, std::set<int>& Clients, int64_t T
 std::array<double, 16> GyroDiff{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 std::array<double, 16> GyroLast{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-void WriteGyroMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float z)
+void WriteGyroMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, float z, float offset)
 {
    GyroDiff[Bell] = std::max(GyroDiff[Bell], std::abs(GyroLast[Bell]-z));
    GyroLast[Bell] = z;
@@ -159,7 +169,8 @@ void WriteGyroMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Be
    *static_cast<int8_t*>(static_cast<void*>(Buf+8)) = Bell;
    Buf[9] = MsgTypes::Gyro;
    std::memcpy(Buf+10, &z, sizeof(float));
-   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+sizeof(float));
+   std::memcpy(Buf+14, &offset, sizeof(float));
+   WriteMsgToClients(WriteToFile, Clients, Buf, 8+1+1+2*sizeof(float));
 }
 
 void WriteGyroTempMsg(bool WriteToFile, std::set<int>& Clients, int64_t Time, int Bell, int16_t T)
@@ -245,20 +256,22 @@ class GyroProcessor
 
       int Bell;
 
-      int16_t GyroMin, GyroMax;
-      int32_t GyroAccumulator;
-      int GyroCount;
+      boost::circular_buffer<float> GyroBuffer;
 
+      // true if we've had one complete buffer of steady samples, so collect another buffer for the actual offset
       bool GyroOffsetPending;
-      int GyroLagCount;
-      float GyroOffsetNext;
 
-      float GyroOffset;
+      // true if we've collected a good buffer for the next gyro offset.  Wait one more buffer worth
+      // before actually setting the offset.
+      bool GyroOffsetNext;
 
-      bool GyroHasZeroCalibration;
+      // if GyroOffsetNext is true, then NextGyroOffset is valid
+      float NextGyroOffset;
 
       // true if the gyro is reading close to zero
-      bool GyroSteady;
+      bool GyroNearZero;
+
+      float GyroOffset;
 
       int64_t LastPacketTime;
       static float constexpr GyroDelta = 1e6 / 760.0;
@@ -271,16 +284,12 @@ class GyroProcessor
 
 GyroProcessor::GyroProcessor(int Bell_)
    : Bell(Bell_),
-     GyroMin(INT16_MAX),
-     GyroMax(INT16_MIN),
-     GyroAccumulator(0),
-     GyroCount(0),
+     GyroBuffer(GyroZeroRequiredSamples+10),
      GyroOffsetPending(false),
-     GyroLagCount(0),
-     GyroOffsetNext(0.0),
+     GyroOffsetNext(false),
+     NextGyroOffset(0.0),
+     GyroNearZero(false),
      GyroOffset(0.0),
-     GyroHasZeroCalibration(false),
-     GyroSteady(false),
 
      LastPacketTime(0),
      LastSeqNum(0),
@@ -292,7 +301,7 @@ GyroProcessor::GyroProcessor(int Bell_)
 
 void GyroProcessor::ProcessAccel(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t Ax, int16_t Ay)
 {
-   if (!GyroSteady)
+   if (!GyroNearZero)
    {
       AccelBuffer.clear();
       return;
@@ -303,19 +312,24 @@ void GyroProcessor::ProcessAccel(bool WriteToFile, std::set<int>& Clients, int64
    if (AccelBuffer.size() >= AccelNumSamples)
    {
       int32_t x = 0, y = 0;
-      int64_t x2 = 0, y2 = 0;
       for (auto const& c : AccelBuffer)
       {
          x += c.first;
          y += c.second;
-         x2 += int32_t(x)*int32_t(x);
-         y2 += int32_t(y)*int32_t(y);
       }
-
-      float XStdev = float(x2) / AccelBuffer.size();
-      float YStdev = float(y2) / AccelBuffer.size();
       float AX = float(x) / AccelBuffer.size();
       float AY = float(y) / AccelBuffer.size();
+      float x2=0, y2=0;
+      for (auto const& c : AccelBuffer)
+      {
+         x2 += std::pow(c.first - AX, 2);
+         y2 += std::pow(c.second - AY, 2);
+      }
+
+      float XStdev = std::sqrt(float(x2) / AccelBuffer.size());
+      float YStdev = std::sqrt(float(y2) / AccelBuffer.size());
+
+      std::cout << XStdev << ' ' << YStdev << '\n';
 
       if (XStdev < AccelStdevThreshold && YStdev < AccelStdevThreshold)
       {
@@ -351,60 +365,84 @@ void GyroProcessor::ProcessAccel(bool WriteToFile, std::set<int>& Clients, int64
 
 void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int64_t Time, int16_t z)
 {
-   GyroMin = std::min(GyroMin, z);
-   GyroMax = std::max(GyroMax, z);
-   if (std::abs(GyroMax-GyroMin) > GyroZeroMaxDeviation)
+   // zero offset detection
+   bool ShouldClearBuffer = false;
+
+   // fast path if the gyro reading isn't close to zero
+   if (std::abs(z) > GyroZeroMaxDeviation)
    {
-      // reset the counter
-      GyroMin = INT16_MAX;
-      GyroMax = INT16_MIN;
-      GyroAccumulator = 0;
-      GyroCount = 0;
       GyroOffsetPending = false;
-      GyroSteady = false;
-   }
-   else if (GyroOffsetPending)
-   {
-      GyroSteady = true;
-      ++GyroLagCount;
-      if (GyroLagCount >= GyroZeroLagSamples)
-      {
-         if (GyroHasZeroCalibration)
-         {
-            // filter step
-            GyroOffset = 0.5 * (GyroOffset + GyroOffsetNext);
-         }
-         else
-         {
-            GyroOffset= GyroOffsetNext;
-            GyroHasZeroCalibration = true;
-         }
-         WriteGyroCalibrationMsg(WriteToFile, Clients, Time, Bell, GyroOffset, SensorFromBell[Bell].GyroScale);
-         // reset the counters
-         GyroOffsetPending = false;
-         GyroMin = INT16_MAX;
-         GyroMax = INT16_MIN;
-         GyroAccumulator = 0;
-         GyroCount = 0;
-      }
+      GyroOffsetNext = false;
+      ShouldClearBuffer = true;
    }
    else
    {
-      GyroSteady = true;
-      GyroAccumulator += z;
-      ++GyroCount;
-      if (GyroCount >= GyroZeroRequiredSamples)
+      GyroBuffer.push_back(z);
+
+      if (GyroBuffer.size() >= GyroZeroRequiredSamples)
       {
-         GyroOffsetNext =  GyroAccumulator /float(GyroCount);
-         GyroOffsetPending = true;
-         GyroLagCount = 0;
+         int32_t gsum = 0;
+         for (auto x : GyroBuffer)
+         {
+            gsum += x;
+         }
+         float g = float(gsum) / (GyroBuffer.size() * SensorFromBell[Bell].GyroScale);
+
+         float g2sum = 0;
+         for (auto x : GyroBuffer)
+         {
+            g2sum += std::pow(x/SensorFromBell[Bell].GyroScale - g,2);
+         }
+         float gstdev = std::sqrt(g2sum / GyroBuffer.size());
+
+         if (gstdev < GyroStdevThreshold)
+         {
+            //std::cout << Bell << ' ' << gstdev << ' ' << GyroOffsetPending << '\n';
+            if (GyroOffsetPending)
+            {
+               NextGyroOffset = g;
+               GyroOffsetPending = false;
+               GyroOffsetNext = true;
+            }
+            else if (GyroOffsetNext)
+            {
+               if (GyroOffset == 0)
+                  GyroOffset = NextGyroOffset;
+               else
+                  GyroOffset = 0.5 * (GyroOffset + NextGyroOffset);
+               GyroOffsetNext = false;
+            }
+            else
+            {
+               GyroOffsetPending = true;
+            }
+            ShouldClearBuffer = true;
+         }
+         else
+         {
+            GyroOffsetPending = false;
+            GyroOffsetNext = false;
+         }
       }
    }
 
-   float ZCal = float((z - GyroOffset) / SensorFromBell[Bell].GyroScale) * SensorFromBell[Bell].Polarity;
-   WriteGyroMsg(WriteToFile, Clients, Time, Bell, ZCal);
-}
+   if (ShouldClearBuffer)
+   {
+      GyroBuffer.clear();
+   }
+   else
+   {
+      while (GyroBuffer.size() >= GyroZeroRequiredSamples)
+      {
+         GyroBuffer.pop_front();
+      }
+   }
 
+   float ZCal = (float(z) / SensorFromBell[Bell].GyroScale) * SensorFromBell[Bell].Polarity;
+   float OffsetCal = GyroOffset * SensorFromBell[Bell].Polarity;
+   GyroNearZero = (std::abs(ZCal-OffsetCal) < GyroZeroThreshold) && (GyroOffset != 0);
+   WriteGyroMsg(WriteToFile, Clients, Time, Bell, ZCal-OffsetCal, OffsetCal);
+}
 
 namespace std
 {
@@ -671,6 +709,7 @@ int main(int argc, char** argv)
                // associate the pipe number with the correct bell number, by looking up the sensor UID.
                // It is also possible that pipe assignments have changed.  This might have happened if a pipe has been
                // changed on a sensor but we didn't restart the server.
+               // TODO: handle better the case where more than one sensor has the same bell.
                Bell = SensorFromUID[uid].Bell;
                if (Bell == -1)
                {

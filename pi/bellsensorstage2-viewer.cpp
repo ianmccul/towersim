@@ -138,7 +138,8 @@ int main(int argc, char** argv)
          if (MsgType == MsgTypes::Gyro)
          {
             float z = *static_cast<float const*>(static_cast<void const*>(buf+10));
-            std::cout << Time << ' ' << Bell <<  " G " << z << '\n';
+            float ofs = *static_cast<float const*>(static_cast<void const*>(buf+14));
+            std::cout << Time << ' ' << Bell <<  " G " << z << ' ' << ofs << '\n';
          }
          else if (MsgType == MsgTypes::Accel)
          {

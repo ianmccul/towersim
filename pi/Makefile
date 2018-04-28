@@ -105,7 +105,9 @@ LIBS_bellsensorstage1-viewer = -lboost_program_options
 
 LIBS_bellsensorstage2-viewer = -lboost_program_options
 
-particlefilter : randutil.o bells.o
+particlefilter : randutil.o bells.o filter.o
+
+calibrate : randutil.o bells.o filter.o
 
 show-accel-angle : randutil.o
 
