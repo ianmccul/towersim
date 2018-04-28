@@ -9,14 +9,18 @@
       "AYScale" : -1670.0,
       "AYOffset" : 0,
       "Polarity" : -1,
-      "Bell" : 4
+      "Bell" : 4,
+      "AccelTransformation" : [ [ 0.103201, -0.00127751 ], [ 0.00113753, 0.102008 ] ],
+      "AccelOffset" : [ -0.00954164, -0.00827484 ]
    },
    {
       "UID" : "0x64b7",
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 2
+      "Bell" : 2,
+      "AccelTransformation" : [ [ 0.102385, -0.0033093 ], [ 0.00342001, 0.102874 ] ],
+      "AccelOffset" : [ 0.0108465, -0.00558481 ]
    },
    {
       "UID" : "0x34e4",
@@ -65,16 +69,19 @@
       "UID" : "0xcf18",
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 10
+      "Bell" : 10,
+      "AccelTransformation" : [ [ 0.102846, -0.00168264 ], [ 0.00146145, 0.10393 ] ],
+      "AccelOffset" : [ 0.0295524, -0.0204201 ],
+      "AccelBDC" : 0.0
    },
    {
       "UID" : "0x7c2a",
       "GyroScale" : 57.1429,
       "Polarity" : 1,
       "Bell" : 5,
-      "AccelTransformation" : [ [ 1.026667e-1, 1.951888e-4 ], [ -4.200339e-5, 1.025088e-1 ] ],
-      "AccelOffset" : [ 2.9487651e-3, -2.2330396e-2 ],
-      "AccelBDC" : 2.3
+      "AccelTransformation" : [ [ 0.102599, -0.00152269 ], [ 0.00176486, 0.102481 ] ],
+      "AccelOffset" : [ 0.000807879, -0.0196217 ],
+      "AccelBDC" :0.0
    },
    {
       "UID" : "0x8058",
