@@ -11,23 +11,25 @@
       "Polarity" : -1,
       "Bell" : 4,
       "AccelTransformation" : [ [ 0.103201, -0.00127751 ], [ 0.00113753, 0.102008 ] ],
-      "AccelOffset" : [ -0.00954164, -0.00827484 ]
+      "AccelOffset" : [ -0.00954164, -0.00827484 ],
+      "AccelBDC" : 2.05
    },
    {
       "UID" : "0x64b7",
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 2,
+      "Bell" : 8,
       "AccelTransformation" : [ [ 0.102385, -0.0033093 ], [ 0.00342001, 0.102874 ] ],
-      "AccelOffset" : [ 0.0108465, -0.00558481 ]
+      "AccelOffset" : [ 0.0108465, -0.00558481 ],
+      "AccelBDC" : 1.85
    },
    {
       "UID" : "0x34e4",
       "BatteryScale" : 3897.4,
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 6
+      "Bell" : 10
    },
    {
       "UID" : "0xe3cf",
@@ -45,7 +47,7 @@
       "UID" : "0x0ee2",
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 5
+      "Bell" : 2
    },
    {
       "UID" : "0xf27a",
@@ -69,19 +71,19 @@
       "UID" : "0xcf18",
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 10,
+      "Bell" : 6,
       "AccelTransformation" : [ [ 0.102846, -0.00168264 ], [ 0.00146145, 0.10393 ] ],
       "AccelOffset" : [ 0.0295524, -0.0204201 ],
-      "AccelBDC" : 0.0
+      "AccelBDC" : 2.56
    },
    {
       "UID" : "0x7c2a",
       "GyroScale" : 57.1429,
-      "Polarity" : 1,
+      "Polarity" : -1,
       "Bell" : 5,
       "AccelTransformation" : [ [ 0.102599, -0.00152269 ], [ 0.00176486, 0.102481 ] ],
       "AccelOffset" : [ 0.000807879, -0.0196217 ],
-      "AccelBDC" :0.0
+      "AccelBDC" :2.12
    },
    {
       "UID" : "0x8058",

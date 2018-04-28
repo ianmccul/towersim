@@ -38,8 +38,8 @@
       "BackstrokeDelay" : 334,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50,
-      "HandstrokeStay" : 186.5,
-      "BackstrokeStay" : -189.9,
+      "HandstrokeStay" : 186.7,
+      "BackstrokeStay" : -189.7,
       "ThetaR" : 0.3
    },
    {
@@ -49,8 +49,8 @@
       "HandstrokeDelay" : 350,
       "BackstrokeDelay" : 330,
       "ThetaR" : 0.3,
-      "HandstrokeStay" : 187.57,
-      "BackstrokeStay" : -192.16,
+      "HandstrokeStay" : 188.4,
+      "BackstrokeStay" : -187.5,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50,
       "lb" : 0.655,
@@ -66,6 +66,8 @@
       "BackstrokeDelay" : 360,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50,
+      "HandstrokeStay" : 187.3,
+      "BackstrokeStay" : -190.7,
       "ThetaR" : 0.3
    },
    {
@@ -76,8 +78,6 @@
       "BackstrokeDelay" : 335,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50,
-      "HandstrokeStay" : 188.4,
-      "BackstrokeStay" : 186.8,
       "ThetaR" : 0.3
    },
    {
@@ -88,8 +88,8 @@
       "BackstrokeDelay" : 371,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50,
-      "HandstrokeStay" : 186.45,
-      "BacktrokeStay" : -186.64,
+      "HandstrokeStay" : 186.80,
+      "BacktrokeStay" : -186.93,
       "ThetaR" : 0.225,
       "lb" : 0.719,
       "WheelRadius" : 0.75,

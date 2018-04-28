@@ -11,8 +11,8 @@
 
 timeval Epoch;
 
-double GainFactor = 0.99844; // 1.0;
-double GyroQuadraticCorrection = -0.000164831; //0;
+double GainFactor = 1; // 0.99844; // 1.0;
+double GyroQuadraticCorrection = 0; // -0.000164831; //0;
 
 int main(int argc, char** argv)
 {
@@ -38,7 +38,7 @@ int main(int argc, char** argv)
    randutil::seed();
 
    ParticleFilter Filter;
-   Filter.Initialize(ThisBell, 400, to_rad(0), 0, to_rad(ThisBell.HandstrokeStay));
+   Filter.Initialize(ThisBell, 2000, to_rad(0), 0, 0);
    Filter.Adjust_l_b = true;
    Filter.ForceWidth = 150;
 
