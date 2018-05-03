@@ -79,11 +79,13 @@
    {
       "UID" : "0x7c2a",
       "GyroScale" : 57.1429,
-      "Polarity" : -1,
+      "OldPolarity" : -1,
+      "Polarity" : 1,
       "Bell" : 5,
       "AccelTransformation" : [ [ 0.102599, -0.00152269 ], [ 0.00176486, 0.102481 ] ],
       "AccelOffset" : [ 0.000807879, -0.0196217 ],
-      "AccelBDC" :2.12
+      "AccelBDCOld" : 2.12,
+      "AccelBDC" : 0.7
    },
    {
       "UID" : "0x8058",

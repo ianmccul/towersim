@@ -85,6 +85,8 @@ LIBS_gyrofit-daemon = -lboost_system -lboost_date_time
 
 LIBS_gyrofit-reader =  -lboost_program_options
 
+LIBS_particlefilter =  -lboost_program_options
+
 LIBS_bellsensor-accel-average =  -lboost_program_options
 
 calibrate-accel : kbhit.o

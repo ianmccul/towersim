@@ -53,10 +53,10 @@
       "BackstrokeStay" : -187.5,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50,
-      "lb" : 0.655,
+      "lb" : 0.63,
       "kb" : 0.03,
       "ks" : 1.8,
-      "Y" : 400
+      "Y" : 375
    },
    {
       "Name" : "6",
@@ -91,7 +91,7 @@
       "HandstrokeStay" : 186.80,
       "BacktrokeStay" : -186.93,
       "ThetaR" : 0.225,
-      "lb" : 0.719,
+      "lb" : 0.705,
       "WheelRadius" : 0.75,
       "kb" : 0.03
    },
