@@ -21,26 +21,19 @@
 #include "common/prog_opt_accum.h"
 #include "common/trace.h"
 #include <boost/circular_buffer.hpp>
+#include "sensor-parameters.h"
 
 namespace prog_opt = boost::program_options;
 
-constexpr float pi = M_PI;
-
-constexpr float AxScale = 1670.7;
-constexpr float AyScale = 1670.7;
+// number of samples required for an accelerometer tilt measurement
 constexpr int AccelNumSamples = 100;
 
 // standard deviation of the accelerometer when stationary.
 // Theoretical value is 31.74
 constexpr float AccelStdevThreshold = 35.0;
 
-// Bandwidth and noise density from the datasheet, in Hz and dps / sqrt(Hz)
-constexpr float GyroBandwidth = 100;
-constexpr float GyroNoiseDensity = 0.011;
-
-constexpr float GyroStdevMin = GyroNoiseDensity * std::sqrt(2*GyroBandwidth);
-
-constexpr float GyroStdevThreshold = GyroStdevMin * 1.2;
+// GyroStdev from the datasheet (in sensor-parameters.h)
+constexpr float GyroStdevThreshold = GyroStdev * 1.2;
 //constexpr int GyroNumSamples = 800;
 constexpr int GyroZeroRequiredSamples = 1600;
 

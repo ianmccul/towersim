@@ -1,8 +1,8 @@
 // -*- C++ -*-
 
-// A particle filter for processing gyro readings
+// A fully-adapted particle filter for processing gyro readings
 
-#include "bootstrapfilter.h"
+#include "adaptedfilter.h"
 #include <sys/time.h>
 #include <unistd.h>
 #include <iostream>
@@ -46,7 +46,7 @@ int main(int argc, char** argv)
       int Bell = -1;
       bool Raw = false;
       double InitialOffset = 0;
-      bool Allow_l_b = true;
+      bool Allow_l_b = false; //true;
       double ForceWidth = 150;
       int NumParticles = 2000;
 
@@ -194,7 +194,7 @@ int main(int argc, char** argv)
             float z = *static_cast<float const*>(static_cast<void const*>(buf+10));
             float ofs = *static_cast<float const*>(static_cast<void const*>(buf+14));
             double gg = to_rad(z+ofs);
-            gg += to_rad(2.26781);
+            //gg += to_rad(2.26781);
             gg *= GainFactor;
             gg += GyroQuadraticCorrection * gg*gg;
             LastGyro = gg;
@@ -210,10 +210,13 @@ int main(int argc, char** argv)
             continue;
 
          double t = Filter.StateEstimate<&Particle::Theta>();
+         double tErr = Filter.StateEstimateErr<&Particle::Theta>(t);
          double v = Filter.StateEstimate<&Particle::Velocity>();
-         double f = Filter.StateEstimate<&Particle::Force>();
-
-         double ForceOnRope = f / RopeToBellCutoff(to_rad(ThisBell.Gamma), t);
+         double a = Filter.StateEstimate<&Particle::Force>();
+         double f = Filter.StateEstimate<&Particle::ForceExternal>();
+         double fd = Filter.StateEstimate<&Particle::ForceDot>();
+         double fs = Filter.StateEstimate<&Particle::ForceStay>();
+         double fr = Filter.StateEstimate<&Particle::ForceRope>();
 
          double lb = Filter.StateEstimate<&Particle::l_b>();
          double energy = 0.5*v*v*lb - g*std::cos(t);
@@ -226,13 +229,13 @@ int main(int argc, char** argv)
          double RKE = RopeKineticEnergy(ThisBell, t, v);
          double RPE = RopePotentialEnergy(ThisBell, t, v);
 
-         double StayForce = ForceFromStay(ThisBell, t, v);
-
-         std::cout << Time << ' ' << to_deg(t) << ' ' << to_deg(v)
+         std::cout << Time << ' ' << to_deg(t) << ' ' << to_deg(tErr) << ' ' << to_deg(v)
                    << ' ' << to_deg(LastGyro-offset)
+                   << ' ' << to_deg(a)
                    << ' ' << to_deg(f)
-                   << ' ' << to_deg(ForceOnRope)
-                   << ' ' << to_deg(StayForce)
+                   << ' ' << to_deg(fd)
+                   << ' ' << to_deg(fr)
+                   << ' ' << to_deg(fs)
                    << ' ' << to_deg(KE+PE+RKE+RPE)
                    << ' ' << to_deg(KE)
                    << ' ' << to_deg(PE)

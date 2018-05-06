@@ -85,7 +85,9 @@ LIBS_gyrofit-daemon = -lboost_system -lboost_date_time
 
 LIBS_gyrofit-reader =  -lboost_program_options
 
-LIBS_particlefilter =  -lboost_program_options
+LIBS_bootstrapparticlefilter =  -lboost_program_options
+
+LIBS_afilter =  -lboost_program_options
 
 LIBS_bellsensor-accel-average =  -lboost_program_options
 
@@ -107,9 +109,11 @@ LIBS_bellsensorstage1-viewer = -lboost_program_options
 
 LIBS_bellsensorstage2-viewer = -lboost_program_options
 
-particlefilter : randutil.o bells.o filter.o
+bootstrapparticlefilter : randutil.o bells.o bootstrapfilter.o
 
-calibrate : randutil.o bells.o filter.o
+afilter : randutil.o bells.o adaptedfilter.o
+
+calibrate : randutil.o bells.o bootstrapfilter.o
 
 show-accel-angle : randutil.o
 
