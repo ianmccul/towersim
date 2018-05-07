@@ -236,14 +236,15 @@ Particle::Adjust_Youngs()
 double
 Particle::ForceMean()
 {
-   return ForceSmoothed/2;
+   return -ForceSmoothed/2;
 }
 
 double
 Particle::ForceWidth()
 {
    // once we incorporate the stay we could reduce this
-   return std::max(std::abs(ForceSmoothed/2), to_rad(100));
+   return to_rad(100);
+   //return std::max(std::abs(ForceSmoothed/2), to_rad(100));
 }
 
 double
@@ -271,11 +272,43 @@ Particle::Evolve(double Timestep, double GyroVelocity, double GyroWidth, double 
    //   double OffsetAdj = sqrt(Timestep) * (0.01 * pi / 180) * randutil::randn();
    //   GyroOffset += OffsetAdj;
 
-   // dynamical forces - we probably should solve this implicitly
-   ForceDynamical = -(g/l_b) * std::sin(Theta) - Velocity*k_b;
+   // mid-point rule for the velocity - doesn't work, we'd need to solve properly the implicit method
+   //   double vBar = 0.5*(Velocity + (GyroVelocity-GyroOffset));
+   //   double fBar = 0.5 * (Force + ((GyroVelocity-GyroOffset) - Velocity) / Timestep);
+   double vBar = (GyroVelocity-GyroOffset);
+   double fBar = ((GyroVelocity-GyroOffset) - Velocity) / Timestep;
+   // and angle
+   double thBar = Theta + vBar*Timestep + 0.5*fBar*Timestep*Timestep;
+
+   // Now we have an estimate for theta, calculate the dynamics
+   ForceDynamical = -(g/l_b) * std::sin(thBar) - vBar*k_b;
+
+   // Stay
+   double hstay = (g/(l_b+this->l_r()))*(std::sin(HandstrokeStay) + ThetaR)/Y
+      + HandstrokeStay;
+   double bstay = (g/(l_b+this->l_r()))*(std::sin(BackstrokeStay) - ThetaR)/Y
+      + BackstrokeStay;
+   if (thBar > hstay)
+   {
+      ForceStay = -((thBar - hstay)*Y + vBar*k_s);
+   }
+   else if (thBar < bstay)
+   {
+      ForceStay = -((thBar - bstay)*Y + vBar*k_s);
+   }
+   else
+   {
+      ForceStay = 0;
+   }
+   //ForceStay = 0;
+
+   //   std::cerr << to_deg(hstay) << ' ' << to_deg(bstay) << ' ' << to_deg(thBar) << ' ' << to_deg(ForceStay) << '\n';
+
+   // rope
+   ForceRope = 0;
 
    // Force required to match the measured velocity
-   double ForceRequired = (GyroVelocity-GyroOffset - Velocity)/Timestep - ForceDynamical;
+   double ForceRequired = (GyroVelocity-GyroOffset - Velocity)/Timestep - ForceDynamical - ForceStay;
 
    // The force is a product of 3 gaussians.
    // The force itself has a mean of ForceMean() and stdev of ForceWidth().
@@ -312,14 +345,11 @@ Particle::Evolve(double Timestep, double GyroVelocity, double GyroWidth, double 
 #endif
 
    // evolve
-   double NewVelocity = Velocity + (ForceDynamical+NewExternalForce)*Timestep;
+   double NewVelocity = Velocity + (ForceDynamical+ForceStay+NewExternalForce)*Timestep;
    //double NewVelocity = Velocity + (ForceDynamical+ForceRequired)*Timestep;
    double NewTheta = Theta + 0.5*(NewVelocity+Velocity)*Timestep;
 
    //   std::cerr << Timestep << ' ' << to_deg(GyroVelocity) << ' ' << to_deg(Velocity) << ' ' << to_deg(NewVelocity) << ' ' << to_deg(Theta) << ' ' << to_deg(NewTheta) << '\n';
-
-   ForceRope = 0;
-   ForceStay = 0;
 
    // update dynamical state
    Theta = NewTheta;
