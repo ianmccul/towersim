@@ -236,14 +236,21 @@ Particle::Adjust_Youngs()
 double
 Particle::ForceMean()
 {
-   return -ForceSmoothed/2;
+   return 0; //-ForceSmoothed/2;
 }
 
 double
 Particle::ForceWidth()
 {
    // once we incorporate the stay we could reduce this
-   return to_rad(100);
+   double FE = std::abs(ForceSmoothed * Velocity * Velocity);
+
+   // Legit values of FE seem to be around 10 - 20
+   // 'bad' values are 100 or more
+
+   return 20 * to_rad(50) / (10 + FE) + 1;
+
+   //   return to_rad(50);
    //return std::max(std::abs(ForceSmoothed/2), to_rad(100));
 }
 
@@ -257,7 +264,7 @@ double
 Particle::DeltaForceWidth()
 {
    //   return std::max(50.0, std::abs(ForceExternal));
-   return 100000;
+   return 1000000;
    //   ForceVar = 0.999*ForceVar + (0.001)*100;
    //   return ForceVar;
    //   return 10000;
@@ -273,15 +280,30 @@ Particle::Evolve(double Timestep, double GyroVelocity, double GyroWidth, double 
    //   GyroOffset += OffsetAdj;
 
    // mid-point rule for the velocity - doesn't work, we'd need to solve properly the implicit method
-   //   double vBar = 0.5*(Velocity + (GyroVelocity-GyroOffset));
-   //   double fBar = 0.5 * (Force + ((GyroVelocity-GyroOffset) - Velocity) / Timestep);
-   double vBar = (GyroVelocity-GyroOffset);
-   double fBar = ((GyroVelocity-GyroOffset) - Velocity) / Timestep;
+   double vBar = 0.5*(Velocity + (GyroVelocity-GyroOffset));
+   double fBar = 0.5 * (Force + ((GyroVelocity-GyroOffset) - Velocity) / Timestep);
+   //double vBar = (GyroVelocity-GyroOffset);
+   //double fBar = ((GyroVelocity-GyroOffset) - Velocity) / Timestep;
    // and angle
    double thBar = Theta + vBar*Timestep + 0.5*fBar*Timestep*Timestep;
 
    // Now we have an estimate for theta, calculate the dynamics
-   ForceDynamical = -(g/l_b) * std::sin(thBar) - vBar*k_b;
+   ForceDynamical = 0; //-(g/l_b) * std::sin(thBar) - vBar*k_b;
+
+   if (thBar+Gamma < -pi/2)
+   {
+      ForceDynamical = -(g/(l_b+this->l_r()))*(std::sin(thBar) - ThetaR);
+   }
+   else if (thBar+Gamma > 0)
+   {
+      ForceDynamical = -(g/(l_b+this->l_r()))*(std::sin(thBar) + ThetaR);
+   }
+   else // -pi/2 < theta+Gamma < 0
+   {
+      double n = 1 + (4/pi) * (thBar + Gamma);  // n interpolates between -1 and 1
+      ForceDynamical = (-this->l_r()*(4/pi)*n*std::pow(vBar,2) - g*(std::sin(thBar) + n*ThetaR))
+         / (l_b + this->l_r()*n*n);
+   }
 
    // Stay
    double hstay = (g/(l_b+this->l_r()))*(std::sin(HandstrokeStay) + ThetaR)/Y
@@ -358,6 +380,23 @@ Particle::Evolve(double Timestep, double GyroVelocity, double GyroWidth, double 
    ForceExternal = NewExternalForce;
 
    ForceSmoothed = 0.99*ForceSmoothed + 0.01*ForceExternal;
+
+   // Update the offset based on the residual velocity
+
+   double ResidualVelocity = (GyroVelocity - GyroOffset) - NewVelocity;
+
+   // m1 = gyro offset
+   // m2 = GyroVelocity - NewVelocity
+   // sigma1 = rate noise of offset
+   // sigma2 = GyroWidth
+
+   double GyroOffsetWidth = to_rad(0.001) * std::sqrt(Timestep);
+   double GyroOffsetP = std::pow(GyroOffsetWidth, -2);
+   double GyroP = std::pow(GyroWidth, -2);
+
+   double OffsetP = GyroOffsetP + GyroP;
+   double OffsetMean = (GyroOffsetP * GyroOffset + GyroP*(GyroVelocity-NewVelocity)) / (OffsetP);
+   GyroOffset = OffsetMean + randutil::randn() / std::sqrt(OffsetP);
 }
 
 void
@@ -571,8 +610,10 @@ ParticleFilter::ProcessGyro(uint64_t Time, double gyro)
       CumulativeWeight2 += p.Weight * p.Weight;
    }
 
+   double Th = ::StateEstimate<&Particle::Theta>(State);
+   double tErr = ::StateEstimateErr<&Particle::Theta>(State, Th);
    //std::cerr << CumulativeWeight << ' ' << CumulativeWeight2 << '\n';
-   if (CumulativeWeight2 < 1e-100)
+   if (CumulativeWeight2 < 1e-100 || tErr > to_rad(400))
    {
       // catastrophic loss of accuracy, start again
       Reset = true;
