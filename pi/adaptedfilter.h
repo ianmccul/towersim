@@ -70,6 +70,8 @@ struct Particle
    double ForceStay;
    double ForceRope;
    double ForceExternal;
+   double ForceSmoothed;
+   double ForceVar;
 
    // sensor parameters
    double GyroOffset;

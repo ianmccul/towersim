@@ -6,6 +6,8 @@
 #include "common/rungekutta.h"
 #include "common/trace.h"
 
+constexpr double InitialForceVar = 10000;
+
 double RopeKineticEnergy(double l_r, double Gamma, double Theta, double v)
 {
    // double l_r = b.WheelRadius * to_rad(b.ThetaR);
@@ -146,6 +148,8 @@ std::ostream& operator<<(std::ostream& out, Particle const& p)
 
 Particle::Particle(BellInfoType const& b, double t, double v, double f, double w, double go)
    : Weight(w), Theta(t), Velocity(v), Force(f), ForceDot(0), GyroOffset(go),
+     ForceDynamical(0), ForceStay(0), ForceRope(0), ForceExternal(0), ForceSmoothed(0),
+     ForceVar(InitialForceVar),
      ThetaR(to_rad(b.ThetaR)), WheelRadius(b.WheelRadius), l_b(b.lb), k_b(b.kb), Gamma(to_rad(b.Gamma)),
      HandstrokeStay(to_rad(b.HandstrokeStay)), BackstrokeStay(to_rad(b.BackstrokeStay)),
      Y(b.Y), k_s(b.ks)
@@ -232,27 +236,32 @@ Particle::Adjust_Youngs()
 double
 Particle::ForceMean()
 {
-   return 0;
+   return ForceSmoothed/2;
 }
 
 double
 Particle::ForceWidth()
 {
    // once we incorporate the stay we could reduce this
-   return to_rad(500);
+   return std::max(std::abs(ForceSmoothed/2), to_rad(100));
 }
 
 double
 Particle::DeltaForceMean()
 {
-   return 0;
+   return -ForceExternal;
 }
 
 double
 Particle::DeltaForceWidth()
 {
-   //return 10000;
-   return 20.0;
+   //   return std::max(50.0, std::abs(ForceExternal));
+   return 100000;
+   //   ForceVar = 0.999*ForceVar + (0.001)*100;
+   //   return ForceVar;
+   //   return 10000;
+   //return std::abs(ForceExternal) + 10;
+   //100.0;
 }
 
 void
@@ -280,15 +289,19 @@ Particle::Evolve(double Timestep, double GyroVelocity, double GyroWidth, double 
    double DeltaFPrecision = std::pow(this->DeltaForceWidth()*Timestep, -2);
    double ForceRequriredPrecision = std::pow(Timestep/GyroWidth, 2);
 
+   //   DeltaFMean /= Timestep;
+   //   DeltaFPrecision *= Timestep*Timestep;
+
    double P = FPrecision + DeltaFPrecision + ForceRequriredPrecision;
 
    double m = (FMean*FPrecision + (ForceExternal+DeltaFMean*Timestep)*DeltaFPrecision
                + ForceRequired*ForceRequriredPrecision) / P;
 
-   std::cerr << "precisions: " << FPrecision << ' ' << DeltaFPrecision << ' ' << ForceRequriredPrecision << '\n';
-
    // choose the force
    double NewExternalForce = m + randutil::randn() / std::sqrt(P);
+
+#if 0
+   std::cerr << "precisions: " << FPrecision << ' ' << DeltaFPrecision << ' ' << ForceRequriredPrecision << '\n';
 
    std::cerr << ForceExternal << ' ' << NewExternalForce << '\n';
 
@@ -296,6 +309,7 @@ Particle::Evolve(double Timestep, double GyroVelocity, double GyroWidth, double 
                 << " chosen: " << NewExternalForce
               << " velocity : " << Velocity << " Gyro: " << (GyroVelocity - GyroOffset) << " Theta " << Theta
               << '\n';
+#endif
 
    // evolve
    double NewVelocity = Velocity + (ForceDynamical+NewExternalForce)*Timestep;
@@ -312,6 +326,8 @@ Particle::Evolve(double Timestep, double GyroVelocity, double GyroWidth, double 
    Velocity = NewVelocity;
    Force = NewExternalForce + ForceDynamical;
    ForceExternal = NewExternalForce;
+
+   ForceSmoothed = 0.99*ForceSmoothed + 0.01*ForceExternal;
 }
 
 void
@@ -487,6 +503,7 @@ ParticleFilter::ProcessGyro(uint64_t Time, double gyro)
       GyroErrorMax = std::max(GyroErrorMax, x);
    }
    double GyroWidth = std::max(0.15*pi/180, GyroErrorMax);
+   //double GyroWidth = std::max(1.0*pi/180, GyroErrorMax);
 
    bool Reset = false;
    OldState = State;

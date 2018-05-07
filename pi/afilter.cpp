@@ -213,7 +213,9 @@ int main(int argc, char** argv)
          double tErr = Filter.StateEstimateErr<&Particle::Theta>(t);
          double v = Filter.StateEstimate<&Particle::Velocity>();
          double a = Filter.StateEstimate<&Particle::Force>();
-         double f = Filter.StateEstimate<&Particle::ForceExternal>();
+         double f = Filter.StateEstimate<&Particle::ForceSmoothed>();
+         double fe = Filter.StateEstimate<&Particle::ForceExternal>();
+         double fv = Filter.StateEstimate<&Particle::ForceVar>();
          double fd = Filter.StateEstimate<&Particle::ForceDot>();
          double fs = Filter.StateEstimate<&Particle::ForceStay>();
          double fr = Filter.StateEstimate<&Particle::ForceRope>();
@@ -233,6 +235,8 @@ int main(int argc, char** argv)
                    << ' ' << to_deg(LastGyro-offset)
                    << ' ' << to_deg(a)
                    << ' ' << to_deg(f)
+                   << ' ' << to_deg(fe)
+                   << ' ' << to_deg(fv)
                    << ' ' << to_deg(fd)
                    << ' ' << to_deg(fr)
                    << ' ' << to_deg(fs)
