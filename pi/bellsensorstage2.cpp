@@ -33,13 +33,13 @@ constexpr int AccelNumSamples = 100;
 constexpr float AccelStdevThreshold = 35.0;
 
 // GyroStdev from the datasheet (in sensor-parameters.h)
-constexpr float GyroStdevThreshold = GyroStdev * 1.2;
+constexpr float GyroStdevThreshold = GyroStdev * 1.7;
 //constexpr int GyroNumSamples = 800;
 constexpr int GyroZeroRequiredSamples = 1600;
 
 // once the gyro is calibrated we can detect if it is close to zero,
 // which is when tilt detection on the accelerometer is likely to be effective.
-constexpr float GyroZeroThreshold = GyroStdevThreshold * 2;
+constexpr float GyroZeroThreshold = GyroStdev * 4;
 
 // fast path - if the raw gyro reading is bigger than this then it is not close to zero
 constexpr int16_t GyroZeroMaxDeviation = 200;
@@ -306,6 +306,7 @@ void GyroProcessor::ProcessAccel(bool WriteToFile, std::set<int>& Clients, int64
 {
    if (!GyroNearZero)
    {
+      //std::cout << "not near zero\n";
       AccelBuffer.clear();
       return;
    }
@@ -398,9 +399,10 @@ void GyroProcessor::ProcessPacket(bool WriteToFile, std::set<int>& Clients, int6
          }
          float gstdev = std::sqrt(g2sum / GyroBuffer.size());
 
+         //std::cout << "stdev: " << gstdev << ' ' << GyroStdevThreshold << '\n';
          if (gstdev < GyroStdevThreshold)
          {
-            //std::cout << Bell << ' ' << gstdev << ' ' << GyroOffsetPending << '\n';
+            //std::cout << "stdev threshold OK " << Bell << ' ' << gstdev << ' ' << GyroOffsetPending << '\n';
             if (GyroOffsetPending)
             {
                NextGyroOffset = g;

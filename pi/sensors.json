@@ -1,6 +1,20 @@
 {
    "Sensors" : [
    {
+      "UID" : "0x6d27",
+      "GyroScale" : 57.1429,
+      "GyroScale" : 55.447,
+      "AXScale" : 1671.0,
+      "AXOffset" : 0,
+      "AYScale" : -1670.0,
+      "AYOffset" : 0,
+      "Polarity" : -1,
+      "Bell" : 1,
+      "AccelTransformation" : [ [ 0.103201, -0.00127751 ], [ 0.00113753, 0.102008 ] ],
+      "AccelOffset" : [ -0.00954164, -0.00827484 ],
+      "AccelBDC" : 2.05
+   },
+   {
       "UID" : "0xe58a",
       "GyroScale" : 57.1429,
       "GyroScale" : 55.447,
@@ -41,13 +55,13 @@
       "UID" : "0xb79f",
       "GyroScale" : 57.1429,
       "Polarity" : 1,
-      "Bell" : 1
+      "Bell" : 2
    },
    {
       "UID" : "0x0ee2",
       "GyroScale" : 57.1429,
       "Polarity" : -1,
-      "Bell" : 2
+      "Bell" : 12
    },
    {
       "UID" : "0xf27a",
