@@ -390,7 +390,7 @@ Particle::Evolve(double Timestep, double GyroVelocity, double GyroWidth, double 
    // sigma1 = rate noise of offset
    // sigma2 = GyroWidth
 
-   double GyroOffsetWidth = to_rad(0.001) * std::sqrt(Timestep);
+   double GyroOffsetWidth = to_rad(0.01) * std::sqrt(Timestep);
    double GyroOffsetP = std::pow(GyroOffsetWidth, -2);
    double GyroP = std::pow(GyroWidth, -2);
 

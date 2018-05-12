@@ -53,7 +53,8 @@
       "BackstrokeStay" : -187.5,
       "BackstrokeCutoff" : 217,
       "HandstrokeCutoff" : 50,
-      "lb" : 0.63,
+      "lb" : 0.65,
+      "lbOld" : 0.63,
       "kb" : 0.03,
       "ks" : 1.8,
       "Y" : 375
