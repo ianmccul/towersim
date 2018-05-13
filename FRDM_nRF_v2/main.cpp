@@ -26,7 +26,7 @@ RGBLED* MyLed;
 //
 // flags is 8 bits: 0 AAA GGGG
 // seq1 is a 1-byte sequentially increasing number
-// seq2 is a 32-bit unsigned sequentially increasing record number that counts the record number
+// seq2 is a 16-bit unsigned sequentially increasing record number that counts the record number
 // of gyro measurements
 // delay/seq is the number of microseconds that this packet has been delayed (unsigned 16 bit
 // delay shifted left 2 bits, with 2-bit sequence number).
@@ -585,6 +585,10 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
    SetupAccelerometer(Acc);
 
    led.yellow();
+
+   // 250ms delay for the gyro to turn on
+   wait_ms(250);
+   Gyro.ClearData();
 }
 
 // buffers for accelerometer and gyro data
@@ -613,7 +617,7 @@ float ZeroMotionThreshold = 2 * pi / 180;
 // as enough to keep the sensor awake. This is in units of g.
 float StayMotionThreshold = 4 * pi / 180;
 
-float SleepDelaySeconds = 120; // start going to sleep after this many seconds
+float SleepDelaySeconds = 900; // start going to sleep after this many seconds
 float SleepExtraTime = 10; // go to sleep after this many additional seconds
 
 // For controlling the led via the gyro, we need to scale to the range [0,1],
@@ -761,6 +765,11 @@ int main()
 
    // for flashing the led in preparation for sleep
    bool BlinkState = false;
+
+   // Clear the gyro data to make sure we don't have strange readings.
+   // If the gyro FIFO is full, then we end up sending several packets
+   // in quick succession, which confuses the dejitter algorithm.
+   Gyro.ClearData();
 
    while (true)
    {

@@ -75,6 +75,9 @@ class GyroInterface : public GyroInterfaceBase<BusType>
       void EnableY();
       void EnableZ();
 
+      // Clear the data buffers.  This is useful when waking up from sleep
+      void ClearData();
+
       // changes the scale of the gyro.  Default 500 degress/sec
       void SetScale(int Scale_);
 
