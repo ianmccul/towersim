@@ -492,9 +492,9 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
    Acc.set_sleep_oversampling_mode(MMA8451Q::OSMODE_LowPower);
    Acc.set_int_data_ready(false);
    // Motion threshold 1.  Each unit corresponds to (roughly) 0.063 radians = 3.6 degrees
-   Acc.set_motion_detect_threshold(AboveThreshold ? 1 : 1);
+   Acc.set_motion_detect_threshold(AboveThreshold ? 2 : 1);
    Acc.enable_int_motion_sleep(true);
-   Acc.set_debounce_time(2);
+   Acc.set_debounce_time(1);
    Acc.enable_motion_detect(AboveThreshold, true, false, false);
 
    // if we're in emergency sleep mode, don't set the accelerometer interrupt
@@ -561,23 +561,22 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
       //         WakeFlag = true;
    }
 
+   // Turn on the led
+   led.white();
+
    // Disable charging
    ChargeEnable = 0;
+
+   // turn on the gyro
+   Gyro.Wakeup();
+
+   led.cyan();
 
    // turn off acceleromter interrupt
    AccINT1.rise(NULL);
 
-   // Turn on the led, hopefully this all happens fast enough that we don't see
-   // the green colour
-   led.white();
-
    // turn on the nRF24L01
    Scheduler.Wakeup();
-
-   led.cyan();
-
-   // turn on the gyro
-   Gyro.Wakeup();
 
    led.magenta();
 
@@ -586,8 +585,9 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
 
    led.yellow();
 
-   // 250ms delay for the gyro to turn on
-   wait_ms(250);
+   // delay for the gyro to turn on,
+   // it will probably take longer than this
+   wait_ms(100);
    Gyro.ClearData();
 }
 
@@ -687,7 +687,6 @@ int main()
    i2c0.frequency(1000000);
    MMA8451Q acc(i2c0);
 
-
    //GyroInterface<I2C> Gyro(PTE0, PTE1, 0, PTA5);
 
    GyroInterface<SPI> Gyro(PTE1, PTE3, PTE2, PTE4, PTA5, PTA4);
@@ -719,6 +718,7 @@ int main()
    DigitalIn AccINT1(PTA14);
    DigitalIn AccINT2(PTA15);
    SetupAccelerometer(acc);
+   bool AccActive = true;
 
    if (Gyro.Initialize())
    {
@@ -864,7 +864,14 @@ int main()
                if (GyroZeroCount > GyroZeroRequiredSamples)
                {
                   GyroOffset =  GyroAccumulator / GyroZeroCount;
+                  acc.set_active(true);
+                  AccActive = true;
                }
+            }
+            else if (AccActive)
+            {
+               acc.set_active(false);
+               AccActive = false;
             }
 
             if (std::abs(GyroMax-GyroMin) > GyroZeroMaxDeviation || GyroZeroCount >= GyroZeroRequiredSamples)
