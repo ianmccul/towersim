@@ -625,7 +625,7 @@ float SleepExtraTime = 10; // go to sleep after this many additional seconds
 int16_t GyroMaxDeflection = 5000;
 
 // for a fancy LED output, we do our own zero calibration of the gyro
-constexpr int16_t GyroZeroMaxDeviation = 80;
+constexpr int16_t GyroZeroMaxDeviation = 100;
 constexpr int16_t GyroZeroRequiredSamples = 800;
 int16_t GyroMin = INT16_MAX;
 int16_t GyroMax = INT16_MIN;
@@ -861,9 +861,10 @@ int main()
                GyroAccumulator += z;
                ++GyroZeroCount;
 
-               if (GyroZeroCount > GyroZeroRequiredSamples)
+               if (GyroZeroCount >= GyroZeroRequiredSamples)
                {
                   GyroOffset =  GyroAccumulator / GyroZeroCount;
+                  //SetupAccelerometer(acc);
                   acc.set_active(true);
                   AccActive = true;
                }

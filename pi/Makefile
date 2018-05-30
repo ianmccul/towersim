@@ -117,6 +117,8 @@ calibrate : randutil.o bells.o bootstrapfilter.o
 
 show-accel-angle : randutil.o
 
+testspline : spline.o
+
 stage1 : $(stage1)
 stage2 : $(stage2)
 stage3 : $(stage3)

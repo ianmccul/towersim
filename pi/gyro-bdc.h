@@ -30,8 +30,8 @@ double const ThresholdVelocity = 15;   // degrees per second, ignore anything le
 int64_t const BufferWidthMicrosec = 300000/4;  // 0.3 seconds
 int64_t const SamplingRateMicroSec = 100000/4; // 0.1 seconds
 #else
-int64_t const BufferWidthMicrosec = 300000;  // 0.3 seconds
-int64_t const SamplingRateMicroSec = 100000/5; // 0.1 seconds
+int64_t const BufferWidthMicrosec = 150000;  // 0.15 seconds
+int64_t const SamplingRateMicroSec = BufferWidthMicrosec/5;
 #endif
 
 // Stay check if we get a false positive for small velocity when the bell is up.
@@ -258,6 +258,8 @@ GyroBDC::TryRoot(quartic_fit_result const& Res, double T)
    LastEnergy = Energy;
    BDCPoints.push_back({EventTime,V,CurvatureRatio});
 
+   //std::cout << T << ' ' << Res.a << ' ' << Res.b << ' ' << Res.c << ' ' << Res.d << ' ' << Res.e << '\n';
+
    //   std::cout << EventTime << ' ' << V << ' ' << C << ' ' << '\n';
 
    //   MyFile << EventTime << ' ' << V << ' ' << CurvatureRatio << '\n';
@@ -269,7 +271,7 @@ GyroBDC::TryRoot(quartic_fit_result const& Res, double T)
 bool
 GyroBDC::FitBufferQuartic()
 {
-   // Assemble the data for a quadratic fit
+   // Assemble the data for a quartic fit
    std::vector<double> x;
    std::vector<double> y;
    for (auto c : SampleBuf)
@@ -315,7 +317,7 @@ GyroBDC::FitBufferQuartic()
    bool Found = false;
    double T = 0;
    // find a root that lies within the buffer
-   // if we find a root it seems to be almost always root 3
+   // if we find a root it seems to be almost always root 3, so check this one first.
    if (!Found && std::abs(x3 - BufferWidthMicrosec*0.5e-6) <= (SamplingRateMicroSec*0.5*1.1e-6))
    {
       Found = this->TryRoot(Res, x3);
