@@ -30,8 +30,12 @@ double const ThresholdVelocity = 15;   // degrees per second, ignore anything le
 int64_t const BufferWidthMicrosec = 300000/4;  // 0.3 seconds
 int64_t const SamplingRateMicroSec = 100000/4; // 0.1 seconds
 #else
-int64_t const BufferWidthMicrosec = 150000;  // 0.15 seconds
-int64_t const SamplingRateMicroSec = BufferWidthMicrosec/5;
+// 2018-11-12: increased to 7x sampling per buffer width, which avoids some missed entries
+// due to fluctuations in the fit result
+int64_t const BufferWidthMicrosec = 180000;  // 0.18 seconds
+int64_t const SamplingRateMicroSec = BufferWidthMicrosec/8;
+double const BufferLeeway = 2.2; // allow some 'slop' in how close we need the sample to be
+// to the middle of the window
 #endif
 
 // Stay check if we get a false positive for small velocity when the bell is up.
@@ -243,8 +247,11 @@ GyroBDC::TryRoot(quartic_fit_result const& Res, double T)
    // ratio is < -0.1 and > -100
    // TODO: there was a typo here, the ratio limit is actually -1 to -100, need to check this!
    double CurvatureRatio = C / V;
-   //   if (CurvatureRatio > -0.1 || CurvatureRatio < -100)
-   //      return false;
+   if (CurvatureRatio > -0.1 || CurvatureRatio < -100)
+   {
+      // std::cout << "Curvature failed " << C << " velocity " << V << '\n';
+      return false;
+   }
 
    int64_t EventTime = int64_t(round(T*1E6)) + BuffStart;
 
@@ -316,17 +323,19 @@ GyroBDC::FitBufferQuartic()
 
    bool Found = false;
    double T = 0;
-   // find a root that lies within the buffer
+
+   // find a root that lies within the central of the buffer, meaning the distance of the root
+   // from the center of the buffer is less than half the 'window size'
    // if we find a root it seems to be almost always root 3, so check this one first.
-   if (!Found && std::abs(x3 - BufferWidthMicrosec*0.5e-6) <= (SamplingRateMicroSec*0.5*1.1e-6))
+   if (!Found && std::abs(x3 - BufferWidthMicrosec*0.5e-6) <= (SamplingRateMicroSec*0.5e-6 * BufferLeeway))
    {
       Found = this->TryRoot(Res, x3);
    }
-   if (std::abs(x1 - BufferWidthMicrosec*0.5e-6) <= (SamplingRateMicroSec*0.5*1.1e-6))
+   if (!Found && std::abs(x1 - BufferWidthMicrosec*0.5e-6) <= (SamplingRateMicroSec*0.5e-6 * BufferLeeway))
    {
       Found = this->TryRoot(Res, x1);
    }
-   if (!Found && std::abs(x2 - BufferWidthMicrosec*0.5e-6) <= (SamplingRateMicroSec*0.5*1.1e-6))
+   if (!Found && std::abs(x2 - BufferWidthMicrosec*0.5e-6) <= (SamplingRateMicroSec*0.5e-6 * BufferLeeway))
    {
       Found = this->TryRoot(Res, x2);
    }
