@@ -15,6 +15,7 @@
 #include <cassert>
 #include <cmath>
 #include <Eigen/Dense>
+#include "common/kbhit.h"
 
 /*
 Program to calculate an average of accelerometer readings, for calibration.  Uses the stage 2 data.
@@ -74,21 +75,21 @@ std::array<double, 8> AxMeanOctant = {0,0,0,0,0,0,0,0};
 std::array<double, 8> AyMeanOctant = {0,0,0,0,0,0,0,0};
 std::array<double, 8> StdevOctant = {0,0,0,0,0,0,0,0};
 
-void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolUse)
+bool Process(double AxMean, double AyMean, double AxStdev, double AyStdev, bool Use)
 {
    // For the sensor at rest, we expect that the s.d. will be
-   // 99 micro g per sqrt(bandwidth) in low noise mode.  
-   // Bandwidth is output rate / (something from 2 to 3), 
-   // worst case 3, so expect standard deviation to be around 7e-4.
-   // But this is typical, there is no rated maximum on the noise density.
+   // 99 micro g per sqrt(bandwidth) in low noise mode.
+   // Bandwidth is 400Hz.  So noise threshold is
+   // around 0.019.
 
-   double StdevThreshold = 8e-4;
+   double StdevThreshold = 0.025;
 
    if (AxStdev < StdevThreshold && AyStdev < StdevThreshold)
    {
       // get the angle.  Theta=0 is vertical.  In the polarity +1 sense,
-      // when the sensor box is facing you, an anticlockwise rotation increases the angle.
-      double Theta = std::atan2(AxMean, -AyMean);
+      // when the sensor box is facing you, an anticlockwise rotation increases the angle,
+      // with zero angle when the button is on the right hand side, power port on the left.
+      double Theta = std::atan2(AxMean, AyMean);
 
       double ThetaDeg = Theta*180/pi;
 
@@ -100,7 +101,7 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolU
       if (ThetaError > 10)
       {
          std::cout << "Angle is not close to canonical.\n";
-         return;
+         return false;
       }
 
       // normalize octant
@@ -108,7 +109,7 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolU
 
       double TotalStdev = std::hypot(AxStdev, AyStdev);
 
-      std::cout << "Got a good sample at angle " << Octant*45 << " stdev " << TotalStdev
+      std::cout << "Got a good sample at angle " << ((Octant+4)%8-4)*45 << " stdev " << TotalStdev
 		<< std::endl;
 
 	 if (Use)
@@ -120,31 +121,32 @@ void Process(double AxMean, double AyMean, double AxStdev, double AyStdev, boolU
 			 << "with stdev " << StdevOctant[Octant] << std::endl;
 	    }
 
-	    std::cout MM << "\nXaccel = " << AxMean << " stdev " << AxStdev
-			 << "\nYaccel = " << AyMean << " stedv " << AyStdev
-			 << std::endl;
+	    std::cout << "\nXaccel = " << AxMean << " stdev " << AxStdev
+                      << "\nYaccel = " << AyMean << " stedv " << AyStdev
+                      << std::endl;
 	    // update the record
 	    AxMeanOctant[Octant] = AxMean;
 	    AyMeanOctant[Octant] = AyMean;
 	    StdevOctant[Octant] = TotalStdev;
+            return true;
 	 }
       }
-   }
    else
    {
       std::cout << "stdev is too big " << AxStdev << ' ' << AyStdev << '\n';
    }
+   return false;
 }
 
 void SolveCalibrationParameters()
 {
-   Eigen::MatrixXf A(6,16);
+   Eigen::MatrixXf A(16,6);
    Eigen::VectorXf b(16);
 
    for (int i = 0; i < 8; ++i)
    {
-      A(i*2, 0) = AxMeanOctant[0];
-      A(i*2, 1) = AyMeanOctant[0];
+      A(i*2, 0) = AxMeanOctant[i];
+      A(i*2, 1) = AyMeanOctant[i];
       A(i*2, 2) = 0.0;
       A(i*2, 3) = 0.0;
       A(i*2, 4) = 1.0;
@@ -154,28 +156,29 @@ void SolveCalibrationParameters()
 
       A(i*2+1, 0) = 0.0;
       A(i*2+1, 1) = 0.0;
-      A(i*2+1, 2) = AxMeanOctant[0];
-      A(i*2+1, 3) = AyMeanOctant[0];
+      A(i*2+1, 2) = AxMeanOctant[i];
+      A(i*2+1, 3) = AyMeanOctant[i];
       A(i*2+1, 4) = 0.0;
       A(i*2+1, 5) = 1.0;
 
-      b[i*2] = std::cos(i*pi/4.0);
+      b[i*2+1] = std::cos(i*pi/4.0);
    }
 
-   Eigen::VectorXf x = A.bdcSvd(Eigen::ComputeThinU | Eigen::ComputeThinV).solve(b);
+   Eigen::VectorXf x(6);
+   x = A.bdcSvd(Eigen::ComputeThinU | Eigen::ComputeThinV).solve(b);
 
-   std::cout << "Matrix is\n"
-             << x[0] << ' ' << x[1] << '\n'
-             << x[2] << ' ' << x[3] << '\n'
-             << "Offset is " << x[4] << " , " << x[5] << '\n';
+   std::cout << "      \"AccelTransformation\" : [ [ "
+             << x[0] << ", " << x[1] << " ], [ " << x[2] << ", " << x[3] << " ] ],\n"
+             << "      \"AccelOffset\" : [ " << x[4] << ", " << x[5] << " ] \n";
 }
 
 int main(int argc, char** argv)
 {
+   init_keyboard();
    try
    {
       std::string InFile;
-      int RunLength = 100;
+      int RunLength = 200;  // number of samples to average over
       int WhichBell = 0;
 
       prog_opt::options_description desc("Allowed options");
@@ -301,12 +304,21 @@ int main(int argc, char** argv)
                double AxStdev = stdev(AxVec, AxMean);
                double AyStdev = stdev(AyVec, AyMean);
 
-               Process(AxMean, AyMean, AxStdev, AyStdev);
+               bool Use = kbhit();
+               if (Use)
+               {
+                  char c = readch();
+                  if (c == '\n')
+                     return 0;
+                  else std::cout << int(c) << '\n';
+               }
+
+               bool Got = Process(AxMean, AyMean, AxStdev, AyStdev, Use);
 
                AxVec.clear();
                AyVec.clear();
 
-               bool Complete = false;
+               bool Complete = true;
                for (auto x : StdevOctant)
                {
                   if (x == 0)
@@ -315,6 +327,17 @@ int main(int argc, char** argv)
                if (Complete)
                {
                   SolveCalibrationParameters();
+                  return 0;
+               }
+               else if (Got)
+               {
+                  std::cout << "Mossing angles:";
+                  for (int Octant = 0; Octant < 8; ++Octant)
+                  {
+                     if (StdevOctant[Octant] == 0)
+                        std::cout << ' ' << ((Octant+4)%8-4)*45;
+                  }
+                  std::cout << std::endl;
                }
             }
          }

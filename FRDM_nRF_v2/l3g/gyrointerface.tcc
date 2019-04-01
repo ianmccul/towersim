@@ -79,6 +79,17 @@ void
 GyroInterface<BusType>::Wakeup()
 {
    Impl.PowerUp();
+   // Note: power up takes about 250ms
+}
+
+template <typename BusType>
+void
+GyroInterface<BusType>::ClearData()
+{
+   // Reset the FIFO, setting Bypass mode clears the FIFO
+   Impl.SetFIFOMode(L3GTypes::Bypass);
+   // Set the FIFO back to stream mode
+   Impl.SetFIFOMode(L3GTypes::Stream);
 }
 
 template <typename BusType>

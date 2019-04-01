@@ -24,6 +24,7 @@ struct MsgTypes
    static unsigned char const BatteryV = 'B';
    static unsigned char const Accel = 'A';
    static unsigned char const BellAvail = 'E';
+   static unsigned char const AccelAngle = 'X';
 };
 
 int main(int argc, char** argv)
@@ -137,7 +138,8 @@ int main(int argc, char** argv)
          if (MsgType == MsgTypes::Gyro)
          {
             float z = *static_cast<float const*>(static_cast<void const*>(buf+10));
-            std::cout << Time << ' ' << Bell <<  " G " << z << '\n';
+            float ofs = *static_cast<float const*>(static_cast<void const*>(buf+14));
+            std::cout << Time << ' ' << Bell <<  " G " << z << ' ' << ofs << '\n';
          }
          else if (MsgType == MsgTypes::Accel)
          {
@@ -175,6 +177,12 @@ int main(int argc, char** argv)
          else if (MsgType == MsgTypes::BellAvail)
          {
             std::cout << Time << ' ' << Bell << " E" << '\n';
+         }
+         else if (MsgType == MsgTypes::AccelAngle)
+         {
+            float Theta;
+            std::memcpy(&Theta, buf+10, sizeof(Theta));
+            std::cout << Time << ' ' << Bell << " X " << Theta << '\n';
          }
          else
          {

@@ -3,7 +3,7 @@
 #include <unistd.h>   // for read()
 #include <stdlib.h>
 
-namespacae
+namespace
 {
 
    struct termios initial_settings, new_settings;
@@ -40,6 +40,7 @@ bool kbhit()
 
    new_settings.c_cc[VMIN]=0;
    tcsetattr(0, TCSANOW, &new_settings);
+   char ch;
    int nread = read(0,&ch,1);
    new_settings.c_cc[VMIN]=1;
    tcsetattr(0, TCSANOW, &new_settings);
@@ -60,6 +61,6 @@ int readch()
       return ch;
    }
    char ch;
-   read(0,&ch,1);
+   int r = read(0,&ch,1);
    return ch;
 }

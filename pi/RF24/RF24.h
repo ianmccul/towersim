@@ -1056,8 +1056,9 @@ private:
    *
    * @return Current value of status register
    */
+public:
   uint8_t get_status(void);
-
+private:
   #if !defined (MINIMAL)
   /**
    * Decode and print the given status to stdout

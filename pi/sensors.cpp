@@ -32,10 +32,10 @@ SensorInfoType::SensorInfoType()
      Polarity(0),
      GyroScale(DefaultGyroScale),
      GyroQuadratic(DefaultGyroQuadratic),
-     AXScale(DefaultAccScale),
-     AYScale(DefaultAccScale),
-     AXOffset(0),
-     AYOffset(0)
+     AccelTransformation({{1.0,0.0}, {0.0,1.0}}),
+     AccelOffset({0.0,0.0})//,
+
+//AccelBDC(0.0)
 {
 }
 
@@ -46,9 +46,9 @@ SensorInfoType::SensorInfoType(json const& j)
      Polarity(j.value("Polarity", 1)),
      GyroScale(j.value("GyroScale", 57.1429)),
      GyroQuadratic(j.value("GyroQuadratic", 0)),
-     AXScale(j.value("AXScale", 1670.7)),
-     AYScale(j.value("AYScale", 1670.7)),
-     AXOffset(j.value("AXOffset", 0.0)),
-     AYOffset(j.value("AYOffset", 0.0))
+     AccelTransformation(j.value("AccelTransformation",
+                                 std::vector<std::vector<double>>({{1.0,0.0},{0.0,1.0}}))),
+     AccelOffset(j.value("AccelOffset", std::vector<double>{0.0,0.0})),
+     AccelBDC(j.value("AccelBDC", 0.0))
 {
 }
