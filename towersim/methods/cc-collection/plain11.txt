@@ -1,0 +1,263 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Single-hunt Cinques methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3573	Thamesmead Bob	3.1.9.36E.9.1.E.167.E.149.	E	12E	q	Spliced			96/1029
+3574	Holt Bob	3.1.9.36E.9.145.36E.127.36E.9.	E	12E	q	Spliced			96/1029
+3575	Overton Bob	3.1.E.3.7.38E.169.3.18E.7.	E	12E	q	Spliced			96/1029
+3576	Avon Dassett Bob	3.14E.9.1.9.18E.9.145.36E.5.	E	12E	q1	Spliced			96/1029
+3577	Enford Bob	349.1.7.189.E.1.9.145.E.9.	E	12E	q	Spliced			96/1029
+3578	Upton St Leonard Bob	349.18E.569.18E.9.5.149.7.14E.589.	E	12E	q	Spliced			96/1029
+3579	Dorcan Bob	349.18E.9.1.9.5.9.5.E.3.	E	12E	q	Spliced			96/1029
+3580	Canterbury Pleasure Bob	34E.1.E.1.E.1.E.1.E.1.	E	12E	14257396E80	Spliced			08/1233 10/617
+3581	Tewkesbury Bob	369.147.E.169.7.38E.169.7.14E.369.	E	12E	q	Spliced			96/1029
+3582	Zealhampton Bob	5.1.7.38E.9.1.34E.5.36E.589.	E	12E	q1	Spliced			96/1029
+3583	Gleveham Bob	5.1.E.1.349.1.34E.5.14E.7.	E	12E	q	Spliced			96/1029
+3584	Wiltshire Bob	5.147.5.16E.7.58E.169.347.58E.9.	E	12E	q	Spliced			96/1029
+3585	Lydney Bob	5.147.58E.3.147.38E.9.123.58E.1.	E	12E	q	Spliced			96/1029
+3586	Covington Bob	5.147.E.189.E.1.E.1.E.589.	E	12E	q	Spliced			96/1029
+3587	Ramsborough Bob	569.1.E.1.E.1.36E.145.E.149.	E	12E	q	Spliced			96/1029
+3588	Corinium Bob	569.14E.7.16E.349.1.E.3.16E.9.	E	12E	q	Spliced			96/1029
+3589	Hunslet Bob	56E.1.E.1.E.1.E.1.E.1.	E	12E	13624795E80	1965-12-30	Leeds, St Peter		66/35
+3590	Bath Bob	589.1.7.369.78E.1.34E.1.E.149.	E	12E	q1	Spliced			96/1029
+3591	Yanworth Bob	589.1.E.1.349.58E.149.5.34E.1.	E	12E	q	Spliced			96/1029
+3592	Rendham Bob	7.14E.9.167.E.145.E.147.58E.147.	E	12E	q	Spliced			96/1029
+3593	Elston Bob	7.16E.5.369.147.3.9.1.58E.167.	E	12E	q	Spliced			96/1029
+3594	Elderfield Bob	7.18E.5.1.9.1.36E.147.58E.147.	E	12E	q	Spliced			96/1029
+3595	Crazy Horse Bob	78E.1.E.1.E.1.E.1.E.1.	E	12E	13528469E70	Spliced			08/677 10/617
+3596	Ridgeway Bob	9.1.E.167.9.1.569.3.14E.367.	E	12E	q	Spliced			96/1029
+3597	Nempnett Bob	90E.1.E.1.E.1.E.1.E.1.	E	12E	135274068E9	Spliced			03/1051 10/617
+3598	Oddingham Bob	E.1.7.1.34E.589.16E.5.18E.5.	E	12E	q	Spliced			96/1029
+3599	Plain Bob	E.1.E.1.E.1.E.1.E.1.	E	12E	p	1950-10-14	Ipswich, St Mary-le-Tower	1977-11-12	50/674 77/1069
+3600	St Martin's Bob	E.1.E.123.E.123.E.123.E.123.	E	12E	q	1998-11-28	Westminster, St Martin-in-the-Fields		98/1240
+3601	St Simon's Bob	E.1.E.3.E.3.E.3.E.3.	E	12E	q	Spliced			96/1029
+
+Single-hunt Little Cinques methods (treble to 5ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3602	Leiden Little Bob	3.1.5.3.	5	12E	p	Spliced		96/1029
+3603	Miserden Little Bob	3.14E.5.1.	5	12E	p1	Spliced		96/1029
+3604	Century Little Bob	5.1.5.1.	5	12E	p	2000-08-09	Grundisburgh	00/892
+3605	Twerton Little Bob	E.1.E.1.	5	12E	q1	Spliced		96/1029
+
+Single-hunt Little Cinques methods (treble to 7ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3606	Stonesfield Little Bob	E.1.58E.1.78E.145.	7	12E	q	Spliced	96/1029
+
+Single-hunt Little Cinques methods (treble to 10ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3607	Little Penultimus Little Place	E.1.E.1.E.1.E.1.E.	10E	1	r	2001-08-24	Grundisburgh	01/926
+
+Twin-hunt Cinques methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	Handbells	RW ref
+
+3608	Wake Court Bob	3.1.5.1.E.3.9.1.E.7.E.	1	d1	Spliced			96/1029
+3609	Marlborough Bob	3.1.5.1.E.3.E.1.E.1.E.	9	c1	1984-11-24	Leicester, St Margaret		85/9
+3610	Shropshire Bob	3.1.5.16E.9.3.E.5.E.5.14E.	7	a	Spliced			96/1029
+3611	Aldborough Bob	3.1.58E.1.7.18E.349.1.36E.147.E.	9	f	Spliced			96/1029
+3612	Essex Bob	3.1.E.1.7.3.9.145.E.7.12E.	3	d1	Spliced			96/1029
+3613	Itchen Bob	3.1.E.1.7.3.9.145.E.7.E.	3	d1	Spliced			96/1029
+3614	Axbridge Bob	3.1.E.1.9.18E.349.1.E.1.E.	1	a	Spliced			96/1029
+3615	Market Lavington Bob	3.1.E.1.9.3.9.3.E.1.E.	1	a	Spliced			96/1029
+3616	Ideford Bob	3.1.E.1.9.38E.149.3.E.1.E.	1	a	Spliced			96/1029
+3617	Kinnersley Bob	3.1.E.1.E.1.9.1.E.1.34E.	5	b	Spliced			96/1029
+3618	Richmond Bob	3.1.E.1.E.1.9.1.E.1.E.	5	b	Spliced			96/1029
+3619	Fulbeck Bob	3.1.E.1.E.1.E.1.E.1.34E.	9	b	Spliced			77/372
+3620	Leadenham Bob	3.1.E.1.E.1.E.1.E.1.56E.	9	b	Spliced			77/372
+3621	Hackington Bob	3.1.E.1.E.1.E.1.E.1.78E.	9	b	Spliced			77/372
+3622	Grandsire	3.1.E.1.E.1.E.1.E.1.E.	1	a	1725-01-19	London, St Bride, Fleet Street	1886-07-02	BN V5/116 RW 59/202
+3623	Double Grandsire	3.1.E.1.E.1.E.1.E.1.E.	9	b	1738-11-29	London, St Bride, Fleet Street		59/202
+3624	Rickmansworth Bob	3.1.E.1.E.1.E.1.E.145.36E.	9	b	Spliced			77/372
+3625	Regina Bob	3.1.E.1.E.1.E.1.E.167.58E.	9	b	Spliced			77/372
+3626	Buxton Bob	3.1.E.1.E.123.E.123.E.123.E.	3	f	Spliced			77/372 87/236
+3627	Fishwick Bob	3.1.E.1.E.123.E.123.E.3.E.	3	f	Spliced			77/372 87/236
+3628	Coniston Bob	3.1.E.1.E.123.E.3.12E.3.E.	3	f	Spliced			77/372
+3629	Windermere College Bob	3.1.E.1.E.123.E.3.E.123.E.	3	f	Spliced			77/372
+3630	Fielden Bob	3.1.E.1.E.123.E.3.E.3.12E.	3	f	Spliced			77/372 87/236
+3631	Scholfield Bob	3.1.E.1.E.123.E.3.E.3.E.	3	f	Spliced			77/372 87/236
+3632	Hawkshead Bob	3.1.E.1.E.3.12E.3.12E.3.E.	3	f	Spliced			77/372
+3633	Batley Bob	3.1.E.1.E.3.12E.3.E.123.E.	3	f	Spliced			77/372
+3634	Everleigh Bob	3.1.E.1.E.3.12E.3.E.3.12E.	3	f	Spliced			77/372
+3635	Childwall Bob	3.1.E.1.E.3.12E.3.E.3.E.	3	f	Spliced			77/372 87/236
+3636	Battle Bob	3.1.E.1.E.3.E.123.E.123.E.	3	f	Spliced			77/372
+3637	Adlington Bob	3.1.E.1.E.3.E.123.E.3.12E.	3	f	Spliced			77/372
+3638	Langdale College Bob	3.1.E.1.E.3.E.123.E.3.E.	3	f	Spliced			77/372
+3639	Lewes Bob	3.1.E.1.E.3.E.3.12E.3.12E.	3	f	Spliced			77/372
+3640	Seaford Bob	3.1.E.1.E.3.E.3.12E.3.E.	3	f	Spliced			77/372
+3641	Blackley Bob	3.1.E.1.E.3.E.3.E.123.E.	3	f	Spliced			77/372 87/236
+3642	Tolleshunt D'Arcy Bob	3.1.E.1.E.3.E.3.E.3.12E.	3	f	Spliced			77/372 87/236
+3643	St Clement's College Bob	3.1.E.1.E.3.E.3.E.3.E.	3	f	Spliced			77/372
+3644	Lammas Bob	3.1.E.167.9.38E.149.5.36E.145.E.	3	a	Spliced			96/1029
+3645	Aynho Bob	3.1.E.167.E.1.E.1.56E.1.E.	1	a	Spliced			96/1029
+3646	Perranzabuloe Bob	3.1.E.167.E.1.E.1.E.123.78E.	3	f	Spliced			96/1029
+3647	Avening Bob	3.1.E.167.E.1.E.1.E.3.78E.	3	f	Spliced			96/1029
+3648	Minal Bob	3.1.E.169.7.1.349.1.36E.147.E.	7	f	Spliced			96/1029
+3649	Eldersfield Bob	3.1.E.169.7.123.E.125.E.125.78E.	5	f	Spliced			77/372
+3650	Heddington Bob	3.1.E.169.7.123.E.125.E.5.78E.	5	f	Spliced			77/372
+3651	Idmiston Bob	3.1.E.169.7.123.E.5.12E.5.78E.	5	f	Spliced			77/372
+3652	Rowde Bob	3.1.E.169.7.123.E.5.E.125.78E.	5	f	Spliced			77/372
+3653	Stoulton Bob	3.1.E.169.7.123.E.5.E.345.78E.	5	f	Spliced			77/372
+3654	Sevenhampton Bob	3.1.E.169.7.123.E.5.E.5.78E.	5	f	Spliced			77/372
+3655	Overbury Imperial Bob	3.1.E.169.7.3.12E.5.12E.5.78E.	5	f	Spliced			77/372
+3656	Ripple Bob	3.1.E.169.7.3.12E.5.E.125.78E.	5	f	Spliced			77/372
+3657	Tenbury Bob	3.1.E.169.7.3.12E.5.E.345.78E.	5	f	Spliced			77/372
+3658	Tilshead Bob	3.1.E.169.7.3.12E.5.E.5.78E.	5	f	Spliced			77/372
+3659	Dartmoor Bob	3.1.E.169.7.3.14E.5.14E.5.78E.	5	f	Spliced			96/1029
+3660	Cropthorne Bob	3.1.E.169.7.3.E.125.E.125.78E.	5	f	Spliced			77/372
+3661	Elmley Castle Bob	3.1.E.169.7.3.E.125.E.345.78E.	5	f	Spliced			77/372
+3662	Lyneham Bob	3.1.E.169.7.3.E.125.E.5.78E.	5	f	Spliced			77/372
+3663	Somerleyton Bob	3.1.E.169.7.3.E.3.14E.5.12E.	9	a	Spliced			96/1029
+3664	Savernake Bob	3.1.E.169.7.3.E.3.14E.5.E.	9	a	Spliced			96/1029
+3665	Imber Bob	3.1.E.169.7.3.E.5.12E.5.78E.	5	f	Spliced			77/372
+3666	Wilton Imperial Bob	3.1.E.169.7.3.E.5.E.125.78E.	5	f	Spliced			77/372
+3667	Rock Bob	3.1.E.169.7.3.E.5.E.345.78E.	5	f	Spliced			77/372
+3668	Erlestoke Bob	3.1.E.169.7.3.E.5.E.5.78E.	5	f	Spliced			77/372
+3669	Etchingley Bob	3.1.E.169.7.38E.9.3.E.147.58E.	7	a	Spliced			96/1029
+3670	Ufford Bob	3.1.E.169.78E.3.12E.5.36E.5.16E.	7	a	Spliced			96/1029
+3671	Redruth Bob	3.1.E.169.E.189.E.145.E.127.34E.	9	f	Spliced			77/372
+3672	North Hill Bob	3.1.E.169.E.189.E.145.E.127.56E.	9	f	Spliced			77/372
+3673	Otterham Bob	3.1.E.169.E.189.E.145.E.127.E.	9	f	Spliced			77/372
+3674	Liskeard Bob	3.1.E.169.E.189.E.145.E.347.12E.	9	f	Spliced			77/372
+3675	Launceston Bob	3.1.E.169.E.189.E.145.E.347.E.	9	f	Spliced			77/372
+3676	Crowan Bob	3.1.E.169.E.189.E.145.E.7.12E.	9	f	Spliced			77/372
+3677	Wendron Bob	3.1.E.169.E.189.E.145.E.7.34E.	9	f	Spliced			77/372
+3678	Altarnun Bob	3.1.E.169.E.189.E.145.E.7.56E.	9	f	Spliced			77/372
+3679	Saltash Bob	3.1.E.169.E.189.E.145.E.7.E.	9	f	Spliced			77/372
+3680	Fosse Bob	3.1.E.169.E.189.E.3.14E.7.16E.	3	e	Spliced			96/1029
+3681	Rockbeare Bob	3.1.E.169.E.3.9.3.14E.5.36E.	9	a	Spliced			96/1029
+3682	Lacock Bob	3.1.E.189.7.38E.9.1.E.1.E.	1	b	Spliced			96/1029
+3683	Elkstone Bob	3.1.E.189.E.123.9.123.E.7.58E.	7	f	Spliced			77/372
+3684	Stone Bob	3.1.E.189.E.123.9.3.12E.7.58E.	7	f	Spliced			77/372
+3685	Tirley Imperial Bob	3.1.E.189.E.123.9.3.E.127.58E.	7	f	Spliced			77/372
+3686	Chedworth Bob	3.1.E.189.E.123.9.3.E.7.58E.	7	f	Spliced			77/372
+3687	Upton Bob	3.1.E.189.E.3.129.3.E.7.58E.	7	f	Spliced			77/372
+3688	Gloucester Imperial Bob	3.1.E.189.E.3.9.123.E.127.58E.	7	f	Spliced			77/372
+3689	Oddington Bob	3.1.E.189.E.3.9.123.E.7.58E.	7	f	Spliced			77/372
+3690	Longhope Bob	3.1.E.189.E.3.9.3.12E.7.58E.	7	f	Spliced			77/372
+3691	Glevum Bob	3.1.E.189.E.3.9.3.E.127.58E.	7	f	Spliced			77/372
+3692	Rendcomb Bob	3.1.E.189.E.3.9.3.E.7.58E.	7	f	Spliced			77/372
+3693	Nunburnholme Bob	3.145.78E.1.9.18E.9.5.16E.345.78E.	3	a	Spliced			96/1029
+3694	East Pennard Bob	3.147.5.18E.9.3.E.5.16E.5.36E.	5	b	Spliced			96/1029
+3695	Ogborough Bob	3.149.E.189.E.389.14E.3.E.345.16E.	5	b	Spliced			96/1029
+3696	St James Bob	3.14E.5.16E.7.18E.9.1.E.1.E.	7	e	Spliced			96/1029
+3697	Great Bedwyn Bob	3.14E.589.16E.7.3.14E.5.E.5.38E.	5	b	Spliced			96/1029
+3698	Bodmin Bob	3.14E.9.16E.9.1.9.145.E.7.58E.	7	a	Spliced			96/1029
+3699	Iken Bob	3.14E.9.16E.9.18E.9.145.36E.127.36E.	7	a	Spliced			96/1029
+3700	Brecon Bob	3.14E.9.16E.9.18E.9.145.36E.7.36E.	7	a	Spliced			96/1029
+3701	Alton Priors Bob	3.16E.9.1.78E.3.9.1.E.145.78E.	5	f	Spliced			96/1029
+3702	Queen Camel Bob	3.18E.5.169.E.3.14E.3.16E.5.14E.	5	a	Spliced			96/1029
+3703	Cambridgeshire Court Bob	E.1.5.1.7.3.9.1.E.3.E.	1	j1	Spliced			96/1029
+3704	Double Norwich Court Bob	E.1.5.1.E.3.9.1.E.7.E.	1	j1	1978-08-27	Norwich, St Peter Mancroft		78/851
+3705	Single Surfleet Court Bob	E.1.E.1.7.1.E.1.E.1.E.	1	g	Spliced			96/1029
+3706	Double Surfleet Court Bob	E.1.E.1.7.1.E.5.E.1.E.	1	h	Spliced			96/1029
+3707	New London Court Bob	E.1.E.1.E.1.9.1.E.1.E.	5	g	Spliced			96/1029
+3708	Cleatham Bob	E.1.E.1.E.1.E.1.E.1.34E.	9	g	Spliced			96/1029
+3709	Cleethorpes Bob	E.1.E.1.E.1.E.1.E.1.56E.	9	g	Spliced			96/1029
+3710	Canterbury Bob	E.1.E.1.E.1.E.1.E.1.78E.	9	g	Spliced			96/1029
+3711	Reverse Grandsire	E.1.E.1.E.1.E.1.E.1.E.	9	g	Spliced			96/1029
+3712	Trowbridge Bob	E.1.E.1.E.1.E.1.E.145.36E.	9	g	Spliced			96/1029
+3713	Rutherford Bob	E.1.E.1.E.1.E.1.E.167.58E.	9	g	Spliced			96/1029
+3714	Bromsgrove Bob	E.1.E.1.E.3.12E.3.12E.3.E.	3	l	Spliced			77/372
+3715	Rous Lench Bob	E.1.E.1.E.3.12E.3.E.123.E.	3	l	Spliced			77/372
+3716	Elcombe Bob	E.1.E.1.E.3.12E.3.E.3.12E.	3	l	Spliced			77/372
+3717	Wavertree Bob	E.1.E.1.E.3.12E.3.E.3.E.	3	l	Spliced			77/372 87/236
+3718	Trentham Bob	E.1.E.1.E.3.E.123.E.3.E.	3	l	Spliced			77/372
+3719	Mavesyn Ridware Bob	E.1.E.1.E.3.E.3.12E.3.E.	3	l	Spliced			77/372
+3720	Lesser Wopping Bob	E.1.E.1.E.3.E.3.E.123.E.	3	l	Spliced			77/372 87/236
+3721	Ogden Bob	E.1.E.1.E.3.E.3.E.3.12E.	3	l	Spliced			77/372 87/236
+3722	Crayford College Bob	E.1.E.1.E.3.E.3.E.3.E.	3	l	Spliced			77/372
+3723	Bisham Bob	E.1.E.167.E.1.E.1.E.3.78E.	3	l	Spliced			96/1029
+3724	Highclere Bob	E.1.E.169.7.123.E.125.E.5.78E.	5	l	Spliced			77/372
+3725	Isle of Wight Bob	E.1.E.169.7.123.E.5.12E.5.78E.	5	l	Spliced			77/372
+3726	Ropley Bob	E.1.E.169.7.123.E.5.E.125.78E.	5	l	Spliced			77/372
+3727	Sopley Bob	E.1.E.169.7.123.E.5.E.5.78E.	5	l	Spliced			77/372
+3728	Woodhenge Bob	E.1.E.169.7.18E.9.3.56E.1.56E.	3	m	Spliced			96/1029
+3729	Privett Bob	E.1.E.169.7.3.12E.5.E.5.78E.	5	l	Spliced			77/372
+3730	Mottisfont Bob	E.1.E.169.7.3.E.125.E.5.78E.	5	l	Spliced			77/372
+3731	Amport Bob	E.1.E.169.7.3.E.5.12E.5.78E.	5	l	Spliced			77/372
+3732	Hampshire Bob	E.1.E.169.7.3.E.5.E.125.78E.	5	l	Spliced			77/372
+3733	Ellisfield Bob	E.1.E.169.7.3.E.5.E.5.78E.	5	l	Spliced			77/372
+3734	Cunetio Bob	E.1.E.169.78E.1.349.1.E.167.E.	5	g	Spliced			96/1029
+3735	Netheravon Bob	E.1.E.169.78E.1.9.1.E.367.E.	1	g	Spliced			96/1029
+3736	Reading Bob	E.1.E.169.E.189.E.145.E.127.34E.	9	l	Spliced			77/372
+3737	Kintbury Bob	E.1.E.169.E.189.E.145.E.127.56E.	9	l	Spliced			77/372
+3738	East Garston Bob	E.1.E.169.E.189.E.145.E.127.E.	9	l	Spliced			77/372
+3739	Radley Imperial Bob	E.1.E.169.E.189.E.145.E.347.12E.	9	l	Spliced			77/372
+3740	Inkpen Bob	E.1.E.169.E.189.E.145.E.347.E.	9	l	Spliced			77/372
+3741	Beedon Bob	E.1.E.169.E.189.E.145.E.7.12E.	9	l	Spliced			77/372
+3742	Shrivenham Bob	E.1.E.169.E.189.E.145.E.7.34E.	9	l	Spliced			77/372
+3743	Hungerford Bob	E.1.E.169.E.189.E.145.E.7.56E.	9	l	Spliced			77/372
+3744	Englefield Bob	E.1.E.169.E.189.E.145.E.7.E.	9	l	Spliced			77/372
+3745	Letcombe Bassett Bob	E.1.E.189.7.3.14E.3.E.1.E.	1	g	Spliced			96/1029
+3746	Skilgate Bob	E.1.E.189.E.123.9.123.E.7.58E.	7	l	Spliced			77/372
+3747	Exford Bob	E.1.E.189.E.123.9.3.12E.7.58E.	7	l	Spliced			77/372
+3748	Thorn Falcon Bob	E.1.E.189.E.123.9.3.E.127.58E.	7	l	Spliced			77/372
+3749	Road Bob	E.1.E.189.E.123.9.3.E.7.58E.	7	l	Spliced			77/372
+3750	Englishcombe Bob	E.1.E.189.E.3.129.3.E.7.58E.	7	l	Spliced			77/372
+3751	Kennet Bob	E.1.E.189.E.3.14E.3.E.1.E.	9	g	Spliced			96/1029
+3752	Rowdean Bob	E.1.E.189.E.3.9.1.E.3.E.	1	h	Spliced			96/1029
+3753	Mudford Bob	E.1.E.189.E.3.9.123.E.7.58E.	7	l	Spliced			77/372
+3754	Old Cleeve Bob	E.1.E.189.E.3.9.3.12E.7.58E.	7	l	Spliced			77/372
+3755	Somerset Bob	E.1.E.189.E.3.9.3.E.127.58E.	7	l	Spliced			77/372
+3756	Spaxton Bob	E.1.E.189.E.3.9.3.E.7.58E.	7	l	Spliced			77/372
+3757	Keevil Bob	E.1.E.189.E.389.12E.3.E.1.E.	3	g	Spliced			96/1029
+3758	Exmoor Bob	E.169.E.169.7.18E.349.1.56E.7.58E.	7	g	Spliced			96/1029
+
+Twin-hunt Little Cinques methods (a) (hunt bells to 3rds)
+
+No.	Name	Notation	hl	lh	Tower bells	RW ref
+
+3759	Bastow Little Bob	E.1.3.	1	m	Spliced	96/1029
+
+Twin-hunt Little Cinques methods (a) (hunt bells to 4ths)
+
+No.	Name	Notation	hl	lh	Tower bells	RW ref
+
+3760	Bedwyn Parva Little Bob	3.14E.9.14E.	9	a	Spliced	77/372
+
+Twin-hunt Little Cinques methods (a) (hunt bells to 5ths)
+
+No.	Name	Notation	hl	lh	Tower bells	RW ref
+
+3761	Little Grandsire	3.1.E.1.5.	1	e	Spliced	96/1029
+3762	St Lawrence Little Bob	3.14E.5.1.5.	1	b	Spliced	77/372
+
+Twin-hunt Little Cinques methods (a) (hunt bells to 6ths)
+
+No.	Name	Notation	hl	lh	Tower bells	RW ref
+
+3763	Glamorgan Little Bob	E.167.5.16E.7.36E.	7	l	Spliced	96/1029
+
+Twin-hunt Little Cinques methods (a) (hunt bells to 7ths)
+
+No.	Name	Notation	hl	lh	Tower bells	RW ref
+
+3764	Gainsborough Little Bob	3.1.E.1.E.1.7.	1	d1	Spliced	96/1029
+3765	Wellington Little Bob	E.1.E.1.E.1.7.	1	j1	Spliced	96/1029
+
+Twin-hunt Little Cinques methods (a) (hunt bells to 8ths)
+
+No.	Name	Notation	hl	lh	Tower bells	RW ref
+
+3766	Devon Little Bob	E.149.567.18E.7.189.E.589.	E	h	Spliced	96/1029
+
+Twin-hunt Little Cinques methods (a) (hunt bells to 9ths)
+
+No.	Name	Notation	hl	lh	Tower bells	RW ref
+
+3767	Welland Little Bob	3.1.E.169.7.3.E.5.9.	7	f	Spliced	77/372
+3768	Upwey Little Bob	3.14E.9.16E.9.1.9.145.9.	5	a	Spliced	96/1029
+3769	Oxfordshire Little Bob	3.167.58E.169.7.389.E.1.9.	1	d1	Spliced	96/1029
+
+Twin-hunt Little Cinques methods (b) (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3770	York Little Bob	E.1.E.	14E	14E	1864203E597	Spliced	93/1026

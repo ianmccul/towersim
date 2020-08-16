@@ -1,0 +1,185 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Single-hunt Royal methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3443	Single Oxford Bob	-14-16-18-10-	10	12	c1	1967-04-23	Slough		67/419
+3444	Lyme Regis Bob	-14-1678.34.18-1270-	70	12	a	2010-08-10	Lyme Regis		10/865
+3445	Shepton Beauchamp Bob	-14-1678.34.18-70-	70	12	a	2010-07-13	Shepton Beauchamp		10/761
+3446	Cambridgeshire Court Bob	-14-36-18-30-	10	10	j1	1973-10-08	Isleworth		73/881
+3447	Cambridge Court Bob	-14-36-58-10-	50	10	k1	1974-05-15	Isleworth		74/516
+3448	Double Oxford Bob	-14-36-58-70-	90	12	f	1909-01-02	Wednesbury, St Bartholomew		BN V27/562
+3449	Ebury Bob	-14-36-50-10-	10	12	d1	1965-02-06	Rickmansworth		65/141
+3450	Winton Bob	-14-36-50-10-	10	10	j1	1939-08-07	Norwich, St Peter Mancroft	1980-03-19	39/522 80/320
+3451	Saltby Bob	-14-30-1450-1450-	50	12	f	1998-05-25	Saltby		98/579
+3452	King-of-the-Mountains Bob	-14-30-18-70-	10	12	d1	2010-09-14	Minehead		10/1013	
+3453	Double Norwich Court Bob	-14-30-18-70-	10	10	j1	1769-04-07	Norwich, St Peter Mancroft		59/202
+3454	Upton Court Bob	-14-30-10-10-	90	12	c1	1965-07-10	Slough		65/502
+3455	Double Coslany Court Bob	-14.50.36.1470.58.16.70-	10	10	g	2001-06-26	Bishopstoke		01/707
+3456	Radley Bob	-1450-1230-1230-1230-	30	12	f	Spliced			73/579 87/231
+3457	Northcourt Bob	-1450-1230-1230-1230-	30	10	l	Spliced			73/579 87/231
+3458	Roundhay Bob	-1450-1230-1230-30-	30	12	f	Spliced			73/579
+3459	Thurgoland Bob	-1450-1230-1230-30-	30	10	l	Spliced			73/579
+3460	Chapeltown Bob	-1450-1230-30-1230-	30	12	f	Spliced			73/579
+3461	Aldwick Bob	-1450-1230-30-1230-	30	10	l	Spliced			73/579
+3462	Birstall Bob	-1450-1230-30-30-	30	12	f	Spliced			73/579 87/231
+3463	Greengate Bob	-1450-1230-30-30-	30	10	l	Spliced			73/579 87/231
+3464	Stanks Bob	-1450-1230-30.12.30-	30	12	f	Spliced			73/579
+3465	Chalfont St Peter Bob	-1450-1230-30.12.30-	30	10	l	Spliced			73/579
+3466	Colton Bob	-1450-1230-30.12.30.12.	30	12	f	Spliced			73/579
+3467	Fenchurch St Paul Bob	-1450-1230-30.12.30.12.	30	10	l	Spliced			73/579
+3468	Burmantofts Bob	-1450-30-1230-1230-	30	12	f	Spliced			73/579
+3469	Bamburgh Bob	-1450-30-1230-1230-	30	10	l	Spliced			73/579
+3470	Middleton Bob	-1450-30-1230-30-	30	12	f	Spliced			73/579
+3471	Stoke Poges Bob	-1450-30-1230-30-	30	10	l	Spliced			73/579
+3472	Cliviger Bob	-1450-30-30-1230-	30	12	f	Spliced			73/579 87/231
+3473	Barkby Bob	-1450-30-30-1230-	30	10	l	Spliced			73/579 87/231
+3474	Rosehill Bob	-1450-30-30-30-	30	12	f	Spliced			73/579 87/231
+3475	Briercliffe Bob	-1450-30-30-30-	30	10	l	Spliced			73/579 87/231
+3476	Beeston Bob	-1450-30-30.12.30-	30	12	f	Spliced			73/579
+3477	Much Wenlock Bob	-1450-30-30.12.30-	30	10	l	Spliced			73/579
+3478	Halton Bob	-1450-30-30.12.30.12.	30	12	f	Spliced			73/579
+3479	Hexham Bob	-1450-30-30.12.30.12.	30	10	l	Spliced			73/579
+3480	Burley Bob	-1450-30.12.30-1230-	30	12	f	Spliced			73/579
+3481	Hanthorpe Bob	-1450-30.12.30-1230-	30	10	l	Spliced			73/579
+3482	Harlesyke Bob	-1450-30.12.30-30-	30	12	f	Spliced			73/579 87/231
+3483	Wanlip Bob	-1450-30.12.30-30-	30	10	l	Spliced			73/579 87/231
+3484	Ardington Bob	-1450-30.12.30.12.30.12.	30	10	l	Spliced			73/579 87/231
+3485	Double London Court Bob	-18-30-18-30-	10	10	1796035284	1765-01-25	Leeds (Kent)		58/391
+3486	Buxton Bob	-10-1230-1230-1230-	30	12	f	Spliced			73/579 87/231
+3487	Rodbourne Bob	-10-1230-1230-1230-	30	10	l	Spliced			73/579 87/231
+3488	Fishwick Bob	-10-1230-1230-30-	30	12	f	Spliced			73/579 87/231
+3489	Hudson Bob	-10-1230-1230-30-	30	10	l	Spliced			73/579 87/231
+3490	Windermere College Bob	-10-1230-30-1230-	30	12	f	Spliced			73/579
+3491	Acton Trussell Bob	-10-1230-30-1230-	30	10	l	Spliced			73/579
+3492	Scholfield Bob	-10-1230-30-30-	30	12	f	Spliced			73/579 87/231
+3493	Nelson College Bob	-10-1230-30-30-	30	10	l	Spliced			73/579 87/231
+3494	Coniston Bob	-10-1230-30.12.30-	30	12	f	Spliced			73/579
+3495	Brewood Bob	-10-1230-30.12.30-	30	10	l	Spliced			73/579
+3496	Ullswater Bob	-10-1230-30.12.30.12.	30	12	f	Spliced			73/579
+3497	Penkridge Bob	-10-1230-30.12.30.12.	30	10	l	Spliced			73/579
+3498	Single Isleworth Bob	-10-16-10-10-	10	12	b	1967-08-05	Slough		67/591
+3499	Macclesfield Bob	-10-16-58-70-	90	10	k1	1958-04-07	Macclesfield, Christ Church		58/278
+3500	Double Surfleet Court Bob	-10-16-50-10-	10	10	h	1919-08-23	Surfleet		19/382
+3501	Double Isleworth Bob	-10-16-50-10-	90	12	c1	1938-11-12	Isleworth		38/742
+3502	Richmond Bob	-10-10-18-10-	50	12	b	1966-11-05	Leighton Buzzard		66/779
+3503	Syon Bob	-10-10-18-70-	90	12	c1	1964-02-22	Isleworth		64/161
+3504	Rickmansworth Bob	-10-10-10-1450.36.	90	12	b	1963-01-19	Rickmansworth		63/81
+3505	Regina Bob	-10-10-10-1670.58.	90	12	b	1965-01-02	Abingdon, St Helen		65/65
+3506	Plain Bob	-10-10-10-10-	10	12	a	1725-11-22	London, St Bride, Fleet Street	1777-02-18	59/202
+3507	Double Bob	-10-10-10-10-	90	12	b	1734-02-28	London, St Bride, Fleet Street	1922-03-29	22/213 59/202
+3508	Reverse Bob	-10-10-10-10-	90	10	g	1761-11-22	Westminster, St Margaret		59/202
+3509	Fulbeck Bob	-10-10-10-10.34.	90	12	b	1962-06-02	Isleworth		62/393
+3510	Cleatham Bob	-10-10-10-10.34.	90	10	g	Spliced			73/579 87/231
+3511	Heckington Bob	-10-10-10-10.3478.	90	12	b	Spliced			73/579
+3512	Humberstone Bob	-10-10-10-10.3478.	90	10	g	Spliced			73/579
+3513	Leadenham Bob	-10-10-10-10.56.	90	12	b	Spliced			73/579
+3514	Cleethorpes Bob	-10-10-10-10.56.	90	10	g	Spliced			73/579
+3515	Hackington Bob	-10-10-10-10.78.	90	12	b	1967-12-02	Abingdon, St Helen		67/921
+3516	Canterbury Bob	-10-10-10-10.78.	90	10	g	Spliced			73/579 87/231
+3517	Ashbourne College Bob	-10-10-10-70-	70	12	c1	1965-05-29	Southampton, St Mary		51/791 65/400
+3518	Slough Bob	-10-10.34.10.34.10.34.	10	12	e	1969-07-26	Slough		69/712
+3519	Itchen Bob	-10-36-1458-70-	30	12	d1	1964-08-15	North Stoneham		64/582
+3520	Battle Bob	-10-30-1230-1230-	30	12	f	Spliced			73/579
+3521	Cannock Bob	-10-30-1230-1230-	30	10	l	Spliced			73/579
+3522	Langdale College Bob	-10-30-1230-30-	30	12	f	Spliced			73/579
+3523	Trentham Bob	-10-30-1230-30-	30	10	l	Spliced			73/579
+3524	Blackley Bob	-10-30-30-1230-	30	12	f	Spliced			73/579 87/231
+3525	Lesser Wopping Bob	-10-30-30-1230-	30	10	l	Spliced			73/579 87/231
+3526	St Clement's College Bob	-10-30-30-30-	30	12	f	1935-10-18	Westminster, St Clement Danes	1977-05-11	35/678 77/494
+3527	Crayford College Bob	-10-30-30-30-	30	10	l	1954-05-15	St Albans, St Peter		54/354
+3528	Seaford Bob	-10-30-30.12.30-	30	12	f	Spliced			73/579
+3529	Mavesyn Ridware Bob	-10-30-30.12.30-	30	10	l	Spliced			73/579
+3530	Lewes Bob	-10-30-30.12.30.12.	30	12	f	Spliced			73/579
+3531	Stafford Bob	-10-30-30.12.30.12.	30	10	l	Spliced			73/579
+3532	Batley Bob	-10-30.12.30-1230-	30	12	f	Spliced			73/579
+3533	Rous Lench Bob	-10-30.12.30-1230-	30	10	l	Spliced			73/579
+3534	Childwall Bob	-10-30.12.30-30-	30	12	f	Spliced			73/579 87/231
+3535	Wavertree Bob	-10-30.12.30-30-	30	10	l	Spliced			73/579 87/231
+3536	Hawkshead Bob	-10-30.12.30.12.30-	30	12	f	Spliced			73/579
+3537	Bromsgrove Bob	-10-30.12.30.12.30-	30	10	l	Spliced			73/579
+3538	Goldhanger Bob	-10-30.12.30.12.30.12.	30	12	f	Spliced			73/579 87/231
+3539	Smith Bob	-10-30.12.30.12.30.12.	30	10	l	Spliced			73/579 87/231
+3540	Single Canterbury Pleasure Bob	34.10-10-10-10-	10	12	1425739608	1898-09-10	Bromsgrove	2000-03-14	BN V17/175 RW 00/352
+3541	Single Kirkgate Bob	3456.10-10-10-10-	10	12	1426379508			2001-01-02	01/117
+3542	Single Blakelow Bob	345678.10-10-10-10-	10	12	1426385907			2001-03-15	01/351
+3543	Single Allostock Bob	3478.10-10-10-10-	10	12	1425836907			2001-03-01	01/351
+3544	Intrepid Bob	30.14-16-50.16.30.16.	30	12	b	2006-01-07	St Albans, St Peter		06/80
+3545	St James Bob	30.14.50.16.70.18-10-	70	12	e	1966-03-19	Worsley		66/266
+3546	Chepstow Bob	30.14.50.16.70.18-70-	90	12	d1	1992-12-12	Hitchin		93/75
+3547	Single Hunslet Bob	56.10-10-10-10-	10	12	1362479508	1966-06-11	Leeds, St Peter	2000-02-15	66/452 00/280
+3548	Single Church Hulme Bob	5678.10-10-10-10-	10	12	1362485907			2000-04-11	00/527
+
+Single-hunt Little Royal methods (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3549	Bastow Little Bob	-	12	10	m	Spliced	
+3550	Kent Little Bob	34.	12	10	m	Spliced	
+3551	Slough Little Bob	3478.	12	10	m	Spliced	73/579
+3552	Windsor Little Bob	56.	12	10	m	Spliced	73/579 87/231
+3553	Eton Little Bob	78.	12	10	m	Spliced	73/579 87/231
+
+Single-hunt Little Royal methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3554	Little Bob	-10-	14	12	e	1912-09-06	Exeter, St Sidwell	1912-06-11	V2/423 V3/192
+3555	Lansdowne Little Bob	-10.56.	14	12	e	Spliced			69/354
+3556	Wick Little Bob	-10.78.	14	12	e	Spliced			69/354
+
+Single-hunt Little Royal methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3557	Gainsborough Little Bob	-10-10-	16	12	d1	1959-05-23	Isleworth	21/65 59/358
+3558	Wellington Little Bob	-10-10-	16	10	j1	Spliced		52/183
+3559	Grimsby Little Bob	-10-10.78.	16	12	d1	Spliced		72/943
+3560	Marlborough Little Bob	-10-10.78.	16	10	j1	Spliced		72/943
+
+Single-hunt Little Royal methods (treble to 8ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3561	Isleworth Little Bob	-10-16-50-	18	12	d1	1960-12-03	Isleworth	60/826
+3562	Churchill Little Bob	-10-10-10-	18	10	h	Spliced		62/724
+
+Single-hunt Little Royal methods (treble to 9ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3563	Little Little Penultimus Little Place	-10-10-10-10.	90	10	g	2000-12-16	Stonham Aspal	01/62
+
+Twin-hunt Royal methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	Handbells	RW ref
+
+3564	Grandsire	30.10-10-10-10-10	-	p	1780-11-26	Fulham	1886-03-09	BN V4/401 RW 59/202
+
+Triple-hunt Royal methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3565	Double Sandbach Bob	-16-18-30-50-	10	10	1230896745	1972-02-05	Macclesfield, Christ Church	72/259
+
+Triple-hunt Little Royal methods (treble to 8ths)
+
+No.	Name	Notation	hl	le	lh	Handbells	RW ref
+
+3566	Arist Little Bob	-18-18-18-	18	12	1352748690	2002-12-06	03/6 47 441
+
+Non-palindromic single-hunt Royal methods
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+3567	Eastern Bob	-14-30-10-10-10-10-10-10-10-12	b	1750-02-19	London, St Sepulchre		59/202
+3568	Double Eastern Bob	-14-30-10-10-90-70-18-10-10-12	c1	1973-11-21	Isleworth		74/11
+3569	Brave New World Bob	-14.58.10.3478.10.36.70-90.1678.50.16.50-16.50.16.3450.12	1345678902	1998-01-18	Reading, St Laurence		98/209
+3570	Double Resurrection Cyclic Bob	-1678-1670-10-70-90-3450-1450-10-14-12	1345678902	2002-09-01	Beddington	2003-03-05	02/969 1193 03/275
+3571	Double Cambridge Cyclic Bob	-18-18-18-10-90-30-30-30-10-12	1789023456	Spliced			08/890
+
+Non-palindromic single-hunt Little Royal methods (treble to 4ths)
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+3572	Erith Little Bob	-10-34-14-12	f	1939-02-11	Prittlewell	1934-04-29	34/294

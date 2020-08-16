@@ -1,0 +1,12 @@
+Twin-hunt Major methods (a)
+
+No.     Name    Notation        hl      lh      Tower bells     Place   Handbells       RW ref
+
+3297    Waterloo Reverse Bob    -14-16-38-58.   16      s       1912-10-23      Lambeth, St John                V3/291
+3298    Waterloo Bob    38.14-16-38-58  -       p
+3299    Stansted Bob    38.14-16-38.14.38       -       q
+3300    New Bob 38.14-18-38-38  -       p
+3301    Carshalton Bob  38.16-16-18-58  -       p
+3302    St Edmundsbury Bob      38.16-16-38-38  -       q
+3303    Grandsire       38.18-18-18-18  -       p       1773-10-11      Southwark, St George    1880-05-29      59/67
+

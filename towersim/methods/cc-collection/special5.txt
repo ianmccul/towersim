@@ -1,0 +1,13 @@
+Twin-hunt Doubles methods (a)
+
+No.     Name    Notation        hl      lh      Tower bells     Place   Handbells       RW ref
+
+127     Breaston Bob    3.1.5.1.125.    3       f                               65/624
+128     Grandsire       3.1.5.1.5.      1       a       1777-03-07      Alton (Hants), St Lawrence      1912-08-05      V3/89 70/450
+129     Double Grandsire        3.1.5.1.5.      3       f       1958-07-05      Neath           58/492
+130     Double Antelope Place   3.145.5.1.125.  3       a
+131     Antelope Place  3.145.5.1.5.    1       f       1964-11-09      Barton Stacey   1961-01-11      61/110 64/808
+132     Spondon Bob     3.145.5.1.5.    3       a                               65/624
+133     Reverse Antelope Place  5.1.5.1.125.    3       g
+134     Reverse Grandsire       5.1.5.1.5.      3       g
+

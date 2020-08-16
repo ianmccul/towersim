@@ -1,0 +1,1410 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Single-hunt Major methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+1965	Dorking Bob	-14-1236-1258-	18	18	k	1982-12-31	Windsor, St John-the-Baptist		83/144
+1966	Pinehurst Bob	-14-1236-58-	78	12	f	Spliced			93/1269
+1967	Banosa Bob	-14-1236-58.12.	78	12	f	Spliced			93/1269
+1968	Idgah (Agra) Junction Bob	-14-1236.12.123458.3456.	78	12	f	Spliced			93/1269
+1969	Kapustalni Bob	-14-1236.12.1258-	78	12	f	Spliced			93/1269
+1970	Agra Fort Platform 1 Bob	-14-1236.12.1258.3456.	78	12	f	Spliced			93/1269
+1971	Lehgaon Bob	-14-1236.12.58-	78	12	f	Spliced			93/1269
+1972	Allerton Bob	-14-1236.12.58.12.	78	12	f	Spliced			93/1269
+1973	Nowbagh Bob	-14-1236.1278.1258-	78	12	14263785	Spliced			93/1269
+1974	Khusta Buzurg Bob	-14-1236.1278.58-	78	12	14263785	Spliced			93/1269
+1975	Old Oak Common Bob	-14-1236.1278.58.12.	78	12	14263785	Spliced			93/1269
+1976	Derby Etches Park Bob	-14-1236.78.58-	78	12	14263785	Spliced			93/1269
+1977	Pathrot Bob	-14-1236.78.58.12.	78	12	14263785	Spliced			93/1269
+1978	Kinkhed Bob	-14-123678-1258-	78	12	14263785	Spliced			93/1269
+1979	Vilegaon Bob	-14-123678-1258.12.	78	12	14263785	Spliced			93/1269
+1980	Bhadsivni Bob	-14-123678.12.58.12.	78	12	14263785	Spliced			93/1269
+1981	Chicklade Bob	-14-1238-3458.16.	78	12	d	Spliced			83/282
+1982	Selsey Bob	-14-1238-3458.16.	78	18	j	Spliced			82/970
+1983	Oxenwood Bob	-14-1238-38.14.	78	12	d	Spliced			83/282
+1984	Chilton Bob	-14-1238-38.14.	78	18	j	Spliced			82/970
+1985	Vauxhall Bob	-14-1238-38.1456.	78	12	d	Spliced			82/555
+1986	Melksham Bob	-14-1238-38.1456.	78	18	j	Spliced			83/398
+1987	Gussage Bob	-14-1238-58.12.	58	12	f	Spliced			82/740
+1988	Shaw Bob	-14-16-1458-	78	12	f	1983-07-24	Shaw		82/970 83/686
+1989	Single Oxford Bob	-14-16-18-	18	12	c	1889-01-10	Warnham, St Margaret		BN V7/535
+1990	Single Norwich Court Bob	-14-16-18-	18	18	h	1937-11-20	Alburgh	1922-01-10	22/38 37/785
+1991	Fiddlers Hill Bob	-14-16-18.36.	78	12	f	Spliced			83/534
+1992	Arlington Bob	-14-16-58.14.	78	12	f	Spliced			83/534
+1993	Clifton Bob	-14-16-58.14.	78	18	l	2009-05-12	Clifton (Notts), St Mary		09/565
+1994	Beretun Bob	-14-16.34.18-	58	12	a	1954-12-02	Hemel Hempstead		54/803 55/24
+1995	Wrington Bob	-14-16.34.18.34.	58	12	a	Spliced			82/342
+1996	Earlstoke Bob	-14-16.34.18.3456.	18	18	m	Spliced			83/398
+1997	Hethersett Bob	-14-16.34.18.36.	18	18	m	1947-12-19	Hethersett		48/23 60
+1998	Saxlingham Bob	-14-16.34.58.36.	58	18	m	1952-09-15	Saxlingham Nethergate		52/627
+1999	Single Darlaston Bob	-14-18-18-	18	14	18576234	1895-06-03	Bolsterstone		BN V14/20
+2000	Christleton Bob	-14-18-58.14.	58	12	f	1953-12-05	Christleton		53/816
+2001	Sawston Imperial Bob	-14-18.34.18.34.	18	18	m	1947-12-27	Norwich, St Giles		48/43
+2002	Loughborough Bob	-14-36-18-	38	12	d	1929-05-18	Liscard		29/325
+2003	Cambridge Court Bob	-14-36-18-	38	18	j	1923-07-19	Nuneaton	1922-09-12	22/597
+2004	Hereward Bob	-14-36-58-	18	12	e	1914-08-20	Reddish	1946-08-03	V7/126 46/391
+2005	Double Norwich Court Bob	-14-36-58-	18	18	k	1741-03-09	Norwich, St Michael Coslany	1891-02-23	BN V9/588 RW 59/651
+2006	Double Oxford Bob	-14-36-58-	78	12	f	1832-07-26	Norwich, St Giles	1923-01-02	23/39 59/651
+2007	Pershore Bob	-14-36-58-	78	18	l	1927-08-20	Pershore, Abbey		27/547
+2008	Westminster Bob	-14-36-58.12.	78	18	l	1953-01-24	Pulford		53/98
+2009	Basford Bob	-14-36-58.34.	78	12	f	1997-05-05	Basford		97/539
+2010	Queen Imperial Bob	-14-36-58.34.	78	18	l	1954-05-15	Pulford		54/341
+2011	Mid Wales Music Week Bob	-14-36.12.3458-	78	12	f	2007-09-15	Liverpool, St Francis Xavier		07/1076
+2012	Handbridge Bob	-14-36.12.58-	78	18	l	1954-02-13	Handbridge		54/132
+2013	Thelwall Bob	-14-36.12.58.12.	78	12	f	Spliced			93/1269
+2014	Ercall Bob	-14-36.12.58.12.	78	18	l	1959-06-06	High Ercall		59/410
+2015	Cheers Bob	-14-36.12.58.16.	38	18	m	2004-12-08	Dore		05/11
+2016	Overleigh Bob	-14-36.12.58.34.	78	18	l	1959-10-24	Handbridge		59/648
+2017	Upton Imperial Bob	-14-36.12.58.36.	18	18	m	1958-07-30	Gressenhall		58/539
+2018	Birkenhead Mollington Street Bob	-14-36.1278.58.12.	78	12	14263785	Spliced			93/1269
+2019	Rodborough Bob	-14-36.14.38-	58	12	a	Spliced			82/970
+2020	Yarnton Bob	-14-36.14.38.12.	58	12	a	Spliced			83/366
+2021	Dublin Court Bob	-14-36.14.38.16.	38	18	m	1913-09-27	Gosforth		V5/217
+2022	Cheltenham Bob	-14-36.14.58.14.	78	12	f	1939-06-16	Crayford		39/396
+2023	Leamington Bob	-14-36.14.58.14.	78	18	l	1951-04-30	Hethersett		51/310
+2024	Murtajapur Junction Bob	-14-3678-1258.12.	78	12	14263785	Spliced			93/1269
+2025	Achalpur Bob	-14-3678-58-	78	12	14263785	Spliced			93/1269
+2026	Murtajapur Town Bob	-14-3678.12.58-	78	12	14263785	Spliced			93/1269
+2027	Engine Common Bob	-14-38-1258-	58	12	f	Spliced			82/970
+2028	Olveston Bob	-14-38-1258.34.	58	12	f	Spliced			83/282
+2029	Snettisham Bob	-14-38-1458.36.	78	18	j	1959-10-07	East Dereham		59/616
+2030	Winchester Bob	-14-38-18-	18	12	c	1924-12-09	Willesden	1947-02-02	24/803 47/82
+2031	Shipway Court Bob	-14-38-18-	18	18	h			1934-01-17	34/54
+2032	Marlborough Bob	-14-38-18-	78	12	d	1924-10-14	Willesden	1947-06-08	24/675 47/288
+2033	Highbury Bob	-14-38-18-	78	18	j	1959-09-30	Pulham St Mary the Virgin	1941-07-25	41/363 59/599
+2034	Hodnet Bob	-14-38-18.34.	78	12	d	1954-04-24	Hodnet		54/292
+2035	Owlpen Bob	-14-38-18.34.	78	18	j	Spliced			82/970
+2036	Grove Bob	-14-38-18.3456.	78	18	j	Spliced			83/398
+2037	Daresbury Bob	-14-38-18.56.	78	12	d	1952-11-15	Daresbury		52/756
+2038	Croesoswallt Bob	-14-38-18.56.	78	18	j	1962-07-14	Oswestry		62/498 524
+2039	Andoversford Bob	-14-38-3458.12.	58	12	f	Spliced			82/740 83/464
+2040	Orcheston Bob	-14-38-38.1456.	38	18	k	Spliced			82/555
+2041	Cholmondeley Bob	-14-38-38.16.	38	12	e	1953-06-13	Malpas		53/449
+2042	Taunton Court Bob	-14-38-38.16.	38	18	k	1958-12-03	East Dereham		58/820
+2043	Painswick College Bob	-14-38-58-	58	12	f	1937-07-16	Crayford		37/484
+2044	Kidlington College Bob	-14-38-58-	58	18	l	1945-03-24	Norwich, St John de Sepulchre	1944-06-11	44/250 45/134
+2045	Liscard Bob	-14-38-58.12.	58	12	f	1953-01-10	Liscard		53/67
+2046	Tilstock Bob	-14-38-58.12.	58	18	l	1960-02-06	Wem		60/131
+2047	Odstock Bob	-14-38-58.1234.	58	12	f	Spliced			83/282
+2048	Owen's College Bob	-14-38-58.34.	58	12	f	1952-10-18	Stretford		52/706
+2049	Littleton Bob	-14-38-58.34.	58	18	l	1959-11-21	Christleton		59/719
+2050	Bebington Bob	-14-38.12.38.14.	78	12	d	1953-03-14	Bebington		53/194
+2051	Nupend Bob	-14-38.12.38.14.	78	18	j	Spliced			82/970
+2052	Taits Hill Bob	-14-38.12.38.1456.	78	18	j	Spliced			82/970
+2053	Farndon Bob	-14-38.12.58-	58	12	f	1954-01-02	Farndon (Cheshire)		54/35
+2054	St Francis Bob	-14-38.12.58-	58	18	l	1959-10-31	Buckley		59/668
+2055	Hedingham Bob	-14-38.12.58.12.	58	12	f	1957-07-24	Sible Hedingham		57/491
+2056	Cheswardine Bob	-14-38.12.58.12.	58	18	l	1959-05-02	Cheswardine		59/327
+2057	Kinnerton Bob	-14-38.12.58.34.	58	18	l	1959-09-12	Pulford		59/565
+2058	Truro Court Bob	-14-38.14.38.14.	38	18	m	1950-10-27	Hethersett		50/706
+2059	Colville Bob	-14-38.14.58.14.	58	12	f	1952-05-17	Witton		52/340
+2060	Romsey Court Bob	-14-38.14.58.14.	58	18	l	Spliced			52/102
+2061	Pohe Bob	-14.12.36-1258-	78	12	f	Spliced			93/1269
+2062	Karanja Bob	-14.12.36-1258.12.	78	12	f	Spliced			93/1269
+2063	Ralbha Bob	-14.12.36.12.3458.56.	78	12	f	Spliced			93/1269
+2064	Karanja Town Bob	-14.12.36.12.58-	78	12	f	Spliced			93/1269
+2065	Corse Bob	-14.12.36.12.58.12.	78	12	f	Spliced			93/1269
+2066	Bichpuri Bob	-14.12.36.12.58.3456.	78	12	f	Spliced			93/1269
+2067	Khera Sandhan Halt Bob	-14.12.36.1234.3458.1256.	78	12	f	Spliced			93/1269
+2068	Achhnera Junction Bob	-14.12.36.1234.58.123456.	78	12	f	Spliced			93/1269
+2069	Warudkhed Bob	-14.12.3678-1258.12.	78	12	14263785	Spliced			93/1269
+2070	Somthan Bob	-14.12.3678-58-	78	12	14263785	Spliced			93/1269
+2071	Sangwi Bob	-14.12.3678-58.12.	78	12	14263785	Spliced			93/1269
+2072	Bhandegaon Bob	-14.12.3678.12.58.12.	78	12	14263785	Spliced			93/1269
+2073	Rati-ka-Nagla Bob	-14.1256.36-123458-	78	12	14258367	Spliced			93/1269
+2074	Bastol Halt Bob	-14.1256.36-123458.56.	78	12	14258367	Spliced			93/1269
+2075	Hathras Road Bob	-14.1256.36-1258.1234.	78	12	14258367	Spliced			93/1269
+2076	Agsauli Bob	-14.1256.36.34.123458.56.	78	12	14258367	Spliced			93/1269
+2077	Sikandra Rao Bob	-14.1256.36.34.1258.123456.	78	12	14258367	Spliced			93/1269
+2078	Patiali Bob	-14.125678.3678-58.56.	78	12	14258367	Spliced			93/1269
+2079	Narthar Halt Bob	-14.125678.3678.12.3458.3456.	78	12	14258367	Spliced			93/1269
+2080	Birpur Bob	-14.1278.36-1258-	78	12	14263785	Spliced			93/1269
+2081	Silipur Bob	-14.1278.36.12.58-	78	12	14263785	Spliced			93/1269
+2082	Ikdori Bob	-14.1278.36.12.58.12.	78	12	14263785	Spliced			93/1269
+2083	Durgapuri Bob	-14.1278.3678-1258.12.	78	12	f	Spliced			93/1269
+2084	Saroni Road Bob	-14.1278.3678-58-	78	12	f	Spliced			93/1269
+2085	Khijeepura Bob	-14.1278.3678-58.12.	78	12	f	Spliced			93/1269
+2086	Girdharpur Bob	-14.1278.3678.12.58-	78	12	f	Spliced			93/1269
+2087	Mendu Bob	-14.56.1236.123478.3458-	78	12	14257386	Spliced			93/1269
+2088	Hathras City Bob	-14.56.1236.1278.123458.56.	78	12	14257386	Spliced			93/1269
+2089	Mursan Bob	-14.56.1236.1278.1258-	78	12	14257386	Spliced			93/1269
+2090	Sonal Bob	-14.56.1236.1278.58.56.	78	12	14257386	Spliced			93/1269
+2091	Mathura Cantt Bob	-14.56.1236.78.3458-	78	12	14257386	Spliced			93/1269
+2092	Raya Bob	-14.56.1236.78.3458.3456.	78	12	14257386	Spliced			93/1269
+2093	Teffont Magna Bob	-14.56.1238-1458-	38	12	b	Spliced			83/282
+2094	Walcot Bob	-14.56.1238-1458-	38	18	g	Spliced			83/32
+2095	Iron Acton Bob	-14.56.18-18-	78	18	h	Spliced			83/282
+2096	Radcot Bob	-14.56.18-18.34.	78	12	c	Spliced			83/534
+2097	Parkham Bob	-14.56.36.12.3458.1256.	78	12	14258367	Spliced			93/1269
+2098	Bhainsa Bob	-14.56.36.1234.3458.12.	78	12	14258367	Spliced			93/1269
+2099	Mathura Junction Bob	-14.56.36.1234.3458.1256.	78	12	14258367	Spliced			93/1269
+2100	Akeman Bob	-14.56.38.14.38.56.	38	12	a	Spliced			83/398
+2101	Kasganj Junction Bob	-14.5678.1236.12.123458.3456.	78	12	14257386	Spliced			93/1269
+2102	Marahra Bob	-14.5678.1236.12.58.34.	78	12	14257386	Spliced			93/1269
+2103	Sahawar Town Bob	-14.5678.1236.1234.123458-	78	12	14257386	Spliced			93/1269
+2104	Badhari Kalan Bob	-14.5678.1236.34.3458.56.	78	12	14257386	Spliced			93/1269
+2105	Garhka Bob	-14.5678.3678.1234.1258.34.	78	12	14258367	Spliced			93/1269
+2106	Ganj Dundwara Bob	-14.5678.3678.1234.1258.3456.	78	12	14258367	Spliced			93/1269
+2107	Yatesbury Bob	-14.58.1236-1458.36.	58	12	b	Spliced			82/970
+2108	Bibury Bob	-14.58.1236-1458.36.	58	18	g	Spliced			82/342
+2109	Single Mancroft Bob	-14.58.16-18-	18	12	d	1958-04-23	Hethersett		58/295
+2110	Single Coslany Court Bob	-14.58.16-18-	18	18	j	1958-05-14	Loddon		58/343
+2111	Newbury Bob	-14.58.16-38.56.	18	12	b	Spliced			82/342
+2112	Hereford Bob	-14.58.16-38.56.	18	18	g	Spliced			82/342
+2113	Rushey Platt Bob	-14.58.36-3458.16.	58	12	b	Spliced			82/740
+2114	Ibstock Bob	-14.58.36-3458.16.	58	18	g	Spliced			83/98
+2115	Shrewsbury Bob	-14.58.36-58.14.	78	12	a	1954-02-20	Malpas		54/147
+2116	Demi-Centenary Bob	-14.58.36.12.58.14.	38	18	m	2003-12-15	Sheffield Cathedral		04/35
+2117	Double Coslany Court Bob	-14.58.36.14.58-	18	18	m	1939-05-13	Twickenham, St Mary	2007-12-04	39/312 08/35
+2118	Double Mancroft Bob	-14.58.36.14.58-	78	12	a	1947-03-17	Frodsham		47/147
+2119	Dacorum Bob	-14.58.36.14.58.12.	78	12	a	1956-01-14	Northchurch		56/67
+2120	Yavatmal Bob	-14.78.1236-58-	78	12	14263785	Spliced			93/1269
+2121	Ghosipura Bob	-14.78.1236.12.1258-	78	12	14263785	Spliced			93/1269
+2122	Gwalior NG Bob	-14.78.1236.12.58-	78	12	14263785	Spliced			93/1269
+2123	Sumaulia Bob	-14.78.1236.1278.58-	78	12	f	Spliced			93/1269
+2124	Jora Alapur Bob	-14.78.1236.1278.58.12.	78	12	f	Spliced			93/1269
+2125	Motijheel Bob	-14.78.1236.78.1258-	78	12	f	Spliced			93/1269
+2126	Bamourgaon Bob	-14.78.1236.78.1258.12.	78	12	f	Spliced			93/1269
+2127	Bijaipur Road Bob	-14.78.123678-58.12.	78	12	f	Spliced			93/1269
+2128	Ling Bob	-14.78.36.1278.58-	78	12	f	Spliced			93/1269
+2129	Lasina Bob	-14.78.36.1278.58.12.	78	12	f	Spliced			93/1269
+2130	Tapona Bob	-14.78.36.78.1258-	78	12	f	Spliced			93/1269
+2131	Ladkhed Bob	-14.78.36.78.1258.12.	78	12	f	Spliced			93/1269
+2132	Darwha Bob	-14.78.36.78.58-	78	12	f	Spliced			93/1269
+2133	Moti Bagh Bob	-14.78.36.78.58.12.	78	12	f	Spliced			93/1269
+2134	Kailaras Bob	-14.78.3678-1258.12.	78	12	f	Spliced			93/1269
+2135	Sikroda Bob	-14.78.3678-58-	78	12	f	Spliced			93/1269
+2136	Sabalgarh Bob	-14.78.3678.12.1258-	78	12	f	Spliced			93/1269
+2137	Rampahari Bob	-14.78.3678.12.1258.12.	78	12	f	Spliced			93/1269
+2138	Samai Bob	-14.78.3678.12.58-	78	12	f	Spliced			93/1269
+2139	Rudain Bob	-1456-1236-58.3456.	78	12	14258367	Spliced			93/1269
+2140	Kaimganj Bob	-1456-1236.12.3458.1234.	78	12	14258367	Spliced			93/1269
+2141	Kampil Road Bob	-1456-1236.12.58.34.	78	12	14258367	Spliced			93/1269
+2142	Shukarullahpur Halt Bob	-1456-1236.1234.3458-	78	12	14258367	Spliced			93/1269
+2143	Shamsabad Bob	-1456-1236.1234.58.1234.	78	12	14258367	Spliced			93/1269
+2144	Yaqutganj Halt Bob	-1456-1236.123478.58.1234.	78	12	14257386	Spliced			93/1269
+2145	Fatehgarh Bob	-1456-1236.1278.58.1256.	78	12	14257386	Spliced			93/1269
+2146	Bhatasa Halt Bob	-1456-1236.34.3458.56.	78	12	14258367	Spliced			93/1269
+2147	Farukhabad Bob	-1456-1236.78.3458.123456.	78	12	14257386	Spliced			93/1269
+2148	Harsignhpur Goba Bob	-1456-1236.78.58.1234.	78	12	14257386	Spliced			93/1269
+2149	Thurcaston Bob	-1456-1238-1238-	58	12	f	Spliced			68/211
+2150	Rearsby Bob	-1456-1238-1238-	58	18	l	Spliced			68/211
+2151	Edgmond Bob	-1456-1238-38-	58	12	f	Spliced			68/211
+2152	Cumnor Bob	-1456-1238-38-	58	18	l	Spliced			68/211
+2153	Queniborough Bob	-1456-1238-38.12.	58	12	f	Spliced			68/211
+2154	Sandford Bob	-1456-1238-38.12.	58	18	l	Spliced			68/211
+2155	Rockley Bob	-1456-18-18-	78	18	h	Spliced			83/398
+2156	Steeple Ashton Bob	-1456-18-18.34.	78	18	h	Spliced			83/398
+2157	Hanley Bob	-1456-36-1458-	58	12	a	1962-09-25	Hanley (Staffs)		62/688
+2158	Ballupur Halt Bob	-1456-36.1234.3458.12.	78	12	14258367	Spliced			93/1269
+2159	Daryaogan Bob	-1456-36.1234.58.12.	78	12	14258367	Spliced			93/1269
+2160	Spitalfields Festival Bob	-1456-36.14.58-	58	12	a	1998-05-28	Spitalfields		98/626
+2161	Kamalganj Bob	-1456-3678.34.3458-	78	12	14257386	Spliced			93/1269
+2162	Rutland Bob	-1456-38-1238-	58	12	f	Spliced			68/211
+2163	Scarcliffe Bob	-1456-38-1238-	58	18	l	Spliced			68/211
+2164	Betterton Bob	-1456-38-38-	58	12	f	Spliced			68/211
+2165	Ginge Bob	-1456-38-38-	58	18	l	Spliced			68/211
+2166	Edgbaston Bob	-1456-38-38.12.	58	12	f	Spliced			68/251
+2167	Twist Bob	-1456-38-38.12.	58	18	l	Spliced			68/251
+2168	Denchworth Bob	-1456-38.12.38-	58	12	f	Spliced			68/251
+2169	Cropston Bob	-1456-38.12.38-	58	18	l	Spliced			68/251
+2170	Wick Bob	-1456-38.12.38.12.	58	12	f	Spliced			68/211
+2171	Bolsover Bob	-1456-38.12.38.12.	58	18	l	Spliced			68/211
+2172	Khudaganj Bob	-1456.12.36.12.58.3456.	78	12	14258367	Spliced			93/1269
+2173	Singhirampur Halt Bob	-1456.12.36.12.58.56.	78	12	14258367	Spliced			93/1269
+2174	Gursahaiganj Bob	-1456.12.36.34.123458.56.	78	12	14258367	Spliced			93/1269
+2175	Malikpur Halt Bob	-1456.12.36.34.1258.56.	78	12	14258367	Spliced			93/1269
+2176	Khudlapur Bob	-1456.12.3678-3458.1234.	78	12	14257386	Spliced			93/1269
+2177	Dhaur Salar Halt Bob	-1456.1256.36.12.58.12.	78	12	f	Spliced			93/1269
+2178	Utripura Bob	-1456.1256.36.1234.58.123456.	78	12	f	Spliced			93/1269
+2179	Rawatpur Bob	-1456.125678.3678-58.1234.	78	12	f	Spliced			93/1269
+2180	Kanpur Anwarganj Bob	-1456.125678.3678-58.123456.	78	12	f	Spliced			93/1269
+2181	Kanpur Central Bob	-1456.125678.3678.34.58-	78	12	f	Spliced			93/1269
+2182	Kanpur Bridge Bob	-1456.125678.3678.34.58.56.	78	12	f	Spliced			93/1269
+2183	Mani Mau Bob	-1456.56.1236-3458-	78	12	f	Spliced			93/1269
+2184	Araul Makanpur Bob	-1456.56.1236-3458.123456.	78	12	f	Spliced			93/1269
+2185	Kannauj City Bob	-1456.56.1236-58.1234.	78	12	f	Spliced			93/1269
+2186	Kannauj Bob	-1456.56.1236-58.3456.	78	12	f	Spliced			93/1269
+2187	Bilhaur Bob	-1456.56.1236.12.3458.56.	78	12	f	Spliced			93/1269
+2188	Bakothi Khas Bob	-1456.56.1236.12.58.34.	78	12	f	Spliced			93/1269
+2189	Jasoda Bob	-1456.56.36.12.3458.1256.	78	12	f	Spliced			93/1269
+2190	Jalalpur Panwara Bob	-1456.56.36.1234.58.12.	78	12	f	Spliced			93/1269
+2191	Mandhana Junction Bob	-1456.5678.3678-3458-	78	12	f	Spliced			93/1269
+2192	Kalianpur Bob	-1456.5678.3678-3458.56.	78	12	f	Spliced			93/1269
+2193	Barrajpur Bob	-1456.5678.3678-58.34.	78	12	f	Spliced			93/1269
+2194	Chaubepur Bob	-1456.5678.3678-58.3456.	78	12	f	Spliced			93/1269
+2195	Inthiathok Bob	-145678-36.123478.1258.1234.	78	12	14258367	Spliced			93/1269
+2196	Gonda Kacheri Bob	-145678-36.1278.123458.123456.	78	12	14258367	Spliced			93/1269
+2197	Subhagpur Bob	-145678-36.3478.3458.56.	78	12	14258367	Spliced			93/1269
+2198	Gonda Junction Platform 1 Bob	-145678-36.3478.58-	78	12	14258367	Spliced			93/1269
+2199	Gainjahwa Bob	-145678.125678.3678-123458.1256.	78	12	14263785	Spliced			93/1269
+2200	Balrampur Bob	-145678.1278.3678.34.123458.1256.	78	12	14257386	Spliced			93/1269
+2201	Jharkhandi Halt Bob	-145678.5678.3678.1234.58.56.	78	12	14263785	Spliced			93/1269
+2202	Bhawanipur Kalan Bob	-145678.78.3678.34.1258.123456.	78	12	14257386	Spliced			93/1269
+2203	Amberley Bob	-1458-1236-1238.56.	18	18	k	Spliced			82/970
+2204	Radley Bob	-1458-1238-1238-	38	12	f	Spliced			67/762 68/362
+2205	Northcourt Bob	-1458-1238-1238-	38	18	l	Spliced			67/762 68/362
+2206	Birstall Bob	-1458-1238-38-	38	12	f	1972-01-29	Birstall (Leics)		67/762 72/160
+2207	Greengate Bob	-1458-1238-38-	38	18	l	Spliced			67/762
+2208	Hendred Bob	-1458-1238-38.12.	38	12	f	Spliced			67/762
+2209	Abingdon Bob	-1458-1238-38.12.	38	18	l	Spliced			67/762
+2210	HMS Coventry Bob	-1458-18-1458-	18	12	a	Spliced			87/1089 11/869 1031
+2211	Icknield Bob	-1458-36-18-	38	12	c	1965-11-13	Watlington (Oxon)		65/804 66/7
+2212	Ventnor Bob	-1458-36-38.56.	18	18	k	Spliced			82/342
+2213	Uplands Bob	-1458-36.14.58.16.	58	18	k	Spliced			82/970
+2214	Cliviger Bob	-1458-38-1238-	38	12	f	Spliced			67/762 68/362
+2215	Barkby Bob	-1458-38-1238-	38	18	l	Spliced			67/762 68/362
+2216	Old Town Bob	-1458-38-18-	78	12	c	Spliced			82/740
+2217	Anna Valley Bob	-1458-38-18-	78	18	h	Spliced			83/32
+2218	Eastwell Bob	-1458-38-18.34.	78	12	c	Spliced			82/740
+2219	Nomansland Bob	-1458-38-18.34.	78	18	h	Spliced			83/32
+2220	Ashton Bob	-1458-38-18.3456.	78	18	h	Spliced			83/32
+2221	Ermin Bob	-1458-38-18.56.	78	12	c	Spliced			83/534
+2222	Rosehill Bob	-1458-38-38-	38	12	f	Spliced			67/762
+2223	Briercliffe Bob	-1458-38-38-	38	18	l	Spliced			67/762
+2224	Hanney Bob	-1458-38-38.12.	38	12	f	Spliced			67/802
+2225	Cassington Bob	-1458-38-38.12.	38	18	l	Spliced			67/802
+2226	Hale Bob	-1458-38.12.3458.16.	78	12	c	Spliced			83/32
+2227	Harlesyke Bob	-1458-38.12.38-	38	12	f	Spliced			67/802
+2228	Wanlip Bob	-1458-38.12.38-	38	18	l	Spliced			67/802
+2229	Lockinge Bob	-1458-38.12.38.12.	38	12	f	Spliced			67/762
+2230	Ardington Bob	-1458-38.12.38.12.	38	18	l	Spliced			67/762
+2231	Nonera Bob	-1478-1236-58.12.	78	12	14263785	Spliced			93/1269
+2232	Sondha Road Bob	-1478-1236.12.1258-	78	12	14263785	Spliced			93/1269
+2233	Gohad Road Bob	-1478-1236.12.58.12.	78	12	14263785	Spliced			93/1269
+2234	Pachora Junction Bob	-1478-1236.1278.1258-	78	12	f	Spliced			93/1269
+2235	Bhind Bob	-1478-1236.1278.58.12.	78	12	f	Spliced			93/1269
+2236	Asokhar Bob	-1478-1236.78.1258-	78	12	f	Spliced			93/1269
+2237	Itehar Bob	-1478-1236.78.1258.12.	78	12	f	Spliced			93/1269
+2238	Soni Bob	-1478-1236.78.58.12.	78	12	f	Spliced			93/1269
+2239	Pimpalgaon Bob	-1478-123678-58-	78	12	f	Spliced			93/1269
+2240	Shendurni Bob	-1478-123678-58.12.	78	12	f	Spliced			93/1269
+2241	Sanicnara Bob	-1478-36.1278.1258-	78	12	f	Spliced			93/1269
+2242	Rathora Kalan Bob	-1478-36.1278.1258.12.	78	12	f	Spliced			93/1269
+2243	Bhadroli Bob	-1478-36.1278.58-	78	12	f	Spliced			93/1269
+2244	Golaka Mandir Bob	-1478-36.78.1258.12.	78	12	f	Spliced			93/1269
+2245	Sheopurkalan Bob	-1478-36.78.58-	78	12	f	Spliced			93/1269
+2246	Magarwara Bob	-1478-3678.12.3458.1256.	78	12	f	Spliced			93/1269
+2247	Varkhedi Bob	-1478-3678.12.58.12.	78	12	f	Spliced			93/1269
+2248	Pahur Bob	-1478.12.36-1258.12.	78	12	14263785	Spliced			93/1269
+2249	Bhagdara Bob	-1478.12.36.12.58-	78	12	14263785	Spliced			93/1269
+2250	Jamner Bob	-1478.12.36.12.58.12.	78	12	14263785	Spliced			93/1269
+2251	Pulgaon Junction Bob	-1478.12.3678-1258-	78	12	f	Spliced			93/1269
+2252	Sorta Bob	-1478.12.3678-1258.12.	78	12	f	Spliced			93/1269
+2253	Virul Bob	-1478.12.3678.12.58-	78	12	f	Spliced			93/1269
+2254	Unnao Bob	-1478.12.3678.34.1258-	78	12	f	Spliced			93/1269
+2255	Malhaur Bob	-1478.1256.3678-1258.56.	78	12	14258367	Spliced			93/1269
+2256	Safedabad Bob	-1478.1256.3678.12.3458.56.	78	12	14258367	Spliced			93/1269
+2257	Jugaur Bob	-1478.1256.3678.12.58.56.	78	12	14258367	Spliced			93/1269
+2258	Barabanki Junction Bob	-1478.1256.3678.34.123458.56.	78	12	14258367	Spliced			93/1269
+2259	Maijapur Bob	-1478.125678.36.12.3458.1256.	78	12	14258367	Spliced			93/1269
+2260	Kasturi Bob	-1478.125678.36.12.58.1256.	78	12	14258367	Spliced			93/1269
+2261	Kathola Bob	-1478.125678.3678-123458.3456.	78	12	14257386	Spliced			93/1269
+2262	Garhi Sandra Bob	-1478.1278.36-1258-	78	12	f	Spliced			93/1269
+2263	Soorothee Bob	-1478.1278.36-1258.12.	78	12	f	Spliced			93/1269
+2264	Bari Bob	-1478.1278.36.12.58.12.	78	12	f	Spliced			93/1269
+2265	Angal Bob	-1478.1278.3678-1258-	78	12	14263785	Spliced			93/1269
+2266	Kankret Bob	-1478.1278.3678-1258.12.	78	12	14263785	Spliced			93/1269
+2267	Burhwal Junction Bob	-1478.1278.3678-3458.123456.	78	12	14263785	Spliced			93/1269
+2268	Bindaura Bob	-1478.1278.3678-3458.56.	78	12	14263785	Spliced			93/1269
+2269	Mogaru Junction Bob	-1478.1278.3678-58-	78	12	14263785	Spliced			93/1269
+2270	Ranpura Bob	-1478.1278.3678-58.12.	78	12	14263785	Spliced			93/1269
+2271	Ghaghara Ghat Bob	-1478.1278.3678.34.3458.1256.	78	12	14263785	Spliced			93/1269
+2272	Chowka Ghat Bob	-1478.1278.3678.34.58.56.	78	12	14263785	Spliced			93/1269
+2273	Ajgain Bob	-1478.56.1236.12.3458.1256.	78	12	14257386	Spliced			93/1269
+2274	Sonik Bob	-1478.56.1236.12.58.1234.	78	12	14257386	Spliced			93/1269
+2275	Piparsand Bob	-1478.56.1236.1278.123458.3456.	78	12	14258367	Spliced			93/1269
+2276	Jaitipur Bob	-1478.56.1236.34.3458.1256.	78	12	14257386	Spliced			93/1269
+2277	Kusumbhi Bob	-1478.56.1236.34.58.1234.	78	12	14257386	Spliced			93/1269
+2278	Harauni Bob	-1478.56.1236.78.1258-	78	12	14258367	Spliced			93/1269
+2279	Amausi Bob	-1478.56.123678-58.3456.	78	12	14258367	Spliced			93/1269
+2280	Lucknow Junction Bob	-1478.56.123678.34.58.3456.	78	12	14258367	Spliced			93/1269
+2281	Jarwal Road Bob	-1478.5678.1236.12.58.3456.	78	12	14258367	Spliced			93/1269
+2282	Sarju Bob	-1478.5678.1236.1234.58.3456.	78	12	14258367	Spliced			93/1269
+2283	Colonel ganj Bob	-1478.5678.3678.34.58.123456.	78	12	14257386	Spliced			93/1269
+2284	Rohana Town Bob	-1478.78.1236.12.58-	78	12	f	Spliced			93/1269
+2285	Dhanori Bob	-1478.78.1236.12.58.12.	78	12	f	Spliced			93/1269
+2286	Rohna Bob	-1478.78.36.12.58.12.	78	12	f	Spliced			93/1269
+2287	Khubgaon Bob	-1478.78.3678-1258-	78	12	14263785	Spliced			93/1269
+2288	Arvi Bob	-1478.78.3678-1258.12.	78	12	14263785	Spliced			93/1269
+2289	Rafinagar Bob	-1478.78.3678-3458.3456.	78	12	14263785	Spliced			93/1269
+2290	Pargotan Bob	-1478.78.3678-58-	78	12	14263785	Spliced			93/1269
+2291	Pachegaon Bob	-1478.78.3678-58.12.	78	12	14263785	Spliced			93/1269
+2292	Jahangirabad Raj Bob	-1478.78.3678-58.3456.	78	12	14263785	Spliced			93/1269
+2293	Dhualpur Junction Bob	-1478.78.3678.12.58-	78	12	14263785	Spliced			93/1269
+2294	Nurpura Bob	-1478.78.3678.12.58.12.	78	12	14263785	Spliced			93/1269
+2295	Yarrow Bob	-16-1236-1258.36.	78	12	f	Spliced			83/32
+2296	Tilehead Bob	-16-1236-38.14.	58	12	a	Spliced			82/970
+2297	Imberton Bob	-16-1236-58.36.	78	12	f	Spliced			83/282
+2298	Southern Bob	-16-1238-1238-	58	12	f	Spliced			74/225
+2299	Frenchwood Bob	-16-1238-1238-	58	18	l	Spliced			74/225
+2300	Brightwell Bob	-16-1238-38-	58	12	f	Spliced			68/251
+2301	Sotwell Bob	-16-1238-38-	58	18	l	Spliced			68/251
+2302	Syston Bob	-16-1238-38.12.	58	12	f	Spliced			68/251
+2303	Links Bob	-16-1238-38.12.	58	18	l	Spliced			68/251
+2304	Single College Bob	-16-16-18-	18	16	16758342	1737-01-24	London, St Bride, Fleet Street		59/67
+2305	Gonville Bob	-16-16-58-	38	12	d	1939-08-05	Handbridge		39/507
+2306	Trinity Court Bob	-16-16-58-	38	18	j	1950-04-11	Hethersett		50/259
+2307	Nevern Bob	-16-16-58.12.	38	18	j	Spliced			83/398
+2308	Sutton Veny Bob	-16-16-58.16.	78	12	f	Spliced			82/555
+2309	Silbury Hill Bob	-16-18-18.3456.	18	18	j	Spliced			83/398
+2310	Upton Lovell Bob	-16-18-18.36.	18	18	j	Spliced			83/398
+2311	Offa Bob	-16-18-58.1236.	58	18	j	Spliced			83/398
+2312	Mere Bob	-16-18-58.36.	58	18	j	Spliced			83/398
+2313	Longney Bob	-16-36-18-	58	12	a	1948-01-03	Kirtlington		48/54
+2314	Gadebridge Bob	-16-36-18.34.	58	12	a	1956-07-21	Hemel Hempstead		56/498
+2315	Minstead Bob	-16-36-58.36.	78	12	f	Spliced			83/32
+2316	Llandaff Bob	-16-36.12.38.14.	58	12	a	Spliced			82/555
+2317	Coslany Imperial Bob	-16-36.12.38.56.	18	18	m	1952-10-06	Norwich, St Michael Coslany		52/675
+2318	Sedbergh Bob	-16-36.14.58.16.	38	18	m	1953-04-27	Hethersett		53/307
+2319	Alburgh Bob	-16-36.14.58.36.	18	18	m	1952-11-19	Saxlingham Nethergate		52/771
+2320	Lea Bob	-16-38-1238-	38	12	14263785	Spliced			83/282
+2321	Kingsway Bob	-16-38-1238-	58	12	f	Spliced			74/225 346
+2322	Birkdale Bob	-16-38-1238-	58	18	l	Spliced			74/225 346
+2323	Sarsten Bob	-16-38-38-	38	12	14263785	Spliced			82/555
+2324	Pulford Bob	-16-38-38-	58	12	f	1937-09-24	Crayford		37/644
+2325	Avalon Court Bob	-16-38-38-	58	18	l			1941-07-15	41/351
+2326	Ludwell Bob	-16-38-38.12.	38	12	14263785	Spliced			83/282
+2327	Pleasley Bob	-16-38-38.12.	58	12	f	Spliced			68/251
+2328	Scarsdale Bob	-16-38-38.12.	58	18	l	Spliced			68/251
+2329	Letcombe Bob	-16-38.12.38-	58	12	f	Spliced			68/251
+2330	Sparsholt Bob	-16-38.12.38-	58	18	l	Spliced			68/251
+2331	Burnham Bob	-16-38.12.38.12.	58	12	f	Spliced			68/251
+2332	Clowne Bob	-16-38.12.38.12.	58	18	l	Spliced			68/251
+2333	Stibb Green Bob	-16.58.16-18.36.	58	12	f	Spliced			82/970
+2334	Heytesbury Bob	-16.58.36-1238.56.	38	12	f	Spliced			82/740
+2335	Noontide Bob	-16.58.36-18-	18	12	b	Spliced			82/342
+2336	Thornhill Bob	-16.58.36-38.1256.	38	12	f	Spliced			82/740
+2337	Randwick Bob	-16.58.36-38.56.	38	12	f	Spliced			82/342
+2338	Purton Bob	-18-1236-1258.36.	18	18	k	Spliced			82/740
+2339	Fishwick Bob	-18-1238-1238-	38	12	f	Spliced			60/763 61/88
+2340	Hudson Bob	-18-1238-1238-	38	18	l	Spliced			60/763 61/88
+2341	Joys Green Bob	-18-1238-1458-	58	12	d	Spliced			82/970
+2342	Scholfield Bob	-18-1238-38-	38	12	f			1974-12-11	60/763 61/88 75/50
+2343	Nelson College Bob	-18-1238-38-	38	18	l	Spliced			60/763 61/88 239
+2344	Fielden Bob	-18-1238-38.12.	38	12	f	Spliced			60/763 61/88
+2345	Leigh Bob	-18-1238-38.12.	38	18	l	1963-01-30	Leigh (Lancs)		60/763 61/88 63/114
+2346	Inchbrook Bob	-18-1238-58.14.	58	12	d	Spliced			82/970
+2347	Random Bob	-18-1238.12.1238-	38	12	f			2001-05-20	01/587
+2348	Richmond Bob	-18-16-18-	38	12	b	1965-09-18	Putney	1935-02-02	35/86 65/681
+2349	New London Court Bob	-18-16-18-	38	18	g	1948-08-27	Hethersett	1946-08-10	46/403 48/390
+2350	Edmonton Bob	-18-16-58-	18	12	c	1924-04-08	Willesden		24/243
+2351	Lavenham Court Bob	-18-16-58-	18	18	h			1941-07-17	41/351
+2352	Chesterfield Bob	-18-16-58-	78	12	d	1935-01-23	Pulham St Mary Magd.		35/67
+2353	Maidstone Bob	-18-16-58-	78	18	j	1947-06-07	Kingham	1944-06-16	44/258 47/298
+2354	Hampton Bob	-18-16-58.12.	78	12	d	1956-01-21	Malpas		56/68
+2355	St Valentine Bob	-18-16-58.34.	78	12	d	1953-02-14	Daresbury		53/130
+2356	Buckley Bob	-18-16.34.58-	78	12	d	1952-11-08	Buckley		52/740
+2357	Chester Bob	-18-16.34.58.12.	78	12	d	1956-08-04	Chester, Old St Mary		56/530
+2358	Warnham Bob	-18-16.34.58.14.	38	12	c	1962-08-27	Warnham, St Margaret		62/619
+2359	Banbury Bob	-18-16.34.58.14.	38	18	h				
+2360	Pyrton Bob	-18-16.34.58.34.	18	12	c	1961-11-04	Watlington (Oxon)		61/795
+2361	Islip Bob	-18-16.34.58.34.	18	18	h	Spliced			83/32
+2362	Oxford Imperial Bob	-18-16.34.58.34.	78	12	d	1959-05-14	Oxford, St Ebbe		59/358
+2363	St Catherine Bob	-18-18-1258-	58	12	d	Spliced			61/355
+2364	Willows Bob	-18-18-1258-	58	18	j	Spliced			61/355
+2365	Fothergill Bob	-18-18-1258.34.	58	12	d	Spliced			61/355
+2366	Harvey Bob	-18-18-1258.34.	58	18	j	Spliced			61/355
+2367	Regina Bob	-18-18-1458.36.	78	12	b	1954-09-11	Witney		54/612
+2368	Rutherford Bob	-18-18-1458.36.	78	18	g	Spliced			82/342
+2369	Plain Bob	-18-18-18-	18	12	a	1725-04-26	London, St Bride, Fleet Street	1826-11-04	59/651
+2370	London New Bob	-18-18-18-	38	12	13528467	2007-07-01	Windsor, St John-the-Baptist		07/810
+2371	Urchfont Bob	-18-18-18-	58	12	13728564	2007-12-16	Windsor, St John-the-Baptist		82/555 08/216
+2372	Double Bob	-18-18-18-	78	12	b	1727-01-14	London, St Dunstan-in-the-West	1922-03-12	22/182 59/651
+2373	Reverse Bob	-18-18-18-	78	18	g	1751-01-22	Westminster, St Margaret	1926-10-28	26/693 59/651
+2374	Fulbeck Bob	-18-18-18.34.	78	12	b	1939-06-24	East Dereham	2001-04-26	39/411 01/516
+2375	Cleatham Bob	-18-18-18.34.	78	18	g	Spliced			59/144
+2376	Derry Park Bob	-18-18-18.3456.	78	18	g	Spliced			83/32
+2377	Hackington Bob	-18-18-18.56.	78	12	b	1959-02-23	Loughborough Bellfoundry	2001-05-22	59/198 01/610
+2378	Canterbury Bob	-18-18-18.56.	78	18	g	1955-11-05	Bicester		55/738
+2379	Joshua Bob	-18-18-3458-	58	12	d	Spliced			61/355
+2380	Stoney Royd Bob	-18-18-3458-	58	18	j	Spliced			61/355
+2381	Wilton Bob	-18-18-3458.12.	58	12	d	Spliced			61/355
+2382	Millbank Bob	-18-18-3458.12.	58	18	j	Spliced			61/355
+2383	Idmiston Manor Bob	-18-18-3458.16.	38	12	c	Spliced			82/740 83/464
+2384	Eton College Bob	-18-18-38-	38	12	13624857	2008-03-09	Windsor, St John-the-Baptist		08/390
+2385	Axford Bob	-18-18-38.1456.	38	12	c	1991-11-23	Debenham		82/740 91/1230
+2386	Nantmel Bob	-18-18-38.1456.	38	18	h	Spliced			82/555
+2387	Wymondham Bob	-18-18-38.16.	38	12	c	1937-06-06	Walesby		37/420
+2388	Debenham Court Bob	-18-18-38.16.	38	18	h	1958-09-24	Gressenhall		58/651
+2389	Ashbourne College Bob	-18-18-58-	58	12	d	1938-07-06	Staines, St Mary	1966-03-15	66/252
+2390	Spalding College Bob	-18-18-58-	58	18	j	1949-04-25	Clifford	1944-05-12	44/206 49/212
+2391	Warminster Bob	-18-18-58.12.	58	12	d	1961-02-25	Warminster		61/204
+2392	Brooklands Bob	-18-18-58.12.	58	18	j	Spliced			61/355
+2393	Stonehenge Bob	-18-18-58.1234.	58	12	d	Spliced			83/282
+2394	Holland Bob	-18-18-58.34.	58	12	d	1960-03-05	Great Holland		60/204 248
+2395	Badminton Bob	-18-18-58.34.	58	18	j	Spliced			61/355
+2396	Beckenham Bob	-18-18-58.56.	18	12	c	2004-12-29	Beckenham		05/57
+2397	Belfield Bob	-18-18.34.1258-	58	12	d	Spliced			61/355
+2398	St Ann Bob	-18-18.34.1258-	58	18	j	Spliced			61/355
+2399	Walsden Bob	-18-18.34.1258.34.	58	12	d	Spliced			61/355
+2400	Laisterdyke Bob	-18-18.34.1258.34.	58	18	j	Spliced			61/355
+2401	St Leonard Bob	-18-18.34.58-	58	12	d	1960-11-05	Watlington (Oxon)		60/764
+2402	Carlyn Bob	-18-18.34.58-	58	18	j	Spliced			61/355
+2403	Grangemouth Bob	-18-18.34.58.12.	58	12	d	1962-07-21	Broughton (Staffs)		61/355 62/515
+2404	Billingham Bob	-18-18.34.58.12.	58	18	j	Spliced			61/355
+2405	Stonehouse Bob	-18-18.34.58.16.	38	12	c	Spliced			82/342
+2406	Gloucester Bob	-18-18.34.58.16.	38	18	h	Spliced			83/32
+2407	Bentley Bob	-18-18.34.58.34.	58	12	d	1959-02-07	Great Bentley		59/120
+2408	Crumpsall Bob	-18-18.34.58.34.	58	18	j	Spliced			61/355
+2409	Bushton Bob	-18-18.34.58.36.	18	12	c	Spliced			82/740
+2410	Ruardean Bob	-18-18.34.58.36.	18	18	h	Spliced			83/98
+2411	Salthrop Bob	-18-36-1458-	38	12	c	Spliced			83/534
+2412	Epsom Bob	-18-36-1458-	38	18	h	Spliced			82/555
+2413	Double London Court Bob	-18-36-18-	38	16	13768542	1735-05-17	London, St Lawrence Jewry		59/67
+2414	Warminton Bob	-18-36-38.16.	78	12	d	Spliced			82/970
+2415	Woodlands Bob	-18-36-58.16.	38	12	e	2007-11-14	Keele, Woodlands		07/1194
+2416	St Alphege Bob	-18-36.12.38-	18	18	m	1961-04-19	Saxlingham Nethergate		61/310
+2417	Malpas Bob	-18-36.12.58.14.	78	12	d	1953-02-28	Malpas		53/163
+2418	Edington Bob	-18-36.12.58.14.	78	18	j				
+2419	Nelson Bob	-18-36.14.38.16.	78	12	d	1960-06-24	Accrington		60/459
+2420	Appleton Bob	-18-36.14.38.16.	78	18	j				
+2421	Blackley Bob	-18-38-1238-	38	12	f	Spliced			60/763 61/88
+2422	Lesser Wopping Bob	-18-38-1238-	38	18	l	Spliced			60/763 61/88
+2423	Viney Hill Bob	-18-38-1238-	78	18	13462857	Spliced			82/970
+2424	Seend Bob	-18-38-1458.36.	58	12	c	Spliced			82/740
+2425	St Clement's College Bob	-18-38-38-	38	12	f	1911-12-28	Eccleston (Cheshire)	1936-03-22	V2/7 36/221
+2426	Crayford College Bob	-18-38-38-	38	18	l	1919-12-20	Deptford	1951-08-17	20/26 51/550
+2427	Dewsbury Bob	-18-38-38-	78	18	13462857	Spliced			82/342
+2428	Tolleshunt D'Arcy Bob	-18-38-38.12.	38	12	f	1960-06-02	Goldhanger		60/410
+2429	Ogden Bob	-18-38-38.12.	38	18	l	1966-05-10	Loughborough Bellfoundry		60/763 61/88 66/379
+2430	Ebrington Bob	-18-38-38.12.	78	18	13462857	Spliced			82/342
+2431	Ducis Bob	-18-38-38.56.	78	18	13462857	Spliced			82/740
+2432	Edge Bob	-18-38.12.3458.16.	58	12	c	Spliced			82/970
+2433	Childwall Bob	-18-38.12.38-	38	12	f	1958-11-19	Loughborough Bellfoundry		58/802
+2434	Wavertree Bob	-18-38.12.38-	38	18	l	1966-06-02	Measham		60/763 61/88 66/450
+2435	Vernham Dean Bob	-18-38.12.38-	78	18	13462857	Spliced			83/32
+2436	Goldhanger Bob	-18-38.12.38.12.	38	12	f	1958-11-13	Goldhanger		58/771
+2437	Smith Bob	-18-38.12.38.12.	38	18	l	1962-02-03	Loughborough Bellfoundry		60/763 61/88 62/114
+2438	Larkhill Bob	-18-38.12.38.12.	78	18	13462857	Spliced			82/740
+2439	Ipswich Bob	-18-38.12.58.14.	58	12	d	2004-04-17	Ipswich, St Mary-le-Tower		82/555 04/543
+2440	Armitage-is-the-name Bob	-18.12.1238-38-	38	12	f	1987-07-18	Redhill		87/811
+2441	Dore Place	-18.12.38.14.58.16.	78	18	g	1996-12-14	Dore		97/88
+2442	Oxhill Bob	-18.56.1238-1238.56.	38	12	f	Spliced			82/740
+2443	Urchless Bob	-18.56.1238-18-	58	12	13728564	Spliced			83/98
+2444	Irchester Bob	-18.56.1238-38.1256.	38	12	f	Spliced			82/740
+2445	Wyke Bob	-18.56.1238-38.56.	38	12	f	Spliced			82/740
+2446	Ripon Bob	-18.56.18-18.36.	58	12	f	Spliced			82/342
+2447	Elcombe Hall Bob	-18.56.18-18.36.	78	12	14263785	Spliced			82/740 83/464
+2448	Avebury Bob	-18.56.18-18.56.	38	12	f	Spliced			76/416
+2449	Bisley Imperial Bob	-18.56.18-18.56.	38	18	l	1993-01-09	Bisley		93/151
+2450	Clevancy Bob	-18.56.18-38-	58	12	d	Spliced			82/970
+2451	Bulkington Bob	-18.56.18-38.12.	58	12	d	Spliced			82/740
+2452	Tirley Manor Bob	-18.56.38-1238.56.	38	18	l	Spliced			82/342 83/464
+2453	Membury Bob	-18.56.38-1258-	78	12	14263785	Spliced			83/32
+2454	Swindon Bob	-18.56.38-18-	18	12	b	Spliced			82/342
+2455	Minehead Bob	-18.56.38-18-	18	18	g	Spliced			82/342
+2456	Northleach Bob	-18.56.38-38.1256.	38	12	f	Spliced			82/342
+2457	Porton Down Bob	-18.56.38-38.1256.	38	18	l	Spliced			83/282
+2458	Nursling Bob	-18.56.38-38.14.	58	12	13728564	Spliced			83/98
+2459	Malmesbury Bob	-18.56.38-38.56.	38	12	f	Spliced			82/342
+2460	Calne Bob	-18.56.38-38.56.	38	18	l	Spliced			82/555
+2461	Toothill Bob	-18.56.38-58-	78	12	14263785	Spliced			82/342
+2462	Zeals Bob	-18.56.38-58.12.	78	12	14263785	Spliced			82/342
+2463	Dunkirk Beaches Bob	-18.56.38-58.34.	78	12	14263785	Spliced			82/740 83/464
+2464	Shalbourne Bob	-18.56.38.12.38.1256.	38	12	f	Spliced			82/740
+2465	Netherstreet Bob	-18.56.38.12.38.56.	38	12	f	Spliced			82/740 872
+2466	Sea Mills Bob	-18.56.38.12.38.56.	38	18	l	Spliced			83/282
+2467	Tulsipur Bob	34.14-1236.123478.58-	78	12	13624785	Spliced			93/1269
+2468	Coalpit Heath Bob	34.14-1238-1238-	38	12	a	1984-12-01	Coalpit Heath		85/10
+2469	Mangotsfield Bob	34.14-1238-38.12.	38	12	a	1994-12-24	Mangotsfield		95/90 239
+2470	Kauwapur Bob	34.14-36.123478.58.12.	78	12	13624785	Spliced			93/1269
+2471	B.A.T.T.Y. Bob	34.14-38-1238-	38	12	a	1984-06-13	Bristol, SS Philip & Jacob		84/582
+2472	The Dragon Bob	34.14-38-38-	38	12	a	1960-12-02	Aldermaston		60/828 838
+2473	Ahirauli Halt Bob	34.14.1278.3678-1258.123456.	78	12	13624857	Spliced			93/1269
+2474	Naugarh Bob	34.14.1278.3678.34.58.56.	78	12	13624857	Spliced			93/1269
+2475	Laiburwa Halt Bob	34.14.56.123678-123458.1234.	78	12	a	Spliced			93/1269
+2476	Gainsari Junction Bob	34.14.56.123678.1234.58.1234.	78	12	a	Spliced			93/1269
+2477	Bridgmanganj Bob	34.14.5678.1236.1278.3458.3456.	78	12	13528467	Spliced			93/1269
+2478	Loharpurwa Halt Bob	34.14.5678.123678.34.58.123456.	78	12	13528467	Spliced			93/1269
+2479	Uska Bazar Bob	34.14.5678.36.78.3458.1234.	78	12	13528467	Spliced			93/1269
+2480	Anandnagar Junction Bob	34.14.5678.3678.12.123458.123456.	78	12	13528467	Spliced			93/1269
+2481	Lehra Bob	34.14.5678.3678.12.58.34.	78	12	13528467	Spliced			93/1269
+2482	Chilhia Bob	34.14.78.1236.3478.123458.12.	78	12	13624857	Spliced			93/1269
+2483	Shohratgarh Bob	34.14.78.1236.3478.1258.56.	78	12	13624857	Spliced			93/1269
+2484	Parsa Bob	34.14.78.1236.78.123458.1234.	78	12	13624857	Spliced			93/1269
+2485	Mahtha Bazar Halt Bob	34.14.78.1236.78.123458.56.	78	12	13624857	Spliced			93/1269
+2486	Barhni Bob	34.14.78.36.78.3458-	78	12	13624857	Spliced			93/1269
+2487	Mahadeva Buzurg Halt Bob	34.14.78.36.78.3458.56.	78	12	13624857	Spliced			93/1269
+2488	Pachperwa Bob	34.14.78.36.78.58.34.	78	12	13624857	Spliced			93/1269
+2489	Trilokpur Halt Bob	34.14.78.36.78.58.3456.	78	12	13624857	Spliced			93/1269
+2490	Rawatganj Bob	34.1456-1236.12.58.3456.	78	12	13528467	Spliced			93/1269
+2491	Peppeganj Bob	34.1456-1236.1234.58.1234.	78	12	13528467	Spliced			93/1269
+2492	Maniram Bob	34.1456-1236.1278.1258-	78	12	a	Spliced			93/1269
+2493	Kauria Jungle Bob	34.1456-1236.1278.58.1256.	78	12	a	Spliced			93/1269
+2494	Ram Chaura Halt Bob	34.1456-36.1234.3458.1256.	78	12	13528467	Spliced			93/1269
+2495	Campierganj Bob	34.1456-36.1234.58.12.	78	12	13528467	Spliced			93/1269
+2496	Baitalpur Bob	34.1456.1256.36-123458-	78	12	13624857	Spliced			93/1269
+2497	Deoria Sadar Bob	34.1456.1256.36.12.58.12.	78	12	13624857	Spliced			93/1269
+2498	Nunkhar Bob	34.1456.1256.36.1234.58.123456.	78	12	13624857	Spliced			93/1269
+2499	Ahalyapur Bob	34.1456.1256.36.34.1258.56.	78	12	13624857	Spliced			93/1269
+2500	Kushmhi Bob	34.1456.56.3678-123458.1234.	78	12	13624785	Spliced			93/1269
+2501	Gorakhpur Cantt Platform 1 Bob	34.1456.56.3678-3458-	78	12	13624785	Spliced			93/1269
+2502	Khorabar Bob	34.1456.56.3678-3458.56.	78	12	13624785	Spliced			93/1269
+2503	Nakaha Jungle Bob	34.1456.56.3678-58.34.	78	12	13624785	Spliced			93/1269
+2504	Gorakhpur Junction Platform 1 Bob	34.1456.56.3678-58.3456.	78	12	13624785	Spliced			93/1269
+2505	Chauri Chaura Bob	34.1456.56.3678.1234.58-	78	12	13624785	Spliced			93/1269
+2506	Gauri Bazar Bob	34.1456.56.3678.1234.58.3456.	78	12	13624785	Spliced			93/1269
+2507	Sardarnagar Bob	34.1456.56.3678.34.1258.123456.	78	12	13624785	Spliced			93/1269
+2508	Tekanwas Bob	34.1456.5678.1236.1278.3458.12.	78	12	13624857	Spliced			93/1269
+2509	Kopa Samhota Bob	34.1456.5678.36.123478.58.3456.	78	12	13624857	Spliced			93/1269
+2510	Jiradei Bob	34.1456.78.1236.123478.3458.12.	78	12	13528467	Spliced			93/1269
+2511	Chakra Bob	34.1456.78.1236.123478.3458.1256.	78	12	13528467	Spliced			93/1269
+2512	Karchhue Bob	34.1456.78.1236.3478.1258.56.	78	12	13528467	Spliced			93/1269
+2513	Mairwa Bob	34.1456.78.36.78.123458.1234.	78	12	13528467	Spliced			93/1269
+2514	Bhatpar Rani Bob	34.1456.78.36.78.3458.1234.	78	12	13528467	Spliced			93/1269
+2515	Bankata Bob	34.1456.78.36.78.3458.123456.	78	12	13528467	Spliced			93/1269
+2516	Bhatni Junction Bob	34.1456.78.36.78.58-	78	12	13528467	Spliced			93/1269
+2517	Nonapar Bob	34.1456.78.36.78.58.56.	78	12	13528467	Spliced			93/1269
+2518	Pachrukhi Bob	34.1456.78.3678-1258.1256.	78	12	13528467	Spliced			93/1269
+2519	Siwan Junction Bob	34.1456.78.3678-58.3456.	78	12	13528467	Spliced			93/1269
+2520	Daudpur Bob	34.1456.78.3678.1234.58.56.	78	12	13528467	Spliced			93/1269
+2521	Duraundha Junction Bob	34.1456.78.3678.34.1258.1234.	78	12	13528467	Spliced			93/1269
+2522	Chainwa Bob	34.1456.78.3678.34.3458-	78	12	13528467	Spliced			93/1269
+2523	Ekma Bob	34.1456.78.3678.34.3458.56.	78	12	13528467	Spliced			93/1269
+2524	Narayanpur Anant Bob	34.145678-123678-3458.123456.	78	12	13528467	Spliced			93/1269
+2525	Silaut Bob	34.145678-123678.34.58.123456.	78	12	13528467	Spliced			93/1269
+2526	Muzaffarpur Junction Bob	34.145678-36.123478.1258.56.	78	12	13528467	Spliced			93/1269
+2527	Kurhani Bob	34.145678-36.1278.123458.34.	78	12	13528467	Spliced			93/1269
+2528	Ramdayalunagar Bob	34.145678-36.3478.3458.56.	78	12	13528467	Spliced			93/1269
+2529	Turki Bob	34.145678-36.3478.58-	78	12	13528467	Spliced			93/1269
+2530	Siho Bob	34.145678.12.3678-1258.1256.	78	12	13528467	Spliced			93/1269
+2531	Dholi Bob	34.145678.12.3678.12.58.56.	78	12	13528467	Spliced			93/1269
+2532	Dubaha Bob	34.145678.12.3678.34.1258.123456.	78	12	13528467	Spliced			93/1269
+2533	Rambhadrapur Bob	34.145678.1278.3678.34.123458.1256.	78	12	a	Spliced			93/1269
+2534	Kishanpur Bob	34.145678.1278.3678.34.58.56.	78	12	a	Spliced			93/1269
+2535	Muktapur Bob	34.145678.56.1236.3478.1258.56.	78	12	13624857	Spliced			93/1269
+2536	Samastipur Junction Bob	34.145678.56.1236.78.1258.1234.	78	12	13624857	Spliced			93/1269
+2537	Pitaunjia Bob	34.145678.56.36.3478.58-	78	12	13624857	Spliced			93/1269
+2538	Pusa Road Bob	34.145678.56.36.78.3458.56.	78	12	13624857	Spliced			93/1269
+2539	Chhapra Junction Bob	34.1478-1236.1278.58.1234.	78	12	13624857	Spliced			93/1269
+2540	Chhapra Kacheri Bob	34.1478-1236.3478.1258.56.	78	12	13624857	Spliced			93/1269
+2541	Bithauli Bob	34.1478.125678.36-123458.3456.	78	12	13528467	Spliced			93/1269
+2542	Sarai Bob	34.1478.125678.36-123458.56.	78	12	13528467	Spliced			93/1269
+2543	Goraul Bob	34.1478.125678.36.12.3458.1256.	78	12	13528467	Spliced			93/1269
+2544	Bhagwanpur Bob	34.1478.125678.36.12.58.1256.	78	12	13528467	Spliced			93/1269
+2545	Parmanandpur Bob	34.1478.56.1236.12.123458.34.	78	12	a	Spliced			93/1269
+2546	Nayagaon Bob	34.1478.56.1236.12.3458.1256.	78	12	a	Spliced			93/1269
+2547	Sonpur Junction Bob	34.1478.56.1236.1278.123458.34.	78	12	13528467	Spliced			93/1269
+2548	Hajipur Junction Bob	34.1478.56.1236.1278.123458.3456.	78	12	13528467	Spliced			93/1269
+2549	Sitalpur Bob	34.1478.56.36.123478.58.3456.	78	12	13528467	Spliced			93/1269
+2550	Awtarnagar Bob	34.1478.56.36.1278.123458.34.	78	12	13528467	Spliced			93/1269
+2551	Dighwara Bob	34.1478.56.36.3478.3458.56.	78	12	13528467	Spliced			93/1269
+2552	Baragopal Bob	34.1478.56.36.78.123458.123456.	78	12	13528467	Spliced			93/1269
+2553	Goldinganj Bob	34.1478.56.36.78.1258.1256.	78	12	13528467	Spliced			93/1269
+2554	Dumri Juara Halt Bob	34.1478.56.36.78.3458.56.	78	12	13528467	Spliced			93/1269
+2555	Ogbourne Bob	34.16-1236-1258-	18	12	b	Spliced			82/555
+2556	Eynsham Bob	34.16-1236-1258-	18	18	g	Spliced			82/740
+2557	Rushall Bob	34.16-1236-58.16.	78	12	f	Spliced			82/740
+2558	Wilsford Bob	34.16-16-1258.36.	78	12	f	Spliced			82/740
+2559	Ewen Bob	34.16-16-58.36.	78	18	l	Spliced			82/970
+2560	Yuletide Bob	34.16-18-1238.56.	18	12	b	Spliced			83/282
+2561	Tockenham Bob	34.16-18.34.18-	78	12	e	Spliced			82/970
+2562	Alton Barnes Bob	34.16-18.34.18.56.	78	12	e	Spliced			82/740
+2563	Tetbury Bob	34.16-36-58-	18	12	b	Spliced			82/342
+2564	Stroud Bob	34.16-36-58-	18	18	g	Spliced			82/342
+2565	Everlee Bob	34.16-36.12.58.16.	78	12	f	Spliced			82/342 83/464
+2566	Dixton Bob	34.16-36.14.38.14.	78	18	l	Spliced			82/970
+2567	Liden Bob	34.16-38-3458.16.	38	12	b	Spliced			82/342
+2568	Oare Bob	34.16-38-3458.16.	38	18	g	Spliced			82/740
+2569	Coate Bob	34.16-38-38.1456.	38	12	b	Spliced			82/740
+2570	Wylye Bob	34.16-38-38.1456.	38	18	g	Spliced			82/740
+2571	Clanfield Bob	34.16-38-38.16.	38	12	b	Spliced			82/342
+2572	Atworth Bob	34.16.58.16-18-	58	12	d	Spliced			82/970
+2573	Redlynch Bob	34.16.58.16-18.34.	58	12	d	Spliced			82/740
+2574	Norfolk Punch Bob	34.18-1238.12.38.12.	38	12	13624857	1991-11-29	Alloa		92/105
+2575	Fovant Bob	34.18-16-38.16.	58	12	e	Spliced			82/555
+2576	Malvern Imperial Bob	34.18-16-38.16.	58	18	k				
+2577	Hamble Bob	34.18-16.34.18.36.	58	12	e	Spliced			83/32
+2578	Covingham Bob	34.18-16.34.18.56.	38	12	e	Spliced			83/32
+2579	Pavenhill Bob	34.18-18-1258-	18	12	b	Spliced			82/740
+2580	Roundway Bob	34.18-18-1258-	18	18	g	Spliced			82/740
+2581	Single Canterbury Pleasure Bob	34.18-18-18-	18	12	14257386	1888-12-17	Warnham, St Margaret	1892-08-09	BN V7/489 V11/239
+2582	Abertawe Bob	34.18-18-18-	78	12	15478263			2004-07-15	04/760
+2583	Double Canterbury Pleasure Bob	34.18-18-18.56.	78	12	15478263			2006-08-24	06/886
+2584	Goatacre Bob	34.18-18.34.1258.34.	18	12	b	Spliced			82/740
+2585	Ruthin Bob	34.18-18.34.18.36.	78	12	e	Spliced			83/98
+2586	Sherston Bob	34.18-18.34.58.14.	78	12	e	Spliced			83/98
+2587	Sutton Mandeville Bob	34.18-36-1258-	38	12	a	Spliced			83/282
+2588	Llangollen Imperial Bob	34.18-36-18.56.	38	18	k				
+2589	Bishopsdale Bob	34.18-36-58-	38	12	a	1956-02-05	Dorchester (Oxon)		56/130
+2590	Dunbar Bob	34.18-36-58.12.	38	12	a	Spliced			83/282
+2591	Norfolk Bob	34.18-36.12.38-	18	18	m	1946-12-21	Norwich, St Michael Coslany		47/15
+2592	Aberford Bob	34.18-36.14.38.14.	58	12	f	Spliced			83/98
+2593	Siswa Bazar Bob	3456.14-1236.12.1258-	78	12	13528467	Spliced			93/1269
+2594	Khushinagar Bob	3456.14-1236.34.3458.1256.	78	12	13528467	Spliced			93/1269
+2595	Ghughuli Bob	3456.14-1236.34.3458.56.	78	12	13528467	Spliced			93/1269
+2596	Bodarwar Bob	3456.14-123678-123458.123456.	78	12	a	Spliced			93/1269
+2597	Kaptanganj Junction Bob	3456.14-3678.34.3458-	78	12	a	Spliced			93/1269
+2598	Mahuawa Khurd Halt Bob	3456.14.12.36.12.58.56.	78	12	13528467	Spliced			93/1269
+2599	Unaula Bob	3456.14.12.36.34.1258.123456.	78	12	13528467	Spliced			93/1269
+2600	Pipraich Bob	3456.14.12.36.34.1258.1256.	78	12	13528467	Spliced			93/1269
+2601	Jagat Bela Bob	3456.14.1256.3678-123458.1234.	78	12	13624785	Spliced			93/1269
+2602	Domingarh Bob	3456.14.1256.3678-3458.123456.	78	12	13624785	Spliced			93/1269
+2603	Tinich Bob	3456.14.1278.36.1234.58.123456.	78	12	a	Spliced			93/1269
+2604	Govindnagar Bob	3456.14.1278.36.34.1258.3456.	78	12	a	Spliced			93/1269
+2605	Gaur Bob	3456.14.1278.3678-1258.1256.	78	12	13528467	Spliced			93/1269
+2606	Babhnan Bob	3456.14.1278.3678-3458.1234.	78	12	13528467	Spliced			93/1269
+2607	Gorakhpur City Halt Bob	3456.14.56.123678.1234.58.1256.	78	12	13624785	Spliced			93/1269
+2608	Gorakhpur Junction Platform 2 Bob	3456.14.56.123678.34.1258.56.	78	12	13624785	Spliced			93/1269
+2609	Gorakhpur Cantt Platform 2 Bob	3456.14.56.3678-123458.123456.	78	12	13624785	Spliced			93/1269
+2610	Maskanwa Bob	3456.14.5678.123678.34.58.1256.	78	12	13624857	Spliced			93/1269
+2611	S.N.Chhapia Bob	3456.14.5678.3678.1234.1258-	78	12	13624857	Spliced			93/1269
+2612	Khalilabad Bob	3456.14.78.36.123478.58.3456.	78	12	13528467	Spliced			93/1269
+2613	Maghar Bob	3456.14.78.36.78.123458.1256.	78	12	13528467	Spliced			93/1269
+2614	Sihapar Halt Bob	3456.14.78.36.78.3458.56.	78	12	13528467	Spliced			93/1269
+2615	Sahjanwa Bob	3456.14.78.36.78.58.56.	78	12	13528467	Spliced			93/1269
+2616	Chureb Bob	3456.14.78.3678-3458.56.	78	12	13528467	Spliced			93/1269
+2617	Orwara Bob	3456.14.78.3678.1234.1258-	78	12	13528467	Spliced			93/1269
+2618	Basti Bob	3456.14.78.3678.1234.1258.34.	78	12	13528467	Spliced			93/1269
+2619	Munderwa Bob	3456.14.78.3678.34.3458.56.	78	12	13528467	Spliced			93/1269
+2620	Mankapur Junction Bob	3456.1456-1236.12.1258-	78	12	13624857	Spliced			93/1269
+2621	Jhilahi Bob	3456.1456-1236.12.3458.1256.	78	12	13624857	Spliced			93/1269
+2622	Motiganj Bob	3456.1456-1236.34.3458.1256.	78	12	13624857	Spliced			93/1269
+2623	Barua Chak Bob	3456.1456-1236.3478.58.56.	78	12	13624785	Spliced			93/1269
+2624	Lakhpatnagar Bob	3456.1456-36.123478.58.12.	78	12	13624785	Spliced			93/1269
+2625	Bisheshwarganj Bob	3456.1456.12.3678.1234.58.12.	78	12	13624785	Spliced			93/1269
+2626	Bangain Bob	3456.1456.12.3678.34.1258.123456.	78	12	13624785	Spliced			93/1269
+2627	Gonda Junction Platform 2 Bob	3456.1456.12.3678.34.58-	78	12	13624785	Spliced			93/1269
+2628	Gangadham Bob	3456.1456.12.3678.34.58.1234.	78	12	13624785	Spliced			93/1269
+2629	Raibojha Bob	3456.1456.1278.3678-58.1234.	78	12	13624857	Spliced			93/1269
+2630	Mehinpurwar Bob	3456.1456.1278.3678.1234.58.56.	78	12	13624857	Spliced			93/1269
+2631	Nanpara Junction Bob	3456.1456.78.1236.123478.58-	78	12	13624857	Spliced			93/1269
+2632	Risia Bob	3456.1456.78.1236.3478.123458.12.	78	12	13624857	Spliced			93/1269
+2633	Matera Bob	3456.1456.78.1236.3478.123458.1256.	78	12	13624857	Spliced			93/1269
+2634	Suhelnagar Bob	3456.1456.78.36.123478.58.1234.	78	12	13624857	Spliced			93/1269
+2635	Bahraich Bob	3456.1456.78.36.123478.58.123456.	78	12	13624857	Spliced			93/1269
+2636	Chilwariya Bob	3456.1456.78.36.3478.1258.3456.	78	12	13624857	Spliced			93/1269
+2637	Payagpur Bob	3456.1456.78.36.78.123458.12.	78	12	13624857	Spliced			93/1269
+2638	Yogendradham Halt Bob	3456.1456.78.36.78.123458.1256.	78	12	13624857	Spliced			93/1269
+2639	Shahgarh Bob	3456.145678-1236.1234.1258.56.	78	12	13624785	Spliced			93/1269
+2640	Duyuri Halt Bob	3456.145678-1236.123478.1258-	78	12	13624857	Spliced			93/1269
+2641	Mala Bob	3456.145678-1236.3478.58.1234.	78	12	13624857	Spliced			93/1269
+2642	Sandai Halt Bob	3456.145678-1236.78.1258.1234.	78	12	13624857	Spliced			93/1269
+2643	Parsadpur Halt Bob	3456.145678-36.123478.1258.56.	78	12	13624857	Spliced			93/1269
+2644	Pilibhit Junction Bob	3456.145678.12.36.1234.3458.1256.	78	12	13624785	Spliced			93/1269
+2645	Dibnapur Bob	3456.145678.1278.3678.34.1258-	78	12	13624785	Spliced			93/1269
+2646	Bhojipura Junction Bob	3456.145678.1278.3678.34.1258.56.	78	12	13624785	Spliced			93/1269
+2647	Aramanda Bob	3456.145678.1278.3678.34.3458.1256.	78	12	13624785	Spliced			93/1269
+2648	Bijauria Bob	3456.145678.78.3678-123458.1256.	78	12	13624785	Spliced			93/1269
+2649	Shahi Bob	3456.145678.78.3678-58.3456.	78	12	13624785	Spliced			93/1269
+2650	Lalauri Khera Bob	3456.145678.78.3678-58.56.	78	12	13624785	Spliced			93/1269
+2651	Sethal Bob	3456.145678.78.3678.1234.58.56.	78	12	13624785	Spliced			93/1269
+2652	Nishangara Bob	3456.1478-1236.1278.58.12.	78	12	13528467	Spliced			93/1269
+2653	Bichia Bob	3456.1478-1236.1278.58.1256.	78	12	13528467	Spliced			93/1269
+2654	Murtha Bob	3456.1478-1236.78.123458.123456.	78	12	13528467	Spliced			93/1269
+2655	Kakraha Rest House Bob	3456.1478-36.123478.58.3456.	78	12	13528467	Spliced			93/1269
+2656	Bhira Kheri Bob	3456.1478.1256.36-1258.123456.	78	12	13624785	Spliced			93/1269
+2657	Raj Narainpur Bob	3456.1478.1256.36.12.3458.3456.	78	12	13624785	Spliced			93/1269
+2658	Mailani Junction Bob	3456.1478.1256.36.34.1258.1256.	78	12	13624785	Spliced			93/1269
+2659	Belrayan Bob	3456.1478.56.1236.34.3458.1256.	78	12	13624785	Spliced			93/1269
+2660	Tikunia Bob	3456.1478.56.1236.34.58.1256.	78	12	13624785	Spliced			93/1269
+2661	Rehta Bob	3456.1478.56.1236.78.3458.1234.	78	12	13624857	Spliced			93/1269
+2662	Sonaripura Bob	3456.1478.56.1236.78.3458.123456.	78	12	13624857	Spliced			93/1269
+2663	Palia Kalan Bob	3456.1478.56.123678.34.58-	78	12	13624857	Spliced			93/1269
+2664	Khairatiya Bandh Road Halt Bob	3456.1478.56.36.1278.123458.123456.	78	12	13624857	Spliced			93/1269
+2665	Manjhra Purab Bob	3456.1478.56.36.1278.58.3456.	78	12	13624857	Spliced			93/1269
+2666	Dudwa Junction Bob	3456.1478.56.3678.12.3458.1256.	78	12	13624857	Spliced			93/1269
+2667	Doodhiya Khurd Bob	3456.1478.5678.3678-123458.1256.	78	12	13624785	Spliced			93/1269
+2668	Puranpur Bob	3456.1478.5678.3678.1234.58.1256.	78	12	13624785	Spliced			93/1269
+2669	Sehramau Bob	3456.1478.78.3678-58.56.	78	12	a	Spliced			93/1269
+2670	Kurraiya Bob	3456.1478.78.3678.34.58.123456.	78	12	a	Spliced			93/1269
+2671	Innsworth Bob	3456.18-1238-1258.34.	18	18	g	Spliced			82/970
+2672	Alderton Bob	3456.18-18-1258.34.	18	18	g	Spliced			82/555
+2673	Single Kirkgate Bob	3456.18-18-18-	18	12	14263785	1965-12-23	Leeds, St Peter	2000-09-19	66/35 00/1042
+2674	Byley Bob	3456.18-18-18-	78	12	16472853			2004-08-12	04/856
+2675	Double Kirkgate Bob	3456.18-18-18.3456.	78	12	16472853			2006-10-05	06/1057
+2676	Ayr Bob	3456.18-18.34.1258-	18	18	g	Spliced			83/98
+2677	Itchen Abbas Bob	3456.18-38-3458-	18	18	g	Spliced			83/32
+2678	Nettleton Bob	3456.18-38-58.14.	38	18	g	Spliced			82/970
+2679	Tamar Bob	3456.18-38-58.34.	18	18	g	Spliced			82/342
+2680	Itchen Stoke Bob	3456.18.56.38-58.16.	38	18	g	Spliced			83/32
+2681	Misrod Bob	345678.14.1256.3678-123458.34.	78	12	13624857	Spliced			93/1269
+2682	Habibganj Bob	345678.14.1256.3678.34.3458.1256.	78	12	13624857	Spliced			93/1269
+2683	Bareth Bob	345678.14.125678.36-58.123456.	78	12	13624857	Spliced			93/1269
+2684	Kalhar Bob	345678.14.125678.36.12.3458.3456.	78	12	13624857	Spliced			93/1269
+2685	Gurra Bob	345678.14.56.1236-3458.1234.	78	12	13624785	Spliced			93/1269
+2686	Powarkheda Bob	345678.14.56.1236.12.1258.3456.	78	12	13624785	Spliced			93/1269
+2687	Itarsi Junction Bob	345678.14.56.1236.12.58.12.	78	12	13624785	Spliced			93/1269
+2688	Budni Bob	345678.14.56.1236.1234.1258-	78	12	13624785	Spliced			93/1269
+2689	Hoshangabad Bob	345678.14.56.1236.34.3458.1256.	78	12	13624785	Spliced			93/1269
+2690	Obaidullaganj Bob	345678.14.56.123678-123458.56.	78	12	13624857	Spliced			93/1269
+2691	Mandi Dip Bob	345678.14.56.123678.1234.58.56.	78	12	13624857	Spliced			93/1269
+2692	Barkhera Bob	345678.14.56.3678-3458.1234.	78	12	13624857	Spliced			93/1269
+2693	Ganj Basoda Bob	345678.14.5678.1236.1234.1258.56.	78	12	13624857	Spliced			93/1269
+2694	Bhopal Junction Bob	345678.14.5678.36.12.123458.34.	78	12	13624857	Spliced			93/1269
+2695	Sanchi Bob	345678.14.5678.36.1278.58.34.	78	12	13624785	Spliced			93/1269
+2696	Vidisha Bob	345678.14.5678.36.1278.58.3456.	78	12	13624785	Spliced			93/1269
+2697	Sumer Bob	345678.14.5678.36.3478.3458-	78	12	13624785	Spliced			93/1269
+2698	Gulabganj Bob	345678.14.5678.36.3478.3458.56.	78	12	13624785	Spliced			93/1269
+2699	Pabai Bob	345678.14.5678.36.78.123458.12.	78	12	13624785	Spliced			93/1269
+2700	Salamatpur Bob	345678.14.5678.36.78.123458.1256.	78	12	13624785	Spliced			93/1269
+2701	Sukhi Sewaniyan Bob	345678.14.5678.36.78.58-	78	12	13624785	Spliced			93/1269
+2702	Dewanganj Bob	345678.14.5678.36.78.58.56.	78	12	13624785	Spliced			93/1269
+2703	Mandi Bamora Bob	345678.1456-1236.1278.1258-	78	12	13624857	Spliced			93/1269
+2704	Kurwai Kethora Bob	345678.1456-1236.3478.58.3456.	78	12	13624857	Spliced			93/1269
+2705	Dhaura Bob	345678.1456-123678-123458.56.	78	12	13624857	Spliced			93/1269
+2706	Jiron Bob	345678.1456-123678.34.123458.12.	78	12	13624857	Spliced			93/1269
+2707	Jakhalun Bob	345678.1456-123678.34.1258.12.	78	12	13624857	Spliced			93/1269
+2708	Bina Junction Bob	345678.1456-3678-58.3456.	78	12	13624857	Spliced			93/1269
+2709	Agasod Bob	345678.1456-3678.34.3458-	78	12	13624857	Spliced			93/1269
+2710	Karonda Bob	345678.1456-3678.34.3458.56.	78	12	13624857	Spliced			93/1269
+2711	Lalitpur Bob	345678.1456.12.36-1258.1256.	78	12	13624785	Spliced			93/1269
+2712	Dailwara Bob	345678.1456.12.36.12.3458.56.	78	12	13624785	Spliced			93/1269
+2713	Jakhaura Bob	345678.1456.12.3678-3458-	78	12	13624857	Spliced			93/1269
+2714	Bijrotha Bob	345678.1456.12.3678.34.1258.3456.	78	12	13624857	Spliced			93/1269
+2715	Basai Bob	345678.1456.78.1236.3478.58-	78	12	13624785	Spliced			93/1269
+2716	Babina Bob	345678.1456.78.1236.3478.58.56.	78	12	13624785	Spliced			93/1269
+2717	Talbahat Bob	345678.1456.78.36.123478.123458.12.	78	12	13624785	Spliced			93/1269
+2718	Matatila Bob	345678.1456.78.36.123478.123458.1256.	78	12	13624785	Spliced			93/1269
+2719	Bijauli Bob	345678.1456.78.3678.1234.1258.34.	78	12	13624785	Spliced			93/1269
+2720	Khajraha Bob	345678.1456.78.3678.34.58.3456.	78	12	13624785	Spliced			93/1269
+2721	Morena Bob	345678.145678-1236.34.58.3456.	78	12	13624857	Spliced			93/1269
+2722	Hetampur Bob	345678.145678-123678-58.3456.	78	12	13624785	Spliced			93/1269
+2723	Dhaulpur Junction Bob	345678.145678.12.36.34.1258.56.	78	12	13624857	Spliced			93/1269
+2724	Mania Bob	345678.145678.12.3678-1258.3456.	78	12	13624785	Spliced			93/1269
+2725	Agra Cantt Junction Bob	345678.145678.1278.36-123458-	78	12	13624785	Spliced			93/1269
+2726	Agra Fort Platform 2 Bob	345678.145678.1278.36.34.1258.3456.	78	12	13624785	Spliced			93/1269
+2727	Jajau Bob	345678.145678.78.1236.12.58.34.	78	12	13624785	Spliced			93/1269
+2728	Bhandai Bob	345678.145678.78.1236.1234.58.56.	78	12	13624785	Spliced			93/1269
+2729	Kotra Bob	345678.1478-1236.1278.58.56.	78	12	a	Spliced			93/1269
+2730	Karari Bob	345678.1478-36.1278.123458.34.	78	12	a	Spliced			93/1269
+2731	Sonagir Bob	345678.1478-36.3478.1258.3456.	78	12	a	Spliced			93/1269
+2732	Datia Bob	345678.1478-36.3478.58.3456.	78	12	a	Spliced			93/1269
+2733	Sithouli Bob	345678.1478.56.1236.12.123458-	78	12	13624857	Spliced			93/1269
+2734	Gwalior Junction Bob	345678.1478.56.1236.34.3458.56.	78	12	13624857	Spliced			93/1269
+2735	Sank Bob	345678.1478.56.1236.3478.123458.1256.	78	12	13624785	Spliced			93/1269
+2736	Nurabad Bob	345678.1478.56.1236.78.123458.56.	78	12	13624785	Spliced			93/1269
+2737	Birla Nagar Bob	345678.1478.56.1236.78.1258.1234.	78	12	13624785	Spliced			93/1269
+2738	Rayaru Bob	345678.1478.56.1236.78.3458.34.	78	12	13624785	Spliced			93/1269
+2739	Banmor Bob	345678.1478.56.1236.78.3458.3456.	78	12	13624785	Spliced			93/1269
+2740	Antri Bob	345678.1478.56.36.123478.123458.1256.	78	12	13624785	Spliced			93/1269
+2741	Ananat Paith Bob	345678.1478.56.36.3478.58-	78	12	13624785	Spliced			93/1269
+2742	Dabra Bob	345678.1478.56.36.78.58.3456.	78	12	13624785	Spliced			93/1269
+2743	Single Arlecdon Place	345678.18-18-18-	18	12	f	1978-08-02	Arlecdon		78/800
+2744	Parbrook Bob	3458.16-1236-18-	18	12	f	Spliced			82/740
+2745	Longcot Bob	3458.16-36-58.36.	18	12	b	Spliced			82/970
+2746	Kellaways Bob	3458.16-36.14.58.36.	58	12	b	Spliced			82/740
+2747	East Coulston Bob	3458.16.58.36-3458-	18	12	b	Spliced			82/740
+2748	Kilmeston Bob	3458.16.58.36-58.14.	38	12	b	Spliced			82/740
+2749	Tilhar Bob	3478.14.1278.3678-1258.3456.	78	12	13624785	Spliced			93/1269
+2750	Bahadurpur Halt Bob	3478.14.1278.3678-3458-	78	12	13624785	Spliced			93/1269
+2751	Banthra Bob	3478.14.1278.3678-3458.56.	78	12	13624785	Spliced			93/1269
+2752	Pitambarpur Bob	3478.14.56.123678.1234.58.34.	78	12	13528467	Spliced			93/1269
+2753	Tisua Bob	3478.14.56.123678.1234.58.3456.	78	12	13528467	Spliced			93/1269
+2754	Rasuiya Bob	3478.14.56.123678.34.123458.12.	78	12	13528467	Spliced			93/1269
+2755	Chanethi Bob	3478.14.56.3678.34.1258.3456.	78	12	13528467	Spliced			93/1269
+2756	Shahbaz Nagar Road Halt Bob	3478.14.5678.1236-1258.1234.	78	12	13528467	Spliced			93/1269
+2757	Shahjahanpur Junction Bob	3478.14.5678.1236.1234.1258.3456.	78	12	13528467	Spliced			93/1269
+2758	Unchaulia Bob	3478.14.5678.123678.34.58.3456.	78	12	a	Spliced			93/1269
+2759	Gobarsanda Halt Bob	3478.14.5678.36.1234.1258.1234.	78	12	13528467	Spliced			93/1269
+2760	Shahjahanpur Kutchery Halt Bob	3478.14.5678.3678.1234.123458.12.	78	12	a	Spliced			93/1269
+2761	Roza Junction Bob	3478.14.5678.3678.1234.123458.1256.	78	12	a	Spliced			93/1269
+2762	Miranpur Katra Bob	3478.14.78.36.123478.1258-	78	12	13624785	Spliced			93/1269
+2763	Milakpur Halt Bob	3478.14.78.36.123478.1258.56.	78	12	13624785	Spliced			93/1269
+2764	Bilpur Bob	3478.14.78.36.3478.58.34.	78	12	13624785	Spliced			93/1269
+2765	Kasrak Halt Bob	3478.14.78.36.3478.58.3456.	78	12	13624785	Spliced			93/1269
+2766	Burmi Halt Bob	3478.1456.1256.3678.12.3458.1256.	78	12	13624857	Spliced			93/1269
+2767	Misrikh Tirath Bob	3478.1456.1256.3678.34.58.123456.	78	12	13624857	Spliced			93/1269
+2768	Unnao Junction Bob	3478.1456.125678.3678-58.1234.	78	12	13624785	Spliced			93/1269
+2769	Karori Bob	3478.1456.125678.3678.12.3458.56.	78	12	13624785	Spliced			93/1269
+2770	Maigalganj Bob	3478.1456.56.1236.123478.58.1234.	78	12	13624857	Spliced			93/1269
+2771	Mahmudpur Sariyan Bob	3478.1456.56.1236.1278.123458.3456.	78	12	13624857	Spliced			93/1269
+2772	Jung Bahadurganj Bob	3478.1456.56.1236.1278.1258-	78	12	13624857	Spliced			93/1269
+2773	Jahanikhera Bob	3478.1456.56.1236.3478.58.123456.	78	12	13624857	Spliced			93/1269
+2774	Lakhnaria Halt Bob	3478.1456.56.1236.78.58.1234.	78	12	13624857	Spliced			93/1269
+2775	Urdauli Halt Bob	3478.1456.56.3678-3458.1234.	78	12	13624857	Spliced			93/1269
+2776	Maholi Bob	3478.1456.56.3678-3458.34.	78	12	13624857	Spliced			93/1269
+2777	Hempur Bob	3478.1456.56.3678-3458.3456.	78	12	13624857	Spliced			93/1269
+2778	Neri Bob	3478.1456.56.3678-58.34.	78	12	13624857	Spliced			93/1269
+2779	Lalpur Chandra Halt Bob	3478.1456.56.3678-58.3456.	78	12	13624857	Spliced			93/1269
+2780	Sitapur City Bob	3478.1456.56.3678.34.1258-	78	12	13624857	Spliced			93/1269
+2781	Ramkot Bob	3478.1456.56.3678.34.1258.3456.	78	12	13624857	Spliced			93/1269
+2782	Katili Bob	3478.1456.56.3678.34.58.123456.	78	12	13624857	Spliced			93/1269
+2783	Safipur Bob	3478.1456.5678.36-3458.56.	78	12	13624857	Spliced			93/1269
+2784	Methi Tikur Halt Bob	3478.1456.5678.36.12.123458.34.	78	12	13624857	Spliced			93/1269
+2785	Patiyara Bob	3478.1456.5678.36.1234.1258.3456.	78	12	13624857	Spliced			93/1269
+2786	Makhi Bob	3478.1456.5678.36.34.58-	78	12	13624857	Spliced			93/1269
+2787	Arseni Bob	3478.1456.78.1236-1258-	78	12	13528467	Spliced			93/1269
+2788	Guju Halt Bob	3478.1456.78.1236.34.1258.1256.	78	12	13528467	Spliced			93/1269
+2789	Balamau Junction Bob	3478.1456.78.1236.3478.3458.12.	78	12	a	Spliced			93/1269
+2790	Ghaus Ganj Halt Bob	3478.1456.78.1236.3478.3458.1256.	78	12	a	Spliced			93/1269
+2791	Beniganj Bob	3478.1456.78.36.123478.1258-	78	12	a	Spliced			93/1269
+2792	Atwa Muthia Halt Bob	3478.1456.78.36.123478.1258.56.	78	12	a	Spliced			93/1269
+2793	Naimisharanya Bob	3478.1456.78.36.34.3458.56.	78	12	13528467	Spliced			93/1269
+2794	Ghori Halt Bob	3478.1456.78.36.34.58-	78	12	13528467	Spliced			93/1269
+2795	Fursatganj Halt Bob	3478.1456.78.3678-3458.34.	78	12	a	Spliced			93/1269
+2796	Mailawan Bob	3478.1456.78.3678-3458.3456.	78	12	a	Spliced			93/1269
+2797	Atwa Kursath Bob	3478.1456.78.3678-58.12.	78	12	a	Spliced			93/1269
+2798	Madhoganj Bob	3478.1456.78.3678-58.1256.	78	12	a	Spliced			93/1269
+2799	Fatehpur Chaurasi Halt Bob	3478.1456.78.3678.34.1258-	78	12	a	Spliced			93/1269
+2800	Ugu Bob	3478.1456.78.3678.34.1258.56.	78	12	a	Spliced			93/1269
+2801	Ganj Moradabad Bob	3478.1456.78.3678.34.58.34.	78	12	a	Spliced			93/1269
+2802	Bangarmau Bob	3478.1456.78.3678.34.58.3456.	78	12	a	Spliced			93/1269
+2803	Bela Bhela Halt Bob	3478.145678-1236.123478.123458-	78	12	a	Spliced			93/1269
+2804	Daryapur Bob	3478.145678-36.1278.123458.34.	78	12	a	Spliced			93/1269
+2805	Konarak Bob	3478.145678.1256.3678.12.3458.3456.	78	12	13624785	Spliced			93/1269
+2806	Garhi Mankipur Bob	3478.145678.1256.3678.34.1258.123456.	78	12	13624785	Spliced			93/1269
+2807	Unchahar Junction Bob	3478.145678.56.1236.1278.123458-	78	12	13624785	Spliced			93/1269
+2808	Pariawan Kalankankar Road Bob	3478.145678.56.1236.1278.123458.56.	78	12	13624785	Spliced			93/1269
+2809	Ramchandrapur Bob	3478.145678.56.1236.78.1258.1234.	78	12	13624785	Spliced			93/1269
+2810	Lachhmanpur Bob	3478.145678.56.36.123478.1258.1234.	78	12	13624785	Spliced			93/1269
+2811	Band Hamirpur Halt Bob	3478.1478-1236.12.3458.56.	78	12	13624857	Spliced			93/1269
+2812	Tikauli Rawatpur Bob	3478.1478-1236.1234.58.34.	78	12	13624857	Spliced			93/1269
+2813	Bighapur Bob	3478.1478-1236.1278.58.34.	78	12	13624785	Spliced			93/1269
+2814	Indmau Halt Bob	3478.1478-1236.1278.58.3456.	78	12	13624785	Spliced			93/1269
+2815	Kulha Halt Bob	3478.1478-1236.78.123458.56.	78	12	13624785	Spliced			93/1269
+2816	Achalganj Bob	3478.1478-36.78.3458.123456.	78	12	13624785	Spliced			93/1269
+2817	Takia Bob	3478.1478.12.36-123458.34.	78	12	13624857	Spliced			93/1269
+2818	Baiswara Bob	3478.1478.12.36.34.1258.56.	78	12	13624857	Spliced			93/1269
+2819	Bahai Halt Bob	3478.1478.56.36.3478.1258.3456.	78	12	a	Spliced			93/1269
+2820	Lalganj Bob	3478.1478.56.36.3478.58.3456.	78	12	a	Spliced			93/1269
+2821	Raghuraj Singh Bob	3478.1478.56.36.78.58.1256.	78	12	a	Spliced			93/1269
+2822	Nihastha Halt Bob	3478.1478.56.36.78.58.3456.	78	12	a	Spliced			93/1269
+2823	Ubrani Bob	3478.1478.5678.1236.12.58.34.	78	12	a	Spliced			93/1269
+2824	Suraj Kund Bob	3478.1478.5678.1236.1234.3458.12.	78	12	a	Spliced			93/1269
+2825	Radha Balampur Halt Bob	3478.1478.5678.36.1234.3458.12.	78	12	a	Spliced			93/1269
+2826	Dalmau Junction Bob	3478.1478.5678.36.1234.58.1234.	78	12	a	Spliced			93/1269
+2827	Single Broughton-in-Furness Bob	3478.18-18-18-	18	12	14258367	1982-03-20	Broughton-in-Furness		82/358
+2828	Mogador Bob	36.14-16-1238-	38	18	h	Spliced			83/98
+2829	Enderby Bob	36.14-16-38-	38	18	h	Spliced			82/555
+2830	Barbury Castle Bob	36.14-16-38.12.	38	18	h	Spliced			83/282
+2831	Durrington Bob	36.14-18-38-	78	18	h	Spliced			82/555
+2832	Durbridge Bob	36.14-18-38.1256.	78	18	h	Spliced			82/740
+2833	Durston Bob	36.14-18-38.56.	78	18	h	Spliced			82/740
+2834	Earlham Bob	36.14-36-58-	58	12	a	1958-12-10	Loddon		59/2
+2835	Hernhill Bob	36.14-36.12.38.16.	38	18	m	1965-09-18	Hernhill		65/661
+2836	Crofton Bob	36.14-38-38.1256.	38	12	a	Spliced			82/740
+2837	Semington Bob	36.14-38-38.56.	38	12	a	Spliced			82/740
+2838	Langford Bob	36.14-38.12.38.56.	38	12	a	Spliced			83/366
+2839	Lambourn Bob	36.18-1236-18.3456.	18	12	a	Spliced			82/740
+2840	Oade Bob	36.18-1236-18.36.	18	12	a	Spliced			82/970
+2841	Aceton Bob	36.18-1236-58.1236.	58	12	a	Spliced			82/970
+2842	Nonesuch Bob	36.18-16-18-	78	12	c	Spliced			83/534
+2843	Marston Meysey Bob	36.18-16-18.34.	78	12	c	Spliced			83/534
+2844	Thatcham Bob	36.18-16-18.56.	18	12	a	Spliced			82/342 87/558
+2845	Arrenmore Bob	36.18-16.34.1258-	38	18	m	Spliced			83/282
+2846	Moredon Bob	36.18-18-1238-	18	18	g	Spliced			83/32
+2847	Xavier Bob	36.18-36-1458.36.	18	12	a	Spliced			67/694 82/970
+2848	Eastcourt Bob	36.18-36-18.3456.	18	12	a	Spliced			82/740
+2849	Easton Royal Bob	36.18-36-18.36.	18	12	a	Spliced			82/740
+2850	Kingston Lisle Bob	36.18-36-58.1236.	58	12	a	Spliced			82/740
+2851	Stratton Bob	36.18-36-58.36.	58	12	a	Spliced			82/342 87/558
+2852	Broome Bob	36.18-36.12.58.1236.	58	12	a	Spliced			82/342
+2853	Broome Hill Bob	36.18-36.12.58.36.	58	12	a	Spliced			82/740
+2854	Latton Bob	36.18-38-38.14.	78	18	j	Spliced			83/534
+2855	Kingsdown Bob	36.18.56.18-1238.56.	18	18	g	Spliced			83/32
+2856	Alderbury Bob	36.18.56.38-3458.16.	38	12	b	Spliced			82/740
+2857	Hook Bob	36.18.56.38-3458.16.	38	18	g	Spliced			82/740
+2858	Odcombe Bob	36.18.56.38-38.1456.	38	12	b	Spliced			82/740
+2859	All Cannings Bob	36.18.56.38-38.1456.	38	18	g	Spliced			82/740
+2860	Elmore Imperial Bob	36.18.56.38-38.16.	38	12	b	Spliced			82/342
+2861	Oldham Bob	36.18.56.38-38.16.	38	18	g	Spliced			82/342
+2862	Fishponds Bob	38.14-1236-1258.36.	18	12	b	Spliced			82/970
+2863	Tidworth Bob	38.14-1238-18-	18	12	e	Spliced			82/555
+2864	St Marie's Bob	38.14-1238-18-	78	12	f	2009-08-09	Sheffield, St Marie		09/879
+2865	Heathcote Bob	38.14-16-1458-	78	12	a	2005-09-21	Dore		05/990
+2866	Rayleigh Bob	38.14-16-18.36.	78	12	a	1976-09-21	Rayleigh		76/970
+2867	Gilbert Bob	38.14-18-1458-	58	12	a	Spliced			05/505
+2868	St James Youths Exercise Bob	38.14-18-38-	38	12	c				
+2869	Liverpool Bob	38.14-18-58.14.	58	12	a	1980-03-08	Harpenden		80/317
+2870	Frodsham Bob	38.14-36-58-	78	12	a	1991-01-18	Frodsham		91/169
+2871	Nythe Bob	38.14-36-58.16.	38	12	b	Spliced			82/342
+2872	Oxfordshire Bob	38.14-36-58.36.	18	12	b	Spliced			82/342
+2873	Nuneaton Bob	38.14-36.14.38.14.	58	12	c				
+2874	Bridlington Bob	38.14-36.14.58.14.	78	12	a	Spliced			04/346
+2875	Coleford Bob	38.14-36.14.58.36.	58	12	b	Spliced			82/740
+2876	Nowhere Bob	38.14-38-3458.16.	78	12	f	Spliced			83/282
+2877	Marden Bob	38.14-38-38.14.	78	12	f	Spliced			83/282
+2878	Quedgeley Bob	38.14-38-38.1456.	78	12	f	Spliced			82/555
+2879	Catz College Bob	38.14-38-58-	58	12	a	1993-12-29	Burnley		94/83 729
+2880	Dorchester Bob	38.14-38.14.58.14.	58	12	a	Spliced			04/346
+2881	Double Cumberland Place	38.14.1258.36.1478.58.16.	78	12	e	1997-01-11	Dore		97/142
+2882	Tenterden Bob	38.14.56.38.14.58.16.	78	12	e				
+2883	Hodson Bob	38.14.58.1236-1258.34.	18	12	b	Spliced			82/740
+2884	Ampney Bob	38.14.58.16-1258.34.	18	12	b	Spliced			82/342
+2885	St Lawrence Bob	38.14.58.16-18-	58	12	e	1951-02-02	Frodsham		51/98
+2886	Alvediston Bob	38.14.58.16-18.34.	58	12	e	Spliced			83/282
+2887	Chepstow Bob	38.14.58.16-58-	78	12	c	Spliced			82/342
+2888	Lockeridge Bob	38.14.58.16-58.12.	78	12	c	Spliced			82/740
+2889	Easterton Bob	38.14.58.16-58.1234.	78	12	c	Spliced			82/740
+2890	Single Cumberland Place	38.14.58.16.78.18-	18	12	f	1802-09-13	Islington		59/67
+2891	Oakhill Bob	38.14.58.36-58.14.	38	12	b	Spliced			82/740
+2892	Durnford Bob	38.14.58.36-58.34.	18	12	b	Spliced			82/740
+2893	Easton Neston Bob	38.14.58.36.12.58.14.	78	12	c	1975-10-04	Easton Neston		75/978
+2894	Sandhurst Bob	38.14.58.36.14.38.16.	78	12	c				
+2895	Mannington Bob	38.14.58.36.14.58.12.	38	12	b	Spliced			82/740
+2896	Upavon Bob	38.1456-16-58.36.	18	12	13728564	Spliced			83/98
+2897	Eldene Bob	38.16-16-58.16.	78	12	a	Spliced			82/342
+2898	Stanton Bob	38.16-36-38.14.	58	12	c				
+2899	Uffington Hill Bob	38.16-36-58.1236.	78	12	a	Spliced			82/740 83/464
+2900	Baulking Bob	38.16-36-58.36.	78	12	a	Spliced			82/970
+2901	Penarth Bob	38.16.58.36-38.1256.	38	12	a	Spliced			83/366
+2902	Hala Ghat Bob	56.14-1236-3458-	78	12	14258367	Spliced			93/1269
+2903	Darbhanga Junction Bob	56.14-1236.12.123458.3456.	78	12	14258367	Spliced			93/1269
+2904	Thalwara Bob	56.14-1236.12.1258-	78	12	14258367	Spliced			93/1269
+2905	Laheria Sarai Bob	56.14-1236.12.3458.56.	78	12	14258367	Spliced			93/1269
+2906	Tektar Halt Bob	56.14-1236.1234.3458-	78	12	14258367	Spliced			93/1269
+2907	Muhammadpur Bob	56.14-1236.34.3458.1256.	78	12	14258367	Spliced			93/1269
+2908	Sisho Halt Bob	56.14-1236.34.3458.56.	78	12	14258367	Spliced			93/1269
+2909	Devizes Bob	56.14-16-18-	38	12	c	Spliced			83/398
+2910	Chilbolton Bob	56.14-16-18-	38	18	h	Spliced			83/398
+2911	Tunstall Bob	56.14-36-1458-	58	12	a	2007-02-07	Tunstall		07/218
+2912	Bilsborrow Bob	56.14-36-18-	18	12	d	1960-09-03	Bilsborrow		60/636
+2913	Cross Stone Bob	56.14-36-58.14.	58	12	a	1962-05-18	Todmorden, St Paul		62/393
+2914	Silverdale Bob	56.14-36.12.58.16.	38	18	m	2009-05-21	Silverdale		09/609
+2915	Kamtaul Bob	56.14.12.36.12.58.56.	78	12	14258367	Spliced			93/1269
+2916	Janakpur Road Bob	56.14.1256.36-1258.123456.	78	12	f	Spliced			93/1269
+2917	Awapur Halt Bob	56.14.1256.36.12.58.1256.	78	12	f	Spliced			93/1269
+2918	Parsauni Bob	56.14.1256.36.1234.3458.1256.	78	12	f	Spliced			93/1269
+2919	Bajpatti Bob	56.14.1256.36.34.1258.1256.	78	12	f	Spliced			93/1269
+2920	Nakardei Bob	56.14.125678.36-1258.3456.	78	12	14263785	Spliced			93/1269
+2921	Raxaul Junction Bob	56.14.125678.36.12.58.3456.	78	12	14263785	Spliced			93/1269
+2922	Masnadih Halt Bob	56.14.125678.36.1234.3458.56.	78	12	14263785	Spliced			93/1269
+2923	Ghorasahan Bob	56.14.1278.36.1234.58.123456.	78	12	14257386	Spliced			93/1269
+2924	Jalmurtinagar Halt Bob	56.14.1278.3678-1258.1256.	78	12	14258367	Spliced			93/1269
+2925	Jogiara Bob	56.14.56.1236.12.3458.123456.	78	12	f	Spliced			93/1269
+2926	Muraitha Halt Bob	56.14.56.1236.12.3458.1256.	78	12	f	Spliced			93/1269
+2927	Poulton Bob	56.14.56.38-18-	18	12	c	1953-10-17	Pulford		53/704
+2928	Grosvenor Bob	56.14.56.38-18-	78	12	d	1952-11-22	Pulford		52/772
+2929	Nashdom Bob	56.14.56.38-18.34.	78	12	d	1964-07-11	Burnham (Bucks)		64/503
+2930	Wem Bob	56.14.56.38-18.56.	78	12	d	1956-05-19	Wem		56/340
+2931	Abbots Bromley Bob	56.14.56.38-58-	58	12	f	1977-06-07	Abbots Bromley		77/571
+2932	Chauradano Bob	56.14.5678.1236.34.3458.56.	78	12	14263785	Spliced			93/1269
+2933	Adapur Bob	56.14.5678.123678.34.58.1256.	78	12	f	Spliced			93/1269
+2934	Pachpakharia Halt Bob	56.14.5678.3678-1258.1256.	78	12	f	Spliced			93/1269
+2935	Whittlesea Bob	56.14.58.36.14.58.36.	78	12	a				
+2936	Sitamarhi Bob	56.14.78.1236.1234.58.56.	78	12	14257386	Spliced			93/1269
+2937	Riga Bob	56.14.78.3678-3458-	78	12	14258367	Spliced			93/1269
+2938	Mohini Mandal Halt Bob	56.14.78.3678.12.123458.123456.	78	12	14258367	Spliced			93/1269
+2939	Kundwa Chainpur Bob	56.14.78.3678.1234.1258.1256.	78	12	14258367	Spliced			93/1269
+2940	Bairagnia Bob	56.14.78.3678.1234.58-	78	12	14258367	Spliced			93/1269
+2941	Gurhanwa Halt Bob	56.14.78.3678.1234.58.56.	78	12	14258367	Spliced			93/1269
+2942	Dhang Bob	56.14.78.3678.34.3458-	78	12	14258367	Spliced			93/1269
+2943	Dharminiya Halt Bob	56.1456-1236.1234.58.1234.	78	12	f	Spliced			93/1269
+2944	Ramgathwa Bob	56.1456-1236.34.3458.1256.	78	12	f	Spliced			93/1269
+2945	Parsa Nagar Halt Bob	56.1456-123678.34.1258.12.	78	12	14263785	Spliced			93/1269
+2946	Sagauli Junction Bob	56.1456-3678.34.1258.1234.	78	12	14263785	Spliced			93/1269
+2947	Bettiah Bob	56.1456.12.3678.1234.58.12.	78	12	14263785	Spliced			93/1269
+2948	Majhowlia Bob	56.1456.12.3678.34.1258.123456.	78	12	14263785	Spliced			93/1269
+2949	Harinagar Bob	56.145678-1236.3478.58.123456.	78	12	f	Spliced			93/1269
+2950	Chamua Bob	56.145678-36.78.1258.1256.	78	12	f	Spliced			93/1269
+2951	Kharpokhra Bob	56.145678.12.36.1234.3458.1256.	78	12	14263785	Spliced			93/1269
+2952	Bhairoganj Bob	56.145678.12.36.1234.58.3456.	78	12	14263785	Spliced			93/1269
+2953	Nautar Halt Bob	56.145678.1278.36-123458.1256.	78	12	f	Spliced			93/1269
+2954	Chhitauni Bob	56.145678.1278.36-1258.123456.	78	12	f	Spliced			93/1269
+2955	Khada Bob	56.145678.1278.36.34.1258.56.	78	12	f	Spliced			93/1269
+2956	Gurli Ramgarhwa Halt Bob	56.145678.1278.3678.34.1258.56.	78	12	14263785	Spliced			93/1269
+2957	Bagaha Bob	56.145678.78.36.1234.3458.1256.	78	12	f	Spliced			93/1269
+2958	Valmiki Nagar Road Bob	56.145678.78.3678.34.1258.56.	78	12	14263785	Spliced			93/1269
+2959	Chanpatia Bob	56.1478.5678.1236.12.3458.12.	78	12	f	Spliced			93/1269
+2960	Sathi Bob	56.1478.5678.1236.12.3458.123456.	78	12	f	Spliced			93/1269
+2961	Narkatiaganj Junction Bob	56.1478.5678.1236.1234.58-	78	12	f	Spliced			93/1269
+2962	Kumarbagh Bob	56.1478.5678.36.1234.3458.1256.	78	12	f	Spliced			93/1269
+2963	Yate Bob	56.18-16.34.18-	38	12	b	Spliced			82/555
+2964	Berwick Bassett Bob	56.18-16.34.18-	38	18	g	Spliced			82/740
+2965	Single Hunslet Bob	56.18-18-18-	18	12	13624785	1964-07-13	Hunslet	2000-09-05	64/551 00/1038
+2966	Preston Bob	56.18-18.34.18-	78	18	g	Spliced			82/342
+2967	Thurso Bob	56.18-18.34.18.34.	78	12	b	Spliced			83/98
+2968	Rowde Hill Bob	56.18-18.34.18.3456.	78	12	b	Spliced			82/555 83/464
+2969	Berwick St John Bob	56.18-18.34.18.56.	78	18	g	Spliced			82/740
+2970	Studley Bob	56.18-36.14.38-	38	18	g	Spliced			82/740
+2971	Horton Bob	56.18-36.14.38.12.	38	18	g	Spliced			82/740
+2972	Newton Stacey Bob	56.18-38-38.56.	38	18	l	Spliced			82/970
+2973	Southdown Bob	56.18-38-58.16.	78	18	g	Spliced			82/342
+2974	Eastleach Bob	56.18-38.14.38-	78	12	b	Spliced			82/342
+2975	Salisbury Bob	56.18-38.14.38-	78	18	g	Spliced			82/342
+2976	Sarum Bob	56.18-38.14.38.12.	78	18	g	Spliced			83/32
+2977	Upham Bob	56.18-38.14.38.1256.	78	12	b	Spliced			82/740
+2978	Old Sarum Bob	56.18-38.14.38.1256.	78	18	g	Spliced			83/32
+2979	Thickwood Bob	56.18-38.14.38.56.	78	12	b	Spliced			82/970
+2980	Castle Combe Bob	56.18.56.38-18.56.	18	12	b	Spliced			83/98
+2981	Atrampur Bob	5678.14-1236.123478.3458-	78	12	14258367	Spliced			93/1269
+2982	Sarai Gopal Bob	5678.14-1236.123478.3458.1256.	78	12	14258367	Spliced			93/1269
+2983	Ramohaura Road Bob	5678.14-1236.123478.58.1234.	78	12	14258367	Spliced			93/1269
+2984	Lalgopalganj Bob	5678.14-1236.1278.3458.3456.	78	12	14258367	Spliced			93/1269
+2985	Kunda Harnam Ganj Bob	5678.14-36.123478.58.12.	78	12	14258367	Spliced			93/1269
+2986	Bhadri Bob	5678.14-36.123478.58.123456.	78	12	14258367	Spliced			93/1269
+2987	Phaphamau Junction Bob	5678.14-3678-3458.34.	78	12	14258367	Spliced			93/1269
+2988	Prayag Bob	5678.14-3678.34.3458-	78	12	14258367	Spliced			93/1269
+2989	Allahabad Junction Bob	5678.14-3678.34.3458.56.	78	12	14258367	Spliced			93/1269
+2990	Naini Junction Bob	5678.14.12.3678-3458-	78	12	14258367	Spliced			93/1269
+2991	Jasra Bob	5678.14.12.3678.34.3458.1256.	78	12	14258367	Spliced			93/1269
+2992	Iradatganj Bob	5678.14.12.3678.34.58.1234.	78	12	14258367	Spliced			93/1269
+2993	Dabhaura Bob	5678.14.1256.3678-123458.3456.	78	12	f	Spliced			93/1269
+2994	Jaitwar Bob	5678.14.125678.36.12.3458.3456.	78	12	f	Spliced			93/1269
+2995	Satna Bob	5678.14.125678.3678-3458-	78	12	14263785	Spliced			93/1269
+2996	Hati Bob	5678.14.125678.3678-58.1234.	78	12	14263785	Spliced			93/1269
+2997	Lagargawan Bob	5678.14.125678.3678.34.3458.1256.	78	12	14263785	Spliced			93/1269
+2998	Manikpur Junction Bob	5678.14.1278.3678-1258.56.	78	12	14257386	Spliced			93/1269
+2999	Bargarh Bob	5678.14.56.1236.3478.3458.1256.	78	12	f	Spliced			93/1269
+3000	Shankargarh Bob	5678.14.56.1236.78.3458-	78	12	f	Spliced			93/1269
+3001	Majhiari Bob	5678.14.56.1236.78.3458.3456.	78	12	f	Spliced			93/1269
+3002	Lohgara Bob	5678.14.56.36.123478.58.12.	78	12	f	Spliced			93/1269
+3003	Kataiya Dandi Bob	5678.14.56.3678.34.1258-	78	12	f	Spliced			93/1269
+3004	Khutaha Bob	5678.14.5678.123678.34.58.56.	78	12	14263785	Spliced			93/1269
+3005	Markundi Bob	5678.14.5678.36.1234.1258.1256.	78	12	f	Spliced			93/1269
+3006	Itwan Dundaila Bob	5678.14.5678.3678-3458-	78	12	14263785	Spliced			93/1269
+3007	Maihgawan Bob	5678.14.5678.3678-3458.34.	78	12	14263785	Spliced			93/1269
+3008	Chitahra Bob	5678.14.5678.3678-3458.56.	78	12	14263785	Spliced			93/1269
+3009	Tikaria Bob	5678.14.5678.3678-58.1256.	78	12	14263785	Spliced			93/1269
+3010	Panhai Bob	5678.14.78.3678.34.1258-	78	12	14257386	Spliced			93/1269
+3011	Amdara Bob	5678.1456-1236.1278.58.3456.	78	12	f	Spliced			93/1269
+3012	Maihar Bob	5678.1456-1236.34.3458.1256.	78	12	14263785	Spliced			93/1269
+3013	Unchhera Bob	5678.1456-1236.34.58.123456.	78	12	14263785	Spliced			93/1269
+3014	Bhadanpur Bob	5678.1456-1236.78.3458-	78	12	f	Spliced			93/1269
+3015	Jukehi Bob	5678.1456-3678.34.58.123456.	78	12	f	Spliced			93/1269
+3016	Patwara Bob	5678.1456.12.36.12.3458.56.	78	12	14263785	Spliced			93/1269
+3017	Katni Junction Bob	5678.1456.12.36.1234.58.56.	78	12	14263785	Spliced			93/1269
+3018	Niwar Bob	5678.1456.12.3678.34.1258.3456.	78	12	f	Spliced			93/1269
+3019	Jabalpur Junction Bob	5678.1456.1278.36.1234.58.3456.	78	12	f	Spliced			93/1269
+3020	Sleemanabad Bob	5678.1456.78.36.1234.1258.3456.	78	12	f	Spliced			93/1269
+3021	Dundi Bob	5678.1456.78.3678-3458-	78	12	14263785	Spliced			93/1269
+3022	Gosalpur Bob	5678.1456.78.3678.1234.123458.12.	78	12	14263785	Spliced			93/1269
+3023	Deori Bob	5678.1456.78.3678.1234.123458.1256.	78	12	14263785	Spliced			93/1269
+3024	Sihora Road Bob	5678.1456.78.3678.1234.1258.3456.	78	12	14263785	Spliced			93/1269
+3025	Sobhapur Bob	5678.145678-1236.34.3458.56.	78	12	f	Spliced			93/1269
+3026	Sohagpur Bob	5678.145678-1236.3478.58.3456.	78	12	14263785	Spliced			93/1269
+3027	Guramkhedi Bob	5678.145678-123678.34.58.56.	78	12	14263785	Spliced			93/1269
+3028	Pipariya Bob	5678.145678-36.78.58.1256.	78	12	14263785	Spliced			93/1269
+3029	Bagra Tawa Bob	5678.145678.12.36.12.3458.56.	78	12	f	Spliced			93/1269
+3030	Sontalai Bob	5678.145678.12.3678.12.58.56.	78	12	14263785	Spliced			93/1269
+3031	Bhitoni Bob	5678.1478-36.123478.123458.1256.	78	12	14257386	Spliced			93/1269
+3032	Madan Manal Bob	5678.1478-36.1278.123458.34.	78	12	14257386	Spliced			93/1269
+3033	Bheraghat Bob	5678.1478-36.3478.58-	78	12	14257386	Spliced			93/1269
+3034	Bikrampur Bob	5678.1478-3678.12.3458.1256.	78	12	14257386	Spliced			93/1269
+3035	Gotegaon Bob	5678.1478-3678.1234.58.1256.	78	12	14257386	Spliced			93/1269
+3036	Karak Bel Bob	5678.1478.12.3678-123458.3456.	78	12	14257386	Spliced			93/1269
+3037	Kareli Bob	5678.1478.12.3678.34.123458.1256.	78	12	14257386	Spliced			93/1269
+3038	Narsinghpur Bob	5678.1478.12.3678.34.123458.56.	78	12	14257386	Spliced			93/1269
+3039	Ghat Pindrai Bob	5678.1478.12.3678.34.1258.123456.	78	12	14257386	Spliced			93/1269
+3040	Junehta Bob	5678.1478.125678.36-123458-	78	12	14263785	Spliced			93/1269
+3041	Bankhedi Bob	5678.1478.125678.36.34.123458.1256.	78	12	14263785	Spliced			93/1269
+3042	Karapgaon Bob	5678.1478.56.1236-3458.34.	78	12	f	Spliced			93/1269
+3043	Bohani Bob	5678.1478.56.1236.12.3458.56.	78	12	f	Spliced			93/1269
+3044	Salichauka Road Bob	5678.1478.5678.36.1234.3458.12.	78	12	14263785	Spliced			93/1269
+3045	Gadarwara Bob	5678.1478.5678.36.1234.58.1256.	78	12	14263785	Spliced			93/1269
+3046	Single St Cecilia Bob	5678.18-18-18-	18	12	13624857	1977-11-20	Highclere		77/1068
+3047	Single Sandringham Bob	58.14-16-18-	18	12	d	Spliced			04/346
+3048	Prestbury Bob	58.14-16.34.58.14.	78	12	a	1974-03-23	Prestbury (Cheshire)		74/369
+3049	Drayton Bob	58.14-18-58.16.	78	12	f	Spliced			83/365
+3050	Double Sandringham Bob	58.14-36-58.14.	78	12	a	Spliced			04/346
+3051	Halifax Bob	58.14-36.14.58-	78	12	a	Spliced			04/346
+3052	Chitterne Bob	58.14-38-1258.36.	78	12	f	Spliced			82/740
+3053	Wrexham Bob	58.14-38-18-	18	12	d	Spliced			04/346
+3054	Silbury Bob	58.14-38-58.1236.	78	12	f	Spliced			82/740
+3055	Faringdon Bob	58.14-38-58.36.	78	12	f	Spliced			82/342
+3056	Donhead Bob	58.14-38.12.58.36.	78	12	f	Spliced			83/282
+3057	Snapwick Bob	58.14.56.18-18.56.	18	12	f	Spliced			83/282
+3058	Whittonditch Bob	58.14.58.16-1238-	18	12	e	Spliced			82/740
+3059	Risca Bob	58.16-1238-1258-	38	12	f	Spliced			82/970
+3060	Thamesdown Bob	58.16-16.34.18.36.	58	12	b	Spliced			82/555
+3061	Ablington Bob	58.16-18-38.16.	78	12	b	Spliced			82/970
+3062	Windsor Bob	58.16-18.34.18.36.	78	12	b	Spliced			83/366
+3063	Cadley Bob	58.16-18.34.58.14.	78	12	b	Spliced			82/740
+3064	Greenmeadow Bob	58.16-36-18.36.	58	12	b	Spliced			83/32
+3065	Greenbridge Bob	58.16-36-18.56.	38	12	b	Spliced			83/32
+3066	Sirmuttra Bob	78.14-1236-58.12.	78	12	14263785	Spliced			93/1269
+3067	Bagthar Bob	78.14-1236.12.1258-	78	12	14263785	Spliced			93/1269
+3068	Deoranian Bob	78.14-1236.12.3458.1256.	78	12	14263785	Spliced			93/1269
+3069	Baseri Bob	78.14-1236.12.58.12.	78	12	14263785	Spliced			93/1269
+3070	Richha Road Bob	78.14-1236.1234.58.1234.	78	12	14263785	Spliced			93/1269
+3071	Neoli Bob	78.14-1236.1278.1258-	78	12	f	Spliced			93/1269
+3072	Harangul Bob	78.14-1236.1278.58-	78	12	f	Spliced			93/1269
+3073	Ausa Road Bob	78.14-1236.1278.58.12.	78	12	f	Spliced			93/1269
+3074	Tantpur Bob	78.14-1236.78.58-	78	12	f	Spliced			93/1269
+3075	Latur Bob	78.14-1236.78.58.12.	78	12	f	Spliced			93/1269
+3076	Dhoki Bob	78.14-123678-1258-	78	12	f	Spliced			93/1269
+3077	Kalamb Road Bob	78.14-123678-1258.12.	78	12	f	Spliced			93/1269
+3078	Yodshi Bob	78.14-123678.12.58-	78	12	f	Spliced			93/1269
+3079	Barajli Bob	78.14-36.1278.58.12.	78	12	f	Spliced			93/1269
+3080	Thair Bob	78.14-3678-1258-	78	12	f	Spliced			93/1269
+3081	Murud Bob	78.14-3678-58-	78	12	f	Spliced			93/1269
+3082	Palsap Bob	78.14-3678-58.12.	78	12	f	Spliced			93/1269
+3083	Baheri Bob	78.14.12.36-123458.1234.	78	12	14263785	Spliced			93/1269
+3084	Ramling Bob	78.14.12.36-1258.12.	78	12	14263785	Spliced			93/1269
+3085	Pangri Bob	78.14.12.36.12.58-	78	12	14263785	Spliced			93/1269
+3086	Kuslamb Bob	78.14.12.36.12.58.12.	78	12	14263785	Spliced			93/1269
+3087	Gokulnagar Bob	78.14.12.36.1234.3458.1256.	78	12	14263785	Spliced			93/1269
+3088	Kichha Bob	78.14.12.36.1234.58.12.	78	12	14263785	Spliced			93/1269
+3089	Amdanda Halt Bob	78.14.12.36.34.1258.1256.	78	12	14263785	Spliced			93/1269
+3090	Shendri Bob	78.14.12.3678-1258-	78	12	f	Spliced			93/1269
+3091	Barsi Town Bob	78.14.12.3678-58-	78	12	f	Spliced			93/1269
+3092	Uplai Bob	78.14.12.3678-58.12.	78	12	f	Spliced			93/1269
+3093	Ridhore Bob	78.14.12.3678.12.58.12.	78	12	f	Spliced			93/1269
+3094	Gaushala Platform 1 Bob	78.14.125678.36-58.56.	78	12	14258367	Spliced			93/1269
+3095	Piru-Madara Platform 1 Bob	78.14.125678.36.34.58.123456.	78	12	14258367	Spliced			93/1269
+3096	Salgare Bob	78.14.1278.36-58-	78	12	f	Spliced			93/1269
+3097	Bolanki Bob	78.14.1278.36-58.12.	78	12	f	Spliced			93/1269
+3098	Arag Bob	78.14.1278.36.12.58-	78	12	f	Spliced			93/1269
+3099	Miraj Junction Bob	78.14.1278.3678-1258-	78	12	14263785	Spliced			93/1269
+3100	Lalkua Junction Platform 2 Bob	78.14.1278.3678-1258.3456.	78	12	14263785	Spliced			93/1269
+3101	Bedag Bob	78.14.1278.3678-58-	78	12	14263785	Spliced			93/1269
+3102	Bolwad Bob	78.14.1278.3678-58.12.	78	12	14263785	Spliced			93/1269
+3103	Daund Junction Bob	78.14.1278.3678.12.58-	78	12	14263785	Spliced			93/1269
+3104	Kachani Gusain Halt Bob	78.14.5678.1236.78.3458.34.	78	12	14257386	Spliced			93/1269
+3105	Kashipur Junction Platform 1 Bob	78.14.5678.1236.78.3458.3456.	78	12	14257386	Spliced			93/1269
+3106	Gularbhoj Bob	78.14.5678.36-3458.56.	78	12	14258367	Spliced			93/1269
+3107	Beria Daulat Halt Bob	78.14.5678.36.34.3458.56.	78	12	14258367	Spliced			93/1269
+3108	Bazpur Bob	78.14.5678.36.78.58.12.	78	12	14257386	Spliced			93/1269
+3109	Sarkara Bob	78.14.5678.36.78.58.1256.	78	12	14257386	Spliced			93/1269
+3110	Bohali Bob	78.14.78.1236-1258-	78	12	f	Spliced			93/1269
+3111	Bamani Bob	78.14.78.1236-1258.12.	78	12	f	Spliced			93/1269
+3112	Sangola Bob	78.14.78.1236.12.1258-	78	12	f	Spliced			93/1269
+3113	Wasud Bob	78.14.78.1236.78.58-	78	12	14263785	Spliced			93/1269
+3114	Javale Bob	78.14.78.1236.78.58.12.	78	12	14263785	Spliced			93/1269
+3115	Agran Dhulgaon Bob	78.14.78.123678-58-	78	12	14263785	Spliced			93/1269
+3116	Mahisgaon Bob	78.14.78.36-58-	78	12	f	Spliced			93/1269
+3117	Chinkhil Bob	78.14.78.36.12.1258-	78	12	f	Spliced			93/1269
+3118	Kurduwadi Junction Bob	78.14.78.36.12.1258.12.	78	12	f	Spliced			93/1269
+3119	Haldwani Platform 1 Bob	78.14.78.36.123478.123458.12.	78	12	14263785	Spliced			93/1269
+3120	Kathgodam Bob	78.14.78.36.123478.123458.1256.	78	12	14263785	Spliced			93/1269
+3121	Babhulgaon Bob	78.14.78.36.1278.1258-	78	12	14263785	Spliced			93/1269
+3122	Pandharpur Bob	78.14.78.36.1278.1258.12.	78	12	14263785	Spliced			93/1269
+3123	Ashti Bob	78.14.78.36.1278.58-	78	12	14263785	Spliced			93/1269
+3124	Pantnagar Bob	78.14.78.36.3478.3458-	78	12	14263785	Spliced			93/1269
+3125	Lalkua Junction Platform 1 Bob	78.14.78.36.3478.3458.56.	78	12	14263785	Spliced			93/1269
+3126	Modlimb Bob	78.14.78.36.78.1258.12.	78	12	14263785	Spliced			93/1269
+3127	Laul Bob	78.14.78.36.78.58-	78	12	14263785	Spliced			93/1269
+3128	Padsali Bob	78.14.78.36.78.58.12.	78	12	14263785	Spliced			93/1269
+3129	Dhalgaon Bob	78.14.78.3678-1258-	78	12	14263785	Spliced			93/1269
+3130	Jath Road Bob	78.14.78.3678-58-	78	12	14263785	Spliced			93/1269
+3131	Gulvanchi Bob	78.14.78.3678-58.12.	78	12	14263785	Spliced			93/1269
+3132	Langarpeth Bob	78.14.78.3678.12.1258-	78	12	14263785	Spliced			93/1269
+3133	Kavathe Mahankal Bob	78.14.78.3678.12.1258.12.	78	12	14263785	Spliced			93/1269
+3134	Haldwani Platform 2 Bob	78.14.78.3678.34.58.123456.	78	12	14263785	Spliced			93/1269
+3135	Piru-Madara Platform 2 Bob	78.1456.1256.3678.12.3458.1256.	78	12	f	Spliced			93/1269
+3136	Sehal Bob	78.1456.125678.3678.12.3458.56.	78	12	14263785	Spliced			93/1269
+3137	Kashipur Junction Platform 2 Bob	78.1456.1278.3678.1234.3458.56.	78	12	14257386	Spliced			93/1269
+3138	Ramnagar Bob	78.1456.56.123678.34.1258.1256.	78	12	f	Spliced			93/1269
+3139	Aliganj Bob	78.1456.5678.36-3458.56.	78	12	f	Spliced			93/1269
+3140	Roshanpur Bob	78.1456.5678.36.1234.1258.1234.	78	12	f	Spliced			93/1269
+3141	Jalpur Bob	78.1456.5678.36.1234.1258.1256.	78	12	f	Spliced			93/1269
+3142	Padiya Nagla Halt Bob	78.1456.5678.36.34.58-	78	12	f	Spliced			93/1269
+3143	Pipalsana Bob	78.1456.5678.3678.1234.1258.1256.	78	12	14263785	Spliced			93/1269
+3144	Gaushala Platform 2 Bob	78.1456.78.3678.1234.1258.34.	78	12	14257386	Spliced			93/1269
+3145	Kathgarh Right Bank Bob	78.145678-1236.12.123458.3456.	78	12	14258367	Spliced			93/1269
+3146	Dalpatpur Bob	78.145678-1236.1234.1258.3456.	78	12	14258367	Spliced			93/1269
+3147	Rampur Bob	78.145678.12.36.12.3458.3456.	78	12	14258367	Spliced			93/1269
+3148	Mundha Pande Bob	78.145678.12.36.12.58.3456.	78	12	14258367	Spliced			93/1269
+3149	Shahzad Nagar Bob	78.145678.12.36.1234.58.123456.	78	12	14258367	Spliced			93/1269
+3150	Nagaria Sadat Bob	78.145678.1256.3678.12.3458.3456.	78	12	14263785	Spliced			93/1269
+3151	Milak Bob	78.145678.1256.3678.12.58.56.	78	12	14263785	Spliced			93/1269
+3152	Parsakhera Bob	78.145678.125678.36-1258.1234.	78	12	14263785	Spliced			93/1269
+3153	Clutterbuckganj Bob	78.145678.125678.36.12.58.12.	78	12	14263785	Spliced			93/1269
+3154	Bareilly Junction Bob	78.145678.125678.36.34.1258.123456.	78	12	14263785	Spliced			93/1269
+3155	Dhamora Bob	78.145678.56.123678-3458.123456.	78	12	14263785	Spliced			93/1269
+3156	Duganpur Bob	78.145678.56.123678.34.58.1256.	78	12	14263785	Spliced			93/1269
+3157	Dhanata Bob	78.145678.5678.1236.12.3458.1234.	78	12	14263785	Spliced			93/1269
+3158	Bhitaura Bob	78.145678.5678.1236.1234.58.1256.	78	12	14263785	Spliced			93/1269
+3159	Chaunta Bahetreh Bob	78.1478-1236-58-	78	12	f	Spliced			93/1269
+3160	Baljnath Mandir Halt Bob	78.1478-1236.12.1258-	78	12	f	Spliced			93/1269
+3161	Ahju Bob	78.1478-1236.12.58-	78	12	f	Spliced			93/1269
+3162	Sulha Bob	78.1478-1236.1278.1258-	78	12	14263785	Spliced			93/1269
+3163	Palampur Himachal Bob	78.1478-1236.1278.58-	78	12	14263785	Spliced			93/1269
+3164	Majheran Himachal Halt Bob	78.1478-1236.78.1258-	78	12	14263785	Spliced			93/1269
+3165	Panch Rukhi Bob	78.1478-1236.78.1258.12.	78	12	14263785	Spliced			93/1269
+3166	Baijnath Paprola Bob	78.1478-1236.78.58-	78	12	14263785	Spliced			93/1269
+3167	Chaumunda Marg Halt Bob	78.1478-123678-58-	78	12	14263785	Spliced			93/1269
+3168	Nagrota Bob	78.1478-123678-58.12.	78	12	14263785	Spliced			93/1269
+3169	Baramati Bob	78.1478-36.1278.1258-	78	12	14263785	Spliced			93/1269
+3170	Joginder Nagar Bob	78.1478-36.1278.1258.12.	78	12	14263785	Spliced			93/1269
+3171	Katphal Bob	78.1478-36.78.1258-	78	12	14263785	Spliced			93/1269
+3172	Rawangaon Bob	78.1478-36.78.58-	78	12	14263785	Spliced			93/1269
+3173	Sirsuphal Bob	78.1478-36.78.58.12.	78	12	14263785	Spliced			93/1269
+3174	Paror Halt Bob	78.1478-3678.12.58.12.	78	12	14263785	Spliced			93/1269
+3175	Samloti Bob	78.1478.12.36-1258-	78	12	f	Spliced			93/1269
+3176	Kangra Mandir Bob	78.1478.12.36.12.58-	78	12	f	Spliced			93/1269
+3177	Kangra Bob	78.1478.12.36.12.58.12.	78	12	f	Spliced			93/1269
+3178	Koparlahar Bob	78.1478.12.3678-1258-	78	12	14263785	Spliced			93/1269
+3179	Jawalamukhi Road Bob	78.1478.12.3678-1258.12.	78	12	14263785	Spliced			93/1269
+3180	Lunsu Bob	78.1478.12.3678.12.58-	78	12	14263785	Spliced			93/1269
+3181	Nagrota Suriyan Bob	78.1478.1278.36-1258-	78	12	14263785	Spliced			93/1269
+3182	Megh Rajpura Halt Bob	78.1478.1278.36-1258.12.	78	12	14263785	Spliced			93/1269
+3183	Harsar Deri Bob	78.1478.1278.36.12.58.12.	78	12	14263785	Spliced			93/1269
+3184	Moradabad City Bob	78.1478.56.123678-3458.34.	78	12	14257386	Spliced			93/1269
+3185	Kathghar Bob	78.1478.56.123678-58.3456.	78	12	14257386	Spliced			93/1269
+3186	Moradabad Junction Bob	78.1478.56.123678.34.3458.12.	78	12	14257386	Spliced			93/1269
+3187	Got Bob	78.1478.56.3678.12.3458.1256.	78	12	14257386	Spliced			93/1269
+3188	Nandpur Bhitauli Bob	78.1478.78.1236.12.58-	78	12	14263785	Spliced			93/1269
+3189	Barial Himachal Halt Bob	78.1478.78.1236.12.58.12.	78	12	14263785	Spliced			93/1269
+3190	Guler Bob	78.1478.78.36.12.58.12.	78	12	14263785	Spliced			93/1269
+3191	Single Aldermaston Bob	78.18-18-18-	18	12	13528467	1975-04-26	Highclere		67/662 75/450
+
+Single-hunt Little Major methods (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3192	Bastow Little Bob	-	12	18	m	1969-04-09	Whitwick	2001-07-07	21/235 69/388 01/975
+3193	Kent Little Bob	34.	12	18	m	Spliced			21/269
+3194	Braydon Little Bob	3456.	12	18	m	Spliced			83/398
+3195	Windsor Little Bob	56.	12	18	m	Spliced			71/320
+
+Single-hunt Little Major methods (treble to 3rds)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3196	Oakridge Lynch Little Bob	-16.	38	12	14263785	Spliced		83/534
+3197	Stirling Little Bob	-18.	36	12	14263785	Spliced		83/398
+3198	Jackbury Little Bob	3456.18.	36	12	a	Spliced		82/970
+3199	Avon Little Bob	3458.16.	34	12	13728564	Spliced		83/398
+3200	Cold Ash Little Bob	36.1458.	36	12	a	Spliced		82/740
+3201	Cawston Little Bob	36.18.	36	12	a	1954-01-27	Saxlingham Nethergate	54/99
+3202	Rodbourne Cheney Little Bob	56.14.	38	12	14263785	Spliced		83/534
+
+Single-hunt Little Major methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3203	Little Bob	-18-	14	12	e	1911-09-08	Brading	1912-02-15	V1/435 V2/130
+3204	Crayford Little Bob	-18-	14	18	k	1926-01-16	Crayford		26/52
+3205	Lansdowne Little Bob	-18.56.	14	12	e	1959-12-31	Fairfield		60/36
+3206	Cambray Little Bob	-18.56.	14	18	k	Spliced			67/191
+3207	Canterbury Little Bob	34.18-	14	12	16832745	1924-10-27	Erith, Christ Church		24/707
+3208	Little Yate Little Bob	3458.16-	14	12	b	Spliced			83/98
+3209	Gorse Hill Little Bob	3458.16-	34	12	13728564	Spliced			83/398
+3210	St Lawrence Little Bob	38.14-	14	12	b	1920-02-10	Guildford, Holy Trinity		20/111
+3211	Tarlton Little Bob	38.14-	34	12	13728564	Spliced			83/534
+3212	Stert Little Bob	38.14.56.	14	12	b	Spliced			83/98
+3213	Driftwood Little Bob	38.14.56.	34	12	13728564	Spliced			83/534
+3214	Exton Little Bob	38.1456-	14	12	b	Spliced			83/98
+3215	Isis Little Bob	38.1456-	34	12	13728564	Spliced			83/534
+3216	Meldreth Little Bob	56.18-	14	12	15487236	Spliced			77/273
+3217	Mint Imperial Little Bob	56.18.56.	14	12	15487236	1982-10-02	Bury (Lancs)		82/927
+
+Single-hunt Little Major methods (treble to 5ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3218	Ickham Little Bob	-14-1238.	56	12	14263785	Spliced		83/534
+3219	Zennor Little Bob	-14-36.	58	12	14263785	Spliced		82/970
+3220	Middlesex Little Bob	-18-18.	58	12	d	2001-11-16	Willesden	02/107
+3221	Ettington Little Bob	-18.56.1238.	56	12	f	Spliced		82/740
+3222	Hingham Little Bob	-18.56.38.	56	12	f	1953-04-19	Hingham (Norfolk)	53/276
+3223	Nunney Little Bob	34.18.56.18.	56	12	f	Spliced		83/98
+3224	Esslemont Little Bob	36.14-1236.	58	12	a	Spliced		83/282
+3225	Yelvertoft Little Bob	36.14-1238.	56	12	a	Spliced		83/98
+3226	Norwich Little Bob	36.14-36.	58	12	a	1949-05-07	Kenninghall	49/238 324
+3227	Norfolk Little Bob	36.14-38.	56	12	a	Spliced		49/324 83/366
+3228	Tunstead Little Bob	38.14.56.18.	56	12	c	1955-11-16	Hethersett	55/755 768
+3229	Ventus Magnus Little Bob	38.1456-18.	56	12	c	1993-12-18	Goodworth Clatford	94/134
+3230	Eaton Hastings Little Bob	56.14.56.1238.	56	12	14263785	Spliced		83/534
+3231	Upper Snodshill Little Bob	56.14.56.38.	56	12	14263785	Spliced		83/534
+3232	Dauntsey Little Bob	56.18-1236.	58	12	f	Spliced		82/740
+3233	Littlecote Little Bob	56.18-1236.	58	18	l	Spliced		82/740
+3234	Tryon Little Bob	56.18-36.	58	12	f	Spliced		82/342
+3235	Ansford Little Bob	56.18-36.	58	18	l	Spliced		82/342
+
+Single-hunt Little Major methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3236	Oxford Little Bob	-14-38-	16	12	e	1936-02-22	Kings Langley	1971-02-08	36/167 71/429
+3237	Victoria Little Bob	-14-38-	16	18	k	1919-07-12	Gillingham (Kent)	1971-06-08	19/287 71/600
+3238	Portland Little Bob	-14.56.38.14.	56	12	a	Spliced			83/366
+3239	Pewsey Little Bob	-1456-38.14.	56	12	a	Spliced			83/366
+3240	Nine Elms Little Bob	-1458-36-	36	12	14263785	Spliced			83/534
+3241	Tiverton Little Bob	-16-18-	36	12	d	1947-10-18	Buckley		47/531
+3242	Hastings Little Bob	-16-18-	36	18	j	Spliced			83/398
+3243	Okeford Little Bob	-16.58.36-	56	12	f	Spliced			82/740
+3244	Gainsborough Little Bob	-18-18-	16	12	c	1928-07-21	Tickhill	1931-11-13	28/467 31/763
+3245	Wellington Little Bob	-18-18-	16	18	h	1929-06-27	Hemel Hempstead	1939-10-31	29/418 39/679
+3246	Ratfyn Little Bob	-18-36-	36	12	14263785	Spliced			83/398
+3247	Alvescot Little Bob	-18-36.12.	36	12	14263785	Spliced			83/398
+3248	Montgomery Little Bob	-18-36.14.	36	12	e	1996-11-12	Loughborough Bellfoundry		83/366 96/1245
+3249	Ellesmere Little Bob	-18-36.14.	36	18	k	1954-05-22	Ellesmere		54/373
+3250	Bilston Little Bob	-18-38-	36	12	14257386	2001-01-01	Bilston		01/161
+3251	Darlaston Little Bob	-18-38.12.	36	12	14257386	2008-11-01	Darlaston		08/1206 09/785
+3252	Ludgershall Little Bob	-18.56.1238-	56	12	f	Spliced			82/740
+3253	Briery Little Bob	-18.56.1238-	56	18	l	Spliced			83/534
+3254	Athelstan Little Bob	-18.56.38-	56	12	f	Spliced			82/342
+3255	Uffcott Little Bob	-18.56.38.12.	56	12	f	Spliced			82/970
+3256	Marten Little Bob	34.16-38-	16	12	b	Spliced			82/970
+3257	Overtown Little Bob	34.16.58.16-	56	12	f	Spliced			82/342
+3258	Scratchbury Little Bob	34.16.58.16.34.	56	12	f	Spliced			82/740
+3259	Swanage Little Bob	34.18-1238-	36	12	a	Spliced			83/366
+3260	Somerby Little Bob	34.18-36.14.	56	12	e	1997-01-21	Loughborough Bellfoundry		54/715 747 97/194
+3261	Wheathampstead Little Bob	34.18-38-	36	12	a			1969-03-14	69/311
+3262	Stitchcombe Little Bob	34.18.56.18-	56	12	f	Spliced			82/740
+3263	Etchilhampton Little Bob	3456.18-1236-	36	12	a	Spliced			83/398
+3264	Cheverell Parva Little Bob	3456.18-36-	36	12	a	Spliced			83/366
+3265	Kemble Little Bob	3456.18.56.38.14.	36	18	g	Spliced			83/98
+3266	East Knoyle Little Bob	3458.16-16.34.	16	12	13728564	Spliced			83/398
+3267	Wheatley Little Bob	3458.16-36.14.	36	12	b	Spliced			83/366
+3268	East Kennett Little Bob	3458.16.58.1236-	56	12	a	Spliced			83/366
+3269	Avonmouth Little Bob	3458.16.58.36-	56	12	a	Spliced			83/366
+3270	Gomeldon Little Bob	3458.16.58.36.12.	56	12	a	Spliced			83/366
+3271	Tydd Little Bob	36.14-1238-	56	12	a	Spliced			83/98
+3272	Inglesham Little Bob	36.14-38-	56	12	a	Spliced			82/342
+3273	Newton Toney Little Bob	36.14-38.12.	56	12	a	Spliced			83/366
+3274	Aust Little Bob	36.14.56.38.14.	36	18	g	Spliced			83/98
+3275	Foxbridge Little Bob	36.18-1236-	36	12	a	Spliced			83/366
+3276	Newton St Loe Little Bob	36.18-36-	36	12	a	Spliced			83/366
+3277	Ilminster Little Bob	36.18-36.12.	36	12	a	Spliced			83/366
+3278	Sedghill Little Bob	38.14-36.14.	36	12	b	Spliced			82/342
+3279	Lyneham Little Bob	38.14.56.18-	56	12	c	Spliced			83/398
+3280	Stanton Fitzwarren Little Bob	38.14.56.18.34.	56	12	c	Spliced			83/534
+3281	St Faith Little Bob	38.14.58.16-	16	12	d	1955-01-29	Saxlingham Nethergate		55/84
+3282	Little London Little Bob	38.1456-36.14.	36	12	b	Spliced			83/98
+3283	Ibrox Little Bob	38.16.58.1236-	56	12	a	Spliced			83/366
+3284	Ramsbury Little Bob	38.16.58.36-	56	12	a	Spliced			83/366
+3285	Filkins Little Bob	38.16.58.36.12.	56	12	a	Spliced			83/366
+3286	Stradbrook Little Bob	56.14-38.14.	56	12	a	Spliced			83/366
+3287	Idstone Little Bob	56.14.58.1236-	56	12	f	Spliced			83/534
+3288	Daglingworth Little Bob	56.14.58.36-	56	12	f	Spliced			83/534
+3289	Roughmoor Little Bob	56.14.58.36-	56	18	l	Spliced			83/534
+3290	Haydon Wick Little Bob	56.14.58.36.12.	56	12	f	Spliced			83/534
+3291	Luckington Little Bob	56.18-38-	56	12	f	Spliced			82/740
+3292	Yeovil Little Bob	58.16-36.14.	56	12	b	Spliced			83/534
+3293	Rudge Little Bob	58.16.58.16-	56	12	a	Spliced			83/98
+3294	Hawthorn Little Bob	58.16.58.16.34.	56	12	a	Spliced			83/98
+
+Single-hunt Little Major methods (treble to 7ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3295	Aileen's Little Bob	-18-18-18.	78	12	b			2003-08-17	03/855
+3296	Little Little Little Little Penultimus Little Place	-18-18-18.	78	18	g	2000-10-28	Debenham		00/1162
+
+Twin-hunt Major methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	Handbells	RW ref
+
+3297	Waterloo Reverse Bob	-14-16-38-58.	16	s	1912-10-23	Lambeth, St John		V3/291
+3298	Waterloo Bob	38.14-16-38-58	-	p				
+3299	Stansted Bob	38.14-16-38.14.38	-	q				
+3300	New Bob	38.14-18-38-38	-	p				
+3301	Carshalton Bob	38.16-16-18-58	-	p				
+3302	St Edmundsbury Bob	38.16-16-38-38	-	q				
+3303	Grandsire	38.18-18-18-18	-	p	1773-10-11	Southwark, St George	1880-05-29	59/67
+
+Twin-hunt Major methods (b)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3304	Haselbech Slow Course	-14-16-1458-	3478	12	12463857	1998-07-17	Haselbech		98/799
+3305	Maplin Slow Course	-18-1238-1238-	1238	12	12463857	2006-10-22	Windsor, St John the Baptist		06/1226
+3306	Clewer Slow Course	-18-18-18-	1678	12	12537486	2006-09-17	Windsor, St John-the-Baptist		06/1128
+3307	Mirror Bob	-18-18-18-	18	1278	13527468			1999-03-24	99/338
+3308	Bucknell Bob	-18-36-18.36.	18	1278	14263758	2001-05-26	Swindon, St Mark		01/608
+3309	Lyddington Slow Course	-18-38-38-	1238	12	12463857	2006-06-18	Windsor, St John-the-Baptist		06/861
+
+Non-palindromic single-hunt Major methods
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+3310	Eastern Bob	-14-38-18-18-18-18-18-12	b	1747-12-27	Shoreditch		59/67
+3311	Double Eastern Bob	-14-38-18-78-58-16-18-12	d	1752-01-12	Westminster, St Margaret		59/67
+3312	Purple Cyclic Bob	-1458-123678-1458-78-58-36-14-12	18234567	2002-06-20	Cambridge, St Andrew-the-Great		02/1287
+3313	Double Cambridge Cyclic Bob	-16-16-18-78-38-38-18-12	15678234	2002-12-05	Cambridge, St Andrew-the-Great		03/7
+3314	Anglia Cyclic Bob	-18-123678-18-78-58-36-14-12	18234567	2002-06-17	Meldreth		02/1287
+3315	Cumberland Bob	-18-16-58-18-18-18-18-12	b	1753-05-12	Shoreditch	2003-05-11	59/67 03/564
+3316	Heywood Cyclic Bob	-18-18-18-18-38-38-18-12	17823456	2004-06-30	Heywood		04/710
+
+Non-palindromic single-hunt Little Major methods (treble to 4ths)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+3317	Dartford Little Bob	-14-34-18-12	f	1925-02-21	Dartford	25/131 150
+3318	Erith Little Bob	-18-34-14-12	f	1930-03-11	Crayford	30/179
+3319	Northfleet Little Bob	38.16-34-14.36.12	a	1933-03-08	Northfleet	33/163

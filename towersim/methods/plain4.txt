@@ -1,0 +1,19 @@
+"Plain Bob","Plain Bob",plain,4,"",&-14-14,|12
+"Double Bob","Double Bob",plain,4,"",&-14-34,|12
+"Reverse Bob","Reverse Bob",plain,4,"",&-14-34,|14
+"Reverse Court Place","Reverse Court Place",plain,4,"",&-14.12.14,|14
+"Reverse St Nicholas Bob","Reverse St Nicholas Bob",plain,4,"",&-14.12.34,|12
+"Canterbury Place","Canterbury Place",plain,4,"",&-14.12.34,|14
+"Reverse Canterbury Place","Reverse Canterbury Place",plain,4,"",&34.14-14,|12
+"Single Court Place","Single Court Place",plain,4,"",&34.14-14,|14
+"St Nicholas Bob","St Nicholas Bob",plain,4,"",&34.14-34,|12
+"Double Court Place","Double Court Place",plain,4,"",&34.14.12.14,|14
+"Double Canterbury Place","Double Canterbury Place",plain,4,"",&34.14.12.34,|12
+"Cheeky Little Place","Cheeky Little Place",plain,4,"",14.12
+"Itram Little Place","Itram Little Place",plain,4,"",14.34
+"Bastow Little Bob","Bastow Little Bob",plain,4,"",&-12,|14
+"St Aelhaiarn Little Place","St Aelhaiarn Little Place",plain,4,"",&34.12,|14
+"Double Trouble Little Place","Double Trouble Little Place",plain,4,"",12.14.34.14
+"Barton Little Bob","Barton Little Bob",plain,4,"",&-14.34,|12
+"Melsonby Little Place","Melsonby Little Place",plain,4,"",&-14.34,|14
+"East Layton Little Place","East Layton Little Place",plain,4,"",&34.14.34,|12

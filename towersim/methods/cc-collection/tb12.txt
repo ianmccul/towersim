@@ -1,0 +1,31 @@
+Treble Bob Maximus methods
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+15841	Oxford	-34-1T-12-1T-12-1T-12-1T-12-1T-12-	1T	1T	m	cps/BDa	1758-03-12	Southwark Cathedral	1816-11-24	
+15842	Rotherham	-34-1T-12-1T-12-1T.34-34.1T.34-34.1T-10-	1T	12	136248507T9E		1988-06-05	Rotherham, All Saints		88/655
+15843	Violet	-3T-1T-12-1T-12-1T-12-1T-12-1T-12-	1T	14	1826403T5E79				1987-03-15	87/339
+15844	Kent	34-34.1T-12-1T-12-1T-12-1T-12-1T-12-	1T	1T	m	cps/BDa	1820-04-07	Birmingham, St Martin	1889-04-28	BN V8/52
+15845	White Nile	34-30.1T.50.12-1T.70.12.34.1T.36.12-1T.38.12-1T.38.12-	1T	1T	m	D/BD	1985-04-07	Reading, St Laurence		85/417
+15846	Albion	56-56.1T.56-56.1T.34-34.1T.34-34.1T.34-34.1T.34-34.	1T	12	a	cps/a			1994-01-11	94/180
+
+Little Treble Bob Maximus methods (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+15847	Xanthe Little	-34-	12	1T	m	cps/D	Spliced	08/942
+15848	Gonville Little	34-34.	12	1T	m	cps/D	Spliced	10/1184
+
+Little Treble Bob Maximus methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+15849	Albion Little	56-56.1T.56-56.	14	12	e	cps/a1	1933-02-11	Ipswich, St Mary-le-Tower	33/98 118
+
+Little Treble Bob Maximus methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+15850	Ribble Link Little	-34-1T-56-1T-34-	56	12	14263ET90785	Spliced	10/1136
+
+

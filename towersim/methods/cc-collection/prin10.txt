@@ -1,0 +1,38 @@
+Royal principles (2 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+17426	Original	-10	2416385079	1972-12-09	Cudham	1973-11-05	73/48 983
+
+Royal principles (4 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+17427	Forward	34-34.10	2416385079	1890-01-03	Loughborough, All Saints	1909-03-11	BN V8/483 V28/81
+
+Royal principles (6 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17428	Clewer	-14-14-10	3146285079	1974-09-18	Isleworth	74/859
+17429	Duffield	-36-36-10	2513684079	1888-03-19	Duffield	BN V7/7
+
+Royal principles (8 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17430	Handsworth	56.12.56-56.12.56.10	2416385079	1910-11-26	Aston (Warks)	BN V29/571
+17431	Aston	56.34.56-56.34.56.10	2416385079	1909-12-11	Aston (Warks)	BN V28/525
+
+Royal principles (10 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17432	Linkenholt	56.14.78.36-58.12.70.38.10	2345678901	Spliced	03/77
+
+Royal principles (16 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17433	Shipway	-30.14-14-14-14.30-14-14-14	6182403957	1982-03-23	Lockington	82/321
+

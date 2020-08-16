@@ -1,0 +1,12 @@
+Single-hunt Septuples methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3807	Plain Bob	C.1.C.1.C.1.C.1.C.1.C.1.C.1.	C	12C	p	2008-03-17	Dublin, Christ Church Cathedral	08/388
+
+Twin-hunt Septuples methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	Handbells	RW ref
+
+3808	Grandsire	3.1.C.1.C.1.C.1.C.1.C.1.C.1.C.	1	a	2006-01-08	Birmingham, St Martin	1995-08-18	95/962 06/82
+

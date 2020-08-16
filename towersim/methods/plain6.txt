@@ -1,0 +1,1157 @@
+"Burton Pleasure Bob","Burton Pleasure Bob",plain,6,"",&-14-1236-16,|14
+"Quarr Bob","Quarr Bob",plain,6,"",&-14-1236-16,|(16)(14)(1456)
+"Newton Bob","Newton Bob",plain,6,"",&-14-1236-36,|(12)(14)(1234)
+"Josh Bob","Josh Bob",plain,6,"",&-14-1236-36,|14
+"Pinehurst Bob","Pinehurst Bob",plain,6,"",&-14-1236-56,|(12)(14)(1234)
+"Stobs Bob","Stobs Bob",plain,6,"",&-14-1236-56,|14
+"Westlecott Bob","Westlecott Bob",plain,6,"",&-14-1236-56,|(16)(14)(1456)
+"Stonea Bob","Stonea Bob",plain,6,"",&-14-1236.12.36,|(12)(14)(1234)
+"Gosh Bob","Gosh Bob",plain,6,"",&-14-1236.12.36,|14
+"Allerton Bob","Allerton Bob",plain,6,"",&-14-1236.12.56,|(12)(14)(1234)
+"Charlton Bob","Charlton Bob",plain,6,"",&-14-1236.12.56,|14
+"Hereward the Wake Bob","Hereward the Wake Bob",plain,6,"",&-14-1236.12.56,|(16)(14)(1456)
+"Paisley Bob","Paisley Bob",plain,6,"",&-14-1236.1234.56,|(12)(14)(1234)
+"Bellingham Bob","Bellingham Bob",plain,6,"",&-14-1236.1234.56,|14
+"Monks of Ely Bob","Monks of Ely Bob",plain,6,"",&-14-1236.1234.56,|(16)(14)(1456)
+"Palmer Bob","Palmer Bob",plain,6,"",&-14-1236.14.36,|(16)(14)(1456)
+"Pettistree Bob","Pettistree Bob",plain,6,"",&-14-1236.34.16,|(16)(14)(1456)
+"Whitchurch Bob","Whitchurch Bob",plain,6,"",&-14-1236.34.56,|(12)(14)(1234)
+"Hawick Bob","Hawick Bob",plain,6,"",&-14-1236.34.56,|14
+"Moab Bob","Moab Bob",plain,6,"",&-14-1236.34.56,|(16)(14)(1456)
+"Single Oxford Bob","Single Oxford Bob",plain,6,"",&-14-16-16,|(12)(14)(1234)
+"Single College Bob","Single College Bob",plain,6,"",&-14-16-16,|14
+"Single Court Bob","Single Court Bob",plain,6,"",&-14-16-16,|(16)(14)(1456)
+"Ledbury Bob","Ledbury Bob",plain,6,"",&-14-16-36,|14
+"Dunstable Bob","Dunstable Bob",plain,6,"",&-14-16-56,|14
+"Wenlock Bob","Wenlock Bob",plain,6,"",&-14-16-56,|(16)(14)(1456)
+"Cartland Bob","Cartland Bob",plain,6,"",&-14-16.12.56,|14
+"Weisdale Bob","Weisdale Bob",plain,6,"",&-14-16.1234.56,|14
+"Crick Bob","Crick Bob",plain,6,"",&-14-16.14.56,|(12)(14)(1234)
+"Dorney Court Bob","Dorney Court Bob",plain,6,"",&-14-16.34.16,|(16)(14)(1456)
+"Barking Mad Bob","Barking Mad Bob",plain,6,"",&-14-16.34.36,|(16)(14)(1456)
+"Unst Bob","Unst Bob",plain,6,"",&-14-16.34.56,|14
+"Selkirk Bob","Selkirk Bob",plain,6,"",&-14-16.34.56,|(16)(14)(1456)
+"Hereward Bob","Hereward Bob",plain,6,"",&-14-36-16,|(12)(14)(1234)
+"Double Court Bob","Double Court Bob",plain,6,"",&-14-36-16,|(16)(14)(1456)
+"Stanstead Bob","Stanstead Bob",plain,6,"",&-14-36-36,|(12)(14)(1234)
+"Double College Bob","Double College Bob",plain,6,"",&-14-36-36,|14
+"Double Oxford Bob","Double Oxford Bob",plain,6,"",&-14-36-56,|(12)(14)(1234)
+"Albion Delight Bob","Albion Delight Bob",plain,6,"",&-14-36-56,|14
+"London Bob","London Bob",plain,6,"",&-14-36-56,|(16)(14)(1456)
+"Ewenny Bob","Ewenny Bob",plain,6,"",&-14-36.12.36,|(12)(14)(1234)
+"Little Boy Bob","Little Boy Bob",plain,6,"",&-14-36.12.36,|14
+"Thelwall Bob","Thelwall Bob",plain,6,"",&-14-36.12.56,|(12)(14)(1234)
+"Tynehead Bob","Tynehead Bob",plain,6,"",&-14-36.12.56,|14
+"Lytham Bob","Lytham Bob",plain,6,"",&-14-36.12.56,|(16)(14)(1456)
+"Armitage Bob","Armitage Bob",plain,6,"",&-14-36.1234.56,|(12)(14)(1234)
+"Fushiebridge Bob","Fushiebridge Bob",plain,6,"",&-14-36.1234.56,|14
+"Edom Bob","Edom Bob",plain,6,"",&-14-36.1234.56,|(16)(14)(1456)
+"Garswood Bob","Garswood Bob",plain,6,"",&-14-36.14.16,|(16)(14)(1456)
+"Xanten Bob","Xanten Bob",plain,6,"",&-14-36.14.56,|(12)(14)(1234)
+"Super Court Bob","Super Court Bob",plain,6,"",&-14-36.34.56,|(12)(14)(1234)
+"Harker Bob","Harker Bob",plain,6,"",&-14-36.34.56,|14
+"Judah Bob","Judah Bob",plain,6,"",&-14-36.34.56,|(16)(14)(1456)
+"Warkton Bob","Warkton Bob",plain,6,"",&-14.12.1236-16,|(12)(14)(1234)
+"Jacobs Ladder Bob","Jacobs Ladder Bob",plain,6,"",&-14.12.1236-36,|(12)(14)(1234)
+"Fen Boy First Bob","Fen Boy First Bob",plain,6,"",&-14.12.1236-36,|14
+"Edge Hill Bob","Edge Hill Bob",plain,6,"",&-14.12.1236-56,|(12)(14)(1234)
+"Cumwhinton Bob","Cumwhinton Bob",plain,6,"",&-14.12.1236-56,|14
+"Vermuyden Bob","Vermuyden Bob",plain,6,"",&-14.12.1236-56,|(16)(14)(1456)
+"Crown Court Bob","Crown Court Bob",plain,6,"",&-14.12.1236.34.56,|(12)(14)(1234)
+"Cotehill Bob","Cotehill Bob",plain,6,"",&-14.12.1236.34.56,|14
+"Earith Bob","Earith Bob",plain,6,"",&-14.12.1236.34.56,|(16)(14)(1456)
+"Trick or Treat Bob","Trick or Treat Bob",plain,6,"",&-14.12.16-16,|(12)(14)(1234)
+"Great Addington Bob","Great Addington Bob",plain,6,"",&-14.12.16-36,|(12)(14)(1234)
+"Potterhanworth Bob","Potterhanworth Bob",plain,6,"",&-14.12.16-56,|(12)(14)(1234)
+"Sarasota Bob","Sarasota Bob",plain,6,"",&-14.12.16.34.56,|(12)(14)(1234)
+"Manea Bob","Manea Bob",plain,6,"",&-14.12.36-36,|(12)(14)(1234)
+"Yoo-Hoo Bob","Yoo-Hoo Bob",plain,6,"",&-14.12.36-36,|14
+"Kemerton Bob","Kemerton Bob",plain,6,"",&-14.12.36-56,|(12)(14)(1234)
+"Crakehall Bob","Crakehall Bob",plain,6,"",&-14.12.36-56,|14
+"Overbury Bob","Overbury Bob",plain,6,"",&-14.12.36-56,|(16)(14)(1456)
+"Barbecue Bob","Barbecue Bob",plain,6,"",&-14.12.36.12.16,|(12)(14)(1234)
+"Pecks Court Bob","Pecks Court Bob",plain,6,"",&-14.12.36.12.36,|(12)(14)(1234)
+"Blondie Bob","Blondie Bob",plain,6,"",&-14.12.36.12.36,|14
+"Corse Bob","Corse Bob",plain,6,"",&-14.12.36.12.56,|(12)(14)(1234)
+"Garsdale Bob","Garsdale Bob",plain,6,"",&-14.12.36.12.56,|14
+"Staunton Bob","Staunton Bob",plain,6,"",&-14.12.36.12.56,|(16)(14)(1456)
+"Evison Bob","Evison Bob",plain,6,"",&-14.12.36.1234.56,|(12)(14)(1234)
+"Dent Bob","Dent Bob",plain,6,"",&-14.12.36.1234.56,|14
+"Hough-on-the-Hill Bob","Hough-on-the-Hill Bob",plain,6,"",&-14.12.36.1234.56,|(16)(14)(1456)
+"Charlton Park Bob","Charlton Park Bob",plain,6,"",&-14.12.36.14.36,|(16)(14)(1456)
+"Crook Bob","Crook Bob",plain,6,"",&-14.12.36.34.56,|(12)(14)(1234)
+"Bedale Bob","Bedale Bob",plain,6,"",&-14.12.36.34.56,|14
+"Syston Drift Bob","Syston Drift Bob",plain,6,"",&-14.12.36.34.56,|(16)(14)(1456)
+"Misael Bob","Misael Bob",plain,6,"",&-14.1256.1236-36,|(12)(14)(1234)
+"Edward Storey Bob","Edward Storey Bob",plain,6,"",&-14.1256.1236-36,|14
+"Hammerton Street Bob","Hammerton Street Bob",plain,6,"",&-14.1256.1236-56,|(12)(14)(1234)
+"Armathwaite Bob","Armathwaite Bob",plain,6,"",&-14.1256.1236-56,|14
+"Hull Botanic Gardens Bob","Hull Botanic Gardens Bob",plain,6,"",&-14.1256.1236.34.56,|(12)(14)(1234)
+"Lazonby and Kirkoswald Bob","Lazonby and Kirkoswald Bob",plain,6,"",&-14.1256.1236.34.56,|14
+"Wiggenhall St Mary the Virgin Bob","Wiggenhall St Mary the Virgin Bob",plain,6,"",&-14.1256.36-36,|(12)(14)(1234)
+"Double Oak Farm Bob","Double Oak Farm Bob",plain,6,"",&-14.1256.36-36,|14
+"Double Ashford Chart Leacon Bob","Double Ashford Chart Leacon Bob",plain,6,"",&-14.1256.36-56,|(12)(14)(1234)
+"Leeming Bar Bob","Leeming Bar Bob",plain,6,"",&-14.1256.36-56,|14
+"Turncock Bob","Turncock Bob",plain,6,"",&-14.1256.36.12.36,|(12)(14)(1234)
+"U-Turn Anglia Bob","U-Turn Anglia Bob",plain,6,"",&-14.1256.36.12.36,|14
+"Shields Road Bob","Shields Road Bob",plain,6,"",&-14.1256.36.12.56,|(12)(14)(1234)
+"Ribblehead Bob","Ribblehead Bob",plain,6,"",&-14.1256.36.12.56,|14
+"Carlisle Kingmoor Bob","Carlisle Kingmoor Bob",plain,6,"",&-14.1256.36.1234.56,|(12)(14)(1234)
+"Horton in Ribblesdale Bob","Horton in Ribblesdale Bob",plain,6,"",&-14.1256.36.1234.56,|14
+"Orpington Bob","Orpington Bob",plain,6,"",&-14.1256.36.34.56,|(12)(14)(1234)
+"Rodham Bob","Rodham Bob",plain,6,"",&-14.1256.36.34.56,|14
+"Gatescarth Pass Bob","Gatescarth Pass Bob",plain,6,"",&-14.56.1236-16,|14
+"Chatteris Bob","Chatteris Bob",plain,6,"",&-14.56.1236-36,|(12)(14)(1234)
+"George Harvey Bob","George Harvey Bob",plain,6,"",&-14.56.1236-36,|14
+"Derby Etches Park Bob","Derby Etches Park Bob",plain,6,"",&-14.56.1236-56,|(12)(14)(1234)
+"Hassendean Bob","Hassendean Bob",plain,6,"",&-14.56.1236-56,|14
+"The Undertakers Bob","The Undertakers Bob",plain,6,"",&-14.56.1236.12.36,|(12)(14)(1234)
+"Leopold Bob","Leopold Bob",plain,6,"",&-14.56.1236.12.36,|14
+"Old Oak Common Bob","Old Oak Common Bob",plain,6,"",&-14.56.1236.12.56,|(12)(14)(1234)
+"Reedsmouth Bob","Reedsmouth Bob",plain,6,"",&-14.56.1236.12.56,|14
+"Ripple Lane Bob","Ripple Lane Bob",plain,6,"",&-14.56.1236.1234.56,|(12)(14)(1234)
+"Countess Park Bob","Countess Park Bob",plain,6,"",&-14.56.1236.1234.56,|14
+"Corkerhill Bob","Corkerhill Bob",plain,6,"",&-14.56.1236.34.56,|(12)(14)(1234)
+"Belses Bob","Belses Bob",plain,6,"",&-14.56.1236.34.56,|14
+"Single Ashford Chart Leacon Bob","Single Ashford Chart Leacon Bob",plain,6,"",&-14.56.16-16,|(12)(14)(1234)
+"Bixter Bob","Bixter Bob",plain,6,"",&-14.56.16-56,|14
+"Scalloway Bob","Scalloway Bob",plain,6,"",&-14.56.16.12.56,|14
+"Scatsta Bob","Scatsta Bob",plain,6,"",&-14.56.16.1234.56,|14
+"Sandness Bob","Sandness Bob",plain,6,"",&-14.56.16.34.56,|14
+"Death by Chocolate Bob","Death by Chocolate Bob",plain,6,"",&-14.56.36-16,|(12)(14)(1234)
+"Somersham Bob","Somersham Bob",plain,6,"",&-14.56.36-36,|(12)(14)(1234)
+"Witnesham Bob","Witnesham Bob",plain,6,"",&-14.56.36-36,|14
+"Hall Road Bob","Hall Road Bob",plain,6,"",&-14.56.36-56,|(12)(14)(1234)
+"Lyneside Bob","Lyneside Bob",plain,6,"",&-14.56.36-56,|14
+"Isle of Ely Bob","Isle of Ely Bob",plain,6,"",&-14.56.36.12.36,|(12)(14)(1234)
+"Loik Bob","Loik Bob",plain,6,"",&-14.56.36.12.36,|14
+"Birkenhead Mollington Street Bob","Birkenhead Mollington Street Bob",plain,6,"",&-14.56.36.12.56,|(12)(14)(1234)
+"Gorebridge Bob","Gorebridge Bob",plain,6,"",&-14.56.36.12.56,|14
+"Slade Green Bob","Slade Green Bob",plain,6,"",&-14.56.36.1234.56,|(12)(14)(1234)
+"Newtongrange Bob","Newtongrange Bob",plain,6,"",&-14.56.36.1234.56,|14
+"Kentisbeare Bob","Kentisbeare Bob",plain,6,"",&-14.56.36.14.56,|(12)(14)(1234)
+"Neville Hill Bob","Neville Hill Bob",plain,6,"",&-14.56.36.34.56,|(12)(14)(1234)
+"Longtown Bob","Longtown Bob",plain,6,"",&-14.56.36.34.56,|14
+"Sutton Passeys Bob","Sutton Passeys Bob",plain,6,"",&-1456-1236-16,|14
+"Radley Bob","Radley Bob",plain,6,"",&-1456-1236-36,|(12)(14)(1234)
+"Double Mardale Bob","Double Mardale Bob",plain,6,"",&-1456-1236-36,|14
+"Northcourt Bob","Northcourt Bob",plain,6,"",&-1456-1236-36,|(16)(14)(1456)
+"Portsmouth Bob","Portsmouth Bob",plain,6,"",&-1456-1236-56,|(12)(14)(1234)
+"St Boswells Bob","St Boswells Bob",plain,6,"",&-1456-1236-56,|14
+"Nordelph Bob","Nordelph Bob",plain,6,"",&-1456-1236.12.36,|(12)(14)(1234)
+"It's Whipping Bob","It's Whipping Bob",plain,6,"",&-1456-1236.12.36,|14
+"Wimborne Minster Bob","Wimborne Minster Bob",plain,6,"",&-1456-1236.12.56,|(12)(14)(1234)
+"Wark Bob","Wark Bob",plain,6,"",&-1456-1236.12.56,|14
+"Tarbock Green Bob","Tarbock Green Bob",plain,6,"",&-1456-1236.1234.56,|(12)(14)(1234)
+"Speke Bob","Speke Bob",plain,6,"",&-1456-1236.34.56,|(12)(14)(1234)
+"Nicholaston Bob","Nicholaston Bob",plain,6,"",&-1456-16-16,|(12)(14)(1234)
+"Single Mardale Bob","Single Mardale Bob",plain,6,"",&-1456-16-16,|14
+"Margam Bob","Margam Bob",plain,6,"",&-1456-16-36,|(16)(14)(1456)
+"Bilborough Bob","Bilborough Bob",plain,6,"",&-1456-16-56,|14
+"Melby Bob","Melby Bob",plain,6,"",&-1456-16.12.56,|14
+"Gutcher Bob","Gutcher Bob",plain,6,"",&-1456-16.1234.56,|14
+"Panteg Place","Panteg Place",plain,6,"",&-1456-16.34.16,|(16)(14)(1456)
+"Completely and Utterly Insane Bob","Completely and Utterly Insane Bob",plain,6,"",&-1456-16.34.36,|(16)(14)(1456)
+"Carrington Bob","Carrington Bob",plain,6,"",&-1456-16.34.56,|14
+"Langdale Bob","Langdale Bob",plain,6,"",&-1456-36-16,|(12)(14)(1234)
+"Llanwern Bob","Llanwern Bob",plain,6,"",&-1456-36-16,|(16)(14)(1456)
+"Rosehill Bob","Rosehill Bob",plain,6,"",&-1456-36-36,|(12)(14)(1234)
+"Keef Bob","Keef Bob",plain,6,"",&-1456-36-36,|14
+"Briercliffe Bob","Briercliffe Bob",plain,6,"",&-1456-36-36,|(16)(14)(1456)
+"Winchester College Bob","Winchester College Bob",plain,6,"",&-1456-36-56,|(12)(14)(1234)
+"Scotch Dyke Bob","Scotch Dyke Bob",plain,6,"",&-1456-36-56,|14
+"Hanney Bob","Hanney Bob",plain,6,"",&-1456-36.12.36,|(12)(14)(1234)
+"Brat Bob","Brat Bob",plain,6,"",&-1456-36.12.36,|14
+"Cassington Bob","Cassington Bob",plain,6,"",&-1456-36.12.36,|(16)(14)(1456)
+"Christchurch Bob","Christchurch Bob",plain,6,"",&-1456-36.12.56,|(12)(14)(1234)
+"Dalhousie Bob","Dalhousie Bob",plain,6,"",&-1456-36.12.56,|14
+"Eccleston Park Bob","Eccleston Park Bob",plain,6,"",&-1456-36.1234.56,|(12)(14)(1234)
+"Thirlmere Bob","Thirlmere Bob",plain,6,"",&-1456-36.14.56,|(12)(14)(1234)
+"Webbs Wonder Bob","Webbs Wonder Bob",plain,6,"",&-1456-36.34.56,|(12)(14)(1234)
+"Thursby Bob","Thursby Bob",plain,6,"",&-1456-36.34.56,|14
+"Ananias Bob","Ananias Bob",plain,6,"",&-1456.12.1236-36,|(12)(14)(1234)
+"Elmswell Bob","Elmswell Bob",plain,6,"",&-1456.12.1236-36,|14
+"Hayling Island Bob","Hayling Island Bob",plain,6,"",&-1456.12.1236-56,|(12)(14)(1234)
+"Little Salkeld Bob","Little Salkeld Bob",plain,6,"",&-1456.12.1236-56,|14
+"Halewood Bob","Halewood Bob",plain,6,"",&-1456.12.1236.34.56,|(12)(14)(1234)
+"Big John Bob","Big John Bob",plain,6,"",&-1456.12.16-36,|(12)(14)(1234)
+"Weekley Bob","Weekley Bob",plain,6,"",&-1456.12.16-56,|(12)(14)(1234)
+"Tipps End Bob","Tipps End Bob",plain,6,"",&-1456.12.36-36,|(12)(14)(1234)
+"ATB Bob","ATB Bob",plain,6,"",&-1456.12.36-36,|14
+"Lee-on-the-Solent Bob","Lee-on-the-Solent Bob",plain,6,"",&-1456.12.36-56,|(12)(14)(1234)
+"Ainderby Bob","Ainderby Bob",plain,6,"",&-1456.12.36-56,|14
+"Bence's Birthday Bob","Bence's Birthday Bob",plain,6,"",&-1456.12.36.12.16,|(12)(14)(1234)
+"Sixteen Foot Bob","Sixteen Foot Bob",plain,6,"",&-1456.12.36.12.36,|(12)(14)(1234)
+"BGS Bob","BGS Bob",plain,6,"",&-1456.12.36.12.36,|14
+"Spithead Bob","Spithead Bob",plain,6,"",&-1456.12.36.12.56,|(12)(14)(1234)
+"Hawes Bob","Hawes Bob",plain,6,"",&-1456.12.36.12.56,|14
+"Garston Bob","Garston Bob",plain,6,"",&-1456.12.36.1234.56,|(12)(14)(1234)
+"Hunts Cross Bob","Hunts Cross Bob",plain,6,"",&-1456.12.36.34.56,|(12)(14)(1234)
+"Azarias Bob","Azarias Bob",plain,6,"",&-1456.1256.1236-36,|(12)(14)(1234)
+"Double Cornerhouse Bob","Double Cornerhouse Bob",plain,6,"",&-1456.1256.1236-36,|14
+"Double Brookhouse Bob","Double Brookhouse Bob",plain,6,"",&-1456.1256.1236-56,|(12)(14)(1234)
+"Langwathby Bob","Langwathby Bob",plain,6,"",&-1456.1256.1236-56,|14
+"Wavertree Technology Park Bob","Wavertree Technology Park Bob",plain,6,"",&-1456.1256.1236-56,|(16)(14)(1456)
+"Whins Brow Bob","Whins Brow Bob",plain,6,"",&-1456.1256.1236.34.56,|(12)(14)(1234)
+"Culgaith Bob","Culgaith Bob",plain,6,"",&-1456.1256.1236.34.56,|14
+"Prescot Bob","Prescot Bob",plain,6,"",&-1456.1256.1236.34.56,|(16)(14)(1456)
+"Wiggenhall St Mary Magdalene Bob","Wiggenhall St Mary Magdalene Bob",plain,6,"",&-1456.1256.36-36,|(12)(14)(1234)
+"Willow Farm Bob","Willow Farm Bob",plain,6,"",&-1456.1256.36-36,|14
+"Tarnbrook Bob","Tarnbrook Bob",plain,6,"",&-1456.1256.36-56,|(12)(14)(1234)
+"Saughtree Bob","Saughtree Bob",plain,6,"",&-1456.1256.36-56,|14
+"Huyton Bob","Huyton Bob",plain,6,"",&-1456.1256.36-56,|(16)(14)(1456)
+"Lots Bridge Bob","Lots Bridge Bob",plain,6,"",&-1456.1256.36.12.36,|(12)(14)(1234)
+"Bethesda Bob","Bethesda Bob",plain,6,"",&-1456.1256.36.12.36,|14
+"Upper Brow Top Bob","Upper Brow Top Bob",plain,6,"",&-1456.1256.36.12.56,|(12)(14)(1234)
+"Askrigg Bob","Askrigg Bob",plain,6,"",&-1456.1256.36.12.56,|14
+"The Priory Hospital Bob","The Priory Hospital Bob",plain,6,"",&-1456.1256.36.12.56,|(16)(14)(1456)
+"Caton Moor Bob","Caton Moor Bob",plain,6,"",&-1456.1256.36.1234.56,|(12)(14)(1234)
+"Aysgarth Bob","Aysgarth Bob",plain,6,"",&-1456.1256.36.1234.56,|14
+"Castle Bromwich Place","Castle Bromwich Place",plain,6,"",&-1456.1256.36.1234.56,|(16)(14)(1456)
+"Haylot Fell Bob","Haylot Fell Bob",plain,6,"",&-1456.1256.36.34.56,|(12)(14)(1234)
+"Deadwater Bob","Deadwater Bob",plain,6,"",&-1456.1256.36.34.56,|14
+"Edgbaston Old Church Bob","Edgbaston Old Church Bob",plain,6,"",&-1456.1256.36.34.56,|(16)(14)(1456)
+"Adam Seat Bob","Adam Seat Bob",plain,6,"",&-1456.56.1236-16,|14
+"Huntingdonshire Bob","Huntingdonshire Bob",plain,6,"",&-1456.56.1236-36,|(12)(14)(1234)
+"The Chalice Bob","The Chalice Bob",plain,6,"",&-1456.56.1236-36,|14
+"Dolphinholme Bob","Dolphinholme Bob",plain,6,"",&-1456.56.1236-56,|(12)(14)(1234)
+"Newstead Bob","Newstead Bob",plain,6,"",&-1456.56.1236-56,|14
+"Broad Green Bob","Broad Green Bob",plain,6,"",&-1456.56.1236-56,|(16)(14)(1456)
+"Grunty Fen Bob","Grunty Fen Bob",plain,6,"",&-1456.56.1236.12.36,|(12)(14)(1234)
+"Strict and Particular Bob","Strict and Particular Bob",plain,6,"",&-1456.56.1236.12.36,|14
+"Marshaw Bob","Marshaw Bob",plain,6,"",&-1456.56.1236.12.56,|(12)(14)(1234)
+"Barrasford Bob","Barrasford Bob",plain,6,"",&-1456.56.1236.12.56,|14
+"St Helens Central Bob","St Helens Central Bob",plain,6,"",&-1456.56.1236.12.56,|(16)(14)(1456)
+"Wolfhole Crag Bob","Wolfhole Crag Bob",plain,6,"",&-1456.56.1236.1234.56,|(12)(14)(1234)
+"Chollerton Bob","Chollerton Bob",plain,6,"",&-1456.56.1236.1234.56,|14
+"St Mary's Priory Warrington Place","St Mary's Priory Warrington Place",plain,6,"",&-1456.56.1236.1234.56,|(16)(14)(1456)
+"Clougha Pike Bob","Clougha Pike Bob",plain,6,"",&-1456.56.1236.34.56,|(12)(14)(1234)
+"Melrose Bob","Melrose Bob",plain,6,"",&-1456.56.1236.34.56,|14
+"Liverpool Lime Street Bob","Liverpool Lime Street Bob",plain,6,"",&-1456.56.1236.34.56,|(16)(14)(1456)
+"Single Brookhouse Bob","Single Brookhouse Bob",plain,6,"",&-1456.56.16-16,|(12)(14)(1234)
+"Snaraness Bob","Snaraness Bob",plain,6,"",&-1456.56.16-56,|14
+"West Burrafirth Bob","West Burrafirth Bob",plain,6,"",&-1456.56.16.12.56,|14
+"Mid Walls Bob","Mid Walls Bob",plain,6,"",&-1456.56.16.1234.56,|14
+"Aith Bob","Aith Bob",plain,6,"",&-1456.56.16.34.56,|14
+"Suke Bob","Suke Bob",plain,6,"",&-1456.56.36-16,|(12)(14)(1234)
+"Ramsey Bob","Ramsey Bob",plain,6,"",&-1456.56.36-36,|(12)(14)(1234)
+"Gospel Standard Bob","Gospel Standard Bob",plain,6,"",&-1456.56.36-36,|14
+"Quernmore Bob","Quernmore Bob",plain,6,"",&-1456.56.36-56,|(12)(14)(1234)
+"Riddings Junction Bob","Riddings Junction Bob",plain,6,"",&-1456.56.36-56,|14
+"Great Barr Bob","Great Barr Bob",plain,6,"",&-1456.56.36-56,|(16)(14)(1456)
+"Downham-in-the-Isle Bob","Downham-in-the-Isle Bob",plain,6,"",&-1456.56.36.12.36,|(12)(14)(1234)
+"Fourth Drove Bob","Fourth Drove Bob",plain,6,"",&-1456.56.36.12.36,|14
+"Abbeystead Bob","Abbeystead Bob",plain,6,"",&-1456.56.36.12.56,|(12)(14)(1234)
+"Eskbank Bob","Eskbank Bob",plain,6,"",&-1456.56.36.12.56,|14
+"BUSCR Bob","BUSCR Bob",plain,6,"",&-1456.56.36.12.56,|(16)(14)(1456)
+"Mallowdale Fell Bob","Mallowdale Fell Bob",plain,6,"",&-1456.56.36.1234.56,|(12)(14)(1234)
+"Millerhill Bob","Millerhill Bob",plain,6,"",&-1456.56.36.1234.56,|14
+"Birmingham Oratory Bob","Birmingham Oratory Bob",plain,6,"",&-1456.56.36.1234.56,|(16)(14)(1456)
+"Dean Prior Bob","Dean Prior Bob",plain,6,"",&-1456.56.36.14.56,|(12)(14)(1234)
+"Hawthornthwaite Fell Bob","Hawthornthwaite Fell Bob",plain,6,"",&-1456.56.36.34.56,|(12)(14)(1234)
+"Penton Bob","Penton Bob",plain,6,"",&-1456.56.36.34.56,|14
+"Roby Bob","Roby Bob",plain,6,"",&-1456.56.36.34.56,|(16)(14)(1456)
+"Wollaton Bob","Wollaton Bob",plain,6,"",&-16-1236-16,|14
+"Buxton Bob","Buxton Bob",plain,6,"",&-16-1236-36,|(12)(14)(1234)
+"Monewden Bob","Monewden Bob",plain,6,"",&-16-1236-36,|14
+"Rodbourne Bob","Rodbourne Bob",plain,6,"",&-16-1236-36,|(16)(14)(1456)
+"Kings College Bob","Kings College Bob",plain,6,"",&-16-1236-56,|(16)(14)(1456)
+"Lakesend Bob","Lakesend Bob",plain,6,"",&-16-1236.12.36,|(12)(14)(1234)
+"Charsfield Bob","Charsfield Bob",plain,6,"",&-16-1236.12.36,|14
+"Wimbotsham Place","Wimbotsham Place",plain,6,"",&-16-1236.12.36,|(16)(14)(1456)
+"Scottlethorpe Bob","Scottlethorpe Bob",plain,6,"",&-16-1236.12.56,|(16)(14)(1456)
+"Stragglethorpe Place","Stragglethorpe Place",plain,6,"",&-16-1236.1234.56,|(16)(14)(1456)
+"Rutland County Bob","Rutland County Bob",plain,6,"",&-16-1236.14.56,|(12)(14)(1234)
+"Floods Ferry Bob","Floods Ferry Bob",plain,6,"",&-16-1236.34.56,|(16)(14)(1456)
+"Plain Bob","Plain Bob",plain,6,"",&-16-16-16,|(12)(14)(1234)
+"London New Bob","London New Bob",plain,6,"",&-16-16-36,|(12)(14)(1234)
+"Double Bob","Double Bob",plain,6,"",&-16-16-56,|(12)(14)(1234)
+"London Delight Bob","London Delight Bob",plain,6,"",&-16-16-56,|14
+"Reverse Bob","Reverse Bob",plain,6,"",&-16-16-56,|(16)(14)(1456)
+"Clinton Bob","Clinton Bob",plain,6,"",&-16-16.12.36,|(12)(14)(1234)
+"High Halden Bob","High Halden Bob",plain,6,"",&-16-16.12.56,|(12)(14)(1234)
+"Sally and Bob","Sally and Bob",plain,6,"",&-16-16.12.56,|14
+"Reverse Wreford Bob","Reverse Wreford Bob",plain,6,"",&-16-16.12.56,|(16)(14)(1456)
+"Monday Morning Bob","Monday Morning Bob",plain,6,"",&-16-16.1234.36,|14
+"Openwoodgate Place","Openwoodgate Place",plain,6,"",&-16-16.1234.36,|(16)(14)(1456)
+"New High Halden Bob","New High Halden Bob",plain,6,"",&-16-16.1234.56,|(12)(14)(1234)
+"Belper Bob","Belper Bob",plain,6,"",&-16-16.1234.56,|14
+"Caithness Place","Caithness Place",plain,6,"",&-16-16.1234.56,|(16)(14)(1456)
+"Ragstone Bob","Ragstone Bob",plain,6,"",&-16-16.34.16,|(12)(14)(1234)
+"Fulbeck Bob","Fulbeck Bob",plain,6,"",&-16-16.34.56,|(12)(14)(1234)
+"Oskar Bob","Oskar Bob",plain,6,"",&-16-16.34.56,|14
+"Canterbury Bob","Canterbury Bob",plain,6,"",&-16-16.34.56,|(16)(14)(1456)
+"Aldington Pleasure Bob","Aldington Pleasure Bob",plain,6,"",&-16-36-16,|(12)(14)(1234)
+"Bridge's Pleasure Bob","Bridge's Pleasure Bob",plain,6,"",&-16-36-16,|(16)(14)(1456)
+"St Clement's College Bob","St Clement's College Bob",plain,6,"",&-16-36-36,|(12)(14)(1234)
+"Lambeth Bob","Lambeth Bob",plain,6,"",&-16-36-36,|14
+"College Bob","College Bob",plain,6,"",&-16-36-36,|(16)(14)(1456)
+"Dewsbury Bob","Dewsbury Bob",plain,6,"",&-16-36-56,|(16)(14)(1456)
+"Childwall Bob","Childwall Bob",plain,6,"",&-16-36.12.36,|(12)(14)(1234)
+"Letheringham Bob","Letheringham Bob",plain,6,"",&-16-36.12.36,|14
+"Wavertree Bob","Wavertree Bob",plain,6,"",&-16-36.12.36,|(16)(14)(1456)
+"Jervaulx Bob","Jervaulx Bob",plain,6,"",&-16-36.12.56,|(16)(14)(1456)
+"Hockwood-cum-Wilton Bob","Hockwood-cum-Wilton Bob",plain,6,"",&-16-36.1234.56,|(16)(14)(1456)
+"Stepney Bob","Stepney Bob",plain,6,"",&-16-36.14.36,|(12)(14)(1234)
+"Stedman Bob","Stedman Bob",plain,6,"",&-16-36.14.36,|(16)(14)(1456)
+"Zylverne Bob","Zylverne Bob",plain,6,"",&-16-36.14.56,|(12)(14)(1234)
+"Beckenham Bob","Beckenham Bob",plain,6,"",&-16-36.34.16,|(12)(14)(1234)
+"Nuptial Bob","Nuptial Bob",plain,6,"",&-16-36.34.16,|(16)(14)(1456)
+"Pophams Eau Bob","Pophams Eau Bob",plain,6,"",&-16-36.34.56,|(16)(14)(1456)
+"Cadeleigh Bob","Cadeleigh Bob",plain,6,"",&-16.12.1236-16,|(12)(14)(1234)
+"Armitage-is-the-name Bob","Armitage-is-the-name Bob",plain,6,"",&-16.12.1236-36,|(12)(14)(1234)
+"Dallinghoo Bob","Dallinghoo Bob",plain,6,"",&-16.12.1236-36,|14
+"Slaidburn Bob","Slaidburn Bob",plain,6,"",&-16.12.1236-36,|(16)(14)(1456)
+"Delph Bridge Bob","Delph Bridge Bob",plain,6,"",&-16.12.1236-56,|(16)(14)(1456)
+"Baguette Bob","Baguette Bob",plain,6,"",&-16.12.1236.34.16,|(12)(14)(1234)
+"Brandon Creek Bob","Brandon Creek Bob",plain,6,"",&-16.12.1236.34.56,|(16)(14)(1456)
+"Tiverton Bob","Tiverton Bob",plain,6,"",&-16.12.16-56,|(12)(14)(1234)
+"Seavington St Mary Bob","Seavington St Mary Bob",plain,6,"",&-16.12.16.34.16,|(12)(14)(1234)
+"Brampton Ash Bob","Brampton Ash Bob",plain,6,"",&-16.12.16.34.36,|(12)(14)(1234)
+"St Mary Cray Bob","St Mary Cray Bob",plain,6,"",&-16.12.16.34.56,|(12)(14)(1234)
+"Badgeworth Bob","Badgeworth Bob",plain,6,"",&-16.12.36-36,|(12)(14)(1234)
+"Hoo Bob","Hoo Bob",plain,6,"",&-16.12.36-36,|14
+"Elmore Bob","Elmore Bob",plain,6,"",&-16.12.36-36,|(16)(14)(1456)
+"Thesiger Bob","Thesiger Bob",plain,6,"",&-16.12.36-56,|(16)(14)(1456)
+"Lydford Bob","Lydford Bob",plain,6,"",&-16.12.36.12.16,|(12)(14)(1234)
+"Hempsted Bob","Hempsted Bob",plain,6,"",&-16.12.36.12.36,|(12)(14)(1234)
+"Fuchsia Festival Bob","Fuchsia Festival Bob",plain,6,"",&-16.12.36.12.36,|14
+"Leckhampton Place","Leckhampton Place",plain,6,"",&-16.12.36.12.36,|(16)(14)(1456)
+"Apley Bob","Apley Bob",plain,6,"",&-16.12.36.12.56,|(16)(14)(1456)
+"Combe Florey Bob","Combe Florey Bob",plain,6,"",&-16.12.36.1234.16,|(12)(14)(1234)
+"Lapwings Place","Lapwings Place",plain,6,"",&-16.12.36.1234.56,|(16)(14)(1456)
+"Andrew's Achievement Bob","Andrew's Achievement Bob",plain,6,"",&-16.12.36.14.16,|(12)(14)(1234)
+"Wigtoft Bob","Wigtoft Bob",plain,6,"",&-16.12.36.14.56,|(12)(14)(1234)
+"Gelston Bob","Gelston Bob",plain,6,"",&-16.12.36.34.56,|(16)(14)(1456)
+"Twatt Bob","Twatt Bob",plain,6,"",&-16.1256.1236-56,|(12)(14)(1234)
+"Plaw Field Bob","Plaw Field Bob",plain,6,"",&-16.1256.1236-56,|(16)(14)(1456)
+"Hackland Bob","Hackland Bob",plain,6,"",&-16.1256.1236.34.56,|(12)(14)(1234)
+"Stowbridge Bob","Stowbridge Bob",plain,6,"",&-16.1256.1236.34.56,|(16)(14)(1456)
+"Maidwell Bob","Maidwell Bob",plain,6,"",&-16.1256.16-16,|(12)(14)(1234)
+"Claremont Bob","Claremont Bob",plain,6,"",&-16.1256.16.34.16,|(12)(14)(1234)
+"Kirkwall Bob","Kirkwall Bob",plain,6,"",&-16.1256.36-56,|(12)(14)(1234)
+"Barroway Drove Bob","Barroway Drove Bob",plain,6,"",&-16.1256.36-56,|(16)(14)(1456)
+"Steer Bob","Steer Bob",plain,6,"",&-16.1256.36.12.56,|(12)(14)(1234)
+"Sedge Fen Bob","Sedge Fen Bob",plain,6,"",&-16.1256.36.12.56,|(16)(14)(1456)
+"Wilby Bob","Wilby Bob",plain,6,"",&-16.1256.36.1234.16,|(12)(14)(1234)
+"St Margarets Hope Bob","St Margarets Hope Bob",plain,6,"",&-16.1256.36.1234.56,|(12)(14)(1234)
+"Lady Fen Place","Lady Fen Place",plain,6,"",&-16.1256.36.1234.56,|(16)(14)(1456)
+"Millennium Bob","Millennium Bob",plain,6,"",&-16.1256.36.14.16,|(12)(14)(1234)
+"Tankerness Bob","Tankerness Bob",plain,6,"",&-16.1256.36.34.56,|(12)(14)(1234)
+"Bridge Farm Bob","Bridge Farm Bob",plain,6,"",&-16.1256.36.34.56,|(16)(14)(1456)
+"Khyber Pass Bob","Khyber Pass Bob",plain,6,"",&-16.56.1236-56,|(12)(14)(1234)
+"Runcton Holme Bob","Runcton Holme Bob",plain,6,"",&-16.56.1236-56,|(16)(14)(1456)
+"Lamb Holm Bob","Lamb Holm Bob",plain,6,"",&-16.56.1236.12.56,|(12)(14)(1234)
+"Quanea Hill Bob","Quanea Hill Bob",plain,6,"",&-16.56.1236.12.56,|(16)(14)(1456)
+"Moar Bob","Moar Bob",plain,6,"",&-16.56.1236.1234.56,|(12)(14)(1234)
+"Black Horse Drove Place","Black Horse Drove Place",plain,6,"",&-16.56.1236.1234.56,|(16)(14)(1456)
+"St John the Evangelist Bob","St John the Evangelist Bob",plain,6,"",&-16.56.1236.14.56,|(12)(14)(1234)
+"Quoyloo Bob","Quoyloo Bob",plain,6,"",&-16.56.1236.34.56,|(12)(14)(1234)
+"London Lode Bob","London Lode Bob",plain,6,"",&-16.56.1236.34.56,|(16)(14)(1456)
+"Reliant Bob","Reliant Bob",plain,6,"",&-16.56.16-56,|(12)(14)(1234)
+"Monkton Bob","Monkton Bob",plain,6,"",&-16.56.16.34.16,|(12)(14)(1234)
+"Penge Bob","Penge Bob",plain,6,"",&-16.56.16.34.56,|(12)(14)(1234)
+"Scrabster Bob","Scrabster Bob",plain,6,"",&-16.56.36-56,|(12)(14)(1234)
+"Storey Bob","Storey Bob",plain,6,"",&-16.56.36-56,|(16)(14)(1456)
+"Netherstove Bob","Netherstove Bob",plain,6,"",&-16.56.36.12.56,|(12)(14)(1234)
+"Benwick Bob","Benwick Bob",plain,6,"",&-16.56.36.12.56,|(16)(14)(1456)
+"Birsay Bob","Birsay Bob",plain,6,"",&-16.56.36.1234.56,|(12)(14)(1234)
+"Chittering Bob","Chittering Bob",plain,6,"",&-16.56.36.1234.56,|(16)(14)(1456)
+"Lowick Bob","Lowick Bob",plain,6,"",&-16.56.36.34.16,|(12)(14)(1234)
+"Stromness Bob","Stromness Bob",plain,6,"",&-16.56.36.34.56,|(12)(14)(1234)
+"Nightlayer's Fen Bob","Nightlayer's Fen Bob",plain,6,"",&-16.56.36.34.56,|(16)(14)(1456)
+"St George Bob","St George Bob",plain,6,"",&34.14-1236-36,|(12)(14)(1234)
+"Huna Bob","Huna Bob",plain,6,"",&34.14-1236-56,|(12)(14)(1234)
+"Fen Lane Bob","Fen Lane Bob",plain,6,"",&34.14-1236.12.36,|(12)(14)(1234)
+"Lerwick Bob","Lerwick Bob",plain,6,"",&34.14-1236.12.56,|(12)(14)(1234)
+"Vaynol Hall Bob","Vaynol Hall Bob",plain,6,"",&34.14-1236.1234.56,|(12)(14)(1234)
+"Off Your 'Ead Bob","Off Your 'Ead Bob",plain,6,"",&34.14-1236.34.16,|(16)(14)(1456)
+"Tillington Bob","Tillington Bob",plain,6,"",&34.14-1236.34.56,|(12)(14)(1234)
+"Single Burton Pedwardine Bob","Single Burton Pedwardine Bob",plain,6,"",&34.14-16-16,|(12)(14)(1234)
+"60163 Tornado Bob","60163 Tornado Bob",plain,6,"",&34.14-16-56,|(16)(14)(1456)
+"Round the Twist Bob","Round the Twist Bob",plain,6,"",&34.14-16.34.36,|(16)(14)(1456)
+"Fenland Teddy Bob","Fenland Teddy Bob",plain,6,"",&34.14-36-16,|(12)(14)(1234)
+"The Dragon Bob","The Dragon Bob",plain,6,"",&34.14-36-36,|(12)(14)(1234)
+"Baltasound Bob","Baltasound Bob",plain,6,"",&34.14-36-56,|(12)(14)(1234)
+"Whitway Bob","Whitway Bob",plain,6,"",&34.14-36.12.36,|(12)(14)(1234)
+"Culduthel Bob","Culduthel Bob",plain,6,"",&34.14-36.12.56,|(12)(14)(1234)
+"Beaconside Bob","Beaconside Bob",plain,6,"",&34.14-36.1234.56,|(12)(14)(1234)
+"Double Stebbing Bob","Double Stebbing Bob",plain,6,"",&34.14-36.34.16,|(16)(14)(1456)
+"Double Burton Pedwardine Bob","Double Burton Pedwardine Bob",plain,6,"",&34.14-36.34.56,|(12)(14)(1234)
+"Biggles Bob","Biggles Bob",plain,6,"",&34.14.12.1236-36,|(12)(14)(1234)
+"Orkney Bob","Orkney Bob",plain,6,"",&34.14.12.1236-56,|(12)(14)(1234)
+"Xebec Bob","Xebec Bob",plain,6,"",&34.14.12.1236.34.56,|(12)(14)(1234)
+"A Beer Bob","A Beer Bob",plain,6,"",&34.14.12.16-36,|(12)(14)(1234)
+"Gorefield Bob","Gorefield Bob",plain,6,"",&34.14.12.36-36,|(12)(14)(1234)
+"Scapa Flow Bob","Scapa Flow Bob",plain,6,"",&34.14.12.36-56,|(12)(14)(1234)
+"Three Holes Bob","Three Holes Bob",plain,6,"",&34.14.12.36.12.36,|(12)(14)(1234)
+"Shetland Bob","Shetland Bob",plain,6,"",&34.14.12.36.12.56,|(12)(14)(1234)
+"Junction Bob","Junction Bob",plain,6,"",&34.14.12.36.1234.56,|(12)(14)(1234)
+"Number of the Beast Bob","Number of the Beast Bob",plain,6,"",&34.14.12.36.34.56,|(12)(14)(1234)
+"Godmanchester Bob","Godmanchester Bob",plain,6,"",&34.14.1256.1236-36,|(12)(14)(1234)
+"Watford Junction Bob","Watford Junction Bob",plain,6,"",&34.14.1256.1236-56,|(12)(14)(1234)
+"Hither Green Bob","Hither Green Bob",plain,6,"",&34.14.1256.1236.34.56,|(12)(14)(1234)
+"Tilney St Lawrence Bob","Tilney St Lawrence Bob",plain,6,"",&34.14.1256.36-36,|(12)(14)(1234)
+"Craigentinny Bob","Craigentinny Bob",plain,6,"",&34.14.1256.36-56,|(12)(14)(1234)
+"Shippea Hill Bob","Shippea Hill Bob",plain,6,"",&34.14.1256.36.12.36,|(12)(14)(1234)
+"Exeter St Davids Bob","Exeter St Davids Bob",plain,6,"",&34.14.1256.36.12.56,|(12)(14)(1234)
+"Eastleigh Bob","Eastleigh Bob",plain,6,"",&34.14.1256.36.1234.56,|(12)(14)(1234)
+"Double Toton Bob","Double Toton Bob",plain,6,"",&34.14.1256.36.34.56,|(12)(14)(1234)
+"Winwick Bob","Winwick Bob",plain,6,"",&34.14.56.1236-36,|(12)(14)(1234)
+"Cricklewood Bob","Cricklewood Bob",plain,6,"",&34.14.56.1236-56,|(12)(14)(1234)
+"Marshland Smeeth Bob","Marshland Smeeth Bob",plain,6,"",&34.14.56.1236.12.36,|(12)(14)(1234)
+"Willesden Bob","Willesden Bob",plain,6,"",&34.14.56.1236.12.56,|(12)(14)(1234)
+"Stratford Bob","Stratford Bob",plain,6,"",&34.14.56.1236.1234.56,|(12)(14)(1234)
+"Haymarket Bob","Haymarket Bob",plain,6,"",&34.14.56.1236.34.56,|(12)(14)(1234)
+"Single Toton Bob","Single Toton Bob",plain,6,"",&34.14.56.16-16,|(12)(14)(1234)
+"Spiller Bob","Spiller Bob",plain,6,"",&34.14.56.36-16,|(12)(14)(1234)
+"Woodger Bob","Woodger Bob",plain,6,"",&34.14.56.36-36,|(12)(14)(1234)
+"Stewarts Lane Bob","Stewarts Lane Bob",plain,6,"",&34.14.56.36-56,|(12)(14)(1234)
+"Forty Foot Bob","Forty Foot Bob",plain,6,"",&34.14.56.36.12.36,|(12)(14)(1234)
+"Finsbury Park Bob","Finsbury Park Bob",plain,6,"",&34.14.56.36.12.56,|(12)(14)(1234)
+"Bescot Bob","Bescot Bob",plain,6,"",&34.14.56.36.1234.56,|(12)(14)(1234)
+"Cockshute Bob","Cockshute Bob",plain,6,"",&34.14.56.36.34.56,|(12)(14)(1234)
+"Stephen Kirby Bob","Stephen Kirby Bob",plain,6,"",&34.1456-1236-36,|(12)(14)(1234)
+"Crewe Electric Bob","Crewe Electric Bob",plain,6,"",&34.1456-1236-56,|(12)(14)(1234)
+"Stainfield Road Bob","Stainfield Road Bob",plain,6,"",&34.1456-1236.12.36,|(12)(14)(1234)
+"Newton Heath Bob","Newton Heath Bob",plain,6,"",&34.1456-1236.12.56,|(12)(14)(1234)
+"Waterly Bottom Bob","Waterly Bottom Bob",plain,6,"",&34.1456-1236.1234.56,|(12)(14)(1234)
+"Double Vision Place","Double Vision Place",plain,6,"",&34.1456-1236.34.16,|(16)(14)(1456)
+"Double Boothby Pagnell Bob","Double Boothby Pagnell Bob",plain,6,"",&34.1456-1236.34.56,|(12)(14)(1234)
+"Single Boothby Pagnell Bob","Single Boothby Pagnell Bob",plain,6,"",&34.1456-16-16,|(12)(14)(1234)
+"Puff the Magic Dragon Bob","Puff the Magic Dragon Bob",plain,6,"",&34.1456-36-16,|(12)(14)(1234)
+"Joan Croft Bob","Joan Croft Bob",plain,6,"",&34.1456-36-36,|(12)(14)(1234)
+"Springs Branch Bob","Springs Branch Bob",plain,6,"",&34.1456-36-56,|(12)(14)(1234)
+"Margaret Marsh Bob","Margaret Marsh Bob",plain,6,"",&34.1456-36.12.36,|(12)(14)(1234)
+"Price Bob","Price Bob",plain,6,"",&34.1456-36.12.56,|(12)(14)(1234)
+"Rosegrove Bob","Rosegrove Bob",plain,6,"",&34.1456-36.1234.56,|(12)(14)(1234)
+"Off Your 'Ead Backwards Bob","Off Your 'Ead Backwards Bob",plain,6,"",&34.1456-36.34.16,|(16)(14)(1456)
+"Crewe Diesel Bob","Crewe Diesel Bob",plain,6,"",&34.1456-36.34.56,|(12)(14)(1234)
+"Gilduath Bob","Gilduath Bob",plain,6,"",&34.1456.12.1236-36,|(12)(14)(1234)
+"Warrington Arpley Bob","Warrington Arpley Bob",plain,6,"",&34.1456.12.1236-56,|(12)(14)(1234)
+"Crewe Works Bob","Crewe Works Bob",plain,6,"",&34.1456.12.1236.34.56,|(12)(14)(1234)
+"M Collinson Bob","M Collinson Bob",plain,6,"",&34.1456.12.16-36,|(12)(14)(1234)
+"Fen Blow Bob","Fen Blow Bob",plain,6,"",&34.1456.12.36-36,|(12)(14)(1234)
+"Guide Bridge Bob","Guide Bridge Bob",plain,6,"",&34.1456.12.36-56,|(12)(14)(1234)
+"Kirby Underwood Bob","Kirby Underwood Bob",plain,6,"",&34.1456.12.36.12.36,|(12)(14)(1234)
+"Upton Cheyney Bob","Upton Cheyney Bob",plain,6,"",&34.1456.12.36.12.56,|(12)(14)(1234)
+"Hookagate Bob","Hookagate Bob",plain,6,"",&34.1456.12.36.1234.56,|(12)(14)(1234)
+"Croess Newydd Bob","Croess Newydd Bob",plain,6,"",&34.1456.12.36.34.56,|(12)(14)(1234)
+"Hinchingbrooke Bob","Hinchingbrooke Bob",plain,6,"",&34.1456.1256.1236-36,|(12)(14)(1234)
+"Over Kellet Bob","Over Kellet Bob",plain,6,"",&34.1456.1256.1236-56,|(12)(14)(1234)
+"Double Field Broughton Bob","Double Field Broughton Bob",plain,6,"",&34.1456.1256.1236.34.56,|(12)(14)(1234)
+"Tilney All Saints Bob","Tilney All Saints Bob",plain,6,"",&34.1456.1256.36-36,|(12)(14)(1234)
+"Capernwray Bob","Capernwray Bob",plain,6,"",&34.1456.1256.36-56,|(12)(14)(1234)
+"Primrose Hall Bob","Primrose Hall Bob",plain,6,"",&34.1456.1256.36.12.36,|(12)(14)(1234)
+"Farleton Bob","Farleton Bob",plain,6,"",&34.1456.1256.36.12.56,|(12)(14)(1234)
+"Ayside Bob","Ayside Bob",plain,6,"",&34.1456.1256.36.1234.56,|(12)(14)(1234)
+"Backbarrow Bob","Backbarrow Bob",plain,6,"",&34.1456.1256.36.34.56,|(12)(14)(1234)
+"Go next time Bob","Go next time Bob",plain,6,"",&34.1456.56.1236-36,|(12)(14)(1234)
+"Priest Hutton Bob","Priest Hutton Bob",plain,6,"",&34.1456.56.1236-56,|(12)(14)(1234)
+"Chapel of Ease Bob","Chapel of Ease Bob",plain,6,"",&34.1456.56.1236.12.36,|(12)(14)(1234)
+"Nether Kellet Bob","Nether Kellet Bob",plain,6,"",&34.1456.56.1236.12.56,|(12)(14)(1234)
+"Grizedale Bob","Grizedale Bob",plain,6,"",&34.1456.56.1236.1234.56,|(12)(14)(1234)
+"Finsthwaite Bob","Finsthwaite Bob",plain,6,"",&34.1456.56.1236.34.56,|(12)(14)(1234)
+"Single Field Broughton Bob","Single Field Broughton Bob",plain,6,"",&34.1456.56.16-16,|(12)(14)(1234)
+"Thurgo-stick Bob","Thurgo-stick Bob",plain,6,"",&34.1456.56.36-16,|(12)(14)(1234)
+"Holywell-cum-Needingworth Bob","Holywell-cum-Needingworth Bob",plain,6,"",&34.1456.56.36-36,|(12)(14)(1234)
+"Yealand Redmayne Bob","Yealand Redmayne Bob",plain,6,"",&34.1456.56.36-56,|(12)(14)(1234)
+"New Bedford River Bob","New Bedford River Bob",plain,6,"",&34.1456.56.36.12.36,|(12)(14)(1234)
+"Yealand Conyers Bob","Yealand Conyers Bob",plain,6,"",&34.1456.56.36.12.56,|(12)(14)(1234)
+"Staveley-in-Cartmel Bob","Staveley-in-Cartmel Bob",plain,6,"",&34.1456.56.36.1234.56,|(12)(14)(1234)
+"Newby Bridge Bob","Newby Bridge Bob",plain,6,"",&34.1456.56.36.34.56,|(12)(14)(1234)
+"Coniston Place","Coniston Place",plain,6,"",&34.16-1236-16,|(16)(14)(1456)
+"Gower Bob","Gower Bob",plain,6,"",&34.16-1236-36,|(12)(14)(1234)
+"Norfolk Punch Bob","Norfolk Punch Bob",plain,6,"",&34.16-1236.12.36,|(12)(14)(1234)
+"Single Canterbury Pleasure Bob","Single Canterbury Pleasure Bob",plain,6,"",&34.16-16-16,|(12)(14)(1234)
+"Horsmonden Bob","Horsmonden Bob",plain,6,"",&34.16-16-36,|(12)(14)(1234)
+"Killarney Bob","Killarney Bob",plain,6,"",&34.16-16-36,|(16)(14)(1456)
+"Abertawe Bob","Abertawe Bob",plain,6,"",&34.16-16-56,|(12)(14)(1234)
+"Glantawe Bob","Glantawe Bob",plain,6,"",&34.16-16-56,|(16)(14)(1456)
+"Loxton Bob","Loxton Bob",plain,6,"",&34.16-16.12.36,|(12)(14)(1234)
+"Toft by Newton Bob","Toft by Newton Bob",plain,6,"",&34.16-16.12.56,|(12)(14)(1234)
+"Sluice Common Bob","Sluice Common Bob",plain,6,"",&34.16-16.1234.56,|(12)(14)(1234)
+"Brentford Bob","Brentford Bob",plain,6,"",&34.16-16.34.16,|(12)(14)(1234)
+"Double Oh Seven Bob","Double Oh Seven Bob",plain,6,"",&34.16-16.34.36,|14
+"Double Canterbury Pleasure Bob","Double Canterbury Pleasure Bob",plain,6,"",&34.16-16.34.56,|(12)(14)(1234)
+"Trostre Bob","Trostre Bob",plain,6,"",&34.16-16.34.56,|(16)(14)(1456)
+"Cumberland Bob","Cumberland Bob",plain,6,"",&34.16-36-16,|(12)(14)(1234)
+"Ennerdale Bob","Ennerdale Bob",plain,6,"",&34.16-36-16,|(16)(14)(1456)
+"St Nicholas College Bob","St Nicholas College Bob",plain,6,"",&34.16-36-36,|(12)(14)(1234)
+"Heatherslade Bob","Heatherslade Bob",plain,6,"",&34.16-36.12.36,|(12)(14)(1234)
+"Ynystawe Bob","Ynystawe Bob",plain,6,"",&34.16-36.14.36,|(12)(14)(1234)
+"Roydon Bob","Roydon Bob",plain,6,"",&34.16-36.14.56,|(12)(14)(1234)
+"Loch Lomond Bob","Loch Lomond Bob",plain,6,"",&34.16-36.14.56,|(16)(14)(1456)
+"Ribchester Bob","Ribchester Bob",plain,6,"",&34.16.12.1236-36,|(12)(14)(1234)
+"Hasfield Bob","Hasfield Bob",plain,6,"",&34.16.12.36-36,|(12)(14)(1234)
+"Noxious Bob","Noxious Bob",plain,6,"",&34.16.12.36.12.16,|(12)(14)(1234)
+"Tirley Bob","Tirley Bob",plain,6,"",&34.16.12.36.12.36,|(12)(14)(1234)
+"Brompton Regis Bob","Brompton Regis Bob",plain,6,"",&34.16.12.36.1234.16,|(12)(14)(1234)
+"Tingwall Bob","Tingwall Bob",plain,6,"",&34.16.1256.1236-56,|(12)(14)(1234)
+"Wembdon Bob","Wembdon Bob",plain,6,"",&34.16.1256.1236.34.56,|(12)(14)(1234)
+"Deerness Bob","Deerness Bob",plain,6,"",&34.16.1256.36-56,|(12)(14)(1234)
+"Churchill Barriers Bob","Churchill Barriers Bob",plain,6,"",&34.16.1256.36.12.56,|(12)(14)(1234)
+"Ubley Bob","Ubley Bob",plain,6,"",&34.16.1256.36.1234.56,|(12)(14)(1234)
+"Maurice Bob","Maurice Bob",plain,6,"",&34.16.1256.36.14.56,|(12)(14)(1234)
+"Golden Accession Bob","Golden Accession Bob",plain,6,"",&34.16.1256.36.34.56,|(12)(14)(1234)
+"Brinkies Brae Bob","Brinkies Brae Bob",plain,6,"",&34.16.56.1236-56,|(12)(14)(1234)
+"Harray Bob","Harray Bob",plain,6,"",&34.16.56.1236.12.56,|(12)(14)(1234)
+"Butcombe Bob","Butcombe Bob",plain,6,"",&34.16.56.1236.1234.56,|(12)(14)(1234)
+"Burrington Bob","Burrington Bob",plain,6,"",&34.16.56.1236.34.56,|(12)(14)(1234)
+"Morris Bob","Morris Bob",plain,6,"",&34.16.56.16.12.56,|(12)(14)(1234)
+"St Olaf Bob","St Olaf Bob",plain,6,"",&34.16.56.36-56,|(12)(14)(1234)
+"Poke Bob","Poke Bob",plain,6,"",&34.16.56.36.12.56,|(12)(14)(1234)
+"East Harptree Bob","East Harptree Bob",plain,6,"",&34.16.56.36.1234.56,|(12)(14)(1234)
+"Durleigh Bob","Durleigh Bob",plain,6,"",&34.16.56.36.34.56,|(12)(14)(1234)
+"Needham Bob","Needham Bob",plain,6,"",&3456.14-1236-36,|(12)(14)(1234)
+"Hampstead Bob","Hampstead Bob",plain,6,"",&3456.14-1236-56,|(12)(14)(1234)
+"Salters Lode Bob","Salters Lode Bob",plain,6,"",&3456.14-1236.12.36,|(12)(14)(1234)
+"Grimeford Village Bob","Grimeford Village Bob",plain,6,"",&3456.14-1236.12.56,|(12)(14)(1234)
+"Great Gable Bob","Great Gable Bob",plain,6,"",&3456.14-1236.1234.56,|(12)(14)(1234)
+"Ingleborough Bob","Ingleborough Bob",plain,6,"",&3456.14-1236.34.56,|(12)(14)(1234)
+"Single Boothby Graffoe Bob","Single Boothby Graffoe Bob",plain,6,"",&3456.14-16-16,|(12)(14)(1234)
+"Prune Bob","Prune Bob",plain,6,"",&3456.14-36-16,|(12)(14)(1234)
+"Joyce Burton Bob","Joyce Burton Bob",plain,6,"",&3456.14-36-36,|(12)(14)(1234)
+"Coton Hill Bob","Coton Hill Bob",plain,6,"",&3456.14-36-56,|(12)(14)(1234)
+"Salems Towers Bob","Salems Towers Bob",plain,6,"",&3456.14-36.12.36,|(12)(14)(1234)
+"Blackrod Bob","Blackrod Bob",plain,6,"",&3456.14-36.12.56,|(12)(14)(1234)
+"Double Boothby Graffoe Bob","Double Boothby Graffoe Bob",plain,6,"",&3456.14-36.1234.56,|(12)(14)(1234)
+"Pen y Ghent Bob","Pen y Ghent Bob",plain,6,"",&3456.14-36.34.56,|(12)(14)(1234)
+"Abbots Ripton Bob","Abbots Ripton Bob",plain,6,"",&3456.14.12.1236-36,|(12)(14)(1234)
+"Limbrick Bob","Limbrick Bob",plain,6,"",&3456.14.12.1236-56,|(12)(14)(1234)
+"Tryfan Bob","Tryfan Bob",plain,6,"",&3456.14.12.1236.34.56,|(12)(14)(1234)
+"Wiggenhall St Peter Bob","Wiggenhall St Peter Bob",plain,6,"",&3456.14.12.36-36,|(12)(14)(1234)
+"Rivington Bob","Rivington Bob",plain,6,"",&3456.14.12.36-56,|(12)(14)(1234)
+"Welney Bob","Welney Bob",plain,6,"",&3456.14.12.36.12.36,|(12)(14)(1234)
+"Haigh Bob","Haigh Bob",plain,6,"",&3456.14.12.36.12.56,|(12)(14)(1234)
+"Snowdon Bob","Snowdon Bob",plain,6,"",&3456.14.12.36.1234.56,|(12)(14)(1234)
+"Cross Fell Bob","Cross Fell Bob",plain,6,"",&3456.14.12.36.34.56,|(12)(14)(1234)
+"Chevette Bob","Chevette Bob",plain,6,"",&3456.14.1256.1236-36,|(12)(14)(1234)
+"Ravenhead Bob","Ravenhead Bob",plain,6,"",&3456.14.1256.1236-56,|(12)(14)(1234)
+"Sankey Valley Bob","Sankey Valley Bob",plain,6,"",&3456.14.1256.1236.34.56,|(12)(14)(1234)
+"Tilney High End Bob","Tilney High End Bob",plain,6,"",&3456.14.1256.36-36,|(12)(14)(1234)
+"Bold Heath Bob","Bold Heath Bob",plain,6,"",&3456.14.1256.36-56,|(12)(14)(1234)
+"Prickwillow Place","Prickwillow Place",plain,6,"",&3456.14.1256.36.12.36,|(12)(14)(1234)
+"Windle Hall Bob","Windle Hall Bob",plain,6,"",&3456.14.1256.36.12.56,|(12)(14)(1234)
+"Double Zig-Zag Place","Double Zig-Zag Place",plain,6,"",&3456.14.1256.36.1234.56,|(12)(14)(1234)
+"Daisy Howe Bob","Daisy Howe Bob",plain,6,"",&3456.14.1256.36.34.56,|(12)(14)(1234)
+"Conington Bob","Conington Bob",plain,6,"",&3456.14.56.1236-36,|(12)(14)(1234)
+"Simms Lane End Bob","Simms Lane End Bob",plain,6,"",&3456.14.56.1236-56,|(12)(14)(1234)
+"Tydd Gote Place","Tydd Gote Place",plain,6,"",&3456.14.56.1236.12.36,|(12)(14)(1234)
+"Haydock Bob","Haydock Bob",plain,6,"",&3456.14.56.1236.12.56,|(12)(14)(1234)
+"Codrington Place","Codrington Place",plain,6,"",&3456.14.56.1236.1234.56,|(12)(14)(1234)
+"Bridgeyate Bob","Bridgeyate Bob",plain,6,"",&3456.14.56.1236.34.56,|(12)(14)(1234)
+"Single Zig-Zag Place","Single Zig-Zag Place",plain,6,"",&3456.14.56.16-16,|(12)(14)(1234)
+"Sheer Greed Bob","Sheer Greed Bob",plain,6,"",&3456.14.56.36-16,|(12)(14)(1234)
+"Bunting Bob","Bunting Bob",plain,6,"",&3456.14.56.36-36,|(12)(14)(1234)
+"Tythe Barn Hillock Bob","Tythe Barn Hillock Bob",plain,6,"",&3456.14.56.36-56,|(12)(14)(1234)
+"Old Bedford River Bob","Old Bedford River Bob",plain,6,"",&3456.14.56.36.12.36,|(12)(14)(1234)
+"Chadwick Green Bob","Chadwick Green Bob",plain,6,"",&3456.14.56.36.12.56,|(12)(14)(1234)
+"Tuckers Grave Bob","Tuckers Grave Bob",plain,6,"",&3456.14.56.36.1234.56,|(12)(14)(1234)
+"Throckenholt Bob","Throckenholt Bob",plain,6,"",&3456.14.56.36.34.56,|(12)(14)(1234)
+"Caxton Bob","Caxton Bob",plain,6,"",&3456.1456-1236-36,|(12)(14)(1234)
+"Capel Bangor Bob","Capel Bangor Bob",plain,6,"",&3456.1456-1236-56,|(12)(14)(1234)
+"Kenny Hill Place","Kenny Hill Place",plain,6,"",&3456.1456-1236.12.36,|(12)(14)(1234)
+"Llanbadarn Fawr Bob","Llanbadarn Fawr Bob",plain,6,"",&3456.1456-1236.12.56,|(12)(14)(1234)
+"Double Penrhyn Place","Double Penrhyn Place",plain,6,"",&3456.1456-1236.1234.56,|(12)(14)(1234)
+"Tan-y-bwlch Bob","Tan-y-bwlch Bob",plain,6,"",&3456.1456-1236.34.56,|(12)(14)(1234)
+"Single Penrhyn Place","Single Penrhyn Place",plain,6,"",&3456.1456-16-16,|(12)(14)(1234)
+"Tripod Bob","Tripod Bob",plain,6,"",&3456.1456-36-16,|(12)(14)(1234)
+"Little Stukeley Bob","Little Stukeley Bob",plain,6,"",&3456.1456-36-36,|(12)(14)(1234)
+"Devils Bridge Bob","Devils Bridge Bob",plain,6,"",&3456.1456-36-56,|(12)(14)(1234)
+"Great Ouse Bob","Great Ouse Bob",plain,6,"",&3456.1456-36.12.36,|(12)(14)(1234)
+"Aberffrwd Bob","Aberffrwd Bob",plain,6,"",&3456.1456-36.12.56,|(12)(14)(1234)
+"Tanygrisiau Bob","Tanygrisiau Bob",plain,6,"",&3456.1456-36.1234.56,|(12)(14)(1234)
+"Blaenau Ffestiniog Bob","Blaenau Ffestiniog Bob",plain,6,"",&3456.1456-36.34.56,|(12)(14)(1234)
+"St Wendreda Bob","St Wendreda Bob",plain,6,"",&3456.1456.12.1236-36,|(12)(14)(1234)
+"Vale-of-Rheidol Bob","Vale-of-Rheidol Bob",plain,6,"",&3456.1456.12.1236-56,|(12)(14)(1234)
+"Festiniog Bob","Festiniog Bob",plain,6,"",&3456.1456.12.1236.34.56,|(12)(14)(1234)
+"Parson Drove Bob","Parson Drove Bob",plain,6,"",&3456.1456.12.36-36,|(12)(14)(1234)
+"Aberystwyth Bob","Aberystwyth Bob",plain,6,"",&3456.1456.12.36-56,|(12)(14)(1234)
+"Walpole Highway Place","Walpole Highway Place",plain,6,"",&3456.1456.12.36.12.36,|(12)(14)(1234)
+"Afon Rheidol Bob","Afon Rheidol Bob",plain,6,"",&3456.1456.12.36.12.56,|(12)(14)(1234)
+"Porthmadog Harbour Place","Porthmadog Harbour Place",plain,6,"",&3456.1456.12.36.1234.56,|(12)(14)(1234)
+"Minffordd Bob","Minffordd Bob",plain,6,"",&3456.1456.12.36.34.56,|(12)(14)(1234)
+"Bluntisham Bob","Bluntisham Bob",plain,6,"",&3456.16-1236-36,|(12)(14)(1234)
+"Foti Place","Foti Place",plain,6,"",&3456.16-1236.12.36,|(12)(14)(1234)
+"Single Cumbria Place","Single Cumbria Place",plain,6,"",&3456.16-16-16,|(12)(14)(1234)
+"The B Team Bob","The B Team Bob",plain,6,"",&3456.16-16-36,|(12)(14)(1234)
+"Neatmoor Hall Bob","Neatmoor Hall Bob",plain,6,"",&3456.16-16-56,|(12)(14)(1234)
+"Creekgall Fen Bob","Creekgall Fen Bob",plain,6,"",&3456.16-16.12.56,|(12)(14)(1234)
+"Double Cumbria Place","Double Cumbria Place",plain,6,"",&3456.16-16.1234.56,|(12)(14)(1234)
+"Black Ditch Level Bob","Black Ditch Level Bob",plain,6,"",&3456.16-16.34.56,|(12)(14)(1234)
+"Southery Bob","Southery Bob",plain,6,"",&3456.16-36-36,|(12)(14)(1234)
+"Grantchester Bob","Grantchester Bob",plain,6,"",&3456.16-36.12.36,|(12)(14)(1234)
+"W.E.Tann Bob","W.E.Tann Bob",plain,6,"",&3456.16.12.1236-36,|(12)(14)(1234)
+"T.U.L.I.P. Bob","T.U.L.I.P. Bob",plain,6,"",&3456.16.12.36-36,|(12)(14)(1234)
+"Braeside Place","Braeside Place",plain,6,"",&3456.16.12.36.12.36,|(12)(14)(1234)
+"Helvellyn Bob","Helvellyn Bob",plain,6,"",&36.14-1236-56,|(12)(14)(1234)
+"Manaton Bob","Manaton Bob",plain,6,"",&36.14-1236.12.56,|(12)(14)(1234)
+"Fleur Bob","Fleur Bob",plain,6,"",&36.14-1236.1234.56,|(12)(14)(1234)
+"Dumpy Bob","Dumpy Bob",plain,6,"",&36.14-1236.34.56,|(12)(14)(1234)
+"Single Dunkirk Bob","Single Dunkirk Bob",plain,6,"",&36.14-16-16,|14
+"St James Youths Exercise Bob","St James Youths Exercise Bob",plain,6,"",&36.14-16-36,|(12)(14)(1234)
+"Elterwater Bob","Elterwater Bob",plain,6,"",&36.14-16-56,|(12)(14)(1234)
+"Wastwater Bob","Wastwater Bob",plain,6,"",&36.14-16.34.16,|(12)(14)(1234)
+"Loweswater Bob","Loweswater Bob",plain,6,"",&36.14-16.34.56,|(12)(14)(1234)
+"Frodsham Bob","Frodsham Bob",plain,6,"",&36.14-36-56,|(12)(14)(1234)
+"Windermere Bob","Windermere Bob",plain,6,"",&36.14-36.12.56,|(12)(14)(1234)
+"Celestial City Bob","Celestial City Bob",plain,6,"",&36.14-36.1234.56,|(12)(14)(1234)
+"Double St Benedict's Bob","Double St Benedict's Bob",plain,6,"",&36.14-36.14.16,|(16)(14)(1456)
+"Bala Bob","Bala Bob",plain,6,"",&36.14-36.14.36,|(12)(14)(1234)
+"Double Dunkirk Bob","Double Dunkirk Bob",plain,6,"",&36.14-36.14.36,|14
+"Dionis Bob","Dionis Bob",plain,6,"",&36.14-36.14.56,|14
+"Riley Bob","Riley Bob",plain,6,"",&36.14-36.34.56,|(12)(14)(1234)
+"Nottingham University Bob","Nottingham University Bob",plain,6,"",&36.14.12.1236-56,|(12)(14)(1234)
+"Arthur Bob","Arthur Bob",plain,6,"",&36.14.12.1236.34.56,|(12)(14)(1234)
+"Algarkirk Bob","Algarkirk Bob",plain,6,"",&36.14.12.36-56,|(12)(14)(1234)
+"Ideford Combe Bob","Ideford Combe Bob",plain,6,"",&36.14.12.36.12.56,|(12)(14)(1234)
+"Elstow Bob","Elstow Bob",plain,6,"",&36.14.12.36.1234.56,|(12)(14)(1234)
+"Stoke Cannon Bob","Stoke Cannon Bob",plain,6,"",&36.14.1256.1236-36,|(12)(14)(1234)
+"Luccombe Bob","Luccombe Bob",plain,6,"",&36.14.1256.36-36,|(12)(14)(1234)
+"Shapwick Place","Shapwick Place",plain,6,"",&36.14.1256.36.12.36,|(12)(14)(1234)
+"Double Cumberland Place","Double Cumberland Place",plain,6,"",&36.14.1256.36.14.56,|(12)(14)(1234)
+"Porlock Bob","Porlock Bob",plain,6,"",&36.14.56.1236-36,|(12)(14)(1234)
+"St Audries Place","St Audries Place",plain,6,"",&36.14.56.1236.12.36,|(12)(14)(1234)
+"Single Cumberland Place","Single Cumberland Place",plain,6,"",&36.14.56.16-16,|(12)(14)(1234)
+"Dunelm Bob","Dunelm Bob",plain,6,"",&36.14.56.16.34.56,|(12)(14)(1234)
+"Chipstable Bob","Chipstable Bob",plain,6,"",&36.14.56.36-36,|(12)(14)(1234)
+"Ashcott Bob","Ashcott Bob",plain,6,"",&36.14.56.36.12.36,|(12)(14)(1234)
+"Lakewood Bob","Lakewood Bob",plain,6,"",&36.1456-1236-36,|(12)(14)(1234)
+"Lymebrook Place","Lymebrook Place",plain,6,"",&36.1456-1236.12.36,|(12)(14)(1234)
+"Double Sandon Place","Double Sandon Place",plain,6,"",&36.1456-1236.14.56,|(12)(14)(1234)
+"Single Sandon Place","Single Sandon Place",plain,6,"",&36.1456-16-16,|(12)(14)(1234)
+"Milwich Bob","Milwich Bob",plain,6,"",&36.1456-16-36,|(12)(14)(1234)
+"Fulford Bob","Fulford Bob",plain,6,"",&36.1456-16-56,|(12)(14)(1234)
+"Moddershall Bob","Moddershall Bob",plain,6,"",&36.1456-16.34.56,|(12)(14)(1234)
+"Bramshall Bob","Bramshall Bob",plain,6,"",&36.1456-36-16,|(12)(14)(1234)
+"Barlaston Bob","Barlaston Bob",plain,6,"",&36.1456-36-36,|(12)(14)(1234)
+"Tittensor Bob","Tittensor Bob",plain,6,"",&36.1456-36.12.36,|(12)(14)(1234)
+"Redwood Bob","Redwood Bob",plain,6,"",&36.1456.12.1236-36,|(12)(14)(1234)
+"Brookhouse Bob","Brookhouse Bob",plain,6,"",&36.1456.12.36-36,|(12)(14)(1234)
+"Walton Place","Walton Place",plain,6,"",&36.1456.12.36.12.36,|(12)(14)(1234)
+"Fradswell Place","Fradswell Place",plain,6,"",&36.1456.12.36.14.56,|(12)(14)(1234)
+"Thatto Heath Bob","Thatto Heath Bob",plain,6,"",&36.16-1236-36,|(12)(14)(1234)
+"Single St Helens Bob","Single St Helens Bob",plain,6,"",&36.16-16-16,|(12)(14)(1234)
+"Double St Helens Bob","Double St Helens Bob",plain,6,"",&36.16-16.14.56,|(12)(14)(1234)
+"Village Bob","Village Bob",plain,6,"",&36.16-36-36,|(12)(14)(1234)
+"Cumberland Youths Bob","Cumberland Youths Bob",plain,6,"",&36.16-36-56,|(12)(14)(1234)
+"Tal y Fan Bob","Tal y Fan Bob",plain,6,"",&36.16-36.12.36,|(12)(14)(1234)
+"Lea Green Bob","Lea Green Bob",plain,6,"",&36.16.12.36-36,|(12)(14)(1234)
+"Sherwood Bob","Sherwood Bob",plain,6,"",&56.14-1236-16,|14
+"Bishopston Bob","Bishopston Bob",plain,6,"",&56.14-1236-36,|(12)(14)(1234)
+"Brockley Bob","Brockley Bob",plain,6,"",&56.14-1236-36,|14
+"Alton Bob","Alton Bob",plain,6,"",&56.14-1236-56,|(12)(14)(1234)
+"Galashiels Bob","Galashiels Bob",plain,6,"",&56.14-1236-56,|14
+"Pious Drove Bob","Pious Drove Bob",plain,6,"",&56.14-1236.12.36,|(12)(14)(1234)
+"Orton Brimbles Bob","Orton Brimbles Bob",plain,6,"",&56.14-1236.12.36,|14
+"Sutton Scotney Bob","Sutton Scotney Bob",plain,6,"",&56.14-1236.12.56,|(12)(14)(1234)
+"Chollerford Bob","Chollerford Bob",plain,6,"",&56.14-1236.12.56,|14
+"Kettleshulme Bob","Kettleshulme Bob",plain,6,"",&56.14-1236.1234.56,|(12)(14)(1234)
+"Landean Bob","Landean Bob",plain,6,"",&56.14-1236.1234.56,|14
+"Bollington Bob","Bollington Bob",plain,6,"",&56.14-1236.34.56,|(12)(14)(1234)
+"Bowland Bob","Bowland Bob",plain,6,"",&56.14-1236.34.56,|14
+"Wight Bob","Wight Bob",plain,6,"",&56.14-16-16,|(12)(14)(1234)
+"Single Smith Bob","Single Smith Bob",plain,6,"",&56.14-16-16,|14
+"Keighton Bob","Keighton Bob",plain,6,"",&56.14-16-36,|14
+"Whitemoor Bob","Whitemoor Bob",plain,6,"",&56.14-16-56,|14
+"Fogrigarth Bob","Fogrigarth Bob",plain,6,"",&56.14-16.12.56,|14
+"Ollaberry Bob","Ollaberry Bob",plain,6,"",&56.14-16.1234.56,|14
+"Radford Bob","Radford Bob",plain,6,"",&56.14-16.34.56,|14
+"Limeslade Bob","Limeslade Bob",plain,6,"",&56.14-36-16,|(12)(14)(1234)
+"Oxwich Bob","Oxwich Bob",plain,6,"",&56.14-36-36,|(12)(14)(1234)
+"Orton Goldhay Bob","Orton Goldhay Bob",plain,6,"",&56.14-36-36,|14
+"Andover Bob","Andover Bob",plain,6,"",&56.14-36-56,|(12)(14)(1234)
+"Nook Pasture Bob","Nook Pasture Bob",plain,6,"",&56.14-36-56,|14
+"Rhossili Bob","Rhossili Bob",plain,6,"",&56.14-36.12.36,|(12)(14)(1234)
+"Double Smith Bob","Double Smith Bob",plain,6,"",&56.14-36.12.36,|14
+"Basingstoke Bob","Basingstoke Bob",plain,6,"",&56.14-36.12.56,|(12)(14)(1234)
+"Niddrie Bob","Niddrie Bob",plain,6,"",&56.14-36.12.56,|14
+"Grassington Bob","Grassington Bob",plain,6,"",&56.14-36.1234.56,|(12)(14)(1234)
+"Canonbie Bob","Canonbie Bob",plain,6,"",&56.14-36.1234.56,|14
+"Llanrhidian Bob","Llanrhidian Bob",plain,6,"",&56.14-36.14.56,|(12)(14)(1234)
+"Mannamead Bob","Mannamead Bob",plain,6,"",&56.14-36.34.56,|(12)(14)(1234)
+"Kershopefoot Bob","Kershopefoot Bob",plain,6,"",&56.14-36.34.56,|14
+"Wethereds Bob","Wethereds Bob",plain,6,"",&56.14.12.1236-36,|(12)(14)(1234)
+"Orton Malborne Bob","Orton Malborne Bob",plain,6,"",&56.14.12.1236-36,|14
+"Brimton Common Bob","Brimton Common Bob",plain,6,"",&56.14.12.1236-56,|(12)(14)(1234)
+"Newbiggin Bob","Newbiggin Bob",plain,6,"",&56.14.12.1236-56,|14
+"Appletreewick Bob","Appletreewick Bob",plain,6,"",&56.14.12.1236.34.56,|(12)(14)(1234)
+"Long Marton Bob","Long Marton Bob",plain,6,"",&56.14.12.1236.34.56,|14
+"Greenend Lodge Bob","Greenend Lodge Bob",plain,6,"",&56.14.12.36-36,|(12)(14)(1234)
+"Orton Southgate Bob","Orton Southgate Bob",plain,6,"",&56.14.12.36-36,|14
+"Sherfield-on-Loddon Bob","Sherfield-on-Loddon Bob",plain,6,"",&56.14.12.36-56,|(12)(14)(1234)
+"Kielder Bob","Kielder Bob",plain,6,"",&56.14.12.36-56,|14
+"Denver Sluice Bob","Denver Sluice Bob",plain,6,"",&56.14.12.36.12.36,|(12)(14)(1234)
+"Orton Waterville Bob","Orton Waterville Bob",plain,6,"",&56.14.12.36.12.36,|14
+"East Worldham Bob","East Worldham Bob",plain,6,"",&56.14.12.36.12.56,|(12)(14)(1234)
+"Redmire Bob","Redmire Bob",plain,6,"",&56.14.12.36.12.56,|14
+"Tytherington Bob","Tytherington Bob",plain,6,"",&56.14.12.36.1234.56,|(12)(14)(1234)
+"Finghall Lane Bob","Finghall Lane Bob",plain,6,"",&56.14.12.36.1234.56,|14
+"Pott Shrigley Bob","Pott Shrigley Bob",plain,6,"",&56.14.12.36.34.56,|(12)(14)(1234)
+"Lewiefield Halt Bob","Lewiefield Halt Bob",plain,6,"",&56.14.12.36.34.56,|14
+"Peal at any price Bob","Peal at any price Bob",plain,6,"",&56.14.1256.1236-36,|(12)(14)(1234)
+"Orton Wistow Bob","Orton Wistow Bob",plain,6,"",&56.14.1256.1236-36,|14
+"Golborne Bob","Golborne Bob",plain,6,"",&56.14.1256.1236-56,|(12)(14)(1234)
+"Appleby West Bob","Appleby West Bob",plain,6,"",&56.14.1256.1236-56,|14
+"J2O Bob","J2O Bob",plain,6,"",&56.14.1256.1236-56,|(16)(14)(1456)
+"Pilkington Bob","Pilkington Bob",plain,6,"",&56.14.1256.1236.34.56,|(12)(14)(1234)
+"Ormside Bob","Ormside Bob",plain,6,"",&56.14.1256.1236.34.56,|14
+"Feet Bob","Feet Bob",plain,6,"",&56.14.1256.1236.34.56,|(16)(14)(1456)
+"Rhys the Terrible Bob","Rhys the Terrible Bob",plain,6,"",&56.14.1256.16-36,|(12)(14)(1234)
+"Wiggenhall St Germans Bob","Wiggenhall St Germans Bob",plain,6,"",&56.14.1256.36-36,|(12)(14)(1234)
+"Fontinalis Antipyretica Bob","Fontinalis Antipyretica Bob",plain,6,"",&56.14.1256.36-36,|14
+"Abram Bob","Abram Bob",plain,6,"",&56.14.1256.36-56,|(12)(14)(1234)
+"Plashetts Bob","Plashetts Bob",plain,6,"",&56.14.1256.36-56,|14
+"Steve the Legend Bob","Steve the Legend Bob",plain,6,"",&56.14.1256.36-56,|(16)(14)(1456)
+"Guyhirn Bob","Guyhirn Bob",plain,6,"",&56.14.1256.36.12.36,|(12)(14)(1234)
+"Double Drepanocladus Fluitans Place","Double Drepanocladus Fluitans Place",plain,6,"",&56.14.1256.36.12.36,|14
+"Double Platt Bridge Bob","Double Platt Bridge Bob",plain,6,"",&56.14.1256.36.12.56,|(12)(14)(1234)
+"Wensley Bob","Wensley Bob",plain,6,"",&56.14.1256.36.12.56,|14
+"Zzzzz... Bob","Zzzzz... Bob",plain,6,"",&56.14.1256.36.12.56,|(16)(14)(1456)
+"Rockware Bob","Rockware Bob",plain,6,"",&56.14.1256.36.1234.56,|(12)(14)(1234)
+"Leyburn Place","Leyburn Place",plain,6,"",&56.14.1256.36.1234.56,|14
+"Peter Piper Picked a Peck of Pickled Peppers Place","Peter Piper Picked a Peck of Pickled Peppers Place",plain,6,"",&56.14.1256.36.1234.56,|(16)(14)(1456)
+"Carr Mill Dam Bob","Carr Mill Dam Bob",plain,6,"",&56.14.1256.36.34.56,|(12)(14)(1234)
+"Falstone Bob","Falstone Bob",plain,6,"",&56.14.1256.36.34.56,|14
+"The Ship Bob","The Ship Bob",plain,6,"",&56.14.1256.36.34.56,|(16)(14)(1456)
+"Haweswater Place","Haweswater Place",plain,6,"",&56.14.56.1236-16,|14
+"Doddington Bob","Doddington Bob",plain,6,"",&56.14.56.1236-36,|(12)(14)(1234)
+"Lobaria Pulmonaria Bob","Lobaria Pulmonaria Bob",plain,6,"",&56.14.56.1236-36,|14
+"Ashton-in-Makerfield Bob","Ashton-in-Makerfield Bob",plain,6,"",&56.14.56.1236-56,|(12)(14)(1234)
+"Stow Bob","Stow Bob",plain,6,"",&56.14.56.1236-56,|14
+"Smeagol Bob","Smeagol Bob",plain,6,"",&56.14.56.1236-56,|(16)(14)(1456)
+"Ten Mile Bank Bob","Ten Mile Bank Bob",plain,6,"",&56.14.56.1236.12.36,|(12)(14)(1234)
+"Lobaria Amplissima Place","Lobaria Amplissima Place",plain,6,"",&56.14.56.1236.12.36,|14
+"Bryn Bob","Bryn Bob",plain,6,"",&56.14.56.1236.12.56,|(12)(14)(1234)
+"Wall Bob","Wall Bob",plain,6,"",&56.14.56.1236.12.56,|14
+"Gollum Bob","Gollum Bob",plain,6,"",&56.14.56.1236.12.56,|(16)(14)(1456)
+"Billinge Beacon Bob","Billinge Beacon Bob",plain,6,"",&56.14.56.1236.1234.56,|(12)(14)(1234)
+"Whitrope Place","Whitrope Place",plain,6,"",&56.14.56.1236.1234.56,|14
+"Precious Place","Precious Place",plain,6,"",&56.14.56.1236.1234.56,|(16)(14)(1456)
+"Culcheth Bob","Culcheth Bob",plain,6,"",&56.14.56.1236.34.56,|(12)(14)(1234)
+"Fountainhall Bob","Fountainhall Bob",plain,6,"",&56.14.56.1236.34.56,|14
+"Bobby Bob","Bobby Bob",plain,6,"",&56.14.56.1236.34.56,|(16)(14)(1456)
+"Single Platt Bridge Bob","Single Platt Bridge Bob",plain,6,"",&56.14.56.16-16,|(12)(14)(1234)
+"Voe Bob","Voe Bob",plain,6,"",&56.14.56.16-56,|14
+"Papa Stour Bob","Papa Stour Bob",plain,6,"",&56.14.56.16.12.56,|14
+"Tingwall Place","Tingwall Place",plain,6,"",&56.14.56.16.1234.56,|14
+"Brington Bob","Brington Bob",plain,6,"",&56.14.56.16.14.56,|(12)(14)(1234)
+"Walls Bob","Walls Bob",plain,6,"",&56.14.56.16.34.56,|14
+"Flax Farm Bob","Flax Farm Bob",plain,6,"",&56.14.56.36-16,|(12)(14)(1234)
+"Graffham Water Bob","Graffham Water Bob",plain,6,"",&56.14.56.36-36,|(12)(14)(1234)
+"Lobaria Scrobiculata Bob","Lobaria Scrobiculata Bob",plain,6,"",&56.14.56.36-36,|14
+"Hindley Bob","Hindley Bob",plain,6,"",&56.14.56.36-56,|(12)(14)(1234)
+"Newcastleton Bob","Newcastleton Bob",plain,6,"",&56.14.56.36-56,|14
+"Emergency Stop Bob","Emergency Stop Bob",plain,6,"",&56.14.56.36-56,|(16)(14)(1456)
+"Pymore Bob","Pymore Bob",plain,6,"",&56.14.56.36.12.36,|(12)(14)(1234)
+"Lobaria Virens Bob","Lobaria Virens Bob",plain,6,"",&56.14.56.36.12.36,|14
+"Newton-le-Willows Bob","Newton-le-Willows Bob",plain,6,"",&56.14.56.36.12.56,|(12)(14)(1234)
+"Gilnockie Bob","Gilnockie Bob",plain,6,"",&56.14.56.36.12.56,|14
+"FCW Bob","FCW Bob",plain,6,"",&56.14.56.36.12.56,|(16)(14)(1456)
+"Lowton Bob","Lowton Bob",plain,6,"",&56.14.56.36.1234.56,|(12)(14)(1234)
+"Langholm Bob","Langholm Bob",plain,6,"",&56.14.56.36.1234.56,|14
+"Bubbles Bob","Bubbles Bob",plain,6,"",&56.14.56.36.1234.56,|(16)(14)(1456)
+"Abbotskerswell Bob","Abbotskerswell Bob",plain,6,"",&56.14.56.36.14.56,|(12)(14)(1234)
+"Coppull Bob","Coppull Bob",plain,6,"",&56.14.56.36.34.56,|(12)(14)(1234)
+"Steele Road Bob","Steele Road Bob",plain,6,"",&56.14.56.36.34.56,|14
+"Dinah Bob","Dinah Bob",plain,6,"",&56.14.56.36.34.56,|(16)(14)(1456)
+"Longsleddale Place","Longsleddale Place",plain,6,"",&56.1456-1236-16,|14
+"St Pandionia Bob","St Pandionia Bob",plain,6,"",&56.1456-1236-36,|(12)(14)(1234)
+"William Hartnell Bob","William Hartnell Bob",plain,6,"",&56.1456-1236-36,|14
+"Swydd-Ffynnon Bob","Swydd-Ffynnon Bob",plain,6,"",&56.1456-1236-56,|(12)(14)(1234)
+"Heriot Bob","Heriot Bob",plain,6,"",&56.1456-1236-56,|14
+"Rings End Bob","Rings End Bob",plain,6,"",&56.1456-1236.12.36,|(12)(14)(1234)
+"Double Patrick Troughton Place","Double Patrick Troughton Place",plain,6,"",&56.1456-1236.12.36,|14
+"Double Fairlie Bob","Double Fairlie Bob",plain,6,"",&56.1456-1236.12.56,|(12)(14)(1234)
+"Abbotsford Ferry Bob","Abbotsford Ferry Bob",plain,6,"",&56.1456-1236.12.56,|14
+"Pendre Bob","Pendre Bob",plain,6,"",&56.1456-1236.1234.56,|(12)(14)(1234)
+"Parkhouse Halt Place","Parkhouse Halt Place",plain,6,"",&56.1456-1236.1234.56,|14
+"Brynglas Bob","Brynglas Bob",plain,6,"",&56.1456-1236.34.56,|(12)(14)(1234)
+"Falahill Bob","Falahill Bob",plain,6,"",&56.1456-1236.34.56,|14
+"Single Fairlie Bob","Single Fairlie Bob",plain,6,"",&56.1456-16-16,|(12)(14)(1234)
+"Yell Bob","Yell Bob",plain,6,"",&56.1456-16-56,|14
+"Hillswick Bob","Hillswick Bob",plain,6,"",&56.1456-16.12.56,|14
+"Dale of Walls Place","Dale of Walls Place",plain,6,"",&56.1456-16.1234.56,|14
+"Benefield Bob","Benefield Bob",plain,6,"",&56.1456-16.14.56,|(12)(14)(1234)
+"Reverse Norfolk Punch Bob","Reverse Norfolk Punch Bob",plain,6,"",&56.1456-16.34.56,|14
+"Polmadie Bob","Polmadie Bob",plain,6,"",&56.1456-36-16,|(12)(14)(1234)
+"Hartford Bob","Hartford Bob",plain,6,"",&56.1456-36-36,|(12)(14)(1234)
+"Jon Pertwee Bob","Jon Pertwee Bob",plain,6,"",&56.1456-36-36,|14
+"Ysbyty-Ystwyth Bob","Ysbyty-Ystwyth Bob",plain,6,"",&56.1456-36-56,|(12)(14)(1234)
+"Riccarton Junction Bob","Riccarton Junction Bob",plain,6,"",&56.1456-36-56,|14
+"Mepal Bob","Mepal Bob",plain,6,"",&56.1456-36.12.36,|(12)(14)(1234)
+"Tom Baker Bob","Tom Baker Bob",plain,6,"",&56.1456-36.12.36,|14
+"Coed Craigyrogof Bob","Coed Craigyrogof Bob",plain,6,"",&56.1456-36.12.56,|(12)(14)(1234)
+"Bog Junction Bob","Bog Junction Bob",plain,6,"",&56.1456-36.12.56,|14
+"Dolgoch Bob","Dolgoch Bob",plain,6,"",&56.1456-36.1234.56,|(12)(14)(1234)
+"Scotby Bob","Scotby Bob",plain,6,"",&56.1456-36.1234.56,|14
+"Holne Bob","Holne Bob",plain,6,"",&56.1456-36.14.56,|(12)(14)(1234)
+"Abergynolwyn Bob","Abergynolwyn Bob",plain,6,"",&56.1456-36.34.56,|(12)(14)(1234)
+"Shankend Bob","Shankend Bob",plain,6,"",&56.1456-36.34.56,|14
+"Mears Ashby Bob","Mears Ashby Bob",plain,6,"",&56.1456.12.1236-16,|(12)(14)(1234)
+"Huntingdon Bob","Huntingdon Bob",plain,6,"",&56.1456.12.1236-36,|(12)(14)(1234)
+"Peter Davison Bob","Peter Davison Bob",plain,6,"",&56.1456.12.1236-36,|14
+"Ty'n-y-graig Bob","Ty'n-y-graig Bob",plain,6,"",&56.1456.12.1236-56,|(12)(14)(1234)
+"Crosby Garrett Bob","Crosby Garrett Bob",plain,6,"",&56.1456.12.1236-56,|14
+"Talyllyn Bob","Talyllyn Bob",plain,6,"",&56.1456.12.1236.34.56,|(12)(14)(1234)
+"Kirkby Stephen West Bob","Kirkby Stephen West Bob",plain,6,"",&56.1456.12.1236.34.56,|14
+"Fleet Hargate Bob","Fleet Hargate Bob",plain,6,"",&56.1456.12.36-36,|(12)(14)(1234)
+"Colin Baker Bob","Colin Baker Bob",plain,6,"",&56.1456.12.36-36,|14
+"Pontrhydygroes Bob","Pontrhydygroes Bob",plain,6,"",&56.1456.12.36-56,|(12)(14)(1234)
+"Thorneyburn Bob","Thorneyburn Bob",plain,6,"",&56.1456.12.36-56,|14
+"Friday Bridge Bob","Friday Bridge Bob",plain,6,"",&56.1456.12.36.12.36,|(12)(14)(1234)
+"Sylvester McCoy Place","Sylvester McCoy Place",plain,6,"",&56.1456.12.36.12.36,|14
+"Cors-goch Glan Teifi Bob","Cors-goch Glan Teifi Bob",plain,6,"",&56.1456.12.36.12.56,|(12)(14)(1234)
+"Spennithorne Bob","Spennithorne Bob",plain,6,"",&56.1456.12.36.12.56,|14
+"Afon Fathew Bob","Afon Fathew Bob",plain,6,"",&56.1456.12.36.1234.56,|(12)(14)(1234)
+"Constable Burton Place","Constable Burton Place",plain,6,"",&56.1456.12.36.1234.56,|14
+"Tywyn Bob","Tywyn Bob",plain,6,"",&56.1456.12.36.34.56,|(12)(14)(1234)
+"Tarset Bob","Tarset Bob",plain,6,"",&56.1456.12.36.34.56,|14
+"Rising Brook Bob","Rising Brook Bob",plain,6,"",&56.16-1236-36,|(12)(14)(1234)
+"Firs Farm Bob","Firs Farm Bob",plain,6,"",&56.16-1236-36,|14
+"Welle Manor Bob","Welle Manor Bob",plain,6,"",&56.16-1236.12.36,|(12)(14)(1234)
+"Little Pond Place","Little Pond Place",plain,6,"",&56.16-1236.12.36,|14
+"X-Moor Bob","X-Moor Bob",plain,6,"",&56.16-1236.14.56,|(12)(14)(1234)
+"Single Wreford Bob","Single Wreford Bob",plain,6,"",&56.16-16-16,|(12)(14)(1234)
+"Brampford Speke Bob","Brampford Speke Bob",plain,6,"",&56.16-16-36,|(12)(14)(1234)
+"Aby Bob","Aby Bob",plain,6,"",&56.16-16-56,|(12)(14)(1234)
+"Marston Bigott Bob","Marston Bigott Bob",plain,6,"",&56.16-16.12.36,|(12)(14)(1234)
+"Double Wreford Bob","Double Wreford Bob",plain,6,"",&56.16-16.12.56,|(12)(14)(1234)
+"Well Creek Bob","Well Creek Bob",plain,6,"",&56.16-16.1234.56,|(12)(14)(1234)
+"Brushford Bob","Brushford Bob",plain,6,"",&56.16-16.34.16,|(12)(14)(1234)
+"Newton next Toft Bob","Newton next Toft Bob",plain,6,"",&56.16-16.34.56,|(12)(14)(1234)
+"Aylesbeare Bob","Aylesbeare Bob",plain,6,"",&56.16-36-16,|(12)(14)(1234)
+"Doxey Bob","Doxey Bob",plain,6,"",&56.16-36-36,|(12)(14)(1234)
+"Elm House Bob","Elm House Bob",plain,6,"",&56.16-36-36,|14
+"Moss Pit Bob","Moss Pit Bob",plain,6,"",&56.16-36.12.36,|(12)(14)(1234)
+"Brickfield Cottages Bob","Brickfield Cottages Bob",plain,6,"",&56.16-36.12.36,|14
+"Zephyr Bob","Zephyr Bob",plain,6,"",&56.16-36.14.36,|(12)(14)(1234)
+"Umbrage over Upton Bob","Umbrage over Upton Bob",plain,6,"",&56.16-36.14.56,|(12)(14)(1234)
+"Vellow Bob","Vellow Bob",plain,6,"",&56.16.12.1236-16,|(12)(14)(1234)
+"Doorman Bob","Doorman Bob",plain,6,"",&56.16.12.1236-36,|(12)(14)(1234)
+"Poplar Farm Bob","Poplar Farm Bob",plain,6,"",&56.16.12.1236-36,|14
+"Quarme Bob","Quarme Bob",plain,6,"",&56.16.12.16-56,|(12)(14)(1234)
+"Minety Bob","Minety Bob",plain,6,"",&56.16.12.16.34.56,|(12)(14)(1234)
+"Prickley Green Bob","Prickley Green Bob",plain,6,"",&56.16.12.36-36,|(12)(14)(1234)
+"Rose Cottage Bob","Rose Cottage Bob",plain,6,"",&56.16.12.36-36,|14
+"Yenworthy Bob","Yenworthy Bob",plain,6,"",&56.16.12.36.12.16,|(12)(14)(1234)
+"Powderhouse Bob","Powderhouse Bob",plain,6,"",&56.16.12.36.12.36,|(12)(14)(1234)
+"Pigs Place","Pigs Place",plain,6,"",&56.16.12.36.12.36,|14
+"Clevedon St John Bob","Clevedon St John Bob",plain,6,"",&56.16.12.36.1234.16,|(12)(14)(1234)
+"Hobnob Bob","Hobnob Bob",plain,6,"",&56.16.12.36.14.56,|(12)(14)(1234)
+"Bastow Little Bob","Bastow Little Bob",plain,6,"",&-12,|(16)(14)(1456)
+"Kent Little Bob","Kent Little Bob",plain,6,"",&34.12,|(16)(14)(1456)
+"St Methodius Little Place","St Methodius Little Place",plain,6,"",&36.12,|14
+"Little Fransham Little Bob","Little Fransham Little Bob",plain,6,"",&34.16.34,|(12)(14)(1234)
+"Hinton Parva Little Bob","Hinton Parva Little Bob",plain,6,"",&-14-34,|(16)(14)(1456)
+"Little Bob","Little Bob",plain,6,"",&-16-14,|(12)(14)(1234)
+"Crayford Little Bob","Crayford Little Bob",plain,6,"",&-16-14,|(16)(14)(1456)
+"Barking Little Bob","Barking Little Bob",plain,6,"",&-16-34,|(12)(14)(1234)
+"Canterbury Little Bob","Canterbury Little Bob",plain,6,"",&34.16-14,|(12)(14)(1234)
+"Belvedere Little Bob","Belvedere Little Bob",plain,6,"",&34.16-34,|(12)(14)(1234)
+"St Lawrence Little Bob","St Lawrence Little Bob",plain,6,"",&36.14-14,|(12)(14)(1234)
+"Bramford Little Bob","Bramford Little Bob",plain,6,"",&36.14-34,|(12)(14)(1234)
+"Little Little Little Little Little Little Penultimus Little Place","Little Little Little Little Little Little Penultimus Little Place",plain,6,"",&-16-16.56,|(16)(14)(1456)
+"Very Little Bob","Very Little Bob",plain,6,"",-14-36
+"Chalfont Slow Course","Chalfont Slow Course",plain,6,"",&-14-1236-1236,|(12)(14)(1234)
+"Cottesmore Slow Course","Cottesmore Slow Course",plain,6,"",&-14-1236-1256,|(12)(14)(1234)
+"Dunwich Slow Course","Dunwich Slow Course",plain,6,"",&-14-1236-1456,|(12)(14)(1234)
+"Black Swan Slow Course","Black Swan Slow Course",plain,6,"",&-14-1236-16,|1236
+"Bow Road Bob","Bow Road Bob",plain,6,"",&-14-1236-56,|1256
+"Upton Park Bob","Upton Park Bob",plain,6,"",&-14-1236.12.56,|1256
+"Baker Street Slow Course","Baker Street Slow Course",plain,6,"",&-14-1236.34.1256,|(12)(14)(1234)
+"Plastic Swan Slow Course","Plastic Swan Slow Course",plain,6,"",&-14-1236.34.16,|1236
+"Horton Slow Course","Horton Slow Course",plain,6,"",&-14-16-1456,|(12)(14)(1234)
+"Snitterfield Slow Course","Snitterfield Slow Course",plain,6,"",&-14-36-1236,|(12)(14)(1234)
+"Adrian Parry Slow Course","Adrian Parry Slow Course",plain,6,"",&-14-36-1256,|(12)(14)(1234)
+"Wimbledon Bob","Wimbledon Bob",plain,6,"",&-14-36-56,|1256
+"Wormsley Slow Course","Wormsley Slow Course",plain,6,"",&-14-36.12.1236,|(12)(14)(1234)
+"King's Cross St Pancras Slow Course","King's Cross St Pancras Slow Course",plain,6,"",&-14-36.12.1256,|(12)(14)(1234)
+"Jobus Bob","Jobus Bob",plain,6,"",&-14-36.12.3456,|(16)(14)(1456)
+"Pudding Mill Lane Bob","Pudding Mill Lane Bob",plain,6,"",&-14-36.12.56,|1256
+"Harrow-on-the-Hill Slow Course","Harrow-on-the-Hill Slow Course",plain,6,"",&-14-36.1234.1256,|(12)(14)(1234)
+"Finchley Road Slow Course","Finchley Road Slow Course",plain,6,"",&-14-36.34.1256,|(12)(14)(1234)
+"Bolstone Slow Course","Bolstone Slow Course",plain,6,"",&-14.12.1236-1236,|(12)(14)(1234)
+"Old Street Slow Course","Old Street Slow Course",plain,6,"",&-14.12.1236-1256,|(12)(14)(1234)
+"Upminster Bridge Bob","Upminster Bridge Bob",plain,6,"",&-14.12.1236-56,|1256
+"Hampstead Slow Course","Hampstead Slow Course",plain,6,"",&-14.12.1236.34.1256,|(12)(14)(1234)
+"Hoarwithy Slow Course","Hoarwithy Slow Course",plain,6,"",&-14.12.36-1236,|(12)(14)(1234)
+"Arsenal Slow Course","Arsenal Slow Course",plain,6,"",&-14.12.36-1256,|(12)(14)(1234)
+"Dagenham East Bob","Dagenham East Bob",plain,6,"",&-14.12.36-56,|1256
+"East London Line Slow Course","East London Line Slow Course",plain,6,"",&-14.12.36.12.1256,|(12)(14)(1234)
+"Upney Bob","Upney Bob",plain,6,"",&-14.12.36.12.56,|1256
+"Earls Court Slow Course","Earls Court Slow Course",plain,6,"",&-14.12.36.1234.1256,|(12)(14)(1234)
+"Acton Town Slow Course","Acton Town Slow Course",plain,6,"",&-14.12.36.34.1256,|(12)(14)(1234)
+"Little Birch Slow Course","Little Birch Slow Course",plain,6,"",&-14.1256.1236-1236,|(12)(14)(1234)
+"The Castle Slow Course","The Castle Slow Course",plain,6,"",&-14.1256.1236-1256,|(12)(14)(1234)
+"Morden Bob","Morden Bob",plain,6,"",&-14.1256.1236-36,|1256
+"Little Dewchurch Slow Course","Little Dewchurch Slow Course",plain,6,"",&-14.1256.36-1236,|(12)(14)(1234)
+"The Plough Slow Course","The Plough Slow Course",plain,6,"",&-14.1256.36-1256,|(12)(14)(1234)
+"Camden Town Bob","Camden Town Bob",plain,6,"",&-14.1256.36-36,|1256
+"Hyde Park Corner Bob","Hyde Park Corner Bob",plain,6,"",&-14.1256.36.12.36,|1256
+"Northwood Hills Bob","Northwood Hills Bob",plain,6,"",&-14.56.1236-36,|1256
+"Sudbury Hill Bob","Sudbury Hill Bob",plain,6,"",&-14.56.1236.12.36,|1256
+"Grosmont Slow Course","Grosmont Slow Course",plain,6,"",&-14.56.36-1236,|(12)(14)(1234)
+"The Angel Slow Course","The Angel Slow Course",plain,6,"",&-14.56.36-1256,|(12)(14)(1234)
+"Kensal Green Bob","Kensal Green Bob",plain,6,"",&-14.56.36-36,|1256
+"Ewyas Harold Slow Course","Ewyas Harold Slow Course",plain,6,"",&-14.56.36.12.1236,|(12)(14)(1234)
+"The Dog Slow Course","The Dog Slow Course",plain,6,"",&-14.56.36.12.1256,|(12)(14)(1234)
+"Southwark Bob","Southwark Bob",plain,6,"",&-14.56.36.12.36,|1256
+"Jake Robert Slow Course","Jake Robert Slow Course",plain,6,"",&-1456-1236-1236,|(12)(14)(1234)
+"Canonford Slow Course","Canonford Slow Course",plain,6,"",&-1456-1236-1256,|(12)(14)(1234)
+"Blythburgh Slow Course","Blythburgh Slow Course",plain,6,"",&-1456-1236-1456,|(12)(14)(1234)
+"Metropolitan Line Bob","Metropolitan Line Bob",plain,6,"",&-1456-1236-36,|1256
+"Bow Church Bob","Bow Church Bob",plain,6,"",&-1456-1236-56,|1256
+"Piccadilly Line Bob","Piccadilly Line Bob",plain,6,"",&-1456-1236.12.36,|1256
+"East Ham Bob","East Ham Bob",plain,6,"",&-1456-1236.12.56,|1256
+"Vinedale Slow Course","Vinedale Slow Course",plain,6,"",&-1456-16-1456,|(12)(14)(1234)
+"Rhiannon Margaret Slow Course","Rhiannon Margaret Slow Course",plain,6,"",&-1456-36-1236,|(12)(14)(1234)
+"Eardisley Slow Course","Eardisley Slow Course",plain,6,"",&-1456-36-1256,|(12)(14)(1234)
+"Bakerloo Line Bob","Bakerloo Line Bob",plain,6,"",&-1456-36-36,|1256
+"Aldgate East Bob","Aldgate East Bob",plain,6,"",&-1456-36-56,|1256
+"Prior's Frome Slow Course","Prior's Frome Slow Course",plain,6,"",&-1456-36.12.1236,|(12)(14)(1234)
+"Durlow Common Slow Course","Durlow Common Slow Course",plain,6,"",&-1456-36.12.1256,|(12)(14)(1234)
+"Jubilee Line Bob","Jubilee Line Bob",plain,6,"",&-1456-36.12.36,|1256
+"District Line Bob","District Line Bob",plain,6,"",&-1456-36.12.56,|1256
+"Monkhide Slow Course","Monkhide Slow Course",plain,6,"",&-1456.12.1236-1236,|(12)(14)(1234)
+"Pixley Slow Course","Pixley Slow Course",plain,6,"",&-1456.12.1236-1256,|(12)(14)(1234)
+"Borough Bob","Borough Bob",plain,6,"",&-1456.12.1236-36,|1256
+"Upminster Bob","Upminster Bob",plain,6,"",&-1456.12.1236-56,|1256
+"Trumpet Slow Course","Trumpet Slow Course",plain,6,"",&-1456.12.36-1236,|(12)(14)(1234)
+"Aylton Slow Course","Aylton Slow Course",plain,6,"",&-1456.12.36-1256,|(12)(14)(1234)
+"Northern Line Bob","Northern Line Bob",plain,6,"",&-1456.12.36-36,|1256
+"Elm Park Bob","Elm Park Bob",plain,6,"",&-1456.12.36-56,|1256
+"Hounslow East Bob","Hounslow East Bob",plain,6,"",&-1456.12.36.12.36,|1256
+"Becontree Bob","Becontree Bob",plain,6,"",&-1456.12.36.12.56,|1256
+"Bringsty Common Slow Course","Bringsty Common Slow Course",plain,6,"",&-1456.1256.1236-1236,|(12)(14)(1234)
+"Edgware Slow Course","Edgware Slow Course",plain,6,"",&-1456.1256.1236-1256,|(12)(14)(1234)
+"Finchley Central Slow Course","Finchley Central Slow Course",plain,6,"",&-1456.1256.1236.34.1256,|(12)(14)(1234)
+"Risbury Slow Course","Risbury Slow Course",plain,6,"",&-1456.1256.36-1236,|(12)(14)(1234)
+"Russell Square Slow Course","Russell Square Slow Course",plain,6,"",&-1456.1256.36-1256,|(12)(14)(1234)
+"Turnham Green Slow Course","Turnham Green Slow Course",plain,6,"",&-1456.1256.36.12.1256,|(12)(14)(1234)
+"Leicester Square Slow Course","Leicester Square Slow Course",plain,6,"",&-1456.1256.36.1234.1256,|(12)(14)(1234)
+"Alperton Slow Course","Alperton Slow Course",plain,6,"",&-1456.1256.36.34.1256,|(12)(14)(1234)
+"Piccadilly Circus Slow Course","Piccadilly Circus Slow Course",plain,6,"",&-1456.56.1236-1256,|(12)(14)(1234)
+"Paddington Slow Course","Paddington Slow Course",plain,6,"",&-1456.56.1236.34.1256,|(12)(14)(1234)
+"Bromyard Slow Course","Bromyard Slow Course",plain,6,"",&-1456.56.36-1236,|(12)(14)(1234)
+"Green Park Slow Course","Green Park Slow Course",plain,6,"",&-1456.56.36-1256,|(12)(14)(1234)
+"Linley Green Slow Course","Linley Green Slow Course",plain,6,"",&-1456.56.36.12.1236,|(12)(14)(1234)
+"Euston Square Slow Course","Euston Square Slow Course",plain,6,"",&-1456.56.36.12.1256,|(12)(14)(1234)
+"Croxley Slow Course","Croxley Slow Course",plain,6,"",&-1456.56.36.1234.1256,|(12)(14)(1234)
+"Neasden Slow Course","Neasden Slow Course",plain,6,"",&-1456.56.36.34.1256,|(12)(14)(1234)
+"Maplin Slow Course","Maplin Slow Course",plain,6,"",&-16-1236-1236,|(12)(14)(1234)
+"Woodton Slow Course","Woodton Slow Course",plain,6,"",&-16-1236-1456,|(12)(14)(1234)
+"Arlesey Bob","Arlesey Bob",plain,6,"",&-16-16-1256,|(16)(14)(1456)
+"Clewer Slow Course","Clewer Slow Course",plain,6,"",&-16-16-1456,|(12)(14)(1234)
+"Wadenhoe Slow Course","Wadenhoe Slow Course",plain,6,"",&-16-16-3456,|(12)(14)(1234)
+"Cividale del Friuli Place","Cividale del Friuli Place",plain,6,"",&-16-16.34.1256,|(16)(14)(1456)
+"Lyddington Slow Course","Lyddington Slow Course",plain,6,"",&-16-36-1236,|(12)(14)(1234)
+"John de Petrestre Bob","John de Petrestre Bob",plain,6,"",&-16.1256.16-16,|1256
+"Edgware Road Slow Course","Edgware Road Slow Course",plain,6,"",&34.14-1236-1256,|(12)(14)(1234)
+"Chalfont & Latimer Bob","Chalfont & Latimer Bob",plain,6,"",&34.14-1236-36,|1256
+"Ruislip Bob","Ruislip Bob",plain,6,"",&34.14-1236.12.36,|1256
+"Ruislip Manor Bob","Ruislip Manor Bob",plain,6,"",&34.14-1236.1234.56,|1256
+"North Wembley Slow Course","North Wembley Slow Course",plain,6,"",&34.14-1236.34.1256,|(12)(14)(1234)
+"Chorleywood Bob","Chorleywood Bob",plain,6,"",&34.14-1236.34.56,|1256
+"Carey Slow Course","Carey Slow Course",plain,6,"",&34.14-36-1236,|(12)(14)(1234)
+"Dollis Hill Slow Course","Dollis Hill Slow Course",plain,6,"",&34.14-36-1256,|(12)(14)(1234)
+"Kenton Bob","Kenton Bob",plain,6,"",&34.14-36-36,|1256
+"West Harrow Slow Course","West Harrow Slow Course",plain,6,"",&34.14-36.12.1256,|(12)(14)(1234)
+"Wembley Park Bob","Wembley Park Bob",plain,6,"",&34.14-36.12.36,|1256
+"Blackfriars Slow Course","Blackfriars Slow Course",plain,6,"",&34.14-36.1234.1256,|(12)(14)(1234)
+"Willesden Green Bob","Willesden Green Bob",plain,6,"",&34.14-36.1234.56,|1256
+"Stanmore Slow Course","Stanmore Slow Course",plain,6,"",&34.14-36.34.1256,|(12)(14)(1234)
+"South Kenton Bob","South Kenton Bob",plain,6,"",&34.14-36.34.56,|1256
+"Ballingham Slow Course","Ballingham Slow Course",plain,6,"",&34.14.12.1236-1236,|(12)(14)(1234)
+"East Finchley Slow Course","East Finchley Slow Course",plain,6,"",&34.14.12.1236-1256,|(12)(14)(1234)
+"Clapham Common Bob","Clapham Common Bob",plain,6,"",&34.14.12.1236-36,|1256
+"Totteridge & Whetstone Slow Course","Totteridge & Whetstone Slow Course",plain,6,"",&34.14.12.1236.34.1256,|(12)(14)(1234)
+"Clapham South Bob","Clapham South Bob",plain,6,"",&34.14.12.1236.34.56,|1256
+"Welshpool Slow Course","Welshpool Slow Course",plain,6,"",&34.14.12.36-1236,|(12)(14)(1234)
+"North Ealing Slow Course","North Ealing Slow Course",plain,6,"",&34.14.12.36-1256,|(12)(14)(1234)
+"Woodside Park Bob","Woodside Park Bob",plain,6,"",&34.14.12.36-36,|1256
+"South Kensington Slow Course","South Kensington Slow Course",plain,6,"",&34.14.12.36.12.1256,|(12)(14)(1234)
+"Hounslow West Bob","Hounslow West Bob",plain,6,"",&34.14.12.36.12.36,|1256
+"Oakwood Slow Course","Oakwood Slow Course",plain,6,"",&34.14.12.36.1234.1256,|(12)(14)(1234)
+"Hatton Cross Bob","Hatton Cross Bob",plain,6,"",&34.14.12.36.1234.56,|1256
+"Arnos Grove Slow Course","Arnos Grove Slow Course",plain,6,"",&34.14.12.36.34.1256,|(12)(14)(1234)
+"Highgate Bob","Highgate Bob",plain,6,"",&34.14.12.36.34.56,|1256
+"The Bell Slow Course","The Bell Slow Course",plain,6,"",&34.14.1256.1236-1236,|(12)(14)(1234)
+"Victoria Line Bob","Victoria Line Bob",plain,6,"",&34.14.1256.1236-36,|1256
+"Malvern Slow Course","Malvern Slow Course",plain,6,"",&34.14.1256.36-1236,|(12)(14)(1234)
+"Chalk Farm Bob","Chalk Farm Bob",plain,6,"",&34.14.1256.36-36,|1256
+"Covent Garden Bob","Covent Garden Bob",plain,6,"",&34.14.1256.36.12.36,|1256
+"Pinner Bob","Pinner Bob",plain,6,"",&34.14.56.1236-36,|1256
+"Sudbury Town Bob","Sudbury Town Bob",plain,6,"",&34.14.56.1236.12.36,|1256
+"Kentchurch Slow Course","Kentchurch Slow Course",plain,6,"",&34.14.56.36-1236,|(12)(14)(1234)
+"The Bridge Slow Course","The Bridge Slow Course",plain,6,"",&34.14.56.36-1256,|(12)(14)(1234)
+"Queen's Park Bob","Queen's Park Bob",plain,6,"",&34.14.56.36-36,|1256
+"London Bridge Bob","London Bridge Bob",plain,6,"",&34.14.56.36.12.36,|1256
+"Amersham Bob","Amersham Bob",plain,6,"",&34.1456-1236-36,|1256
+"Stepney Green Bob","Stepney Green Bob",plain,6,"",&34.1456-1236-56,|1256
+"Hillingdon Place","Hillingdon Place",plain,6,"",&34.1456-1236.12.36,|1256
+"Plaistow Bob","Plaistow Bob",plain,6,"",&34.1456-1236.12.56,|1256
+"Stoke Edith Slow Course","Stoke Edith Slow Course",plain,6,"",&34.1456-36-1236,|(12)(14)(1234)
+"Tarrington Slow Course","Tarrington Slow Course",plain,6,"",&34.1456-36-1256,|(12)(14)(1234)
+"Harrow & Wealdstone Bob","Harrow & Wealdstone Bob",plain,6,"",&34.1456-36-36,|1256
+"Wimbledon Park Bob","Wimbledon Park Bob",plain,6,"",&34.1456-36-56,|1256
+"Canons Park Bob","Canons Park Bob",plain,6,"",&34.1456-36.12.36,|1256
+"Bromley-by-Bow Bob","Bromley-by-Bow Bob",plain,6,"",&34.1456-36.12.56,|1256
+"Easily Done! Slow Course","Easily Done! Slow Course",plain,6,"",&34.1456.12.1236-1236,|(12)(14)(1234)
+"Clapham North Bob","Clapham North Bob",plain,6,"",&34.1456.12.1236-36,|1256
+"Forden Slow Course","Forden Slow Course",plain,6,"",&34.1456.12.36-1236,|(12)(14)(1234)
+"High Barnet Bob","High Barnet Bob",plain,6,"",&34.1456.12.36-36,|1256
+"Hounslow Central Place","Hounslow Central Place",plain,6,"",&34.1456.12.36.12.36,|1256
+"Yearsett Slow Course","Yearsett Slow Course",plain,6,"",&34.1456.1256.1236-1236,|(12)(14)(1234)
+"Golders Green Slow Course","Golders Green Slow Course",plain,6,"",&34.1456.1256.1236-1256,|(12)(14)(1234)
+"Seven Sisters Bob","Seven Sisters Bob",plain,6,"",&34.1456.1256.1236-36,|1256
+"Hornchurch Bob","Hornchurch Bob",plain,6,"",&34.1456.1256.1236-56,|1256
+"Mill Hill East Slow Course","Mill Hill East Slow Course",plain,6,"",&34.1456.1256.1236.34.1256,|(12)(14)(1234)
+"Highbury & Islington Bob","Highbury & Islington Bob",plain,6,"",&34.1456.1256.1236.34.56,|1256
+"Edwyn Ralph Slow Course","Edwyn Ralph Slow Course",plain,6,"",&34.1456.1256.36-1236,|(12)(14)(1234)
+"Osterley Slow Course","Osterley Slow Course",plain,6,"",&34.1456.1256.36-1256,|(12)(14)(1234)
+"Hendon Central Bob","Hendon Central Bob",plain,6,"",&34.1456.1256.36-36,|1256
+"Dagenham Heathway Bob","Dagenham Heathway Bob",plain,6,"",&34.1456.1256.36-56,|1256
+"Barons Court Slow Course","Barons Court Slow Course",plain,6,"",&34.1456.1256.36.12.1256,|(12)(14)(1234)
+"Bounds Green Place","Bounds Green Place",plain,6,"",&34.1456.1256.36.12.36,|1256
+"Barking Bob","Barking Bob",plain,6,"",&34.1456.1256.36.12.56,|1256
+"Cockfosters Slow Course","Cockfosters Slow Course",plain,6,"",&34.1456.1256.36.1234.1256,|(12)(14)(1234)
+"Southgate Place","Southgate Place",plain,6,"",&34.1456.1256.36.1234.56,|1256
+"Ickenham Slow Course","Ickenham Slow Course",plain,6,"",&34.1456.1256.36.34.1256,|(12)(14)(1234)
+"Colindale Bob","Colindale Bob",plain,6,"",&34.1456.1256.36.34.56,|1256
+"Regent's Park Slow Course","Regent's Park Slow Course",plain,6,"",&34.1456.56.1236-1256,|(12)(14)(1234)
+"Barbican Bob","Barbican Bob",plain,6,"",&34.1456.56.1236-36,|1256
+"Northfields Place","Northfields Place",plain,6,"",&34.1456.56.1236.12.36,|1256
+"Boston Manor Place","Boston Manor Place",plain,6,"",&34.1456.56.1236.1234.56,|1256
+"Wembley Central Slow Course","Wembley Central Slow Course",plain,6,"",&34.1456.56.1236.34.1256,|(12)(14)(1234)
+"Aldgate Bob","Aldgate Bob",plain,6,"",&34.1456.56.1236.34.56,|1256
+"Munderfield Slow Course","Munderfield Slow Course",plain,6,"",&34.1456.56.36-1236,|(12)(14)(1234)
+"Swiss Cottage Slow Course","Swiss Cottage Slow Course",plain,6,"",&34.1456.56.36-1256,|(12)(14)(1234)
+"Warwick Avenue Bob","Warwick Avenue Bob",plain,6,"",&34.1456.56.36-36,|1256
+"Northwick Park Slow Course","Northwick Park Slow Course",plain,6,"",&34.1456.56.36.12.1256,|(12)(14)(1234)
+"Canning Town Bob","Canning Town Bob",plain,6,"",&34.1456.56.36.12.36,|1256
+"Rickmansworth Slow Course","Rickmansworth Slow Course",plain,6,"",&34.1456.56.36.1234.1256,|(12)(14)(1234)
+"West Ham Bob","West Ham Bob",plain,6,"",&34.1456.56.36.1234.56,|1256
+"Queensbury Slow Course","Queensbury Slow Course",plain,6,"",&34.1456.56.36.34.1256,|(12)(14)(1234)
+"Embankment Bob","Embankment Bob",plain,6,"",&34.1456.56.36.34.56,|1256
+"Dorney Slow Course","Dorney Slow Course",plain,6,"",&34.16-1236-1236,|(12)(14)(1234)
+"Utricularia Slow Course","Utricularia Slow Course",plain,6,"",&34.16-1236-1456,|(12)(14)(1234)
+"Udine Bob","Udine Bob",plain,6,"",&34.16-16-1256,|(16)(14)(1456)
+"Taff Slow Course","Taff Slow Course",plain,6,"",&34.16-16-1456,|(12)(14)(1234)
+"Irongate Slow Course","Irongate Slow Course",plain,6,"",&34.16-16-3456,|(12)(14)(1234)
+"Raduno MMXI Place","Raduno MMXI Place",plain,6,"",&34.16-16.34.1256,|(16)(14)(1456)
+"Winkfield Slow Course","Winkfield Slow Course",plain,6,"",&34.16-36-1236,|(12)(14)(1234)
+"Marylebone Slow Course","Marylebone Slow Course",plain,6,"",&3456.14-1236-1256,|(12)(14)(1234)
+"Moor Park Bob","Moor Park Bob",plain,6,"",&3456.14-1236-36,|1256
+"Raynors Lane Bob","Raynors Lane Bob",plain,6,"",&3456.14-1236.12.36,|1256
+"South Harrow Bob","South Harrow Bob",plain,6,"",&3456.14-1236.1234.56,|1256
+"Oxford Circus Slow Course","Oxford Circus Slow Course",plain,6,"",&3456.14-1236.34.1256,|(12)(14)(1234)
+"Northwood Bob","Northwood Bob",plain,6,"",&3456.14-1236.34.56,|1256
+"Tillington Common Slow Course","Tillington Common Slow Course",plain,6,"",&3456.14-36-1236,|(12)(14)(1234)
+"Kilburn Slow Course","Kilburn Slow Course",plain,6,"",&3456.14-36-1256,|(12)(14)(1234)
+"Stonebridge Park Bob","Stonebridge Park Bob",plain,6,"",&3456.14-36-36,|1256
+"North Harrow Slow Course","North Harrow Slow Course",plain,6,"",&3456.14-36.12.1256,|(12)(14)(1234)
+"West Hampstead Bob","West Hampstead Bob",plain,6,"",&3456.14-36.12.36,|1256
+"Warren Street Slow Course","Warren Street Slow Course",plain,6,"",&3456.14-36.1234.1256,|(12)(14)(1234)
+"St John's Wood Bob","St John's Wood Bob",plain,6,"",&3456.14-36.1234.56,|1256
+"Bond Street Slow Course","Bond Street Slow Course",plain,6,"",&3456.14-36.34.1256,|(12)(14)(1234)
+"Willesden Junction Bob","Willesden Junction Bob",plain,6,"",&3456.14-36.34.56,|1256
+"Ledgemoor Slow Course","Ledgemoor Slow Course",plain,6,"",&3456.14.12.1236-1236,|(12)(14)(1234)
+"Kentish Town Slow Course","Kentish Town Slow Course",plain,6,"",&3456.14.12.1236-1256,|(12)(14)(1234)
+"Tooting Bec Bob","Tooting Bec Bob",plain,6,"",&3456.14.12.1236-36,|1256
+"Burnt Oak Slow Course","Burnt Oak Slow Course",plain,6,"",&3456.14.12.1236.34.1256,|(12)(14)(1234)
+"Tooting Broadway Bob","Tooting Broadway Bob",plain,6,"",&3456.14.12.1236.34.56,|1256
+"Kingswood Slow Course","Kingswood Slow Course",plain,6,"",&3456.14.12.36-1236,|(12)(14)(1234)
+"Ealing Common Slow Course","Ealing Common Slow Course",plain,6,"",&3456.14.12.36-1256,|(12)(14)(1234)
+"Archway Bob","Archway Bob",plain,6,"",&3456.14.12.36-36,|1256
+"Gloucester Road Slow Course","Gloucester Road Slow Course",plain,6,"",&3456.14.12.36.12.1256,|(12)(14)(1234)
+"Heathrow Terminals 1,2,3 Bob","Heathrow Terminals 1,2,3 Bob",plain,6,"",&3456.14.12.36.12.36,|1256
+"Hammersmith Slow Course","Hammersmith Slow Course",plain,6,"",&3456.14.12.36.1234.1256,|(12)(14)(1234)
+"Heathrow Terminal 4 Bob","Heathrow Terminal 4 Bob",plain,6,"",&3456.14.12.36.1234.56,|1256
+"Knightsbridge Slow Course","Knightsbridge Slow Course",plain,6,"",&3456.14.12.36.34.1256,|(12)(14)(1234)
+"Tufnell Park Bob","Tufnell Park Bob",plain,6,"",&3456.14.12.36.34.56,|1256
+"Ridge Hill Slow Course","Ridge Hill Slow Course",plain,6,"",&3456.14.1256.1236-1236,|(12)(14)(1234)
+"Walthamstow Central Bob","Walthamstow Central Bob",plain,6,"",&3456.14.1256.1236-36,|1256
+"Blackhorse Road Bob","Blackhorse Road Bob",plain,6,"",&3456.14.1256.1236.34.56,|1256
+"Hegdon Slow Course","Hegdon Slow Course",plain,6,"",&3456.14.1256.36-1236,|(12)(14)(1234)
+"Belsize Park Bob","Belsize Park Bob",plain,6,"",&3456.14.1256.36-36,|1256
+"Caledonian Road Place","Caledonian Road Place",plain,6,"",&3456.14.1256.36.12.36,|1256
+"Holloway Road Place","Holloway Road Place",plain,6,"",&3456.14.1256.36.1234.56,|1256
+"Brent Cross Bob","Brent Cross Bob",plain,6,"",&3456.14.1256.36.34.56,|1256
+"Preston Road Bob","Preston Road Bob",plain,6,"",&3456.14.56.1236-36,|1256
+"Park Royal Place","Park Royal Place",plain,6,"",&3456.14.56.1236.12.36,|1256
+"South Ealing Place","South Ealing Place",plain,6,"",&3456.14.56.1236.1234.56,|1256
+"Moorgate Bob","Moorgate Bob",plain,6,"",&3456.14.56.1236.34.56,|1256
+"Nupton Slow Course","Nupton Slow Course",plain,6,"",&3456.14.56.36-1236,|(12)(14)(1234)
+"Dinmore Slow Course","Dinmore Slow Course",plain,6,"",&3456.14.56.36-1256,|(12)(14)(1234)
+"Kilburn Park Bob","Kilburn Park Bob",plain,6,"",&3456.14.56.36-36,|1256
+"Canada Water Bob","Canada Water Bob",plain,6,"",&3456.14.56.36.12.36,|1256
+"Canary Wharf Bob","Canary Wharf Bob",plain,6,"",&3456.14.56.36.1234.56,|1256
+"Maida Vale Bob","Maida Vale Bob",plain,6,"",&3456.14.56.36.34.56,|1256
+"Llangua Slow Course","Llangua Slow Course",plain,6,"",&3456.1456-36-1236,|(12)(14)(1234)
+"Rowlstone Slow Course","Rowlstone Slow Course",plain,6,"",&3456.1456-36-1256,|(12)(14)(1234)
+"White Rocks Slow Course","White Rocks Slow Course",plain,6,"",&3456.1456.12.1236-1236,|(12)(14)(1234)
+"Bagwyllydiart Slow Course","Bagwyllydiart Slow Course",plain,6,"",&3456.1456.12.36-1236,|(12)(14)(1234)
+"Brimpton Slow Course","Brimpton Slow Course",plain,6,"",&56.14-1236-1236,|(12)(14)(1234)
+"Burlingjobb Slow Course","Burlingjobb Slow Course",plain,6,"",&56.14-1236-1256,|(12)(14)(1234)
+"Wenhaston Slow Course","Wenhaston Slow Course",plain,6,"",&56.14-1236-1456,|(12)(14)(1234)
+"Harlesden Slow Course","Harlesden Slow Course",plain,6,"",&56.14-1236.34.1256,|(12)(14)(1234)
+"Portway Slow Course","Portway Slow Course",plain,6,"",&56.14-36-1236,|(12)(14)(1234)
+"Hergest Ridge Slow Course","Hergest Ridge Slow Course",plain,6,"",&56.14-36-1256,|(12)(14)(1234)
+"Mansell Lacy Slow Course","Mansell Lacy Slow Course",plain,6,"",&56.14-36.12.1236,|(12)(14)(1234)
+"St James's Park Slow Course","St James's Park Slow Course",plain,6,"",&56.14-36.12.1256,|(12)(14)(1234)
+"Watford Slow Course","Watford Slow Course",plain,6,"",&56.14-36.1234.1256,|(12)(14)(1234)
+"Kingsbury Slow Course","Kingsbury Slow Course",plain,6,"",&56.14-36.34.1256,|(12)(14)(1234)
+"Credenhill Slow Course","Credenhill Slow Course",plain,6,"",&56.14.12.1236-1236,|(12)(14)(1234)
+"Bank Slow Course","Bank Slow Course",plain,6,"",&56.14.12.1236-1256,|(12)(14)(1234)
+"West Finchley Slow Course","West Finchley Slow Course",plain,6,"",&56.14.12.1236.34.1256,|(12)(14)(1234)
+"Yarsop Slow Course","Yarsop Slow Course",plain,6,"",&56.14.12.36-1236,|(12)(14)(1234)
+"Finsbury Park Slow Course","Finsbury Park Slow Course",plain,6,"",&56.14.12.36-1256,|(12)(14)(1234)
+"Shoreditch Slow Course","Shoreditch Slow Course",plain,6,"",&56.14.12.36.12.1256,|(12)(14)(1234)
+"Holborn Slow Course","Holborn Slow Course",plain,6,"",&56.14.12.36.1234.1256,|(12)(14)(1234)
+"Eastcote Slow Course","Eastcote Slow Course",plain,6,"",&56.14.12.36.34.1256,|(12)(14)(1234)
+"Chadnor Slow Course","Chadnor Slow Course",plain,6,"",&56.14.1256.1236-1236,|(12)(14)(1234)
+"Eaton Hill Slow Course","Eaton Hill Slow Course",plain,6,"",&56.14.1256.1236-1256,|(12)(14)(1234)
+"Westhope Slow Course","Westhope Slow Course",plain,6,"",&56.14.1256.36-1236,|(12)(14)(1234)
+"Shucknall Slow Course","Shucknall Slow Course",plain,6,"",&56.14.1256.36-1256,|(12)(14)(1234)
+"Pyon Slow Course","Pyon Slow Course",plain,6,"",&56.14.56.36-1236,|(12)(14)(1234)
+"Adzor Slow Course","Adzor Slow Course",plain,6,"",&56.14.56.36-1256,|(12)(14)(1234)
+"Garnons Slow Course","Garnons Slow Course",plain,6,"",&56.14.56.36.12.1236,|(12)(14)(1234)
+"Sutton Slow Course","Sutton Slow Course",plain,6,"",&56.14.56.36.12.1256,|(12)(14)(1234)
+"Turnant Slow Course","Turnant Slow Course",plain,6,"",&56.1456-36-1236,|(12)(14)(1234)
+"Llanveynoe Slow Course","Llanveynoe Slow Course",plain,6,"",&56.1456-36-1256,|(12)(14)(1234)
+"Cwmyoy Slow Course","Cwmyoy Slow Course",plain,6,"",&56.1456-36.12.1236,|(12)(14)(1234)
+"Walterstone Slow Course","Walterstone Slow Course",plain,6,"",&56.1456-36.12.1256,|(12)(14)(1234)
+"Garway Hill Slow Course","Garway Hill Slow Course",plain,6,"",&56.1456.12.1236-1236,|(12)(14)(1234)
+"Wormbridge Slow Course","Wormbridge Slow Course",plain,6,"",&56.1456.12.1236-1256,|(12)(14)(1234)
+"Vowchurch Slow Course","Vowchurch Slow Course",plain,6,"",&56.1456.12.36-1236,|(12)(14)(1234)
+"Craswall Slow Course","Craswall Slow Course",plain,6,"",&56.1456.12.36-1256,|(12)(14)(1234)
+"Sugar of Lead Bob","Sugar of Lead Bob",plain,6,"",-14-1236-56-1236-1456-1256
+"Monkshood Bob","Monkshood Bob",plain,6,"",-14-1236.12.56.12.1236-1456-1256
+"Double Cambridge Cyclic Bob","Double Cambridge Cyclic Bob",plain,6,"",-14-16-56-36-16-12
+"Wolf's Bane Bob","Wolf's Bane Bob",plain,6,"",-14-36-56-36-1456-1256
+"Pharmacolite Bob","Pharmacolite Bob",plain,6,"",-14-36.12.56.12.36-1456-1256
+"Blue Vitriol Bob","Blue Vitriol Bob",plain,6,"",-14.12.1236-56-1236.12.1456-1256
+"Prussic Acid Bob","Prussic Acid Bob",plain,6,"",-14.12.36-56-36.12.1456-1256
+"Caustic Potash Bob","Caustic Potash Bob",plain,6,"",-14.12.36.12.56.12.36.12.1456-1256
+"Bishopthorpe Bob","Bishopthorpe Bob",plain,6,"",-16-1236-36.12.36-16-12
+"Roncobello Place","Roncobello Place",plain,6,"",34.16-1236-1236-16-16.34.16
+"New College Little Bob","New College Little Bob",plain,6,"",-14-14-16-12
+"Christ Church Little Bob","Christ Church Little Bob",plain,6,"",-16-14-14-12
+"Deadly Nightshade Bob","Deadly Nightshade Bob",plain,6,"",-14-1236-56-1236-14.56.12
+"Nightshade Bob","Nightshade Bob",plain,6,"",-14-1236.12.56.12.1236-14.56.12
+"Dog's Mercury Bob","Dog's Mercury Bob",plain,6,"",-14-36-56-36-14.56.12
+"Strychnine Bob","Strychnine Bob",plain,6,"",-14-36.12.56.12.36-14.56.12
+"Allantotoxiam Bob","Allantotoxiam Bob",plain,6,"",-14.12.1236-56-1236.12.14.56.12
+"Bitter Almond Bob","Bitter Almond Bob",plain,6,"",-14.12.36-56-36.12.14.56.12
+"Fool's Parsley Bob","Fool's Parsley Bob",plain,6,"",-14.12.36.12.56.12.36.12.14.56.12
+"Belladonna Bob","Belladonna Bob",plain,6,"",-1456-1236-56-1236-14-12
+"Luna Caustic Bob","Luna Caustic Bob",plain,6,"",-1456-1236.12.56.12.1236-14-12
+"Meadow Saffron Bob","Meadow Saffron Bob",plain,6,"",-1456-36-56-36-14-12
+"Water Hemlock Bob","Water Hemlock Bob",plain,6,"",-1456-36.12.56.12.36-14-12
+"Thorn Apple Bob","Thorn Apple Bob",plain,6,"",-1456.12.1236-56-1236.12.14-12
+"Phosphorus Bob","Phosphorus Bob",plain,6,"",-1456.12.36-56-36.12.14-12
+"Caustic Alkali Bob","Caustic Alkali Bob",plain,6,"",-1456.12.36.12.56.12.36.12.14-12
+"Oriel College Little Bob","Oriel College Little Bob",plain,6,"",-14-14-16-1234
+"Exeter College Little Bob","Exeter College Little Bob",plain,6,"",-16-14-14-1234

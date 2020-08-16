@@ -1,0 +1,119 @@
+Differential Little Plain Caters methods (treble to 5ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells
+
+17666	Tabernacle Differential Little Bob	7.1.7.1.	3456789	1	132567498	Spliced
+
+Differential Little Plain Royal methods (treble to 8ths)
+
+No.	Name	Notation	hl	le	lh	Handbells	RW ref
+
+17667	Burford Differential Little Bob	-10-10-10-	18	12	1795038264	Spliced	32/562
+
+Differential Surprise Royal methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17668	Circle Master Differential	-34-14-12-1230-14-50-16-70-18-	90	10	1795038264	Spliced	09/709
+17669	Dr No Differential	-30-14-12-30.14-1270.58.16-16.70.16.78-	90	12	1860492735	Spliced	03/466
+17670	Lundy Differential	-30-14-56-36.14-34.50.16-16.70-16-	70	12	1860492735	Spliced	10/666
+17671	Sgurr Differential	-50-14.50-12.30-34-50.16-16.70-16-	70	12	1860492735	Spliced	09/331
+17672	Temple Meads Differential	-50-14.50-50.36.14-70.58.16-16.70-16-	90	12	1795038264	Spliced	09/709
+17673	Carthage Differential	30-50.14-12-30-14-50-14-50-14-	50	12	1795038264	Spliced	08/942
+17674	Clifford's Tower Differential	30-50.14-50-16-34-30.14-14.50.14-14.	50	12	1795038264	Spliced	03/297
+
+Twin-hunt differential Little Hybrid Royal methods
+                (hunt bell's path 2 1 2  1 1  2 2  1 1    2 3    4  3 4  4    3 2    1 1  2 3  4 4  3 2)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17675	Nick Nack Differential Little	-34-14-12-1470-1470.58-58.1470-1470-12-14-34-10	4230189675	Spliced	04/83
+
+Differential Little Plain Maximus methods (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17676	Redback Differential Little Place	-	123T	1T	1628403T5E79	Spliced	04/1116
+17677	Slinkier Differential Little Bob	36.	125T	1T	1523408T6E79	Spliced	01/755 02/723
+17678	Slink Differential Little Place	56.	123T	1T	1523408T6E79	Spliced	00/251 02/723
+
+Differential Little Plain Maximus methods (treble to 5ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17679	Zeus Differential Little Bob	3T.16.5T.16.	5T	1T	14523T0E8967	Spliced	07/983
+
+Differential Little Plain Maximus methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17680	Ruby Differential Little Bob	-1456-1T-	56	1T	14523T0E8967	Spliced	04/1188
+17681	Pippin Differential Little Bob	-149T-169T.70.	1256	1T	13654T20E897	Spliced	04/1255
+
+Non-palindromic triple-hunt differential Little Plain Maximus methods (treble to 4ths)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17682	RedBlock Differential Little Bob	-14.56.1490.58.14-129T	134276859T0E	Spliced	11/989
+
+Differential Little Alliance Maximus methods
+                                  (treble's path 1 2  1     1)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17683	Channel Tunnel Rail Link Differential Little	36.5T.	16	1T	14523T0E8967	Spliced	04/396
+
+Differential Little Alliance Maximus methods
+                 (treble's path 1 2 3  4 5  4  4    5  5)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17684	Trinity Differential Little	-1T-1T.36.145T.36.	5T	1T	176583204T9E	Spliced	10/545
+
+Four-hunt differential Alliance Maximus methods (treble dodging in 1-2)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17685	Chain-link Differential	34-56.14.78.16.90.18.ET.10-1T-	ET	1T	10E89674523T	Spliced	03/127
+
+Four-hunt differential Little Alliance Maximus methods
+                  (treble's path 1 2 1  2 2  1 1  2  3  3)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17686	Mandarin Differential Little	-3T-12-1T.36.1T.	36	1T	1967852340ET	Spliced	03/1091
+
+Differential Little Treble Place Maximus methods
+                (treble's path 1 2 3  4 4  3  2  1  1)
+
+No.	Name	Notation	hl	le	lh	Handbells	RW ref
+
+17687	Slinky Differential Little	-14-14.5T.16.3T.	16	1T	14523ET90786	Spliced	99/875 02/723
+
+Differential Little Treble Place Maximus methods
+               (treble's path 1 2 2    1 1)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17688	Poppy Differential Little	-1238-	18	1T	176583204T9E	Spliced	06/205
+
+Four-hunt differential Little Hybrid Maximus methods
+                      (treble's path 1 2    1  1    2  1    2 3  3    2  1 2    1  1    2  1)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17689	Space Oddity Differential Little	3490.58.149T.58.3670-1T.3490.1T-3670.58.149T.58-	108E9674253T	Spliced	05/597
+
+Differential Little Surprise Sixteen methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17690	Glazgow Differential Little	36-56.14.5D-5D.36-14-	36	1D	1795E3A2C4D6B8T0	Spliced	10/1317
+
+Differential Little Treble Place Sixteen methods
+                  (treble's path 1 2  3  3  2  1  1)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17691	Slinkety Differential Little	36.1D.36.1D.56.	1D	1B	14523CDABET90867	Spliced	10/1317
+

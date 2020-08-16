@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StrikingAnalysis</class>
+ <widget class="QDialog" name="StrikingAnalysis">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>762</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Striking Analysis</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="StrikingAnalysisInfo">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="MovingAverage">
+      <attribute name="title">
+       <string>Graph</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QComboBox" name="MovingAverageSensor"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="MovingAverageStatistic">
+           <item>
+            <property name="text">
+             <string>Average error</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Standard dev</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="MovingAverageToggleAxis">
+           <property name="text">
+            <string>Toggle Y-axis %/ms</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="MovingAverageZoomIn">
+           <property name="text">
+            <string>Zoom in</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="MovingAverageZoomOut">
+           <property name="text">
+            <string>Zoom out</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Sample length:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="MovingAverageLength">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="value">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="MovingAverageGraphicsView" name="MovingAverageGraphic"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="t2">
+      <attribute name="title">
+       <string>Striking</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Statistics</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Save</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="Close">
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MovingAverageGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>movingaveragegraphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Close</sender>
+   <signal>clicked()</signal>
+   <receiver>StrikingAnalysis</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>286</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>-11</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

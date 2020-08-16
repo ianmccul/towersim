@@ -1,0 +1,39 @@
+Caters principles (2 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17417	Original	9.1	241638597	1973-10-21	Blackburn Cathedral	73/981
+
+Caters principles (6 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+17418	Erin	9.3.1.3.1.3	241638597	1909-07-12	Tynemouth	1927-08-22	BN V28/271 RW 27/549
+
+Caters principles (10 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17419	Collatz	9.5.1.5.1.5.1.5.1.5	241638597	2011-04-30	Haslemere	11/580
+
+Caters principles (12 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+17420	Stedman	3.1.9.3.1.3.1.3.9.1.3.1	634829175	1787-05-28	Horsleydown	1855-01-04	58/699
+17421	Birmingham Carter	3.1.9.3.1.3.1.3.9.1.3.9	462318597	1982-08-03	Birmingham, St Martin		82/779
+17422	Carter	9.3.1.3.9.1.3.5.3.5.3.1	681249375	1984-08-01	Worcester, All Saints		84/753
+17423	Groton	9.5.3.5.3.5.1.5.3.5.3.5	412638597	1994-08-21	Groton, MA		94/952
+
+Caters principles (19 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17424	Flada	3.1.3.1.3.569.1.569.1.5.9.145.9.145.7.9.7.9.7	234567891	2004-05-15	Oxford, St Thomas the Martyr	04/565
+
+Caters principles (24 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17425	Anniversary	5.1.9.5.1.5.1.5.9.1.5.1.5.1.9.5.1.5.1.5.9.1.5.3	287693541	1997-11-24	Oxford, St Thomas the Martyr	98/61
+

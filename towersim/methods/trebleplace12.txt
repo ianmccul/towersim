@@ -1,0 +1,6 @@
+"Nightingale","Nightingale",trebleplace,12,"",&34-34.1T.34-34.1T.34-34.1T.34-34.1T.34-34.1T.34-34.1T,|(12)(14)(1234)
+"Alma Little","Alma Little",trebleplace,12,"",&3T.12-1T,|(12)(14)(1234)
+"Metis Little","Metis Little",trebleplace,12,"",&5T.12.34.1T,|(12)(14)(1234)
+"Balaclava Little","Balaclava Little",trebleplace,12,"",&-5T-14.5T.14-34,|(1T)(10)(10ET)
+"Europa Little","Europa Little",trebleplace,12,"",&-1T-145T-1478.3690.12,|(1T)(10)(10ET)
+"Hussar Little","Hussar Little",trebleplace,12,"",&56-56.1T.34-34.1T.34-34.1T.34-34.1T.34-34.10,|(1T)(10)(10ET)

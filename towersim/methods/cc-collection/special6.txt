@@ -1,0 +1,10 @@
+Twin-hunt Minor methods (a)
+
+No.     Name    Notation        hl      lh      Tower bells     Place   Handbells       RW ref
+
+1480    St Thecla Bob   -16-16-36.      12      124563                          91/1171
+1481    New Bob 36.14-16-36     -       p                               08/942
+1482    Reverse Canterbury Pleasure Place       36.1456-16-16   -       q                               01/358
+1483    St Martin's Bob 36.16-16-1236   -       q                               08/942
+1484    Grandsire       36.16-16-16     -       p       1809-01-02      Eccles  1948-03-30      48/169
+1485    St Simon's Bob  36.16-16-36     -       q                      		08/942

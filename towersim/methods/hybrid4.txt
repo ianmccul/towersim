@@ -1,0 +1,16 @@
+"Wader Wodon","Wader Wodon",hybrid,4,"",-14-12.14.34
+"Ypsen Harpen","Ypsen Harpen",hybrid,4,"",-14.12-14.34
+"Lathors Cure","Lathors Cure",hybrid,4,"",34.14-12.14-
+"Smod Hole Inn","Smod Hole Inn",hybrid,4,"",34.14.12-14-
+"Cherington","Cherington",hybrid,4,"",-14-14-14.34
+"Stanway","Stanway",hybrid,4,"",-14-34-14.34
+"Wyck Rissington","Wyck Rissington",hybrid,4,"",-14.12.34.12.14.34
+"Elmstone Hardwicke","Elmstone Hardwicke",hybrid,4,"",34.14-14-14-
+"Daglingworth","Daglingworth",hybrid,4,"",34.14-34-14-
+"Clearwell","Clearwell",hybrid,4,"",34.14.12.34.12.14-
+"Parsley","Parsley",hybrid,4,"",-14-12.14-12
+"Rosemary","Rosemary",hybrid,4,"",-14-12.14-14
+"Sage","Sage",hybrid,4,"",-14.12-14-12
+"Thyme","Thyme",hybrid,4,"",-14.12-14-14
+"Rhubarb","Rhubarb",hybrid,4,"",34.14-12.14.34.12
+"Custard","Custard",hybrid,4,"",34.14.12-14.34.12

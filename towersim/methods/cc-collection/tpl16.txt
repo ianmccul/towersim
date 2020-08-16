@@ -1,0 +1,7 @@
+Little Treble Place Sixteen methods
+  (treble's path 1 2 1  2 3  4  3 4  5  6  5 6  7  8  7 8    9  10 9 10 11 12 12 11 11)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17122	Ariel Little	-5D-14.5D-12.3D.14-12.5D.14-369D.70.18-18.9T.18.ET.18.	ED	1D	k1	Spliced	04/565
+

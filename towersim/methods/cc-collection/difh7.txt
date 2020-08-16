@@ -1,0 +1,19 @@
+Differential Plain Triples methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+17662	Sole Differential Bob	7.147.7.3.7.345.	7	1	1647253	2005-09-24	Tanworth in Arden	05/630 990
+
+Differential Little Plain Triples methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17663	Baldrick Differential Little Bob	7.1.7.	147	127	1647253	Spliced	04/374
+
+Differential Alliance Triples methods
+             (treble's path 1 2 3 4 5 6 5   6 7 7 7)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17664	Blackadder Differential	7.1.7.1.7.347.7.1.7.	347	127	1647253	Spliced	04/374
+

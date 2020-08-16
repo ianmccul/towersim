@@ -1,0 +1,9 @@
+"Original","Original",principle,9,"",9.1
+"Erin","Erin",principle,9,"",9.3.1.3.1.3
+"Collatz","Collatz",principle,9,"",9.5.1.5.1.5.1.5.1.5
+"Stedman","Stedman",principle,9,"",3.1.9.3.1.3.1.3.9.1.3.1
+"Birmingham Carter","Birmingham Carter",principle,9,"",3.1.9.3.1.3.1.3.9.1.3.9
+"Carter","Carter",principle,9,"",9.3.1.3.9.1.3.5.3.5.3.1
+"Groton","Groton",principle,9,"",9.5.3.5.3.5.1.5.3.5.3.5
+"Flada","Flada",principle,9,"",3.1.3.1.3.569.1.569.1.5.9.145.9.145.7.9.7.9.7
+"Anniversary","Anniversary",principle,9,"",5.1.9.5.1.5.1.5.9.1.5.1.5.1.9.5.1.5.1.5.9.1.5.3

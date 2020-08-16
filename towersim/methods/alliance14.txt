@@ -1,0 +1,5 @@
+"Old Milverton","Old Milverton Alliance",alliance,14,"",&-5B-14.5B-5B.36.147B.58.16.7B-1T-EB-1B,|(1B)(1T)(1TAB)
+"Maypole","Maypole Alliance",alliance,14,"",&-5B-14.5B-5B.36.147B.58.169B.70.18EB.9T.10-10.EB-10-1B,|(1B)(1T)(1TAB)
+"Cranesthorpe","Cranesthorpe Alliance",alliance,14,"",&-5B-14.5B-5B.36.147B.58.16.70-9B.10-10.EB.10-10-10.EB,|(1B)(1T)(1TAB)
+"Akenfield","Akenfield Alliance",alliance,14,"",&-5B-14.5B-5B.36.147B.58.169B.70.18.9B.10-10.EB.10-10-10.EB,|(1B)(1T)(1TAB)
+"Linx Little","Linx Little Alliance",alliance,14,"",&-1B-14.36.5B.16.5B.36,|(1B)(1T)(1TAB)

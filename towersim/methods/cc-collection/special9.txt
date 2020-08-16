@@ -1,0 +1,133 @@
+Twin-hunt Caters methods (a)
+
+No.     Name    Notation        hl      lh      Tower bells     Place   Handbells       RW ref
+
+3339    Wrington Bob    3.1.5.1.7.1.349.1.349.  5       a       Spliced                 73/233
+3340    Beretun Bob     3.1.5.1.7.1.349.1.9.    5       a       Spliced                 73/189
+3341    Single Oxford Bob       3.1.5.1.7.1.9.1.9.      1       c       1966-08-29      Westminster, St Clement Danes           66/659
+3342    Cheltenham Bob  3.1.5.1.7.3.149.5.149.  7       f       Spliced                 73/189
+3343    Hereward Bob    3.1.5.1.7.3.9.5.9.      1       e       2000-04-21      Nottingham, St Mary             73/189 00/550
+3344    Double Oxford Bob       3.1.5.1.7.3.9.5.9.      7       f       1980-05-05      Wymondham (Norfolk)             73/189 80/488
+3345    Bebington Bob   3.1.5.1.9.3.129.3.149.  7       d       Spliced                 73/189
+3346    Colville Bob    3.1.5.1.9.3.149.5.149.  5       f       Spliced                 73/189
+3347    Daresbury Bob   3.1.5.1.9.3.9.1.569.    7       d       Spliced                 73/189
+3348    Winchester Bob  3.1.5.1.9.3.9.1.9.      1       c       1965-12-12      Prittlewell             65/885
+3349    Marlborough Bob 3.1.5.1.9.3.9.1.9.      7       d       1984-01-14      Wednesbury, St Bartholomew              73/189 84/170
+3350    Accrington Bob  3.1.5.1.9.3.9.145.369.  7       d       Spliced                 73/233
+3351    Cholmondeley Bob        3.1.5.1.9.3.9.3.169.    3       e       Spliced                 73/189 87/558
+3352    Single Mancroft Bob     3.1.5.169.7.1.9.1.9.    1       d       Spliced                 73/189
+3353    Newbury Bob     3.1.5.169.7.1.9.3.569.  1       b       Spliced                 73/233
+3354    Double Mancroft Bob     3.1.5.169.7.3.149.5.9.  7       a       Spliced                 73/189
+3355    Llandaff Bob    3.1.7.1.7.3.129.3.149.  5       a       Spliced                 73/233
+3356    Gadebridge Bob  3.1.7.1.7.3.9.1.349.    5       a       Spliced                 73/189
+3357    Longney Bob     3.1.7.1.7.3.9.1.9.      5       a       Spliced                 73/189
+3358    Warnham Bob     3.1.9.1.7.1.349.5.149.  3       c       Spliced                 73/189
+3359    Richmond Bob    3.1.9.1.7.1.9.1.9.      3       b       Spliced                 73/189
+3360    Hampton Bob     3.1.9.1.7.1.9.5.129.    7       d       Spliced                 73/189
+3361    Edmonton Bob    3.1.9.1.7.1.9.5.9.      1       c       Spliced                 73/189
+3362    Chesterfield Bob        3.1.9.1.7.1.9.5.9.      7       d       Spliced                 73/189
+3363    Malpas Bob      3.1.9.1.7.3.129.5.149.  7       d       Spliced                 73/189
+3364    Nelson Bob      3.1.9.1.7.3.149.3.169.  7       d       Spliced                 73/189
+3365    Fulbeck Bob     3.1.9.1.9.1.9.1.349.    7       b       Spliced                 73/189
+3366    Hackington Bob  3.1.9.1.9.1.9.1.569.    7       b       Spliced                 73/189
+3367    Grandsire       3.1.9.1.9.1.9.1.9.      1       a       1717-01-11      London, St Bride, Fleet Street  1877-03-12      59/202
+3368    Double Grandsire        3.1.9.1.9.1.9.1.9.      7       b       1733-03-01      London, St Bride, Fleet Street          59/202
+3369    Regina Bob      3.1.9.1.9.1.9.145.369.  7       b       Spliced                 73/189
+3370    Wymondham Bob   3.1.9.1.9.1.9.3.169.    3       c       Spliced                 73/189
+3371    Warminster Bob  3.1.9.1.9.1.9.5.129.    5       d       Spliced                 73/189
+3372    Ashbourne College Bob   3.1.9.1.9.1.9.5.9.      5       d       Spliced                 73/189
+3373    Ipswich Bob     3.1.9.1.9.3.129.5.149.  5       d       Spliced                 73/233
+3374    St Clement's College Bob        3.1.9.1.9.3.9.3.9.      3       f       1949-11-19      Saffron Walden          49/578
+3375    Ripon Bob       3.1.9.167.9.1.9.1.369.  5       f       Spliced                 73/233 310
+3376    Avebury Bob     3.1.9.167.9.1.9.1.569.  3       f       Spliced                 73/233 310
+3377    Swindon Bob     3.1.9.167.9.3.9.1.9.    1       b       Spliced                 73/233
+3378    Earlham Bob     3.147.5.1.7.3.9.5.9.    5       a       Spliced                 73/189 87/558
+3379    Thatcham Bob    3.147.9.1.7.1.9.1.569.  1       a       Spliced                 73/233
+3380    Stratton Bob    3.147.9.1.7.3.9.5.369.  5       a       Spliced                 73/233
+3381    Elmore Imperial Bob     3.147.9.167.9.3.9.3.169.        3       b       Spliced                 73/233
+3382    Nuneaton Bob    3.149.5.1.7.3.149.3.149.        5       c       Spliced                 73/189
+3383    Tenterden Bob   3.149.5.167.9.3.149.5.169.      7       e       Spliced                 73/189
+3384    Chepstow Bob    3.149.5.169.7.1.9.5.9.  7       c       Spliced                 73/233
+3385    Stanton Bob     3.149.7.1.7.3.9.3.149.  5       c       Spliced                 73/189
+3386    Cross Stone Bob 3.167.5.1.7.3.9.5.149.  5       a       Spliced                 73/189
+3387    Windsor Bob     3.169.7.1.9.1.349.1.369.        7       b       Spliced                 73/189
+3388    Single Darlaston Bob    5.1.5.1.9.1.9.1.9.      1       127894653       1894-12-08      Birmingham, St Philip           BN V13/355
+3389    Single Norwich Court Bob        9.1.5.1.7.1.9.1.9.      1       h       Spliced                 73/189
+3390    Dublin Court Bob        9.1.5.1.7.3.149.3.169.  3       m       Spliced                 73/189
+3391    Leamington Bob  9.1.5.1.7.3.149.5.149.  7       l       Spliced                 73/189
+3392    Cambridge Court Bob     9.1.5.1.7.3.9.1.9.      3       j       Spliced                 73/189
+3393    Double Norwich Court Bob        9.1.5.1.7.3.9.5.9.      1       k       1894-09-22      Bristol, St Stephen     2000-01-06      BN V13/224 RW 00/173
+3394    Pershore Bob    9.1.5.1.7.3.9.5.9.      7       l       Spliced                 73/189
+3395    Shipway Court Bob       9.1.5.1.9.3.9.1.9.      1       h       Spliced                 73/189
+3396    Highbury Bob    9.1.5.1.9.3.9.1.9.      7       j       Spliced                 73/189 87/558
+3397    Snettisham Bob  9.1.5.1.9.3.9.145.369.  7       j       Spliced                 73/189
+3398    Taunton Court Bob       9.1.5.1.9.3.9.3.169.    3       k       Spliced                 73/189
+3399    Hereford Bob    9.1.5.169.7.1.9.3.569.  1       g       Spliced                 73/233
+3400    Double Coslany Court Bob        9.1.5.169.7.3.149.5.9.  1       m       1997-08-09      Saltby          97/954
+3401    Alburgh Bob     9.1.7.1.7.3.149.5.369.  1       m       Spliced                 73/189 87/558
+3402    Avalon Court Bob        9.1.7.1.9.3.9.3.9.      5       l       Spliced                 73/189
+403    Banbury Bob     9.1.9.1.7.1.349.5.149.  3       h       Spliced                 73/233 310
+3404    New London Court Bob    9.1.9.1.7.1.9.1.9.      3       g       Spliced                 73/189
+3405    Lavenham Court Bob      9.1.9.1.7.1.9.5.9.      1       h       Spliced                 73/189
+3406    Maidstone Bob   9.1.9.1.7.1.9.5.9.      7       j       Spliced                 73/189
+3407    St Alphege Bob  9.1.9.1.7.3.129.3.9.    1       m       Spliced                 73/189
+3408    Edington Bob    9.1.9.1.7.3.129.5.149.  7       j       Spliced                 73/233
+3409    Appleton Bob    9.1.9.1.7.3.149.3.169.  7       j       Spliced                 73/233
+3410    Epsom Bob       9.1.9.1.7.3.9.145.9.    3       h       Spliced                 73/233
+3411    Gloucester Bob  9.1.9.1.9.1.349.5.169.  3       h       Spliced                 73/233
+3412    Cleatham Bob    9.1.9.1.9.1.9.1.349.    7       g       Spliced                 73/189
+3413    Canterbury Bob  9.1.9.1.9.1.9.1.569.    7       g       Spliced                 73/189
+3414    Reverse Grandsire       9.1.9.1.9.1.9.1.9.      7       g       1769-09-10      Shoreditch              59/202
+3415    Rutherford Bob  9.1.9.1.9.1.9.145.369.  7       g       Spliced                 73/233
+3416    Debenham Court Bob      9.1.9.1.9.1.9.3.169.    3       h       Spliced                 73/189
+3417    Spalding College Bob    9.1.9.1.9.1.9.5.9.      5       j       Spliced                 73/189
+3418    Crayford College Bob    9.1.9.1.9.3.9.3.9.      3       l       Spliced                 73/189
+3419    Minehead Bob    9.1.9.167.9.3.9.1.9.    1       g       Spliced                 73/233
+3420    Eynsham Bob     9.145.7.1.7.123.9.125.9.        1       g       Spliced                 73/233
+3421    Stroud Bob      9.145.7.1.7.3.9.5.9.    1       g       1976-07-03      Stroud          73/233 76/654
+3422    Malvern Imperial Bob    9.145.9.1.7.1.9.3.169.  5       k       Spliced                 73/189
+3423    Oldham Bob      9.147.9.167.9.3.9.3.169.        3       g       Spliced                 73/233
+3424    Preston Bob     9.167.9.1.9.1.349.1.9.  7       g       Spliced                 73/233
+3425    Salisbury Bob   9.167.9.1.9.3.149.3.9.  7       g       Spliced                 73/233
+
+Twin-hunt Little Caters methods (a) (hunt bells to 3rds)
+
+No.     Name    Notation        hl      lh      Handbells       RW ref
+
+3427    Bastow Little Bob       9.1.3.  1       m       2006-06-14      73/189 06/646
+
+Twin-hunt Little Caters methods (a) (hunt bells to 4ths)
+
+No.     Name    Notation        hl      lh      Tower bells     RW ref
+
+3428    Reading Little Bob      9.1.7.149.      7       l       Spliced 73/233
+
+Twin-hunt Little Caters methods (a) (hunt bells to 5ths)
+
+No.     Name    Notation        hl      lh      Tower bells     Place   RW ref
+
+3429    Little Grandsire        3.1.9.1.5.      1       e       1985-04-05      Nottingham, St Mary     85/481
+3430    Crayford Little Bob     9.1.9.1.5.      1       k       Spliced         73/189
+
+Twin-hunt Little Caters methods (a) (hunt bells to 6ths)
+
+No.     Name    Notation        hl      lh      Tower bells     RW ref
+
+3431    Newport Little Bob      9.1.9.1.7.169.  7       j       Spliced 73/233
+
+Twin-hunt Little Caters methods (a) (hunt bells to 7ths)
+
+No.     Name    Notation        hl      lh      Tower bells     Place   RW ref
+
+3432    Oxford Little Bob       3.1.5.1.9.3.7.  1       e       Spliced         73/189
+3433    Tiverton Little Bob     3.1.7.1.9.1.7.  3       d       Spliced         73/189
+3434    Montgomery Little Bob   3.1.9.1.7.3.147.        3       e       Spliced         73/189
+3435    Gainsborough Little Bob 3.1.9.1.9.1.7.  1       c       Spliced         60/474 531 87/558
+3436    Sedghill Little Bob     3.149.5.1.7.3.147.      3       b       Spliced         73/233
+3437    Yeovil Little Bob       3.169.7.1.7.3.147.      5       b       Spliced         73/233
+3438    Victoria Little Bob     9.1.5.1.9.3.7.  1       k       2002-04-09      Nottingham, St Mary     73/189 02/485
+3439    Hastings Little Bob     9.1.7.1.9.1.7.  3       j       Spliced         73/189
+3440    Ellesmere Little Bob    9.1.9.1.7.3.147.        3       k       Spliced         73/189
+3441    Wellington Little Bob   9.1.9.1.9.1.7.  1       h       Spliced         73/189
+
+

@@ -1,0 +1,13 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Single-hunt Sextuples methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3801	Plain Bob	A.1.A.1.A.1.A.1.A.1.A.1.	A	12A	p	2000-12-02	Winchester Cathedral	01/11
+
+Twin-hunt Sextuples methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	Handbells	RW ref
+
+3802	Grandsire	3.1.A.1.A.1.A.1.A.1.A.1.A.	1	a	1997-01-01	Winchester Cathedral	1972-04-18	72/384 97/145
+

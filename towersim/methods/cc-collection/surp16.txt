@@ -1,0 +1,37 @@
+Surprise Sixteen methods
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+12662	Superlative	-3B-14-5D-36-147B-58-369D-70-18EB-9T-30AD-EB-1T-AD-3B-	CD	12	b	cps	Spliced			03/347
+12663	York	-3D-14-12-3D.14-14.3D.14-14.3D.14-14.3D.14-14.3D.14-14.3D.14-14.	3D	12	a	cps/BDK1	Spliced			71/159
+12664	Feering	-3D-14-12-3D.14-14.3D.14-14.3D.14-14.3D.14-14.3D.14-14.3D.14-34.	CD	12	b	cps/BDK1a2	Spliced			93/496
+12665	Phobos Moon	-3D-14-12.5D.16-34-5D-16-167D-16-7D-16-7D-16-7D-16-	7D	1D	l	D/BDa2	Spliced			10/1317
+12666	Cambridge	-3D-14-125D-36-147D-58-169D-70-18ED-9T-10AD-EB-1T-AD-1B-	CD	12	b	D/B	2000-06-13	Birmingham, St Martin	1990-11-14	90/1195 00/718
+12667	Yorkshire	-3D-14-5D-16-127D-38-149D-50-16ED-7T-18AD-9B-10-ED-1T-	CD	12	b	cps/Bc	1996-01-01	Birmingham, St Martin		96/151
+12668	Lincolnshire	-3D-14-5D-16-7D-18-9D-10-ED-1T-AD-1B-1T-AD-EB-	CD	12	b	cps/Bc			1991-04-12	91/422
+12669	Sawley	-5D-14-56-36-14-3D-14-3D-14-3D-14-3D-14-3D-14-	3D	12	b	cps/BN1c	Spliced			95/329
+12670	Ealing	-5D-14-56-36-14-5D-14-5D-14-5D-14-5D-14-5D-14-	5D	12	f	cps/Bc	Spliced			93/904
+12671	Leatherhead	-5D-14-56-36.14-14.5D.14-14.5D.14-14.5D.14-14.5D.14-14.5D.14-14.	5D	12	f	cps/Bc	Spliced			71/159
+12672	Bristol	-5D-14.5D-5D.36.14-7D.58.16-9D.70.18-ED.9T.10-AD.EB.1T-1T.AD-1T-	1D	1D	j4	cps/c	1993-11-16	Birmingham, St Martin	1981-03-18	81/347 456 93/1270
+12673	Wembley	-5D-16-12-36-14-3D-16-3D-16-3D-16-3D-16-3D-16-	3D	12	f	cps/Bcd	Spliced			95/329
+12674	Strathclyde	36-56.14.5D-5D.36-14-3D.16-16.3D.16-16.3D.16-16.3D.16-16.3D.16-16.	3D	1D	k4	cps/BEcd	Spliced			05/597
+12675	Londinium	3D-3D.14-12-3D.14-14.5D.16-16.5D.16-18.9D.18-18.9D.18-18.9D.18-18.	9D	12	f	cps/BDd	Spliced			71/159
+12676	Newgate	3D-3D.14-12-3D.14-14.5D.16-16.7D.14.58.14.9D.14-14.9D.14-14.9D.14-14.	9D	12	f	cps/BDcd	Spliced			71/159
+12677	Parkhurst	3D-3D.14-12-3D.14-14.5D.16-16.7D.14.58.14.9D.14.58.14.9D.14.58.14.9D.14-14.	9D	12	f	cps/BDcd	Spliced			95/1309
+12678	Leicestershire	3D-5D.14-5D-3D.14-14.5D.14-14.5D.14-14.5D.14-14.5D.14-14.5D.14-14.	5D	12	a	cps/BK1c	Spliced			71/159
+12679	Fulham	56-56.14-5D-36.14-14.5D-14-3D-34-3D-34-3D-34-3D-34-	1D	1D	m	cps/N1ac	Spliced			71/159
+
+Little Surprise Sixteen methods (treble to 8ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+12680	Littleport Little	-5D-14.5D-5D.36.14-14.5D-14-	18	1D	m	cps/c	2005-08-02	Perth, WA, Swan Campanile	00/450 05/1219
+12681	Glasgow Little	36-56.14.5D-5D.36-14-3D.16-16.	38	1D	g	cps/BEcd	Spliced		05/597
+
+Little Surprise Sixteen methods (treble to 10ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+12682	Bristol Little	-5D-14.5D-5D.36.14-7D.58.16-16.7D-16-	10	1D	g	cps/c	Spliced	08/8
+12683	Clyde Little	36-56.14.5D-5D.36-14-3D.16-16.3D.16-16.	30	1D	m	cps/BEcd	Spliced	05/597
+

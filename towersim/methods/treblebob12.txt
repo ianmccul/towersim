@@ -1,0 +1,10 @@
+"Oxford","Oxford Treble Bob",treblebob,12,"",&-34-1T-12-1T-12-1T-12-1T-12-1T-12-1T,|(1T)(10)(10ET)
+"Rotherham","Rotherham Treble Bob",treblebob,12,"",&-34-1T-12-1T-12-1T.34-34.1T.34-34.1T-10-1T,|(12)(14)(1234)
+"Violet","Violet Treble Bob",treblebob,12,"",&-3T-1T-12-1T-12-1T-12-1T-12-1T-12-1T,|14
+"Kent","Kent Treble Bob",treblebob,12,"",&34-34.1T-12-1T-12-1T-12-1T-12-1T-12-1T,|(1T)(10)(10ET)
+"White Nile","White Nile Treble Bob",treblebob,12,"",&34-30.1T.50.12-1T.70.12.34.1T.36.12-1T.38.12-1T.38.12-1T,|(1T)(10)(10ET)
+"Albion","Albion Treble Bob",treblebob,12,"",&56-56.1T.56-56.1T.34-34.1T.34-34.1T.34-34.1T.34-34.1T,|(12)(14)(1234)
+"Xanthe Little","Xanthe Little Treble Bob",treblebob,12,"",&-34-12,|(1T)(10)(10ET)
+"Gonville Little","Gonville Little Treble Bob",treblebob,12,"",&34-34.12,|(1T)(10)(10ET)
+"Albion Little","Albion Little Treble Bob",treblebob,12,"",&56-56.1T.56-56.14,|(12)(14)(1234)
+"Ribble Link Little","Ribble Link Little Treble Bob",treblebob,12,"",&-34-1T-56-1T-34-56,|(12)(14)(1234)

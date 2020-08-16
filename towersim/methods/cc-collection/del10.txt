@@ -1,0 +1,306 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Delight Royal methods
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+15000	Old Trafford	-34-14-12-10-12-1250-14-50-14-	50	10	l	cps/BDc	1993-05-31	Wilton		93/626
+15001	Woodbine	-34-14-12-10-12-10-12-10-12-	10	10	1523749608		1986-02-09	Chesterfield	1981-11-04	81/1062 86/221
+15002	Bishopstoke	-34-14-12-10-34-1250-16-70-16-	70	10	k1	cps/BDa2c	2000-02-15	Bishopstoke		00/223
+15003	Osterley	-34-14-12-10-34-10-34-10-34-	10	10	m	cps/BDa2	1979-04-25	Isleworth		79/703
+15004	Octavian	-34-14-12-10-78-58-56-10-78-	90	10	k1	cps/BDa	1997-02-23	Reading, St Laurence		97/316
+15005	Braintree	-34-14-12-10.34-34.10.34-34.10.34-34.	10	10	h	cps/BDa2	1999-01-01	Braintree	1985-04-02	85/395 99/119
+15006	Quimper	-34-14-12-10.34-34.10.56-56.10.78-78.	10	10	h	cps/BDa			2010-03-24	10/344
+15007	Rotorua	-34-14.56-56.10-12-10-12-10-12-	10	10	g	cps/Da			2010-12-13	11/38
+15008	Soave	-34-14.50.12-10-14-50.14-14.50.14-14.	50	12	a	T/BDc	Spliced			09/709
+15009	Bolton	-34-1450-12-36-34-10-14-1470-58-	70	12	f	cps/BDcd	1981-09-27	Bolton, St Peter		81/930
+15010	College Youths Pleasure	-34-10-12-10-14-30-14-30-14-	30	10	1346285079		1972-02-13	Daventry		72/201
+15011	Darton Exercise	-34-10-12-30-14-50-16-70-18-	90	12	1547920386		2006-11-19	Bristol, St Stephen		07/144
+15012	Fulford	-34-10-1256-16-14-50.14-14.50.14-14.	50	12	1362485079		Spliced			09/331
+15013	Dogger	-34-10-56-16-14-50.14-14.50-14-	50	10	l	cps/Dc	2007-10-18	Burnley		07/1122
+15014	Newbury	-36-14-50-16-34-10-36-30-36-	30	12	f	cps/EOa2	1987-11-27	Thatcham		87/1143
+15015	Vulkan	-30-14-12-1230-12-10-12-10-12-	10	10	m	cps/BDa			2007-07-02	07/741
+15016	Subfusc	-30-14-12-16-14-10.34.16-1450-78-	90	12	c1	cps/BDd	2008-05-31	Oxford, St Mary Magdalen		08/674
+15017	Stranton	-30-14-12-16-34-50-14-10-12-	90	12	c1	cps/BDc	2008-01-19	Exeter, St Mark		08/189
+15018	Black Cat	-30-14-12-16-34-50-14-10-18-	70	12	b	cps/BDc	2005-05-06	Worsley		05/598
+15019	Trafalgar	-30-14-12-10-12-1458-56-70-14.78.	10	12	d1	cps/BDc	2009-02-08	Burnley		09/203
+15020	Malin	-30-14-12-10-12-1458-56.14.70.1456-16.	90	12	c1	cps/BDc	2009-12-06	Burnley		10/11
+15021	Authorpe	-30-14-12-10-12-50.14-16.70.18-78.	90	12	b	cps/BDc	2006-09-26	Saltby		06/983
+15022	Exhibition Square	-30-14-12-10-12.70.58.14-16.70-16.78.	10	12	e	BD/BDc	Spliced			03/297
+15023	Derwent	-30-14-12-10-14-10-12-10-12-	90	12	b	cps/BDd	1988-12-02	Thatcham	2011-01-12	89/82 11/110
+15024	Glas Tulaichean	-30-14-12-10-14-10-12-10-1234-	90	12	b	BD/BDd	2011-03-31	Thorverton		11/389
+15025	Ventongimps	-30-14-12-10-14-10-12-10-1278-	90	12	b	cps/BDd	2011-07-14	Thorverton		11/798
+15026	A'Chailleach	-30-14-12-10-14-10-12-10-34-	90	12	b	cps/BDa2d	2009-11-26	Thorverton		09/1269
+15027	Schiehallion	-30-14-12-10-14-10-12-10-3456-	90	12	b	cps/BDd	2010-05-13	Thorverton		10/569
+15028	Pilton	-30-14-12-10-14-10-12-10-56-	90	12	b	cps/BDa1d	2008-07-31	Thorverton		08/889
+15029	Sgor Gaoith	-30-14-12-10-14-10-12-10-5678-	90	12	b	BD/BDd	2009-02-05	Thorverton		09/202
+15030	Ecclefechan	-30-14-12-10-14-10-12-10-78-	90	12	b	cps/BDd	2008-09-11	Thorverton		08/1064
+15031	Nordfeld	-30-14-12-10-14-10-12-10.56.12.56.	90	12	b	cps/BDd	2008-05-10	Northfield		08/595
+15032	Saga	-30-14-12-10-14-10-12-10.58-58.	90	12	b	cps/BDEd	2005-02-22	Saltby		05/234
+15033	Chicxulub	-30-14-12-10-14-10-12-10.78-78.	10	12	a	cps/BDd			2011-03-14	11/315
+15034	Faerie	-30-14-12-10-14-10-16-1470.38.16-	90	12	b	cps/BDd	1992-11-27	Thatcham		93/126
+15035	Beult	-30-14-12-10-14-10.56.12.56.10-12-	90	12	b	cps/BDd	2008-09-09	Maidstone, All Saints		08/1037
+15036	Eleventh Hour	-30-14-12-10-14-10.56.12.56.10.56.12.56.	90	12	b	cps/BDd	2008-11-11	Maidstone, All Saints		08/1257
+15037	Quinag	-30-14-12-10-14-30-14-1230-12-	90	12	b	cps/BDd	2011-02-24	Thorverton		11/257
+15038	Easter Day	-30-14-12-10-14-30-14-1230-12.34.	90	12	b	BD/BDd	2011-04-24	Chilcompton		11/513
+15039	Upton Pyne	-30-14-12-10-14-30-14-1230-1278-	90	12	b	cps/BDd	2007-07-25	Thorverton		07/934
+15040	Panlydd	-30-14-12-10-14-30-14-1230-78-	90	12	b	cps/BDd	2010-07-22	Thorverton		10/816
+15041	Mansley Cliff	-30-14-12-10-14-30-14-1230.78.12-	90	12	b	cps/BDd	2011-06-09	St Marychurch		11/677
+15042	Quither	-30-14-12-10-14-30-14-30-1278-	90	12	b	cps/BDd	2007-04-09	Thorverton		07/470
+15043	Elthorne	-30-14-12-10-14-30-14-30-78-	90	12	b	cps/BDd	1967-02-25	Hillingdon		67/189
+15044	Vinehall	-30-14-12-10-14-50-16-10-56-	90	12	b	cps/BDa1d	2006-01-24	Saltby		06/130
+15045	Dunham Massey	-30-14-12-10-14-50-16-10-78-	90	12	b	cps/BDd	1999-05-22	Dunham Massey		99/603
+15046	Forty	-30-14-12-10-34-1258-36-70-16-	90	12	c1	cps/BDc	1998-12-06	Bristol, St Stephen		99/68 447
+15047	Washington	-30-14-12-10-34-1458-56-1670-18-	70	12	b	cps/BD	2009-05-10	Hexham		09/973
+15048	Gevrey-Chambertin	-30-14-12-10-34-1450-16-30.14-56.	90	12	b	cps/BDa1c	2005-01-30	Burnley		05/157
+15049	Viking	-30-14-12-10-34-58.14-14.70.16-14.	90	12	c1	cps/BDc	2006-09-10	Burnley		06/932
+15050	Edgehill	-30-14-12-10-34.70.1458-34.12.70-78-	10	12	e	BD/BDa2	Spliced			08/942
+15051	Portland	-30-14-12-10.34-12.58-36-1670-78-	90	12	c1	cps/BDc	2008-09-11	Burnley		08/1038
+15052	Barming Heath	-30-14-12-10.34-14.50.16-36.70.14-58.	90	12	b	cps/BDEc	2003-09-02	Maidstone, All Saints		03/901
+15053	Yeory	-30-14-12-30-12-10-16-50-1278-	90	12	b	cps/BD	2008-07-23	Thorverton		08/943
+15054	Pennifold	-30-14-12-30-12-10-16-50-56-	90	12	b	cps/BDa1	2003-09-09	Oxford, St Thomas the Martyr	2010-09-22	03/925 10/1014
+15055	Waynflete	-30-14-12-30-12-10-16-50-78-	90	12	b	cps/BD	2004-03-21	Oxford, Magdalen College		04/375
+15056	Ipswich	-30-14-12-30-14-10-14-10-14-	10	12	f	cps/BDFK1	1982-04-03	Grundisburgh	1999-06-01	82/383 99/734
+15057	Hirst	-30-14-12-30-34-10-1236-1470-12-	70	12	c1	cps/BDa1	1991-10-02	Ashton-under-Lyne, St Michael		91/1064
+15058	Loughborough	-30-14-12-30.14-34.10.34-34.10-78-	90	12	b	cps/BDK1a2	2004-12-28	Loughborough, All Saints		05/55
+15059	Yellowstone	-30-14-12-30.14-34.10.34-34.10.34-34.	10	12	a	cps/BDK1a2			2010-02-15	10/221
+15060	Upham	-30-14-12-30.14-34.10.34-34.10.56-56.	10	12	a	cps/BDK1a			2010-08-25	10/914
+15061	Coventry Centenary	-30-14-12-30.14-34.10.34-34.10.78-78.	90	12	b	cps/BDK1a2	2007-12-01	Chilvers Coton		07/1269
+15062	January	-30-14-12-30.14-34.10.56-56.10.78-78.	10	12	a	cps/BDK1a	2005-01-18	Maidstone, All Saints	2010-01-27	05/131 10/149
+15063	Exeenda	-30-14-12-30.14-34.10.56-56.10.78-78.	90	12	b	cps/BDK1a	1996-10-28	Oxford, St Thomas the Martyr		96/1177
+15064	Jordanthorpe	-30-14-12.50.16.34-14.50-14-10-12.38.	10	12	e	BD/BDa2c	2007-03-27	Saltby		07/369
+15065	Bunkers Hill	-30-14-1256-16-34-10-16-50-16-	50	12	b	BD/BN2a2c	2004-12-04	Grantham		04/1256
+15066	Haystacks	-30-14-1256-16-34-10-16-70.1458-14.	90	12	c1	BD/Ba2c	2007-01-17	Blackburn Cathedral		07/164
+15067	Forties	-30-14-1256-16-34-10.34.12-50.78-16.	90	12	c1	BD/BDa2c	2007-04-26	Burnley		07/520
+15068	Diamond	-30-14-1250-1236-14-10.56.12.34.70.56.12.34.	70	12	c1	BD/BO	2007-11-21	Westminster, St Martin-in-the-Fields		07/1244
+15069	Halley	-30-14-1250-1236-70-18-16-10-14-	90	12	b	BD/Bc	2006-11-07	Thatcham		06/1129
+15070	Dunkerque	-30-14-1250-16-12-10-56-50.14.56.14.	50	12	d1	BD/Ba2	Spliced			08/942
+15071	Wedding	-30-14-1250-16-3478-18-56-10-12-	90	12	c1	BD/Ba1	2011-04-30	Bristol, St Stephen		11/580
+15072	Duffield	-30-14-1250-36-1470-58-16-10.56-58.	90	12	b	BD/Ba1	1981-11-14	Duffield		81/1108
+15073	Stanley	-30-14-1250-36-1470-58-16-10.78-58.	90	12	b	BD/Ba1	1981-10-25	Accrington		81/1040
+15074	Maidstone	-30-14-1250-36.14.70.14.38-12-10-12-	90	12	b	BD/Ba2	1990-02-06	Maidstone, All Saints		90/250
+15075	Mercia	-30-14-1270-18-14-10-16-70-58-	90	12	b	cps/BEd	2002-04-01	Ashover		02/487
+15076	Hayfield	-30-14-56-16-34-10.56.14-50-34.16.	50	12	e	cps/Ba1c	1993-03-14	Ashton-under-Lyne, St Michael		93/399
+15077	Manthorpe	-30-14-56-16-34-30-12-10-12.38.	10	12	d1	cps/Ba1	2007-08-28	Saltby		07/933
+15078	Xanthus	-30-14-56-16-34-30-12-10-18-	70	12	b	cps/Ba1	2005-12-29	Shrewsbury, St Mary		06/106
+15079	Raisthorpe	-30-14-56-16-34-30-12-10-78-	90	12	c1	cps/BDa1	2006-07-25	Saltby		06/764
+15080	Grimsthorpe	-30-14-56-16-34-30-12-10.38.12-	10	12	d1	cps/Ba1	2011-09-27	Saltby		11/1042
+15081	Adderbury	-30-14-56-36-34-30-16-10-36-	10	12	a	cps/BDa1	1982-08-31	Maidstone, All Saints		82/798
+15082	Bovey Bob	-30-14-50-16-12-10-14-50-1236-	90	12	b	cps/Bcd	2009-10-15	Thorverton		09/1117
+15083	Am Bodach	-30-14-50-16-12-10-14-50-123678-	90	12	b	cps/Ba1cd	2009-04-30	Thorverton		09/539
+15084	Saltley	-30-14-50-16-12-10-14-50-36-	90	12	b	cps/Bcd	1952-06-12	Birmingham Cathedral		52/402 512
+15085	Knottingley	-30-14-50-16-12-30-14-10-18-	70	10	m	cps/Bc	1996-08-03	Knottingley		96/960
+15086	LUSCR	-30-14-50-16-12-30-14-10-34-	90	12	b	cps/Ba2c	2010-01-16	Abergavenny		10/371
+15087	Luffburra	-30-14-50-16-12-30-14-10-3478-	90	12	b	cps/Bc	2008-12-08	Loughborough Bellfoundry		09/9
+15088	Zealand	-30-14-50-16-12-30-14-10-56-	90	12	b	cps/Ba1c	2007-10-27	Brecon Cathedral		07/1146
+15089	Jenner	-30-14-50-16-12-30-14-10-78-	90	12	b	cps/BDc	1996-06-16	Berkeley		96/731
+15090	Benson	-30-14-50-16-34-10-36.14.30-38.14.	90	12	b	cps/Ba1cd	1989-09-06	Thatcham		89/928
+15091	Isleworth	-30-14-50-16-3470-38-16-10-18-	30	12	f	cps/Bc	1979-10-17	Isleworth		79/954
+15092	Grandthorpe	-30-14-50-16-70-1258-36-10-36-	50	12	a	cps/BOc	1992-05-29	Thatcham		92/699
+15093	Christmas	-30-14-50-16-70-18-12-10.34-14.	90	12	b	cps/BDa2c	1989-12-30	Swindon, Christ Church	1997-12-31	90/73 98/109
+15094	Bishop of Portsmouth	-30-14-50-16-70-18-12-10.34.56.14.	90	12	b	G/Ba2c	1995-12-16	Portsmouth Cathedral		96/69
+15095	Jay Pisa	-30-14-50-16-70-18-12-10.345678-14.	90	12	b	cps/Ba2c	2005-07-21	Thorverton		05/770
+15096	Jasmine	-30-14-50-16-70-18-14-10-14-	30	12	a	cps/BN1c	1992-03-27	Thatcham		92/432
+15097	Burcroft	-30-14-50-16-70-18-36-10-12-	50	12	f	cps/BDc	2002-03-05	Maidstone, All Saints		02/292
+15098	Amazon	-30-14-50-16-70-18-36-10-34-	50	12	f	cps/Bc	1988-02-25	Isleworth		88/351
+15099	Lincolnshire	-30-14-50-16-70-18-90-10-56-	70	12	b	cps/Ba2c	2005-03-22	Saltby	2008-01-14	05/330 08/164
+15100	Shepton Beauchamp	-30-14-50-16-70-18-90-10.34.12-	70	12	b	cps/Bc	2009-11-19	Shepton Beauchamp		09/1241
+15101	Llanbadarn Fawr	-30-14-50-16-70-18.34-34.10-12-	90	12	b	cps/Bc	2003-04-26	Llanbadarn Fawr (Dyfed)		03/517
+15102	Edenham	-30-14-50-16-70-18.34-34.10-78-	90	12	b	cps/BDc	1987-04-26	Edenham	2007-07-09	87/474 07/763
+15103	Xaronval	-30-14-50-16-70-18.34-34.10.34-34.	90	12	b	cps/Ba1c			2010-10-13	10/1088
+15104	Kakadu	-30-14-50-16-70-18.56-56.10.56-56.	90	12	b	cps/Ba2c			2008-09-08	08/1015
+15105	Zodiac	-30-14-50-16-70-18.56-56.10.78-78.	90	12	b	cps/BDa2c			2008-02-04	08/243
+15106	Westwood	-30-14-50-16-70-38-14-10-34-	90	12	b	cps/Ba1cd	2010-07-02	Rothwell (Northants)		10/739
+15107	Mather	-30-14-50-16-70-38-14-10-56-	90	12	b	cps/Ba2cd	1988-10-29	Portsmouth Cathedral	2008-02-11	88/1117 08/266
+15108	Black Sheep	-30-14-50-36-14-10-34.56.70.14.56.14.	70	12	c1	cps/BOc	2010-11-04	Burnley		10/1182
+15109	Golden Sheep	-30-14-50-36-14-10.34-56.1470-56.14.	70	12	c1	cps/BOa1c	2011-05-08	Tamworth		11/537
+15110	Bishop Stamer	-30-14-50-36-1470-58-16-10-34-	90	12	b	cps/Bc	2008-10-25	Stoke on Trent, St Peter		08/1182
+15111	Champion Dragon	-30-14-50-36-1470-58-16-10-56-	90	12	b	cps/Ba2c	2009-07-16	Thorverton		09/801
+15112	Mam Sodhail	-30-14-50-36-1470-58-16-10-5678-	90	12	b	cps/Bc	2010-10-28	Thorverton		10/1157
+15113	Knotty Ash	-30-14-50-36-1470-58-16-10-78-	90	12	b	cps/BDc	2005-09-30	Thatcham		05/1015
+15114	Thurcaston	-30-14-50-36-1470-58-16-10.56.78.56.	90	12	b	cps/Bc	2011-08-25	Leicester, St Mary de Castro		11/941
+15115	Thorverton Ford	-30-14-50-36-1470-58.34.12-10-36-	50	12	e	K/BDc	2007-02-17	Thorverton		07/267
+15116	Thatcham	-30-14-50-36-70-18-16-10-14-	90	12	b	cps/Bc	2005-10-20	Thatcham		05/1085
+15117	London Pride	-30-14-50-36-70-38-36-10-18-	90	12	b	cps/Bc	2006-01-19	Thatcham		06/130
+15118	Abbot	-30-14-50-36-70-58-34-10-18-	90	12	b	cps/Ba2c	2006-05-18	Newbury		06/574
+15119	Barfield	-30-14-50-36-70-58-56-10-18-	90	12	b	cps/Ba2c	2006-11-16	Thatcham		06/1173
+15120	Lydney	-30-14-70-18-34-10-16-70-12-	70	12	c1	cps/Bac	1997-04-05	Lydney		97/480
+15121	Concorde	-30-14.50.12-10-12-50.16-16.70.16-16.	70	10	k1	BD/BDc	1996-05-25	Washington, DC, Old Post Office		96/656 97/500
+15122	Hebrides	-30-14.50.12-10-12.70.58.16-14.50.1478-58.	70	10	k1	BD/BDce	2010-01-31	Burnley		10/170
+15123	Robin Hood's Bay	-30-14.50.12-10-14-1450-34-50.14-14.	50	12	f	BD/BDK1c	2002-08-04	Whitby		02/870
+15124	Fair Isle	-30-1456-12-16-34-10-16-70.1458-14.	90	12	c1	cps/BDa2c	2010-03-28	Burnley		10/365
+15125	Hardinge	-30-1456-1256-10-34-50-1456-70-16-	70	12	c1	BD/Bc	1996-07-02	Maidstone, All Saints		96/856 995
+15126	Whistler	-30-1456-56-10-12-18-56-5670-18-	70	12	b	cps/Ba1	2010-02-20	Exeter, St Mark		10/500
+15127	Ferrybridge	-30-1456-56-10-12-10-16-70.58-58.	10	12	a	cps/BEa1c	2007-04-30	Knottingley		07/521
+15128	Grand Union	-30-1456-56-10-34-58-16-70-16-	90	12	c1	cps/Bac	2006-09-16	Daventry		06/958
+15129	Ingerthorpe	-30-1456-56-10-34-50-16-70-16-	70	12	c1	cps/Bac	2006-10-24	Saltby		06/1078
+15130	Harlesthorpe	-30-1456-56-10-34-50.16-16.70-16-	70	12	c1	cps/Bac	2008-07-22	Saltby		08/842
+15131	Landmark	-30-1456-56-10-34-50.16-16.70.16-16.	70	12	c1	cps/Bac	2009-06-23	Lundy Island		09/732
+15132	Rickmansworth	-30-1450-56-16-12-10-16-70-58-	90	12	b	cps/BEc	1992-04-20	Portsmouth Cathedral		92/478
+15133	Elmodesham	-30-1450-56-16-12-10-16-70.14.58.14.	90	12	b	cps/Bc	2011-05-28	Amersham		11/629
+15134	Naiad	-30-16-1256-10-34-50.14-14.70.16-18.	90	10	g	P1/Bc	2011-07-16	Northallerton		11/918
+15135	Copmanthorpe	-30-10-56-16-12-30.12-16.70.16-16.	70	12	c1	cps/Ba2c	Spliced			09/331
+15136	The Inimitable Gordon Halls	-30-10-56-36-14-30-14-50-16-	90	10	g	cps/BK1a2c	2002-04-14	Derby Cathedral		02/435
+15137	Whitehall	-30-10-56-36-3478-58-56-10-18-	70	14	1375940286		2007-12-09	Bristol, St Ambrose		08/33
+15138	Stortford	-56-14-1256-30-12-10-16-1670-16-	70	10	k1	E/Ba1c	1998-02-21	Bishop's Stortford		98/260
+15139	Baskerville	-56-14-56-1230-12-10-16-1670-16-	70	10	k1	cps/Ba1c	2001-08-07	Bishopstoke		01/852
+15140	Ridiculous	-56-14-56-1230-12-10-16-70.16-78.	10	10	j1	cps/Ba1c	2008-12-27	Leyland		09/61
+15141	Darracott	-56-14-56-10-14-50-12-50-12-	50	10	l	cps/K1a	2006-09-23	Bishopstoke		06/983
+15142	Nottinghamshire	-56-14-56-10-14-50.14-14.50.14-14.	50	10	l	cps/K1a1	1984-02-21	Lockington		84/323
+15143	Blackburn with Darwen	-56-14-56-10-14-50.34-14.50-14-	50	10	l	cps/BK1a1c	1998-04-01	Blackburn Cathedral		98/434
+15144	Stamford Bridge	-56-14-56-10-14-50.34-34.50.14-14.	50	10	l	cps/BK1a1	1997-06-04	Blackburn Cathedral		97/707
+15145	Emjay	-56-14-56-10-34-10-34-30-34-	10	10	m	cps/Da	1987-06-01	North Stoneham		87/584
+15146	November	-56-14-56-10-34-10-34-30.14-12.	30	10	m	cps/Da1	1987-11-14	Thatcham		87/1074
+15147	Port Jackson	-56-14-56-10-34-30-34-10-34-	10	10	m	cps/Da	1987-05-13	Portsmouth Cathedral		87/584
+15148	Roanoke	-56-14-56-30-34-10-34-10-34-	10	10	m	cps/a	1987-07-22	Portsmouth Cathedral		87/733
+15149	Flax Bourton	-56-10-12-30-14-50-16-70-18-	90	12	1673290485		2002-12-30	Bristol, St Stephen		03/56
+15150	Lancashire	-50-14-12-36-14-10-34-10-12-	30	12	a	cps/BDce	1982-01-17	Accrington		82/113
+15151	Fastnet	-50-14.50-12.36.12-34.50-34-10.78-78.	10	10	j1	cps/BDa2c	2009-08-23	Burnley		09/926
+15152	Ringing Chat	-50-14.50-12.36.70.34-10-16-70.16-18.	90	10	l	cps/Ba2c	2003-11-08	Northallerton		03/1142
+15153	Quixhall	-50-14.50-12.30-12-10-12-30.12-38.	10	10	j1	cps/Bc	2005-09-06	Saltby		05/942
+15154	Elsthorpe	-50-14.50-12.30-12-10-12-50.12-58.	10	10	j1	cps/BN1c	2007-02-27	Saltby		07/289
+15155	Xerethorpe	-50-14.50-12.30-12-10-12-70.12-78.	10	10	j1	cps/Bc	2007-06-26	Saltby		07/715
+15156	Vale of Belvoir	-50-14.50-12.30-12-10-12-70.12.78-	10	10	j1	cps/Bc	2008-05-27	Saltby		08/650
+15157	St Mary Abbots	-50-14.50-12.30-12-10-16-50-16-	50	12	b	cps/BN2c	1999-06-19	Portsmouth Cathedral		99/678
+15158	Watford	-50-14.50-12.30-12-10-16-50-16-	50	10	g	cps/BN2c	2006-11-28	Saltby		06/1199
+15159	Owthorpe	-50-14.50-12.30-12-10-16-70.12-18.	30	10	j1	cps/Bc	2010-11-23	Saltby		10/1231
+15160	Glasgow	-50-14.50-12.30-12-10-16-70.16-78.	10	12	d1	cps/Bc	2005-08-27	Glasgow Cathedral		05/895
+15161	Littlethorpe	-50-14.50-12.30-12-10-16-70.16-78.	10	10	j1	cps/Bc	2007-11-27	Saltby		07/1242
+15162	Danethorpe	-50-14.50-58.10.34-78.10.36-16.70-16-	10	10	m	cps/Dc	2008-01-22	Saltby		08/191
+15163	Xanthe	-50-14.50-50.36-14-1450-14-10-18-	70	10	k1	cps/Bc	2008-10-28	Saltby		08/1183
+15164	Kettlethorpe	-50-14.50-50.36-14-1450-14-10-78-	90	10	l	cps/Dc	2011-10-25	Saltby		11/1163
+15165	Biscay	-50-14.50-50.36-14-58-14.56.10-12.38.	10	10	g	cps/Bc	2009-01-18	Burnley		09/129
+15166	Felthorpe	-50-14.50-50.36-14-50-14-10.38-14.	30	10	m	cps/K1c	2006-05-23	Saltby		06/574
+15167	Kensington	-50-14.50-50.36-14-50-36-10-3678-	70	10	m	cps/c	1994-10-22	Kensington, St Mary Abbots		94/1168 1251
+15168	Tyne	-50-14.50-50.36-14.70.1258.34-56.10.58.36.18.	50	10	g	cps/Bc	2007-09-13	Burnley		07/1001
+15169	Clun	-50-14.50-50.36-14.70.18-36-10.36.12-	70	10	j1	cps/a2c	2003-10-18	Clun		03/1070
+15170	Cologne	-50-14.50-50.36-14.70.58-14.56.10-1458-	90	10	h	cps/c	2001-01-27	Northallerton		01/192 352
+15171	Titan	-50-14.50-50.36-14.70.58-16-10-58-	50	10	j1	cps/Oc	2005-01-15	York, St Wilfrid		05/108
+15172	Aloxe-Corton	-50-14.50-50.36.12-1270.38-14.56.10.58.16.58.	10	10	g	E/BEc	2004-12-31	Burnley		05/57
+15173	Perlethorpe	-50-14.50-50.36.14-14.50-14-10-12-	90	10	l	cps/Bc	2007-05-22	Saltby		07/591
+15174	Zouch	-50-14.50-50.36.14-14.50-14-10-12.38.	10	10	m	cps/Bc	2005-12-06	Saltby		05/1254
+15175	Colorado	-50-14.50-50.36.14-14.50-14-10-18-	70	10	k1	cps/Bc	1988-03-19	Duffield		88/463
+15176	Yaddlethorpe	-50-14.50-50.36.14-14.50-14-10-56-	90	10	l	cps/a1c	2006-04-25	Saltby		06/450
+15177	Upperthorpe	-50-14.50-50.36.14-14.50-14-10-78-	90	10	l	cps/Dc	2006-02-28	Saltby		06/260
+15178	Dragon	-50-14.50-50.36.14-14.50-14-10.38.12-	10	10	m	cps/Bc	2004-04-23	Nottingham, St Mary		04/495
+15179	Hillsborough	-50-14.50-50.36.14-70.58.16-36.10.36.14-	70	10	j1	cps/K1c	2004-05-24	Hillsborough		04/613
+15180	German Bight	-50-14.50-50.38-14.78.50.16-34.10-14-	90	10	l	cps/a1c	2008-02-07	Burnley		08/265
+15181	Plymouth	-50-14.50-50.38.14-78.10-14-70.1258-38.	10	12	e	cps/Bc	2008-12-11	Burnley		09/34
+15182	Nova	-50-14.50-50.38.14-78.10.36-12.30.18-12.	30	10	m	cps/BDc	1982-07-20	Lockington		82/699
+15183	Ullesthorpe	-50-14.50-50.38.14-78.50-56-10-18-	70	10	k1	cps/Ba1c	2008-04-22	Saltby		08/523
+15184	Despina	-50-14.50.12-10-14-50.14-14.70.16-18.	90	12	c1	T/Bc	2009-05-23	Northallerton		09/611
+15185	Sole	-50-14.50.78-36.12-3478.10.56-14.3670-36.1458.	90	10	k1	cps/Ba2c	2009-06-07	Burnley		09/684
+15186	Eanam Wharf	-50-16-12-10-12-1258-16-1670-58-	70	12	b	cps/BN1a2c	2008-03-24	Blackburn Cathedral		08/391
+15187	Wrotham Heath	-50-16-12-10-14-1230-12-30-14-	90	12	b	cps/Bc	2005-08-02	Maidstone, All Saints		05/794
+15188	All Saints	-50-16-12-10-14-1450-16-70-16-	70	12	c1	cps/Bc	1990-07-10	Maidstone, All Saints		90/996
+15189	Bedfordshire	-50-16-12-10-14-18-14-50-58-	90	12	c1	cps/BFc	2007-03-17	Kempston		07/365
+15190	Coxheath	-50-16-12-10-14-10-14-50-16-	90	12	b	cps/Bc	2005-03-01	Maidstone, All Saints		05/283
+15191	Barton Hall	-50-16-12-10-70-1458-16-50-16-	90	12	b	cps/Bc	1999-08-27	Thatcham		99/1042
+15192	Evermore	-50-16-12-36-14-50-14-10-14-	90	12	c1	cps/BK1cd	1997-11-22	Northallerton		97/1245
+15193	East Riding	-50-16-1270-18-70-1458-16-10-12-	90	12	b	cps/N1a1c	1999-10-11	Oxford, St Thomas the Martyr		99/1042
+15194	Daventry	-50-16-70-18-12-10-14-30-34-	90	12	b	cps/BDOc	1991-12-28	Daventry		92/135
+15195	Cromarty	-78-14.78-50.38.14-78.10-14-1470-58-	90	10	l	cps/BEa2c	2007-06-14	Burnley		07/690
+15196	Shannon	-78.56.14.78.56.70.38-14.78.1450-14-10.36-12.	90	10	l	cps/Ba2c	2009-10-11	Burnley		09/1093
+15197	Faeroes	-78.56.14.78.56.70.38.14-1478.50-14-10.36-12.	90	10	l	cps/Ba2c	2010-04-11	Burnley		10/417
+15198	Carey	-70-18-12-10-70-18-36-1450-18-	70	10	m	cps/BN1c	1992-10-24	Moulton (Northants)		92/1157
+15199	South Utsire	34-34.16-70.58.36-3478-10-16-1670-16-	70	10	k1	cps/Dc	2007-03-08	Burnley		07/313
+15200	Hitcham	34-34.10-12-1230-12-1230-12-1230-12-	30	10	l	cps/BD			2007-05-14	07/592
+15201	Cleethorpes	34-34.10-12-10-14-30-16-70-58-	90	10	g	cps/BDEcd	2007-03-31	York, St Wilfrid		07/396
+15202	Trinity Sunday	34-34.10-12-10-34-30-34-30-34-	30	12	e	cps/BDa	1971-06-06	Accrington	2007-03-12	71/573 07/314
+15203	Beverley Minster	34-34.10-12-30-12-10-16-30-34-	90	10	g	cps/BDa2	2006-03-11	Beverley, Minster		06/329
+15204	Atlanta	34-34.10-12-30-12-30-14-50-18-	90	10	g	cps/BDb	2001-11-07	Atlanta, GA		02/134
+15205	Wrath	34-34.10-12-30-14-50-14-50-14-	50	10	k1	cps/BDc	1973-05-05	Derby Cathedral	2006-12-04	73/457 06/1228
+15206	Barham	34-34.10-12-30-14-50-16-70-18-	90	12	b	cps/BDc	1976-03-20	Whitby		76/329
+15207	Oswald	34-34.10-12-30-14-50-16-70-18-	90	10	g	cps/BDc	1970-04-21	Nottingham, St Peter	2001-01-03	70/420 01/117
+15208	Kryten	34-34.10-12-30-14-50.14-14.70.16-18.	90	10	g	cps/BDc	2005-05-28	Roker		05/573
+15209	Ella	34-34.10-12-30-14-50.14-14.70.16-56.	70	12	c1	cps/BDa1c	2010-11-22	Duffield		11/57
+15210	Auxerre	34-34.10-56-36-3470-1458-14-50-56-	50	12	f	cps/BDa1c	1997-11-27	Bishopstoke		98/37
+15211	Laon	34-34.10-56-36.14.70.14.58.34.56.14.70.1458-58.	70	12	f	cps/DK1a1	1997-04-08	Bishopstoke		97/484
+15212	Chartres	34-34.10-56-36.14.70.14.58.34.56.14.70.1458-78.	50	12	f	cps/Da	1997-04-26	Lyme Regis		97/657
+15213	Bayeux	34-34.10-56.12.36.12.3470-1458-14-50-56-	50	12	f	E/BDTa1c	1998-11-26	Bishopstoke		98/1243
+15214	Gironde	34-34.10.56-56.10-12-30-14-50-16-	90	10	g	cps/BDa1c			2010-05-10	10/547
+15215	Samarkand	34-34.10.56-56.10-14-30-14-30-14-	30	10	m	cps/DN1a1c			2010-10-11	10/1088
+15216	Nineveh	34-34.10.56-56.10.78-78.10-12-30-14-	90	10	g	cps/BDac			2010-07-12	10/764
+15217	Flores	34-34.10.56-56.10.78-78.10-16-70-58-	90	10	g	cps/DEac			2010-05-12	10/571
+15218	Beverlea	34-34.10.56.12.56.30-14-50-16-70-18-	90	12	b	E/Dc	2001-04-28	Beverley, St Mary		01/511
+15219	Paean	34-36.10.58-78.36.1470-1470.58.34-36.10.58-78.	10	10	m	cps/BDF	1992-02-29	Moulton (Northants)		92/381
+15220	Charleston	34-50.14-12-10-14-50.14-14.50.14-14.	50	12	a	cps/BDc	2000-03-17	Charleston, SC, Grace Church		00/501
+15221	Northorpe	34-50.14-12-10-14-50.14-14.70.58-78.	10	10	m	cps/BDcd	2007-09-25	Saltby		07/1027
+15222	Twickenham	34-50.14-12-10-14-50.14-14.70.58.36.18.	30	10	m	cps/BDc	1999-06-05	Twickenham, All Hallows		99/632
+15223	Birthorpe	34-50.14-12-10-14-50.14-16.30.16-12.	30	10	m	cps/BDc	2007-01-23	Saltby		07/165
+15224	Acomb	34-50.14-12-10-34-50.14-14.50.14-14.	50	12	1425739608		Spliced			09/331
+15225	MM	34-50.14-50-10-14.70.38-16-1670-78-	90	10	l	cps/Dcd	1995-02-03	Worsley		95/326
+15226	Youlthorpe	34-50.14-50-10-14.70.38-16-70-16-	90	10	l	cps/Dcd	2008-03-25	Saltby		08/391
+15227	Sarehole Mill	34-50.14-50-10-14.70.38.16-16.70.16-16.	90	10	l	cps/Dcd	2006-09-25	Birmingham, St Paul		06/983
+15228	Deira	34-50.14-50-36.14-12.30-12.36.10-12.36.	10	10	m	cps/BDc	1992-05-04	Rotherham, All Saints		92/529 632
+15229	Galatea	34-50.16-56-10-14-50.14-14.70.16-18.	90	10	k1	cps/BDa1c	2006-02-13	York, St Wilfrid		06/206
+15230	Fisher	34-70.14.70.12-16.34.1270-10-16-70.16-18.	90	10	l	cps/BDTc	2008-01-10	Burnley		08/162
+15231	Irish Sea	34.50-14.50-50.36.70-14.58.14-56.10.58.36.18.	50	10	g	BD/Bc	2009-09-13	Burnley		09/998
+15232	Folly	36-56.14.50-50.16-14-30.16-34.10.38.56-	10	10	g	cps/BDEa1c	1999-02-06	Oxford, St Thomas the Martyr		99/315
+15233	Wight	36-56.14.50.12-36.1270.34-10-16-1670-16-	70	10	h	T/BETa2c	2008-06-26	Burnley		08/770
+15234	Staplehurst	30-30.14-12-10-12-1450-36-1670-58-	90	12	f	cps/BDEa2	2006-06-03	Staplehurst		06/648
+15235	Penenden Heath	30-30.14-12-10-12-1450-36-10-12-	90	12	f	cps/BDa2	1997-10-07	Maidstone, All Saints		97/1149
+15236	London Exercise	30-30.14-12-10-12-10-12-70-18-	90	12	f	cps/BDa2	1955-05-14	Southampton, St Michael		55/322 336
+15237	Fairbourne Heath	30-30.14-12-10-12-10-36-1450-56-	90	12	f	cps/BDa	2006-08-29	Maidstone, All Saints		06/884
+15238	Langley Heath	30-30.14-12-10-12-10-36-1450-78-	90	12	f	cps/BDa2	2005-08-16	Maidstone, All Saints		05/870
+15239	Charing Heath	30-30.14-12-10-12-10-36-50-14-	90	12	f	cps/BDa2c	2006-01-03	Maidstone, All Saints		06/107
+15240	Madison	30-30.14-12-10-12-50-14.36.70.16-58.	90	12	f	cps/BDEa2c	2008-09-27	Pontefract		08/1085
+15241	Saltergate	30-30.14-12-10-12-50-16-10.56-58.	90	12	f	cps/BDFa2	2005-05-08	Chesterfield		05/504
+15242	Studley Royal	30-30.14-12-10-12-50-16-10.78-58.	90	12	f	cps/BDFa2	2002-01-22	Maidstone, All Saints		02/164
+15243	Shoreditch	30-30.14-12-10-12-50-16-70-18-	90	12	f	cps/BDa2	1970-11-12	Shoreditch		70/1021 71/566
+15244	Lincolnshire Bells	30-30.14-12-10-12-50-36.14.70.14.58.36.	90	12	f	cps/BDa2b	2010-02-23	Saltby		10/243
+15245	Triton	30-30.14-12-10-12-50.14-14.70.16-18.	90	12	f	cps/BDa2c	1999-05-24	Knottingley	1999-12-29	99/556 00/88
+15246	Houndsditch	30-30.14-12-10-12-50.16-16.70.16-18.	90	12	f	cps/BDa2	2002-04-23	Saltby		02/462
+15247	Xylem	30-30.14-12-10-34-30.56.34.16.70.16.58.14.	90	12	f	L1/BD	1989-05-26	Thatcham		89/650
+15248	Oldborough	30-30.14-12-10-34-50-14-123670-16-	70	12	a	cps/BDc	1996-10-15	Maidstone, All Saints		96/1149
+15249	Rockall	30-30.14-12-10-34.70.58.14-14.70-56-	10	12	b	cps/BDa1c	2009-10-25	Burnley		09/1142
+15250	Bailey	30-30.14-12-10-34.70.58.14-16.30.1258-56.	10	12	c1	cps/BDa1c	2010-03-07	Burnley		10/294
+15251	Thames	30-30.14-12-10-34.70.58.14.56.14.70.12.34.58.	10	12	c1	BD/BD	2008-04-17	Burnley		08/522
+15252	Blackmore	30-30.14-12-30-12-10-14-10-12-	90	12	f	cps/BDd	1998-01-10	Selby		98/166 347
+15253	Brahmaputra	30-30.14-12-30.14-14.30.16.34-10.36.12-	10	12	b	cps/BDa2d	1988-03-03	Greenwich		88/352
+15254	Hingham	30-30.16-56-10-34-10-16-70.14.58.14.	90	12	f	cps/Ba2c	1992-07-03	Hingham, MA		92/843
+15255	Hampshire	30-56.14-56-10-14-1450-14-1670-16-	70	12	f	cps/Ba1c	1980-05-24	Portsmouth Cathedral		80/534
+15256	Lundy	30-56.14-56-10-14-58-14-50-14-	10	12	b	cps/Ba1c	2009-08-13	Burnley		09/901
+15257	Lindisfarne	30-56.14-56-10-14-50.12-16.50.18-16.	50	12	e	cps/Bac	1989-01-19	Thatcham		89/255
+15258	Spitalfields	30-56.14-56-10-14-50.14-14.50.14-14.	50	12	a	cps/Ba1c	1982-06-06	Shoreditch		82/574
+15259	Arran	30-56.14-56-10-14-50.14-14.70.16-34.	70	12	f	cps/Bac	1987-03-26	Thatcham		87/405
+15260	Red Dressing Gown	30-50.14-50-10-14-1458-14-70.16-78.	90	12	f	cps/BDc	2003-06-01	Oxford, St Mary Magdalen		03/589
+15261	Northwood	30-50.14-50-10-14-58.14-14.70.16-78.	90	12	f	cps/BDc	2006-02-27	Birmingham, St Paul		06/259
+15262	Scottlethorpe	30-50.14-50-10-14-50-14-50.14-12.	50	12	a	cps/Ba2c	1998-05-23	Edenham		98/579 763
+15263	Larissa	30-50.14-50-10-14-50.14-14.70.16-18.	90	10	k1	cps/Bc	2005-12-10	Northallerton		06/12
+15264	Chandos	30-50.14-50-10-34-50-14-70-16-	70	12	f	cps/Bcd	1992-03-14	Long Crendon		92/457
+15265	Lahinch	30-50.14-50-30-12-10-14-70.16-36.	70	12	f	cps/Bc	1992-08-29	Moulton (Northants)		92/1157
+15266	Pale Rider	30-50.14-50-30-12-10-16-70.16-78.	10	12	e	cps/Bc	2004-09-05	Chesterfield		04/928
+15267	Wear	30-78.14-78-10-14-50-12-1450-14-	50	12	a	cps/BK1a2c	1994-06-07	Maidstone, All Saints		94/710
+15268	Monkwearmouth	30-78.14-78-10-14-50-16-1470-14-	70	12	f	cps/Ba2c	2007-01-16	Maidstone, All Saints		07/117
+15269	North Utsire	30.78-16-12.58.10-1478-58.36-16.70.14-12.	70	12	a	cps/Ba	2007-01-25	Burnley		07/167
+15270	Truro	56-30.10.56-50.30.78-70.58.16-16.70-16-	10	10	m	cps/K1ac	2002-10-22	Saltby		02/1162
+15271	Anniversary	56-56.10-12-30-14-50-16-70-18-	90	12	b	cps/Ba1c	1997-11-15	Southampton, St Mary	2008-06-09	97/1277 08/699
+15272	Nereid	56-56.10-12-30-14-50.14-14.70.16-18.	90	10	g	cps/Ba1c	2007-02-17	Northallerton		07/264
+15273	Old Bill	56-56.10.56-56.10-12-30-14-50-16-	90	12	b	cps/Ba1c	2008-04-17	Thorverton		08/521
+15274	Spark Bottom	56-56.10.56-56.10-14-30-14-30-14-	30	10	m	cps/N1a1c			1997-09-18	97/1218
+15275	Leary	56-56.10.56.12.56.30-14-50-16-70-18-	90	12	b	E/a1c	2007-07-21	Daventry		07/809
+15276	Battlemend	56-56.10.78.12.78.30.78.14.78.50-56-1470-36-	70	12	c1	cps/Ba1	1998-07-09	South Croydon		98/799
+15277	Spinning Jennie	56.30-14.50.12-10-34-50.36.14-10.56.18.56.	10	10	1485309627		2002-12-07	Northallerton		03/10
+15278	Moulton	50-50.14-50-10-14-50-34-50.14-34.	50	12	a	cps/Ba2cd	1990-12-01	Moulton (Northants)		91/116
+15279	Northallerton	50.34-1450-12-10-14-50-14-50.14-14.	50	12	f	BD/BDc	2002-01-19	Northallerton		02/139
+15280	Forth	50.34-1450-70-36.70.14-50-14-10.38.12-	10	12	e	BD/BDc	2007-08-16	Burnley		07/905
+15281	Fitzroy	50.34.50.14-1250-10-34.70.38.16-16.70-16-	90	12	a	BDT/Bc	2009-04-19	Burnley		09/488
+15282	MacKillop	50.36-14-1256-10.34-14.50.14-14.50.14-14.	50	12	a	NP1/BOc	1995-01-19	Sydney, NSW, St Mary's Cathedral		95/192
+15283	Battlemented	78-78.10.78.12.78.30.78.14.78.3450-1234-3470-58-	70	10	k1	BD/a2d	1999-02-18	South Croydon		99/269 447
+15284	South East Iceland	70-36.10.58.12-18.70.14-58.14-14.70.16-78.	10	12	b	cps/BDEc	2010-07-11	Burnley		10/762
+15285	Eskimo Nebula	70-36.10.58.12-18.70.14-58.14-14.70.16-78.	10	10	g	cps/BDEc	2008-01-27	Blackburn Cathedral		08/216
+
+Little Delight Royal methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+15286	Tirley Little	-34-10-12-1230-14-	36	12	1098673524	1971-01-19	Nottingham, St Peter	71/269
+
+Little Delight Royal methods (treble to 8ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+15287	Little Pooley Little	-30-14-56-36-34-10-12-	18	12	d1	cps/BDa1	2001-12-17	Oxford, St Thomas the Martyr	02/33
+15288	Dover Little	-50-14.50-1250.36-14-10.36.14.56.	18	10	m	T/cd	2008-05-22	Burnley	08/650
+15289	Humber Little	50.34-1450-56-3670.14-78.10-14-	78	12	f	BD/BDa1c	2008-03-13	Burnley	08/387
+

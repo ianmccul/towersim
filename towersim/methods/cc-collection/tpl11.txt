@@ -1,0 +1,7 @@
+Treble Place Cinques methods
+(treble's path 1 2   1 2   3 4 3   4 5 6 5   6 7 8 7   8 9 10 9   10 11 11 11)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+17115	Kent	34E.E.34E.1.E.12E.E.1.E.12E.E.1.E.12E.E.1.E.12E.E.1.E.	12E	1	s	1832-02-01	Birmingham, St Martin	58/532 59/202
+

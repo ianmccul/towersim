@@ -1,0 +1,36 @@
+"Original","Original",principle,6,"",-16
+"Forward","Forward",principle,6,"",34-34.16
+"Canis","Canis",principle,6,"",-16-16-12
+"Ursa","Ursa",principle,6,"",34.16-16.34.12
+"Double Eire","Double Eire",principle,6,"",34.16.34.16.34-
+"Kidderminster","Kidderminster",principle,6,"",34-34.16-34-16
+"MUG","MUG",principle,6,"",34.12.34-34.12.34.16
+"S5 under Carlisle","S5 under Carlisle",principle,6,"",-1256-1236-12-14.36-34.12
+"S5 under George Orwell","S5 under George Orwell",principle,6,"",-1256-1236-12-14.56-36.12
+"D1 under Benets","D1 under Benets",principle,6,"",-1256-16-12-14.36-56.1236
+"Sedlescombe under Carlisle","Sedlescombe under Carlisle",principle,6,"",-1456-1236-12-14.36-34.12
+"Sedlescombe under London","Sedlescombe under London",principle,6,"",-1456-1236-12-14.36-36.12
+"Mendip under London","Mendip under London",principle,6,"",-1456-16-12-14.36-36.1236
+"Brussels Sprout","Brussels Sprout",principle,6,"",-16.34.12.34-34.12.34.16-12
+"S6 under Carlisle","S6 under Carlisle",principle,6,"",-3456-1236-12-14.36-34.14
+"S2 under London","S2 under London",principle,6,"",-3456-36-12-14.36-36.1234
+"S2 under George Orwell","S2 under George Orwell",principle,6,"",-3456-36-12-14.56-36.1234
+"Cambridge over S1","Cambridge over S1",principle,6,"",-36-14-12-36-1256-56
+"Dover over Cambridge","Dover over Cambridge",principle,6,"",-36-16-12-36-1456-56
+"Hekaton","Hekaton",principle,6,"",-36.12.34.12-12.34.12.36-16
+"St Thomas the Martyr","St Thomas the Martyr",principle,6,"",14-16.34.12-12.34.16-14.36
+"Priors Dean","Priors Dean",principle,6,"",34.16-16.34-34.16-16.34.12
+"Clotherholme","Clotherholme",principle,6,"",34.16.34.16.34-34.16.34.16.34.12
+"London over Cambridge","London over Cambridge",principle,6,"",36-36.14-12-36-1456-3456
+"George Orwell over Sedlescombe","George Orwell over Sedlescombe",principle,6,"",36-56.14-12-1236-1456-56
+"Benets over Mendip","Benets over Mendip",principle,6,"",56-36.14-12-16-1456-1256
+"Benets over S1","Benets over S1",principle,6,"",56-36.14-12-36-1256-1456
+"Benets over Cambridge","Benets over Cambridge",principle,6,"",56-36.14-12-36-1456-3456
+"St Maurice","St Maurice",principle,6,"",56.12.36-14-14-36.12.56.14
+"Shipway","Shipway",principle,6,"",-36.14-14-14-14.36-14-14-14
+"Pitman","Pitman",principle,6,"",-14-36.14-14.36.14-14.36.14-14.36-14-16
+"Striking","Striking",principle,6,"",-36-14-36.14-14.36.14-14.36.14-14.36-14
+"Eureka","Eureka",principle,6,"",34.16.34.16-16.34.16.34.16-36-16.34.16.34.16-16.34.16.34-
+"St Francis","St Francis",principle,6,"",-12-14-36.14-34-16-16.34.12.36.12.34.12-12.34.12.36.12.34.16-16-34-14.36-14-12-16
+"Newick","Newick",principle,6,"",-12-36-34-14.36-34-36.12.34.12.36.12.34-34.12.36.12.34.12.36-34-36.14-34-36-12-16
+"Worth","Worth",principle,6,"",-12-36-34-16.34.12.36-34-36.12.34.12.36-36.12.34.12.36-34-36.12.34.16-34-36-12-16
