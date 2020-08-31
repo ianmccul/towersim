@@ -1,0 +1,74 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Delight Maximus methods
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+15290	Woodbine	-34-14-12-1T-12-1T-12-1T-12-1T-12-	1T	1T	15237496E8T0		1987-07-25	Rotherham, All Saints	1987-05-18	87/607 730
+15291	King Lud	-34-14.5T.12-3T.12-14.5T.14-9T.1450-14-1T.56.12.36.	5T	1T	h	ET/BDc	Spliced			96/9
+15292	College Youths Pleasure	-34-1T-12-1T-14-3T-14-3T-14-3T-14-	3T	1T	134628507T9E		1993-12-09	Reading, St Laurence		94/60
+15293	Baltic	-3T-14-12-1T-34-125T-36-7T-16-7T-34-	7T	12	d2	cps/BDa2c	1991-09-07	Bradford Cathedral		91/1016
+15294	Ipswich	-3T-14-12-3T-14-1T-14-1T-14-1T-14-	1T	12	f	cps/BDFK1	1982-04-03	Ipswich, St Mary-le-Tower		82/383
+15295	Yellowstone	-3T-14-12-3T.14-34.1T.34-34.1T.34-34.1T.34-34.	1T	12	a	cps/BDK1a2			2010-04-12	10/419
+15296	Ketteringham	-3T-14-1256-16-34-1T-16-5T-18-7T-10-	9T	12	b	B/Ba2	2003-10-18	Lincoln Cathedral		03/1071
+15297	Restoration	-3T-14-125T-36.14.7T.14.38-129T-30-14-1T-12-	ET	12	b	D/Ba2	1990-06-24	High Wycombe		90/731
+15298	Elmhurst	-3T-14-129T-10-14-1T-34-1T-16-9T-78-	9T	12	c1	cps/Bad	Spliced			02/763
+15299	Leicester	-3T-14-5T-16-147T-38-34-1T-1456-5T-58-	1T	12	f	cps/Ba2c	1971-11-27	Leicester, St Margaret		71/1125
+15300	Chesterfield	-3T-14-5T-16-147T-58.14.9T.14.30-34-1T-34-	1T	12	e	cps/Bc	Spliced			92/309
+15301	Olympic	-3T-14-5T-16-70-1890-9T-1T-16-5T-56-	ET	12	b	cps/Bc	1993-08-30	Manchester, Town Hall		93/977
+15302	Belshazzar	-3T-14-5T-16-7T-18-9T-10-12-1T-30-	1T	12	f	cps/Bc	1996-11-09	London, St Mary-le-Bow		96/1196
+15303	Christmas	-3T-14-5T-16-7T-18-9T-10-12-1T.34-14.	ET	12	b	cps/BDK1c	1989-12-22	Luton		90/73
+15304	Lincolnshire	-3T-14-5T-16-7T-18-9T-10-ET-1T-78-	9T	12	b	cps/Bc	2005-10-29	Lincoln Cathedral		05/1110
+15305	Nottingham	-3T-14-5T-16-7T-18-9T-10.34-34.1T-90-	ET	12	b	cps/BDc	1983-06-25	Nottingham, St Peter		83/628
+15306	Southdown	-3T-14-5T-16-7T-18-9T-30-14-1T-12-	ET	12	b	cps/Ba2c	1989-11-18	Leicester Cathedral	1990-02-14	89/1131 90/328
+15307	Chester	-3T-14-5T-16-7T-18-9T-30-14-1T-34-	ET	12	b	cps/Bc	1994-05-30	Chester Cathedral		94/658
+15308	Shrewsbury	-3T-14-5T-16-7T-18-9T-30-14-1T-56-	ET	12	b	cps/Ba1c	1996-11-09	Shrewsbury, St Chad		96/1246
+15309	Chilterns	-3T-14-5T-16-7T-18-9T-30-14-1T-78-	ET	12	b	cps/Bc	1995-04-01	Amersham		95/472
+15310	Piggottshill	-3T-14-5T-16-7T-18-9T-30-14-1T-90-	ET	12	b	cps/BDc	1990-02-03	Croydon, St John		90/277
+15311	Mather	-3T-14-5T-16-7T-38-149T-50-16-1T-78-	ET	12	b	cps/Bc	2010-09-11	Portsmouth Cathedral		10/991
+15312	Churchfields	-3T-14-5T-36-147T-18-129T-30-14-1T-12-	ET	12	b	cps/Ba2c	1991-11-23	Leicester Cathedral		91/1229
+15313	Knotty Ash	-3T-14-5T-36-147T-58-169T-70-18-1T-90-	ET	12	b	cps/BDc	2006-06-15	Reading, St Laurence		06/645
+15314	Nottinghamshire	-56-14-56-1T-14-5T.14-14.5T.14-14.5T.14-14.	5T	1T	l	cps/K1a1	2003-07-19	Nottingham, St Mary		03/781
+15315	Flax Bourton	-56-1T-12-3T-14-5T-16-7T-18-9T-10-	ET	12	167329E4T508		2003-04-10	Bristol, St Stephen		03/416
+15316	Scutari	-5T-14.5T-12.3T-34-1T-34-1T-34-1T-34-	1T	1T	m	cps/BDac	Spliced			08/1256
+15317	Miranda	-5T-14.5T-5T.36.14-7T.58.16-9T.70.18-38.1T.38.14-	9T	1T	k2	cps/K1c	1992-06-11	Birmingham Cathedral		92/680 712
+15318	Avon	-5T-14.5T-5T.30.14-70.1T.36-9T.30.18-18.9T-18-	1T	1T	m	cps/c	1979-11-15	Birmingham Cathedral	1980-05-21	79/1087 80/535
+15319	Holywell	-5T-14.5T.12-1T-14-3T-12-1T-12-1T-12-	1T	12	b	T/Bac	1978-10-24	Shoreditch		78/983
+15320	Vax	-5T-14.5T.12-1T-14-5T.14.36.9T.10.58-16.7T.16.70.16.	ET	1T	k1	T/Bc	1993-05-15	London, St Mary-le-Bow		92/309 93/625
+15321	Shardeloes	-5T-16-7T-18-9T-30-14-1T-12-167T-58-	ET	12	b	cps/Oa2c	1989-04-29	Rotherham, All Saints		89/462
+15322	Oswald	34-34.1T-12-3T-14-5T-16-7T-18-9T-10-	ET	1T	g	cps/BDc	1982-07-13	Nottingham, St Peter	2003-03-03	82/679 03/275
+15323	Charleston	34-5T.14-12-1T-14-5T.14-14.5T.14-14.5T.14-14.	5T	12	a	cps/BDc	2000-01-04	Shoreditch		00/63
+15324	Gracechurch	34-5T.14-12-3T-34-1T-16-7T.16-16.7T-16-	7T	1T	l	cps/BDa2c	2007-03-31	South Croydon		07/393
+15325	Hemel Hempstead	34-5T.14-125T-1T-90-18-16-70.16-16.9T.16.70.16.	ET	12	d	T/Da2c	2001-02-10	Worcester, All Saints		01/273
+15326	Selly Oak	34-5T.14-5T-1T-14-3T.16-16.7T.16-16.7T.16-16.	7T	1T	k1	cps/Dcd	1993-05-13	Birmingham Cathedral		93/652
+15327	Deira	34-5T.14-5T-36.14-12.3T-12.36.1T-12.36.1T-12.36.	1T	1T	m	cps/BDc	2000-09-30	Ossett		00/1068
+15328	Rising Sun	36-7T.18-9T.50.36.12-1270.5T.16.34.9T.10.38.14.38.1T.90-10.	9T	1T	k1	cps/BEa2cd	Spliced			92/309
+15329	Edna	36-7T.18-9T.50.3T.14-147T.50.9T.14.36.1T.58.34.18.3T.70-56.	1T	1T	m	cps/EN1c	1993-02-11	Birmingham Cathedral		93/450
+15330	Angel	30.9T-1T.50-9T.38.147T-12.3T.16-36.147T-16.38.9T.30-10.	3T	1T	j2	cps/Bcd	Spliced			92/309
+15331	The Borough	3T-3T.14-12-1T-12-5T-1456-147T-58-189T-18-	9T	12	f	cps/BDa2c	1996-11-30	Southwark Cathedral		97/35
+15332	Shoreditch	3T-3T.14-12-1T-12-5T-16-7T-18-9T-10-	ET	12	d	cps/BDa2	1979-05-01	Shoreditch		79/524
+15333	Tritone	3T-3T.14-12-1T-12-5T.14-14.7T.16-18.9T.14-14.	9T	12	f	cps/BDa2c	2000-11-20	Escrick		01/135
+15334	Temple Row	3T-3T.14-12-1T.34-14.5T.14.56-167T-78-9T-18-	9T	12	f	cps/BDc	2010-04-12	Birmingham Cathedral	2011-04-06	10/418 11/632
+15335	Newport	3T-3T.14-12-3T-14-3T-36-1T-16-149T-34-	9T	12	f	cps/BDa2d	1990-03-17	Newport (Gwent)		90/440
+15336	Smithfield	3T-3T.14-12-3T.14-14.3T.16-36.1T-14-5T.14-14.	5T	12	c	cps/BDcd	Spliced			92/309
+15337	Kingsland	3T-56.14-56-1T-14-145T-14-7T-16-7T-16-	7T	12	f	cps/Ba1c	1977-05-03	Shoreditch		77/553
+15338	Spitalfields	3T-56.14-56-1T-14-5T.14-14.5T.14-14.5T.14-14.	5T	12	a	cps/Ba1c	1981-03-03	Shoreditch	2011-04-13	81/343 11/466
+15339	Toronto	3T-5T.14-5T-1T-14-5T.14-14.7T.16-16.7T.16-16.	7T	12	f	cps/Bc	2002-04-13	Worcester, All Saints		02/435
+15340	Luxembourg	3T-5T.14-5T-1T-14.7T.1458.9T.14-1T-18-9T.18-10.	ET	12	a	cps/Bc	Spliced			92/309
+15341	Winter Garden	3T-5T.14-5T-3T-12-1T-16-7T-16-7T-16-	7T	12	f	cps/Bc	2003-05-24	Sheffield Cathedral		03/566
+15342	Snow Tiger	3T-5T.14-5T-3T-12-1T-ET-10-18-9T.18-10.	ET	12	f	cps/Bc	1999-01-09	Ipswich, St Mary-le-Tower		99/145
+15343	Barnwell	56-56.1T-12-3T-14-5T-14-5T-14-5T.14-14.	5T	12	d	cps/Ba1c	1981-12-19	Kettering		82/155
+15344	Gypsy	70.9T.36.18.5T.12-10.9T-147T.50.16.9T-1T.58-38.7T-36.50.	1T	1T	m	cps/Bcd	Spliced			92/309
+15345	Nemesis	7T-36.189T.50-50.1T.70.14-50.149T-169T.50-34-123T-12.30.	1T	12	b	cps/BEa2d	1991-06-30	London, St Mary-le-Bow		91/115 744
+
+Little Delight Maximus methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+15346	Catherine Little	-3T-14-12-1T-14-	36	12	d1	cps/BDd	1997-03-08	Worcester, All Saints	97/370
+
+Non-palindromic Delight Maximus methods
+
+No.	Name	Notation	lh	fch	Tower bells	Place	RW ref
+
+15348	Temple Meads	-5T-14.5T-5T.30.14-70.1T.36-9T.30.18-18.9T-18-1T-18-9T.18-18.70.9T-16.58.7T-14.36.5T-5T.14-5T-1T	g	cps/c	1998-12-19	Bristol, St Stephen	99/68 09/957
+

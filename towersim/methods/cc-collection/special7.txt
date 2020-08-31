@@ -1,0 +1,21 @@
+Twin-hunt Triples methods (a)
+
+No.     Name    Notation        hl      lh      Tower bells     Place   Handbells       RW ref
+
+1947    Single Oxford Bob       3.1.5.1.7.1.7.  1       b       1788-05-14      Wakefield               58/767
+1948    Hereward Bob    3.1.5.1.7.3.7.  1       e       1935-10-05      Chester, Old St Mary            35/648
+1949    Double Oxford Bob       3.1.5.1.7.3.7.  5       f       1908-11-20      Chester, Old St Mary            BN V27/465
+1950    Grandsire       3.1.7.1.7.1.7.  1       a       1718-08-26      Norwich, St Peter Mancroft      1828-08-01      58/767
+1951    London New Bob  3.1.7.1.7.1.7.  3       1253674 Spliced                 93/855
+1952    Double Grandsire        3.1.7.1.7.1.7.  5       b       1779-12-31      Wakefield               58/767
+1953    Aldington Pleasure Bob  3.1.7.1.7.3.7.  1       1276435 Spliced                 93/855
+1954    St Clement's College Bob        3.1.7.1.7.3.7.  3       f       1911-02-24      Handbridge      1946-11-02      BN V30/30 RW 46/540
+1955    Single Darlaston Bob    5.1.5.1.7.1.7.  1       1273645 1891-10-10      Darlaston       1896-11-16      BN V10/355 V15/398
+1956    London Delight Bob      5.1.7.1.7.1.7.  5       1273645 Spliced                 93/855
+1957    Single Court Bob        7.1.5.1.7.1.7.  1       g       1886-09-18      Warnham, St Margaret            BN V5/205
+1958    Double Court Bob        7.1.5.1.7.3.7.  1       h       1933-10-02      Ealing, Christ Church           33/643
+1959    London Bob      7.1.5.1.7.3.7.  5       l       1927-03-05      Bridgend                27/147
+1960    Reverse Grandsire       7.1.7.1.7.1.7.  5       g       1782-03-09      Hackney         58/767
+1961    College Bob     7.1.7.1.7.3.7.  3       l       1950-02-11      Pulford 1955-07-13      50/146 55/452
+
+

@@ -1,0 +1,35 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Hybrid Minimus methods
+   (treble's path 1 2  3  4  3  2  1)
+
+No.	Name	Notation	lh	RW ref
+
+17123	Wader Wodon	-14-12.14.34	1423	05/235
+17124	Ypsen Harpen	-14.12-14.34	1423	05/235
+17125	Lathors Cure	34.14-12.14-	1342	05/235
+17126	Smod Hole Inn	34.14.12-14-	1342	05/235
+
+Hybrid Minimus methods
+        (treble's path 1 2  3  4  4  3  2  1)
+
+No.	Name	Notation	lh	RW ref
+
+17127	Cherington	-14-14-14.34	1342	05/235
+17128	Stanway	-14-34-14.34	1423	05/235
+17129	Wyck Rissington	-14.12.34.12.14.34	1423	05/235
+17130	Elmstone Hardwicke	34.14-14-14-	1423	05/235
+17131	Daglingworth	34.14-34-14-	1342	05/235
+17132	Clearwell	34.14.12.34.12.14-	1342	05/235
+
+Hybrid Minimus methods
+(treble's path 1 2  3  4  3  2  1  1)
+
+No.	Name	Notation	lh	RW ref
+
+17133	Parsley	-14-12.14-12	1423	05/235
+17134	Rosemary	-14-12.14-14	1342	05/235
+17135	Sage	-14.12-14-12	1423	05/235
+17136	Thyme	-14.12-14-14	1342	05/235
+17137	Rhubarb	34.14-12.14.34.12	1342	05/235
+17138	Custard	34.14.12-14.34.12	1342	05/235
+

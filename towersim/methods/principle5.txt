@@ -1,0 +1,130 @@
+"Original","Original",principle,5,"",5.1
+"Tendring","Tendring",principle,5,"",123.1.123.5
+"What you Please","What you Please",principle,5,"",125.3.125.1
+"Reverse Paradox","Reverse Paradox",principle,5,"",125.5.125.1
+"Paradox","Paradox",principle,5,"",145.1.145.5
+"Phoenix","Phoenix",principle,5,"",145.3.145.5
+"Saturn","Saturn",principle,5,"",3.5.3.1
+"Reverse Tendring","Reverse Tendring",principle,5,"",345.5.345.1
+"Titanic","Titanic",principle,5,"",5.1.5.3
+"Cactus","Cactus",principle,5,"",5.1.3.5.1
+"Reverse Erin","Reverse Erin",principle,5,"",1.3.5.3.5.3
+"Ocean Finance","Ocean Finance",principle,5,"",3.5.123.1.3.123
+"Cucumber","Cucumber",principle,5,"",5.1.125.145.5.1
+"Vegetarian Sausage","Vegetarian Sausage",principle,5,"",5.1.345.123.5.1
+"Erin","Erin",principle,5,"",5.3.1.3.1.3
+"Earin","Earin",principle,5,"",5.345.1.3.145.3
+"Banana","Banana",principle,5,"",3.125.3.125.3.145.3.145
+"Clappers Orchard","Clappers Orchard",principle,5,"",1.145.3.145.1.145.3.145.1.125.3.125
+"Stedman","Stedman",principle,5,"",3.1.5.3.1.3.1.3.5.1.3.1
+"Reverse Carter","Reverse Carter",principle,5,"",3.1.5.3.1.3.1.3.5.1.3.5
+"Wiggle","Wiggle",principle,5,"",3.125.3.145.3.145.3.145.3.145.3.125
+"Lulys Ope","Lulys Ope",principle,5,"",3.145.1.145.3.125.1.145.3.145.1.125
+"Reverse Stedman","Reverse Stedman",principle,5,"",3.5.1.3.5.3.5.3.1.5.3.5
+"Newton Valence","Newton Valence",principle,5,"",3.5.125.3.1.3.1.3.125.5.3.5
+"Parsnip","Parsnip",principle,5,"",345.1.5.1.345.1.345.123.5.1.345.123
+"Carter","Carter",principle,5,"",5.3.1.3.5.1.3.5.3.5.3.1
+"Reverse Helmdon","Reverse Helmdon",principle,5,"",1.125.3.125.3.125.3.125.3.125.3.125.1.123.5.123.5.123.5.123.5.123.5.123
+"Reverse Welton","Reverse Welton",principle,5,"",1.125.3.125.3.125.3.125.3.125.3.125.1.123.5.345.5.123.5.123.5.345.5.123
+"Reverse Staverton","Reverse Staverton",principle,5,"",1.125.3.125.3.125.3.125.3.125.3.125.1.3.125.345.125.3.5.3.125.345.125.3
+"Reverse Norton","Reverse Norton",principle,5,"",1.125.3.125.3.125.3.125.3.125.3.125.1.3.5.345.5.3.5.3.5.345.5.3
+"Reverse Maidford","Reverse Maidford",principle,5,"",1.125.3.345.3.125.3.125.3.345.3.125.1.123.5.345.5.123.5.123.5.345.5.123
+"Mermaid","Mermaid",principle,5,"",1.3.1.3.1.5.1.3.1.3.1.125.3.5.3.5.3.1.3.5.3.5.3.145
+"Reverse Eydon","Reverse Eydon",principle,5,"",1.5.123.125.123.5.3.5.123.125.123.5.1.3.125.123.125.3.5.3.125.123.125.3
+"Reverse Thenford","Reverse Thenford",principle,5,"",1.5.123.345.123.5.3.5.123.345.123.5.1.3.125.345.125.3.5.3.125.345.125.3
+"Reverse Charwelton","Reverse Charwelton",principle,5,"",1.5.3.125.3.5.3.5.3.125.3.5.1.123.5.345.5.123.5.123.5.345.5.123
+"Reverse Gayton","Reverse Gayton",principle,5,"",1.5.3.125.3.5.3.5.3.125.3.5.1.3.5.345.5.3.5.3.5.345.5.3
+"Reverse Woodford","Reverse Woodford",principle,5,"",1.5.3.345.3.5.3.5.3.345.3.5.1.3.5.345.5.3.5.3.5.345.5.3
+"Reverse Sedgefield","Reverse Sedgefield",principle,5,"",123.5.1.3.145.3.1.5.1.345.1.5.1.345.1.5.1.3.145.3.1.5.123.5
+"Guilsborough","Guilsborough",principle,5,"",125.1.3.123.3.1.3.1.3.123.3.1.125.3.1.123.1.3.1.3.1.123.1.3
+"Ravensthorpe","Ravensthorpe",principle,5,"",125.1.3.145.3.1.3.1.3.145.3.1.125.3.1.345.1.3.1.3.1.345.1.3
+"Dalscote","Dalscote",principle,5,"",125.1.3.145.3.1.3.1.3.145.3.1.125.345.1.123.1.345.1.345.1.123.1.345
+"Sudborough","Sudborough",principle,5,"",125.1.345.123.345.1.3.1.345.123.345.1.125.3.145.123.145.3.1.3.145.123.145.3
+"Abthorpe","Abthorpe",principle,5,"",125.1.345.145.345.1.3.1.345.145.345.1.125.3.145.345.145.3.1.3.145.345.145.3
+"Litchborough","Litchborough",principle,5,"",125.145.3.123.3.145.3.145.3.123.3.145.125.345.1.123.1.345.1.345.1.123.1.345
+"Eastcote","Eastcote",principle,5,"",125.145.3.145.3.145.3.145.3.145.3.145.125.3.1.123.1.3.1.3.1.123.1.3
+"Astcote","Astcote",principle,5,"",125.145.3.145.3.145.3.145.3.145.3.145.125.3.145.123.145.3.1.3.145.123.145.3
+"Duncote","Duncote",principle,5,"",125.145.3.145.3.145.3.145.3.145.3.145.125.345.1.123.1.345.1.345.1.123.1.345
+"Rothersthorpe","Rothersthorpe",principle,5,"",125.145.3.145.3.145.3.145.3.145.3.145.125.345.1.345.1.345.1.345.1.345.1.345
+"Reverse Rothersthorpe","Reverse Rothersthorpe",principle,5,"",145.125.3.125.3.125.3.125.3.125.3.125.145.123.5.123.5.123.5.123.5.123.5.123
+"Reverse Duncote","Reverse Duncote",principle,5,"",145.125.3.125.3.125.3.125.3.125.3.125.145.123.5.345.5.123.5.123.5.345.5.123
+"Reverse Astcote","Reverse Astcote",principle,5,"",145.125.3.125.3.125.3.125.3.125.3.125.145.3.125.345.125.3.5.3.125.345.125.3
+"Reverse Eastcote","Reverse Eastcote",principle,5,"",145.125.3.125.3.125.3.125.3.125.3.125.145.3.5.345.5.3.5.3.5.345.5.3
+"Reverse Litchborough","Reverse Litchborough",principle,5,"",145.125.3.345.3.125.3.125.3.345.3.125.145.123.5.345.5.123.5.123.5.345.5.123
+"Cold Aston","Cold Aston",principle,5,"",145.3.5.1.345.1.3.1.5.3.1.3.145.3.5.1.345.1.345.1.5.3.145.3
+"Reverse Abthorpe","Reverse Abthorpe",principle,5,"",145.5.123.125.123.5.3.5.123.125.123.5.145.3.125.123.125.3.5.3.125.123.125.3
+"Reverse Sudborough","Reverse Sudborough",principle,5,"",145.5.123.345.123.5.3.5.123.345.123.5.145.3.125.345.125.3.5.3.125.345.125.3
+"Reverse Dalscote","Reverse Dalscote",principle,5,"",145.5.3.125.3.5.3.5.3.125.3.5.145.123.5.345.5.123.5.123.5.345.5.123
+"Reverse Ravensthorpe","Reverse Ravensthorpe",principle,5,"",145.5.3.125.3.5.3.5.3.125.3.5.145.3.5.123.5.3.5.3.5.123.5.3
+"Reverse Guilsborough","Reverse Guilsborough",principle,5,"",145.5.3.345.3.5.3.5.3.345.3.5.145.3.5.345.5.3.5.3.5.345.5.3
+"Universities of Leicester","Universities of Leicester",principle,5,"",3.1.3.1.3.5.3.1.3.1.3.145.5.3.5.3.5.1.5.3.5.3.5.125
+"Undershaft","Undershaft",principle,5,"",3.1.345.1.3.5.1.3.145.3.1.3.1.3.145.3.1.5.3.1.345.1.3.1
+"Smithfield","Smithfield",principle,5,"",3.1.345.1.3.5.1.3.145.3.1.3.1.3.145.3.1.5.3.1.345.1.3.5
+"Sussex Churchwardens Pleasure","Sussex Churchwardens Pleasure",principle,5,"",3.1.5.3.1.345.5.3.1.5.3.1.3.5.1.3.5.345.1.3.5.1.3.1
+"Orpheus","Orpheus",principle,5,"",3.123.1.123.5.123.3.123.1.123.3.123.1.123.3.123.5.123.1.123.3.123.1.123
+"Western Michigan University","Western Michigan University",principle,5,"",3.145.3.145.3.125.3.125.3.145.3.145.3.145.3.145.3.145.3.125.3.145.3.145
+"Reverse Smithfield","Reverse Smithfield",principle,5,"",3.5.123.5.3.1.5.3.125.3.5.3.5.3.125.3.5.1.3.5.123.5.3.1
+"Reverse Undershaft","Reverse Undershaft",principle,5,"",3.5.123.5.3.1.5.3.125.3.5.3.5.3.125.3.5.1.3.5.123.5.3.5
+"Ducklington","Ducklington",principle,5,"",3.5.3.145.3.125.3.125.3.1.3.145.3.1.3.125.3.145.3.145.3.5.3.125
+"Success","Success",principle,5,"",3.5.3.5.3.1.5.3.5.3.5.125.3.1.3.1.3.5.1.3.1.3.1.123
+"Simon Percy's Rolling Pin","Simon Percy's Rolling Pin",principle,5,"",345.1.3.1.3.1.345.1.5.3.1.345.1.3.1.3.1.345.1.3.5.1.3.1
+"Reverse White's 'No Call'","Reverse White's 'No Call'",principle,5,"",345.1.5.1.5.1.5.1.345.1.5.1.5.1.345.1.345.1.5.1.345.1.345.1
+"Sedgefield","Sedgefield",principle,5,"",345.1.5.3.125.3.5.1.5.123.5.1.5.123.5.1.5.3.125.3.5.1.345.1
+"Trafalgar Day","Trafalgar Day",principle,5,"",345.1.5.3.145.3.145.3.5.1.345.1.345.1.5.3.145.3.1.3.5.1.3.1
+"Hunter","Hunter",principle,5,"",345.123.1.123.5.123.3.123.1.123.3.123.1.123.3.123.5.123.1.123.345.123.5.123
+"Steve's Assymetric","Steve's Assymetric",principle,5,"",345.123.1.123.5.123.3.123.1.123.3.123.1.123.3.123.5.123.145.123.3.123.5.123
+"Only one 'f' in OfSTED","Only one 'f' in OfSTED",principle,5,"",345.123.1.123.5.123.3.123.145.123.3.123.145.123.3.123.5.123.1.123.345.123.1.123
+"Crambo","Crambo",principle,5,"",345.125.145.123.345.123.125.345.123.345.125.345.123.345.145.123.345.125.345.123.345.125.345.123
+"To The Pub","To The Pub",principle,5,"",345.3.345.1.345.5.345.3.345.1.345.3.345.1.345.3.345.5.345.1.345.3.345.1
+"Botstone","Botstone",principle,5,"",5.1.145.1.3.123.1.123.3.1.145.1.5.3.345.3.1.123.3.123.1.3.345.3
+"Handsacre","Handsacre",principle,5,"",5.1.145.1.3.145.1.145.3.1.145.1.5.3.345.3.1.345.3.345.1.3.345.3
+"Elkstone","Elkstone",principle,5,"",5.1.145.1.345.123.1.123.345.1.145.1.5.3.345.3.145.123.3.123.145.3.345.3
+"Seedcroft","Seedcroft",principle,5,"",5.1.145.1.345.145.1.145.345.1.145.1.5.3.345.3.145.345.3.345.145.3.345.3
+"Little Eaton","Little Eaton",principle,5,"",5.1.3.1.3.145.3.1.3.1.3.145.5.3.1.3.1.345.1.3.1.3.1.345
+"Stanley","Stanley",principle,5,"",5.1.3.1.3.145.3.1.3.1.3.145.5.3.1.3.1.345.5.3.1.3.1.345
+"Chester Green","Chester Green",principle,5,"",5.1.3.1.345.1.3.1.3.1.345.1.5.3.1.3.145.3.1.3.1.3.145.3
+"Mapperley","Mapperley",principle,5,"",5.1.3.1.345.1.3.1.3.1.345.1.5.3.1.3.145.3.5.3.1.3.145.3
+"Woodford","Woodford",principle,5,"",5.1.3.123.3.1.3.1.3.123.3.1.5.3.1.123.1.3.1.3.1.123.1.3
+"Gayton","Gayton",principle,5,"",5.1.3.145.3.1.3.1.3.145.3.1.5.3.1.123.1.3.1.3.1.123.1.3
+"Charwelton","Charwelton",principle,5,"",5.1.3.145.3.1.3.1.3.145.3.1.5.345.1.123.1.345.1.345.1.123.1.345
+"Great Burstead","Great Burstead",principle,5,"",5.1.345.1.3.1.3.1.345.1.3.1.5.3.145.3.1.3.1.3.145.3.1.3
+"Horndon-on-the Hill","Horndon-on-the Hill",principle,5,"",5.1.345.1.345.145.3.1.345.1.345.145.5.3.145.3.145.345.1.3.145.3.145.345
+"Thenford","Thenford",principle,5,"",5.1.345.123.345.1.3.1.345.123.345.1.5.3.145.123.145.3.1.3.145.123.145.3
+"Aveley","Aveley",principle,5,"",5.1.345.145.3.145.3.1.345.145.3.145.5.3.145.345.1.345.1.3.145.345.1.345
+"Eydon","Eydon",principle,5,"",5.1.345.145.345.1.3.1.345.145.345.1.5.3.145.345.145.3.1.3.145.345.145.3
+"Stanley Common","Stanley Common",principle,5,"",5.1.345.145.345.1.3.1.345.145.345.1.5.3.145.345.145.3.5.3.145.345.145.3
+"Buckland","Buckland",principle,5,"",5.123.1.123.3.123.1.123.345.123.145.123.5.123.3.123.1.123.3.123.145.123.345.123
+"Chipping","Chipping",principle,5,"",5.123.1.123.3.123.145.123.3.123.145.123.5.123.3.123.1.123.345.123.1.123.345.123
+"Fairlands Valley","Fairlands Valley",principle,5,"",5.123.1.123.3.123.145.123.345.123.1.123.5.123.3.123.1.123.345.123.145.123.3.123
+"Dane End","Dane End",principle,5,"",5.123.1.123.345.123.1.123.3.123.145.123.5.123.3.123.145.123.3.123.1.123.345.123
+"Ickleford","Ickleford",principle,5,"",5.123.1.123.345.123.145.123.3.123.1.123.5.123.3.123.145.123.345.123.1.123.3.123
+"Luffenhall","Luffenhall",principle,5,"",5.123.1.123.345.123.145.123.345.123.145.123.5.123.3.123.145.123.345.123.145.123.345.123
+"Blackmore End","Blackmore End",principle,5,"",5.123.1.3.345.3.1.3.345.3.1.123.5.123.3.1.145.1.3.1.145.1.3.123
+"Beazley End","Beazley End",principle,5,"",5.123.1.345.3.345.1.345.3.345.1.123.5.123.3.145.1.145.3.145.1.145.3.123
+"Eastwick","Eastwick",principle,5,"",5.123.145.123.3.123.1.123.3.123.145.123.5.123.345.123.1.123.3.123.1.123.345.123
+"Haultwick","Haultwick",principle,5,"",5.123.145.123.3.123.1.123.345.123.1.123.5.123.345.123.1.123.3.123.145.123.3.123
+"Gosmore","Gosmore",principle,5,"",5.123.145.123.3.123.145.123.3.123.1.123.5.123.345.123.1.123.345.123.1.123.3.123
+"Meesden","Meesden",principle,5,"",5.123.145.123.3.123.145.123.345.123.145.123.5.123.345.123.1.123.345.123.145.123.345.123
+"Kelshall","Kelshall",principle,5,"",5.123.145.123.345.123.1.123.3.123.1.123.5.123.345.123.145.123.3.123.1.123.3.123
+"Nuthampstead","Nuthampstead",principle,5,"",5.123.145.123.345.123.1.123.345.123.145.123.5.123.345.123.145.123.3.123.145.123.345.123
+"Odsey","Odsey",principle,5,"",5.123.145.123.345.123.145.123.3.123.145.123.5.123.345.123.145.123.345.123.1.123.345.123
+"Panshanger","Panshanger",principle,5,"",5.123.145.123.345.123.145.123.345.123.1.123.5.123.345.123.145.123.345.123.145.123.3.123
+"Rotten End","Rotten End",principle,5,"",5.123.145.3.345.3.1.3.345.3.145.123.5.123.345.1.145.1.3.1.145.1.345.123
+"Cornish Hall End","Cornish Hall End",principle,5,"",5.123.145.345.3.345.1.345.3.345.145.123.5.123.345.145.1.145.3.145.1.145.345.123
+"Celery City","Celery City",principle,5,"",5.123.5.123.5.1.5.1.5.123.5.1.5.1.5.1.5.123.5.123.5.123.5.1
+"White's 'No Call'","White's 'No Call'",principle,5,"",5.123.5.123.5.123.5.1.5.1.5.1.5.123.5.1.5.1.5.123.5.123.5.1
+"Weag's Bridge","Weag's Bridge",principle,5,"",5.145.1.145.3.123.1.123.3.145.1.145.5.345.3.345.1.123.3.123.1.345.3.345
+"Tuppenhurst","Tuppenhurst",principle,5,"",5.145.1.145.3.145.1.145.3.145.1.145.5.345.3.345.1.345.3.345.1.345.3.345
+"Swarkstone Bridge","Swarkstone Bridge",principle,5,"",5.145.1.145.345.123.1.123.345.145.1.145.5.345.3.345.145.123.3.123.145.345.3.345
+"Hawksyard","Hawksyard",principle,5,"",5.145.1.145.345.145.1.145.345.145.1.145.5.345.3.345.145.345.3.345.145.345.3.345
+"Laindon","Laindon",principle,5,"",5.145.3.1.3.1.3.145.3.1.3.1.5.345.1.3.1.3.1.345.1.3.1.3
+"Maidford","Maidford",principle,5,"",5.145.3.123.3.145.3.145.3.123.3.145.5.345.1.123.1.345.1.345.1.123.1.345
+"Norton","Norton",principle,5,"",5.145.3.145.3.145.3.145.3.145.3.145.5.3.1.123.1.3.1.3.1.123.1.3
+"Staverton","Staverton",principle,5,"",5.145.3.145.3.145.3.145.3.145.3.145.5.3.145.123.145.3.1.3.145.123.145.3
+"Welton","Welton",principle,5,"",5.145.3.145.3.145.3.145.3.145.3.145.5.345.1.123.1.345.1.345.1.123.1.345
+"Helmdon","Helmdon",principle,5,"",5.145.3.145.3.145.3.145.3.145.3.145.5.345.1.345.1.345.1.345.1.345.1.345
+"Oakwood","Oakwood",principle,5,"",5.145.3.145.3.145.3.145.3.145.3.145.5.345.1.345.1.345.5.345.1.345.1.345
+"Elvaston","Elvaston",principle,5,"",5.145.3.145.345.1.3.145.3.145.345.1.5.345.1.345.145.3.1.345.1.345.145.3
+"Draycott","Draycott",principle,5,"",5.145.3.145.345.1.3.145.3.145.345.1.5.345.1.345.145.3.5.345.1.345.145.3
+"Alvaston","Alvaston",principle,5,"",5.145.345.1.345.1.3.145.345.1.345.1.5.345.145.3.145.3.1.345.145.3.145.3
+"Borrowash","Borrowash",principle,5,"",5.145.345.1.345.1.3.145.345.1.345.1.5.345.145.3.145.3.5.345.145.3.145.3

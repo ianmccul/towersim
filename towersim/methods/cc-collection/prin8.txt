@@ -1,0 +1,66 @@
+Major principles (2 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+17401	Original	-18	24163857	1908-08-26	Ranmoor	1973-07-10	BN V27/319 RW 73/797
+
+Major principles (4 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17402	Forward	34-34.18	24163857	1889-02-08	Deritend	BN V7/585
+
+Major principles (6 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17403	Duffield	-36-36-18	25136847	1887-10-08	Duffield	BN V6/355
+17404	Peak District	36.12-12.36.18	25136847	2009-09-12	Darley Dale	09/37 997
+
+Major principles (7 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17405	Winter	58.14-36-58.14	23456781	1984-04-03	Bishopstoke	84/369
+
+Major principles (8 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17406	Shilton	34-34.18-12-18	26481735	1932-04-09	Earl Shilton	32/252
+17407	MUG	34.12.34-34.12.34.18	24163857	1974-03-16	Salford, Sacred Trinity	74/330
+17408	Heywood	34.56.34-34.56.34.18	24163857	1995-02-15	Heywood	95/326
+17409	Handsworth	56.12.56-56.12.56.18	24163857	1910-06-11	Handsworth (Staffs)	BN V29/284
+17410	Aston	56.34.56-56.34.56.18	24163857	1909-09-18	Handsworth (Staffs)	BN V28/391
+
+Major principles (10 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17411	Mercury	-38-16-16-38-16	84673215	1980-01-21	Walkden	80/205
+
+Major principles (14 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17412	Caversham	36.18.34-34.56-34-18-34.56-	31527486	1913-07-15	Caversham	V5/55
+
+Major principles (16 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17413	Shipway	-38.14-14-14-14.38-14-14-14	61824735	1840-03-31	Manchester, St John, Deansgate	58/699
+17414	St Columb	56.34.18-18.56.34-34.56.18-18.34.56.18	75836142	1976-10-23	Weedon Bec	76/993
+
+Major principles (20 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17415	Easton Neston	34.16-36.18-34.18.34-34.18.34-18.36-16.34.18	24163857	1975-02-08	Easton Neston	75/199
+
+Major principles (42 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17416	Isis	-16.38-16.38.16-16-16.38-38.16.38-16-16.38.16.38.16-16-38-16-16-16.38-16.38-16-16	38624517	1986-01-13	Uxbridge, St Margaret-of-Antioch	86/140
+

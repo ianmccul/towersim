@@ -1,0 +1,4 @@
+"Plain Bob","Plain Bob",plain,16,"",&-1D-1D-1D-1D-1D-1D-1D-1D,|(12)(14)(1234)
+"Birmingham Bob","Birmingham Bob",plain,16,"",&-1D-3D.12.5D.14.5D.14.5D.14.5D.14.5D.14.5D,|(1D)(1B)(1BCD)
+"Bastow Little Bob","Bastow Little Bob",plain,16,"",&-12,|(1D)(1B)(1BCD)
+"Little Bob","Little Bob",plain,16,"",&-1D-14,|(12)(14)(1234)

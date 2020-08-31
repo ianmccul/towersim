@@ -1,0 +1,202 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Differential Plain Doubles methods
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+17533	Basingstoke Differential Bob	3.1.125.123.	345	123	13254	
+17534	Andover Differential Bob	3.1.125.3.	345	123	13254	
+17535	Newbury Differential Bob	3.1.5.1.	5	1	14523	66/463 10/322
+17536	Wokingham Differential Bob	3.1.5.123.	345	123	13254	66/495
+17537	Marlborough Differential Bob	3.1.5.3.	345	123	13254	66/463
+17538	Caithness Differential Place	345.1.125.3.	145	125	15432	11/921
+17539	England Differential Bob	345.1.5.1.	145	125	15432	66/463 11/921
+17540	Double Canterbury Pleasure Differential Place	345.1.5.123.	145	125	15432	11/921
+17541	Old Alresford Differential Place	5.1.125.1.	5	1	14523	10/247
+17542	Herriard Differential Place	5.1.125.123.	5	1	15432	10/247
+17543	Horsetail Delight Differential Bob	5.1.125.3.	145	125	15432	66/463 11/921
+17544	Bentworth Differential Bob	5.1.125.3.	5	1	15432	10/247
+17545	Double Differential Bob	5.1.5.1.	145	125	15432	66/463 11/824
+17546	Wales Differential Bob	5.1.5.123.	145	125	15432	66/463 11/921
+17547	Candover Differential Place	5.1.5.123.	5	1	15432	10/247
+17548	Reading Differential Bob	5.1.5.3.	5	1	15432	55/811 10/96
+17549	Avington Differential Place	5.145.5.1.	5	1	14523	10/622
+
+Differential Plain Minor methods
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+17550	New Cross Differential Bob	-14-1236-	3456	12	142365	04/1167
+17551	Wood Green Differential Bob	-14-1236.12.	3456	12	142365	04/1167
+17552	Essential Differential Bob	-14-16-	1236	12	154362	10/574
+17553	Referential Differential Bob	-14-16-	36	1234	154362	11/1165
+17554	Confidential Differential Bob	-14-16-	56	1234	164325	11/1189
+17555	Lambeth North Differential Bob	-14-36-	3456	12	142365	04/1167
+17556	North Greenwich Differential Bob	-14-36.12.	3456	12	142365	04/1167
+17557	Pimlico Differential Bob	-14.12.1236-	3456	12	142365	04/1167
+17558	Sloane Square Differential Bob	-14.12.36-	3456	12	142365	04/1167
+17559	Rotherhithe Differential Bob	-14.12.36.12.	3456	12	142365	04/1167
+17560	The Gunmakers Differential Bob	-14.1256.1236-	3456	12	142365	05/108
+17561	Tanworth-in-Arden Differential Bob	-14.1256.36-	3456	12	142365	05/108
+17562	Seckington Differential Bob	-14.1256.36.12.	3456	12	142365	05/108
+17563	Kingsbury Differential Bob	-14.56.1236-	3456	12	142365	05/108
+17564	Nether Whitacre Differential Bob	-14.56.1236.12.	3456	12	142365	05/108
+17565	Barston Differential Bob	-14.56.36-	3456	12	142365	05/108
+17566	Curdworth Differential Bob	-14.56.36.12.	3456	12	142365	05/108
+17567	Knowle Differential Bob	-1456-1236-	3456	12	142365	05/108
+17568	Northfield Differential Bob	-1456-1236.12.	3456	12	142365	05/108
+17569	Birmingham St Chad Differential Bob	-1456-36-	3456	12	142365	05/108
+17570	Erdington St Barnabus Differential Bob	-1456-36.12.	3456	12	142365	05/108
+17571	The Church Differential Bob	-1456.12.1236-	3456	12	142365	05/108
+17572	Yardley Differential Bob	-1456.12.36-	3456	12	142365	05/108
+17573	Sheldon Differential Bob	-1456.12.36.12.	3456	12	142365	05/108
+17574	The Square Peg Differential Bob	-1456.1256.1236-	3456	12	142365	05/108
+17575	Coseley Differential Bob	-1456.1256.36-	3456	12	142365	05/108
+17576	Shustoke Differential Bob	-1456.1256.36.12.	3456	12	142365	05/108
+17577	Lea Marston Differential Bob	-1456.56.1236-	3456	12	142365	05/108
+17578	Perry Barr Differential Bob	-1456.56.1236.12.	3456	12	142365	05/108
+17579	Birmingham St Philip Differential Bob	-1456.56.36-	3456	12	142365	05/108
+17580	Grendon Differential Bob	-1456.56.36.12.	3456	12	142365	05/108
+17581	Bexxx Differential Bob	-16-16-	1236	12	134265	10/297
+17582	Consequential Differential Bob	-16-16-	1256	12	154362	
+17583	Old Court Differential Bob	-16-16-	16	1234	132564	02/1115
+17584	Deferential Differential Bob	-16-16-	36	1234	132645	11/969
+17585	Preferential Differential Bob	-16-36-	36	1234	146235	11/1021
+17586	New Cross Gate Differential Bob	34.14-1236-	3456	12	134265	04/1167
+17587	Uxbridge Differential Bob	34.14-1236.12.	3456	12	134265	04/1167
+17588	Elephant & Castle Differential Bob	34.14-36-	3456	12	134265	04/1166
+17589	Stratford Differential Bob	34.14-36.12.	3456	12	134265	04/1167
+17590	Brixton Differential Bob	34.14.12.1236-	3456	12	134265	04/1166
+17591	Goodge Street Differential Bob	34.14.12.36-	3456	12	134265	04/1166
+17592	Wapping Differential Bob	34.14.12.36.12.	3456	12	134265	04/1167
+17593	The Briar Rose Differential Bob	34.14.1256.1236-	3456	12	134265	05/108
+17594	Wishaw Differential Bob	34.14.1256.36-	3456	12	134265	05/108
+17595	Selly Oak Differential Bob	34.14.1256.36.12.	3456	12	134265	05/108
+17596	Kings Norton Differential Bob	34.14.56.1236-	3456	12	134265	05/108
+17597	Newton Regis Differential Bob	34.14.56.1236.12.	3456	12	134265	05/108
+17598	Bickenhill Differential Bob	34.14.56.36-	3456	12	134265	05/108
+17599	Edgbaston Differential Bob	34.14.56.36.12.	3456	12	134265	05/108
+17600	Lapworth Differential Bob	34.1456-1236-	3456	12	134265	05/108
+17601	Packwood Differential Bob	34.1456-1236.12.	3456	12	134265	05/108
+17602	Birmingham St Martin Differential Bob	34.1456-36-	3456	12	134265	05/108
+17603	Erdington Abbey Differential Bob	34.1456-36.12.	3456	12	134265	05/108
+17604	The Figure of Eight Differential Bob	34.1456.12.1236-	3456	12	134265	05/108
+17605	Brierley Hill Differential Bob	34.1456.12.36-	3456	12	134265	05/108
+17606	Shirley Differential Bob	34.1456.12.36.12.	3456	12	134265	05/108
+17607	The Litten Tree Differential Bob	34.1456.1256.1236-	3456	12	134265	05/108
+17608	Great Barr Differential Bob	34.1456.1256.36-	3456	12	134265	05/108
+17609	Smethwick Differential Bob	34.1456.1256.36.12.	3456	12	134265	05/108
+17610	Middleton Differential Bob	34.1456.56.1236-	3456	12	134265	05/108
+17611	Polesworth Differential Bob	34.1456.56.1236.12.	3456	12	134265	05/108
+17612	Boldmere Differential Bob	34.1456.56.36-	3456	12	134265	05/108
+17613	Hampton-in-Arden Differential Bob	34.1456.56.36.12.	3456	12	134265	05/108
+17614	Claremont Differential Bob	34.16-16.34.	16	1234	132564	
+17615	Tottenham Hale Differential Bob	3456.14.1256.1236-	3456	12	134265	04/1167
+17616	Angel Differential Bob	3456.14.1256.36-	3456	12	134265	04/1166
+17617	Shadwell Differential Place	3456.14.1256.36.12.	3456	12	134265	04/1167
+17618	Liverpool Street Differential Bob	3456.14.56.1236-	3456	12	134265	04/1167
+17619	Turnpike Lane Differential Place	3456.14.56.1236.12.	3456	12	134265	04/1167
+17620	Waterloo Differential Bob	3456.14.56.36-	3456	12	134265	04/1167
+17621	Bermondsey Differential Bob	3456.14.56.36.12.	3456	12	134265	04/1166
+17622	Harborne Differential Bob	3456.1456-1236-	3456	12	134265	05/108
+17623	Moseley St Mary Differential Place	3456.1456-1236.12.	3456	12	134265	05/108
+17624	Austrey Differential Bob	3456.1456-36-	3456	12	134265	05/108
+17625	Coleshill Differential Bob	3456.1456-36.12.	3456	12	134265	05/108
+17626	The Jointstock Differential Bob	3456.1456.12.1236-	3456	12	134265	05/108
+17627	Sutton Coldfield Differential Bob	3456.1456.12.36-	3456	12	134265	05/108
+17628	Salter Street Differential Place	3456.1456.12.36.12.	3456	12	134265	05/108
+17629	Vauxhall Differential Bob	56.14.1256.1236-	3456	12	142365	04/1167
+17630	Mornington Crescent Differential Bob	56.14.1256.36-	3456	12	142365	04/1167
+17631	Whitechapel Differential Bob	56.14.1256.36.12.	3456	12	142365	04/1167
+17632	Farringdon Differential Bob	56.14.56.1236-	3456	12	142365	04/1166
+17633	Manor House Differential Bob	56.14.56.1236.12.	3456	12	142365	04/1167
+17634	Charing Cross Differential Bob	56.14.56.36-	3456	12	142365	04/1166
+17635	Westminster Differential Bob	56.14.56.36.12.	3456	12	142365	04/1167
+17636	Handsworth Differential Bob	56.1456-1236-	3456	12	142365	05/108
+17637	Moseley St Anne Differential Bob	56.1456-1236.12.	3456	12	142365	05/108
+17638	Aston Differential Bob	56.1456-36-	3456	12	142365	05/108
+17639	Castle Bromwich Differential Bob	56.1456-36.12.	3456	12	142365	05/108
+17640	The Wellington Differential Bob	56.1456.12.1236-	3456	12	142365	05/108
+17641	Solihull Differential Bob	56.1456.12.36-	3456	12	142365	05/108
+17642	Rowley Regis Differential Bob	56.1456.12.36.12.	3456	12	142365	05/108
+
+Twin-hunt differential Plain Minor methods (b)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+17643	Rainhill Differential Bob	36.16-16-	16	14	165432	05/308
+
+Twin-hunt differential Surprise Minor methods (b)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+17644	Balmoral Castle Differential	-34-14-1256-36-14-	56	16	145236	05/286
+17645	Loch Gorm Differential	-34-14-1256-36.14-12.	56	16	145236	05/431
+17646	Huntly Castle Differential	-34-14-1256-36.14-34.	56	16	145236	05/431
+17647	Croagh Patrick Differential	56-36.14-1256-1236-14-	56	14	156423	05/432
+17648	Loch Lomond Differential	56-36.14-1256-36.12-14.	56	14	156423	05/431
+
+Twin-hunt differential Delight Minor methods (b)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+17649	Hafnium Differential	-34-14-1256-16.34-14.	56	16	145236	05/380
+
+Twin-hunt differential Treble Bob Minor methods (b)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+17650	Finnan Differential	-56-16-1256-16-34-	56	16	145236	05/431
+17651	Garry Differential	-56-16-1256-16.34-12.	56	16	145236	05/431
+17652	Harris Differential	-56-16-1256-16.34-34.	56	16	145236	05/431
+
+Differential Hybrid Minor methods
+                        (treble's path 1 2 3  4 5  6 5  6 6  5 4  3 2  1 1)
+
+No.	Name	Notation	lh	RW ref
+
+17653	Worthington Creamflow Differential	-16-16-14-16-16-14-12	132564	02/1115
+
+Differential Hybrid Minor methods
+                      (treble's path 1 2 3  4 5  6 6  5 6  5 4  3 2  1 1)
+
+No.	Name	Notation	lh	RW ref
+
+17654	Tetley's Smoothflow Differential	-14-16-16-14-16-16-12	145263	02/1115
+
+Differential Little Hybrid Minor methods
+                     (hunt bell's path 3 3  4 5  6  5 6  5 4    3 3    4 3)
+
+No.	Name	Notation	lh	RW ref
+
+17655	London over S6 Differential Little	36-36.14-12-1236-3456-56	253614	10/89
+17656	London over S2 Differential Little	36-36.14-12-36-3456-1256	253614	10/89
+
+Differential Little Hybrid Minor methods
+                     (hunt bell's path 3 3  4 5  6  5 6  5 4  3 4    3 3)
+
+No.	Name	Notation	lh	RW ref
+
+17657	London over S1 Differential Little	36-36.14-12-36-1256-3456	253614	10/89
+
+Differential Little Hybrid Minor methods
+                    (hunt bell's path 3 4 5  6 6  5 6  5 4  3 3    4 3)
+
+No.	Name	Notation	lh	RW ref
+
+17658	Dover over D2 Differential Little	-36-16-12-16-3456-56	253614	10/90
+
+Differential Little Hybrid Minor methods
+                               (hunt bell's path 4 3 3  4 4  3 4  3 3  4 4    3 4)
+
+No.	Name	Notation	lh	RW ref
+
+17659	Cambridge over Cambridge Differential Little	-36-14-12-36-1456-56	256413	10/89
+
+Differential Little Hybrid Minor methods
+                           (hunt bell's path 6 5  6 6  5  6 5  6 6    5 5    6 6)
+
+No.	Name	Notation	lh	RW ref
+
+17660	Carlisle over S6 Differential Little	34-36.14-12-1236-3456-16	452136	10/89
+17661	Carlisle over Mendip Differential Little	34-36.14-12-16-1456-3456	534216	10/90
+

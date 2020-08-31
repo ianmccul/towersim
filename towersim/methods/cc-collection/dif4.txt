@@ -1,0 +1,163 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Minimus differentials (1 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17455	Cross	-	2143	03/17
+
+Minimus differentials (8 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17456	Egloskerry	34.14.12-12.14.34-	3412	03/1100
+
+Minimus differentials (12 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17457	Ayston	12.14-14.34.14.12.14-14.12.14	2143	2003-08-31	Ayston	03/925
+17458	Tinwell	12.14-14.34.14.34.14-14.34.14	2143	2003-03-29	Tinwell	03/370
+17459	Lyndon	12.14.12.14.34.14.34.14.12.14.34.14	2143	2003-05-18	Lyndon	03/542
+17460	Reverse Tinwell	34.14-14.12.14.12.14-14.12.14	2143	2004-01-11	Elworthy	04/104
+17461	Ridlington	34.14.34-34.14.34.14.12-12.14	2143	2003-12-21	Ridlington	04/34
+
+Doubles differentials (10 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17462	Christ Church Dublin	5.1.5.1.5.1.5.1.5.345	31254	03/89
+
+Doubles differentials (20 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17463	Chysauster	1.3.125.3.1.3.1.3.125.3.125.3.1.3.1.3.125.3.1.123	21453			94/407 594
+17464	Kirton-in-Holland	1.3.125.3.1.3.1.3.5.1.5.3.1.3.1.3.125.3.1.123	21534			94/407 515
+17465	Algarkirk	1.3.125.3.1.3.1.3.5.1.5.3.1.3.1.3.125.3.1.125	21453			94/407 515
+17466	Crows-an-Wra	1.3.125.3.1.3.1.3.5.3.5.3.1.3.1.3.125.3.1.123	21453			94/407 594
+17467	North Nibley	1.3.5.3.5.3.145.3.5.3.5.3.145.3.5.3.5.3.1.123	21534			94/407 02/833
+17468	Ding Dong	145.3.125.3.1.3.1.3.125.3.125.3.1.3.1.3.125.3.145.123	21534			94/407 594
+17469	Borleigh	145.3.125.3.1.3.1.3.5.1.5.3.1.3.1.3.125.3.145.123	21453			94/407 594
+17470	Lanyon	145.3.125.3.1.3.1.3.5.3.5.3.1.3.1.3.125.3.145.123	21534			94/407 594
+17471	Hooe	3.1.3.125.3.1.3.1.3.125.345.125.3.1.3.1.3.125.3.1	21534			95/392 96/615
+17472	Streatham	3.1.3.125.3.1.3.1.3.5.145.5.3.1.3.1.3.125.3.1	21453			94/594
+17473	Tillington	3.1.3.125.3.1.3.1.3.5.345.5.3.1.3.1.3.125.3.1	21534			94/813
+17474	Ulverscroft	3.1.3.5.1.345.1.145.1.5.345.5.1.145.1.345.1.5.3.1	21534			94/665
+17475	Calke	3.1.3.5.123.3.123.1.3.125.345.125.3.1.123.3.123.5.3.1	21534			94/428
+17476	Kedleston	3.1.3.5.3.345.3.145.3.125.345.125.3.145.3.345.3.5.3.1	21534			94/428
+17477	Hascombe	3.1.3.5.3.5.3.145.3.125.345.125.3.145.3.5.3.5.3.1	21453			95/392
+17478	Itchingfield	3.1.3.5.3.5.3.145.3.5.345.5.3.145.3.5.3.5.3.1	21453	1995-03-26	Itchingfield	95/527 96/431
+17479	Ockbrook	3.1.345.125.345.123.5.1.123.125.345.125.123.1.5.123.345.125.345.1	21534			04/833
+17480	Joshua	3.1.345.125.345.123.5.1.123.5.345.5.123.1.5.123.345.125.345.1	21534			08/318
+17481	Amberley	3.145.3.125.3.1.3.1.3.125.345.125.3.1.3.1.3.125.3.145	21453			94/1027
+17482	Twineham	3.145.3.125.3.1.3.1.3.5.145.5.3.1.3.1.3.125.3.145	21534			94/862
+17483	New Delhi	3.145.3.125.3.1.3.1.3.5.345.5.3.1.3.1.3.125.3.145	21453			94/594
+17484	West Chiltington	3.145.3.5.3.5.3.145.3.125.345.125.3.145.3.5.3.5.3.145	21534			96/496
+17485	Ewhurst Green	3.145.3.5.3.5.3.145.3.5.345.5.3.145.3.5.3.5.3.145	21534			95/392
+17486	Hardwick	3.145.345.5.123.3.123.1.123.5.345.5.123.1.123.3.123.5.345.145	21534			94/428
+17487	Chatsworth	3.145.345.5.3.345.3.145.123.5.345.5.123.145.3.345.3.5.345.145	21534			94/428
+17488	Wimpole	5.1.125.5.125.3.345.1.3.5.145.5.3.1.345.3.125.5.125.1	21453			94/665
+17489	Cliveden	5.1.125.5.125.3.5.1.3.5.145.5.3.1.5.3.125.5.125.1	21453			94/665
+17490	Fittleworth	5.1.3.125.3.1.3.1.3.5.145.5.3.1.3.1.3.125.3.1	21534			95/392 96/995
+17491	Beaumont	5.1.3.125.345.1.5.1.3.5.145.5.3.1.5.1.345.125.3.1	21534			99/1234
+17492	Regis	5.1.3.5.123.5.123.145.3.5.145.5.3.145.123.5.123.5.3.1	21453			99/84
+17493	Ripe	5.1.3.5.3.5.3.145.3.125.345.125.3.145.3.5.3.5.3.1	21534			95/392 96/474
+17494	East Dene	5.1.3.5.3.5.3.145.3.5.145.5.3.145.3.5.3.5.3.1	21453			96/496
+17495	Aldingbourne	5.1.3.5.3.5.3.145.3.5.345.5.3.145.3.5.3.5.3.1	21534			94/862
+17496	Blyton	5.1.3.5.345.3.5.1.3.5.145.5.3.1.5.3.345.5.3.1	21453			94/912
+17497	Olympic	5.1.5.125.5.1.5.1.3.5.345.5.3.1.5.1.5.125.5.1	21453			05/702
+17498	Battlefield	5.1.5.125.5.123.5.1.3.5.145.5.3.1.5.123.5.125.5.1	21453			99/84
+
+Minor differentials (12 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17499	S5 under Cambridge	-1256-1236-12-14-36-12	514623	10/89
+17500	S5 under Chieveley	-1256-1236-12-14.56-56.1236	514623	10/89
+17501	Sedlescombe under Benets	-1456-1236-12-14.36-56.1236	542613	10/89
+17502	Sedlescombe under George Orwell	-1456-1236-12-14.56-36.1234	542613	10/89
+17503	Sedlescombe under Chieveley	-1456-1236-12-14.56-56.1256	542361	10/89
+17504	Mendip under George Orwell	-1456-16-12-14.56-36.12	546312	10/90
+17505	Mendip under Dover	-1456-16-12-16-36-1234	541632	10/90
+17506	Cambridge under Stotfold	-1456-36-12-14.56-34.14	542361	10/89
+17507	Cambridge under George Orwell	-1456-36-12-14.56-36.14	542613	10/89
+17508	Cambridge under Chieveley	-1456-36-12-14.56-56.16	532641	10/89
+17509	D2 under Carlisle	-3456-16-12-14.36-34.14	542361	10/90
+17510	D2 under Benets	-3456-16-12-14.36-56.16	532641	10/90
+17511	S2 under Cambridge	-3456-36-12-14-36-1234	516324	10/89
+17512	S2 under Carlisle	-3456-36-12-14.36-34.14	541263	10/89
+17513	Dover over D1	-36-16-12-16-1256-1456	235614	10/90
+17514	London over Sedlescombe	36-36.14-12-1236-1456-3456	536214	10/89
+17515	London over Mendip	36-36.14-12-16-1456-56	632514	10/90
+17516	George Orwell over D2	36-56.14-12-16-3456-56	256314	10/90
+
+Minor differentials (40 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17517	Tentative	-14-36.14-14-12-56-36-36.14-36-16-36-14.36-36-56-12-14-14.36-14-16	231564	93/331
+17518	Probative	-14-36.14-14-36-14-36-36.14-36-34-36-14.36-36-14-36-14-14.36-14-16	312645	93/331
+
+Triples differentials (70 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17519	Upham	5.3.7.5.147.5.3.145.3.5.127.5.3.7.3.5.1.7.3.5.1.5.3.1.3.5.1.5.3.7.5.1.5.1.7.1.5.1.5.7.3.5.1.5.3.1.3.5.1.5.3.7.1.5.3.7.3.5.127.5.3.145.3.5.147.5.7.3.5.147	2315746	1991-04-21	Upham	91/472
+
+Major differentials (1 changes per lead)
+
+No.	Name	Notation	lh	Handbells	RW ref
+
+17520	Cross	-	21436587	2002-12-02	02/1290
+
+Major differentials (112 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+17521	Double Helix	-38.16-36.14.38-14.38.14.58.36-38.14.38-16.38-16.38.16.38.14-36-58.16.38.16.38-16.38-16.58.16-36.14.58.16.58-16.58.36-38.16-58-16.38-36.58.16-58.16.58.14.36-16.58.16-38.16-38.16.38.16.58-36-14.38.16.38.16-38.16-38.14.38-36.58.14.38.14-38.14.36-16.38-14	31278564	1993-11-21	Hungerford	2011-11-12	93/1266 94/367 11/1229
+
+Maximus differentials (10 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17522	Zinfandel	-149T.58.167T-167T.58.149T-1T	745231T0E896	Spliced	05/1165
+17523	Shanghai Maglev	56.149T.78.1T-1T.78.149T.56.1T	745231T0E896	Spliced	10/293
+
+Maximus differentials (12 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17524	MarsLink	-1470-1670.9T-9T.1670-1470-1T	54613T20E897	Spliced	04/664
+17525	Lynx	-149T-149T.3670-3670.149T-149T-1T	64523T10E897	Spliced	00/989 02/723
+17526	Pipit	-349T-169T.70.1256.70.169T-349T-1T	63254T10E897	Spliced	04/1116
+
+Maximus differentials (14 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17527	Faulkes Asteroid	-189T-36-147T-147T-36-189T-1T	316E8T204597	Spliced	04/1021
+17528	Oxford Link	-10-123T.78.10-10.78.123T-10-1T	T6890E352741	Spliced	04/925
+
+Maximus differentials (16 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17529	Fleet Lynx	-14-149T-9T.3670-3670.9T-149T-14-1T	64523T10E897	Spliced	03/7 251
+
+Maximus differentials (20 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17530	Thames Lynx	-14-14-9T-9T.3670-3670.9T-9T-14-14-1T	64523T10E897	Spliced	00/1187 1267 02/723
+
+Maximus differentials (28 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+17531	Ganymede	30-58-167T-167T-1T-58-3670-3670-58-1T-167T-167T-58-30-	806T4E291735	Spliced	07/1193
+
+Maximus differentials (84 changes per lead)
+
+No.	Name	Notation	lh	Handbells	RW ref
+
+17532	Limited Slip	-1T-14-1T-14-1T-14-1T-14-1T-14-3T-14-1T-14-1T-14-1T-14-1T-14-1T-14-3T-14-1T-14-1T-14-1T-14-1T-14-1T-14-1T-14-1T-14-3T-14-123T-14	3126E8507T94	2002-08-07	02/1091

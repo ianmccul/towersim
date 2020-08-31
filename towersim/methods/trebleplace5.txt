@@ -1,0 +1,49 @@
+"Brent Knoll","Brent Knoll",trebleplace,5,"",&3.5.3.1.345.5.1.3.1.5,|123
+"Avon","Avon",trebleplace,5,"",&5.3.5.1.345.5.1.3.1.345,|1
+"Morebath","Morebath",trebleplace,5,"",&5.3.5.1.345.5.3.1.3.125,|1
+"Simonsbath","Simonsbath",trebleplace,5,"",&5.3.5.1.345.5.3.1.3.345,|1
+"Bath","Bath",trebleplace,5,"",&5.3.5.1.345.5.3.1.3.5,|123
+"Batheaston","Batheaston",trebleplace,5,"",&5.3.5.1.345.5.3.1.3.5,|145
+"Wells","Wells",trebleplace,5,"",&5.3.5.1.345.5.3.123.3.5,|123
+"Old Mill","Old Mill",trebleplace,5,"",&3.5.3.1.5.3.145.3.5.3,|(125)(145)
+"Exmoor","Exmoor",trebleplace,5,"",&5.3.5.1.5.1.345.1.5.3,|(125)(145)
+"Somerset","Somerset",trebleplace,5,"",&5.3.5.1.5.123.345.123.5.3,|123
+"Dunkery","Dunkery",trebleplace,5,"",&5.3.5.1.5.3.125.3.5.3,|123
+"Quantock","Quantock",trebleplace,5,"",&5.3.5.1.5.3.145.3.5.3,|(125)(145)
+"Brendon","Brendon",trebleplace,5,"",&5.3.5.1.5.3.345.3.5.3,|123
+"Blackdown","Blackdown",trebleplace,5,"",&5.3.5.145.5.3.345.3.5.3,|123
+"Wickham Market","Wickham Market",trebleplace,5,"",5.123.5.123.5.1.5.3.345.3.5.3.5.3.345.3.5.1.5.123
+"Stanwell","Stanwell",trebleplace,5,"",&3.5.3.5.3.1.345.125.3.125.3.1.3.5.123,|1
+"Valhalla","Valhalla",trebleplace,5,"",&3.5.3.5.3.1.5.3.145.3.5.123.5.3.145,|1
+"Crimplesham","Crimplesham",trebleplace,5,"",&5.3.5.3.5.1.5.3.145.3.5.123.5.3.5,|123
+"Kingsgate","Kingsgate",trebleplace,5,"",&5.123.5.125.5.1.5.1.345.1.5.123.5.1.345,|1
+"Jilucrosus","Jilucrosus",trebleplace,5,"",&5.123.5.125.5.1.5.3.145.3.5.345.5.3.145,|1
+"Skipijarou","Skipijarou",trebleplace,5,"",&5.123.5.145.5.1.5.3.145.3.5.345.5.3.5,|145
+"Intrepid","Intrepid",trebleplace,5,"",&3.1.145.3.125.3.1.5.3.145.3.5.125.3.5,|(125)(145)
+"Brampford Speke","Brampford Speke",trebleplace,5,"",&3.145.1.3.125.3.1.5.3.145.3.125.5.3.5,|(125)(145)
+"West Lynn","West Lynn",trebleplace,5,"",&3.1.345.1.3.125.3.1.5.1.3.1.3.1.345,|1
+"Roskear","Roskear",trebleplace,5,"",&345.1.345.1.345.125.345.1.5.1.3.1.3.1.345,|1
+"Pengegon","Pengegon",trebleplace,5,"",&5.1.345.1.345.125.345.1.5.1.3.1.3.1.345,|1
+"Dolcoath","Dolcoath",trebleplace,5,"",&5.1.345.1.5.125.5.1.5.1.3.1.3.1.345,|1
+"Clenchwarton","Clenchwarton",trebleplace,5,"",&3.1.345.1.3.125.3.1.5.1.345.1.345.1.345,|1
+"Tuckingmill","Tuckingmill",trebleplace,5,"",&345.1.345.1.345.125.345.1.5.1.345.1.345.1.345,|1
+"Tolvaddon","Tolvaddon",trebleplace,5,"",&345.1.345.1.5.125.5.1.5.1.345.1.345.1.345,|1
+"Mordon","Mordon",trebleplace,5,"",&5.1.345.1.345.125.345.1.5.1.345.1.345.1.125,|1
+"Jim and Anita's Wedding Anniversary","Jim and Anita's Wedding Anniversary",trebleplace,5,"",&5.1.345.1.345.125.345.1.5.1.345.1.345.1.345,|1
+"Hardwick","Hardwick",trebleplace,5,"",&5.1.345.1.345.125.345.1.5.1.345.123.345.1.345,|1
+"Ian Hoskin's","Ian Hoskin's",trebleplace,5,"",&5.1.345.1.5.125.5.1.5.1.345.1.345.1.125,|1
+"South Crofty","South Crofty",trebleplace,5,"",&5.1.345.1.5.125.5.1.5.1.345.1.345.1.345,|1
+"North Cave","North Cave",trebleplace,5,"",&5.1.345.1.5.125.5.1.5.1.345.123.345.1.345,|1
+"Middleton-on-the-Wolds","Middleton-on-the-Wolds",trebleplace,5,"",&5.1.345.1.5.125.5.1.5.123.145.123.345.123.145,|1
+"Daedalus","Daedalus",trebleplace,5,"",&345.1.5.1.345.1.3.1.5.1.345.125.345.1.345,|1
+"Icarus","Icarus",trebleplace,5,"",&345.1.5.1.345.1.3.1.5.1.5.125.5.1.345,|1
+"Chips in the Pub","Chips in the Pub",trebleplace,5,"",3.123.1.123.5.123.1.123.5.123.1.123.5.123.1.123.5.123.1.123
+"Bulwick","Bulwick",trebleplace,5,"",&3.5.3.1.3.125.3.1.3.125,|145
+"Ockham","Ockham",trebleplace,5,"",&3.5.3.1.3.5.3.1.3.125,|(125)(145)
+"St Marys","St Marys",trebleplace,5,"",&3.5.3.145.3.5.3.1.3.125,|(125)(145)
+"St Agatha","St Agatha",trebleplace,5,"",5.1.5.1.5.1.145.1.5.1.5.1.5.1.5.145.123.145.5.1
+"Fromond","Fromond",trebleplace,5,"",&3.1.3.145.3.125.3.5.3.145,|123
+"Wykeham","Wykeham",trebleplace,5,"",&5.1.5.1.5.1.5.1.5.345,|(125)(145)
+"Hobgoblin","Hobgoblin",trebleplace,5,"",&5.1.3.1.5.1.5.1.5.1.3.1.3.1.5.1.5.1.5.123,|123
+"Papanui","Papanui",trebleplace,5,"",&3.1.5.1.5.1.5.1.5.1.3.5.3.1.5.1.5.123.5.123,|(125)(145)
+"Magor","Magor",trebleplace,5,"",&345.145.125.123.345.123.125.145.3.125.3.145.125.3.125.3.125.145.3.145,|123

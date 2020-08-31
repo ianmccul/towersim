@@ -1,0 +1,1435 @@
+"Sutton-cum-Lound","Sutton-cum-Lound Surprise",surprise,6,"",&-34-14-12-1236-12-16,|14
+"Fryerning","Fryerning Surprise",surprise,6,"",&-34-14-12-1236-12-36,|(12)(14)(1234)
+"Broomfield","Broomfield Surprise",surprise,6,"",&-34-14-12-1236-12-56,|(12)(14)(1234)
+"Little Waltham","Little Waltham Surprise",surprise,6,"",&-34-14-12-1236-12.1234.56,|(12)(14)(1234)
+"Jarrom","Jarrom Surprise",surprise,6,"",&-34-14-12-1236-1234-16,|(16)(14)(1456)
+"St Peter","St Peter Surprise",surprise,6,"",&-34-14-12-1236-14-16,|14
+"Mersey","Mersey Surprise",surprise,6,"",&-34-14-12-1236-14-36,|(12)(14)(1234)
+"Trentum","Trentum Surprise",surprise,6,"",&-34-14-12-1236-14-36,|(16)(14)(1456)
+"Sedlescombe","Sedlescombe Surprise",surprise,6,"",&-34-14-12-1236-14-56,|(12)(14)(1234)
+"Walkley","Walkley Surprise",surprise,6,"",&-34-14-12-1236-14-56,|14
+"Hathern","Hathern Surprise",surprise,6,"",&-34-14-12-1236-14-56,|(16)(14)(1456)
+"Sira","Sira Surprise",surprise,6,"",&-34-14-12-1236-14.1234.56,|(12)(14)(1234)
+"Marchington","Marchington Surprise",surprise,6,"",&-34-14-12-1236-34-16,|(16)(14)(1456)
+"Fyfield","Fyfield Surprise",surprise,6,"",&-34-14-12-1236-34-56,|(12)(14)(1234)
+"Bobbingworth","Bobbingworth Surprise",surprise,6,"",&-34-14-12-1236-34.1234.56,|(12)(14)(1234)
+"Ingatestone","Ingatestone Surprise",surprise,6,"",&-34-14-12-1236.12-12.36,|(12)(14)(1234)
+"Carpet Cleaner","Carpet Cleaner Surprise",surprise,6,"",&-34-14-12-1236.12-12.56,|(12)(14)(1234)
+"Crowle","Crowle Surprise",surprise,6,"",&-34-14-12-1236.12-34.56,|(12)(14)(1234)
+"Edith Weston","Edith Weston Surprise",surprise,6,"",&-34-14-12-1236.14-12.56,|(12)(14)(1234)
+"Church Brampton","Church Brampton Surprise",surprise,6,"",&-34-14-12-1236.14-12.56,|(16)(14)(1456)
+"Great Creaton","Great Creaton Surprise",surprise,6,"",&-34-14-12-1236.14-34.56,|(12)(14)(1234)
+"Charles","Charles Surprise",surprise,6,"",&-34-14-12-1236.14-34.56,|(16)(14)(1456)
+"Mucking","Mucking Surprise",surprise,6,"",&-34-14-12-1236.34-34.56,|(12)(14)(1234)
+"Notton","Notton Surprise",surprise,6,"",&-34-14-12-36-12-16,|(12)(14)(1234)
+"Old Perth","Old Perth Surprise",surprise,6,"",&-34-14-12-36-12-16,|14
+"Westminster","Westminster Surprise",surprise,6,"",&-34-14-12-36-12-36,|(12)(14)(1234)
+"Luton","Luton Surprise",surprise,6,"",&-34-14-12-36-12-56,|(12)(14)(1234)
+"Luton Hoo","Luton Hoo Surprise",surprise,6,"",&-34-14-12-36-12.1234.56,|(12)(14)(1234)
+"Rampton","Rampton Surprise",surprise,6,"",&-34-14-12-36-14-16,|(12)(14)(1234)
+"Warsop","Warsop Surprise",surprise,6,"",&-34-14-12-36-14-16,|14
+"Netherseale","Netherseale Surprise",surprise,6,"",&-34-14-12-36-14-36,|(12)(14)(1234)
+"Annable's London","Annable's London Surprise",surprise,6,"",&-34-14-12-36-14-36,|(16)(14)(1456)
+"Royal Bob","Royal Bob Surprise",surprise,6,"",&-34-14-12-36-14-56,|14
+"Bedford","Bedford Surprise",surprise,6,"",&-34-14-12-36-14-56,|(16)(14)(1456)
+"Norwich","Norwich Surprise",surprise,6,"",&-34-14-12-36-34-16,|(16)(14)(1456)
+"Rhyl","Rhyl Surprise",surprise,6,"",&-34-14-12-36-34-56,|(12)(14)(1234)
+"Allendale","Allendale Surprise",surprise,6,"",&-34-14-12-36.12-12.36,|(12)(14)(1234)
+"Ripley","Ripley Surprise",surprise,6,"",&-34-14-12-36.12-12.56,|(12)(14)(1234)
+"Lawford Heath","Lawford Heath Surprise",surprise,6,"",&-34-14-12-36.12-14.16,|(16)(14)(1456)
+"Billingley","Billingley Surprise",surprise,6,"",&-34-14-12-36.12-14.36,|(16)(14)(1456)
+"Bamborough","Bamborough Surprise",surprise,6,"",&-34-14-12-36.12-14.56,|(12)(14)(1234)
+"Potterhanworth","Potterhanworth Surprise",surprise,6,"",&-34-14-12-36.12-14.56,|14
+"Bacup","Bacup Surprise",surprise,6,"",&-34-14-12-36.12-14.56,|(16)(14)(1456)
+"Whiston","Whiston Surprise",surprise,6,"",&-34-14-12-36.12-34.16,|(16)(14)(1456)
+"Thorne","Thorne Surprise",surprise,6,"",&-34-14-12-36.12-34.56,|(12)(14)(1234)
+"Thorpe-le-Soken","Thorpe-le-Soken Surprise",surprise,6,"",&-34-14-12-36.12.1234.34.56,|(12)(14)(1234)
+"Warkworth","Warkworth Surprise",surprise,6,"",&-34-14-12-36.14-12.36,|(16)(14)(1456)
+"Harwood","Harwood Surprise",surprise,6,"",&-34-14-12-36.14-12.56,|14
+"Sutton","Sutton Surprise",surprise,6,"",&-34-14-12-36.14-12.56,|(16)(14)(1456)
+"Lightfoot","Lightfoot Surprise",surprise,6,"",&-34-14-12-36.14-14.36,|(12)(14)(1234)
+"An Teallach","An Teallach Surprise",surprise,6,"",&-34-14-12-36.14-14.36,|14
+"Rossendale","Rossendale Surprise",surprise,6,"",&-34-14-12-36.14-14.36,|(16)(14)(1456)
+"Linden","Linden Surprise",surprise,6,"",&-34-14-12-36.14-14.56,|(12)(14)(1234)
+"Wearmouth","Wearmouth Surprise",surprise,6,"",&-34-14-12-36.14-34.16,|(12)(14)(1234)
+"Lullington","Lullington Surprise",surprise,6,"",&-34-14-12-36.14-34.16,|14
+"Stamford","Stamford Surprise",surprise,6,"",&-34-14-12-36.14-34.16,|(16)(14)(1456)
+"Unacceptable","Unacceptable Surprise",surprise,6,"",&-34-14-12-36.14-34.56,|14
+"Northorp","Northorp Surprise",surprise,6,"",&-34-14-12-36.14-34.56,|(16)(14)(1456)
+"Forteyers","Forteyers Surprise",surprise,6,"",&-34-14-12-36.34-12.56,|(12)(14)(1234)
+"Broadbent","Broadbent Surprise",surprise,6,"",&-34-14-12-36.34-14.56,|(12)(14)(1234)
+"Witten","Witten Surprise",surprise,6,"",&-34-14-12-36.34-14.56,|(16)(14)(1456)
+"Nanny Piggins","Nanny Piggins Surprise",surprise,6,"",&-34-14-12-36.34-34.36,|(12)(14)(1234)
+"Thurrock","Thurrock Surprise",surprise,6,"",&-34-14-12-36.34-34.56,|(12)(14)(1234)
+"Levington","Levington Surprise",surprise,6,"",&-34-14-12.1256.36-34-16,|(16)(14)(1456)
+"Brandon Mountain","Brandon Mountain Surprise",surprise,6,"",&-34-14-1256-1236-12-56,|(12)(14)(1234)
+"Loch Awe","Loch Awe Surprise",surprise,6,"",&-34-14-1256-1236-14-56,|(12)(14)(1234)
+"Ben Lawers","Ben Lawers Surprise",surprise,6,"",&-34-14-1256-1236-34-56,|(12)(14)(1234)
+"Bacton","Bacton Surprise",surprise,6,"",&-34-14-1256-36-12-56,|(12)(14)(1234)
+"Blair Castle","Blair Castle Surprise",surprise,6,"",&-34-14-1256-36-14-36,|(12)(14)(1234)
+"Double Norwich","Double Norwich Surprise",surprise,6,"",&-34-14-1256-36-34-16,|(16)(14)(1456)
+"New Superlative","New Superlative Surprise",surprise,6,"",&-34-14-1256-36-34-56,|(12)(14)(1234)
+"Sgurr Mor","Sgurr Mor Surprise",surprise,6,"",&-34-14-1256-36.12-12.56,|(12)(14)(1234)
+"Glamis Castle","Glamis Castle Surprise",surprise,6,"",&-34-14-1256-36.12-14.56,|(12)(14)(1234)
+"Scafell Pike","Scafell Pike Surprise",surprise,6,"",&-34-14-1256-36.12-34.56,|(12)(14)(1234)
+"Loch Garve","Loch Garve Surprise",surprise,6,"",&-34-14-1256-36.14-12.36,|(16)(14)(1456)
+"Morton Castle","Morton Castle Surprise",surprise,6,"",&-34-14-1256-36.14-14.56,|(12)(14)(1234)
+"Hume Castle","Hume Castle Surprise",surprise,6,"",&-34-14-1256-36.14-34.36,|(16)(14)(1456)
+"Ashton-under-Hill","Ashton-under-Hill Surprise",surprise,6,"",&-34-14-56-1236-12-16,|(12)(14)(1234)
+"Vindaloo","Vindaloo Surprise",surprise,6,"",&-34-14-56-1236-12-16,|(16)(14)(1456)
+"Car-Colston","Car-Colston Surprise",surprise,6,"",&-34-14-56-1236-12-36,|(12)(14)(1234)
+"Collins","Collins Surprise",surprise,6,"",&-34-14-56-1236-12-56,|(12)(14)(1234)
+"Bredons Norton","Bredons Norton Surprise",surprise,6,"",&-34-14-56-1236-14-16,|(12)(14)(1234)
+"Ottershaw","Ottershaw Surprise",surprise,6,"",&-34-14-56-1236-14-16,|(16)(14)(1456)
+"Castlemorton","Castlemorton Surprise",surprise,6,"",&-34-14-56-1236-14-36,|(12)(14)(1234)
+"Sherston","Sherston Surprise",surprise,6,"",&-34-14-56-1236-14-36,|(16)(14)(1456)
+"Clayton West","Clayton West Surprise",surprise,6,"",&-34-14-56-1236-14-56,|14
+"Llantwit Major","Llantwit Major Surprise",surprise,6,"",&-34-14-56-1236-34-16,|(16)(14)(1456)
+"Apollo","Apollo Surprise",surprise,6,"",&-34-14-56-1236-34-56,|(12)(14)(1234)
+"New River","New River Surprise",surprise,6,"",&-34-14-56-36-12-16,|(16)(14)(1456)
+"Screveton","Screveton Surprise",surprise,6,"",&-34-14-56-36-12-36,|(12)(14)(1234)
+"Armstrong","Armstrong Surprise",surprise,6,"",&-34-14-56-36-12-56,|(12)(14)(1234)
+"Graveley","Graveley Surprise",surprise,6,"",&-34-14-56-36-14-16,|14
+"Send","Send Surprise",surprise,6,"",&-34-14-56-36-14-16,|(16)(14)(1456)
+"Huntriss","Huntriss Surprise",surprise,6,"",&-34-14-56-36-14-36,|(12)(14)(1234)
+"Bradley","Bradley Surprise",surprise,6,"",&-34-14-56-36-14-36,|(16)(14)(1456)
+"Swindon Village","Swindon Village Surprise",surprise,6,"",&-34-14-56-36-14-56,|(12)(14)(1234)
+"Etwall","Etwall Surprise",surprise,6,"",&-34-14-56-36-14-56,|14
+"Zeal Monachorum","Zeal Monachorum Surprise",surprise,6,"",&-34-14-56-36-34-16,|(16)(14)(1456)
+"Redding","Redding Surprise",surprise,6,"",&-34-14-56-36-34-56,|(12)(14)(1234)
+"Burton Joyce","Burton Joyce Surprise",surprise,6,"",&-34-14-56-36.12-12.36,|(12)(14)(1234)
+"Aldrin","Aldrin Surprise",surprise,6,"",&-34-14-56-36.12-12.56,|(12)(14)(1234)
+"West Tarring","West Tarring Surprise",surprise,6,"",&-34-14-56-36.12-14.36,|(16)(14)(1456)
+"Hoy","Hoy Surprise",surprise,6,"",&-34-14-56-36.12-14.56,|14
+"Ivy","Ivy Surprise",surprise,6,"",&-34-14-56-36.12-34.16,|(16)(14)(1456)
+"Tranquillity","Tranquillity Surprise",surprise,6,"",&-34-14-56-36.12-34.56,|(12)(14)(1234)
+"Goring by Sea","Goring by Sea Surprise",surprise,6,"",&-34-14-56-36.14-12.36,|(16)(14)(1456)
+"Long Sutton","Long Sutton Surprise",surprise,6,"",&-34-14-56-36.14-12.56,|(12)(14)(1234)
+"Tokyo","Tokyo Surprise",surprise,6,"",&-34-14-56-36.14-14.56,|(12)(14)(1234)
+"Betty's 100","Betty's 100 Surprise",surprise,6,"",&-34-14-56-36.14-34.16,|14
+"Kingsbury Episcopi","Kingsbury Episcopi Surprise",surprise,6,"",&-34-14-56-36.14-34.56,|(12)(14)(1234)
+"St Ippolyts","St Ippolyts Surprise",surprise,6,"",&-34-14-56-36.14-34.56,|14
+"Far Cotton","Far Cotton Surprise",surprise,6,"",&-34-14-56.1256.1236.14-34.56,|(12)(14)(1234)
+"Margaretting","Margaretting Surprise",surprise,6,"",&-34-14.12-12.1236-12-36,|(12)(14)(1234)
+"Pipps Hill","Pipps Hill Surprise",surprise,6,"",&-34-14.12-12.1236-12-56,|(12)(14)(1234)
+"Matching","Matching Surprise",surprise,6,"",&-34-14.12-12.1236-14-36,|(12)(14)(1234)
+"Abbess Roding","Abbess Roding Surprise",surprise,6,"",&-34-14.12-12.1236-14-36,|(16)(14)(1456)
+"Clavering","Clavering Surprise",surprise,6,"",&-34-14.12-12.1236-34-16,|(16)(14)(1456)
+"Ongar","Ongar Surprise",surprise,6,"",&-34-14.12-12.1236-34-56,|(12)(14)(1234)
+"Mountnessing","Mountnessing Surprise",surprise,6,"",&-34-14.12-12.1236.12-12.36,|(12)(14)(1234)
+"Crays Hill","Crays Hill Surprise",surprise,6,"",&-34-14.12-12.1236.12-12.56,|(12)(14)(1234)
+"Little Wratting","Little Wratting Surprise",surprise,6,"",&-34-14.12-12.1236.34-14.56,|(12)(14)(1234)
+"Great Wratting","Great Wratting Surprise",surprise,6,"",&-34-14.12-12.1236.34-14.56,|(16)(14)(1456)
+"Sinister","Sinister Surprise",surprise,6,"",&-34-14.12-12.1236.34-34.56,|(12)(14)(1234)
+"Southminster","Southminster Surprise",surprise,6,"",&-34-14.12-12.36-12-36,|(12)(14)(1234)
+"Wolverton","Wolverton Surprise",surprise,6,"",&-34-14.12-12.36-12-56,|(12)(14)(1234)
+"Margaret Roding","Margaret Roding Surprise",surprise,6,"",&-34-14.12-12.36-14-56,|(12)(14)(1234)
+"Leaden Roding","Leaden Roding Surprise",surprise,6,"",&-34-14.12-12.36.12-12.36,|(12)(14)(1234)
+"Amport","Amport Surprise",surprise,6,"",&-34-14.12-12.36.12-12.56,|(12)(14)(1234)
+"Coton","Coton Surprise",surprise,6,"",&-34-14.12-12.36.1234.14-56,|(12)(14)(1234)
+"Shelley","Shelley Surprise",surprise,6,"",&-34-14.12-12.36.14-12.56,|(12)(14)(1234)
+"Open Gardens","Open Gardens Surprise",surprise,6,"",&-34-14.12-12.36.14-12.56,|(16)(14)(1456)
+"Berners Roding","Berners Roding Surprise",surprise,6,"",&-34-14.12-12.36.14-34.56,|(12)(14)(1234)
+"Tuckingmill","Tuckingmill Surprise",surprise,6,"",&-34-14.12-56.36-34-56,|(12)(14)(1234)
+"Great Addington","Great Addington Surprise",surprise,6,"",&-34-14.1256.56-1236.14-12.56,|(12)(14)(1234)
+"St Etheldreda","St Etheldreda Surprise",surprise,6,"",&-34-14.1256.56-1236.14-34.56,|(12)(14)(1234)
+"Butterley","Butterley Surprise",surprise,6,"",&-34-14.56-12.1236-34-56,|(12)(14)(1234)
+"Deerhurst","Deerhurst Surprise",surprise,6,"",&-34-14.56-12.36-12-16,|(12)(14)(1234)
+"Doom Bar","Doom Bar Surprise",surprise,6,"",&-34-14.56-12.36-12-16,|(16)(14)(1456)
+"Combe Martin","Combe Martin Surprise",surprise,6,"",&-34-14.56-12.36-12-36,|(12)(14)(1234)
+"Lopham","Lopham Surprise",surprise,6,"",&-34-14.56-12.36-12-56,|(12)(14)(1234)
+"Eldersfield","Eldersfield Surprise",surprise,6,"",&-34-14.56-12.36-14-16,|(12)(14)(1234)
+"Eden Ale","Eden Ale Surprise",surprise,6,"",&-34-14.56-12.36-14-16,|(16)(14)(1456)
+"Fladbury","Fladbury Surprise",surprise,6,"",&-34-14.56-12.36-14-36,|(12)(14)(1234)
+"Shetland","Shetland Surprise",surprise,6,"",&-34-14.56-12.36-14-56,|14
+"Cheddleton","Cheddleton Surprise",surprise,6,"",&-34-14.56-12.36-34-16,|(16)(14)(1456)
+"Hanley","Hanley Surprise",surprise,6,"",&-34-14.56-12.36-34-56,|(12)(14)(1234)
+"Kentisbury","Kentisbury Surprise",surprise,6,"",&-34-14.56-12.36.12-12.36,|(12)(14)(1234)
+"Marham","Marham Surprise",surprise,6,"",&-34-14.56-12.36.12-12.56,|(12)(14)(1234)
+"Great Comberton","Great Comberton Surprise",surprise,6,"",&-34-14.56-12.36.12-14.56,|(12)(14)(1234)
+"A.C.S.","A.C.S. Surprise",surprise,6,"",&-34-14.56-12.36.12-34.56,|(12)(14)(1234)
+"Queen Elizabeth II","Queen Elizabeth II Surprise",surprise,6,"",&-34-14.56-12.36.14-12.36,|(16)(14)(1456)
+"Stac Lee","Stac Lee Surprise",surprise,6,"",&-34-14.56-12.36.14-12.56,|14
+"Hartpury","Hartpury Surprise",surprise,6,"",&-34-14.56-12.36.14-14.36,|(12)(14)(1234)
+"Icarus","Icarus Surprise",surprise,6,"",&-34-14.56-12.36.14-14.56,|(12)(14)(1234)
+"Jelita","Jelita Surprise",surprise,6,"",&-34-14.56-12.36.14-34.16,|(12)(14)(1234)
+"Stac an Armin","Stac an Armin Surprise",surprise,6,"",&-34-14.56-12.36.14-34.56,|14
+"Blue Line","Blue Line Surprise",surprise,6,"",&-34-1456-12-1236-12-16,|(16)(14)(1456)
+"Bothamsall","Bothamsall Surprise",surprise,6,"",&-34-1456-12-1236-12-36,|(12)(14)(1234)
+"Clayworth","Clayworth Surprise",surprise,6,"",&-34-1456-12-1236-12-56,|(12)(14)(1234)
+"David Bassett","David Bassett Surprise",surprise,6,"",&-34-1456-12-1236-14-16,|(16)(14)(1456)
+"Kemerton","Kemerton Surprise",surprise,6,"",&-34-1456-12-1236-14-36,|(12)(14)(1234)
+"Queen's Gate","Queen's Gate Surprise",surprise,6,"",&-34-1456-12-1236-14-36,|(16)(14)(1456)
+"Longdon","Longdon Surprise",surprise,6,"",&-34-1456-12-1236-14-56,|(12)(14)(1234)
+"Huskar 170","Huskar 170 Surprise",surprise,6,"",&-34-1456-12-1236-14-56,|14
+"Stetson","Stetson Surprise",surprise,6,"",&-34-1456-12-1236-34-16,|(16)(14)(1456)
+"Flawborough","Flawborough Surprise",surprise,6,"",&-34-1456-12-1236-34-56,|(12)(14)(1234)
+"Madresfield","Madresfield Surprise",surprise,6,"",&-34-1456-12-36-12-16,|(12)(14)(1234)
+"Guild of St Agatha","Guild of St Agatha Surprise",surprise,6,"",&-34-1456-12-36-12-16,|(16)(14)(1456)
+"Bathley","Bathley Surprise",surprise,6,"",&-34-1456-12-36-12-36,|(12)(14)(1234)
+"Averham","Averham Surprise",surprise,6,"",&-34-1456-12-36-12-56,|(12)(14)(1234)
+"Dedication","Dedication Surprise",surprise,6,"",&-34-1456-12-36-14-16,|(12)(14)(1234)
+"Bishops Tawton","Bishops Tawton Surprise",surprise,6,"",&-34-1456-12-36-14-16,|(16)(14)(1456)
+"Naunton","Naunton Surprise",surprise,6,"",&-34-1456-12-36-14-36,|(12)(14)(1234)
+"Grove","Grove Surprise",surprise,6,"",&-34-1456-12-36-14-36,|(16)(14)(1456)
+"Gruzzles","Gruzzles Surprise",surprise,6,"",&-34-1456-12-36-14-56,|14
+"Cream Cheese","Cream Cheese Surprise",surprise,6,"",&-34-1456-12-36-34-16,|(16)(14)(1456)
+"Babworth","Babworth Surprise",surprise,6,"",&-34-1456-12-36-34-56,|(12)(14)(1234)
+"Brough","Brough Surprise",surprise,6,"",&-34-1456-12-36.12-12.36,|(12)(14)(1234)
+"Barton-in-Fabis","Barton-in-Fabis Surprise",surprise,6,"",&-34-1456-12-36.12-12.56,|(12)(14)(1234)
+"Overbury","Overbury Surprise",surprise,6,"",&-34-1456-12-36.12-14.56,|(12)(14)(1234)
+"Bunny","Bunny Surprise",surprise,6,"",&-34-1456-12-36.12-34.56,|(12)(14)(1234)
+"Sully","Sully Surprise",surprise,6,"",&-34-1456-12-36.14-12.36,|(16)(14)(1456)
+"Santa","Santa Surprise",surprise,6,"",&-34-1456-12-36.14-12.56,|14
+"Redmarley","Redmarley Surprise",surprise,6,"",&-34-1456-12-36.14-14.36,|(12)(14)(1234)
+"Powick","Powick Surprise",surprise,6,"",&-34-1456-12-36.14-14.56,|(12)(14)(1234)
+"Queenhill","Queenhill Surprise",surprise,6,"",&-34-1456-12-36.14-34.16,|(12)(14)(1234)
+"Llanishen","Llanishen Surprise",surprise,6,"",&-34-1456-12-36.14-34.36,|(16)(14)(1456)
+"Smartie","Smartie Surprise",surprise,6,"",&-34-1456-12-36.14-34.56,|14
+"Ben Cruachan","Ben Cruachan Surprise",surprise,6,"",&-34-1456-1256-1236-12-56,|(12)(14)(1234)
+"Ladhar Bheinn","Ladhar Bheinn Surprise",surprise,6,"",&-34-1456-1256-1236-14-56,|(12)(14)(1234)
+"Beinn Laoigh","Beinn Laoigh Surprise",surprise,6,"",&-34-1456-1256-1236-34-56,|(12)(14)(1234)
+"Loch Shin","Loch Shin Surprise",surprise,6,"",&-34-1456-1256-36-12-56,|(12)(14)(1234)
+"Thirlestane Castle","Thirlestane Castle Surprise",surprise,6,"",&-34-1456-1256-36-14-56,|(16)(14)(1456)
+"Sgurr Dhomhnuill","Sgurr Dhomhnuill Surprise",surprise,6,"",&-34-1456-1256-36-34-56,|(12)(14)(1234)
+"Creag Meagaidh","Creag Meagaidh Surprise",surprise,6,"",&-34-1456-1256-36.12-12.56,|(12)(14)(1234)
+"Loch Tay","Loch Tay Surprise",surprise,6,"",&-34-1456-1256-36.12-14.56,|(12)(14)(1234)
+"Bla Bheinn","Bla Bheinn Surprise",surprise,6,"",&-34-1456-1256-36.12-34.56,|(12)(14)(1234)
+"A'Chralaig","A'Chralaig Surprise",surprise,6,"",&-34-1456-1256-36.14-12.56,|(16)(14)(1456)
+"Beinn Alldhobhar","Beinn Alldhobhar Surprise",surprise,6,"",&-34-1456-1256-36.14-14.56,|(12)(14)(1234)
+"Urquhart Castle","Urquhart Castle Surprise",surprise,6,"",&-34-1456-1256-36.14-34.56,|(16)(14)(1456)
+"Tarrington","Tarrington Surprise",surprise,6,"",&-34-1456-56-1236-12-16,|(12)(14)(1234)
+"Claverdon","Claverdon Surprise",surprise,6,"",&-34-1456-56-1236-12-36,|(12)(14)(1234)
+"Church Lawford","Church Lawford Surprise",surprise,6,"",&-34-1456-56-1236-12-56,|(12)(14)(1234)
+"Suckley","Suckley Surprise",surprise,6,"",&-34-1456-56-1236-14-16,|(12)(14)(1234)
+"Uckinghall","Uckinghall Surprise",surprise,6,"",&-34-1456-56-1236-14-36,|(12)(14)(1234)
+"Harkstead","Harkstead Surprise",surprise,6,"",&-34-1456-56-1236-14-36,|(16)(14)(1456)
+"Bacton Bull","Bacton Bull Surprise",surprise,6,"",&-34-1456-56-1236-14-56,|14
+"The Bailey Brothers","The Bailey Brothers Surprise",surprise,6,"",&-34-1456-56-1236-14-56,|(16)(14)(1456)
+"Civic","Civic Surprise",surprise,6,"",&-34-1456-56-1236-34-16,|(16)(14)(1456)
+"Wolford","Wolford Surprise",surprise,6,"",&-34-1456-56-1236-34-56,|(12)(14)(1234)
+"Arley","Arley Surprise",surprise,6,"",&-34-1456-56-36-12-36,|(12)(14)(1234)
+"Shilton","Shilton Surprise",surprise,6,"",&-34-1456-56-36-12-56,|(12)(14)(1234)
+"Woolstone","Woolstone Surprise",surprise,6,"",&-34-1456-56-36-14-36,|(12)(14)(1234)
+"Horningtoft Heritage","Horningtoft Heritage Surprise",surprise,6,"",&-34-1456-56-36-14-36,|(16)(14)(1456)
+"Vowchurch","Vowchurch Surprise",surprise,6,"",&-34-1456-56-36-14-56,|(12)(14)(1234)
+"Ermintrude","Ermintrude Surprise",surprise,6,"",&-34-1456-56-36-14-56,|(16)(14)(1456)
+"Gwennap","Gwennap Surprise",surprise,6,"",&-34-1456-56-36-34-16,|(16)(14)(1456)
+"Whichford","Whichford Surprise",surprise,6,"",&-34-1456-56-36-34-56,|(12)(14)(1234)
+"Bilton","Bilton Surprise",surprise,6,"",&-34-1456-56-36.12-12.36,|(12)(14)(1234)
+"Harbury","Harbury Surprise",surprise,6,"",&-34-1456-56-36.12-12.56,|(12)(14)(1234)
+"Sennen","Sennen Surprise",surprise,6,"",&-34-1456-56-36.12-14.36,|(16)(14)(1456)
+"Rousay","Rousay Surprise",surprise,6,"",&-34-1456-56-36.12-14.56,|14
+"Quetheck","Quetheck Surprise",surprise,6,"",&-34-1456-56-36.12-34.16,|(16)(14)(1456)
+"Napton-on-the-Hill","Napton-on-the-Hill Surprise",surprise,6,"",&-34-1456-56-36.12-34.56,|(12)(14)(1234)
+"St Decuman's","St Decuman's Surprise",surprise,6,"",&-34-1456-56-36.14-12.56,|(12)(14)(1234)
+"Crowcombe","Crowcombe Surprise",surprise,6,"",&-34-1456-56-36.14-12.56,|(16)(14)(1456)
+"Xylocopa","Xylocopa Surprise",surprise,6,"",&-34-1456-56-36.14-14.56,|(12)(14)(1234)
+"Watchet","Watchet Surprise",surprise,6,"",&-34-1456-56-36.14-34.56,|(12)(14)(1234)
+"Over Stowey","Over Stowey Surprise",surprise,6,"",&-34-1456-56-36.14-34.56,|(16)(14)(1456)
+"Greywell","Greywell Surprise",surprise,6,"",&-34-1456.56-12.36-34-56,|(12)(14)(1234)
+"A Dangerous Mind","A Dangerous Mind Surprise",surprise,6,"",&-34-1456.56.1256.12.1236-34-56,|(12)(14)(1234)
+"Flamstead","Flamstead Surprise",surprise,6,"",&-36-14-12-1236-12-16,|(16)(14)(1456)
+"Doddinghurst","Doddinghurst Surprise",surprise,6,"",&-36-14-12-1236-12-36,|14
+"Stanwell","Stanwell Surprise",surprise,6,"",&-36-14-12-1236-12-36,|(16)(14)(1456)
+"Pattiswick","Pattiswick Surprise",surprise,6,"",&-36-14-12-1236-12-56,|(12)(14)(1234)
+"Stisted","Stisted Surprise",surprise,6,"",&-36-14-12-1236-12-56,|14
+"Silver End","Silver End Surprise",surprise,6,"",&-36-14-12-1236-12.1234.36,|(12)(14)(1234)
+"Rivenhall","Rivenhall Surprise",surprise,6,"",&-36-14-12-1236-12.1234.36,|(16)(14)(1456)
+"Rivenhall End","Rivenhall End Surprise",surprise,6,"",&-36-14-12-1236-12.1234.56,|(12)(14)(1234)
+"Dylan Thomas","Dylan Thomas Surprise",surprise,6,"",&-36-14-12-1236-1234-36,|(12)(14)(1234)
+"Kelvinbridge","Kelvinbridge Surprise",surprise,6,"",&-36-14-12-1236-1234-36,|(16)(14)(1456)
+"Fawley","Fawley Surprise",surprise,6,"",&-36-14-12-1236-14-16,|(12)(14)(1234)
+"Ripple","Ripple Surprise",surprise,6,"",&-36-14-12-1236-14-56,|(16)(14)(1456)
+"Great Braxted","Great Braxted Surprise",surprise,6,"",&-36-14-12-1236-14.1234.56,|(16)(14)(1456)
+"Lodsworth","Lodsworth Surprise",surprise,6,"",&-36-14-12-1236-34-16,|(12)(14)(1234)
+"Lurgashall","Lurgashall Surprise",surprise,6,"",&-36-14-12-1236-34-16,|14
+"Caithness","Caithness Surprise",surprise,6,"",&-36-14-12-1236-34-36,|(12)(14)(1234)
+"Cranford","Cranford Surprise",surprise,6,"",&-36-14-12-1236-34-36,|(16)(14)(1456)
+"Terling","Terling Surprise",surprise,6,"",&-36-14-12-1236-34-56,|(12)(14)(1234)
+"Faulkbourne","Faulkbourne Surprise",surprise,6,"",&-36-14-12-1236-34-56,|14
+"Euximoor Drove","Euximoor Drove Surprise",surprise,6,"",&-36-14-12-1236.12-12.36,|14
+"Holland Fen","Holland Fen Surprise",surprise,6,"",&-36-14-12-1236.12-12.36,|(16)(14)(1456)
+"Saddle Bow","Saddle Bow Surprise",surprise,6,"",&-36-14-12-1236.12-12.56,|(12)(14)(1234)
+"East Winch","East Winch Surprise",surprise,6,"",&-36-14-12-1236.12-14.56,|(12)(14)(1234)
+"Rio Grande do Sul","Rio Grande do Sul Surprise",surprise,6,"",&-36-14-12-1236.12-14.56,|(16)(14)(1456)
+"Terrington Marsh","Terrington Marsh Surprise",surprise,6,"",&-36-14-12-1236.12-34.16,|14
+"Whaplode Drove","Whaplode Drove Surprise",surprise,6,"",&-36-14-12-1236.12-34.16,|(16)(14)(1456)
+"Mare Fen","Mare Fen Surprise",surprise,6,"",&-36-14-12-1236.12-34.56,|(12)(14)(1234)
+"Much Cowarne","Much Cowarne Surprise",surprise,6,"",&-36-14-12-1236.14-14.56,|(12)(14)(1234)
+"Hockwold Fen","Hockwold Fen Surprise",surprise,6,"",&-36-14-12-1236.34-12.36,|(12)(14)(1234)
+"Horbling Fen","Horbling Fen Surprise",surprise,6,"",&-36-14-12-1236.34-12.36,|(16)(14)(1456)
+"Saxon Street","Saxon Street Surprise",surprise,6,"",&-36-14-12-1236.34-12.56,|(12)(14)(1234)
+"Needham Street","Needham Street Surprise",surprise,6,"",&-36-14-12-1236.34-12.56,|14
+"Aslackby Fen","Aslackby Fen Surprise",surprise,6,"",&-36-14-12-1236.34-14.56,|(12)(14)(1234)
+"Binnimoor Fen","Binnimoor Fen Surprise",surprise,6,"",&-36-14-12-1236.34-14.56,|(16)(14)(1456)
+"South Runcton","South Runcton Surprise",surprise,6,"",&-36-14-12-1236.34-34.56,|(12)(14)(1234)
+"Mullecotes","Mullecotes Surprise",surprise,6,"",&-36-14-12-1236.34.1234.14.56,|(12)(14)(1234)
+"Rochester","Rochester Surprise",surprise,6,"",&-36-14-12-36-12-16,|14
+"Lord Roseberry","Lord Roseberry Surprise",surprise,6,"",&-36-14-12-36-12-36,|14
+"Cawthorne","Cawthorne Surprise",surprise,6,"",&-36-14-12-36-12-36,|(16)(14)(1456)
+"Beighton","Beighton Surprise",surprise,6,"",&-36-14-12-36-12-56,|(12)(14)(1234)
+"Bawtry","Bawtry Surprise",surprise,6,"",&-36-14-12-36-12-56,|14
+"Marks Tey","Marks Tey Surprise",surprise,6,"",&-36-14-12-36-12.1234.36,|(12)(14)(1234)
+"Easthorpe","Easthorpe Surprise",surprise,6,"",&-36-14-12-36-12.1234.36,|(16)(14)(1456)
+"Stalmamikama","Stalmamikama Surprise",surprise,6,"",&-36-14-12-36-1234-36,|(12)(14)(1234)
+"Ipswich","Ipswich Surprise",surprise,6,"",&-36-14-12-36-14-16,|(12)(14)(1234)
+"Newhall","Newhall Surprise",surprise,6,"",&-36-14-12-36-14-16,|14
+"Norfolk","Norfolk Surprise",surprise,6,"",&-36-14-12-36-14-16,|(16)(14)(1456)
+"King Edward","King Edward Surprise",surprise,6,"",&-36-14-12-36-14-36,|(12)(14)(1234)
+"Queen Mary","Queen Mary Surprise",surprise,6,"",&-36-14-12-36-14-36,|(16)(14)(1456)
+"Cambridge","Cambridge Surprise",surprise,6,"",&-36-14-12-36-14-56,|(12)(14)(1234)
+"Ebor","Ebor Surprise",surprise,6,"",&-36-14-12-36-14-56,|14
+"Primrose","Primrose Surprise",surprise,6,"",&-36-14-12-36-14-56,|(16)(14)(1456)
+"North Luffenham","North Luffenham Surprise",surprise,6,"",&-36-14-12-36-14.1234.56,|(12)(14)(1234)
+"Thong Hall","Thong Hall Surprise",surprise,6,"",&-36-14-12-36-14.1234.56,|(16)(14)(1456)
+"Wickham Market","Wickham Market Surprise",surprise,6,"",&-36-14-12-36-14.34.56,|(12)(14)(1234)
+"Schurr","Schurr Surprise",surprise,6,"",&-36-14-12-36-14.34.56,|(16)(14)(1456)
+"Bradfield Exercise","Bradfield Exercise Surprise",surprise,6,"",&-36-14-12-36-34-16,|14
+"Lord Roberts","Lord Roberts Surprise",surprise,6,"",&-36-14-12-36-34-16,|(16)(14)(1456)
+"Bourne","Bourne Surprise",surprise,6,"",&-36-14-12-36-34-36,|(12)(14)(1234)
+"Hull","Hull Surprise",surprise,6,"",&-36-14-12-36-34-36,|(16)(14)(1456)
+"Appleby","Appleby Surprise",surprise,6,"",&-36-14-12-36-34-56,|(12)(14)(1234)
+"Barnby","Barnby Surprise",surprise,6,"",&-36-14-12-36-34-56,|14
+"Glossop","Glossop Surprise",surprise,6,"",&-36-14-12-36.12-12.36,|14
+"Monsal","Monsal Surprise",surprise,6,"",&-36-14-12-36.12-12.36,|(16)(14)(1456)
+"Redcar","Redcar Surprise",surprise,6,"",&-36-14-12-36.12-12.56,|(12)(14)(1234)
+"Preston","Preston Surprise",surprise,6,"",&-36-14-12-36.12-12.56,|14
+"Goldthorpe","Goldthorpe Surprise",surprise,6,"",&-36-14-12-36.12-14.36,|(12)(14)(1234)
+"Thurnscoe","Thurnscoe Surprise",surprise,6,"",&-36-14-12-36.12-14.36,|14
+"Coverleigh","Coverleigh Surprise",surprise,6,"",&-36-14-12-36.12-14.56,|(16)(14)(1456)
+"Darfield","Darfield Surprise",surprise,6,"",&-36-14-12-36.12-34.16,|(12)(14)(1234)
+"Paston","Paston Surprise",surprise,6,"",&-36-14-12-36.12-34.16,|14
+"Cressing","Cressing Surprise",surprise,6,"",&-36-14-12-36.12-34.36,|(12)(14)(1234)
+"Hatfield","Hatfield Surprise",surprise,6,"",&-36-14-12-36.12-34.56,|(12)(14)(1234)
+"New Stafford","New Stafford Surprise",surprise,6,"",&-36-14-12-36.12-34.56,|14
+"Farthingstone","Farthingstone Surprise",surprise,6,"",&-36-14-12-36.12.1234.12.36,|(12)(14)(1234)
+"Albany","Albany Surprise",surprise,6,"",&-36-14-12-36.1234.14-56,|(12)(14)(1234)
+"Black","Black Surprise",surprise,6,"",&-36-14-12-36.1234.14-56,|(16)(14)(1456)
+"Aniseed Twists","Aniseed Twists Surprise",surprise,6,"",&-36-14-12-36.14-12.16,|(12)(14)(1234)
+"Ackworth","Ackworth Surprise",surprise,6,"",&-36-14-12-36.14-12.36,|14
+"Woodhead","Woodhead Surprise",surprise,6,"",&-36-14-12-36.14-12.36,|(16)(14)(1456)
+"Surfleet","Surfleet Surprise",surprise,6,"",&-36-14-12-36.14-12.56,|(12)(14)(1234)
+"Loughborough","Loughborough Surprise",surprise,6,"",&-36-14-12-36.14-12.56,|14
+"Hexham","Hexham Surprise",surprise,6,"",&-36-14-12-36.14-12.56,|(16)(14)(1456)
+"York","York Surprise",surprise,6,"",&-36-14-12-36.14-14.36,|(12)(14)(1234)
+"Eastwood","Eastwood Surprise",surprise,6,"",&-36-14-12-36.14-14.56,|(12)(14)(1234)
+"Thornhill","Thornhill Surprise",surprise,6,"",&-36-14-12-36.14-14.56,|14
+"Durham","Durham Surprise",surprise,6,"",&-36-14-12-36.14-34.16,|(12)(14)(1234)
+"Pity Me","Pity Me Surprise",surprise,6,"",&-36-14-12-36.14-34.36,|(12)(14)(1234)
+"Beverley","Beverley Surprise",surprise,6,"",&-36-14-12-36.14-34.56,|(12)(14)(1234)
+"Baslow","Baslow Surprise",surprise,6,"",&-36-14-12-36.14-34.56,|14
+"Berwick","Berwick Surprise",surprise,6,"",&-36-14-12-36.14-34.56,|(16)(14)(1456)
+"Tweed","Tweed Surprise",surprise,6,"",&-36-14-12-36.14.1234.12.36,|(12)(14)(1234)
+"Donkeystone","Donkeystone Surprise",surprise,6,"",&-36-14-12-36.14.1234.12.56,|(12)(14)(1234)
+"Kwe Kwe","Kwe Kwe Surprise",surprise,6,"",&-36-14-12-36.14.1234.34.56,|(12)(14)(1234)
+"Full Stop","Full Stop Surprise",surprise,6,"",&-36-14-12-36.34-12.36,|(12)(14)(1234)
+"Frog End","Frog End Surprise",surprise,6,"",&-36-14-12-36.34-12.56,|(12)(14)(1234)
+"North Runcton","North Runcton Surprise",surprise,6,"",&-36-14-12-36.34-34.56,|(12)(14)(1234)
+"Loch Uaine","Loch Uaine Surprise",surprise,6,"",&-36-14-1256-1236-12-56,|14
+"Loch Beag","Loch Beag Surprise",surprise,6,"",&-36-14-1256-1236-14-56,|14
+"Varrich Castle","Varrich Castle Surprise",surprise,6,"",&-36-14-1256-1236-34-56,|14
+"Cawdor Castle","Cawdor Castle Surprise",surprise,6,"",&-36-14-1256-36-12-56,|14
+"Loch Cam","Loch Cam Surprise",surprise,6,"",&-36-14-1256-36-14-56,|(12)(14)(1234)
+"Mweelrea","Mweelrea Surprise",surprise,6,"",&-36-14-1256-36-34-56,|14
+"Loch Vaa","Loch Vaa Surprise",surprise,6,"",&-36-14-1256-36.12-12.56,|14
+"Rois-Bheinn","Rois-Bheinn Surprise",surprise,6,"",&-36-14-1256-36.12-14.56,|14
+"Beinn Odhar Bheag","Beinn Odhar Bheag Surprise",surprise,6,"",&-36-14-1256-36.12-34.56,|14
+"Loch Hope","Loch Hope Surprise",surprise,6,"",&-36-14-1256-36.14-12.56,|(12)(14)(1234)
+"Wemyss Castle","Wemyss Castle Surprise",surprise,6,"",&-36-14-1256-36.14-14.56,|14
+"Loch Maree","Loch Maree Surprise",surprise,6,"",&-36-14-1256-36.14-34.56,|(12)(14)(1234)
+"Rose","Rose Surprise",surprise,6,"",&-36-14-56-1236-12-16,|(12)(14)(1234)
+"Paddington","Paddington Surprise",surprise,6,"",&-36-14-56-1236-12-36,|(12)(14)(1234)
+"North Uist","North Uist Surprise",surprise,6,"",&-36-14-56-1236-12-56,|14
+"Calverton","Calverton Surprise",surprise,6,"",&-36-14-56-1236-12-56,|(16)(14)(1456)
+"KT","KT Surprise",surprise,6,"",&-36-14-56-1236-14-16,|(16)(14)(1456)
+"Willingham","Willingham Surprise",surprise,6,"",&-36-14-56-1236-14-56,|(12)(14)(1234)
+"Guildford Diamond Jubilee","Guildford Diamond Jubilee Surprise",surprise,6,"",&-36-14-56-1236-34-16,|(16)(14)(1456)
+"Wroxham","Wroxham Surprise",surprise,6,"",&-36-14-56-1236-34-36,|(12)(14)(1234)
+"Sculthorpe","Sculthorpe Surprise",surprise,6,"",&-36-14-56-1236-34-36,|(16)(14)(1456)
+"South Uist","South Uist Surprise",surprise,6,"",&-36-14-56-1236-34-56,|14
+"Epperstone","Epperstone Surprise",surprise,6,"",&-36-14-56-1236-34-56,|(16)(14)(1456)
+"Blackfriars","Blackfriars Surprise",surprise,6,"",&-36-14-56-36-12-36,|(12)(14)(1234)
+"Unst","Unst Surprise",surprise,6,"",&-36-14-56-36-12-56,|14
+"Bleasby","Bleasby Surprise",surprise,6,"",&-36-14-56-36-12-56,|(16)(14)(1456)
+"Churchdown","Churchdown Surprise",surprise,6,"",&-36-14-56-36-14-16,|(12)(14)(1234)
+"Friezland","Friezland Surprise",surprise,6,"",&-36-14-56-36-14-16,|(16)(14)(1456)
+"Badgeworth","Badgeworth Surprise",surprise,6,"",&-36-14-56-36-14-36,|(12)(14)(1234)
+"Darton","Darton Surprise",surprise,6,"",&-36-14-56-36-14-36,|(16)(14)(1456)
+"Superlative","Superlative Surprise",surprise,6,"",&-36-14-56-36-14-56,|(12)(14)(1234)
+"Geoffrey Dodd's Tulipish","Geoffrey Dodd's Tulipish Surprise",surprise,6,"",&-36-14-56-36-14-56,|14
+"Leigh","Leigh Surprise",surprise,6,"",&-36-14-56-36-14-56,|(16)(14)(1456)
+"Veryan","Veryan Surprise",surprise,6,"",&-36-14-56-36-34-16,|(12)(14)(1234)
+"Wath","Wath Surprise",surprise,6,"",&-36-14-56-36-34-36,|(12)(14)(1234)
+"Northern Star","Northern Star Surprise",surprise,6,"",&-36-14-56-36-34-36,|(16)(14)(1456)
+"Bressay","Bressay Surprise",surprise,6,"",&-36-14-56-36-34-56,|14
+"Smithfield","Smithfield Surprise",surprise,6,"",&-36-14-56-36-34-56,|(16)(14)(1456)
+"Marylebone","Marylebone Surprise",surprise,6,"",&-36-14-56-36.12-12.36,|(12)(14)(1234)
+"Pabbay (North)","Pabbay (North) Surprise",surprise,6,"",&-36-14-56-36.12-12.56,|14
+"Halloughton","Halloughton Surprise",surprise,6,"",&-36-14-56-36.12-12.56,|(16)(14)(1456)
+"Yoxall","Yoxall Surprise",surprise,6,"",&-36-14-56-36.12-14.56,|(12)(14)(1234)
+"Pabbay (South)","Pabbay (South) Surprise",surprise,6,"",&-36-14-56-36.12-34.56,|14
+"Bilsthorpe","Bilsthorpe Surprise",surprise,6,"",&-36-14-56-36.12-34.56,|(16)(14)(1456)
+"Zatshall","Zatshall Surprise",surprise,6,"",&-36-14-56-36.14-12.36,|(12)(14)(1234)
+"Nailsea","Nailsea Surprise",surprise,6,"",&-36-14-56-36.14-12.56,|(12)(14)(1234)
+"Spratton","Spratton Surprise",surprise,6,"",&-36-14-56-36.14-12.56,|(16)(14)(1456)
+"South Walsham","South Walsham Surprise",surprise,6,"",&-36-14-56-36.14-14.36,|(16)(14)(1456)
+"Barra","Barra Surprise",surprise,6,"",&-36-14-56-36.14-14.56,|14
+"Hampstead Norreys","Hampstead Norreys Surprise",surprise,6,"",&-36-14-56-36.14-14.56,|(16)(14)(1456)
+"Bristoll","Bristoll Surprise",surprise,6,"",&-36-14-56-36.14-34.16,|(16)(14)(1456)
+"Izzat","Izzat Surprise",surprise,6,"",&-36-14-56-36.14-34.56,|(12)(14)(1234)
+"Ting-Tong","Ting-Tong Surprise",surprise,6,"",&-36-14-56-36.14-34.56,|(16)(14)(1456)
+"St John's Fen End","St John's Fen End Surprise",surprise,6,"",&-36-14.12-12.1236-12-36,|14
+"St John's Fen","St John's Fen Surprise",surprise,6,"",&-36-14.12-12.1236-12-36,|(16)(14)(1456)
+"Shouldham Thorpe","Shouldham Thorpe Surprise",surprise,6,"",&-36-14.12-12.1236-12-56,|(12)(14)(1234)
+"King's Fleet","King's Fleet Surprise",surprise,6,"",&-36-14.12-12.1236-12-56,|14
+"Takeley","Takeley Surprise",surprise,6,"",&-36-14.12-12.1236-14-16,|(12)(14)(1234)
+"Great Canfield","Great Canfield Surprise",surprise,6,"",&-36-14.12-12.1236-14-16,|14
+"Little Canfield","Little Canfield Surprise",surprise,6,"",&-36-14.12-12.1236-14-16,|(16)(14)(1456)
+"Salters Lode","Salters Lode Surprise",surprise,6,"",&-36-14.12-12.1236-14-36,|(12)(14)(1234)
+"Audley End","Audley End Surprise",surprise,6,"",&-36-14.12-12.1236-14-56,|(12)(14)(1234)
+"Littlebury","Littlebury Surprise",surprise,6,"",&-36-14.12-12.1236-14-56,|14
+"Wendens Ambo","Wendens Ambo Surprise",surprise,6,"",&-36-14.12-12.1236-14-56,|(16)(14)(1456)
+"Simpson","Simpson Surprise",surprise,6,"",&-36-14.12-12.1236-14.1234.56,|(12)(14)(1234)
+"Bretford","Bretford Surprise",surprise,6,"",&-36-14.12-12.1236-14.1234.56,|(16)(14)(1456)
+"Wingland Marsh","Wingland Marsh Surprise",surprise,6,"",&-36-14.12-12.1236-34-16,|14
+"Warboys High Fen","Warboys High Fen Surprise",surprise,6,"",&-36-14.12-12.1236-34-16,|(16)(14)(1456)
+"Barnston","Barnston Surprise",surprise,6,"",&-36-14.12-12.1236-34-36,|(12)(14)(1234)
+"Howlett End","Howlett End Surprise",surprise,6,"",&-36-14.12-12.1236-34-36,|(16)(14)(1456)
+"Shouldham","Shouldham Surprise",surprise,6,"",&-36-14.12-12.1236-34-56,|(12)(14)(1234)
+"Crimplesham","Crimplesham Surprise",surprise,6,"",&-36-14.12-12.1236-34-56,|14
+"Wicken Fen","Wicken Fen Surprise",surprise,6,"",&-36-14.12-12.1236.12-12.36,|(16)(14)(1456)
+"Zouch","Zouch Surprise",surprise,6,"",&-36-14.12-12.1236.14-12.56,|(12)(14)(1234)
+"Boulge","Boulge Surprise",surprise,6,"",&-36-14.12-12.1236.14-12.56,|14
+"Lois Weedon","Lois Weedon Surprise",surprise,6,"",&-36-14.12-12.1236.14-14.36,|(12)(14)(1234)
+"Easton-on-the-Hill","Easton-on-the-Hill Surprise",surprise,6,"",&-36-14.12-12.1236.14-34.16,|(12)(14)(1234)
+"Hunsbury","Hunsbury Surprise",surprise,6,"",&-36-14.12-12.1236.14-34.56,|(12)(14)(1234)
+"Burgh","Burgh Surprise",surprise,6,"",&-36-14.12-12.1236.14-34.56,|14
+"Old Arley","Old Arley Surprise",surprise,6,"",&-36-14.12-12.1236.14-34.56,|(16)(14)(1456)
+"Wisbech High Fen","Wisbech High Fen Surprise",surprise,6,"",&-36-14.12-12.1236.34-34.56,|(12)(14)(1234)
+"Fishtoft Drove","Fishtoft Drove Surprise",surprise,6,"",&-36-14.12-12.1236.34-34.56,|14
+"Soham Cotes","Soham Cotes Surprise",surprise,6,"",&-36-14.12-12.36-12-36,|14
+"Soham Mere","Soham Mere Surprise",surprise,6,"",&-36-14.12-12.36-12-36,|(16)(14)(1456)
+"Wormegay","Wormegay Surprise",surprise,6,"",&-36-14.12-12.36-12-56,|(12)(14)(1234)
+"West Winch","West Winch Surprise",surprise,6,"",&-36-14.12-12.36-12-56,|14
+"Runcton Holme","Runcton Holme Surprise",surprise,6,"",&-36-14.12-12.36-34-16,|(12)(14)(1234)
+"Zealot","Zealot Surprise",surprise,6,"",&-36-14.12-12.36-34-36,|(12)(14)(1234)
+"Stoke Ferry Fen","Stoke Ferry Fen Surprise",surprise,6,"",&-36-14.12-12.36-34-56,|(12)(14)(1234)
+"Hilgay Fen","Hilgay Fen Surprise",surprise,6,"",&-36-14.12-12.36-34-56,|14
+"Holbeach Drove","Holbeach Drove Surprise",surprise,6,"",&-36-14.12-12.36.12-12.36,|14
+"Holbeach Fen","Holbeach Fen Surprise",surprise,6,"",&-36-14.12-12.36.12-12.36,|(16)(14)(1456)
+"Eau Brink","Eau Brink Surprise",surprise,6,"",&-36-14.12-12.36.12-12.56,|(12)(14)(1234)
+"Pinchbeck South Fen","Pinchbeck South Fen Surprise",surprise,6,"",&-36-14.12-12.36.12-14.56,|(12)(14)(1234)
+"Black Peter","Black Peter Surprise",surprise,6,"",&-36-14.12-12.36.12-14.56,|(16)(14)(1456)
+"Gedney Dyke","Gedney Dyke Surprise",surprise,6,"",&-36-14.12-12.36.12-34.16,|(16)(14)(1456)
+"Fodder Fen","Fodder Fen Surprise",surprise,6,"",&-36-14.12-12.36.12-34.56,|(12)(14)(1234)
+"Pidley Fen","Pidley Fen Surprise",surprise,6,"",&-36-14.12-12.36.14-12.36,|(12)(14)(1234)
+"Quadring Low Fen","Quadring Low Fen Surprise",surprise,6,"",&-36-14.12-12.36.14-12.56,|(16)(14)(1456)
+"Burnt Fen","Burnt Fen Surprise",surprise,6,"",&-36-14.12-12.36.14-14.56,|(12)(14)(1234)
+"Whaplode Marsh","Whaplode Marsh Surprise",surprise,6,"",&-36-14.12-12.36.14-14.56,|14
+"Somersham High North Fen","Somersham High North Fen Surprise",surprise,6,"",&-36-14.12-12.36.14-34.56,|(16)(14)(1456)
+"Cabmirdge","Cabmirdge Surprise",surprise,6,"",&-36-14.12-12.36.34-14.56,|(12)(14)(1234)
+"Primsore","Primsore Surprise",surprise,6,"",&-36-14.12-12.36.34-14.56,|(16)(14)(1456)
+"Yesittiz","Yesittiz Surprise",surprise,6,"",&-36-14.56-12.36-12-16,|(12)(14)(1234)
+"Sheringham","Sheringham Surprise",surprise,6,"",&-36-14.56-12.36-12-36,|(12)(14)(1234)
+"Mainland","Mainland Surprise",surprise,6,"",&-36-14.56-12.36-12-56,|14
+"Halam","Halam Surprise",surprise,6,"",&-36-14.56-12.36-12-56,|(16)(14)(1456)
+"Stoke Double","Stoke Double Surprise",surprise,6,"",&-36-14.56-12.36-14-16,|(16)(14)(1456)
+"Stafford Double","Stafford Double Surprise",surprise,6,"",&-36-14.56-12.36-14-56,|(12)(14)(1234)
+"Uttoxeter","Uttoxeter Surprise",surprise,6,"",&-36-14.56-12.36-34-16,|(16)(14)(1456)
+"Watton","Watton Surprise",surprise,6,"",&-36-14.56-12.36-34-36,|(12)(14)(1234)
+"Saxthorpe","Saxthorpe Surprise",surprise,6,"",&-36-14.56-12.36-34-36,|(16)(14)(1456)
+"The Thumb","The Thumb Surprise",surprise,6,"",&-36-14.56-12.36-34-56,|14
+"Edingley","Edingley Surprise",surprise,6,"",&-36-14.56-12.36-34-56,|(16)(14)(1456)
+"Shipdham","Shipdham Surprise",surprise,6,"",&-36-14.56-12.36.12-12.36,|(12)(14)(1234)
+"Robert","Robert Surprise",surprise,6,"",&-36-14.56-12.36.12-12.56,|14
+"Littleborough","Littleborough Surprise",surprise,6,"",&-36-14.56-12.36.12-12.56,|(16)(14)(1456)
+"Butlers Marston","Butlers Marston Surprise",surprise,6,"",&-36-14.56-12.36.12-14.36,|(12)(14)(1234)
+"Prince Philip","Prince Philip Surprise",surprise,6,"",&-36-14.56-12.36.12-14.56,|(12)(14)(1234)
+"Baldrick's","Baldrick's Surprise",surprise,6,"",&-36-14.56-12.36.12-34.16,|(12)(14)(1234)
+"Patrick","Patrick Surprise",surprise,6,"",&-36-14.56-12.36.12-34.56,|14
+"Budby","Budby Surprise",surprise,6,"",&-36-14.56-12.36.12-34.56,|(16)(14)(1456)
+"Kilifi","Kilifi Surprise",surprise,6,"",&-36-14.56-12.36.14-12.16,|(12)(14)(1234)
+"Nether Stowey","Nether Stowey Surprise",surprise,6,"",&-36-14.56-12.36.14-12.56,|(12)(14)(1234)
+"Glint","Glint Surprise",surprise,6,"",&-36-14.56-12.36.14-14.56,|14
+"Spaxton","Spaxton Surprise",surprise,6,"",&-36-14.56-12.36.14-34.56,|(12)(14)(1234)
+"Walsoken","Walsoken Surprise",surprise,6,"",&-36-1456-12-1236-12-36,|(12)(14)(1234)
+"Birks","Birks Surprise",surprise,6,"",&-36-1456-12-1236-12-56,|14
+"Darlton","Darlton Surprise",surprise,6,"",&-36-1456-12-1236-12-56,|(16)(14)(1456)
+"Wisborough Green","Wisborough Green Surprise",surprise,6,"",&-36-1456-12-1236-14-16,|(12)(14)(1234)
+"Southwater","Southwater Surprise",surprise,6,"",&-36-1456-12-1236-14-16,|(16)(14)(1456)
+"Warboys","Warboys Surprise",surprise,6,"",&-36-1456-12-1236-14-36,|(12)(14)(1234)
+"Great Bromley","Great Bromley Surprise",surprise,6,"",&-36-1456-12-1236-14-36,|(16)(14)(1456)
+"Steamboat Springs","Steamboat Springs Surprise",surprise,6,"",&-36-1456-12-1236-14-56,|(12)(14)(1234)
+"Staverton Bridge","Staverton Bridge Surprise",surprise,6,"",&-36-1456-12-1236-14-56,|(16)(14)(1456)
+"Little Longridge","Little Longridge Surprise",surprise,6,"",&-36-1456-12-1236-34-16,|(12)(14)(1234)
+"Bunwell","Bunwell Surprise",surprise,6,"",&-36-1456-12-1236-34-36,|(12)(14)(1234)
+"Mole","Mole Surprise",surprise,6,"",&-36-1456-12-1236-34-36,|(16)(14)(1456)
+"Kinder Scout","Kinder Scout Surprise",surprise,6,"",&-36-1456-12-1236-34-56,|14
+"Weston","Weston Surprise",surprise,6,"",&-36-1456-12-1236-34-56,|(16)(14)(1456)
+"Shabbington","Shabbington Surprise",surprise,6,"",&-36-1456-12-36-12-16,|(12)(14)(1234)
+"Tottington","Tottington Surprise",surprise,6,"",&-36-1456-12-36-12-36,|(12)(14)(1234)
+"Finningham","Finningham Surprise",surprise,6,"",&-36-1456-12-36-12-56,|14
+"Lambley","Lambley Surprise",surprise,6,"",&-36-1456-12-36-12-56,|(16)(14)(1456)
+"TK","TK Surprise",surprise,6,"",&-36-1456-12-36-14-16,|(16)(14)(1456)
+"Ashchurch","Ashchurch Surprise",surprise,6,"",&-36-1456-12-36-14-56,|(12)(14)(1234)
+"Wilton","Wilton Surprise",surprise,6,"",&-36-1456-12-36-34-36,|(12)(14)(1234)
+"Scarning","Scarning Surprise",surprise,6,"",&-36-1456-12-36-34-36,|(16)(14)(1456)
+"Wyverstone","Wyverstone Surprise",surprise,6,"",&-36-1456-12-36-34-56,|14
+"Flintham","Flintham Surprise",surprise,6,"",&-36-1456-12-36-34-56,|(16)(14)(1456)
+"Upwell","Upwell Surprise",surprise,6,"",&-36-1456-12-36.12-12.36,|(12)(14)(1234)
+"Earl's Green","Earl's Green Surprise",surprise,6,"",&-36-1456-12-36.12-12.56,|14
+"Kneeton","Kneeton Surprise",surprise,6,"",&-36-1456-12-36.12-12.56,|(16)(14)(1456)
+"Linford","Linford Surprise",surprise,6,"",&-36-1456-12-36.12-14.36,|(12)(14)(1234)
+"Woolfardisworthy","Woolfardisworthy Surprise",surprise,6,"",&-36-1456-12-36.12-14.56,|(12)(14)(1234)
+"Apathy","Apathy Surprise",surprise,6,"",&-36-1456-12-36.12-34.16,|(12)(14)(1234)
+"Bacton Green","Bacton Green Surprise",surprise,6,"",&-36-1456-12-36.12-34.56,|14
+"Cromwell","Cromwell Surprise",surprise,6,"",&-36-1456-12-36.12-34.56,|(16)(14)(1456)
+"Maisemore","Maisemore Surprise",surprise,6,"",&-36-1456-12-36.14-12.56,|(12)(14)(1234)
+"Archy Styrigg","Archy Styrigg Surprise",surprise,6,"",&-36-1456-12-36.14-14.56,|14
+"Great Gransden","Great Gransden Surprise",surprise,6,"",&-36-1456-12-36.14-14.56,|(16)(14)(1456)
+"King's Bromley","King's Bromley Surprise",surprise,6,"",&-36-1456-12-36.14-34.56,|(12)(14)(1234)
+"Ben Hope","Ben Hope Surprise",surprise,6,"",&-36-1456-1256-1236-12-56,|(12)(14)(1234)
+"Doune Castle","Doune Castle Surprise",surprise,6,"",&-36-1456-1256-1236-14-56,|(16)(14)(1456)
+"Nephin","Nephin Surprise",surprise,6,"",&-36-1456-1256-1236-34-56,|(12)(14)(1234)
+"Loch Dearg","Loch Dearg Surprise",surprise,6,"",&-36-1456-1256-36-12-56,|(12)(14)(1234)
+"Laugharne Castle","Laugharne Castle Surprise",surprise,6,"",&-36-1456-1256-36-14-16,|14
+"Edinburgh Castle","Edinburgh Castle Surprise",surprise,6,"",&-36-1456-1256-36-14-56,|14
+"Gleouraich","Gleouraich Surprise",surprise,6,"",&-36-1456-1256-36-34-56,|(12)(14)(1234)
+"Binnein Mor","Binnein Mor Surprise",surprise,6,"",&-36-1456-1256-36.12-12.56,|(12)(14)(1234)
+"Inveraray Castle","Inveraray Castle Surprise",surprise,6,"",&-36-1456-1256-36.12-14.56,|(16)(14)(1456)
+"Bidean a'Ghlas Thuill","Bidean a'Ghlas Thuill Surprise",surprise,6,"",&-36-1456-1256-36.12-34.56,|(12)(14)(1234)
+"Loch Insh","Loch Insh Surprise",surprise,6,"",&-36-1456-1256-36.14-12.56,|14
+"Newark Castle","Newark Castle Surprise",surprise,6,"",&-36-1456-1256-36.14-14.56,|(12)(14)(1234)
+"Jedburgh Castle","Jedburgh Castle Surprise",surprise,6,"",&-36-1456-1256-36.14-34.56,|14
+"Hoveringham","Hoveringham Surprise",surprise,6,"",&-36-1456-56-1236-12-36,|(16)(14)(1456)
+"Soho","Soho Surprise",surprise,6,"",&-36-1456-56-1236-12-56,|(12)(14)(1234)
+"Advent Sunday","Advent Sunday Surprise",surprise,6,"",&-36-1456-56-1236-14-16,|(12)(14)(1234)
+"Sundew","Sundew Surprise",surprise,6,"",&-36-1456-56-1236-14-16,|(16)(14)(1456)
+"Boeing","Boeing Surprise",surprise,6,"",&-36-1456-56-1236-14-36,|(12)(14)(1234)
+"Pitcher Plant","Pitcher Plant Surprise",surprise,6,"",&-36-1456-56-1236-14-36,|(16)(14)(1456)
+"High Halden","High Halden Surprise",surprise,6,"",&-36-1456-56-1236-14-56,|(12)(14)(1234)
+"Triffid","Triffid Surprise",surprise,6,"",&-36-1456-56-1236-14-56,|(16)(14)(1456)
+"Saskia","Saskia Surprise",surprise,6,"",&-36-1456-56-1236-34-16,|(16)(14)(1456)
+"Beedon","Beedon Surprise",surprise,6,"",&-36-1456-56-1236-34-36,|(12)(14)(1234)
+"Rushford","Rushford Surprise",surprise,6,"",&-36-1456-56-1236-34-36,|(16)(14)(1456)
+"Waterloo","Waterloo Surprise",surprise,6,"",&-36-1456-56-1236-34-56,|(12)(14)(1234)
+"Nether Heyford","Nether Heyford Surprise",surprise,6,"",&-36-1456-56-1236.14-12.56,|(12)(14)(1234)
+"West Haddon","West Haddon Surprise",surprise,6,"",&-36-1456-56-1236.14-12.56,|(16)(14)(1456)
+"Braunston","Braunston Surprise",surprise,6,"",&-36-1456-56-1236.14-34.56,|(12)(14)(1234)
+"Braunston-in-Rutland","Braunston-in-Rutland Surprise",surprise,6,"",&-36-1456-56-1236.14-34.56,|(16)(14)(1456)
+"Crescent","Crescent Surprise",surprise,6,"",&-36-1456-56-36-12-16,|(16)(14)(1456)
+"Habblesthorpe","Habblesthorpe Surprise",surprise,6,"",&-36-1456-56-36-12-36,|(16)(14)(1456)
+"Wandsworth","Wandsworth Surprise",surprise,6,"",&-36-1456-56-36-12-56,|(12)(14)(1234)
+"Abbots Leigh","Abbots Leigh Surprise",surprise,6,"",&-36-1456-56-36-14-16,|(12)(14)(1234)
+"Betjeman","Betjeman Surprise",surprise,6,"",&-36-1456-56-36-14-56,|(16)(14)(1456)
+"Childswickham","Childswickham Surprise",surprise,6,"",&-36-1456-56-36-34-16,|(12)(14)(1234)
+"Winfarthing","Winfarthing Surprise",surprise,6,"",&-36-1456-56-36-34-36,|(12)(14)(1234)
+"Scottow","Scottow Surprise",surprise,6,"",&-36-1456-56-36-34-36,|(16)(14)(1456)
+"Brixton","Brixton Surprise",surprise,6,"",&-36-1456-56-36-34-56,|(12)(14)(1234)
+"Gonalston","Gonalston Surprise",surprise,6,"",&-36-1456-56-36.12-12.36,|(16)(14)(1456)
+"Pentonville","Pentonville Surprise",surprise,6,"",&-36-1456-56-36.12-12.56,|(12)(14)(1234)
+"Eminent Nick Lawrence","Eminent Nick Lawrence Surprise",surprise,6,"",&-36-1456-56-36.12-14.56,|(12)(14)(1234)
+"Holloway","Holloway Surprise",surprise,6,"",&-36-1456-56-36.12-34.56,|(12)(14)(1234)
+"Goodnestone","Goodnestone Surprise",surprise,6,"",&-36-1456-56-36.14-12.36,|(12)(14)(1234)
+"Fair Isle","Fair Isle Surprise",surprise,6,"",&-36-1456-56-36.14-12.56,|(16)(14)(1456)
+"West Monkton","West Monkton Surprise",surprise,6,"",&-36-1456-56-36.14-14.56,|(12)(14)(1234)
+"Isle of Noss","Isle of Noss Surprise",surprise,6,"",&-36-1456-56-36.14-34.56,|(16)(14)(1456)
+"Golden Wheel","Golden Wheel Surprise",surprise,6,"",&-36-1456.12.1256.56.1236-14-56,|(12)(14)(1234)
+"Cabbage City","Cabbage City Surprise",surprise,6,"",&-36-1456.56.1256.12.1236-14-56,|(12)(14)(1234)
+"Hudson","Hudson Surprise",surprise,6,"",&-36.34.1456-1256-1236.34.14-56,|(12)(14)(1234)
+"Multi Media","Multi Media Surprise",surprise,6,"",&-56-14-12-1236-12-16,|14
+"Ravenshead","Ravenshead Surprise",surprise,6,"",&-56-14-12-1236-12-36,|(12)(14)(1234)
+"Saundby","Saundby Surprise",surprise,6,"",&-56-14-12-1236-12-36,|(16)(14)(1456)
+"Everton","Everton Surprise",surprise,6,"",&-56-14-12-1236-12-56,|(12)(14)(1234)
+"Cornish Knockers","Cornish Knockers Surprise",surprise,6,"",&-56-14-12-1236-14-16,|(16)(14)(1456)
+"Cuckoo","Cuckoo Surprise",surprise,6,"",&-56-14-12-1236-14-36,|(12)(14)(1234)
+"Easter Day","Easter Day Surprise",surprise,6,"",&-56-14-12-1236-14-56,|(12)(14)(1234)
+"Ranworth","Ranworth Surprise",surprise,6,"",&-56-14-12-1236-34-36,|(16)(14)(1456)
+"Laxton","Laxton Surprise",surprise,6,"",&-56-14-12-1236-34-56,|(12)(14)(1234)
+"Derby Lonsdale","Derby Lonsdale Surprise",surprise,6,"",&-56-14-12-1236-34-56,|14
+"Stondon","Stondon Surprise",surprise,6,"",&-56-14-12-36-12-16,|(12)(14)(1234)
+"Omdurman","Omdurman Surprise",surprise,6,"",&-56-14-12-36-12-16,|(16)(14)(1456)
+"Mansfield Woodhouse","Mansfield Woodhouse Surprise",surprise,6,"",&-56-14-12-36-12-36,|(12)(14)(1234)
+"Costock","Costock Surprise",surprise,6,"",&-56-14-12-36-12-36,|(16)(14)(1456)
+"Collingham","Collingham Surprise",surprise,6,"",&-56-14-12-36-12-56,|(12)(14)(1234)
+"Netherstowe School","Netherstowe School Surprise",surprise,6,"",&-56-14-12-36-12-56,|14
+"Flanders","Flanders Surprise",surprise,6,"",&-56-14-12-36-14-16,|(12)(14)(1234)
+"Bernard","Bernard Surprise",surprise,6,"",&-56-14-12-36-14-36,|(12)(14)(1234)
+"Taylor","Taylor Surprise",surprise,6,"",&-56-14-12-36-14-36,|(16)(14)(1456)
+"St Edmund Hall","St Edmund Hall Surprise",surprise,6,"",&-56-14-12-36-14-56,|14
+"Princess of Wales","Princess of Wales Surprise",surprise,6,"",&-56-14-12-36-34-16,|(16)(14)(1456)
+"Methwold","Methwold Surprise",surprise,6,"",&-56-14-12-36-34-36,|(16)(14)(1456)
+"Cotgrave","Cotgrave Surprise",surprise,6,"",&-56-14-12-36-34-56,|(12)(14)(1234)
+"Friary School","Friary School Surprise",surprise,6,"",&-56-14-12-36-34-56,|14
+"Misson","Misson Surprise",surprise,6,"",&-56-14-12-36.12-12.36,|(12)(14)(1234)
+"Beckingham","Beckingham Surprise",surprise,6,"",&-56-14-12-36.12-12.36,|(16)(14)(1456)
+"Cuckney","Cuckney Surprise",surprise,6,"",&-56-14-12-36.12-12.56,|(12)(14)(1234)
+"White Roding","White Roding Surprise",surprise,6,"",&-56-14-12-36.12-14.56,|(12)(14)(1234)
+"Edwinstowe","Edwinstowe Surprise",surprise,6,"",&-56-14-12-36.12-34.56,|(12)(14)(1234)
+"Boxmoor","Boxmoor Surprise",surprise,6,"",&-56-14-12-36.14-12.36,|(16)(14)(1456)
+"Venta Silurum","Venta Silurum Surprise",surprise,6,"",&-56-14-12-36.14-12.56,|14
+"Tushingham","Tushingham Surprise",surprise,6,"",&-56-14-12-36.14-14.36,|(12)(14)(1234)
+"Llangatwg","Llangatwg Surprise",surprise,6,"",&-56-14-12-36.14-14.36,|(16)(14)(1456)
+"Isca Dumnoniorum","Isca Dumnoniorum Surprise",surprise,6,"",&-56-14-12-36.14-14.56,|(12)(14)(1234)
+"Isadora Duncan","Isadora Duncan Surprise",surprise,6,"",&-56-14-12-36.14-14.56,|14
+"Clipsham","Clipsham Surprise",surprise,6,"",&-56-14-12-36.14-34.16,|(12)(14)(1234)
+"The Great Gardini","The Great Gardini Surprise",surprise,6,"",&-56-14-12-36.14-34.16,|(16)(14)(1456)
+"Isca Silurum","Isca Silurum Surprise",surprise,6,"",&-56-14-12-36.14-34.56,|14
+"Beinn Bhan","Beinn Bhan Surprise",surprise,6,"",&-56-14-1256-1236-12-56,|(12)(14)(1234)
+"Yester Castle","Yester Castle Surprise",surprise,6,"",&-56-14-1256-1236-14-56,|(12)(14)(1234)
+"Lugnaquillia","Lugnaquillia Surprise",surprise,6,"",&-56-14-1256-1236-34-56,|(12)(14)(1234)
+"Loch Yucal","Loch Yucal Surprise",surprise,6,"",&-56-14-1256-36-12-56,|(12)(14)(1234)
+"Aran Fawddwy","Aran Fawddwy Surprise",surprise,6,"",&-56-14-1256-36-14-56,|14
+"Bidean nam Bian","Bidean nam Bian Surprise",surprise,6,"",&-56-14-1256-36-34-56,|(12)(14)(1234)
+"Beinn Nibheis","Beinn Nibheis Surprise",surprise,6,"",&-56-14-1256-36.12-12.56,|(12)(14)(1234)
+"Carrauntoohil","Carrauntoohil Surprise",surprise,6,"",&-56-14-1256-36.12-14.56,|(12)(14)(1234)
+"Sgurr Alasdair","Sgurr Alasdair Surprise",surprise,6,"",&-56-14-1256-36.12-34.56,|(12)(14)(1234)
+"Beinn Mhor","Beinn Mhor Surprise",surprise,6,"",&-56-14-1256-36.14-12.56,|14
+"Creach Bheinn","Creach Bheinn Surprise",surprise,6,"",&-56-14-1256-36.14-14.56,|(12)(14)(1234)
+"Carnedd Llewelyn","Carnedd Llewelyn Surprise",surprise,6,"",&-56-14-1256-36.14-34.56,|14
+"Goostrey","Goostrey Surprise",surprise,6,"",&-56-14-56-1236-12-16,|(12)(14)(1234)
+"Wilmington","Wilmington Surprise",surprise,6,"",&-56-14-56-1236-12-16,|(16)(14)(1456)
+"West Markham","West Markham Surprise",surprise,6,"",&-56-14-56-1236-12-36,|(12)(14)(1234)
+"Columbia","Columbia Surprise",surprise,6,"",&-56-14-56-1236-12-56,|(12)(14)(1234)
+"Elkesley","Elkesley Surprise",surprise,6,"",&-56-14-56-1236-12-56,|(16)(14)(1456)
+"Sheering","Sheering Surprise",surprise,6,"",&-56-14-56-1236-14-16,|(12)(14)(1234)
+"Hedgehog","Hedgehog Surprise",surprise,6,"",&-56-14-56-1236-14-36,|(12)(14)(1234)
+"Emergency","Emergency Surprise",surprise,6,"",&-56-14-56-1236-14-56,|14
+"Mille","Mille Surprise",surprise,6,"",&-56-14-56-1236-14-56,|(16)(14)(1456)
+"Zenara","Zenara Surprise",surprise,6,"",&-56-14-56-1236-34-16,|(16)(14)(1456)
+"Reepham","Reepham Surprise",surprise,6,"",&-56-14-56-1236-34-36,|(16)(14)(1456)
+"Snitterfield","Snitterfield Surprise",surprise,6,"",&-56-14-56-1236-34-56,|(12)(14)(1234)
+"Gringley","Gringley Surprise",surprise,6,"",&-56-14-56-1236-34-56,|(16)(14)(1456)
+"Eydon","Eydon Surprise",surprise,6,"",&-56-14-56-1236.12-12.56,|(12)(14)(1234)
+"St John the Evangelist","St John the Evangelist Surprise",surprise,6,"",&-56-14-56-1236.34-12.56,|(12)(14)(1234)
+"Werchintone","Werchintone Surprise",surprise,6,"",&-56-14-56-1236.34-34.56,|(12)(14)(1234)
+"Peter's Tree","Peter's Tree Surprise",surprise,6,"",&-56-14-56-36-12-16,|(16)(14)(1456)
+"Carburton","Carburton Surprise",surprise,6,"",&-56-14-56-36-12-36,|(12)(14)(1234)
+"College Bob III","College Bob III Surprise",surprise,6,"",&-56-14-56-36-12-56,|(12)(14)(1234)
+"Torworth","Torworth Surprise",surprise,6,"",&-56-14-56-36-12-56,|(16)(14)(1456)
+"Caston","Caston Surprise",surprise,6,"",&-56-14-56-36-14-36,|(12)(14)(1234)
+"A Fishmonger and Judith's Hat","A Fishmonger and Judith's Hat Surprise",surprise,6,"",&-56-14-56-36-14-36,|(16)(14)(1456)
+"Bushley","Bushley Surprise",surprise,6,"",&-56-14-56-36-14-56,|(12)(14)(1234)
+"Mileham","Mileham Surprise",surprise,6,"",&-56-14-56-36-34-36,|(16)(14)(1456)
+"Studley","Studley Surprise",surprise,6,"",&-56-14-56-36-34-56,|(12)(14)(1234)
+"Great Amwell","Great Amwell Surprise",surprise,6,"",&-56-14-56-36-34-56,|14
+"Cossall","Cossall Surprise",surprise,6,"",&-56-14-56-36-34-56,|(16)(14)(1456)
+"West Drayton","West Drayton Surprise",surprise,6,"",&-56-14-56-36.12-12.36,|(12)(14)(1234)
+"Eagle","Eagle Surprise",surprise,6,"",&-56-14-56-36.12-12.56,|(12)(14)(1234)
+"Mattersey","Mattersey Surprise",surprise,6,"",&-56-14-56-36.12-12.56,|(16)(14)(1456)
+"Soay","Soay Surprise",surprise,6,"",&-56-14-56-36.12-14.56,|14
+"Thomas Crapper","Thomas Crapper Surprise",surprise,6,"",&-56-14-56-36.12-34.16,|(16)(14)(1456)
+"Stoneleigh","Stoneleigh Surprise",surprise,6,"",&-56-14-56-36.12-34.56,|(12)(14)(1234)
+"Grassthorpe","Grassthorpe Surprise",surprise,6,"",&-56-14-56-36.12-34.56,|(16)(14)(1456)
+"Northbourne","Northbourne Surprise",surprise,6,"",&-56-14-56-36.14-12.56,|(12)(14)(1234)
+"Claremont","Claremont Surprise",surprise,6,"",&-56-14-56-36.14-14.56,|(12)(14)(1234)
+"Twinkie","Twinkie Surprise",surprise,6,"",&-56-14-56-36.14-14.56,|(16)(14)(1456)
+"Battle of Hastings","Battle of Hastings Surprise",surprise,6,"",&-56-14-56-36.14-34.56,|(12)(14)(1234)
+"Witefelle","Witefelle Surprise",surprise,6,"",&-56-14-56-36.34-12.56,|(12)(14)(1234)
+"Buccleuch","Buccleuch Surprise",surprise,6,"",&-56-14-56-36.34-34.56,|(12)(14)(1234)
+"Sunniside","Sunniside Surprise",surprise,6,"",&-56-14.56-12.1236-12-36,|(12)(14)(1234)
+"Swalwell","Swalwell Surprise",surprise,6,"",&-56-14.56-12.1236-12-56,|(12)(14)(1234)
+"Hamsterley","Hamsterley Surprise",surprise,6,"",&-56-14.56-12.1236-12-56,|(16)(14)(1456)
+"Rowlands Gill","Rowlands Gill Surprise",surprise,6,"",&-56-14.56-12.1236-34-56,|(12)(14)(1234)
+"Marley Hill","Marley Hill Surprise",surprise,6,"",&-56-14.56-12.1236-34-56,|(16)(14)(1456)
+"Wappenham","Wappenham Surprise",surprise,6,"",&-56-14.56-12.1236.12-34.56,|(12)(14)(1234)
+"Coity","Coity Surprise",surprise,6,"",&-56-14.56-12.36-12-16,|(12)(14)(1234)
+"Horton","Horton Surprise",surprise,6,"",&-56-14.56-12.36-12-16,|(16)(14)(1456)
+"Berrynarbor","Berrynarbor Surprise",surprise,6,"",&-56-14.56-12.36-12-36,|(12)(14)(1234)
+"Hartnell","Hartnell Surprise",surprise,6,"",&-56-14.56-12.36-12-36,|14
+"Milton","Milton Surprise",surprise,6,"",&-56-14.56-12.36-12-56,|(12)(14)(1234)
+"Elton","Elton Surprise",surprise,6,"",&-56-14.56-12.36-12-56,|(16)(14)(1456)
+"Mys Merth","Mys Merth Surprise",surprise,6,"",&-56-14.56-12.36-14-16,|(12)(14)(1234)
+"Menheniot","Menheniot Surprise",surprise,6,"",&-56-14.56-12.36-14-36,|(12)(14)(1234)
+"Hirta","Hirta Surprise",surprise,6,"",&-56-14.56-12.36-14-56,|14
+"Bratislava","Bratislava Surprise",surprise,6,"",&-56-14.56-12.36-34-16,|(16)(14)(1456)
+"Mundford","Mundford Surprise",surprise,6,"",&-56-14.56-12.36-34-36,|(16)(14)(1456)
+"Ketteringham","Ketteringham Surprise",surprise,6,"",&-56-14.56-12.36-34-56,|(12)(14)(1234)
+"Rainworth","Rainworth Surprise",surprise,6,"",&-56-14.56-12.36-34-56,|(16)(14)(1456)
+"Arlington","Arlington Surprise",surprise,6,"",&-56-14.56-12.36.12-12.36,|(12)(14)(1234)
+"Litcham","Litcham Surprise",surprise,6,"",&-56-14.56-12.36.12-12.56,|(12)(14)(1234)
+"Fledborough","Fledborough Surprise",surprise,6,"",&-56-14.56-12.36.12-12.56,|(16)(14)(1456)
+"Chilcompton","Chilcompton Surprise",surprise,6,"",&-56-14.56-12.36.12-14.56,|(12)(14)(1234)
+"Matthew","Matthew Surprise",surprise,6,"",&-56-14.56-12.36.12-34.56,|(12)(14)(1234)
+"Moorhouse","Moorhouse Surprise",surprise,6,"",&-56-14.56-12.36.12-34.56,|(16)(14)(1456)
+"Dun","Dun Surprise",surprise,6,"",&-56-14.56-12.36.14-12.56,|14
+"Rodmersham","Rodmersham Surprise",surprise,6,"",&-56-14.56-12.36.14-12.56,|(16)(14)(1456)
+"Mys Ebrel","Mys Ebrel Surprise",surprise,6,"",&-56-14.56-12.36.14-14.36,|(12)(14)(1234)
+"South Harting","South Harting Surprise",surprise,6,"",&-56-14.56-12.36.14-14.36,|(16)(14)(1456)
+"Northumbria","Northumbria Surprise",surprise,6,"",&-56-14.56-12.36.14-14.56,|(12)(14)(1234)
+"Mys Me","Mys Me Surprise",surprise,6,"",&-56-14.56-12.36.14-34.16,|(12)(14)(1234)
+"Boreray","Boreray Surprise",surprise,6,"",&-56-14.56-12.36.14-34.56,|14
+"Randall-Clarke","Randall-Clarke Surprise",surprise,6,"",&-56-1456-12-1236-12-16,|(16)(14)(1456)
+"Ossington","Ossington Surprise",surprise,6,"",&-56-1456-12-1236-12-36,|(12)(14)(1234)
+"Kilvington","Kilvington Surprise",surprise,6,"",&-56-1456-12-1236-12-56,|(12)(14)(1234)
+"Treswell","Treswell Surprise",surprise,6,"",&-56-1456-12-1236-12-56,|(16)(14)(1456)
+"Baston","Baston Surprise",surprise,6,"",&-56-1456-12-1236-12.1234.56,|(12)(14)(1234)
+"Westwood","Westwood Surprise",surprise,6,"",&-56-1456-12-1236-14-36,|(12)(14)(1234)
+"Farmborough","Farmborough Surprise",surprise,6,"",&-56-1456-12-1236-14-36,|(16)(14)(1456)
+"Badby Tents","Badby Tents Surprise",surprise,6,"",&-56-1456-12-1236-14-56,|(12)(14)(1234)
+"Great Easton","Great Easton Surprise",surprise,6,"",&-56-1456-12-1236-34-36,|(16)(14)(1456)
+"North Wheatley","North Wheatley Surprise",surprise,6,"",&-56-1456-12-1236-34-56,|(12)(14)(1234)
+"Stokeham","Stokeham Surprise",surprise,6,"",&-56-1456-12-1236-34-56,|(16)(14)(1456)
+"X-ton","X-ton Surprise",surprise,6,"",&-56-1456-12-1236-34.1234.56,|(12)(14)(1234)
+"St George's Cathedral","St George's Cathedral Surprise",surprise,6,"",&-56-1456-12-1236.12-12.56,|(12)(14)(1234)
+"Greatford","Greatford Surprise",surprise,6,"",&-56-1456-12-1236.34-12.56,|(12)(14)(1234)
+"Lincs","Lincs Surprise",surprise,6,"",&-56-1456-12-1236.34-34.56,|(12)(14)(1234)
+"Pillaton","Pillaton Surprise",surprise,6,"",&-56-1456-12-36-12-16,|(12)(14)(1234)
+"Mys Genver","Mys Genver Surprise",surprise,6,"",&-56-1456-12-36-12-16,|(16)(14)(1456)
+"Nuthall","Nuthall Surprise",surprise,6,"",&-56-1456-12-36-12-36,|(12)(14)(1234)
+"Selston","Selston Surprise",surprise,6,"",&-56-1456-12-36-12-56,|(12)(14)(1234)
+"Cottam","Cottam Surprise",surprise,6,"",&-56-1456-12-36-12-56,|(16)(14)(1456)
+"Rippingale","Rippingale Surprise",surprise,6,"",&-56-1456-12-36-12.1234.56,|(12)(14)(1234)
+"Acton-by-Nantwich","Acton-by-Nantwich Surprise",surprise,6,"",&-56-1456-12-36-14-16,|(12)(14)(1234)
+"St Mellion","St Mellion Surprise",surprise,6,"",&-56-1456-12-36-14-36,|(12)(14)(1234)
+"Happy Birthday Sheila","Happy Birthday Sheila Surprise",surprise,6,"",&-56-1456-12-36-14-56,|14
+"Fourteen Forty","Fourteen Forty Surprise",surprise,6,"",&-56-1456-12-36-14-56,|(16)(14)(1456)
+"Towednak","Towednak Surprise",surprise,6,"",&-56-1456-12-36-34-16,|(16)(14)(1456)
+"Necton","Necton Surprise",surprise,6,"",&-56-1456-12-36-34-36,|(16)(14)(1456)
+"Shireoaks","Shireoaks Surprise",surprise,6,"",&-56-1456-12-36-34-56,|(12)(14)(1234)
+"Leverton","Leverton Surprise",surprise,6,"",&-56-1456-12-36-34-56,|(16)(14)(1456)
+"Harrington","Harrington Surprise",surprise,6,"",&-56-1456-12-36-34.1234.56,|(12)(14)(1234)
+"Alverton","Alverton Surprise",surprise,6,"",&-56-1456-12-36.12-12.36,|(12)(14)(1234)
+"Stapleford","Stapleford Surprise",surprise,6,"",&-56-1456-12-36.12-12.56,|(12)(14)(1234)
+"Bramcote","Bramcote Surprise",surprise,6,"",&-56-1456-12-36.12-12.56,|(16)(14)(1456)
+"Mys Whevrer","Mys Whevrer Surprise",surprise,6,"",&-56-1456-12-36.12-14.56,|(12)(14)(1234)
+"Sturton-le-Steeple","Sturton-le-Steeple Surprise",surprise,6,"",&-56-1456-12-36.12-34.56,|(12)(14)(1234)
+"Scaftworth","Scaftworth Surprise",surprise,6,"",&-56-1456-12-36.12-34.56,|(16)(14)(1456)
+"Lord Nelson","Lord Nelson Surprise",surprise,6,"",&-56-1456-12-36.12.1234.34.56,|(12)(14)(1234)
+"Needham Market","Needham Market Surprise",surprise,6,"",&-56-1456-12-36.14-12.56,|14
+"Madras","Madras Surprise",surprise,6,"",&-56-1456-12-36.14-12.56,|(16)(14)(1456)
+"Linkinhorne","Linkinhorne Surprise",surprise,6,"",&-56-1456-12-36.14-14.36,|(12)(14)(1234)
+"Holmes Chapel","Holmes Chapel Surprise",surprise,6,"",&-56-1456-12-36.14-14.56,|(12)(14)(1234)
+"Bath University","Bath University Surprise",surprise,6,"",&-56-1456-12-36.14-14.56,|(16)(14)(1456)
+"St Dominic","St Dominic Surprise",surprise,6,"",&-56-1456-12-36.14-34.16,|(12)(14)(1234)
+"Marguerite","Marguerite Surprise",surprise,6,"",&-56-1456-12-36.14-34.16,|(16)(14)(1456)
+"Elmswell","Elmswell Surprise",surprise,6,"",&-56-1456-12-36.14-34.56,|14
+"Bengal","Bengal Surprise",surprise,6,"",&-56-1456-12-36.14-34.56,|(16)(14)(1456)
+"Spretone","Spretone Surprise",surprise,6,"",&-56-1456-12-36.34-12.56,|(12)(14)(1234)
+"Pattishall","Pattishall Surprise",surprise,6,"",&-56-1456-12-36.34-34.56,|(12)(14)(1234)
+"Goat Fell","Goat Fell Surprise",surprise,6,"",&-56-1456-1256-1236-12-56,|(12)(14)(1234)
+"Askival","Askival Surprise",surprise,6,"",&-56-1456-1256-1236-14-56,|(12)(14)(1234)
+"Gaor Bheinn","Gaor Bheinn Surprise",surprise,6,"",&-56-1456-1256-1236-34-56,|(12)(14)(1234)
+"Sgurr na Lapaich","Sgurr na Lapaich Surprise",surprise,6,"",&-56-1456-1256-36-12-56,|(12)(14)(1234)
+"Sgorr Dhearg","Sgorr Dhearg Surprise",surprise,6,"",&-56-1456-1256-36-14-56,|14
+"An Cliseam","An Cliseam Surprise",surprise,6,"",&-56-1456-1256-36-34-56,|(12)(14)(1234)
+"Sgurr na Ciche","Sgurr na Ciche Surprise",surprise,6,"",&-56-1456-1256-36.12-12.56,|(12)(14)(1234)
+"Beinn an Oir","Beinn an Oir Surprise",surprise,6,"",&-56-1456-1256-36.12-14.56,|(12)(14)(1234)
+"Croaghaun","Croaghaun Surprise",surprise,6,"",&-56-1456-1256-36.12-34.56,|(12)(14)(1234)
+"Ben More Assynt","Ben More Assynt Surprise",surprise,6,"",&-56-1456-1256-36.14-12.56,|14
+"Snaefell","Snaefell Surprise",surprise,6,"",&-56-1456-1256-36.14-14.56,|(12)(14)(1234)
+"Carn nan Gabhar","Carn nan Gabhar Surprise",surprise,6,"",&-56-1456-1256-36.14-34.56,|14
+"Petham","Petham Surprise",surprise,6,"",&-56-1456-56-1236-12-16,|(12)(14)(1234)
+"Scotter","Scotter Surprise",surprise,6,"",&-56-1456-56-1236-12-16,|(16)(14)(1456)
+"Honingham","Honingham Surprise",surprise,6,"",&-56-1456-56-1236-12-36,|(12)(14)(1234)
+"Hayton","Hayton Surprise",surprise,6,"",&-56-1456-56-1236-12-36,|(16)(14)(1456)
+"Stanton-on-the-Wolds","Stanton-on-the-Wolds Surprise",surprise,6,"",&-56-1456-56-1236-12-56,|(12)(14)(1234)
+"Landulph","Landulph Surprise",surprise,6,"",&-56-1456-56-1236-14-16,|(12)(14)(1234)
+"Dumbleton","Dumbleton Surprise",surprise,6,"",&-56-1456-56-1236-14-36,|(12)(14)(1234)
+"Lobelia Dortmanna","Lobelia Dortmanna Surprise",surprise,6,"",&-56-1456-56-1236-14-36,|(16)(14)(1456)
+"Arran","Arran Surprise",surprise,6,"",&-56-1456-56-1236-14-56,|14
+"Cambron","Cambron Surprise",surprise,6,"",&-56-1456-56-1236-34-16,|(16)(14)(1456)
+"Mulbarton","Mulbarton Surprise",surprise,6,"",&-56-1456-56-1236-34-36,|(16)(14)(1456)
+"Bevercotes","Bevercotes Surprise",surprise,6,"",&-56-1456-56-1236-34-56,|(12)(14)(1234)
+"Heydon","Heydon Surprise",surprise,6,"",&-56-1456-56-36-12-36,|(12)(14)(1234)
+"Bagthorpe","Bagthorpe Surprise",surprise,6,"",&-56-1456-56-36-12-36,|(16)(14)(1456)
+"Keyworth","Keyworth Surprise",surprise,6,"",&-56-1456-56-36-12-56,|(12)(14)(1234)
+"Swadlincote","Swadlincote Surprise",surprise,6,"",&-56-1456-56-36-14-16,|(16)(14)(1456)
+"Lower Peover","Lower Peover Surprise",surprise,6,"",&-56-1456-56-36-14-36,|(12)(14)(1234)
+"Shirwell","Shirwell Surprise",surprise,6,"",&-56-1456-56-36-14-56,|(12)(14)(1234)
+"Outwell","Outwell Surprise",surprise,6,"",&-56-1456-56-36-34-36,|(16)(14)(1456)
+"Plumtree","Plumtree Surprise",surprise,6,"",&-56-1456-56-36-34-56,|(12)(14)(1234)
+"Holkham","Holkham Surprise",surprise,6,"",&-56-1456-56-36.12-12.36,|(12)(14)(1234)
+"Wiseton","Wiseton Surprise",surprise,6,"",&-56-1456-56-36.12-12.36,|(16)(14)(1456)
+"Normanton-on-the-Wolds","Normanton-on-the-Wolds Surprise",surprise,6,"",&-56-1456-56-36.12-12.56,|(12)(14)(1234)
+"Max","Max Surprise",surprise,6,"",&-56-1456-56-36.12-14.36,|(16)(14)(1456)
+"Mull","Mull Surprise",surprise,6,"",&-56-1456-56-36.12-14.56,|14
+"Owthorpe","Owthorpe Surprise",surprise,6,"",&-56-1456-56-36.12-34.56,|(12)(14)(1234)
+"Nativity","Nativity Surprise",surprise,6,"",&-56-1456-56-36.14-12.56,|(12)(14)(1234)
+"Radford","Radford Surprise",surprise,6,"",&-56-1456-56-36.14-14.56,|(12)(14)(1234)
+"Christmas Morning","Christmas Morning Surprise",surprise,6,"",&-56-1456-56-36.14-34.56,|(12)(14)(1234)
+"Monxton","Monxton Surprise",surprise,6,"",&-56-1456.12-12.1236-12-56,|(12)(14)(1234)
+"Caldecott","Caldecott Surprise",surprise,6,"",&-56-1456.12-12.1236-12.1234.56,|(12)(14)(1234)
+"Lower Benefield","Lower Benefield Surprise",surprise,6,"",&-56-1456.12-12.1236-34-56,|(12)(14)(1234)
+"Brafield-on-the-Green","Brafield-on-the-Green Surprise",surprise,6,"",&-56-1456.12-12.36-14-36,|(12)(14)(1234)
+"Duddington","Duddington Surprise",surprise,6,"",&-56-1456.12-12.36-34-56,|(12)(14)(1234)
+"A Random Thought","A Random Thought Surprise",surprise,6,"",&-56-1456.56.1256.12.1236-12-56,|(12)(14)(1234)
+"Freston","Freston Surprise",surprise,6,"",&34-34.14-12-1236-12-36,|(12)(14)(1234)
+"Pin Mill","Pin Mill Surprise",surprise,6,"",&34-34.14-12-1236-12-56,|(12)(14)(1234)
+"Tattingstone","Tattingstone Surprise",surprise,6,"",&34-34.14-12-1236-34-56,|(12)(14)(1234)
+"Erwarton","Erwarton Surprise",surprise,6,"",&34-34.14-12-1236-34-56,|(16)(14)(1456)
+"Alton Water","Alton Water Surprise",surprise,6,"",&34-34.14-12-1236.12-12.36,|(12)(14)(1234)
+"Holbrook","Holbrook Surprise",surprise,6,"",&34-34.14-12-36-12-16,|(12)(14)(1234)
+"Lower Holbrook","Lower Holbrook Surprise",surprise,6,"",&34-34.14-12-36-12-16,|(16)(14)(1456)
+"Wolverstone","Wolverstone Surprise",surprise,6,"",&34-34.14-12-36-12-36,|(12)(14)(1234)
+"Bristolian","Bristolian Surprise",surprise,6,"",&34-34.14-12-36-12-56,|(12)(14)(1234)
+"The Wicked Plan","The Wicked Plan Surprise",surprise,6,"",&34-34.14-12-36-12-56,|(16)(14)(1456)
+"Wherstead","Wherstead Surprise",surprise,6,"",&34-34.14-12-36-14-16,|(12)(14)(1234)
+"Newbourne","Newbourne Surprise",surprise,6,"",&34-34.14-12-36-14-36,|(12)(14)(1234)
+"Cattawade","Cattawade Surprise",surprise,6,"",&34-34.14-12-36-14-56,|(16)(14)(1456)
+"Nacton","Nacton Surprise",surprise,6,"",&34-34.14-12-36-34-16,|(16)(14)(1456)
+"Belstead","Belstead Surprise",surprise,6,"",&34-34.14-12-36-34-36,|(16)(14)(1456)
+"Tattingstone Wonder","Tattingstone Wonder Surprise",surprise,6,"",&34-34.14-12-36-34-56,|(12)(14)(1234)
+"Chelmondiston","Chelmondiston Surprise",surprise,6,"",&34-34.14-12-36.12-12.36,|(12)(14)(1234)
+"Bucklesham","Bucklesham Surprise",surprise,6,"",&34-34.14-12-36.12-14.56,|(12)(14)(1234)
+"Trimley St Mary","Trimley St Mary Surprise",surprise,6,"",&34-34.14-12-36.12-34.56,|(12)(14)(1234)
+"Trimley St Martin","Trimley St Martin Surprise",surprise,6,"",&34-34.14-12-36.12-34.56,|(16)(14)(1456)
+"Waldringfield","Waldringfield Surprise",surprise,6,"",&34-34.14-12-36.14-12.36,|(16)(14)(1456)
+"Stutton","Stutton Surprise",surprise,6,"",&34-34.14-12-36.14-12.56,|(16)(14)(1456)
+"Mistley","Mistley Surprise",surprise,6,"",&34-34.14-12-36.14-14.36,|(12)(14)(1234)
+"Manningtree","Manningtree Surprise",surprise,6,"",&34-34.14-12-36.14-34.16,|(12)(14)(1234)
+"Brantham","Brantham Surprise",surprise,6,"",&34-34.14-12-36.14-34.56,|(16)(14)(1456)
+"Shotley Gate","Shotley Gate Surprise",surprise,6,"",&34-34.14.12-12.1236-12-36,|(12)(14)(1234)
+"Martlesham Heath","Martlesham Heath Surprise",surprise,6,"",&34-34.14.12-12.1236.12-12.36,|(12)(14)(1234)
+"Shotley","Shotley Surprise",surprise,6,"",&34-34.14.12-12.36-12-36,|(12)(14)(1234)
+"Tattingstone White Horse","Tattingstone White Horse Surprise",surprise,6,"",&34-34.14.12-12.36.12-12.36,|(12)(14)(1234)
+"Langleybury","Langleybury Surprise",surprise,6,"",&34-36.14-12-1236-12-16,|(16)(14)(1456)
+"Granby","Granby Surprise",surprise,6,"",&34-36.14-12-1236-12-36,|(16)(14)(1456)
+"Orsett","Orsett Surprise",surprise,6,"",&34-36.14-12-1236-12-56,|(12)(14)(1234)
+"Twyning","Twyning Surprise",surprise,6,"",&34-36.14-12-1236-14-16,|(12)(14)(1234)
+"Gorsethorpe","Gorsethorpe Surprise",surprise,6,"",&34-36.14-12-1236-14-36,|(16)(14)(1456)
+"Mersea","Mersea Surprise",surprise,6,"",&34-36.14-12-1236-14-56,|14
+"Strensham","Strensham Surprise",surprise,6,"",&34-36.14-12-1236-34-16,|(12)(14)(1234)
+"Xanten","Xanten Surprise",surprise,6,"",&34-36.14-12-1236-34-16,|(16)(14)(1456)
+"Blunsdon","Blunsdon Surprise",surprise,6,"",&34-36.14-12-1236-34-36,|(12)(14)(1234)
+"Brentford","Brentford Surprise",surprise,6,"",&34-36.14-12-1236-34-36,|(16)(14)(1456)
+"Upshire","Upshire Surprise",surprise,6,"",&34-36.14-12-1236-34-56,|(12)(14)(1234)
+"Willoughby-on-the-Wolds","Willoughby-on-the-Wolds Surprise",surprise,6,"",&34-36.14-12-36-12-36,|(16)(14)(1456)
+"Bangor","Bangor Surprise",surprise,6,"",&34-36.14-12-36-12-56,|(12)(14)(1234)
+"Northumberland","Northumberland Surprise",surprise,6,"",&34-36.14-12-36-14-16,|(12)(14)(1234)
+"Lindisfarne","Lindisfarne Surprise",surprise,6,"",&34-36.14-12-36-14-16,|14
+"Whitley","Whitley Surprise",surprise,6,"",&34-36.14-12-36-14-16,|(16)(14)(1456)
+"Lindley","Lindley Surprise",surprise,6,"",&34-36.14-12-36-14-36,|(12)(14)(1234)
+"Carlisle","Carlisle Surprise",surprise,6,"",&34-36.14-12-36-14-56,|(12)(14)(1234)
+"Old Torquay","Old Torquay Surprise",surprise,6,"",&34-36.14-12-36-34-16,|14
+"Sandiacre","Sandiacre Surprise",surprise,6,"",&34-36.14-12-36-34-36,|(12)(14)(1234)
+"Wooler","Wooler Surprise",surprise,6,"",&34-36.14-12-36-34-36,|(16)(14)(1456)
+"Grantham","Grantham Surprise",surprise,6,"",&34-36.14-12-36-34-56,|(12)(14)(1234)
+"Gedling","Gedling Surprise",surprise,6,"",&34-36.14-12-36.12-12.36,|(16)(14)(1456)
+"Sleaford","Sleaford Surprise",surprise,6,"",&34-36.14-12-36.12-12.56,|(12)(14)(1234)
+"Melton","Melton Surprise",surprise,6,"",&34-36.14-12-36.12-14.36,|(12)(14)(1234)
+"Teresa","Teresa Surprise",surprise,6,"",&34-36.14-12-36.12-14.36,|(16)(14)(1456)
+"Osea","Osea Surprise",surprise,6,"",&34-36.14-12-36.12-14.56,|14
+"Wiston","Wiston Surprise",surprise,6,"",&34-36.14-12-36.12-34.16,|(12)(14)(1234)
+"Jacobstow","Jacobstow Surprise",surprise,6,"",&34-36.14-12-36.12-34.16,|(16)(14)(1456)
+"Chester-le-Street","Chester-le-Street Surprise",surprise,6,"",&34-36.14-12-36.12-34.56,|(12)(14)(1234)
+"Munden","Munden Surprise",surprise,6,"",&34-36.14-12-36.14-12.56,|(12)(14)(1234)
+"Alnwick","Alnwick Surprise",surprise,6,"",&34-36.14-12-36.14-14.36,|(12)(14)(1234)
+"Canterbury","Canterbury Surprise",surprise,6,"",&34-36.14-12-36.14-14.36,|(16)(14)(1456)
+"Netherwood","Netherwood Surprise",surprise,6,"",&34-36.14-12-36.14-14.56,|(12)(14)(1234)
+"Newcastle","Newcastle Surprise",surprise,6,"",&34-36.14-12-36.14-34.16,|(12)(14)(1234)
+"Morpeth","Morpeth Surprise",surprise,6,"",&34-36.14-12-36.14-34.16,|(16)(14)(1456)
+"Chester","Chester Surprise",surprise,6,"",&34-36.14-12-36.14-34.56,|(12)(14)(1234)
+"Ben Vorlich","Ben Vorlich Surprise",surprise,6,"",&34-36.14-1256-1236-12-56,|(16)(14)(1456)
+"Loch Earn","Loch Earn Surprise",surprise,6,"",&34-36.14-1256-1236-14-56,|14
+"Carn Eighe","Carn Eighe Surprise",surprise,6,"",&34-36.14-1256-1236-34-56,|(16)(14)(1456)
+"Fyvie Castle","Fyvie Castle Surprise",surprise,6,"",&34-36.14-1256-36-12-56,|(16)(14)(1456)
+"Loch Fyne","Loch Fyne Surprise",surprise,6,"",&34-36.14-1256-36-14-56,|(12)(14)(1234)
+"Yr Wyddfa","Yr Wyddfa Surprise",surprise,6,"",&34-36.14-1256-36-34-56,|(16)(14)(1456)
+"Sgorr Ruadh","Sgorr Ruadh Surprise",surprise,6,"",&34-36.14-1256-36.12-12.56,|(16)(14)(1456)
+"Aberdour Castle","Aberdour Castle Surprise",surprise,6,"",&34-36.14-1256-36.12-14.56,|14
+"Mount Leinster","Mount Leinster Surprise",surprise,6,"",&34-36.14-1256-36.12-34.56,|(16)(14)(1456)
+"Kinloch Castle","Kinloch Castle Surprise",surprise,6,"",&34-36.14-1256-36.14-12.56,|(12)(14)(1234)
+"Spidean a'Choire Leith","Spidean a'Choire Leith Surprise",surprise,6,"",&34-36.14-1256-36.14-14.56,|(16)(14)(1456)
+"Loch Nevis","Loch Nevis Surprise",surprise,6,"",&34-36.14-1256-36.14-34.56,|(12)(14)(1234)
+"Ingrave","Ingrave Surprise",surprise,6,"",&34-36.14-56-1236-12-16,|(12)(14)(1234)
+"Thorndon","Thorndon Surprise",surprise,6,"",&34-36.14-56-1236-12-16,|(16)(14)(1456)
+"Broadstairs","Broadstairs Surprise",surprise,6,"",&34-36.14-56-1236-12-36,|(12)(14)(1234)
+"Wigsley","Wigsley Surprise",surprise,6,"",&34-36.14-56-1236-12-56,|(16)(14)(1456)
+"Noak Hill","Noak Hill Surprise",surprise,6,"",&34-36.14-56-1236-14-36,|(16)(14)(1456)
+"South Weald","South Weald Surprise",surprise,6,"",&34-36.14-56-1236-14-56,|(12)(14)(1234)
+"Navestock","Navestock Surprise",surprise,6,"",&34-36.14-56-1236-34-36,|(12)(14)(1234)
+"Wealdside","Wealdside Surprise",surprise,6,"",&34-36.14-56-1236-34-36,|(16)(14)(1456)
+"Thorney","Thorney Surprise",surprise,6,"",&34-36.14-56-1236-34-56,|(16)(14)(1456)
+"Stoke Damerel","Stoke Damerel Surprise",surprise,6,"",&34-36.14-56-36-12-36,|(12)(14)(1234)
+"Kigull","Kigull Surprise",surprise,6,"",&34-36.14-56-36-12-56,|(16)(14)(1456)
+"St Luke","St Luke Surprise",surprise,6,"",&34-36.14-56-36-14-16,|(12)(14)(1234)
+"Rebellion","Rebellion Surprise",surprise,6,"",&34-36.14-56-36-14-36,|(12)(14)(1234)
+"Emmanuel","Emmanuel Surprise",surprise,6,"",&34-36.14-56-36-14-56,|(12)(14)(1234)
+"Laneham","Laneham Surprise",surprise,6,"",&34-36.14-56-36-14-56,|(16)(14)(1456)
+"Godstone","Godstone Surprise",surprise,6,"",&34-36.14-56-36-34-16,|(12)(14)(1234)
+"Harestone","Harestone Surprise",surprise,6,"",&34-36.14-56-36-34-16,|(16)(14)(1456)
+"Jotunheimen","Jotunheimen Surprise",surprise,6,"",&34-36.14-56-36-34-36,|(12)(14)(1234)
+"Dudbrooke","Dudbrooke Surprise",surprise,6,"",&34-36.14-56-36-34-36,|(16)(14)(1456)
+"Hockerton","Hockerton Surprise",surprise,6,"",&34-36.14-56-36-34-56,|(16)(14)(1456)
+"Millbridge","Millbridge Surprise",surprise,6,"",&34-36.14-56-36.12-12.36,|(12)(14)(1234)
+"Perlethorpe","Perlethorpe Surprise",surprise,6,"",&34-36.14-56-36.12-12.56,|(16)(14)(1456)
+"Fleetwood","Fleetwood Surprise",surprise,6,"",&34-36.14-56-36.12-14.56,|(12)(14)(1234)
+"Caythorpe","Caythorpe Surprise",surprise,6,"",&34-36.14-56-36.12-34.56,|(16)(14)(1456)
+"Alamein","Alamein Surprise",surprise,6,"",&34-36.14-56-36.14-12.36,|(12)(14)(1234)
+"Tobruk","Tobruk Surprise",surprise,6,"",&34-36.14-56-36.14-12.36,|(16)(14)(1456)
+"Steep","Steep Surprise",surprise,6,"",&34-36.14-56-36.14-12.56,|(12)(14)(1234)
+"Froxfield","Froxfield Surprise",surprise,6,"",&34-36.14-56-36.14-12.56,|(16)(14)(1456)
+"Blackmoor","Blackmoor Surprise",surprise,6,"",&34-36.14-56-36.14-14.36,|(16)(14)(1456)
+"Happisburgh","Happisburgh Surprise",surprise,6,"",&34-36.14-56-36.14-14.56,|(16)(14)(1456)
+"Winchester","Winchester Surprise",surprise,6,"",&34-36.14-56-36.14-34.16,|(16)(14)(1456)
+"Binsted","Binsted Surprise",surprise,6,"",&34-36.14-56-36.14-34.56,|(12)(14)(1234)
+"Bentley","Bentley Surprise",surprise,6,"",&34-36.14-56-36.14-34.56,|(16)(14)(1456)
+"Ullingswick","Ullingswick Surprise",surprise,6,"",&34-36.14.12-12.1236-12-56,|(12)(14)(1234)
+"Cholderton","Cholderton Surprise",surprise,6,"",&34-36.14.12-12.1236-34-56,|(12)(14)(1234)
+"Baughurst","Baughurst Surprise",surprise,6,"",&34-36.14.12-12.36.12-12.56,|(12)(14)(1234)
+"Carsille","Carsille Surprise",surprise,6,"",&34-36.14.12-12.36.34-14.56,|(12)(14)(1234)
+"Dunham-on-Trent","Dunham-on-Trent Surprise",surprise,6,"",&34-36.14.56-12.36-12-16,|(12)(14)(1234)
+"Headon","Headon Surprise",surprise,6,"",&34-36.14.56-12.36-12-16,|(16)(14)(1456)
+"Heanton Punchardon","Heanton Punchardon Surprise",surprise,6,"",&34-36.14.56-12.36-12-36,|(12)(14)(1234)
+"Eakring","Eakring Surprise",surprise,6,"",&34-36.14.56-12.36-12-56,|(16)(14)(1456)
+"Newchurch","Newchurch Surprise",surprise,6,"",&34-36.14.56-12.36-14-56,|(12)(14)(1234)
+"Mitcham","Mitcham Surprise",surprise,6,"",&34-36.14.56-12.36-34-36,|(12)(14)(1234)
+"East Drayton","East Drayton Surprise",surprise,6,"",&34-36.14.56-12.36-34-36,|(16)(14)(1456)
+"Maplebeck","Maplebeck Surprise",surprise,6,"",&34-36.14.56-12.36-34-56,|(16)(14)(1456)
+"Marwood","Marwood Surprise",surprise,6,"",&34-36.14.56-12.36.12-12.36,|(12)(14)(1234)
+"Winkburn","Winkburn Surprise",surprise,6,"",&34-36.14.56-12.36.12-12.56,|(16)(14)(1456)
+"Royal","Royal Surprise",surprise,6,"",&34-36.14.56-12.36.12-14.56,|(12)(14)(1234)
+"Ragnall","Ragnall Surprise",surprise,6,"",&34-36.14.56-12.36.12-14.56,|(16)(14)(1456)
+"Emneth","Emneth Surprise",surprise,6,"",&34-36.14.56-12.36.12-34.16,|(12)(14)(1234)
+"Langford","Langford Surprise",surprise,6,"",&34-36.14.56-12.36.12-34.56,|(16)(14)(1456)
+"Walpole St Andrew","Walpole St Andrew Surprise",surprise,6,"",&34-36.14.56-12.36.14-12.56,|(12)(14)(1234)
+"Seaforth","Seaforth Surprise",surprise,6,"",&34-36.14.56-12.36.14-14.56,|(16)(14)(1456)
+"Audley","Audley Surprise",surprise,6,"",&34-36.14.56-12.36.14-34.56,|(12)(14)(1234)
+"Sowerby-juxta-Thirsk","Sowerby-juxta-Thirsk Surprise",surprise,6,"",&34-56.14-12-1236-12-36,|(12)(14)(1234)
+"Eadburgebyrig","Eadburgebyrig Surprise",surprise,6,"",&34-56.14-12-1236-12-56,|(12)(14)(1234)
+"Sandwich","Sandwich Surprise",surprise,6,"",&34-56.14-12-1236-14-36,|(12)(14)(1234)
+"Vestmannaeyjar","Vestmannaeyjar Surprise",surprise,6,"",&34-56.14-12-1236-14-36,|(16)(14)(1456)
+"Hollingbourne","Hollingbourne Surprise",surprise,6,"",&34-56.14-12-1236-14-56,|(12)(14)(1234)
+"Drumcree","Drumcree Surprise",surprise,6,"",&34-56.14-12-1236-34-56,|(12)(14)(1234)
+"Holywell","Holywell Surprise",surprise,6,"",&34-56.14-12-36-12-16,|(12)(14)(1234)
+"Edwalton","Edwalton Surprise",surprise,6,"",&34-56.14-12-36-12-16,|(16)(14)(1456)
+"Dunning","Dunning Surprise",surprise,6,"",&34-56.14-12-36-12-36,|(12)(14)(1234)
+"Stotfold","Stotfold Surprise",surprise,6,"",&34-56.14-12-36-12-56,|(12)(14)(1234)
+"Brushford","Brushford Surprise",surprise,6,"",&34-56.14-12-36-14-16,|(12)(14)(1234)
+"Severn Valley","Severn Valley Surprise",surprise,6,"",&34-56.14-12-36-14-16,|(16)(14)(1456)
+"Mys Est","Mys Est Surprise",surprise,6,"",&34-56.14-12-36-14-36,|(12)(14)(1234)
+"Horsey","Horsey Surprise",surprise,6,"",&34-56.14-12-36-14-56,|14
+"Trinity College","Trinity College Surprise",surprise,6,"",&34-56.14-12-36-34-16,|(16)(14)(1456)
+"Pulham","Pulham Surprise",surprise,6,"",&34-56.14-12-36-34-56,|(12)(14)(1234)
+"Thornton-le-Moors","Thornton-le-Moors Surprise",surprise,6,"",&34-56.14-12-36.12-12.36,|(12)(14)(1234)
+"South Mymms","South Mymms Surprise",surprise,6,"",&34-56.14-12-36.12-12.56,|(12)(14)(1234)
+"Belfastish","Belfastish Surprise",surprise,6,"",&34-56.14-12-36.12-14.36,|(16)(14)(1456)
+"Leeds Castle","Leeds Castle Surprise",surprise,6,"",&34-56.14-12-36.12-14.56,|(12)(14)(1234)
+"Yaxham","Yaxham Surprise",surprise,6,"",&34-56.14-12-36.12-34.56,|(12)(14)(1234)
+"Bellfast","Bellfast Surprise",surprise,6,"",&34-56.14-12-36.14-12.36,|(16)(14)(1456)
+"Northey","Northey Surprise",surprise,6,"",&34-56.14-12-36.14-12.56,|14
+"Kingsbury Crunch","Kingsbury Crunch Surprise",surprise,6,"",&34-56.14-12-36.14-14.36,|(12)(14)(1234)
+"Crunch","Crunch Surprise",surprise,6,"",&34-56.14-12-36.14-14.56,|(12)(14)(1234)
+"Edgware Crunch","Edgware Crunch Surprise",surprise,6,"",&34-56.14-12-36.14-34.16,|(12)(14)(1234)
+"Havengore","Havengore Surprise",surprise,6,"",&34-56.14-12-36.14-34.56,|14
+"Sgurr Fhuaran","Sgurr Fhuaran Surprise",surprise,6,"",&34-56.14-1256-1236-12-56,|(12)(14)(1234)
+"Schiehallion","Schiehallion Surprise",surprise,6,"",&34-56.14-1256-1236-14-56,|(12)(14)(1234)
+"Sgurr na Coinnich","Sgurr na Coinnich Surprise",surprise,6,"",&34-56.14-1256-1236-34-56,|(12)(14)(1234)
+"Beinn Sgulaird","Beinn Sgulaird Surprise",surprise,6,"",&34-56.14-1256-36-12-56,|(12)(14)(1234)
+"Dun da Ghaoithe","Dun da Ghaoithe Surprise",surprise,6,"",&34-56.14-1256-36-14-56,|(16)(14)(1456)
+"Beinn Ime","Beinn Ime Surprise",surprise,6,"",&34-56.14-1256-36-34-56,|(12)(14)(1234)
+"Fionn Bheinn","Fionn Bheinn Surprise",surprise,6,"",&34-56.14-1256-36.12-12.56,|(12)(14)(1234)
+"Helvellyn","Helvellyn Surprise",surprise,6,"",&34-56.14-1256-36.12-14.56,|(12)(14)(1234)
+"Skiddaw","Skiddaw Surprise",surprise,6,"",&34-56.14-1256-36.12-34.56,|(12)(14)(1234)
+"Ben Mor Coigach","Ben Mor Coigach Surprise",surprise,6,"",&34-56.14-1256-36.14-12.56,|(16)(14)(1456)
+"Sgurr a'Mhaoraich","Sgurr a'Mhaoraich Surprise",surprise,6,"",&34-56.14-1256-36.14-14.56,|(12)(14)(1234)
+"Broad Law","Broad Law Surprise",surprise,6,"",&34-56.14-1256-36.14-34.56,|(16)(14)(1456)
+"Dickleburgh","Dickleburgh Surprise",surprise,6,"",&34-56.14-56-1236-12-36,|(12)(14)(1234)
+"Foxley","Foxley Surprise",surprise,6,"",&34-56.14-56-1236-12-56,|(12)(14)(1234)
+"Kronenbourg","Kronenbourg Surprise",surprise,6,"",&34-56.14-56-1236-14-36,|(12)(14)(1234)
+"Raasay","Raasay Surprise",surprise,6,"",&34-56.14-56-1236-14-56,|14
+"Great Fire Of London","Great Fire Of London Surprise",surprise,6,"",&34-56.14-56-1236-14-56,|(16)(14)(1456)
+"Glazdyn","Glazdyn Surprise",surprise,6,"",&34-56.14-56-1236-34-16,|(16)(14)(1456)
+"Grimston","Grimston Surprise",surprise,6,"",&34-56.14-56-1236-34-56,|(12)(14)(1234)
+"Theale","Theale Surprise",surprise,6,"",&34-56.14-56-36-12-36,|(12)(14)(1234)
+"Ashill","Ashill Surprise",surprise,6,"",&34-56.14-56-36-12-56,|(12)(14)(1234)
+"Aston Ingham","Aston Ingham Surprise",surprise,6,"",&34-56.14-56-36-14-36,|(12)(14)(1234)
+"Mys Metheven","Mys Metheven Surprise",surprise,6,"",&34-56.14-56-36-14-56,|(12)(14)(1234)
+"Mys Gortheren","Mys Gortheren Surprise",surprise,6,"",&34-56.14-56-36-14-56,|(16)(14)(1456)
+"Trencrom","Trencrom Surprise",surprise,6,"",&34-56.14-56-36-34-16,|(16)(14)(1456)
+"Banham","Banham Surprise",surprise,6,"",&34-56.14-56-36-34-56,|(12)(14)(1234)
+"Blofield","Blofield Surprise",surprise,6,"",&34-56.14-56-36.12-12.36,|(12)(14)(1234)
+"Dersingham","Dersingham Surprise",surprise,6,"",&34-56.14-56-36.12-12.56,|(12)(14)(1234)
+"Bronwylly","Bronwylly Surprise",surprise,6,"",&34-56.14-56-36.12-14.36,|(16)(14)(1456)
+"Quoich","Quoich Surprise",surprise,6,"",&34-56.14-56-36.12-14.56,|14
+"Muldoanich","Muldoanich Surprise",surprise,6,"",&34-56.14-56-36.12-14.56,|(16)(14)(1456)
+"Meneth","Meneth Surprise",surprise,6,"",&34-56.14-56-36.12-34.16,|(16)(14)(1456)
+"Carbrooke","Carbrooke Surprise",surprise,6,"",&34-56.14-56-36.12-34.56,|(12)(14)(1234)
+"Ulster","Ulster Surprise",surprise,6,"",&34-56.14-56-36.14-12.36,|(16)(14)(1456)
+"Chawton","Chawton Surprise",surprise,6,"",&34-56.14-56-36.14-12.56,|(12)(14)(1234)
+"Froyle","Froyle Surprise",surprise,6,"",&34-56.14-56-36.14-12.56,|(16)(14)(1456)
+"West Liss","West Liss Surprise",surprise,6,"",&34-56.14-56-36.14-14.36,|(16)(14)(1456)
+"Maid Josephine","Maid Josephine Surprise",surprise,6,"",&34-56.14-56-36.14-14.56,|(12)(14)(1234)
+"Warnford","Warnford Surprise",surprise,6,"",&34-56.14-56-36.14-34.16,|(16)(14)(1456)
+"Buriton","Buriton Surprise",surprise,6,"",&34-56.14-56-36.14-34.56,|(12)(14)(1234)
+"Bramshott","Bramshott Surprise",surprise,6,"",&34-56.14-56-36.14-34.56,|(16)(14)(1456)
+"Cheriton","Cheriton Surprise",surprise,6,"",&34-56.14.56-12.36-12-16,|(12)(14)(1234)
+"Stifford","Stifford Surprise",surprise,6,"",&34-56.14.56-12.36-12-36,|(12)(14)(1234)
+"Nicholas","Nicholas Surprise",surprise,6,"",&34-56.14.56-12.36-12-56,|(12)(14)(1234)
+"John Calvin","John Calvin Surprise",surprise,6,"",&34-56.14.56-12.36-14-16,|(12)(14)(1234)
+"Bat and Ball","Bat and Ball Surprise",surprise,6,"",&34-56.14.56-12.36-14-36,|(12)(14)(1234)
+"Dunsfold","Dunsfold Surprise",surprise,6,"",&34-56.14.56-12.36-14-36,|(16)(14)(1456)
+"Va Va Voom","Va Va Voom Surprise",surprise,6,"",&34-56.14.56-12.36-14-56,|14
+"Attack of the Clones","Attack of the Clones Surprise",surprise,6,"",&34-56.14.56-12.36-14-56,|(16)(14)(1456)
+"The Empire Strikes Back","The Empire Strikes Back Surprise",surprise,6,"",&34-56.14.56-12.36-34-16,|(16)(14)(1456)
+"William","William Surprise",surprise,6,"",&34-56.14.56-12.36-34-56,|(12)(14)(1234)
+"Angelus","Angelus Surprise",surprise,6,"",&34-56.14.56-12.36.12-12.36,|(12)(14)(1234)
+"Hughes","Hughes Surprise",surprise,6,"",&34-56.14.56-12.36.12-12.56,|(12)(14)(1234)
+"Revenge of the Sith","Revenge of the Sith Surprise",surprise,6,"",&34-56.14.56-12.36.12-14.36,|(16)(14)(1456)
+"Daphne","Daphne Surprise",surprise,6,"",&34-56.14.56-12.36.12-14.56,|(12)(14)(1234)
+"Edmund Halley","Edmund Halley Surprise",surprise,6,"",&34-56.14.56-12.36.12-14.56,|(16)(14)(1456)
+"Alice Holt Forest","Alice Holt Forest Surprise",surprise,6,"",&34-56.14.56-12.36.12-34.16,|(16)(14)(1456)
+"Longton","Longton Surprise",surprise,6,"",&34-56.14.56-12.36.12-34.56,|(12)(14)(1234)
+"Return of the Jedi","Return of the Jedi Surprise",surprise,6,"",&34-56.14.56-12.36.14-12.36,|(16)(14)(1456)
+"Lundon","Lundon Surprise",surprise,6,"",&34-56.14.56-12.36.14-12.56,|14
+"Werewolf","Werewolf Surprise",surprise,6,"",&34-56.14.56-12.36.14-12.56,|(16)(14)(1456)
+"Martin Luther","Martin Luther Surprise",surprise,6,"",&34-56.14.56-12.36.14-14.36,|(12)(14)(1234)
+"Star Wars","Star Wars Surprise",surprise,6,"",&34-56.14.56-12.36.14-14.36,|(16)(14)(1456)
+"Shiant","Shiant Surprise",surprise,6,"",&34-56.14.56-12.36.14-14.56,|(12)(14)(1234)
+"Hamerton","Hamerton Surprise",surprise,6,"",&34-56.14.56-12.36.14-34.16,|(12)(14)(1234)
+"Walter Churchman","Walter Churchman Surprise",surprise,6,"",&34-56.14.56-12.36.14-34.16,|(16)(14)(1456)
+"Cwmbran","Cwmbran Surprise",surprise,6,"",&34-56.14.56-12.36.14-34.56,|14
+"The Phantom Menace","The Phantom Menace Surprise",surprise,6,"",&34-56.14.56-12.36.14-34.56,|(16)(14)(1456)
+"Barrowden","Barrowden Surprise",surprise,6,"",&34-56.1456-12-1236.14-12.56,|(12)(14)(1234)
+"Stanground","Stanground Surprise",surprise,6,"",&34-56.1456-12-1236.14-34.56,|(12)(14)(1234)
+"De Profundis","De Profundis Surprise",surprise,6,"",&3456.56.3456.14.56.1256.12.36.1234.12.1234.56,|(12)(14)(1234)
+"Trinovantes","Trinovantes Surprise",surprise,6,"",&36-34.14-12-1236-12-36,|(12)(14)(1234)
+"Taexali","Taexali Surprise",surprise,6,"",&36-34.14-12-1236-34-36,|(12)(14)(1234)
+"Carvetii","Carvetii Surprise",surprise,6,"",&36-34.14-12-1236.12-12.36,|(12)(14)(1234)
+"Caractacus","Caractacus Surprise",surprise,6,"",&36-34.14-12-1236.12-14.56,|(12)(14)(1234)
+"Durotrigues","Durotrigues Surprise",surprise,6,"",&36-34.14-12-1236.14-12.56,|(12)(14)(1234)
+"Ordovices","Ordovices Surprise",surprise,6,"",&36-34.14-12-1236.14-34.56,|(12)(14)(1234)
+"Togodumnus","Togodumnus Surprise",surprise,6,"",&36-34.14-12-1236.34-34.16,|(12)(14)(1234)
+"Tasca","Tasca Surprise",surprise,6,"",&36-34.14-12-36-12-16,|(12)(14)(1234)
+"Silures","Silures Surprise",surprise,6,"",&36-34.14-12-36-12-36,|(12)(14)(1234)
+"Iceni","Iceni Surprise",surprise,6,"",&36-34.14-12-36-14-56,|(12)(14)(1234)
+"Boudicca","Boudicca Surprise",surprise,6,"",&36-34.14-12-36-34-36,|(12)(14)(1234)
+"Cantiaci","Cantiaci Surprise",surprise,6,"",&36-34.14-12-36.12-12.36,|(12)(14)(1234)
+"Selgovae","Selgovae Surprise",surprise,6,"",&36-34.14-12-36.12-14.36,|(12)(14)(1234)
+"Votadini","Votadini Surprise",surprise,6,"",&36-34.14-12-36.12-14.56,|(12)(14)(1234)
+"Novantes","Novantes Surprise",surprise,6,"",&36-34.14-12-36.12-34.16,|(12)(14)(1234)
+"Corieltavi","Corieltavi Surprise",surprise,6,"",&36-34.14-12-36.14-12.56,|(12)(14)(1234)
+"Prasutagas","Prasutagas Surprise",surprise,6,"",&36-34.14-12-36.14-34.56,|(12)(14)(1234)
+"Commara","Commara Surprise",surprise,6,"",&36-34.14-12-36.34-12.36,|(12)(14)(1234)
+"Northernhay","Northernhay Surprise",surprise,6,"",&36-34.14-12-36.34-14.56,|(12)(14)(1234)
+"Southernhay","Southernhay Surprise",surprise,6,"",&36-34.14-56-36.34-14.56,|(12)(14)(1234)
+"Deceangeli","Deceangeli Surprise",surprise,6,"",&36-34.14.12-12.36-12-36,|(12)(14)(1234)
+"Dobunni","Dobunni Surprise",surprise,6,"",&36-34.14.12-12.36.12-14.56,|(12)(14)(1234)
+"Adminius","Adminius Surprise",surprise,6,"",&36-34.14.12-12.36.34-34.16,|(12)(14)(1234)
+"Pathfinder Village","Pathfinder Village Surprise",surprise,6,"",&36-34.14.12-56.36.34-14.36,|(16)(14)(1456)
+"Teynham","Teynham Surprise",surprise,6,"",&36-36.14-12-1236-12-16,|14
+"Redbourn","Redbourn Surprise",surprise,6,"",&36-36.14-12-1236-12-36,|(12)(14)(1234)
+"Purleigh","Purleigh Surprise",surprise,6,"",&36-36.14-12-1236-12-56,|(12)(14)(1234)
+"Hamble","Hamble Surprise",surprise,6,"",&36-36.14-12-1236-14-36,|(12)(14)(1234)
+"Offley","Offley Surprise",surprise,6,"",&36-36.14-12-1236-14-56,|(12)(14)(1234)
+"Speen","Speen Surprise",surprise,6,"",&36-36.14-12-1236-34-16,|14
+"Speen Church","Speen Church Surprise",surprise,6,"",&36-36.14-12-1236-34-16,|(16)(14)(1456)
+"Jerpoint","Jerpoint Surprise",surprise,6,"",&36-36.14-12-1236-34-36,|14
+"Quendon","Quendon Surprise",surprise,6,"",&36-36.14-12-1236-34-56,|(12)(14)(1234)
+"Stock","Stock Surprise",surprise,6,"",&36-36.14-12-1236.12-12.36,|(12)(14)(1234)
+"Ramsden Heath","Ramsden Heath Surprise",surprise,6,"",&36-36.14-12-1236.12-12.56,|(12)(14)(1234)
+"Old Lincoln","Old Lincoln Surprise",surprise,6,"",&36-36.14-12-36-12-16,|(12)(14)(1234)
+"Lincoln","Lincoln Surprise",surprise,6,"",&36-36.14-12-36-12-36,|(12)(14)(1234)
+"Lovely Lincolnshire","Lovely Lincolnshire Surprise",surprise,6,"",&36-36.14-12-36-12-36,|14
+"Finchampstead","Finchampstead Surprise",surprise,6,"",&36-36.14-12-36-12-36,|(16)(14)(1456)
+"Bakewell","Bakewell Surprise",surprise,6,"",&36-36.14-12-36-12-56,|(12)(14)(1234)
+"Dearne Valley","Dearne Valley Surprise",surprise,6,"",&36-36.14-12-36-14-16,|(12)(14)(1234)
+"Cunecastre","Cunecastre Surprise",surprise,6,"",&36-36.14-12-36-14-36,|(12)(14)(1234)
+"Kirkbymoorside","Kirkbymoorside Surprise",surprise,6,"",&36-36.14-12-36-34-16,|(16)(14)(1456)
+"Rosschurch","Rosschurch Surprise",surprise,6,"",&36-36.14-12-36-34-36,|14
+"Minehead","Minehead Surprise",surprise,6,"",&36-36.14-12-36-34-56,|(12)(14)(1234)
+"Coldstream","Coldstream Surprise",surprise,6,"",&36-36.14-12-36.12-12.36,|(12)(14)(1234)
+"Old Bath","Old Bath Surprise",surprise,6,"",&36-36.14-12-36.12-12.36,|14
+"Middleton St Andrew","Middleton St Andrew Surprise",surprise,6,"",&36-36.14-12-36.12-12.36,|(16)(14)(1456)
+"Retford","Retford Surprise",surprise,6,"",&36-36.14-12-36.12-12.56,|(12)(14)(1234)
+"Hickleton","Hickleton Surprise",surprise,6,"",&36-36.14-12-36.12-14.36,|14
+"Kelso","Kelso Surprise",surprise,6,"",&36-36.14-12-36.12-14.56,|(12)(14)(1234)
+"Scalby","Scalby Surprise",surprise,6,"",&36-36.14-12-36.12-14.56,|(16)(14)(1456)
+"I.N.R.I.","I.N.R.I. Surprise",surprise,6,"",&36-36.14-12-36.12-34.16,|14
+"Spalding","Spalding Surprise",surprise,6,"",&36-36.14-12-36.12-34.56,|(12)(14)(1234)
+"Pretyman Avenue","Pretyman Avenue Surprise",surprise,6,"",&36-36.14-12-36.14-12.16,|14
+"Victoria Street","Victoria Street Surprise",surprise,6,"",&36-36.14-12-36.14-12.36,|(16)(14)(1456)
+"London","London Surprise",surprise,6,"",&36-36.14-12-36.14-14.36,|(12)(14)(1234)
+"Bologna","Bologna Surprise",surprise,6,"",&36-36.14-12-36.14-14.36,|14
+"Water","Water Surprise",surprise,6,"",&36-36.14-12-36.14-14.36,|(16)(14)(1456)
+"Brampton","Brampton Surprise",surprise,6,"",&36-36.14-12-36.14-14.56,|(12)(14)(1234)
+"Wells","Wells Surprise",surprise,6,"",&36-36.14-12-36.14-34.16,|(12)(14)(1234)
+"San Petronio","San Petronio Surprise",surprise,6,"",&36-36.14-12-36.14-34.16,|14
+"Wormingford","Wormingford Surprise",surprise,6,"",&36-36.14-12-36.14-34.16,|(16)(14)(1456)
+"Norwood Tunnel","Norwood Tunnel Surprise",surprise,6,"",&36-36.14-12-36.14-34.36,|(16)(14)(1456)
+"Cross Fell","Cross Fell Surprise",surprise,6,"",&36-36.14-1256-1236-12-56,|(12)(14)(1234)
+"Oxenfoord Castle","Oxenfoord Castle Surprise",surprise,6,"",&36-36.14-1256-1236-14-56,|(12)(14)(1234)
+"Cul Mor","Cul Mor Surprise",surprise,6,"",&36-36.14-1256-1236-34-56,|(12)(14)(1234)
+"Loch Oich","Loch Oich Surprise",surprise,6,"",&36-36.14-1256-36-12-56,|(12)(14)(1234)
+"Beinn a'Chreachain","Beinn a'Chreachain Surprise",surprise,6,"",&36-36.14-1256-36-14-56,|(16)(14)(1456)
+"Chno Dearg","Chno Dearg Surprise",surprise,6,"",&36-36.14-1256-36-34-56,|(12)(14)(1234)
+"Slieve Cor","Slieve Cor Surprise",surprise,6,"",&36-36.14-1256-36.12-12.56,|(12)(14)(1234)
+"Pitsligo Castle","Pitsligo Castle Surprise",surprise,6,"",&36-36.14-1256-36.12-14.56,|(12)(14)(1234)
+"Beinn Fhada","Beinn Fhada Surprise",surprise,6,"",&36-36.14-1256-36.12-34.56,|(12)(14)(1234)
+"Ben Chonzie","Ben Chonzie Surprise",surprise,6,"",&36-36.14-1256-36.14-12.56,|(16)(14)(1456)
+"Glyder Fawr","Glyder Fawr Surprise",surprise,6,"",&36-36.14-1256-36.14-14.56,|(12)(14)(1234)
+"Baurtregaum","Baurtregaum Surprise",surprise,6,"",&36-36.14-1256-36.14-34.56,|(16)(14)(1456)
+"Friday the 13th","Friday the 13th Surprise",surprise,6,"",&36-36.14-56-1236-12-16,|(12)(14)(1234)
+"Aslockton","Aslockton Surprise",surprise,6,"",&36-36.14-56-1236-12-36,|(12)(14)(1234)
+"St Pancras","St Pancras Surprise",surprise,6,"",&36-36.14-56-1236-12-56,|(12)(14)(1234)
+"Tolworth","Tolworth Surprise",surprise,6,"",&36-36.14-56-1236-14-16,|(12)(14)(1234)
+"Brunsworth","Brunsworth Surprise",surprise,6,"",&36-36.14-56-1236-14-36,|(12)(14)(1234)
+"Kerrera","Kerrera Surprise",surprise,6,"",&36-36.14-56-1236-14-56,|(16)(14)(1456)
+"Highbury","Highbury Surprise",surprise,6,"",&36-36.14-56-1236-34-56,|(12)(14)(1234)
+"Scarrington","Scarrington Surprise",surprise,6,"",&36-36.14-56-36-12-36,|(12)(14)(1234)
+"Kenwood","Kenwood Surprise",surprise,6,"",&36-36.14-56-36-12-56,|(12)(14)(1234)
+"Resurrection","Resurrection Surprise",surprise,6,"",&36-36.14-56-36-14-36,|(12)(14)(1234)
+"Loscoe","Loscoe Surprise",surprise,6,"",&36-36.14-56-36-14-56,|(12)(14)(1234)
+"Kroy","Kroy Surprise",surprise,6,"",&36-36.14-56-36-14-56,|14
+"Paraskevidekatriaphobia","Paraskevidekatriaphobia Surprise",surprise,6,"",&36-36.14-56-36-34-16,|14
+"Bloomsbury","Bloomsbury Surprise",surprise,6,"",&36-36.14-56-36-34-56,|(12)(14)(1234)
+"Stoke Bardolph","Stoke Bardolph Surprise",surprise,6,"",&36-36.14-56-36.12-12.36,|(12)(14)(1234)
+"Archway","Archway Surprise",surprise,6,"",&36-36.14-56-36.12-12.56,|(12)(14)(1234)
+"Bute","Bute Surprise",surprise,6,"",&36-36.14-56-36.12-14.56,|(16)(14)(1456)
+"Euston","Euston Surprise",surprise,6,"",&36-36.14-56-36.12-34.56,|(12)(14)(1234)
+"Blue Moon","Blue Moon Surprise",surprise,6,"",&36-36.14-56-36.14-12.56,|(12)(14)(1234)
+"Woodseats","Woodseats Surprise",surprise,6,"",&36-36.14-56-36.14-14.36,|14
+"Haslemere","Haslemere Surprise",surprise,6,"",&36-36.14-56-36.14-14.56,|(12)(14)(1234)
+"Treeton","Treeton Surprise",surprise,6,"",&36-36.14-56-36.14-14.56,|14
+"HMS Daring","HMS Daring Surprise",surprise,6,"",&36-36.14-56-36.14-34.16,|14
+"Eriskay","Eriskay Surprise",surprise,6,"",&36-36.14-56-36.14-34.56,|(12)(14)(1234)
+"Westmill","Westmill Surprise",surprise,6,"",&36-36.14-56-36.14-34.56,|14
+"Sandridge","Sandridge Surprise",surprise,6,"",&36-36.14.12-12.1236-12-36,|(12)(14)(1234)
+"Latchingdon","Latchingdon Surprise",surprise,6,"",&36-36.14.12-12.1236-12-56,|(12)(14)(1234)
+"Heybridge","Heybridge Surprise",surprise,6,"",&36-36.14.12-12.1236.12-12.36,|(12)(14)(1234)
+"Hutton","Hutton Surprise",surprise,6,"",&36-36.14.12-12.1236.12-12.56,|(12)(14)(1234)
+"San Pietro","San Pietro Surprise",surprise,6,"",&36-36.14.12-12.1236.14-14.36,|(12)(14)(1234)
+"Cesarino","Cesarino Surprise",surprise,6,"",&36-36.14.12-12.1236.14-14.36,|14
+"Duomo","Duomo Surprise",surprise,6,"",&36-36.14.12-12.1236.14-34.16,|(12)(14)(1234)
+"Bianchi","Bianchi Surprise",surprise,6,"",&36-36.14.12-12.1236.14-34.16,|14
+"Sweffling","Sweffling Surprise",surprise,6,"",&36-36.14.12-12.36-12-16,|14
+"Skegness","Skegness Surprise",surprise,6,"",&36-36.14.12-12.36-12-36,|(12)(14)(1234)
+"Buxton","Buxton Surprise",surprise,6,"",&36-36.14.12-12.36-12-56,|(12)(14)(1234)
+"Amble","Amble Surprise",surprise,6,"",&36-36.14.12-12.36.12-12.36,|(12)(14)(1234)
+"Ranskill","Ranskill Surprise",surprise,6,"",&36-36.14.12-12.36.12-12.56,|(12)(14)(1234)
+"Prince Edward","Prince Edward Surprise",surprise,6,"",&36-36.14.56-12.36-12-16,|(12)(14)(1234)
+"Ashbury","Ashbury Surprise",surprise,6,"",&36-36.14.56-12.36-12-36,|(12)(14)(1234)
+"Cotham","Cotham Surprise",surprise,6,"",&36-36.14.56-12.36-12-56,|(12)(14)(1234)
+"Whimpton","Whimpton Surprise",surprise,6,"",&36-36.14.56-12.36-14-16,|(12)(14)(1234)
+"Seil","Seil Surprise",surprise,6,"",&36-36.14.56-12.36-14-36,|(12)(14)(1234)
+"Xite","Xite Surprise",surprise,6,"",&36-36.14.56-12.36-14-56,|(16)(14)(1456)
+"Syerston","Syerston Surprise",surprise,6,"",&36-36.14.56-12.36-34-56,|(12)(14)(1234)
+"Brightwalton","Brightwalton Surprise",surprise,6,"",&36-36.14.56-12.36.12-12.36,|(12)(14)(1234)
+"Woodborough","Woodborough Surprise",surprise,6,"",&36-36.14.56-12.36.12-12.56,|(12)(14)(1234)
+"No Bananas","No Bananas Surprise",surprise,6,"",&36-36.14.56-12.36.12-14.56,|(12)(14)(1234)
+"Lound","Lound Surprise",surprise,6,"",&36-36.14.56-12.36.12-34.56,|(12)(14)(1234)
+"Scalpay","Scalpay Surprise",surprise,6,"",&36-36.14.56-12.36.14-12.36,|(16)(14)(1456)
+"Dunsley","Dunsley Surprise",surprise,6,"",&36-36.14.56-12.36.14-12.56,|(16)(14)(1456)
+"Berkswell","Berkswell Surprise",surprise,6,"",&36-36.14.56-12.36.14-14.36,|(12)(14)(1234)
+"Biddulph","Biddulph Surprise",surprise,6,"",&36-36.14.56-12.36.14-14.56,|(12)(14)(1234)
+"Dunelm","Dunelm Surprise",surprise,6,"",&36-36.14.56-12.36.14-14.56,|14
+"Clay Cross","Clay Cross Surprise",surprise,6,"",&36-36.14.56-12.36.14-34.16,|(12)(14)(1234)
+"Bestow","Bestow Surprise",surprise,6,"",&36-36.14.56-12.36.14-34.56,|(16)(14)(1456)
+"Willowpit Lane","Willowpit Lane Surprise",surprise,6,"",&36-56.14-12-1236-12-16,|14
+"Fincham","Fincham Surprise",surprise,6,"",&36-56.14-12-1236-12-36,|(12)(14)(1234)
+"John Alexis","John Alexis Surprise",surprise,6,"",&36-56.14-12-1236-14-16,|(12)(14)(1234)
+"Dunkerton","Dunkerton Surprise",surprise,6,"",&36-56.14-12-1236-14-36,|(12)(14)(1234)
+"Ismay Wedding","Ismay Wedding Surprise",surprise,6,"",&36-56.14-12-1236-14-56,|(12)(14)(1234)
+"Alfold","Alfold Surprise",surprise,6,"",&36-56.14-12-1236-34-16,|(12)(14)(1234)
+"Steambelle","Steambelle Surprise",surprise,6,"",&36-56.14-12-1236-34-16,|14
+"Chigwell","Chigwell Surprise",surprise,6,"",&36-56.14-12-1236-34-36,|(12)(14)(1234)
+"Histon St Andrew","Histon St Andrew Surprise",surprise,6,"",&36-56.14-12-36-12-16,|(12)(14)(1234)
+"Sunningwell","Sunningwell Surprise",surprise,6,"",&36-56.14-12-36-12-36,|(12)(14)(1234)
+"Grandson","Grandson Surprise",surprise,6,"",&36-56.14-12-36-14-16,|14
+"Brook Edward","Brook Edward Surprise",surprise,6,"",&36-56.14-12-36-14-36,|14
+"George Orwell","George Orwell Surprise",surprise,6,"",&36-56.14-12-36-14-56,|(12)(14)(1234)
+"The Duke's Arrival","The Duke's Arrival Surprise",surprise,6,"",&36-56.14-12-36-34-16,|14
+"Sheba","Sheba Surprise",surprise,6,"",&36-56.14-12-36-34-36,|(12)(14)(1234)
+"Brooke","Brooke Surprise",surprise,6,"",&36-56.14-12-36.12-12.36,|(12)(14)(1234)
+"Garsington","Garsington Surprise",surprise,6,"",&36-56.14-12-36.12-14.56,|(12)(14)(1234)
+"Ide","Ide Surprise",surprise,6,"",&36-56.14-12-36.12-34.16,|(12)(14)(1234)
+"Roderick's House","Roderick's House Surprise",surprise,6,"",&36-56.14-12-36.12-34.16,|14
+"Scalloway Castle","Scalloway Castle Surprise",surprise,6,"",&36-56.14-12-36.12-34.36,|(12)(14)(1234)
+"New East Stand","New East Stand Surprise",surprise,6,"",&36-56.14-12-36.14-12.36,|14
+"This Year","This Year Surprise",surprise,6,"",&36-56.14-12-36.14-12.56,|(12)(14)(1234)
+"Whatever","Whatever Surprise",surprise,6,"",&36-56.14-12-36.14-14.16,|(12)(14)(1234)
+"Anno Domini","Anno Domini Surprise",surprise,6,"",&36-56.14-12-36.14-34.56,|(12)(14)(1234)
+"Barrclashcame","Barrclashcame Surprise",surprise,6,"",&36-56.14-1256-1236-12-56,|(12)(14)(1234)
+"Loch Pattack","Loch Pattack Surprise",surprise,6,"",&36-56.14-1256-1236-14-56,|14
+"Ben Merrick","Ben Merrick Surprise",surprise,6,"",&36-56.14-1256-1236-34-56,|(12)(14)(1234)
+"Loch Quie","Loch Quie Surprise",surprise,6,"",&36-56.14-1256-36-12-56,|(12)(14)(1234)
+"Beinn MacDuibh","Beinn MacDuibh Surprise",surprise,6,"",&36-56.14-1256-36-14-56,|14
+"Beinn na Caillich","Beinn na Caillich Surprise",surprise,6,"",&36-56.14-1256-36-34-56,|(12)(14)(1234)
+"Doune Hill","Doune Hill Surprise",surprise,6,"",&36-56.14-1256-36.12-12.56,|(12)(14)(1234)
+"Ravenscraig Castle","Ravenscraig Castle Surprise",surprise,6,"",&36-56.14-1256-36.12-14.56,|14
+"Glas Leathad Mor","Glas Leathad Mor Surprise",surprise,6,"",&36-56.14-1256-36.12-34.56,|(12)(14)(1234)
+"Beinn an Lochain","Beinn an Lochain Surprise",surprise,6,"",&36-56.14-1256-36.14-12.56,|14
+"Canisp","Canisp Surprise",surprise,6,"",&36-56.14-1256-36.14-14.56,|(12)(14)(1234)
+"Loch Rannoch","Loch Rannoch Surprise",surprise,6,"",&36-56.14-1256-36.14-34.56,|14
+"Coltishall","Coltishall Surprise",surprise,6,"",&36-56.14-56-1236-12-56,|(12)(14)(1234)
+"Alexandra","Alexandra Surprise",surprise,6,"",&36-56.14-56-1236-14-36,|(12)(14)(1234)
+"End of a Millennium","End of a Millennium Surprise",surprise,6,"",&36-56.14-56-1236-14-36,|14
+"Fabio Chiarvesio","Fabio Chiarvesio Surprise",surprise,6,"",&36-56.14-56-1236-14-56,|(12)(14)(1234)
+"Space Odyssey","Space Odyssey Surprise",surprise,6,"",&36-56.14-56-1236-14-56,|14
+"Margaret Rose","Margaret Rose Surprise",surprise,6,"",&36-56.14-56-1236-34-16,|14
+"Wood Green","Wood Green Surprise",surprise,6,"",&36-56.14-56-1236-34-36,|(12)(14)(1234)
+"Gaywood","Gaywood Surprise",surprise,6,"",&36-56.14-56-1236-34-56,|(12)(14)(1234)
+"Acle","Acle Surprise",surprise,6,"",&36-56.14-56-36-12-56,|(12)(14)(1234)
+"Where is Jane?","Where is Jane? Surprise",surprise,6,"",&36-56.14-56-36-14-16,|(12)(14)(1234)
+"Fetlar","Fetlar Surprise",surprise,6,"",&36-56.14-56-36-14-56,|14
+"All Square","All Square Surprise",surprise,6,"",&36-56.14-56-36-34-16,|(12)(14)(1234)
+"Winchilsea","Winchilsea Surprise",surprise,6,"",&36-56.14-56-36-34-36,|(12)(14)(1234)
+"Streatley","Streatley Surprise",surprise,6,"",&36-56.14-56-36-34-56,|(12)(14)(1234)
+"Brockdish","Brockdish Surprise",surprise,6,"",&36-56.14-56-36.12-12.56,|(12)(14)(1234)
+"Princesshay","Princesshay Surprise",surprise,6,"",&36-56.14-56-36.12-14.16,|(16)(14)(1456)
+"Bah Humbug","Bah Humbug Surprise",surprise,6,"",&36-56.14-56-36.12-14.56,|(12)(14)(1234)
+"Winkfield","Winkfield Surprise",surprise,6,"",&36-56.14-56-36.12-34.56,|(12)(14)(1234)
+"Eilean Leodhais","Eilean Leodhais Surprise",surprise,6,"",&36-56.14-56-36.14-12.56,|14
+"Ashleworth","Ashleworth Surprise",surprise,6,"",&36-56.14-56-36.14-14.56,|(12)(14)(1234)
+"Na Hearadh","Na Hearadh Surprise",surprise,6,"",&36-56.14-56-36.14-34.56,|14
+"Nadder Brook","Nadder Brook Surprise",surprise,6,"",&36-56.14-56-36.34-12.56,|(12)(14)(1234)
+"River Clyst","River Clyst Surprise",surprise,6,"",&36-56.14-56-36.34-34.56,|(12)(14)(1234)
+"Barham's Brook","Barham's Brook Surprise",surprise,6,"",&36-56.14.12-12.36-12-36,|(12)(14)(1234)
+"Colley Brook","Colley Brook Surprise",surprise,6,"",&36-56.14.12-12.36-14-36,|(12)(14)(1234)
+"Aller Brook","Aller Brook Surprise",surprise,6,"",&36-56.14.12-12.36-34-16,|(12)(14)(1234)
+"Vine Water","Vine Water Surprise",surprise,6,"",&36-56.14.12-12.36.12-12.36,|(12)(14)(1234)
+"Dawlish Water","Dawlish Water Surprise",surprise,6,"",&36-56.14.12-12.36.12-14.56,|(12)(14)(1234)
+"Liverton Brook","Liverton Brook Surprise",surprise,6,"",&36-56.14.12-12.36.14-12.36,|(12)(14)(1234)
+"River Lemon","River Lemon Surprise",surprise,6,"",&36-56.14.12-12.36.34-14.56,|(12)(14)(1234)
+"Denver","Denver Surprise",surprise,6,"",&36-56.14.56-12.36-12-56,|(12)(14)(1234)
+"Llanelly","Llanelly Surprise",surprise,6,"",&36-56.14.56-12.36-14-36,|(12)(14)(1234)
+"Hasfield","Hasfield Surprise",surprise,6,"",&36-56.14.56-12.36-14-56,|(12)(14)(1234)
+"Simon","Simon Surprise",surprise,6,"",&36-56.14.56-12.36-34-36,|(12)(14)(1234)
+"Docking","Docking Surprise",surprise,6,"",&36-56.14.56-12.36-34-56,|(12)(14)(1234)
+"Garveston","Garveston Surprise",surprise,6,"",&36-56.14.56-12.36.12-12.56,|(12)(14)(1234)
+"Ursa Major","Ursa Major Surprise",surprise,6,"",&36-56.14.56-12.36.12-14.36,|(12)(14)(1234)
+"Troughton","Troughton Surprise",surprise,6,"",&36-56.14.56-12.36.12-14.36,|14
+"Ailsa Craig","Ailsa Craig Surprise",surprise,6,"",&36-56.14.56-12.36.12-14.56,|14
+"Hartsop","Hartsop Surprise",surprise,6,"",&36-56.14.56-12.36.12-34.56,|(12)(14)(1234)
+"Isle of Man","Isle of Man Surprise",surprise,6,"",&36-56.14.56-12.36.14-12.56,|(12)(14)(1234)
+"Holy Island","Holy Island Surprise",surprise,6,"",&36-56.14.56-12.36.14-14.56,|(12)(14)(1234)
+"Bardsey Island","Bardsey Island Surprise",surprise,6,"",&36-56.14.56-12.36.14-34.56,|(12)(14)(1234)
+"Bonhay","Bonhay Surprise",surprise,6,"",&36-56.14.56-56.36.14-14.36,|(16)(14)(1456)
+"Marcus","Marcus Surprise",surprise,6,"",&56-36.14-12-1236-12-56,|(12)(14)(1234)
+"Wall","Wall Surprise",surprise,6,"",&56-36.14-12-1236-14-16,|(12)(14)(1234)
+"Yin","Yin Surprise",surprise,6,"",&56-36.14-12-1236-14-56,|14
+"Remembrance","Remembrance Surprise",surprise,6,"",&56-36.14-12-1236-34-16,|(12)(14)(1234)
+"Letchworth","Letchworth Surprise",surprise,6,"",&56-36.14-12-1236-34-36,|(12)(14)(1234)
+"Nigel","Nigel Surprise",surprise,6,"",&56-36.14-12-1236-34-56,|(12)(14)(1234)
+"Diccon","Diccon Surprise",surprise,6,"",&56-36.14-12-36-12-56,|(12)(14)(1234)
+"Harvest","Harvest Surprise",surprise,6,"",&56-36.14-12-36-14-16,|(12)(14)(1234)
+"Somersham","Somersham Surprise",surprise,6,"",&56-36.14-12-36-14-36,|(12)(14)(1234)
+"St Benet's","St Benet's Surprise",surprise,6,"",&56-36.14-12-36-14-56,|(12)(14)(1234)
+"St Michael-on-the-Mount","St Michael-on-the-Mount Surprise",surprise,6,"",&56-36.14-12-36-34-36,|(12)(14)(1234)
+"Roger","Roger Surprise",surprise,6,"",&56-36.14-12-36-34-56,|(12)(14)(1234)
+"Robin","Robin Surprise",surprise,6,"",&56-36.14-12-36.12-12.56,|(12)(14)(1234)
+"Comet","Comet Surprise",surprise,6,"",&56-36.14-12-36.12-14.36,|(12)(14)(1234)
+"Yang","Yang Surprise",surprise,6,"",&56-36.14-12-36.12-14.56,|14
+"Midland Counties","Midland Counties Surprise",surprise,6,"",&56-36.14-12-36.12-34.16,|(12)(14)(1234)
+"Graham","Graham Surprise",surprise,6,"",&56-36.14-12-36.12-34.56,|(12)(14)(1234)
+"Xenophonic","Xenophonic Surprise",surprise,6,"",&56-36.14-12-36.14-12.56,|(12)(14)(1234)
+"Eratosthenes","Eratosthenes Surprise",surprise,6,"",&56-36.14-12-36.14-14.36,|(12)(14)(1234)
+"Armada","Armada Surprise",surprise,6,"",&56-36.14-12-36.14-14.56,|(12)(14)(1234)
+"Aristarchus","Aristarchus Surprise",surprise,6,"",&56-36.14-12-36.14-34.16,|(12)(14)(1234)
+"Pythagoras","Pythagoras Surprise",surprise,6,"",&56-36.14-12-36.14-34.56,|(12)(14)(1234)
+"Ganu Mor","Ganu Mor Surprise",surprise,6,"",&56-36.14-1256-1236-12-36,|(12)(14)(1234)
+"Croagh Patrick","Croagh Patrick Surprise",surprise,6,"",&56-36.14-1256-1236-14-36,|(12)(14)(1234)
+"Slievenamon","Slievenamon Surprise",surprise,6,"",&56-36.14-1256-1236-34-16,|(12)(14)(1234)
+"Loch Katrine","Loch Katrine Surprise",surprise,6,"",&56-36.14-1256-36-12-36,|(12)(14)(1234)
+"Lochleven Castle","Lochleven Castle Surprise",surprise,6,"",&56-36.14-1256-36-14-56,|(12)(14)(1234)
+"Errigal","Errigal Surprise",surprise,6,"",&56-36.14-1256-36-34-16,|14
+"Ruadh-stac Mor","Ruadh-stac Mor Surprise",surprise,6,"",&56-36.14-1256-36.12-12.36,|(12)(14)(1234)
+"Loch Lomond","Loch Lomond Surprise",surprise,6,"",&56-36.14-1256-36.12-14.36,|(12)(14)(1234)
+"Garbh Bheinn","Garbh Bheinn Surprise",surprise,6,"",&56-36.14-1256-36.12-34.16,|(12)(14)(1234)
+"Basil","Basil Surprise",surprise,6,"",&56-36.14-1256-36.14-12.56,|(12)(14)(1234)
+"Benbaun","Benbaun Surprise",surprise,6,"",&56-36.14-1256-36.14-14.16,|(12)(14)(1234)
+"Pebbles","Pebbles Surprise",surprise,6,"",&56-36.14-1256-36.14-34.56,|(12)(14)(1234)
+"Ian","Ian Surprise",surprise,6,"",&56-36.14-56-1236-12-16,|(12)(14)(1234)
+"Mingulay","Mingulay Surprise",surprise,6,"",&56-36.14-56-1236-12-36,|(12)(14)(1234)
+"Zaragoza","Zaragoza Surprise",surprise,6,"",&56-36.14-56-1236-14-56,|(12)(14)(1234)
+"Sandray","Sandray Surprise",surprise,6,"",&56-36.14-56-1236-34-36,|(12)(14)(1234)
+"Somerset and Dorset","Somerset and Dorset Surprise",surprise,6,"",&56-36.14-56-36-12-36,|(12)(14)(1234)
+"Armardar","Armardar Surprise",surprise,6,"",&56-36.14-56-36-14-16,|(12)(14)(1234)
+"Squirrel","Squirrel Surprise",surprise,6,"",&56-36.14-56-36-14-36,|(12)(14)(1234)
+"Sutton Bonington","Sutton Bonington Surprise",surprise,6,"",&56-36.14-56-36-14-56,|(12)(14)(1234)
+"Fabis","Fabis Surprise",surprise,6,"",&56-36.14-56-36-34-16,|(12)(14)(1234)
+"Lancot","Lancot Surprise",surprise,6,"",&56-36.14-56-36-34-16,|14
+"Colonsay","Colonsay Surprise",surprise,6,"",&56-36.14-56-36-34-36,|(12)(14)(1234)
+"Green Park","Green Park Surprise",surprise,6,"",&56-36.14-56-36.12-12.36,|(12)(14)(1234)
+"Jaen","Jaen Surprise",surprise,6,"",&56-36.14-56-36.12-14.56,|(12)(14)(1234)
+"Berneray","Berneray Surprise",surprise,6,"",&56-36.14-56-36.12-34.16,|14
+"Sapperton Tunnel","Sapperton Tunnel Surprise",surprise,6,"",&56-36.14-56-36.12-34.36,|(12)(14)(1234)
+"Father Blackadder","Father Blackadder Surprise",surprise,6,"",&56-36.14-56-36.14-12.36,|(12)(14)(1234)
+"Mork","Mork Surprise",surprise,6,"",&56-36.14-56-36.14-12.56,|(12)(14)(1234)
+"Carna","Carna Surprise",surprise,6,"",&56-36.14-56-36.14-14.36,|(16)(14)(1456)
+"Mindy","Mindy Surprise",surprise,6,"",&56-36.14-56-36.14-34.56,|(12)(14)(1234)
+"Broadstone","Broadstone Surprise",surprise,6,"",&56-36.14.56-12.36-12-36,|(12)(14)(1234)
+"Ulva","Ulva Surprise",surprise,6,"",&56-36.14.56-12.36-14-56,|(12)(14)(1234)
+"Gometra","Gometra Surprise",surprise,6,"",&56-36.14.56-12.36-34-36,|(12)(14)(1234)
+"Highbridge","Highbridge Surprise",surprise,6,"",&56-36.14.56-12.36.12-12.36,|(12)(14)(1234)
+"Sopley","Sopley Surprise",surprise,6,"",&56-36.14.56-12.36.12-14.36,|(12)(14)(1234)
+"Canna","Canna Surprise",surprise,6,"",&56-36.14.56-12.36.12-14.56,|(12)(14)(1234)
+"Rhum","Rhum Surprise",surprise,6,"",&56-36.14.56-12.36.12-34.16,|(12)(14)(1234)
+"Rum","Rum Surprise",surprise,6,"",&56-36.14.56-12.36.12-34.36,|(12)(14)(1234)
+"W & P","W & P Surprise",surprise,6,"",&56-36.14.56-12.36.14-12.36,|14
+"Ash","Ash Surprise",surprise,6,"",&56-36.14.56-12.36.14-12.56,|(12)(14)(1234)
+"Eigg","Eigg Surprise",surprise,6,"",&56-36.14.56-12.36.14-14.16,|(12)(14)(1234)
+"Curdworth","Curdworth Surprise",surprise,6,"",&56-36.14.56-12.36.14-14.36,|(16)(14)(1456)
+"Milland","Milland Surprise",surprise,6,"",&56-36.14.56-12.36.14-34.56,|(12)(14)(1234)
+"Padworth","Padworth Surprise",surprise,6,"",&56-56.14-12-1236-12-36,|(12)(14)(1234)
+"Pangbourne","Pangbourne Surprise",surprise,6,"",&56-56.14-12-1236-12-56,|(12)(14)(1234)
+"Hobson","Hobson Surprise",surprise,6,"",&56-56.14-12-1236-12-56,|(16)(14)(1456)
+"Daggett the Dog","Daggett the Dog Surprise",surprise,6,"",&56-56.14-12-1236-14-36,|(12)(14)(1234)
+"Farewell","Farewell Surprise",surprise,6,"",&56-56.14-12-1236-14-56,|(12)(14)(1234)
+"Shaw","Shaw Surprise",surprise,6,"",&56-56.14-12-1236-34-56,|(12)(14)(1234)
+"Burnopfield","Burnopfield Surprise",surprise,6,"",&56-56.14-12-1236-34-56,|(16)(14)(1456)
+"Tewinbury","Tewinbury Surprise",surprise,6,"",&56-56.14-12-36-12-16,|(12)(14)(1234)
+"Binfield","Binfield Surprise",surprise,6,"",&56-56.14-12-36-12-36,|(12)(14)(1234)
+"Chieveley","Chieveley Surprise",surprise,6,"",&56-56.14-12-36-12-56,|(12)(14)(1234)
+"Ebchester","Ebchester Surprise",surprise,6,"",&56-56.14-12-36-12-56,|(16)(14)(1456)
+"St David","St David Surprise",surprise,6,"",&56-56.14-12-36-14-16,|(12)(14)(1234)
+"Chicago","Chicago Surprise",surprise,6,"",&56-56.14-12-36-14-36,|(12)(14)(1234)
+"Snailwell","Snailwell Surprise",surprise,6,"",&56-56.14-12-36-14-56,|14
+"Ardington","Ardington Surprise",surprise,6,"",&56-56.14-12-36-34-56,|(12)(14)(1234)
+"Shotley Bridge","Shotley Bridge Surprise",surprise,6,"",&56-56.14-12-36-34-56,|(16)(14)(1456)
+"Chilton","Chilton Surprise",surprise,6,"",&56-56.14-12-36.12-12.36,|(12)(14)(1234)
+"Marcham","Marcham Surprise",surprise,6,"",&56-56.14-12-36.12-12.56,|(12)(14)(1234)
+"Leadgate","Leadgate Surprise",surprise,6,"",&56-56.14-12-36.12-12.56,|(16)(14)(1456)
+"Woolton Hill","Woolton Hill Surprise",surprise,6,"",&56-56.14-12-36.12-14.56,|(12)(14)(1234)
+"Longcot","Longcot Surprise",surprise,6,"",&56-56.14-12-36.12-34.56,|(12)(14)(1234)
+"Dipton","Dipton Surprise",surprise,6,"",&56-56.14-12-36.12-34.56,|(16)(14)(1456)
+"Cheveley","Cheveley Surprise",surprise,6,"",&56-56.14-12-36.14-12.56,|14
+"Beano","Beano Surprise",surprise,6,"",&56-56.14-12-36.14-14.36,|(12)(14)(1234)
+"Lewis","Lewis Surprise",surprise,6,"",&56-56.14-12-36.14-14.56,|(12)(14)(1234)
+"Rope","Rope Surprise",surprise,6,"",&56-56.14-12-36.14-34.16,|(12)(14)(1234)
+"National Stud","National Stud Surprise",surprise,6,"",&56-56.14-12-36.14-34.56,|14
+"Galtymore","Galtymore Surprise",surprise,6,"",&56-56.14-1256-1236-12-56,|(12)(14)(1234)
+"Knockmealdown","Knockmealdown Surprise",surprise,6,"",&56-56.14-1256-1236-14-56,|(12)(14)(1234)
+"Slieve Donard","Slieve Donard Surprise",surprise,6,"",&56-56.14-1256-1236-34-56,|(12)(14)(1234)
+"Beinn Laomuinn","Beinn Laomuinn Surprise",surprise,6,"",&56-56.14-1256-36-12-56,|(12)(14)(1234)
+"Pen y Fan","Pen y Fan Surprise",surprise,6,"",&56-56.14-1256-36-14-56,|14
+"Sgurr a'Choire Ghlais","Sgurr a'Choire Ghlais Surprise",surprise,6,"",&56-56.14-1256-36-34-56,|(12)(14)(1234)
+"Ben Clibrig","Ben Clibrig Surprise",surprise,6,"",&56-56.14-1256-36.12-12.56,|(12)(14)(1234)
+"The Storr","The Storr Surprise",surprise,6,"",&56-56.14-1256-36.12-14.56,|(12)(14)(1234)
+"Beinn Dearg","Beinn Dearg Surprise",surprise,6,"",&56-56.14-1256-36.12-34.56,|(12)(14)(1234)
+"Meall a'Bhuiridh","Meall a'Bhuiridh Surprise",surprise,6,"",&56-56.14-1256-36.14-12.56,|14
+"Cac Carn Beag","Cac Carn Beag Surprise",surprise,6,"",&56-56.14-1256-36.14-14.56,|(12)(14)(1234)
+"Loch Watten","Loch Watten Surprise",surprise,6,"",&56-56.14-1256-36.14-34.56,|14
+"Sandhurst","Sandhurst Surprise",surprise,6,"",&56-56.14-56-1236-12-36,|(12)(14)(1234)
+"Midgham","Midgham Surprise",surprise,6,"",&56-56.14-56-1236-12-56,|(12)(14)(1234)
+"East Malling","East Malling Surprise",surprise,6,"",&56-56.14-56-1236-14-16,|(12)(14)(1234)
+"Ditchingham","Ditchingham Surprise",surprise,6,"",&56-56.14-56-1236-14-36,|(12)(14)(1234)
+"Scarba","Scarba Surprise",surprise,6,"",&56-56.14-56-1236-14-56,|14
+"Shinfield","Shinfield Surprise",surprise,6,"",&56-56.14-56-1236-34-56,|(12)(14)(1234)
+"Childrey","Childrey Surprise",surprise,6,"",&56-56.14-56-36-12-36,|(12)(14)(1234)
+"Appleford","Appleford Surprise",surprise,6,"",&56-56.14-56-36-12-56,|(12)(14)(1234)
+"David Hird's Wallet","David Hird's Wallet Surprise",surprise,6,"",&56-56.14-56-36-14-36,|(12)(14)(1234)
+"Stonesfield","Stonesfield Surprise",surprise,6,"",&56-56.14-56-36-14-56,|(12)(14)(1234)
+"Coleshill","Coleshill Surprise",surprise,6,"",&56-56.14-56-36-34-56,|(12)(14)(1234)
+"Cumnor","Cumnor Surprise",surprise,6,"",&56-56.14-56-36.12-12.36,|(12)(14)(1234)
+"Letcombe","Letcombe Surprise",surprise,6,"",&56-56.14-56-36.12-12.56,|(12)(14)(1234)
+"Tiree","Tiree Surprise",surprise,6,"",&56-56.14-56-36.12-14.56,|14
+"Peasemore","Peasemore Surprise",surprise,6,"",&56-56.14-56-36.12-34.56,|(12)(14)(1234)
+"Stogursey","Stogursey Surprise",surprise,6,"",&56-56.14-56-36.14-12.56,|(12)(14)(1234)
+"Tirley","Tirley Surprise",surprise,6,"",&56-56.14-56-36.14-14.56,|(12)(14)(1234)
+"Stogumber","Stogumber Surprise",surprise,6,"",&56-56.14-56-36.14-34.56,|(12)(14)(1234)
+"Mys Gwyngala","Mys Gwyngala Surprise",surprise,6,"",&56-56.14.56-12.36-12-16,|(12)(14)(1234)
+"Mys Hedra","Mys Hedra Surprise",surprise,6,"",&56-56.14.56-12.36-12-36,|(12)(14)(1234)
+"Arborfield","Arborfield Surprise",surprise,6,"",&56-56.14.56-12.36-12-56,|(12)(14)(1234)
+"Mys Du","Mys Du Surprise",surprise,6,"",&56-56.14.56-12.36-14-16,|(12)(14)(1234)
+"Mys Kevardhu","Mys Kevardhu Surprise",surprise,6,"",&56-56.14.56-12.36-14-36,|(12)(14)(1234)
+"St Kilda","St Kilda Surprise",surprise,6,"",&56-56.14.56-12.36-14-56,|14
+"Compton","Compton Surprise",surprise,6,"",&56-56.14.56-12.36-34-56,|(12)(14)(1234)
+"St Marwenne","St Marwenne Surprise",surprise,6,"",&56-56.14.56-12.36.12-12.36,|(12)(14)(1234)
+"Pertwee","Pertwee Surprise",surprise,6,"",&56-56.14.56-12.36.12-12.36,|14
+"Cheadle","Cheadle Surprise",surprise,6,"",&56-56.14.56-12.36.12-12.56,|(12)(14)(1234)
+"Forncett","Forncett Surprise",surprise,6,"",&56-56.14.56-12.36.12-14.56,|(12)(14)(1234)
+"Jones the Cat","Jones the Cat Surprise",surprise,6,"",&56-56.14.56-12.36.12-34.56,|(12)(14)(1234)
+"Skye","Skye Surprise",surprise,6,"",&56-56.14.56-12.36.14-12.56,|14
+"Bergh Apton","Bergh Apton Surprise",surprise,6,"",&56-56.14.56-12.36.14-14.36,|(12)(14)(1234)
+"Talcolnestone","Talcolnestone Surprise",surprise,6,"",&56-56.14.56-12.36.14-14.56,|(12)(14)(1234)
+"Shenfield","Shenfield Surprise",surprise,6,"",&56-56.14.56-12.36.14-34.16,|(12)(14)(1234)
+"Seven Rivers","Seven Rivers Surprise",surprise,6,"",&56-56.14.56-12.36.14-34.56,|14
+"Premierish","Premierish Surprise",surprise,6,"",&56-56.14.56-56.36.14-14.56,|(12)(14)(1234)
+"Bristolish","Bristolish Surprise",surprise,6,"",&56-56.14.56-56.36.14-14.56,|(16)(14)(1456)
+"Te Deum","Te Deum Surprise",surprise,6,"",&56.3456.56.14.56.1256.12.36.12.1234.12.56,|(12)(14)(1234)
+"Great Berry","Great Berry Surprise",surprise,6,"",-34-14-12-1236-12-1236-12-36-12-14-34-12
+"Coryton","Coryton Surprise",surprise,6,"",-34-14-12-1236-12-1236.12-12.1236-12-14-34-12
+"Canvey Island","Canvey Island Surprise",surprise,6,"",-34-14-12-1236-12-1256-12-1236.12-12.14-34-12
+"St Erth","St Erth Surprise",surprise,6,"",-34-14-12-1236-12-1256-12-36-12-14-34-12
+"Complete","Complete Surprise",surprise,6,"",-34-14-12-1236-12-1256.12-12.1236-12-14-34-12
+"Wayletts","Wayletts Surprise",surprise,6,"",-34-14-12-1236-12.34.1256.1234-12.1236-12-14-34-12
+"Potton Island","Potton Island Surprise",surprise,6,"",-34-14-12-1236-12.34.1256.34.12-1236.12-12.14-34-12
+"Nevendon","Nevendon Surprise",surprise,6,"",-34-14-12-1236-12.34.1256.34.12-36-12-14-34-12
+"Two Tree Island","Two Tree Island Surprise",surprise,6,"",-34-14-12-1236-1234-1256-1234-1236.12-12.14-34-12
+"Paul","Paul Surprise",surprise,6,"",-34-14-12-1236-1234-1256-1234-36-12-14-34-12
+"Zider Pass","Zider Pass Surprise",surprise,6,"",-34-14-12-1236-1234.34.1256.34.1234-1236.12-12.14-34-12
+"Tilbury","Tilbury Surprise",surprise,6,"",-34-14-12-1236-1234.34.1256.34.1234-36-12-14-34-12
+"Kynochtown","Kynochtown Surprise",surprise,6,"",-34-14-12-1236.12-12.1236-12-1236-12-14-34-12
+"Ittle Beer","Ittle Beer Surprise",surprise,6,"",-34-14-12-1236.12-12.1256-12-1236-12-14-34-12
+"Havengore Island","Havengore Island Surprise",surprise,6,"",-34-14-12-1236.12-12.1256.12-12.36-12-14-34-12
+"Bridgemarsh Island","Bridgemarsh Island Surprise",surprise,6,"",-34-14-12-1236.12-1234.1256.1234-12.36-12-14-34-12
+"Bulphan","Bulphan Surprise",surprise,6,"",-34-14-12-1236.12-1234.1256.34.12-1236-12-14-34-12
+"Wallasea Island","Wallasea Island Surprise",surprise,6,"",-34-14-12-1236.12.34.12.1256.12.34.12.36-12-14-34-12
+"Cobmarsh Island","Cobmarsh Island Surprise",surprise,6,"",-34-14-12-1236.12.34.1234.1256.1234.34.12.36-12-14-34-12
+"Great Cob Island","Great Cob Island Surprise",surprise,6,"",-34-14-12-1236.1234-12.1256.12-1234.36-12-14-34-12
+"Northey Island","Northey Island Surprise",surprise,6,"",-34-14-12-1236.1234-1234.1256.1234-1234.36-12-14-34-12
+"Pewit Island","Pewit Island Surprise",surprise,6,"",-34-14-12-1236.1234.34.12.1256.12.34.1234.36-12-14-34-12
+"Rushley Island","Rushley Island Surprise",surprise,6,"",-34-14-12-1236.34.12-1256-12.34.1236.12-12.14-34-12
+"Buttsbury","Buttsbury Surprise",surprise,6,"",-34-14-12-1236.34.12-1256-12.34.36-12-14-34-12
+"Valiants","Valiants Surprise",surprise,6,"",-34-14-12-1236.34.12.34.1256.34.12.34.1236.12-12.14-34-12
+"Billericay","Billericay Surprise",surprise,6,"",-34-14-12-1236.34.12.34.1256.34.12.34.36-12-14-34-12
+"New England Island","New England Island Surprise",surprise,6,"",-34-14-12-1236.34.1234-1256-1234.34.1236.12-12.14-34-12
+"Hullbridge","Hullbridge Surprise",surprise,6,"",-34-14-12-1236.34.1234-1256-1234.34.36-12-14-34-12
+"Lee Chapel","Lee Chapel Surprise",surprise,6,"",-34-14-12-36-12-1236-12-1236-12-14-34-12
+"Ludgvan","Ludgvan Surprise",surprise,6,"",-34-14-12-36-12-1256-12-1236-12-14-34-12
+"Rawreth","Rawreth Surprise",surprise,6,"",-34-14-12-36-12.34.1256.34.12-1236-12-14-34-12
+"Lelant","Lelant Surprise",surprise,6,"",-34-14-12-36-1234-1256-1234-1236-12-14-34-12
+"Chadwell","Chadwell Surprise",surprise,6,"",-34-14-12-36-1234.34.1256.34.1234-1236-12-14-34-12
+"Great Ryburgh","Great Ryburgh Surprise",surprise,6,"",-34-14-12-36-34.12.1256-1234.12.36-12-14-34-12
+"Herongate","Herongate Surprise",surprise,6,"",-34-14-12-36-34.1234.1256.34.1234.12.36-12-14-34-12
+"Ray Island","Ray Island Surprise",surprise,6,"",-34-14-12-36.12-12.1256.12-12.1236-12-14-34-12
+"Rat Island","Rat Island Surprise",surprise,6,"",-34-14-12-36.12-1234.1256.1234-12.1236-12-14-34-12
+"Stratton Strawless","Stratton Strawless Surprise",surprise,6,"",-34-14-12-36.12.1234-1256.12.34-36-12-14-34-12
+"Battlesbridge","Battlesbridge Surprise",surprise,6,"",-34-14-12-36.12.1234.34.1256.1234.34-36-12-14-34-12
+"Bramble Island","Bramble Island Surprise",surprise,6,"",-34-14-12-36.12.34.12.1256.12.34.12.1236-12-14-34-12
+"Horsey Isalnd","Horsey Isalnd Surprise",surprise,6,"",-34-14-12-36.12.34.1234.1256.1234.34.12.1236-12-14-34-12
+"Hedge End Island","Hedge End Island Surprise",surprise,6,"",-34-14-12-36.1234-12.1256.12-1234.1236-12-14-34-12
+"Cindery Island","Cindery Island Surprise",surprise,6,"",-34-14-12-36.1234-1234.1256.1234-1234.1236-12-14-34-12
+"Quire Green","Quire Green Surprise",surprise,6,"",-34-14-12-36.1234.12-1256.12-34.36-12-14-34-12
+"Messing","Messing Surprise",surprise,6,"",-34-14-12-36.1234.12.34.1256.1234-34.36-12-14-34-12
+"Skippers Island","Skippers Island Surprise",surprise,6,"",-34-14-12-36.1234.34.12.1256.12.34.1234.1236-12-14-34-12
+"Pigstye Green","Pigstye Green Surprise",surprise,6,"",-34-14-12-36.34-12.1256-12.1234.36-12-14-34-12
+"Coalhouse","Coalhouse Surprise",surprise,6,"",-34-14-12-36.34-1234.1256.34.12.1234.36-12-14-34-12
+"Childerditch","Childerditch Surprise",surprise,6,"",-34-14-12-36.34.12-1256-12.34.1236-12-14-34-12
+"Oozedam","Oozedam Surprise",surprise,6,"",-34-14-12-36.34.12.34.1256.34.12.34.1236-12-14-34-12
+"Fambridge","Fambridge Surprise",surprise,6,"",-34-14-12-36.34.1234-1256-1234.34.1236-12-14-34-12
+"Xesse","Xesse Surprise",surprise,6,"",-34-14.12-12.1236-12-1256-12-1236-12-14-34-12
+"Ivy Heath","Ivy Heath Surprise",surprise,6,"",-34-14.12-12.1236-12-1256-12-36.12-12.14-34-12
+"Old Turncole","Old Turncole Surprise",surprise,6,"",-34-14.12-12.1236-12.34.1256.34.12-1236-12-14-34-12
+"Watery Lane","Watery Lane Surprise",surprise,6,"",-34-14.12-12.1236-12.34.1256.34.12-36.12-12.14-34-12
+"Cessland","Cessland Surprise",surprise,6,"",-34-14.12-12.1236-1234-1256-1234-1236-12-14-34-12
+"Jury Hill","Jury Hill Surprise",surprise,6,"",-34-14.12-12.1236-1234-1256-1234-36.12-12.14-34-12
+"Paglesham","Paglesham Surprise",surprise,6,"",-34-14.12-12.1236-1234.34.1256.34.1234-1236-12-14-34-12
+"Hawkwell","Hawkwell Surprise",surprise,6,"",-34-14.12-12.1236-1234.34.1256.34.1234-36.12-12.14-34-12
+"Ballards Gore","Ballards Gore Surprise",surprise,6,"",-34-14.12-12.1236.34.12-1256-12.34.1236-12-14-34-12
+"Eastwoodbury","Eastwoodbury Surprise",surprise,6,"",-34-14.12-12.1236.34.12-1256-12.34.36.12-12.14-34-12
+"Ugley Green","Ugley Green Surprise",surprise,6,"",-34-14.12-12.1236.34.12.34.1256.34.12.34.1236-12-14-34-12
+"Dry Street","Dry Street Surprise",surprise,6,"",-34-14.12-12.1236.34.12.34.1256.34.12.34.36.12-12.14-34-12
+"Stonebridge","Stonebridge Surprise",surprise,6,"",-34-14.12-12.1236.34.1234-1256-1234.34.1236-12-14-34-12
+"Kent Hill","Kent Hill Surprise",surprise,6,"",-34-14.12-12.1236.34.1234-1256-1234.34.36.12-12.14-34-12
+"Ashingdon","Ashingdon Surprise",surprise,6,"",-34-14.12-12.36-12-1256-12-1236.12-12.14-34-12
+"Youngs End","Youngs End Surprise",surprise,6,"",-34-14.12-12.36-12.34.1256.34.12-1236.12-12.14-34-12
+"Ghyllgrove","Ghyllgrove Surprise",surprise,6,"",-34-14.12-12.36-1234-1256-1234-1236.12-12.14-34-12
+"Fiddlers Hamlet","Fiddlers Hamlet Surprise",surprise,6,"",-34-14.12-12.36-1234.34.1256.34.1234-1236.12-12.14-34-12
+"Westcliff","Westcliff Surprise",surprise,6,"",-34-14.12-12.36.34.12-1256-12.34.1236.12-12.14-34-12
+"Shotgate","Shotgate Surprise",surprise,6,"",-34-14.12-12.36.34.12.34.1256.34.12.34.1236.12-12.14-34-12
+"Ulting","Ulting Surprise",surprise,6,"",-34-14.12-12.36.34.1234-1256-1234.34.1236.12-12.14-34-12
+"The Perth Mobile Belfry","The Perth Mobile Belfry Surprise",surprise,6,"",-34-1456-12-1236-1234-1256-1234-36-12-1456-34-12
+"Nads","Nads Surprise",surprise,6,"",-34-1456-12-36-1234-1256-1234-1236-12-1456-34-12
+"Brimpton","Brimpton Surprise",surprise,6,"",-36-14-12-1236-12-1256-12-36-12-14-36-12
+"Brisley","Brisley Surprise",surprise,6,"",-36-14-12-1236-1234-1236-1234-36-12-14-36-12
+"Surlingham","Surlingham Surprise",surprise,6,"",-36-14-12-1236-1234-1236-1234-36-12-14-36-16
+"Gilpin Green","Gilpin Green Surprise",surprise,6,"",-36-14-12-1236-1234-1256-1234-36-12-14-36-12
+"Barkham","Barkham Surprise",surprise,6,"",-36-14-12-36-12-1256-12-1236-12-14-36-12
+"Erpingham","Erpingham Surprise",surprise,6,"",-36-14-12-36-1234-1236-1234-1236-12-14-36-12
+"Shellingford","Shellingford Surprise",surprise,6,"",-36-14-12-36-1234-1236-1234-1236-12-14-36-16
+"Chaddleworth","Chaddleworth Surprise",surprise,6,"",-36-14-12-36-1234-1256-1234-1236-12-14-36-12
+"Denchworth","Denchworth Surprise",surprise,6,"",-36-14-56-1236-1234-1236-1234-36-56-14-36-12
+"Snetterton","Snetterton Surprise",surprise,6,"",-36-14-56-1236-1234-1236-1234-36-56-14-36-16
+"Swafield","Swafield Surprise",surprise,6,"",-56-14-12-1236-1234-1236-1234-36-12-14-56-16
+"Swainsthorpe","Swainsthorpe Surprise",surprise,6,"",-56-14-12-36-1234-1236-1234-1236-12-14-56-16
+"Wreningham","Wreningham Surprise",surprise,6,"",-56-14-56-36-1234-1236-1234-1236-56-14-56-16
+"Wendron","Wendron Surprise",surprise,6,"",-56-1456-12-1236-12-1256-12-36-12-1456-56-12
+"Poundstock","Poundstock Surprise",surprise,6,"",-56-1456-12-1236-12-1256.12-12.1236-12-1456-56-12
+"Lewannick","Lewannick Surprise",surprise,6,"",-56-1456-12-1236.12-12.1256-12-1236-12-1456-56-12
+"Gwinear","Gwinear Surprise",surprise,6,"",-56-1456-12-36-12-1256-12-1236-12-1456-56-12
+"Mawnan","Mawnan Surprise",surprise,6,"",-56-1456-12-36-12-1256.12-12.36-12-1456-56-12
+"Guy Fawkes","Guy Fawkes Surprise",surprise,6,"",-56-1456-12-36.12-12.1256-12-36-12-1456-56-12

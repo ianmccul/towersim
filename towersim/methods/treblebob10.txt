@@ -1,0 +1,11 @@
+"Oxford","Oxford Treble Bob",treblebob,10,"",&-34-10-12-10-12-10-12-10-12-10,|(10)(18)(1890)
+"Rotherham","Rotherham Treble Bob",treblebob,10,"",&-34-10-12-10-12-10.34-34.10-18-10,|(12)(14)(1234)
+"Violet","Violet Treble Bob",treblebob,10,"",&-30-10-12-10-12-10-12-10-12-10,|14
+"Berkeley","Berkeley Treble Bob",treblebob,10,"",&-50-10-58-10-12-10-14-10.34-14.90,|(12)(14)(1234)
+"Kent","Kent Treble Bob",treblebob,10,"",&34-34.10-12-10-12-10-12-10-12-10,|(10)(18)(1890)
+"Nile","Nile Treble Bob",treblebob,10,"",&34-38.10.58.12-10.78.12.34.10.36.12-10.38.12-10,|(10)(18)(1890)
+"Windsor","Windsor Treble Bob",treblebob,10,"",&56-56.10-12-10-12-10-12-10-12-10,|(10)(18)(1890)
+"Albion","Albion Treble Bob",treblebob,10,"",&56-56.10.56-56.10.34-34.10.34-34.10.34-34.10,|(12)(14)(1234)
+"Sowerbine","Sowerbine Treble Bob",treblebob,10,"",&78-78.10-12-10-12-10-12-10-12-10,|(10)(18)(1890)
+"Bockingford","Bockingford Treble Bob",treblebob,10,"",&78-78.10.78-78.10.3478-3478.10.34-34.10.34-34.10,|(12)(14)(1234)
+"Albion Little","Albion Little Treble Bob",treblebob,10,"",&56-56.10.56-56.14,|(12)(14)(1234)

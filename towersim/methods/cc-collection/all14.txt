@@ -1,0 +1,26 @@
+Alliance Fourteen methods (treble dodging in 1-2 and 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16569	Old Milverton	-5B-14.5B-5B.36.147B.58.16.7B-1T-EB-	1B	1B	m	cps/c	Spliced	97/512
+
+Alliance Fourteen methods (treble dodging in 1-2, 3-4, 11-12 and 13-14)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16570	Maypole	-5B-14.5B-5B.36.147B.58.169B.70.18EB.9T.10-10.EB-10-	1B	1B	j2	cps/c	Spliced	97/512
+
+Alliance Fourteen methods (treble dodging in 1-2, 3-4, 11-12 and double dodging in 13-14)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16571	Cranesthorpe	-5B-14.5B-5B.36.147B.58.16.70-9B.10-10.EB.10-10-10.	EB	1B	h	P2/c	Spliced		97/512
+16572	Akenfield	-5B-14.5B-5B.36.147B.58.169B.70.18.9B.10-10.EB.10-10-10.	EB	1B	j1	P2/c	1995-09-21	Birmingham, St Martin	96/201
+
+Little Alliance Fourteen methods
+ (treble's path 1 2 3  4 4  5  5  4  3  3)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+16573	Linx Little	-1B-14.36.5B.16.5B.	36	1B	146E3927A5B8T0	Spliced	97/512 743
+

@@ -1,0 +1,41 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Surprise Fourteen methods
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+12642	York	-3B-14-12-3B.14-14.3B.14-14.3B.14-14.3B.14-14.3B.14-14.	3B	12	a	cps/BDK1			1970-10-13	70/961 71/177
+12643	Winchester	-3B-14-125B-36-127B-38-149B-50-16EB-7T-18-9B-1T-	AB	12	b	D/B	2004-07-03	Winchester Cathedral		04/711
+12644	Cambridge	-3B-14-125B-36-147B-58-169B-70-18EB-9T-10-EB-1T-	AB	12	b	D/B	1993-11-30	Birmingham, St Martin	1976-05-26	76/602 94/12
+12645	St Swithun	-3B-14-56-16-14-5B-14-5B-14-5B-12-5B-14-	5B	12	f	cps/BDK1a1d	Spliced			98/110 275
+12646	Vermuyden	-3B-14-56-36-14-5B-14-5B-14-5B-14-5B-14-	5B	12	f	cps/BK1a1	Spliced			93/625
+12647	Yorkshire	-3B-14-5B-16-127B-38-149B-50-16EB-7T-18-9B-10-	AB	12	b	cps/Bc	1993-05-03	Winchester Cathedral	1991-01-14	70/1002 71/177 91/198 93/522
+12648	Lincolnshire	-3B-14-5B-16-7B-18-9B-10-EB-1T-10-EB-9T-	AB	12	b	cps/Bc	2003-01-01	Winchester Cathedral	1999-01-20	99/195 03/83
+12649	Tintwistle	-5B-14-56-16-14-5B-14-5B-14-5B-14-5B-14-	5B	12	f	cps/BK1c	Spliced			93/625
+12650	Leatherhead	-5B-14-56-36.14-14.5B.14-14.5B.14-14.5B.14-14.5B.14-14.	5B	12	f	cps/Bc	Spliced			70/1002 71/177
+12651	Oberon	-5B-14.5B-12.3B.14-12.5B.14-36.7B.18-18.9B-18-EB.10-1T.	AB	1B	j	cps/BDK1cd	1993-12-14	Birmingham, St Martin		94/84
+12652	Worcester	-5B-14.5B-5B.36.14-14.5B-14-7B-78-7B-78-7B-78-	1B	1B	m	cps/BDa2c	Spliced			71/495
+12653	Bristol	-5B-14.5B-5B.36.14-7B.58.16-9B.70.18-EB.9T.10-10.EB-10-	1B	1B	j2	cps/c	1993-04-12	Winchester Cathedral	1982-07-14	82/680 93/445
+12654	Pudsey	-5B-16-127B-38-149B-50-16EB-7T-18-9B-10-EB-1T-	AB	12	b	cps/c	2000-01-03	Winchester Cathedral	2004-11-03	00/64 04/1258
+12655	Newgate	3B-3B.14-12-3B.14-14.5B.16-16.7B.14.58.14.9B.14-14.9B.14-14.	9B	12	f	cps/BDcd	Spliced			70/1002 71/177
+12656	London No.3	3B-3B.14-12-3B.14-14.5B.16-16.7B.14.58.14.9B.14.58.14.9B.14.58.14.	9B	12	f	cps/BDd			1994-03-09	94/407
+12657	Leicestershire	3B-5B.14-5B-3B.14-14.5B.14-14.5B.14-14.5B.14-14.5B.14-14.	5B	12	a	cps/BK1c	Spliced			70/1002 71/177
+12658	Fulham	56-56.14-5B-36.14-14.5B-14-3B-34-3B-34-3B-34-	1B	1B	m	cps/N1ac	Spliced			70/1002 71/177
+
+Little Surprise Fourteen methods (treble to 8ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+12659	Littleport Little	-5B-14.5B-5B.36.14-14.5B-14-	18	1B	m	cps/c	2006-01-02	Winchester Cathedral	00/1215 06/82
+
+Little Surprise Fourteen methods (treble to 10ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+12660	Bristol Little	-5B-14.5B-5B.36.14-7B.58.16-16.7B-16-	10	1B	g	cps/c	Spliced	00/1215
+
+Little Surprise Fourteen methods (treble to 12ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+12661	Bristol12 Little	-5B-14.5B-5B.36.14-7B.58.16-9B.70.18-18.9B-18-	1T	1B	j	cps/c	Spliced	00/1215
+

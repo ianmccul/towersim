@@ -1,0 +1,246 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Alliance Royal methods (treble dodging in 1-2)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16390	Moulton	34-34.10-10-10-10-	10	12	a	cps/D	1975-09-26	Moulton (Northants)	75/893
+16391	Shifnal	56-56.10-10-10-10-	10	12	a	cps/a1	1972-09-30	Worsley	72/901
+
+Alliance Royal methods (treble dodging in 1-2 and 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16392	Elektra	-34-14-12-10-50.14.50.14.	50	12	f	cps/BD	Spliced		04/83
+16393	Allington Lock	-30-14-56-16-1250-1450-	50	12	f	cps/Ba1	2005-02-01	Maidstone, All Saints	05/182
+16394	Lockmeadow	-30-14-56-36-1450-1250-	50	12	f	cps/Ba1	2005-04-19	Maidstone, All Saints	05/454
+16395	East Farleigh Lock	-30-14-56-36-1450-3450-	50	12	f	cps/Ba1	2009-03-03	Maidstone, All Saints	09/304
+16396	Worsley	-30-14-56-36-50-1450-	50	12	f	cps/Ba1	1983-08-03	Worsley	83/728
+16397	Bolton	-50-16-70-18-10-10-	90	12	b	cps/c	1983-07-31	Bolton, St Peter	83/728
+16398	The Tithe Bar	30-30.14-12-30-1450.36.70.18.	90	12	f	cps/BD	Spliced		10/991
+
+Alliance Royal methods (treble dodging in 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16399	Reverse Blofield	-10-36-34-58-14-70-	10	12	d1	cps/Bc	2005-07-02	Knottingley	05/741
+
+Alliance Royal methods (treble dodging in 7-8 and 9-10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16400	Ulrikakaka	-14-36.70.58.16-16.70.16-16.	90	12	a	cps/c	1997-04-21	Oxford, St Thomas the Martyr	97/483
+
+Alliance Royal methods (treble dodging in 1-2, 3-4 and 5-6)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16401	Largo	-3450-14-12.50.38-78-50.34.70.14.	70	12	f	BDT/B	Spliced		04/83
+16402	Hollybush Row	-30-14-12-1230-14-30-10-	90	12	b	cps/BDd	2002-07-15	Oxford, St Thomas the Martyr	02/794
+16403	Ytterbia	-30-14-1256-16-12-50.16.70.18.	90	12	c1	BD/B	2010-12-07	Saltby	10/1302
+16404	Wealdstone	-30-14-50-16-70-18-10-	90	12	b	cps/Bc	1976-12-27	Slough	77/99
+16405	Leatherhead	-50-14-56-36.14-14.50.14.50.14.	50	12	f	cps/Bc	2009-08-31	Leatherhead	09/973
+16406	Northallerton	-50-14.50-50.36-14.70.58.36.70.14.	50	10	g	cps/c	2000-12-02	Northallerton	01/37
+16407	Bristol Channel	-50-14.50-50.36.14-70.58.16.70-	10	10	g	cps/c	2006-05-15	Lundy Island	06/550
+16408	Tresta	30-30.14-12-10.34-14.50.1236.70.18.	90	12	f	cps/BDc	2003-07-01	Maidstone, All Saints	03/684
+
+Alliance Royal methods (treble dodging in 1-2, 3-4 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16409	Springrove	-30-14-50-16-10-56-70-	70	12	c1	cps/Ba1c	1977-05-20	Isleworth	77/639 773
+
+Alliance Royal methods (treble dodging in 1-2, 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16410	Lampton	-30-14-10-12-30-14-10-	90	12	b	cps/Bd	1977-11-18	Isleworth	77/1089
+
+Alliance Royal methods (treble dodging in 1-2, 5-6 and 9-10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16411	Victoria	-30-14-38-1470-38-70-18-	90	12	b	cps/B	1978-05-24	Isleworth	78/521
+
+Alliance Royal methods (treble dodging in 1-2, 3-4, 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16412	Peckham	-30-14-12-16-12-1250-14-10-	90	12	c1	cps/BDd	2006-01-14	Derby Cathedral	06/261
+16413	Gosforth	-30-14-12-30.14-14.30.14-14.30.14.	90	12	b	cps/BDK1	2010-03-11	Leicester, St Mary de Castro	10/318
+16414	Black Sheep	-30-14-1250-16-14-38-56.14.70.1456.	90	12	c1	BD/BOa1	2005-03-20	Tamworth	05/329
+16415	Diamond	-30-14-50-16-78-18-56-50-	90	12	c1	cps/Ba2c	2008-09-26	Roker	08/1151
+16416	Smallberry	-30-14-50-16-70-18.56-56.10.56.	90	12	b	cps/Ba2c	1977-10-28	Isleworth	77/1020
+16417	Glinton	-30-14-50-36-14-18.34.56.14.70.1456.	90	12	c1	cps/BOc	2004-11-28	Burnley	04/1218
+16418	Anglian	-30-14-70-18-34-18-16-70-	90	12	c1	cps/Ba2c	2003-09-06	Braintree	03/923 05/95
+16419	Golden	-50-14.50-12.30-14-1450-14-1450-	50	12	f	cps/BK1c	2008-09-27	Amersham	08/1087
+16420	Wye Valley	-50-14.50-70.36-70-50.16-16.70.16.	70	10	l	cps/c	1995-02-11	Hereford Cathedral	95/277
+16421	Dorset	-50-16-70-18-14-30-16-50-	90	12	b	cps/cd	2003-04-26	Lyme Regis	03/464
+16422	Cerisier	34-50.14-50-30.14-70.58.16-16.70.16.	90	10	l	cps/Dc	1995-09-14	Birmingham Cathedral	96/304
+16423	Concorde	30-30.14-12-30.14-12.50.14-16.70.18.	90	12	f	cps/BDcd	2003-12-29	Bristol, St Stephen	04/225
+16424	Alrewosse	30-30.14-12-30.14-14.50.16-14.50.16.	50	12	b	cps/BDN1d	2006-12-09	Aston Clinton	07/64
+16425	Bart's	30-30.14-12-30.14-14.50.16-16.70.58.	90	12	f	cps/BDd	1995-01-28	Daventry	95/252
+
+Alliance Royal methods (treble dodging in 1-2, 3-4, 5-6 and 9-10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16426	Hagworthingham	-30-14-12-30-34-50.16.70.18-18.	70	10	m	cps/BDd	1980-12-20	Duffield	81/75
+16427	Wandering Wye	-30-14-12-30.14-34.18-70-18-	70	12	b	cps/BDK1a2	1996-01-20	Hereford Cathedral	96/198
+16428	Plantagenet	-30-14-50-16-70-18-1670-58-	90	12	b	cps/Bc	2010-03-20	Church Lawford, Plantagenet Ring	10/343
+16429	Osterley	-30-14-50-16-70-18-50-58-	50	12	c1	cps/BOc	1977-02-02	Isleworth	77/164
+16430	Wyke	-30-14-50-16-70-38-30-16-	90	12	b	cps/Bc	1978-04-28	Isleworth	78/521
+16431	D-Day	34-50.14-50-30.14-70.58.16.70.16-16.	90	10	l	cps/Dc	1994-06-06	Birmingham, St Martin	94/686
+
+Alliance Royal methods (treble dodging in 1-2, 3-4, 7-8 and 9-10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+16432	Scaramanga	-34-14-12-10-50.14-14.50.14-14.	50	12	f	cps/BDc	Spliced			03/466
+16433	Superlative	-36-14-50-30-18-16-70-58-	90	12	b	cps/E	2009-04-07	Saltby		09/407
+16434	Duncombe Place	-30-14-1250-16-30.14.56-50.14.56.14.	50	12	d1	BD/Ba2	Spliced			03/297
+16435	Gunnersbury	-30-14-50-16-30-14-10-18-	10	12	f	cps/BN2cd	1978-01-27	Isleworth		78/168
+16436	Wigan	-56-14-56-30-18-56-70-56-	10	10	j1	cps/a1	2009-05-30	Wigan		09/637
+16437	Tamworth	-50-14.50-50.36-58.14-16.70-16-	10	10	m	cps/c	2010-05-02	Tamworth		10/525
+16438	Maypole	-50-14.50-50.36.1470.58.16-16.70-16-	10	10	g	cps/c	1991-08-20	Maidstone, All Saints	2011-07-13	91/903 11/799
+16439	Ackhorne	34-50.14-1250-16.70.58.16-16.70.16-16.	90	12	a	T/Dc	Spliced			03/297
+16440	Saltby	34-50.14-50-30.14.50-16-70-16-	70	10	k1	cps/Dc	2000-07-25	Saltby		00/818
+16441	Beeston	34-50.14-50-30.14.50.16-16.70-16-	70	10	k1	cps/Dc	1999-12-04	Beeston		00/114
+16442	Cranage	34-50.14-50-30.14.50.16-16.70.56-58.	10	12	d1	cps/BDEc	1999-12-11	Dudley, St Thomas		00/33
+16443	Middlewich	36-56.14.50-50.16.70.18-16-70.16-78.	90	10	j1	cps/BDEc	1999-03-06	Kempston		99/336
+16444	Blofeld	30-50.14-12-36-30.14.56-50.14.56.14.	50	12	c1	cps/Ba2c	Spliced			03/466
+
+Alliance Royal methods (treble dodging in 1-2, 5-6, 7-8 and 9-10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16445	Spirit of Aquarius	-30-14-1236-34-10-14-50-14-	50	12	f	cps/BDK1	1997-09-21	Chesterfield	97/1125
+16446	Isleworth	-30-14-10-14-10-14-10-14-	10	12	f	cps/BFK1	1973-02-14	Isleworth	73/438
+
+Alliance Royal methods (treble dodging in 3-4, 5-6, 7-8 and 9-10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+16447	Normanton	-10-12-10-12-10-12-10-12-	10	10	m	cps/BDa			1983-06-18	83/605
+16448	Morland	-10-12-30-14-50-16-70-18-	90	12	b	cps/Bc	1970-06-16	Nottingham, St Peter		70/540
+
+Alliance Royal methods (treble dodging in 1-2, double dodging in 5-6 and single dodging in 9-10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16449	Supreme	-30-14-38-14-70-38-70-18-	90	12	b	cps/Bd	1983-03-19	Duffield	83/323
+
+Alliance Royal methods (treble dodging in 1-2, 3-4, 5-6, 7-8 and double dodging in 9-10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+16450	Fryerning	-30-14-1250-36-1470-58-16-70-18-78-	90	12	b	BD/Ba2	2009-09-26	Amersham		09/1045
+16451	Colston Bassett	-30-14-50-16-1270-38-14-50-16-78-	90	12	b	BD/BDc	2006-04-04	Thorverton		06/377
+16452	Octodecim	-30-14-50-36-1470-18-12-1670-1258-12-	90	12	b	cps/Ba2c	2011-04-26	Maidstone, All Saints		11/701
+16453	Swindon	34-30.14-12-30.14-14.50.14-16.70.16-16-16.	70	12	f	P2/BDK1c	1975-07-12	Swindon, Christ Church		75/650
+16454	Trinity	30-30.14-12-30-14-30-36-1450-58-58-	90	12	f	L1/BDEd	2010-06-04	Rothwell (Northants)		10/642
+16455	Ewerby	30-30.14-12-30.14-14.50.14-36.70.16-16-16.	70	12	a	P2/BDcd	1975-05-25	Ewerby		75/589
+16456	Allemthorne	30-30.14-12-30.14-14.50.16-16.70.14-14.58-	90	12	f	cps/BDEcd	1995-02-18	Moulton (Northants)		95/386
+16457	Londinium	30-30.14-12-30.14-14.50.16-16.70.18-16-16.	90	12	f	cps/BDd	2001-12-12	Saltby	2001-11-05	01/1169 02/57
+16458	Knottingley	30-56.14-56-30-34-50.16-16.70.16-16-34.	70	12	f	P2/Bac	1996-10-28	Knottingley		96/1199
+
+Alliance Royal methods (treble double dodging in 1-2, 3-4 and 5-6)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16459	Chester	-30-34-14-50-56-36-3470-1478-18-10-	90	12	b	U/Bc	1985-01-19	Duffield	85/197
+
+Alliance Royal methods
+ (treble's path 1 2 1  2 3  4 3  4 5  6 7  8 9  10 9  9)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16460	Doubledigit	-30-14-50-16-10-50-16.	90	12	b	cps/Bc	2003-05-06	Maidstone, All Saints	03/492
+
+Alliance Royal methods
+(treble's path 1 2 1  2 3  4 3    4 5  6 5  6 7  8 9    10 9      9)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16461	Vintage	-50-16-1270-18-14-30-1670-123458.	90	12	b	cps/a2c	2011-07-05	Maidstone, All Saints	10/1086 11/774
+
+Alliance Royal methods
+(treble's path 1 2 1  2 3  4 3  4 5  6 5  6 7    8 7  8 9  10 9  9)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16462	Waynflete	-30-14-12-30-12-10-16-50-78.	90	12	b	cps/BD	2008-09-21	Oxford, Magdalen College	08/1086
+16463	The Green	-50-16-12-10-14-1230-12-30-14.	90	12	b	cps/Bc	2009-04-28	Maidstone, All Saints	09/540
+
+Alliance Royal methods
+(treble's path 1 2  1 2  3  4 3  4 5  6  5 6  7  8  7 8  9  10 9  10 9  9)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16464	SMG250	30-30.14-12-30.14-14.50.16-16.70.58.14-14.	90	12	f	cps/BDcd	2005-08-23	Birmingham, St Martin	05/871
+
+Alliance Royal methods
+ (treble's path 1 2 1  2 3  4  3 4  5  4  5  6  5 6  7  6  7  8  7 8  9  10 9  10 10)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16465	Zarathustra	-50-14.50-50.38.10.38.14-70.38.10.38.16-16.70-16-	10	10	m	cps/K1c	2011-07-26	Saltby	11/821
+
+Little Alliance Royal methods (treble to 6ths dodging in 1-2 and 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16466	Pyghtle Little	-30-14-12-16.34.	16	12	e	cps/BD	Spliced		10/1062
+16467	Tameside Little	-50-14.50-12.36.14.	36	10	m	cps/Bc	1990-03-04	Ashton-under-Lyne, St Michael	90/417
+
+Little Alliance Royal methods (treble to 8ths dodging in 1-2 and 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16468	Daventry Little	-50-14.50-50.36.14.50-	18	10	m	cps/c	1976-03-27	Daventry	76/375
+
+Little Alliance Royal methods (treble to 8ths dodging in 1-2 and double dodging in 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16469	Drax Little	30-50.14-50-12.50.36.14.50-	18	12	b	T/Bc	Spliced	04/83
+
+Little Alliance Royal methods
+          (treble's path 1 2 1  2 3  4  3 4  5  6  5 6  6  5  5)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16470	Mulberry Hall Little	-50-14.50-70.16.70-70.36.70.	56	10	m	cps/c	Spliced	09/331
+
+Little Alliance Royal methods
+        (treble's path 1 2 1  2 3  4 3  4 5  6 5  6 7  8  7 7)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16471	Septuaginta Little	-30-14-50-36-14-10.34-	70	12	c1	cps/BOc	2005-10-04	Maidstone, All Saints	05/1015
+
+Little Alliance Royal methods
+ (treble's path 1 2  1 2  3  4 3  4 5  6 6  5  6  5 6    6)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16472	Jaws Little	30-50.14-12-36-36.70.14-1270.	56	12	c1	P2T/BEc	Spliced	04/83
+
+Triple-hunt Little Alliance Royal methods (treble to 5ths dodging in 1-2)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+16473	Oddjob Little	-34-14.50.16.	50	12	1534028967	Spliced	03/466
+
+Triple-hunt Little Alliance Royal methods (treble to 6ths dodging in 1-2 and 3-4)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+16474	Skeldergate Bridge Little	-50-14.50-56.10-	56	12	1534028967	Spliced	09/331
+
+Triple-hunt Little Alliance Royal methods
+          (treble's path 1 2 1  2 3  4 4    5  5)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+16475	Lendal Bridge Little	-34-14-1450.36.	50	12	1634290785	Spliced	03/297 543
+

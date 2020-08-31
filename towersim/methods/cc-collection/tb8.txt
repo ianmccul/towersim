@@ -1,0 +1,147 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Treble Bob Major methods
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+15709	Oxford	-34-18-12-18-12-18-12-	18	18	m	BD/a	1718-12-27	London, St Dunstan-in-the-East	1811-10-30	
+15710	London	-34-18-12-18-12-18-16-	18	12	13624857		1814-02-28	Keighley	1986-01-19	86/161
+15711	College Exercise	-34-18-12-18-12-18-56-	78	12	18457326		1760-12-26	Hackney, St John-at-Hackney		
+15712	Cumberland Exercise	-34-18-12-18-78-18-56-	18	12	a	BD/a	1815-05-15	Keighley		
+15713	Affpuddle	-34-18-56-18-1234-18.56.14.56.	38	12	c	D	2010-01-28	Huntsham		10/169
+15714	Newbury	-34-18-56-18-34-18-36-	58	12	e	BDO	1987-04-10	Thatcham		87/430
+15715	Kalamazoo	-34-18-56-18-78-18-56-	78	18	j	D/a	2003-10-12	Kalamazoo, MI	2001-02-08	01/247 03/1045
+15716	Dore	-34-18.56-56.18.34-34.18-56-	78	12	15478263		1974-12-27	Dore		75/67
+15717	Tideswell	-34-18.56-56.18.34-34.18.56-56.	18	12	14257386		1997-06-21	Tideswell		97/730
+15718	Central Council	-3456-18-12-18-12-18-12-	18	18	m	BD/a			1975-03-09	75/282
+15719	John the Baptist	-3456-18-56-18-34-18-3456-	38	18	g	BD/a	1985-10-07	Dronfield		85/957
+15720	Halifax	-36-18-12-18-12-18-12-	18	18	15236847		1866-01-01	Huddersfield		
+15721	Violet	-38-18-12-18-12-18-12-	18	14	18264735		1865-03-16	Huddersfield	1985-04-04	85/395
+15722	Ultraviolet	-38-18-12-18-12-18-16-	18	14	17682543		1986-04-07	Staveley		86/384
+15723	Dronfield	-38-18-58-18-14-18-16-	18	18	13462857		1974-07-06	Dronfield		74/654
+15724	Gentian	-38-18.56-56.18-78-18.56-16.	78	12	b	BD/a	1989-10-10	Creswell		89/1132
+15725	Forget-me-Not	-38-18.56-56.18-78-18.56-16.	78	18	g	BD/a	1986-08-06	Creswell		86/759
+15726	Handsworth	-38-18.56-56.18.34-34.18-16-	18	18	j	B/a	1976-09-25	Handsworth (Yorks)		76/929
+15727	Irwell	-56-18-12-18-12-18-12-	18	18	m	BD/a	1974-12-20	Salford, Sacred Trinity	1986-02-16	75/80 86/224
+15728	Queen Elizabeth	-56-18-12-18-12-18-16-	18	12	14258367		2000-08-03	Orwell	1986-11-16	86/1092 00/888
+15729	Imperial III	-56-18-56-18-34-18-34-	78	12	15763284		1760-11-17	Norwich, St Giles		
+15730	Xysys	-56-18-56-18-34-18-56-	58	12	b	B/a	1986-10-06	Staveley		86/961
+15731	Totley	-56-18-56-18-34-18-56-	58	18	g	B/a	1976-05-15	Dore		76/520
+15732	Painful	-58.36.18-12-18.34-34.18.56-16.	38	18	l	BDN/ace	Spliced			10/525
+15733	Imperial	-78-18-78-18-78-18-56-	78	12	a	BD/a	1994-05-28	Dronfield		94/656 05/450
+15734	Kent	34-34.18-12-18-12-18-12-	18	18	m	BD/a	1774-06-05	Leeds (Kent)	1866-03-15	
+15735	Tiffield	34-34.18-12-18-12-18-12-	78	12	18537426		1973-02-10	Easton Neston		73/209
+15736	Rose of England	34-34.18-12-18-12-18-16-	18	12	f	BDO	1857-01-12	Liversedge	1986-01-06	86/119
+15737	Prince Albert	34-34.18-12-18-12-18-16-	18	18	l	BDO	1859-04-15	Liversedge		
+15738	Gittisham	34-34.18-12-18-12-18.34.12.34.	18	18	m	BDG	2010-05-13	Huntsham		10/569
+15739	Queer	34-34.18-12-18-12-18.56.12.56.	18	18	m	BD/Y			2001-11-24	01/1273
+15740	Lickey End	34-34.18-12-18-14-18-14-	78	12	b	BDK/d	2011-01-20	Huntsham		11/182
+15741	Shitterton	34-34.18-12-18-14-18-3456-	38	12	c	BD/cd	2011-06-09	Huntsham		11/725
+15742	Rotten End	34-34.18-12-18-34-18-34-	18	12	e	BD/a	2011-04-07	Huntsham		11/489
+15743	Southend-on-Sea	34-34.18-12-18-34-18-34-	18	18	k	BD/a	1964-05-16	Thorpe Bay		64/363
+15744	Very Easy	34-34.18-12-18.34.12.34.18.34.12.34.	18	18	m	BDGP	Spliced			06/330
+15745	Gruesome	34-34.18-12.56.18-12.34.18.36.12.34.	58	18	l	BDEKP	Spliced			06/330
+15746	Effin	34-34.18-56-18-34-18-34-	38	12	e	BD/a	2010-03-11	Huntsham		10/318
+15747	Hen Poo	34-34.18-56-18-34-18-34-	38	18	k	BD/a	2010-06-03	Huntsham		10/641
+15748	Haselbech	34-34.18-56-18.34-34.18.36.14.36.	58	18	m	BD/aZ	1998-06-19	Haselbech		98/699
+15749	Twatt	34-34.18.56-56.18-12-18-3456-	38	18	h	BD/ac	2011-06-23	Huntsham		11/725
+15750	Killiecrankie	34-34.18.56-56.18.34-34.18-12-	78	12	b	BD/a	2011-01-13	Huntsham		11/110
+15751	Terrible Towel	34-34.18.56-56.18.34-34.18.34-34.	18	12	a	D/a	2008-03-01	Pittsburgh, PA		08/338
+15752	Tenby	34-34.18.56-56.18.34-34.18.3456-3456.	78	12	b	BD/a	2011-11-21	Packwood		11/1237
+15753	Ryecroft	34-34.18.56-56.18.34-34.18.56-56.	18	12	a	D/a	1997-02-15	Dore		97/266
+15754	Barleycroft	34-34.18.56-56.18.34-34.18.56-56.	78	12	b	D/a	2008-04-26	Welwyn		08/570
+15755	Aldeburgh	34-36.18-56-18-34-18.36-56.	18	18	m	DF	2002-12-08	Stoke Poges		03/9
+15756	Quirky	34-36.18-56-18.34.12-18-34.16.	58	18	g	DFP/X	Spliced			10/525
+15757	Fiendish	34-36.18.56-56.18-14-18.36.12.36.	78	18	j	DF/ae	Spliced			06/330
+15758	Blue Nile	34-36.18.56.12-18-12.34.18.36.12.56.	18	18	m	BDFK/af	1985-11-02	Willesden		85/1040
+15759	Noxious	34-56.18.56.12-18.34.12-18.1236-12.	18	18	g	BDKP/a	1985-09-02	Dore		85/893
+15760	Droop	34.56.34.18-56-18-12-18-14-	38	12	d	BO/a	2010-03-04	Huntsham		10/293
+15761	Terrible	34.58-18-12.56.18.34.12-18.36-16.	78	12	f	BDEGKO/ac	Spliced			06/330
+15762	Silly	34.58.36.18.56.12-18-12.34.18.36-36.	18	12	e	BDEFK	Spliced			06/330
+15763	Martin	3456-3456.18-12-18-12-18-12-	18	18	m	BD/a	2008-12-14	Aldeburgh	1996-12-17	97/63 09/59
+15764	Bovey Tracey	3456-3456.18-12-18-14-18-1456-	78	18	g	B/d	2010-02-18	Huntsham		10/500
+15765	Fairy Cross	3456-3456.18-56-18-1234-18-1256-	38	12	f	BF/a	2010-04-08	Huntsham		10/417
+15766	Glasshouse	3456-3456.18.56-56.18.34-34.18.34-34.	18	12	a	B/a	2010-08-09	Packwood		10/865
+15767	Bizarre	36-34.18-58-18-12-18.36-12.	38	12	e	BE/ace	Spliced			06/330
+15768	Awful	36-34.18.56-56.18-12-18.56-16.	38	12	a	BDE/aZ	Spliced			06/330
+15769	Bakewell	36-36.18-12-18-12-18-12-	18	18	m	BDE/a	2003-11-08	Bakewell		03/1140 04/91
+15770	Evil	36-36.18-12.56.18-12.34.18.36.14-	38	18	h	BDENO/a	Spliced			06/330
+15771	Bushey	36-36.18-58-18-34-18-12.36.	18	18	g	BE/ac	2006-11-20	Bushey		06/1198
+15772	Old Whittington	36-36.18-58-18-34-18.36-36.	78	12	a	E/ac	1978-01-07	Dronfield		78/329
+15773	St Lawrence	36-36.18-58-18-34-18.36.12-	18	18	g	BE/ac	2011-09-21	York, St Lawrence		11/1043
+15774	Obnoxious	36-36.18.56-56.18-34-18-34.16.	58	18	j	BEK/a	Spliced			10/525
+15775	Nasty	36-56.18.56.12-18.34.12-18.34-16.	58	18	h	BDEGK	Spliced			10/525
+15776	Cambridge Blue	36.58-18-58-18-14-18-14.36.	18	18	k	EN/d	Spliced			04/1045
+15777	Monstrous	36.58.36.18-12-18-12.34.18-34.16.	78	18	k	BDFNO/a	Spliced			10/525
+15778	Loathsome	38-34.18-12-18-12.34.18.34-16.	38	12	d	BDEU	Spliced			10/525
+15779	Wonderful	38-34.18-12-18-78-18.56-16.	78	12	f	BD	1985-07-08	Dore		85/726
+15780	Staveley	38-34.18-12-18.34-34.18-16-	18	12	a	BD/a	1978-02-11	Staveley		78/328
+15781	Youlgreave	38-34.18-12-18.34-34.18-16-	78	12	b	BD/a	1989-07-19	Creswell		89/733
+15782	Egregious	38-34.18-12-18.34-34.18.34-34.	18	12	c	BD/a	1986-06-02	Dore		86/587
+15783	Unpleasant	38-34.18-12.56.18-12-18.36-12.	58	12	a	BDGN	Spliced			06/330
+15784	Crazy	38-36.18.56.12-18-14-18.36-14.	78	12	c	BDN/cd	Spliced			06/330
+15785	Zealous	38-38.18-12-18-12-18-12-	78	12	f	BD	1986-01-06	Staveley		86/116
+15786	Norton	38-38.18-12-18-12-18-56-	78	12	f	BD	1997-07-26	Norton (Yorks)		97/849
+15787	Mosborough	38-38.18-12-18-12-18.34.12.56.	78	12	f	BD/a	1979-12-08	Dronfield		80/27
+15788	Killer	38.56-18.56-56.18.34.12-18.36-16.	58	12	f	DE/acdX	Spliced			06/330
+15789	Easton Neston	56-36.18-12-18-34-18.36-12.	38	18	m	BDF/ae	1976-12-18	Easton Neston		77/76
+15790	Horrible	56-36.18-12.56.18-34-18.56.34.16.	38	18	g	BCF/afY	Spliced			06/330
+15791	Jupiter	56-36.18-56-18-14-18.36-14.	58	12	f	BFKN/ad	1986-04-17	Hungerford		86/427
+15792	Hammersmith	56-36.18-56-18-34-18.36-56.	18	18	m	BDF/ae	1996-07-01	South Hackney		96/883
+15793	Windsor	56-56.18-12-18-12-18-12-	18	18	m	BD/a	1963-09-29	Bray (Berks)	1982-02-20	63/700 82/238
+15794	Hook Norton	56-56.18-12-18-12-18-16-	18	12	f	BDO/a	1995-06-10	Hook Norton		95/767
+15795	Uretiti	56-56.18-12-18-12-18-16-	18	18	l	BDO/a	2011-09-01	Huntsham		11/965
+15796	Repulsive	56-56.18-12-18-12.34.18.56-16.	38	18	k	BDIP/a	Spliced			10/525
+15797	Myrmica	56-56.18-12-18-14-18-14-	78	12	b	BK/ad	2011-01-27	Huntsham		11/182
+15798	Onacock	56-56.18-12-18-14-18-14.56.	78	12	b	BK/ad	2011-02-17	Huntsham		11/231
+15799	Netherthong	56-56.18-12-18-14-18-1456-	78	12	b	B/ad	2011-02-03	Huntsham		11/182
+15800	Piddle	56-56.18-12-18-14-18.56.14-	78	12	b	BK/ad	2011-02-24	Huntsham		11/286
+15801	Quartalehouse	56-56.18-12-18-14-18.56.14.56.	78	12	b	B/ad	2011-03-24	Huntsham		11/363
+15802	Itchen	56-56.18-56-18-14-18-1236-	18	12	b	cps/ac	2010-09-09	Huntsham		10/989
+15803	Jaundiced	56-56.18-56-18-14-18-56-	78	12	a	cps/ac	2008-07-13	Pittsburgh, PA		08/817
+15804	Spitalfields Festival	56-56.18-56-18-14-18.36.12.36.	78	12	a	cps/ac	1997-05-29	Spitalfields		97/681
+15805	Jolly's Bottom	56-56.18-56-18-14-18.56-56.	78	12	a	cps/ac	2011-01-06	Huntsham		11/182
+15806	Meyrick	56-56.18.56-56.18.34-34.18-12-	78	12	b	B/a	2010-04-19	Stoke (Warks)		10/473
+15807	Firkin	56-56.18.56-56.18.34-34.18-34-	78	12	b	cps/a	2003-08-31	Philadelphia, PA, St Martin		03/902
+15808	Dire	56-56.18.56-56.18.34-34.18-56-	78	12	b	D/a	2010-05-17	Packwood		10/569
+15809	Albion	56-56.18.56-56.18.34-34.18.34-34.	18	12	a	cps/a	1808-03-27	Keighley		
+15810	Rivendell	56-56.18.56-56.18.34-34.18.34-34.	78	12	b	cps/a	1981-09-26	Chislehurst, Annunciation		81/928
+15811	Heywood	56-56.18.56-56.18.34-34.18.34-34.	78	18	g	cps/a	1993-01-13	Heywood		93/251
+15812	Yersinia	56-56.18.56-56.18.34-34.18.56-56.	18	12	a	D/a	2011-12-03	Pittsburgh, PA		
+15813	Fifty	56-56.18.56.12.56.18-12-18.56.12.56.	18	18	m	DE/aY	2009-07-18	Waldron		09/803
+15814	Timothy	56.34.56.18-12-18-12-18-12-	18	18	m	BD/a			1982-02-28	82/238
+15815	Diabolical	56.34.56.18-12.56.18-12.34.18-36-	18	12	b	BDEKP	Spliced			06/330
+15816	Bolsover	56.38.56.18.56.12-18-12-18.34.12.56.	18	18	m	BDE/a	1978-07-08	Dronfield		78/712
+15817	Chesterfield	56.38.56.18.56.12-18-12-18.34.12.56.	78	12	f	BDE/a	1979-04-28	Dronfield		79/475
+15818	Useless	5678-5678.18-12-18-12-18-12-	18	18	m	BD/a			2001-11-24	01/1273
+15819	Jagged	58-34.18.56.12.56.18.34.12-18.56-14.	38	12	b	DFGO/c	Spliced			10/525
+15820	Burnley	58.34-18-58-18-12-18.56-16.	78	12	c	BDG/c	1996-10-13	Burnley		96/1150
+15821	Impossible	58.34-18-58-18-14-18.36-12.	38	12	d	DN/ac	Spliced			06/330
+15822	Gormless	78-78.18-12-18-12-18-12-	18	18	m	BD/a			1999-11-26	99/1191
+
+Little Treble Bob Major methods (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+15823	Precious Little	-56-	12	18	m	cps/a	2002-03-19	Trumpington	02/363
+15824	Gonville Little	34-34.	12	18	m	D	Spliced		21/65
+15825	God Save the Queen Little	56-56.	12	18	m	cps/a	2002-05-11	Meldreth	02/547
+
+Little Treble Bob Major methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+15826	Albion Little	56-56.18.56-56.	14	12	e	cps/a	1913-10-24	Pulford	V5/285 289
+
+Little Treble Bob Major methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+15827	Shrinking Violet Little	-38-18-12-18-12-	16	18	m	BD/a	1998-11-07	Dore	98/1182
+15828	Heywood Little	56-56.18.56-56.18.34-34.	16	18	h	cps/a	1993-05-21	Heywood	93/651
+
+Treble Bob Major methods (treble triple dodging)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+15829	Champion	56.34.56-56.34.56.18.56.12.56-56.12.56.18.34.12.34-34.12.34.18.56.34.56-56.34.56.	78	12	b	BDE/a	1894-12-20	Brighton, St Peter	BN V13/381
+

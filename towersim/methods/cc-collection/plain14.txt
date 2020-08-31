@@ -1,0 +1,24 @@
+Single-hunt Fourteen methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3803	Plain Bob	-1B-1B-1B-1B-1B-1B-	1B	12	a	1999-01-01	Winchester Cathedral	1944-08-27	44/371 99/122
+
+Single-hunt Little Fourteen methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3804	Little Bob	-1B-	14	12	e	1994-01-03	Winchester Cathedral	1970-04-13	70/339 94/159
+
+Single-hunt Little Fourteen methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	Handbells	RW ref
+
+3805	Gainsborough Little Bob	-1B-1B-	16	12	d1	Spliced	71/710
+
+Twin-hunt Fourteen methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	RW ref
+
+3806	Grandsire	3B.1B-1B-1B-1B-1B-1B-1B	-	p	2004-05-31	Winchester Cathedral	04/590
+

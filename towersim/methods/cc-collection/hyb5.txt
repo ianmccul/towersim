@@ -1,0 +1,22 @@
+Hybrid Doubles methods
+ (treble's path 1 1   1   2 2   3 3   4   5 5   4   5 4 3   2   1)
+
+No.	Name	Notation	lh	RW ref
+
+17139	Red Square	125.145.3.123.1.345.125.1.345.123.1.3.125.145.3	14532	08/1234
+
+Twin-hunt Hybrid Doubles methods
+ (treble's path 1 1 2 1 2 1 2 3   3 4 5 5 4 4   5 5 4 3 3 2 1)
+
+No.	Name	Notation	lh	RW ref
+
+17140	Stinchcombe	1.3.5.3.5.3.145.3.5.3.5.3.145.3.5.3.5.3.1.3	12534	07/113
+
+Twin-hunt Hybrid Doubles methods
+ (treble's path 1 1 2 2   1 1 2 3 3 4   5 5   4 5 4 5 4 3   3 2 1)
+
+No.	Name	Notation	lh	RW ref
+
+17141	St Cyr	1.3.125.3.1.3.1.3.125.3.125.3.1.3.1.3.125.3.1.3	12453	07/824
+17142	Blanchworth	1.3.125.3.1.3.1.3.5.1.5.3.1.3.1.3.125.3.1.3	12534	07/824
+

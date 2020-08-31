@@ -1,0 +1,83 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Minor principles (2 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	Handbells	RW ref
+
+17355	Original	-16	241635	1969-09-06	Trowell	1969-09-05	69/815 818
+
+Minor principles (4 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17356	Forward	34-34.16	241635	79/744
+
+Minor principles (6 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17357	Canis	-16-16-12	642513	93/215
+17358	Ursa	34.16-16.34.12	635214	93/215
+17359	Double Eire	34.16.34.16.34-	315264	91/1123
+
+Minor principles (8 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17360	Kidderminster	34-34.16-34-16	412563	90/88
+17361	MUG	34.12.34-34.12.34.16	241635	04/1220
+
+
+Minor principles (12 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17362	S5 under Carlisle	-1256-1236-12-14.36-34.12	512364	10/89
+17363	S5 under George Orwell	-1256-1236-12-14.56-36.12	516234	10/89
+17364	D1 under Benets	-1256-16-12-14.36-56.1236	514632	10/90
+17365	Sedlescombe under Carlisle	-1456-1236-12-14.36-34.12	542163	10/89
+17366	Sedlescombe under London	-1456-1236-12-14.36-36.12	546132	10/89
+17367	Mendip under London	-1456-16-12-14.36-36.1236	541362	10/90
+17368	Brussels Sprout	-16.34.12.34-34.12.34.16-12	642513	84/388
+17369	S6 under Carlisle	-3456-1236-12-14.36-34.14	542163	10/89
+17370	S2 under London	-3456-36-12-14.36-36.1234	514632	10/89
+17371	S2 under George Orwell	-3456-36-12-14.56-36.1234	512643	10/89
+17372	Cambridge over S1	-36-14-12-36-1256-56	264513	10/89
+17373	Dover over Cambridge	-36-16-12-36-1456-56	236514	10/90
+17374	Hekaton	-36.12.34.12-12.34.12.36-16	251364	86/270
+17375	St Thomas the Martyr	14-16.34.12-12.34.16-14.36	654132	86/675
+17376	Priors Dean	34.16-16.34-34.16-16.34.12	451632	92/936
+17377	Clotherholme	34.16.34.16.34-34.16.34.16.34.12	356142	91/184
+17378	London over Cambridge	36-36.14-12-36-1456-3456	236514	10/89
+17379	George Orwell over Sedlescombe	36-56.14-12-1236-1456-56	362514	10/89
+17380	Benets over Mendip	56-36.14-12-16-1456-1256	462315	10/90
+17381	Benets over S1	56-36.14-12-36-1256-1456	342615	10/89
+17382	Benets over Cambridge	56-36.14-12-36-1456-3456	246315	10/89
+17383	St Maurice	56.12.36-14-14-36.12.56.14	316524	92/1128
+
+Minor principles (16 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17384	Shipway	-36.14-14-14-14.36-14-14-14	615243	93/683
+
+Minor principles (20 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17385	Pitman	-14-36.14-14.36.14-14.36.14-14.36-14-16	456312	70/514 614
+17386	Striking	-36-14-36.14-14.36.14-14.36.14-14.36-14	561324	85/42
+
+Minor principles (24 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17387	Eureka	34.16.34.16-16.34.16.34.16-36-16.34.16.34.16-16.34.16.34-	235164	86/752
+
+Minor principles (40 changes per lead)
+
+No.	Name	Notation	lh	RW ref
+
+17388	St Francis	-12-14-36.14-34-16-16.34.12.36.12.34.12-12.34.12.36.12.34.16-16-34-14.36-14-12-16	564123	95/51
+17389	Newick	-12-36-34-14.36-34-36.12.34.12.36.12.34-34.12.36.12.34.12.36-34-36.14-34-36-12-16	456312	10/1234
+17390	Worth	-12-36-34-16.34.12.36-34-36.12.34.12.36-36.12.34.12.36-34-36.12.34.16-34-36-12-16	465213	10/297
+

@@ -1,0 +1,1046 @@
+"Merchants' Return","Merchants' Return Delight",delight,6,"",&-34-14-12-16-12-16,|14
+"Woodbine","Woodbine Delight",delight,6,"",&-34-14-12-16-12-16,|(16)(14)(1456)
+"Ashbocking","Ashbocking Delight",delight,6,"",&-34-14-12-16-12-36,|(12)(14)(1234)
+"High Hoyland","High Hoyland Delight",delight,6,"",&-34-14-12-16-12-36,|14
+"Old Oxford","Old Oxford Delight",delight,6,"",&-34-14-12-16-12-56,|(12)(14)(1234)
+"Lyre of Airedale","Lyre of Airedale Delight",delight,6,"",&-34-14-12-16-12-56,|14
+"Neasden","Neasden Delight",delight,6,"",&-34-14-12-16-12-56,|(16)(14)(1456)
+"Tonne","Tonne Delight",delight,6,"",&-34-14-12-16-12.1234.56,|(12)(14)(1234)
+"Kenworthy","Kenworthy Delight",delight,6,"",&-34-14-12-16-12.1234.56,|(16)(14)(1456)
+"Cavendish","Cavendish Delight",delight,6,"",&-34-14-12-16-14-16,|14
+"Bedford","Bedford Delight",delight,6,"",&-34-14-12-16-14-36,|(12)(14)(1234)
+"Golcar","Golcar Delight",delight,6,"",&-34-14-12-16-14-36,|14
+"Merton","Merton Delight",delight,6,"",&-34-14-12-16-14-36,|(16)(14)(1456)
+"Paddock","Paddock Delight",delight,6,"",&-34-14-12-16-14-56,|(12)(14)(1234)
+"Bunions Been'n'Gone","Bunions Been'n'Gone Delight",delight,6,"",&-34-14-12-16-14.1234.56,|(12)(14)(1234)
+"Tanner's Pleasure","Tanner's Pleasure Delight",delight,6,"",&-34-14-12-16-34-36,|(16)(14)(1456)
+"College Bob IV","College Bob IV Delight",delight,6,"",&-34-14-12-16-34-56,|(12)(14)(1234)
+"PowerGen","PowerGen Delight",delight,6,"",&-34-14-12-16-34-56,|14
+"St Albans","St Albans Delight",delight,6,"",&-34-14-12-16-34-56,|(16)(14)(1456)
+"Grumpy","Grumpy Delight",delight,6,"",&-34-14-12-16-34.1234.56,|(12)(14)(1234)
+"England expects that every man will do his duty","England expects that every man will do his duty Delight",delight,6,"",&-34-14-12-16-34.1234.56,|14
+"Crystal Casket","Crystal Casket Delight",delight,6,"",&-34-14-12-16-34.1234.56,|(16)(14)(1456)
+"Flopper's Fantasy","Flopper's Fantasy Delight",delight,6,"",&-34-14-12-16.12-12.16,|(12)(14)(1234)
+"Yeah, But, No, But, Yeah, But,","Yeah, But, No, But, Yeah, But, Delight",delight,6,"",&-34-14-12-16.12-12.16,|(16)(14)(1456)
+"Handsome Prince","Handsome Prince Delight",delight,6,"",&-34-14-12-16.12-12.36,|(12)(14)(1234)
+"Ismail","Ismail Delight",delight,6,"",&-34-14-12-16.12-12.36,|14
+"Happy","Happy Delight",delight,6,"",&-34-14-12-16.12-12.56,|(12)(14)(1234)
+"Tiny","Tiny Delight",delight,6,"",&-34-14-12-16.12-12.56,|14
+"Laura Ivey","Laura Ivey Delight",delight,6,"",&-34-14-12-16.12-12.56,|(16)(14)(1456)
+"Snow White","Snow White Delight",delight,6,"",&-34-14-12-16.12-34.16,|(16)(14)(1456)
+"Flitton","Flitton Delight",delight,6,"",&-34-14-12-16.12-34.36,|(16)(14)(1456)
+"Bashful","Bashful Delight",delight,6,"",&-34-14-12-16.12-34.56,|(12)(14)(1234)
+"Computer Says No","Computer Says No Delight",delight,6,"",&-34-14-12-16.12-34.56,|14
+"Railway Bearer","Railway Bearer Delight",delight,6,"",&-34-14-12-16.12-34.56,|(16)(14)(1456)
+"Forth Dewetha an Vledhen","Forth Dewetha an Vledhen Delight",delight,6,"",&-34-14-12-16.12.1234.34.56,|(12)(14)(1234)
+"Mirror, Mirror, on the Wall, Who's the Fairest of Them All?","Mirror, Mirror, on the Wall, Who's the Fairest of Them All? Delight",delight,6,"",&-34-14-12-16.1234.12-36,|(16)(14)(1456)
+"Doc","Doc Delight",delight,6,"",&-34-14-12-16.1234.12-56,|(12)(14)(1234)
+"Sunny","Sunny Delight",delight,6,"",&-34-14-12-16.1234.12-56,|14
+"Heigh-Ho, Heigh-Ho, It's Off To Work We Go","Heigh-Ho, Heigh-Ho, It's Off To Work We Go Delight",delight,6,"",&-34-14-12-16.1234.12-56,|(16)(14)(1456)
+"Precious","Precious Delight",delight,6,"",&-34-14-12-16.1234.34-36,|(12)(14)(1234)
+"Yusuf","Yusuf Delight",delight,6,"",&-34-14-12-16.1234.34-36,|14
+"Sneezy","Sneezy Delight",delight,6,"",&-34-14-12-16.1234.34-56,|(12)(14)(1234)
+"White Collarless Shirts for Linux","White Collarless Shirts for Linux Delight",delight,6,"",&-34-14-12-16.1234.34-56,|14
+"Mrs Jim","Mrs Jim Delight",delight,6,"",&-34-14-12-16.1234.34-56,|(16)(14)(1456)
+"Dopey","Dopey Delight",delight,6,"",&-34-14-12-16.1234.34.1234.56,|(12)(14)(1234)
+"Wilby","Wilby Delight",delight,6,"",&-34-14-12-16.14-14.56,|(12)(14)(1234)
+"Sookholme","Sookholme Delight",delight,6,"",&-34-14-12-16.34-12.36,|(16)(14)(1456)
+"Newdigate","Newdigate Delight",delight,6,"",&-34-14-12-16.34-12.56,|(12)(14)(1234)
+"Fountains Abbey","Fountains Abbey Delight",delight,6,"",&-34-14-12-16.34-12.56,|14
+"Charlwood","Charlwood Delight",delight,6,"",&-34-14-12-16.34-12.56,|(16)(14)(1456)
+"Taxal","Taxal Delight",delight,6,"",&-34-14-12-16.34-14.36,|(12)(14)(1234)
+"Humber","Humber Delight",delight,6,"",&-34-14-12-16.34-14.36,|(16)(14)(1456)
+"Tuxford","Tuxford Delight",delight,6,"",&-34-14-12-16.34-14.56,|14
+"Markham","Markham Delight",delight,6,"",&-34-14-12-16.34-14.56,|(16)(14)(1456)
+"Marple","Marple Delight",delight,6,"",&-34-14-12-16.34-34.16,|(12)(14)(1234)
+"Braintree","Braintree Delight",delight,6,"",&-34-14-12-16.34-34.16,|(16)(14)(1456)
+"Jozza","Jozza Delight",delight,6,"",&-34-14-12-16.34-34.36,|(12)(14)(1234)
+"Willesden","Willesden Delight",delight,6,"",&-34-14-12-16.34-34.56,|(12)(14)(1234)
+"Minster of the Moors","Minster of the Moors Delight",delight,6,"",&-34-14-12-16.34-34.56,|14
+"Wragby","Wragby Delight",delight,6,"",&-34-14-12-16.34-34.56,|(16)(14)(1456)
+"Zeals","Zeals Delight",delight,6,"",&-34-14-12-16.34.1234.12.56,|(12)(14)(1234)
+"Holly","Holly Delight",delight,6,"",&-34-14-12-16.34.1234.34.16,|(16)(14)(1456)
+"Sleepy","Sleepy Delight",delight,6,"",&-34-14-12-16.34.1234.34.56,|(12)(14)(1234)
+"Liana Jayne","Liana Jayne Delight",delight,6,"",&-34-14-12-16.34.1234.34.56,|(16)(14)(1456)
+"Ytterbium","Ytterbium Delight",delight,6,"",&-34-14-1256-16-12-56,|(12)(14)(1234)
+"Lutetium","Lutetium Delight",delight,6,"",&-34-14-1256-16-14-56,|(12)(14)(1234)
+"Mercury","Mercury Delight",delight,6,"",&-34-14-1256-16-34-56,|(12)(14)(1234)
+"Hydrargyrum","Hydrargyrum Delight",delight,6,"",&-34-14-1256-16.34-12.56,|(12)(14)(1234)
+"Hafnium","Hafnium Delight",delight,6,"",&-34-14-1256-16.34-14.36,|(12)(14)(1234)
+"Thallium","Thallium Delight",delight,6,"",&-34-14-1256-16.34-34.56,|(12)(14)(1234)
+"Mogford","Mogford Delight",delight,6,"",&-34-14-56-16-12-16,|(12)(14)(1234)
+"Sutton on the Hill","Sutton on the Hill Delight",delight,6,"",&-34-14-56-16-12-16,|14
+"Bishops'","Bishops' Delight",delight,6,"",&-34-14-56-16-12-36,|(16)(14)(1456)
+"Victor","Victor Delight",delight,6,"",&-34-14-56-16-12-56,|14
+"Halse","Halse Delight",delight,6,"",&-34-14-56-16-14-16,|(12)(14)(1234)
+"Bagborough","Bagborough Delight",delight,6,"",&-34-14-56-16-14-16,|(16)(14)(1456)
+"Seven Twenty","Seven Twenty Delight",delight,6,"",&-34-14-56-16-14-56,|(12)(14)(1234)
+"Red Rose","Red Rose Delight",delight,6,"",&-34-14-56-16-34-36,|(16)(14)(1456)
+"Hinckley","Hinckley Delight",delight,6,"",&-34-14-56-16-34-56,|14
+"Rievaulx","Rievaulx Delight",delight,6,"",&-34-14-56-16.34-12.36,|(16)(14)(1456)
+"St John's College","St John's College Delight",delight,6,"",&-34-14-56-16.34-12.56,|14
+"Hungover","Hungover Delight",delight,6,"",&-34-14-56-16.34-14.36,|(12)(14)(1234)
+"Hangover","Hangover Delight",delight,6,"",&-34-14-56-16.34-14.36,|(16)(14)(1456)
+"St Chad's College","St Chad's College Delight",delight,6,"",&-34-14-56-16.34-14.56,|(12)(14)(1234)
+"Lydiate","Lydiate Delight",delight,6,"",&-34-14-56-16.34-34.16,|(12)(14)(1234)
+"Anston Pleasure","Anston Pleasure Delight",delight,6,"",&-34-14-56-16.34-34.16,|(16)(14)(1456)
+"Cherry Red Peugeot","Cherry Red Peugeot Delight",delight,6,"",&-34-14-56-16.34-34.56,|14
+"Maryland","Maryland Delight",delight,6,"",&-34-14.12-12.16-12-16,|(12)(14)(1234)
+"Mears Ashby","Mears Ashby Delight",delight,6,"",&-34-14.12-12.16-34-36,|(16)(14)(1456)
+"Hanging Houghton","Hanging Houghton Delight",delight,6,"",&-34-14.12-12.16.12-14.56,|(12)(14)(1234)
+"Branston","Branston Delight",delight,6,"",&-34-14.1256.56-16.12-34.56,|(12)(14)(1234)
+"Joel Oliver","Joel Oliver Delight",delight,6,"",&-34-1456-12-16-12-16,|14
+"Accountancyisa","Accountancyisa Delight",delight,6,"",&-34-1456-12-16-12-36,|(12)(14)(1234)
+"Ringingwithoutanaccountantisa","Ringingwithoutanaccountantisa Delight",delight,6,"",&-34-1456-12-16-12-36,|(16)(14)(1456)
+"Pershore","Pershore Delight",delight,6,"",&-34-1456-12-16-12-56,|(12)(14)(1234)
+"Jezebel","Jezebel Delight",delight,6,"",&-34-1456-12-16-14-16,|(16)(14)(1456)
+"Markanmo","Markanmo Delight",delight,6,"",&-34-1456-12-16-14-36,|(12)(14)(1234)
+"McCartney","McCartney Delight",delight,6,"",&-34-1456-12-16-14-56,|(12)(14)(1234)
+"Colgan","Colgan Delight",delight,6,"",&-34-1456-12-16-34-36,|(16)(14)(1456)
+"Bredons Norton","Bredons Norton Delight",delight,6,"",&-34-1456-12-16-34-56,|(12)(14)(1234)
+"Laughton","Laughton Delight",delight,6,"",&-34-1456-12-16.34-12.56,|(12)(14)(1234)
+"Dolly the Dog","Dolly the Dog Delight",delight,6,"",&-34-1456-12-16.34-14.36,|(12)(14)(1234)
+"Muffin the Cat","Muffin the Cat Delight",delight,6,"",&-34-1456-12-16.34-14.36,|(16)(14)(1456)
+"Wind","Wind Delight",delight,6,"",&-34-1456-12-16.34-14.56,|14
+"Ichabod","Ichabod Delight",delight,6,"",&-34-1456-12-16.34-34.16,|(12)(14)(1234)
+"Zedekiah","Zedekiah Delight",delight,6,"",&-34-1456-12-16.34-34.16,|(16)(14)(1456)
+"Pevensey Bay","Pevensey Bay Delight",delight,6,"",&-34-1456-12-16.34-34.56,|(12)(14)(1234)
+"Mendelevium","Mendelevium Delight",delight,6,"",&-34-1456-1256-16-12-56,|(12)(14)(1234)
+"Nobelium","Nobelium Delight",delight,6,"",&-34-1456-1256-16-14-56,|(12)(14)(1234)
+"Lawrencium","Lawrencium Delight",delight,6,"",&-34-1456-1256-16-34-56,|(12)(14)(1234)
+"Kurchatovium","Kurchatovium Delight",delight,6,"",&-34-1456-1256-16.34-12.56,|(12)(14)(1234)
+"Rutherfordium","Rutherfordium Delight",delight,6,"",&-34-1456-1256-16.34-14.56,|(16)(14)(1456)
+"Hahnium","Hahnium Delight",delight,6,"",&-34-1456-1256-16.34-34.56,|(12)(14)(1234)
+"Buckland Brewer","Buckland Brewer Delight",delight,6,"",&-34-1456-56-16-12-16,|(12)(14)(1234)
+"Flop-a-long","Flop-a-long Delight",delight,6,"",&-34-1456-56-16-12-16,|(16)(14)(1456)
+"Iodine","Iodine Delight",delight,6,"",&-34-1456-56-16-12-56,|14
+"Welford","Welford Delight",delight,6,"",&-34-1456-56-16-12-56,|(16)(14)(1456)
+"St Barbara's","St Barbara's Delight",delight,6,"",&-34-1456-56-16-14-16,|(12)(14)(1234)
+"Withington","Withington Delight",delight,6,"",&-34-1456-56-16-14-56,|(12)(14)(1234)
+"Nankervis","Nankervis Delight",delight,6,"",&-34-1456-56-16-34-36,|(16)(14)(1456)
+"Magnesium","Magnesium Delight",delight,6,"",&-34-1456-56-16-34-56,|14
+"Quinton","Quinton Delight",delight,6,"",&-34-1456-56-16-34-56,|(16)(14)(1456)
+"St Julia's Hospice","St Julia's Hospice Delight",delight,6,"",&-34-1456-56-16.34-12.36,|(16)(14)(1456)
+"Xenon","Xenon Delight",delight,6,"",&-34-1456-56-16.34-12.56,|14
+"Clifford Chambers","Clifford Chambers Delight",delight,6,"",&-34-1456-56-16.34-12.56,|(16)(14)(1456)
+"Batten's","Batten's Delight",delight,6,"",&-34-1456-56-16.34-14.36,|(12)(14)(1234)
+"Sir Francis Drake's St Budeaux","Sir Francis Drake's St Budeaux Delight",delight,6,"",&-34-1456-56-16.34-14.56,|(12)(14)(1234)
+"Bozeat","Bozeat Delight",delight,6,"",&-34-1456-56-16.34-34.16,|(12)(14)(1234)
+"Caesium","Caesium Delight",delight,6,"",&-34-1456-56-16.34-34.56,|14
+"Childswickham","Childswickham Delight",delight,6,"",&-34-1456-56-16.34-34.56,|(16)(14)(1456)
+"HMS Illustrious","HMS Illustrious Delight",delight,6,"",&-34-16-12-1236-12-16,|14
+"Hoar Cross","Hoar Cross Delight",delight,6,"",&-34-16-12-1236-12-16,|(16)(14)(1456)
+"Holme Pierrepont","Holme Pierrepont Delight",delight,6,"",&-34-16-12-1236-12-36,|(12)(14)(1234)
+"Fulmer","Fulmer Delight",delight,6,"",&-34-16-12-1236-14-16,|(12)(14)(1234)
+"Cadoxton","Cadoxton Delight",delight,6,"",&-34-16-12-1236-14-16,|(16)(14)(1456)
+"Tirley","Tirley Delight",delight,6,"",&-34-16-12-1236-14-36,|(12)(14)(1234)
+"HMS Dauntless","HMS Dauntless Delight",delight,6,"",&-34-16-12-1236-14-36,|14
+"Finchampstead","Finchampstead Delight",delight,6,"",&-34-16-12-1236-14-56,|(12)(14)(1234)
+"Neath","Neath Delight",delight,6,"",&-34-16-12-1236-14-56,|(16)(14)(1456)
+"Dukeries","Dukeries Delight",delight,6,"",&-34-16-12-1236-34-16,|(12)(14)(1234)
+"HMS Diamond","HMS Diamond Delight",delight,6,"",&-34-16-12-1236-34-16,|14
+"Shelford","Shelford Delight",delight,6,"",&-34-16-12-1236-34-36,|(12)(14)(1234)
+"Jolly","Jolly Delight",delight,6,"",&-34-16-12-1236.34-14.36,|(16)(14)(1456)
+"Evening Star","Evening Star Delight",delight,6,"",&-34-16-12-36-12-16,|(12)(14)(1234)
+"Coventry","Coventry Delight",delight,6,"",&-34-16-12-36-12-16,|(16)(14)(1456)
+"London","London Delight",delight,6,"",&-34-16-12-36-12-36,|(12)(14)(1234)
+"New Mill","New Mill Delight",delight,6,"",&-34-16-12-36-14-16,|14
+"Francis Goodwill","Francis Goodwill Delight",delight,6,"",&-34-16-12-36-14-16,|(16)(14)(1456)
+"College","College Delight",delight,6,"",&-34-16-12-36-14-36,|14
+"Darton Exercise","Darton Exercise Delight",delight,6,"",&-34-16-12-36-14-56,|(12)(14)(1234)
+"Morning Exercise","Morning Exercise Delight",delight,6,"",&-34-16-12-36-14-56,|(16)(14)(1456)
+"Anston","Anston Delight",delight,6,"",&-34-16-12-36-34-16,|14
+"Disley","Disley Delight",delight,6,"",&-34-16-12-36-34-36,|(12)(14)(1234)
+"Hadfield","Hadfield Delight",delight,6,"",&-34-16-12-36.12-12.36,|(12)(14)(1234)
+"Houghton","Houghton Delight",delight,6,"",&-34-16-12-36.12-14.36,|(12)(14)(1234)
+"Clayton","Clayton Delight",delight,6,"",&-34-16-12-36.12-14.36,|14
+"Conisborough","Conisborough Delight",delight,6,"",&-34-16-12-36.12-14.56,|(12)(14)(1234)
+"Richborough","Richborough Delight",delight,6,"",&-34-16-12-36.12-14.56,|(16)(14)(1456)
+"Spion Kop","Spion Kop Delight",delight,6,"",&-34-16-12-36.12-34.16,|(12)(14)(1234)
+"Rishton","Rishton Delight",delight,6,"",&-34-16-12-36.12-34.16,|14
+"Europium","Europium Delight",delight,6,"",&-34-16-12-36.12-34.36,|(12)(14)(1234)
+"Coronation","Coronation Delight",delight,6,"",&-34-16-12-36.14-12.36,|14
+"Staverton","Staverton Delight",delight,6,"",&-34-16-12-36.14-12.56,|(12)(14)(1234)
+"Blythe","Blythe Delight",delight,6,"",&-34-16-12-36.14-12.56,|(16)(14)(1456)
+"Worcester","Worcester Delight",delight,6,"",&-34-16-12-36.14-14.36,|(16)(14)(1456)
+"Chichester","Chichester Delight",delight,6,"",&-34-16-12-36.14-34.16,|(16)(14)(1456)
+"Nostell","Nostell Delight",delight,6,"",&-34-16-12-36.14-34.56,|(12)(14)(1234)
+"Pilsey","Pilsey Delight",delight,6,"",&-34-16-12-36.14-34.56,|(16)(14)(1456)
+"Lead","Lead Delight",delight,6,"",&-34-16-1256-1236-12-56,|(12)(14)(1234)
+"Dubnium","Dubnium Delight",delight,6,"",&-34-16-1256-1236-14-56,|14
+"Plumbum","Plumbum Delight",delight,6,"",&-34-16-1256-1236-34-56,|(12)(14)(1234)
+"Seaborgium","Seaborgium Delight",delight,6,"",&-34-16-1256-36-12-56,|(12)(14)(1234)
+"Nielsbohrium","Nielsbohrium Delight",delight,6,"",&-34-16-1256-36-14-56,|14
+"Bohrium","Bohrium Delight",delight,6,"",&-34-16-1256-36-34-56,|(12)(14)(1234)
+"Hassium","Hassium Delight",delight,6,"",&-34-16-1256-36.12-12.56,|(12)(14)(1234)
+"Meitnerium","Meitnerium Delight",delight,6,"",&-34-16-1256-36.12-14.56,|14
+"Darmstadtium","Darmstadtium Delight",delight,6,"",&-34-16-1256-36.12-34.56,|(12)(14)(1234)
+"Bismuth","Bismuth Delight",delight,6,"",&-34-16-1256-36.14-12.56,|14
+"Roentgenium","Roentgenium Delight",delight,6,"",&-34-16-1256-36.14-14.56,|(12)(14)(1234)
+"Glucinium","Glucinium Delight",delight,6,"",&-34-16-1256-36.14-34.56,|14
+"Queen Athaliah","Queen Athaliah Delight",delight,6,"",&-34-16-56-1236-12-16,|(16)(14)(1456)
+"Linby","Linby Delight",delight,6,"",&-34-16-56-1236-12-56,|(12)(14)(1234)
+"Dodleston","Dodleston Delight",delight,6,"",&-34-16-56-1236-14-16,|(12)(14)(1234)
+"Arlington","Arlington Delight",delight,6,"",&-34-16-56-1236-14-16,|(16)(14)(1456)
+"Combeinteignhead","Combeinteignhead Delight",delight,6,"",&-34-16-56-1236-14-36,|(12)(14)(1234)
+"Send","Send Delight",delight,6,"",&-34-16-56-1236-14-56,|(12)(14)(1234)
+"Uzzah","Uzzah Delight",delight,6,"",&-34-16-56-1236-14-56,|(16)(14)(1456)
+"Liquorice Allsorts","Liquorice Allsorts Delight",delight,6,"",&-34-16-56-1236-34-16,|14
+"Chailey","Chailey Delight",delight,6,"",&-34-16-56-1236-34-36,|(12)(14)(1234)
+"Brinsley","Brinsley Delight",delight,6,"",&-34-16-56-1236-34-56,|(12)(14)(1234)
+"Youths' Exercise","Youths' Exercise Delight",delight,6,"",&-34-16-56-36-12-16,|(16)(14)(1456)
+"Newstead","Newstead Delight",delight,6,"",&-34-16-56-36-12-56,|(12)(14)(1234)
+"Evans","Evans Delight",delight,6,"",&-34-16-56-36-14-16,|(12)(14)(1234)
+"Paul","Paul Delight",delight,6,"",&-34-16-56-36-14-16,|(16)(14)(1456)
+"Prince of Wales","Prince of Wales Delight",delight,6,"",&-34-16-56-36-14-36,|14
+"Titanium","Titanium Delight",delight,6,"",&-34-16-56-36-14-56,|14
+"Burghclere","Burghclere Delight",delight,6,"",&-34-16-56-36-14-56,|(16)(14)(1456)
+"Booker","Booker Delight",delight,6,"",&-34-16-56-36-34-16,|(12)(14)(1234)
+"Minster Bob","Minster Bob Delight",delight,6,"",&-34-16-56-36-34-36,|(12)(14)(1234)
+"Blidworth","Blidworth Delight",delight,6,"",&-34-16-56-36-34-56,|(12)(14)(1234)
+"Clipston","Clipston Delight",delight,6,"",&-34-16-56-36.12-12.56,|(12)(14)(1234)
+"Harlestone","Harlestone Delight",delight,6,"",&-34-16-56-36.12-14.56,|(12)(14)(1234)
+"Australia Day","Australia Day Delight",delight,6,"",&-34-16-56-36.12-14.56,|(16)(14)(1456)
+"Holbeck","Holbeck Delight",delight,6,"",&-34-16-56-36.12-34.56,|(12)(14)(1234)
+"Vanadium","Vanadium Delight",delight,6,"",&-34-16-56-36.14-12.56,|14
+"Combe Florey","Combe Florey Delight",delight,6,"",&-34-16-56-36.14-12.56,|(16)(14)(1456)
+"Ashted","Ashted Delight",delight,6,"",&-34-16-56-36.14-14.56,|(12)(14)(1234)
+"Chromium","Chromium Delight",delight,6,"",&-34-16-56-36.14-34.56,|14
+"Cothelstone","Cothelstone Delight",delight,6,"",&-34-16-56-36.14-34.56,|(16)(14)(1456)
+"Duke of York","Duke of York Delight",delight,6,"",&-36-14-12-16-12-16,|14
+"Elston","Elston Delight",delight,6,"",&-36-14-12-16-12-36,|(12)(14)(1234)
+"Evening Exercise","Evening Exercise Delight",delight,6,"",&-36-14-12-16-12-36,|14
+"Clarence","Clarence Delight",delight,6,"",&-36-14-12-16-12-36,|(16)(14)(1456)
+"York","York Delight",delight,6,"",&-36-14-12-16-12-56,|(16)(14)(1456)
+"Sprotborough","Sprotborough Delight",delight,6,"",&-36-14-12-16-14-16,|(12)(14)(1234)
+"Burnaby","Burnaby Delight",delight,6,"",&-36-14-12-16-14-36,|(12)(14)(1234)
+"Berrybrow","Berrybrow Delight",delight,6,"",&-36-14-12-16-14-56,|(12)(14)(1234)
+"Lockwood","Lockwood Delight",delight,6,"",&-36-14-12-16-14-56,|14
+"Kirkstall","Kirkstall Delight",delight,6,"",&-36-14-12-16-34-16,|(12)(14)(1234)
+"London Victory","London Victory Delight",delight,6,"",&-36-14-12-16-34-16,|(16)(14)(1456)
+"Stanhope","Stanhope Delight",delight,6,"",&-36-14-12-16-34-36,|(12)(14)(1234)
+"City","City Delight",delight,6,"",&-36-14-12-16-34-36,|14
+"Queen Bess","Queen Bess Delight",delight,6,"",&-36-14-12-16-34-56,|(16)(14)(1456)
+"Carfax","Carfax Delight",delight,6,"",&-36-14-12-16-34.1234.56,|(16)(14)(1456)
+"TR Williams Stereo","TR Williams Stereo Delight",delight,6,"",&-36-14-12-16.12-12.36,|(12)(14)(1234)
+"Katerina","Katerina Delight",delight,6,"",&-36-14-12-16.12-14.16,|(12)(14)(1234)
+"Brimmer","Brimmer Delight",delight,6,"",&-36-14-12-16.12-14.56,|(12)(14)(1234)
+"Barrowden","Barrowden Delight",delight,6,"",&-36-14-12-16.12-14.56,|(16)(14)(1456)
+"All Fools","All Fools Delight",delight,6,"",&-36-14-12-16.34-12.36,|(12)(14)(1234)
+"HMS Edinburgh","HMS Edinburgh Delight",delight,6,"",&-36-14-12-16.34-12.36,|14
+"Eyam","Eyam Delight",delight,6,"",&-36-14-12-16.34-12.56,|(16)(14)(1456)
+"Kimberworth","Kimberworth Delight",delight,6,"",&-36-14-12-16.34-14.36,|(12)(14)(1234)
+"Scholes","Scholes Delight",delight,6,"",&-36-14-12-16.34-14.36,|(16)(14)(1456)
+"Burslem","Burslem Delight",delight,6,"",&-36-14-12-16.34-14.56,|(12)(14)(1234)
+"Shelley","Shelley Delight",delight,6,"",&-36-14-12-16.34-14.56,|14
+"Waltham","Waltham Delight",delight,6,"",&-36-14-12-16.34-14.56,|(16)(14)(1456)
+"Midhope","Midhope Delight",delight,6,"",&-36-14-12-16.34-34.16,|(12)(14)(1234)
+"Flouch","Flouch Delight",delight,6,"",&-36-14-12-16.34-34.16,|(16)(14)(1456)
+"AC/DC","AC/DC Delight",delight,6,"",&-36-14-12-16.34-34.36,|(12)(14)(1234)
+"Holden","Holden Delight",delight,6,"",&-36-14-12-16.34-34.36,|(16)(14)(1456)
+"Hoylandswaine","Hoylandswaine Delight",delight,6,"",&-36-14-12-16.34-34.56,|(16)(14)(1456)
+"Church Lawford","Church Lawford Delight",delight,6,"",&-36-14-12-16.34.1234.14.56,|(12)(14)(1234)
+"King's Newnham","King's Newnham Delight",delight,6,"",&-36-14-12-16.34.1234.14.56,|(16)(14)(1456)
+"Unnilunium","Unnilunium Delight",delight,6,"",&-36-14-1256-16-12-56,|14
+"Unnilbium","Unnilbium Delight",delight,6,"",&-36-14-1256-16-14-56,|14
+"Polonium","Polonium Delight",delight,6,"",&-36-14-1256-16-34-56,|14
+"Astatine","Astatine Delight",delight,6,"",&-36-14-1256-16.34-12.56,|14
+"Unniltrium","Unniltrium Delight",delight,6,"",&-36-14-1256-16.34-14.56,|(12)(14)(1234)
+"Radon","Radon Delight",delight,6,"",&-36-14-1256-16.34-34.56,|14
+"Verity and Stuart's Wedding","Verity and Stuart's Wedding Delight",delight,6,"",&-36-14-56-16-12-16,|14
+"Ombersley","Ombersley Delight",delight,6,"",&-36-14-56-16-12-36,|(12)(14)(1234)
+"Gillian's","Gillian's Delight",delight,6,"",&-36-14-56-16-12-36,|14
+"Morning","Morning Delight",delight,6,"",&-36-14-56-16-12-36,|(16)(14)(1456)
+"Blaisdon","Blaisdon Delight",delight,6,"",&-36-14-56-16-12-56,|(12)(14)(1234)
+"Ringers' Victory","Ringers' Victory Delight",delight,6,"",&-36-14-56-16-14-16,|(16)(14)(1456)
+"Dale Abbey","Dale Abbey Delight",delight,6,"",&-36-14-56-16-14-36,|(16)(14)(1456)
+"Brothwell's","Brothwell's Delight",delight,6,"",&-36-14-56-16-14-56,|14
+"Richard and Lesley's Anniversary","Richard and Lesley's Anniversary Delight",delight,6,"",&-36-14-56-16-14-56,|(16)(14)(1456)
+"Maisemore","Maisemore Delight",delight,6,"",&-36-14-56-16-34-16,|(12)(14)(1234)
+"Cheapside Bob","Cheapside Bob Delight",delight,6,"",&-36-14-56-16-34-16,|(16)(14)(1456)
+"Navigators'","Navigators' Delight",delight,6,"",&-36-14-56-16-34-36,|(16)(14)(1456)
+"Longhope","Longhope Delight",delight,6,"",&-36-14-56-16-34-56,|(12)(14)(1234)
+"Littledean","Littledean Delight",delight,6,"",&-36-14-56-16.34-12.56,|(12)(14)(1234)
+"Dwyle Flonking","Dwyle Flonking Delight",delight,6,"",&-36-14-56-16.34-14.36,|(12)(14)(1234)
+"Friday Evening","Friday Evening Delight",delight,6,"",&-36-14-56-16.34-14.56,|(12)(14)(1234)
+"Townsend","Townsend Delight",delight,6,"",&-36-14-56-16.34-14.56,|(16)(14)(1456)
+"Fleming","Fleming Delight",delight,6,"",&-36-14-56-16.34-34.16,|(12)(14)(1234)
+"Huntley","Huntley Delight",delight,6,"",&-36-14-56-16.34-34.56,|(12)(14)(1234)
+"Piddington","Piddington Delight",delight,6,"",&-36-14-56-16.34.1234.14.56,|(12)(14)(1234)
+"Yelvertoft","Yelvertoft Delight",delight,6,"",&-36-14.12-12.16-12-16,|(12)(14)(1234)
+"Mys Whevrer","Mys Whevrer Delight",delight,6,"",&-36-14.12-12.16-12-56,|(12)(14)(1234)
+"Mys Metheven","Mys Metheven Delight",delight,6,"",&-36-14.12-12.16-12.1234.56,|(12)(14)(1234)
+"Drogo Castle","Drogo Castle Delight",delight,6,"",&-36-14.12-12.16-14-16,|(12)(14)(1234)
+"Exeter International Airport","Exeter International Airport Delight",delight,6,"",&-36-14.12-12.16-34-16,|(12)(14)(1234)
+"Mys Genver","Mys Genver Delight",delight,6,"",&-36-14.12-12.16-34-56,|(12)(14)(1234)
+"Mys Me","Mys Me Delight",delight,6,"",&-36-14.12-12.16-34.1234.56,|(12)(14)(1234)
+"Mys Gortheren","Mys Gortheren Delight",delight,6,"",&-36-14.12-12.16.12-12.56,|(12)(14)(1234)
+"Mys Est","Mys Est Delight",delight,6,"",&-36-14.12-12.16.12-34.56,|(12)(14)(1234)
+"East Carlton","East Carlton Delight",delight,6,"",&-36-14.12-12.16.1234.34-16,|(12)(14)(1234)
+"Junction 15A","Junction 15A Delight",delight,6,"",&-36-14.12-12.16.1234.34-56,|(12)(14)(1234)
+"Mys Gwyngala","Mys Gwyngala Delight",delight,6,"",&-36-14.12-12.16.1234.34.1234.56,|(12)(14)(1234)
+"Ringstead","Ringstead Delight",delight,6,"",&-36-14.12-12.16.14-14.56,|(12)(14)(1234)
+"Mys Ebrel","Mys Ebrel Delight",delight,6,"",&-36-14.12-12.16.34-12.56,|(12)(14)(1234)
+"Pipesmoke","Pipesmoke Delight",delight,6,"",&-36-14.12-12.16.34-14.16,|(12)(14)(1234)
+"Mys Merth","Mys Merth Delight",delight,6,"",&-36-14.12-12.16.34-34.56,|(12)(14)(1234)
+"Pitsford","Pitsford Delight",delight,6,"",&-36-14.12-12.16.34-34.56,|(16)(14)(1456)
+"Lucas","Lucas Delight",delight,6,"",&-36-14.12-12.16.34.1234.12.56,|(12)(14)(1234)
+"Upper Boddington","Upper Boddington Delight",delight,6,"",&-36-14.56-56.16-34-56,|(12)(14)(1234)
+"Croxden","Croxden Delight",delight,6,"",&-36-1456-12-16-12-16,|(16)(14)(1456)
+"Cherry-Garrard","Cherry-Garrard Delight",delight,6,"",&-36-1456-12-16-12-36,|(16)(14)(1456)
+"Antarctica","Antarctica Delight",delight,6,"",&-36-1456-12-16-12-56,|(12)(14)(1234)
+"Amber Louise","Amber Louise Delight",delight,6,"",&-36-1456-12-16-12-56,|(16)(14)(1456)
+"Hamlet","Hamlet Delight",delight,6,"",&-36-1456-12-16-14-16,|(12)(14)(1234)
+"Montgomery","Montgomery Delight",delight,6,"",&-36-1456-12-16-14-16,|(16)(14)(1456)
+"Nitrogen","Nitrogen Delight",delight,6,"",&-36-1456-12-16-14-56,|14
+"Big Ben","Big Ben Delight",delight,6,"",&-36-1456-12-16-14-56,|(16)(14)(1456)
+"Nettleton","Nettleton Delight",delight,6,"",&-36-1456-12-16-34-16,|(12)(14)(1234)
+"Yule","Yule Delight",delight,6,"",&-36-1456-12-16-34-16,|(16)(14)(1456)
+"Sutton Place","Sutton Place Delight",delight,6,"",&-36-1456-12-16-34-36,|(12)(14)(1234)
+"Oxford","Oxford Delight",delight,6,"",&-36-1456-12-16-34-56,|(12)(14)(1234)
+"Ivel","Ivel Delight",delight,6,"",&-36-1456-12-16-34-56,|(16)(14)(1456)
+"Mash's Ruby","Mash's Ruby Delight",delight,6,"",&-36-1456-12-16.34-12.36,|(12)(14)(1234)
+"Hammerwood","Hammerwood Delight",delight,6,"",&-36-1456-12-16.34-12.56,|(12)(14)(1234)
+"Jenny Wren","Jenny Wren Delight",delight,6,"",&-36-1456-12-16.34-12.56,|(16)(14)(1456)
+"Hydrangea","Hydrangea Delight",delight,6,"",&-36-1456-12-16.34-14.16,|(16)(14)(1456)
+"Hydrogen","Hydrogen Delight",delight,6,"",&-36-1456-12-16.34-14.56,|(12)(14)(1234)
+"Fancy","Fancy Delight",delight,6,"",&-36-1456-12-16.34-34.56,|(12)(14)(1234)
+"Scott","Scott Delight",delight,6,"",&-36-1456-12-16.34-34.56,|(16)(14)(1456)
+"Tantalum","Tantalum Delight",delight,6,"",&-36-1456-1256-16-12-56,|(16)(14)(1456)
+"Tungsten","Tungsten Delight",delight,6,"",&-36-1456-1256-16-14-56,|(12)(14)(1234)
+"Unnilquadium","Unnilquadium Delight",delight,6,"",&-36-1456-1256-16-34-56,|(16)(14)(1456)
+"Unnilpentium","Unnilpentium Delight",delight,6,"",&-36-1456-1256-16.34-12.56,|(16)(14)(1456)
+"Wolfram","Wolfram Delight",delight,6,"",&-36-1456-1256-16.34-14.56,|14
+"Unnilhexium","Unnilhexium Delight",delight,6,"",&-36-1456-1256-16.34-34.56,|(16)(14)(1456)
+"Swynnerton","Swynnerton Delight",delight,6,"",&-36-1456-56-16-12-16,|(12)(14)(1234)
+"Dengie","Dengie Delight",delight,6,"",&-36-1456-56-16-12-36,|(12)(14)(1234)
+"College Green","College Green Delight",delight,6,"",&-36-1456-56-16-12-56,|(12)(14)(1234)
+"Offenham","Offenham Delight",delight,6,"",&-36-1456-56-16-12-56,|(16)(14)(1456)
+"Beer","Beer Delight",delight,6,"",&-36-1456-56-16-12.1234.56,|(12)(14)(1234)
+"Ensor","Ensor Delight",delight,6,"",&-36-1456-56-16-14-16,|(12)(14)(1234)
+"Bingley","Bingley Delight",delight,6,"",&-36-1456-56-16-14-16,|(16)(14)(1456)
+"Esbester","Esbester Delight",delight,6,"",&-36-1456-56-16-14-56,|(12)(14)(1234)
+"Lady Charlotte","Lady Charlotte Delight",delight,6,"",&-36-1456-56-16-34-16,|(12)(14)(1234)
+"Captain Clark","Captain Clark Delight",delight,6,"",&-36-1456-56-16-34-16,|(16)(14)(1456)
+"Turnon","Turnon Delight",delight,6,"",&-36-1456-56-16-34-56,|(12)(14)(1234)
+"Cleeve Prior","Cleeve Prior Delight",delight,6,"",&-36-1456-56-16-34-56,|(16)(14)(1456)
+"Mys Hedra","Mys Hedra Delight",delight,6,"",&-36-1456-56-16-34.1234.56,|(12)(14)(1234)
+"Day","Day Delight",delight,6,"",&-36-1456-56-16.12-12.56,|(12)(14)(1234)
+"Quatt","Quatt Delight",delight,6,"",&-36-1456-56-16.12-34.56,|(12)(14)(1234)
+"Overstone","Overstone Delight",delight,6,"",&-36-1456-56-16.12.1234.34.56,|(12)(14)(1234)
+"Greczko","Greczko Delight",delight,6,"",&-36-1456-56-16.1234.12-56,|(12)(14)(1234)
+"Mys Kevardhu","Mys Kevardhu Delight",delight,6,"",&-36-1456-56-16.1234.34.1234.56,|(12)(14)(1234)
+"Bethersden","Bethersden Delight",delight,6,"",&-36-1456-56-16.14-12.56,|(12)(14)(1234)
+"Smarden","Smarden Delight",delight,6,"",&-36-1456-56-16.14-34.56,|(12)(14)(1234)
+"Turkish","Turkish Delight",delight,6,"",&-36-1456-56-16.34-12.56,|(12)(14)(1234)
+"Littleton","Littleton Delight",delight,6,"",&-36-1456-56-16.34-12.56,|(16)(14)(1456)
+"Aluminium","Aluminium Delight",delight,6,"",&-36-1456-56-16.34-14.56,|(16)(14)(1456)
+"Cabot","Cabot Delight",delight,6,"",&-36-1456-56-16.34-34.56,|(12)(14)(1234)
+"Cropthorne","Cropthorne Delight",delight,6,"",&-36-1456-56-16.34-34.56,|(16)(14)(1456)
+"Soixante","Soixante Delight",delight,6,"",&-36-1456-56-16.34.1234.12.56,|(12)(14)(1234)
+"Mys Du","Mys Du Delight",delight,6,"",&-36-1456-56-16.34.1234.34.56,|(12)(14)(1234)
+"Shepheard-Walwyn","Shepheard-Walwyn Delight",delight,6,"",&-36-16-12-1236-12-16,|14
+"Orston","Orston Delight",delight,6,"",&-36-16-12-1236-12-36,|(12)(14)(1234)
+"HMS Liverpool","HMS Liverpool Delight",delight,6,"",&-36-16-12-1236-12-36,|14
+"Stisted","Stisted Delight",delight,6,"",&-36-16-12-1236-12-56,|(12)(14)(1234)
+"Danbury","Danbury Delight",delight,6,"",&-36-16-12-1236-12-56,|(16)(14)(1456)
+"Kempsey","Kempsey Delight",delight,6,"",&-36-16-12-1236-14-16,|(16)(14)(1456)
+"Cogenhoe","Cogenhoe Delight",delight,6,"",&-36-16-12-1236-14-36,|(12)(14)(1234)
+"Pattishall","Pattishall Delight",delight,6,"",&-36-16-12-1236-14-36,|(16)(14)(1456)
+"Earls Croome","Earls Croome Delight",delight,6,"",&-36-16-12-1236-14-56,|(12)(14)(1234)
+"Hanley Castle","Hanley Castle Delight",delight,6,"",&-36-16-12-1236-14-56,|(16)(14)(1456)
+"Morton","Morton Delight",delight,6,"",&-36-16-12-1236-34-16,|14
+"HMS York","HMS York Delight",delight,6,"",&-36-16-12-1236-34-36,|14
+"Hanley Swan","Hanley Swan Delight",delight,6,"",&-36-16-12-1236-34-36,|(16)(14)(1456)
+"Pebmarsh","Pebmarsh Delight",delight,6,"",&-36-16-12-1236-34-56,|(12)(14)(1234)
+"Hatherop","Hatherop Delight",delight,6,"",&-36-16-12-1236-34-56,|(16)(14)(1456)
+"Ely","Ely Delight",delight,6,"",&-36-16-12-36-12-16,|(12)(14)(1234)
+"Whatton-in-the-Vale","Whatton-in-the-Vale Delight",delight,6,"",&-36-16-12-36-12-36,|(12)(14)(1234)
+"Darfield Pleasure","Darfield Pleasure Delight",delight,6,"",&-36-16-12-36-12-36,|14
+"Wilmslow","Wilmslow Delight",delight,6,"",&-36-16-12-36-12-56,|(12)(14)(1234)
+"Balmoral","Balmoral Delight",delight,6,"",&-36-16-12-36-12-56,|(16)(14)(1456)
+"Francis Genius","Francis Genius Delight",delight,6,"",&-36-16-12-36-14-16,|(12)(14)(1234)
+"Darfield Exercise","Darfield Exercise Delight",delight,6,"",&-36-16-12-36-14-16,|14
+"Cambridge","Cambridge Delight",delight,6,"",&-36-16-12-36-14-16,|(16)(14)(1456)
+"Tulip","Tulip Delight",delight,6,"",&-36-16-12-36-14-36,|(12)(14)(1234)
+"Dover","Dover Delight",delight,6,"",&-36-16-12-36-34-16,|(16)(14)(1456)
+"Luda","Luda Delight",delight,6,"",&-36-16-12-36-34-36,|14
+"Walsh's","Walsh's Delight",delight,6,"",&-36-16-12-36-34-36,|(16)(14)(1456)
+"Bogedone","Bogedone Delight",delight,6,"",&-36-16-12-36-34-56,|(12)(14)(1234)
+"Fotheringay","Fotheringay Delight",delight,6,"",&-36-16-12-36-34-56,|(16)(14)(1456)
+"Strines","Strines Delight",delight,6,"",&-36-16-12-36.12-12.36,|(12)(14)(1234)
+"Dinting","Dinting Delight",delight,6,"",&-36-16-12-36.12-12.36,|14
+"Rostherne","Rostherne Delight",delight,6,"",&-36-16-12-36.12-12.56,|(12)(14)(1234)
+"Chepstow","Chepstow Delight",delight,6,"",&-36-16-12-36.12-12.56,|(16)(14)(1456)
+"Plevnor","Plevnor Delight",delight,6,"",&-36-16-12-36.12-14.36,|14
+"Poynton","Poynton Delight",delight,6,"",&-36-16-12-36.12-14.56,|(12)(14)(1234)
+"Strathmoor","Strathmoor Delight",delight,6,"",&-36-16-12-36.12-14.56,|(16)(14)(1456)
+"New Wath","New Wath Delight",delight,6,"",&-36-16-12-36.12-34.16,|14
+"Knutsford","Knutsford Delight",delight,6,"",&-36-16-12-36.12-34.56,|(12)(14)(1234)
+"Skipton","Skipton Delight",delight,6,"",&-36-16-12-36.12-34.56,|(16)(14)(1456)
+"Belvoir","Belvoir Delight",delight,6,"",&-36-16-12-36.14-12.36,|(16)(14)(1456)
+"Bristol","Bristol Delight",delight,6,"",&-36-16-12-36.14-14.36,|(12)(14)(1234)
+"Enderby","Enderby Delight",delight,6,"",&-36-16-12-36.14-14.36,|14
+"Dunedin","Dunedin Delight",delight,6,"",&-36-16-12-36.14-14.56,|(12)(14)(1234)
+"Pevensey","Pevensey Delight",delight,6,"",&-36-16-12-36.14-14.56,|(16)(14)(1456)
+"Lichfield","Lichfield Delight",delight,6,"",&-36-16-12-36.14-34.16,|(12)(14)(1234)
+"Gamston","Gamston Delight",delight,6,"",&-36-16-12-36.14-34.16,|14
+"Erbium","Erbium Delight",delight,6,"",&-36-16-12-36.14-34.36,|(16)(14)(1456)
+"Unnilseptium","Unnilseptium Delight",delight,6,"",&-36-16-1256-1236-12-56,|(12)(14)(1234)
+"Rhenium","Rhenium Delight",delight,6,"",&-36-16-1256-1236-14-56,|(12)(14)(1234)
+"Unniloctium","Unniloctium Delight",delight,6,"",&-36-16-1256-1236-34-56,|(12)(14)(1234)
+"Osmium","Osmium Delight",delight,6,"",&-36-16-1256-36-12-56,|(12)(14)(1234)
+"Unnilnovium","Unnilnovium Delight",delight,6,"",&-36-16-1256-36-14-36,|(12)(14)(1234)
+"Ununnilium","Ununnilium Delight",delight,6,"",&-36-16-1256-36-34-56,|(12)(14)(1234)
+"Unununium","Unununium Delight",delight,6,"",&-36-16-1256-36.12-12.56,|(12)(14)(1234)
+"Iridium","Iridium Delight",delight,6,"",&-36-16-1256-36.12-14.56,|(12)(14)(1234)
+"Ununbium","Ununbium Delight",delight,6,"",&-36-16-1256-36.12-34.56,|(12)(14)(1234)
+"Ununtrium","Ununtrium Delight",delight,6,"",&-36-16-1256-36.14-12.36,|(16)(14)(1456)
+"Ununquadium","Ununquadium Delight",delight,6,"",&-36-16-1256-36.14-14.56,|(12)(14)(1234)
+"Platinum","Platinum Delight",delight,6,"",&-36-16-1256-36.14-34.16,|(12)(14)(1234)
+"Morwenstow","Morwenstow Delight",delight,6,"",&-36-16-56-1236-12-16,|(12)(14)(1234)
+"Kersall","Kersall Delight",delight,6,"",&-36-16-56-1236-12-36,|(12)(14)(1234)
+"Oxton","Oxton Delight",delight,6,"",&-36-16-56-1236-12-36,|(16)(14)(1456)
+"Boughton","Boughton Delight",delight,6,"",&-36-16-56-1236-12-56,|(12)(14)(1234)
+"Frampton Cotterell","Frampton Cotterell Delight",delight,6,"",&-36-16-56-1236-14-16,|(12)(14)(1234)
+"Dyrham","Dyrham Delight",delight,6,"",&-36-16-56-1236-14-16,|(16)(14)(1456)
+"Monkberry Moon","Monkberry Moon Delight",delight,6,"",&-36-16-56-1236-14-36,|(12)(14)(1234)
+"Yelnow","Yelnow Delight",delight,6,"",&-36-16-56-1236-14-36,|(16)(14)(1456)
+"Manganese","Manganese Delight",delight,6,"",&-36-16-56-1236-14-56,|(16)(14)(1456)
+"Bolingbroke","Bolingbroke Delight",delight,6,"",&-36-16-56-1236-34-16,|(16)(14)(1456)
+"Hollybush","Hollybush Delight",delight,6,"",&-36-16-56-1236-34-36,|(16)(14)(1456)
+"Ollerton","Ollerton Delight",delight,6,"",&-36-16-56-1236-34-56,|(12)(14)(1234)
+"Ringing at Bene't's is a","Ringing at Bene't's is a Delight",delight,6,"",&-36-16-56-36-12-16,|(16)(14)(1456)
+"Ompton","Ompton Delight",delight,6,"",&-36-16-56-36-12-36,|(12)(14)(1234)
+"Staythorpe","Staythorpe Delight",delight,6,"",&-36-16-56-36-12-36,|(16)(14)(1456)
+"Egmanton","Egmanton Delight",delight,6,"",&-36-16-56-36-12-56,|(12)(14)(1234)
+"Ringers' Pleasure","Ringers' Pleasure Delight",delight,6,"",&-36-16-56-36-14-36,|(12)(14)(1234)
+"Somerton","Somerton Delight",delight,6,"",&-36-16-56-36-14-56,|(12)(14)(1234)
+"Slippery When Wet","Slippery When Wet Delight",delight,6,"",&-36-16-56-36-14-56,|14
+"Bishop Michael's","Bishop Michael's Delight",delight,6,"",&-36-16-56-36-14-56,|(16)(14)(1456)
+"Silkstone","Silkstone Delight",delight,6,"",&-36-16-56-36-34-16,|14
+"St Wilford","St Wilford Delight",delight,6,"",&-36-16-56-36-34-36,|(16)(14)(1456)
+"Kirton","Kirton Delight",delight,6,"",&-36-16-56-36-34-56,|(12)(14)(1234)
+"Kneesall","Kneesall Delight",delight,6,"",&-36-16-56-36.12-12.36,|(12)(14)(1234)
+"Upton","Upton Delight",delight,6,"",&-36-16-56-36.12-12.36,|(16)(14)(1456)
+"Thurgaton","Thurgaton Delight",delight,6,"",&-36-16-56-36.12-12.56,|(12)(14)(1234)
+"Carew","Carew Delight",delight,6,"",&-36-16-56-36.12-14.36,|(16)(14)(1456)
+"Iron","Iron Delight",delight,6,"",&-36-16-56-36.12-14.56,|(16)(14)(1456)
+"Manorbier","Manorbier Delight",delight,6,"",&-36-16-56-36.12-34.16,|(16)(14)(1456)
+"Gunthorpe","Gunthorpe Delight",delight,6,"",&-36-16-56-36.12-34.56,|(12)(14)(1234)
+"Droitwich","Droitwich Delight",delight,6,"",&-36-16-56-36.14-12.56,|(12)(14)(1234)
+"Chlorine","Chlorine Delight",delight,6,"",&-36-16-56-36.14-14.56,|(12)(14)(1234)
+"Ripple","Ripple Delight",delight,6,"",&-36-16-56-36.14-34.56,|(12)(14)(1234)
+"St Matthias","St Matthias Delight",delight,6,"",&-56-14-12-16-12-16,|(16)(14)(1456)
+"Doddinghurst","Doddinghurst Delight",delight,6,"",&-56-14-12-16-12-36,|(12)(14)(1234)
+"Winthorpe","Winthorpe Delight",delight,6,"",&-56-14-12-16-12-56,|(12)(14)(1234)
+"Lord Herschell","Lord Herschell Delight",delight,6,"",&-56-14-12-16-14-16,|14
+"Arbroath","Arbroath Delight",delight,6,"",&-56-14-12-16-14-36,|(12)(14)(1234)
+"Professor Moriarty","Professor Moriarty Delight",delight,6,"",&-56-14-12-16-14-36,|(16)(14)(1456)
+"Swindon Village","Swindon Village Delight",delight,6,"",&-56-14-12-16-14-56,|(12)(14)(1234)
+"MMCCXXIV","MMCCXXIV Delight",delight,6,"",&-56-14-12-16-34-16,|(16)(14)(1456)
+"Wollaton","Wollaton Delight",delight,6,"",&-56-14-12-16-34-56,|(12)(14)(1234)
+"Attenborough","Attenborough Delight",delight,6,"",&-56-14-12-16.34-12.56,|(12)(14)(1234)
+"Xmas Tree","Xmas Tree Delight",delight,6,"",&-56-14-12-16.34-14.36,|(12)(14)(1234)
+"Water","Water Delight",delight,6,"",&-56-14-12-16.34-14.36,|14
+"Victorious","Victorious Delight",delight,6,"",&-56-14-12-16.34-14.36,|(16)(14)(1456)
+"Helium","Helium Delight",delight,6,"",&-56-14-12-16.34-14.56,|14
+"Needwood Forest","Needwood Forest Delight",delight,6,"",&-56-14-12-16.34-34.16,|(12)(14)(1234)
+"Rosliston","Rosliston Delight",delight,6,"",&-56-14-12-16.34-34.16,|(16)(14)(1456)
+"Aspley","Aspley Delight",delight,6,"",&-56-14-12-16.34-34.56,|(12)(14)(1234)
+"Ununpentium","Ununpentium Delight",delight,6,"",&-56-14-1256-16-12-56,|(12)(14)(1234)
+"Ununhexium","Ununhexium Delight",delight,6,"",&-56-14-1256-16-14-56,|(12)(14)(1234)
+"Ununseptium","Ununseptium Delight",delight,6,"",&-56-14-1256-16-34-56,|(12)(14)(1234)
+"Ununoctium","Ununoctium Delight",delight,6,"",&-56-14-1256-16.34-12.56,|(12)(14)(1234)
+"Aluminum","Aluminum Delight",delight,6,"",&-56-14-1256-16.34-14.56,|14
+"Alf","Alf Delight",delight,6,"",&-56-14-1256-16.34-34.56,|(12)(14)(1234)
+"Invergordon","Invergordon Delight",delight,6,"",&-56-14-56-16-12-16,|(12)(14)(1234)
+"Pettistree","Pettistree Delight",delight,6,"",&-56-14-56-16-12-16,|(16)(14)(1456)
+"Ferrum","Ferrum Delight",delight,6,"",&-56-14-56-16-12-56,|14
+"Dumbleton","Dumbleton Delight",delight,6,"",&-56-14-56-16-12-56,|(16)(14)(1456)
+"Lockheed Tristar","Lockheed Tristar Delight",delight,6,"",&-56-14-56-16-14-16,|(12)(14)(1234)
+"Taylor","Taylor Delight",delight,6,"",&-56-14-56-16-14-56,|(12)(14)(1234)
+"SDG","SDG Delight",delight,6,"",&-56-14-56-16-14-56,|(16)(14)(1456)
+"Wenessa","Wenessa Delight",delight,6,"",&-56-14-56-16-34-16,|(16)(14)(1456)
+"Westminster","Westminster Delight",delight,6,"",&-56-14-56-16-34-36,|(16)(14)(1456)
+"Cobalt","Cobalt Delight",delight,6,"",&-56-14-56-16-34-56,|14
+"Branton","Branton Delight",delight,6,"",&-56-14-56-16-34-56,|(16)(14)(1456)
+"Xerophilous","Xerophilous Delight",delight,6,"",&-56-14-56-16.1234.14-56,|(12)(14)(1234)
+"Duston","Duston Delight",delight,6,"",&-56-14-56-16.14-12.56,|(12)(14)(1234)
+"Great Easton","Great Easton Delight",delight,6,"",&-56-14-56-16.14-34.56,|(12)(14)(1234)
+"Strata Florida","Strata Florida Delight",delight,6,"",&-56-14-56-16.34-12.36,|(16)(14)(1456)
+"Silicon","Silicon Delight",delight,6,"",&-56-14-56-16.34-12.56,|14
+"Beckford","Beckford Delight",delight,6,"",&-56-14-56-16.34-12.56,|(16)(14)(1456)
+"Zuzzex","Zuzzex Delight",delight,6,"",&-56-14-56-16.34-14.36,|(12)(14)(1234)
+"Nickel","Nickel Delight",delight,6,"",&-56-14-56-16.34-14.56,|(12)(14)(1234)
+"Twywell","Twywell Delight",delight,6,"",&-56-14-56-16.34-34.16,|(12)(14)(1234)
+"Finale","Finale Delight",delight,6,"",&-56-14-56-16.34-34.16,|(16)(14)(1456)
+"Copper","Copper Delight",delight,6,"",&-56-14-56-16.34-34.56,|14
+"Ashchurch","Ashchurch Delight",delight,6,"",&-56-14-56-16.34-34.56,|(16)(14)(1456)
+"Sully","Sully Delight",delight,6,"",&-56-1456-12-16-12-16,|14
+"Bright","Bright Delight",delight,6,"",&-56-1456-12-16-12-36,|(12)(14)(1234)
+"Corse","Corse Delight",delight,6,"",&-56-1456-12-16-12-56,|(12)(14)(1234)
+"Horsham St Faith","Horsham St Faith Delight",delight,6,"",&-56-1456-12-16-12.1234.56,|(12)(14)(1234)
+"Mothering Sunday","Mothering Sunday Delight",delight,6,"",&-56-1456-12-16-14-36,|(12)(14)(1234)
+"Elizabeth of Glamis","Elizabeth of Glamis Delight",delight,6,"",&-56-1456-12-16-14-36,|(16)(14)(1456)
+"Viskaldix","Viskaldix Delight",delight,6,"",&-56-1456-12-16-14-56,|(12)(14)(1234)
+"Gallini","Gallini Delight",delight,6,"",&-56-1456-12-16-14-56,|(16)(14)(1456)
+"Aspall","Aspall Delight",delight,6,"",&-56-1456-12-16-34-16,|(16)(14)(1456)
+"Staunton","Staunton Delight",delight,6,"",&-56-1456-12-16-34-56,|(12)(14)(1234)
+"Claremont","Claremont Delight",delight,6,"",&-56-1456-12-16.12-12.56,|(12)(14)(1234)
+"Kensa Forth an Vledhen","Kensa Forth an Vledhen Delight",delight,6,"",&-56-1456-12-16.12.1234.34.56,|(12)(14)(1234)
+"Glinton","Glinton Delight",delight,6,"",&-56-1456-12-16.1234.14-56,|(12)(14)(1234)
+"Corby","Corby Delight",delight,6,"",&-56-1456-12-16.14-12.56,|(12)(14)(1234)
+"Isham","Isham Delight",delight,6,"",&-56-1456-12-16.14-34.56,|(12)(14)(1234)
+"Flore","Flore Delight",delight,6,"",&-56-1456-12-16.14.1234.34.56,|(12)(14)(1234)
+"Hasfield","Hasfield Delight",delight,6,"",&-56-1456-12-16.34-12.56,|(12)(14)(1234)
+"Redmarley D'Abitot","Redmarley D'Abitot Delight",delight,6,"",&-56-1456-12-16.34-14.36,|(12)(14)(1234)
+"Boron","Boron Delight",delight,6,"",&-56-1456-12-16.34-14.56,|14
+"Air","Air Delight",delight,6,"",&-56-1456-12-16.34-14.56,|(16)(14)(1456)
+"Hartpury","Hartpury Delight",delight,6,"",&-56-1456-12-16.34-34.16,|(12)(14)(1234)
+"Ashleworth","Ashleworth Delight",delight,6,"",&-56-1456-12-16.34-34.56,|(12)(14)(1234)
+"Amethyst","Amethyst Delight",delight,6,"",&-56-1456-1256-16-12-56,|(12)(14)(1234)
+"Aquamarine","Aquamarine Delight",delight,6,"",&-56-1456-1256-16-14-56,|(12)(14)(1234)
+"Francium","Francium Delight",delight,6,"",&-56-1456-1256-16-34-56,|(12)(14)(1234)
+"Radium","Radium Delight",delight,6,"",&-56-1456-1256-16.34-12.56,|(12)(14)(1234)
+"Bloodstone","Bloodstone Delight",delight,6,"",&-56-1456-1256-16.34-14.56,|14
+"Actinium","Actinium Delight",delight,6,"",&-56-1456-1256-16.34-34.56,|(12)(14)(1234)
+"Caddington Minor","Caddington Minor Delight",delight,6,"",&-56-1456-56-16-12-16,|(12)(14)(1234)
+"Aberaeron","Aberaeron Delight",delight,6,"",&-56-1456-56-16-12-16,|(16)(14)(1456)
+"Tregaron","Tregaron Delight",delight,6,"",&-56-1456-56-16-12-36,|(16)(14)(1456)
+"Gloria","Gloria Delight",delight,6,"",&-56-1456-56-16-12-56,|14
+"Naughty Nessa","Naughty Nessa Delight",delight,6,"",&-56-1456-56-16-14-16,|(12)(14)(1234)
+"Sir Ronald Matthews","Sir Ronald Matthews Delight",delight,6,"",&-56-1456-56-16-14-36,|(16)(14)(1456)
+"Heffalump","Heffalump Delight",delight,6,"",&-56-1456-56-16-14-56,|(12)(14)(1234)
+"Trystan","Trystan Delight",delight,6,"",&-56-1456-56-16-34-16,|(16)(14)(1456)
+"Melyndruckya","Melyndruckya Delight",delight,6,"",&-56-1456-56-16-34-36,|(16)(14)(1456)
+"Noel","Noel Delight",delight,6,"",&-56-1456-56-16-34-56,|14
+"D-Band","D-Band Delight",delight,6,"",&-56-1456-56-16.34-12.36,|(16)(14)(1456)
+"Excelsis","Excelsis Delight",delight,6,"",&-56-1456-56-16.34-12.56,|14
+"Cuprum","Cuprum Delight",delight,6,"",&-56-1456-56-16.34-14.56,|(12)(14)(1234)
+"Kelmarsh","Kelmarsh Delight",delight,6,"",&-56-1456-56-16.34-34.16,|(12)(14)(1234)
+"Jingle Bells","Jingle Bells Delight",delight,6,"",&-56-1456-56-16.34-34.56,|14
+"Indian Garden","Indian Garden Delight",delight,6,"",&-56-16-12-1236-12-16,|(16)(14)(1456)
+"Tollerton","Tollerton Delight",delight,6,"",&-56-16-12-1236-12-36,|(12)(14)(1234)
+"Misterton","Misterton Delight",delight,6,"",&-56-16-12-1236-12-56,|(16)(14)(1456)
+"St Nicholas","St Nicholas Delight",delight,6,"",&-56-16-12-1236-14-16,|(12)(14)(1234)
+"Cubley Brook","Cubley Brook Delight",delight,6,"",&-56-16-12-1236-14-36,|(12)(14)(1234)
+"Gresley","Gresley Delight",delight,6,"",&-56-16-12-1236-14-56,|(12)(14)(1234)
+"Ivy","Ivy Delight",delight,6,"",&-56-16-12-1236-14-56,|(16)(14)(1456)
+"'Stone","'Stone Delight",delight,6,"",&-56-16-12-1236-34-16,|(12)(14)(1234)
+"Star of Bethlehem","Star of Bethlehem Delight",delight,6,"",&-56-16-12-1236-34-36,|(12)(14)(1234)
+"Holy Trinity","Holy Trinity Delight",delight,6,"",&-56-16-12-1236-34-36,|(16)(14)(1456)
+"Walkeringham","Walkeringham Delight",delight,6,"",&-56-16-12-1236-34-56,|(16)(14)(1456)
+"Lord Elgin","Lord Elgin Delight",delight,6,"",&-56-16-12-36-12-16,|(12)(14)(1234)
+"Doncaster","Doncaster Delight",delight,6,"",&-56-16-12-36-12-16,|(16)(14)(1456)
+"Cropwell Butler","Cropwell Butler Delight",delight,6,"",&-56-16-12-36-12-36,|(12)(14)(1234)
+"Stockwith","Stockwith Delight",delight,6,"",&-56-16-12-36-12-56,|(16)(14)(1456)
+"Symphony","Symphony Delight",delight,6,"",&-56-16-12-36-14-36,|14
+"Cumberworth","Cumberworth Delight",delight,6,"",&-56-16-12-36-14-36,|(16)(14)(1456)
+"Maltby","Maltby Delight",delight,6,"",&-56-16-12-36-14-56,|(12)(14)(1234)
+"Big York Hangover","Big York Hangover Delight",delight,6,"",&-56-16-12-36-34-16,|14
+"Chalford","Chalford Delight",delight,6,"",&-56-16-12-36-34-36,|(12)(14)(1234)
+"Honeywell","Honeywell Delight",delight,6,"",&-56-16-12-36-34-36,|(16)(14)(1456)
+"Finningley","Finningley Delight",delight,6,"",&-56-16-12-36-34-56,|(16)(14)(1456)
+"Tithby","Tithby Delight",delight,6,"",&-56-16-12-36.12-12.36,|(12)(14)(1234)
+"Eaton","Eaton Delight",delight,6,"",&-56-16-12-36.12-12.56,|(16)(14)(1456)
+"Red Light","Red Light Delight",delight,6,"",&-56-16-12-36.12-14.36,|(12)(14)(1234)
+"Hawkridge","Hawkridge Delight",delight,6,"",&-56-16-12-36.12-14.56,|(12)(14)(1234)
+"Xanadu","Xanadu Delight",delight,6,"",&-56-16-12-36.12-14.56,|(16)(14)(1456)
+"Pam's Retirement","Pam's Retirement Delight",delight,6,"",&-56-16-12-36.12-34.16,|(12)(14)(1234)
+"Rosemary's Return","Rosemary's Return Delight",delight,6,"",&-56-16-12-36.12-34.16,|(16)(14)(1456)
+"Wysall","Wysall Delight",delight,6,"",&-56-16-12-36.12-34.56,|(16)(14)(1456)
+"Clwyd","Clwyd Delight",delight,6,"",&-56-16-12-36.14-12.56,|(12)(14)(1234)
+"Lapal","Lapal Delight",delight,6,"",&-56-16-12-36.14-14.56,|(16)(14)(1456)
+"Dyfed","Dyfed Delight",delight,6,"",&-56-16-12-36.14-34.56,|(12)(14)(1234)
+"Thorium","Thorium Delight",delight,6,"",&-56-16-1256-1236-12-56,|(12)(14)(1234)
+"Rock Crystal","Rock Crystal Delight",delight,6,"",&-56-16-1256-1236-14-36,|14
+"Protactinium","Protactinium Delight",delight,6,"",&-56-16-1256-1236-34-56,|(12)(14)(1234)
+"Emerald","Emerald Delight",delight,6,"",&-56-16-1256-36-12-56,|(12)(14)(1234)
+"Chrysoprase","Chrysoprase Delight",delight,6,"",&-56-16-1256-36-14-36,|(12)(14)(1234)
+"Pearl","Pearl Delight",delight,6,"",&-56-16-1256-36-34-56,|(12)(14)(1234)
+"Moonstone","Moonstone Delight",delight,6,"",&-56-16-1256-36.12-12.56,|(12)(14)(1234)
+"Agate","Agate Delight",delight,6,"",&-56-16-1256-36.12-14.36,|(12)(14)(1234)
+"Wax","Wax Delight",delight,6,"",&-56-16-1256-36.12-34.56,|(12)(14)(1234)
+"Uranium","Uranium Delight",delight,6,"",&-56-16-1256-36.14-12.36,|14
+"Cornelian","Cornelian Delight",delight,6,"",&-56-16-1256-36.14-14.56,|(12)(14)(1234)
+"Peridot","Peridot Delight",delight,6,"",&-56-16-1256-36.14-34.36,|(12)(14)(1234)
+"Widmerpool","Widmerpool Delight",delight,6,"",&-56-16-56-1236-12-36,|(16)(14)(1456)
+"Heath","Heath Delight",delight,6,"",&-56-16-56-1236-12-56,|(12)(14)(1234)
+"Raglan","Raglan Delight",delight,6,"",&-56-16-56-1236-14-16,|(12)(14)(1234)
+"White Castle","White Castle Delight",delight,6,"",&-56-16-56-1236-14-16,|(16)(14)(1456)
+"Tangley","Tangley Delight",delight,6,"",&-56-16-56-1236-14-36,|(12)(14)(1234)
+"We're still single and it's a","We're still single and it's a Delight",delight,6,"",&-56-16-56-1236-14-56,|(12)(14)(1234)
+"All Right","All Right Delight",delight,6,"",&-56-16-56-1236-34-36,|(12)(14)(1234)
+"Folkington","Folkington Delight",delight,6,"",&-56-16-56-1236-34-36,|(16)(14)(1456)
+"Pildacre","Pildacre Delight",delight,6,"",&-56-16-56-1236-34-56,|(12)(14)(1234)
+"Tantallon","Tantallon Delight",delight,6,"",&-56-16-56-36-12-16,|(16)(14)(1456)
+"Sibthorpe","Sibthorpe Delight",delight,6,"",&-56-16-56-36-12-36,|(16)(14)(1456)
+"Warmfield","Warmfield Delight",delight,6,"",&-56-16-56-36-12-56,|(12)(14)(1234)
+"Norman's","Norman's Delight",delight,6,"",&-56-16-56-36-14-16,|(12)(14)(1234)
+"North","North Delight",delight,6,"",&-56-16-56-36-14-56,|14
+"Tom's Christening","Tom's Christening Delight",delight,6,"",&-56-16-56-36-34-16,|(12)(14)(1234)
+"Archer's Flight","Archer's Flight Delight",delight,6,"",&-56-16-56-36-34-16,|(16)(14)(1456)
+"Bootle","Bootle Delight",delight,6,"",&-56-16-56-36-34-36,|(12)(14)(1234)
+"St Anne's Pleasure","St Anne's Pleasure Delight",delight,6,"",&-56-16-56-36-34-36,|14
+"Chartley","Chartley Delight",delight,6,"",&-56-16-56-36-34-36,|(16)(14)(1456)
+"Kingsway","Kingsway Delight",delight,6,"",&-56-16-56-36-34-56,|(12)(14)(1234)
+"Ratcliffe","Ratcliffe Delight",delight,6,"",&-56-16-56-36.12-12.36,|(16)(14)(1456)
+"Brathay","Brathay Delight",delight,6,"",&-56-16-56-36.12-12.56,|(12)(14)(1234)
+"Zinc","Zinc Delight",delight,6,"",&-56-16-56-36.12-14.56,|(12)(14)(1234)
+"Springstone","Springstone Delight",delight,6,"",&-56-16-56-36.12-34.56,|(12)(14)(1234)
+"Gallium","Gallium Delight",delight,6,"",&-56-16-56-36.14-12.56,|14
+"Shrewley","Shrewley Delight",delight,6,"",&-56-16-56-36.14-14.56,|(12)(14)(1234)
+"Germanium","Germanium Delight",delight,6,"",&-56-16-56-36.14-34.56,|14
+"Callum","Callum Delight",delight,6,"",&34-34.14-12-16-12-36,|(12)(14)(1234)
+"Jubilee","Jubilee Delight",delight,6,"",&34-34.14-12-16-12-56,|(12)(14)(1234)
+"Mt Nameless","Mt Nameless Delight",delight,6,"",&34-34.14-12-16-12.1234.56,|(12)(14)(1234)
+"Something Not Terribly Original","Something Not Terribly Original Delight",delight,6,"",&34-34.14-12-16-14-56,|(12)(14)(1234)
+"East Intercourse Island","East Intercourse Island Delight",delight,6,"",&34-34.14-12-16-34-56,|(12)(14)(1234)
+"Dismal Swamp","Dismal Swamp Delight",delight,6,"",&34-34.14-12-16-34.1234.56,|(12)(14)(1234)
+"Rotten Bay","Rotten Bay Delight",delight,6,"",&34-34.14-12-16.12-12.56,|(12)(14)(1234)
+"Disaster Cove","Disaster Cove Delight",delight,6,"",&34-34.14-12-16.12-34.56,|(12)(14)(1234)
+"Lovely Bottom","Lovely Bottom Delight",delight,6,"",&34-34.14-12-16.1234.34-56,|(12)(14)(1234)
+"Damboring Lake","Damboring Lake Delight",delight,6,"",&34-34.14-12-16.1234.34.1234.56,|(12)(14)(1234)
+"Hell Hound Hill","Hell Hound Hill Delight",delight,6,"",&34-34.14-12-16.34-12.56,|(12)(14)(1234)
+"Amanda","Amanda Delight",delight,6,"",&34-34.14-12-16.34-34.36,|(12)(14)(1234)
+"Useless Loop","Useless Loop Delight",delight,6,"",&34-34.14-12-16.34-34.56,|(12)(14)(1234)
+"Hopeless Reach","Hopeless Reach Delight",delight,6,"",&34-34.14-12-16.34.1234.34.56,|(12)(14)(1234)
+"Morgan","Morgan Delight",delight,6,"",&34-34.14.12-56.16.34-14.36,|(12)(14)(1234)
+"Alderbourne","Alderbourne Delight",delight,6,"",&34-34.16-12-1236-12-36,|(12)(14)(1234)
+"Hitcham","Hitcham Delight",delight,6,"",&34-34.16-12-1236-12-36,|(16)(14)(1456)
+"East Bridgford","East Bridgford Delight",delight,6,"",&34-34.16-12-1236-12-56,|(16)(14)(1456)
+"King Charles","King Charles Delight",delight,6,"",&34-34.16-12-1236-14-16,|(12)(14)(1234)
+"Wiggenhall","Wiggenhall Delight",delight,6,"",&34-34.16-12-1236-14-36,|(12)(14)(1234)
+"Warsop","Warsop Delight",delight,6,"",&34-34.16-12-1236-14-56,|(12)(14)(1234)
+"Easthampstead","Easthampstead Delight",delight,6,"",&34-34.16-12-1236-34-16,|(12)(14)(1234)
+"Richmond","Richmond Delight",delight,6,"",&34-34.16-12-1236-34-16,|(16)(14)(1456)
+"Coddington","Coddington Delight",delight,6,"",&34-34.16-12-1236-34-36,|(12)(14)(1234)
+"North Muskham","North Muskham Delight",delight,6,"",&34-34.16-12-1236-34-56,|(16)(14)(1456)
+"Ranskill","Ranskill Delight",delight,6,"",&34-34.16-12-36-12-16,|(12)(14)(1234)
+"Repton","Repton Delight",delight,6,"",&34-34.16-12-36-12-16,|(16)(14)(1456)
+"Pontefract","Pontefract Delight",delight,6,"",&34-34.16-12-36-12-36,|(12)(14)(1234)
+"Wath","Wath Delight",delight,6,"",&34-34.16-12-36-12-36,|(16)(14)(1456)
+"Boston","Boston Delight",delight,6,"",&34-34.16-12-36-12-56,|(16)(14)(1456)
+"Welbeck","Welbeck Delight",delight,6,"",&34-34.16-12-36-14-16,|(16)(14)(1456)
+"College New","College New Delight",delight,6,"",&34-34.16-12-36-14-36,|14
+"Barham","Barham Delight",delight,6,"",&34-34.16-12-36-14-56,|(12)(14)(1234)
+"Oswald","Oswald Delight",delight,6,"",&34-34.16-12-36-14-56,|(16)(14)(1456)
+"French's","French's Delight",delight,6,"",&34-34.16-12-36-34-16,|14
+"Baden-Powell","Baden-Powell Delight",delight,6,"",&34-34.16-12-36-34-16,|(16)(14)(1456)
+"Kirkthorpe","Kirkthorpe Delight",delight,6,"",&34-34.16-12-36-34-36,|(12)(14)(1234)
+"March","March Delight",delight,6,"",&34-34.16-12-36-34-56,|(16)(14)(1456)
+"Donottar","Donottar Delight",delight,6,"",&34-34.16-12-36.12-12.36,|(12)(14)(1234)
+"Carisbrooke","Carisbrooke Delight",delight,6,"",&34-34.16-12-36.12-12.36,|(16)(14)(1456)
+"Selby","Selby Delight",delight,6,"",&34-34.16-12-36.12-12.56,|(16)(14)(1456)
+"Caernarvon","Caernarvon Delight",delight,6,"",&34-34.16-12-36.12-14.36,|(12)(14)(1234)
+"Conway","Conway Delight",delight,6,"",&34-34.16-12-36.12-14.36,|(16)(14)(1456)
+"Rawmarsh","Rawmarsh Delight",delight,6,"",&34-34.16-12-36.12-14.56,|(12)(14)(1234)
+"Warwick","Warwick Delight",delight,6,"",&34-34.16-12-36.12-34.16,|(12)(14)(1234)
+"Ludlow","Ludlow Delight",delight,6,"",&34-34.16-12-36.12-34.16,|(16)(14)(1456)
+"Staveley","Staveley Delight",delight,6,"",&34-34.16-12-36.12-34.56,|(16)(14)(1456)
+"Arksey","Arksey Delight",delight,6,"",&34-34.16-12-36.14-12.36,|14
+"Ardsley","Ardsley Delight",delight,6,"",&34-34.16-12-36.14-12.36,|(16)(14)(1456)
+"Berkeley","Berkeley Delight",delight,6,"",&34-34.16-12-36.14-12.56,|(12)(14)(1234)
+"Kentish","Kentish Delight",delight,6,"",&34-34.16-12-36.14-12.56,|(16)(14)(1456)
+"Woodgrove","Woodgrove Delight",delight,6,"",&34-34.16-12-36.14-14.56,|(16)(14)(1456)
+"Pembroke","Pembroke Delight",delight,6,"",&34-34.16-12-36.14-34.56,|(12)(14)(1234)
+"Edinburgh","Edinburgh Delight",delight,6,"",&34-34.16-12-36.14-34.56,|(16)(14)(1456)
+"Beached Az","Beached Az Delight",delight,6,"",&34-34.16-12-36.34-34.36,|(16)(14)(1456)
+"Neptunium","Neptunium Delight",delight,6,"",&34-34.16-1256-1236-12-56,|(12)(14)(1234)
+"Sardonyx","Sardonyx Delight",delight,6,"",&34-34.16-1256-1236-14-56,|(16)(14)(1456)
+"Plutonium","Plutonium Delight",delight,6,"",&34-34.16-1256-1236-34-56,|(12)(14)(1234)
+"Sapphire","Sapphire Delight",delight,6,"",&34-34.16-1256-36-12-56,|(12)(14)(1234)
+"Lapis Lazuli","Lapis Lazuli Delight",delight,6,"",&34-34.16-1256-36-14-36,|(12)(14)(1234)
+"Opal","Opal Delight",delight,6,"",&34-34.16-1256-36-34-56,|(12)(14)(1234)
+"Topaz","Topaz Delight",delight,6,"",&34-34.16-1256-36.12-12.56,|(12)(14)(1234)
+"Citrine","Citrine Delight",delight,6,"",&34-34.16-1256-36.12-14.56,|(16)(14)(1456)
+"Quicksilver","Quicksilver Delight",delight,6,"",&34-34.16-1256-36.12-34.56,|(12)(14)(1234)
+"Americium","Americium Delight",delight,6,"",&34-34.16-1256-36.14-12.36,|14
+"Turquoise","Turquoise Delight",delight,6,"",&34-34.16-1256-36.14-14.56,|(12)(14)(1234)
+"Jacinth","Jacinth Delight",delight,6,"",&34-34.16-1256-36.14-34.36,|(12)(14)(1234)
+"East Leake","East Leake Delight",delight,6,"",&34-34.16-56-1236-12-36,|(16)(14)(1456)
+"Stony Wood","Stony Wood Delight",delight,6,"",&34-34.16-56-1236-12-56,|(12)(14)(1234)
+"Wellow","Wellow Delight",delight,6,"",&34-34.16-56-1236-12-56,|(16)(14)(1456)
+"LeCras","LeCras Delight",delight,6,"",&34-34.16-56-1236-14-16,|(12)(14)(1234)
+"Joanna Lynn","Joanna Lynn Delight",delight,6,"",&34-34.16-56-1236-14-36,|(12)(14)(1234)
+"Arsenic","Arsenic Delight",delight,6,"",&34-34.16-56-1236-14-56,|(12)(14)(1234)
+"Soulbury","Soulbury Delight",delight,6,"",&34-34.16-56-1236-34-36,|(12)(14)(1234)
+"Simon","Simon Delight",delight,6,"",&34-34.16-56-1236-34-56,|(12)(14)(1234)
+"Thorpe","Thorpe Delight",delight,6,"",&34-34.16-56-1236-34-56,|(16)(14)(1456)
+"Castle Gresley","Castle Gresley Delight",delight,6,"",&34-34.16-56-36-12-16,|(16)(14)(1456)
+"Walesby","Walesby Delight",delight,6,"",&34-34.16-56-36-12-36,|(16)(14)(1456)
+"Kingsnorth","Kingsnorth Delight",delight,6,"",&34-34.16-56-36-12-56,|(12)(14)(1234)
+"Bole","Bole Delight",delight,6,"",&34-34.16-56-36-12-56,|(16)(14)(1456)
+"Vinoba","Vinoba Delight",delight,6,"",&34-34.16-56-36-12.1234.56,|(12)(14)(1234)
+"Alfriston","Alfriston Delight",delight,6,"",&34-34.16-56-36-14-16,|(12)(14)(1234)
+"Fillongley","Fillongley Delight",delight,6,"",&34-34.16-56-36-14-16,|(16)(14)(1456)
+"Terbium","Terbium Delight",delight,6,"",&34-34.16-56-36-14-56,|14
+"Selenium","Selenium Delight",delight,6,"",&34-34.16-56-36-14-56,|(16)(14)(1456)
+"Old Man of Hoy","Old Man of Hoy Delight",delight,6,"",&34-34.16-56-36-34-16,|(12)(14)(1234)
+"Rora Head","Rora Head Delight",delight,6,"",&34-34.16-56-36-34-16,|(16)(14)(1456)
+"Shoveller","Shoveller Delight",delight,6,"",&34-34.16-56-36-34-36,|(12)(14)(1234)
+"Brabourne","Brabourne Delight",delight,6,"",&34-34.16-56-36-34-56,|(12)(14)(1234)
+"Scrooby","Scrooby Delight",delight,6,"",&34-34.16-56-36-34-56,|(16)(14)(1456)
+"Trulla","Trulla Delight",delight,6,"",&34-34.16-56-36-34.1234.56,|(12)(14)(1234)
+"Askham","Askham Delight",delight,6,"",&34-34.16-56-36.12-12.36,|(16)(14)(1456)
+"Kennington","Kennington Delight",delight,6,"",&34-34.16-56-36.12-12.56,|(12)(14)(1234)
+"Thoroton","Thoroton Delight",delight,6,"",&34-34.16-56-36.12-12.56,|(16)(14)(1456)
+"Willaston","Willaston Delight",delight,6,"",&34-34.16-56-36.12-14.56,|(12)(14)(1234)
+"Stowting","Stowting Delight",delight,6,"",&34-34.16-56-36.12-34.56,|(12)(14)(1234)
+"Papplewick","Papplewick Delight",delight,6,"",&34-34.16-56-36.12-34.56,|(16)(14)(1456)
+"Wybunbury","Wybunbury Delight",delight,6,"",&34-34.16-56-36.14-12.36,|(12)(14)(1234)
+"Dysprosium","Dysprosium Delight",delight,6,"",&34-34.16-56-36.14-12.56,|14
+"Worleston","Worleston Delight",delight,6,"",&34-34.16-56-36.14-12.56,|(16)(14)(1456)
+"Halley's","Halley's Delight",delight,6,"",&34-34.16-56-36.14-14.56,|(12)(14)(1234)
+"Hale-Bopp","Hale-Bopp Delight",delight,6,"",&34-34.16-56-36.14-14.56,|(16)(14)(1456)
+"Holmium","Holmium Delight",delight,6,"",&34-34.16-56-36.14-34.56,|14
+"Bromine","Bromine Delight",delight,6,"",&34-34.16-56-36.14-34.56,|(16)(14)(1456)
+"Hepworth","Hepworth Delight",delight,6,"",&34-36.14-12-16-12-16,|(16)(14)(1456)
+"Fountains","Fountains Delight",delight,6,"",&34-36.14-12-16-12-36,|(12)(14)(1234)
+"Swansea","Swansea Delight",delight,6,"",&34-36.14-12-16-12-36,|14
+"Melrose","Melrose Delight",delight,6,"",&34-36.14-12-16-12-36,|(16)(14)(1456)
+"Oystermouth","Oystermouth Delight",delight,6,"",&34-36.14-12-16-12-56,|14
+"Kirkburton","Kirkburton Delight",delight,6,"",&34-36.14-12-16-14-16,|(12)(14)(1234)
+"Tintern","Tintern Delight",delight,6,"",&34-36.14-12-16-14-36,|(12)(14)(1234)
+"Sherborne","Sherborne Delight",delight,6,"",&34-36.14-12-16-14-36,|(16)(14)(1456)
+"Deepcar","Deepcar Delight",delight,6,"",&34-36.14-12-16-14-56,|(12)(14)(1234)
+"Tewkesbury","Tewkesbury Delight",delight,6,"",&34-36.14-12-16-34-16,|(12)(14)(1234)
+"Evesham","Evesham Delight",delight,6,"",&34-36.14-12-16-34-16,|(16)(14)(1456)
+"Kirkheaton","Kirkheaton Delight",delight,6,"",&34-36.14-12-16-34-36,|(12)(14)(1234)
+"Farnley","Farnley Delight",delight,6,"",&34-36.14-12-16-34-36,|(16)(14)(1456)
+"Oxygen","Oxygen Delight",delight,6,"",&34-36.14-12-16-34-56,|14
+"Langford","Langford Delight",delight,6,"",&34-36.14-12-16.14-12.36,|(16)(14)(1456)
+"Harbledown","Harbledown Delight",delight,6,"",&34-36.14-12-16.34-12.36,|(12)(14)(1234)
+"Preshute","Preshute Delight",delight,6,"",&34-36.14-12-16.34-12.36,|(16)(14)(1456)
+"Fluorine","Fluorine Delight",delight,6,"",&34-36.14-12-16.34-12.56,|14
+"Wortley","Wortley Delight",delight,6,"",&34-36.14-12-16.34-14.36,|(12)(14)(1234)
+"Glastonbury","Glastonbury Delight",delight,6,"",&34-36.14-12-16.34-14.56,|(12)(14)(1234)
+"Fulstone","Fulstone Delight",delight,6,"",&34-36.14-12-16.34-34.16,|(12)(14)(1234)
+"Neon","Neon Delight",delight,6,"",&34-36.14-12-16.34-34.56,|14
+"Lodestone","Lodestone Delight",delight,6,"",&34-36.14-1256-16-12-56,|14
+"Moss Agate","Moss Agate Delight",delight,6,"",&34-36.14-1256-16-14-56,|(16)(14)(1456)
+"Curium","Curium Delight",delight,6,"",&34-36.14-1256-16-34-56,|14
+"Cat's Eye","Cat's Eye Delight",delight,6,"",&34-36.14-1256-16.34-12.56,|14
+"Jade","Jade Delight",delight,6,"",&34-36.14-1256-16.34-14.56,|(12)(14)(1234)
+"Berkelium","Berkelium Delight",delight,6,"",&34-36.14-1256-16.34-34.56,|14
+"Pilgrims Hatch","Pilgrims Hatch Delight",delight,6,"",&34-36.14-56-16-12-36,|(12)(14)(1234)
+"Severnside","Severnside Delight",delight,6,"",&34-36.14-56-16-12-56,|(12)(14)(1234)
+"Llanthony","Llanthony Delight",delight,6,"",&34-36.14-56-16-14-36,|(16)(14)(1456)
+"Krypton","Krypton Delight",delight,6,"",&34-36.14-56-16-14-56,|(16)(14)(1456)
+"Coxtie Green","Coxtie Green Delight",delight,6,"",&34-36.14-56-16-34-16,|(12)(14)(1234)
+"Pipe","Pipe Delight",delight,6,"",&34-36.14-56-16-34-56,|(12)(14)(1234)
+"Brailes","Brailes Delight",delight,6,"",&34-36.14-56-16.34-12.56,|(12)(14)(1234)
+"Marden Ash","Marden Ash Delight",delight,6,"",&34-36.14-56-16.34-14.56,|(12)(14)(1234)
+"Ilmington","Ilmington Delight",delight,6,"",&34-36.14-56-16.34-34.56,|(12)(14)(1234)
+"Cawthorne","Cawthorne Delight",delight,6,"",&34-56.14-12-16-12-36,|(12)(14)(1234)
+"Oakwell","Oakwell Delight",delight,6,"",&34-56.14-12-16-12-56,|(12)(14)(1234)
+"Donovan","Donovan Delight",delight,6,"",&34-56.14-12-16-14-56,|(12)(14)(1234)
+"Packhorse","Packhorse Delight",delight,6,"",&34-56.14-12-16-34-56,|(12)(14)(1234)
+"Shrove Tuesday","Shrove Tuesday Delight",delight,6,"",&34-56.14-12-16.34-12.56,|(12)(14)(1234)
+"Lithium","Lithium Delight",delight,6,"",&34-56.14-12-16.34-14.36,|(12)(14)(1234)
+"Phlogiston","Phlogiston Delight",delight,6,"",&34-56.14-12-16.34-14.56,|14
+"Berneslai","Berneslai Delight",delight,6,"",&34-56.14-12-16.34-34.56,|(12)(14)(1234)
+"Cassiterite","Cassiterite Delight",delight,6,"",&34-56.14-1256-16-12-56,|(12)(14)(1234)
+"Bronze","Bronze Delight",delight,6,"",&34-56.14-1256-16-14-56,|(12)(14)(1234)
+"Dioptase","Dioptase Delight",delight,6,"",&34-56.14-1256-16-34-56,|(12)(14)(1234)
+"Flint","Flint Delight",delight,6,"",&34-56.14-1256-16.34-12.56,|(12)(14)(1234)
+"Halite","Halite Delight",delight,6,"",&34-56.14-1256-16.34-14.56,|(16)(14)(1456)
+"Iceland Spar","Iceland Spar Delight",delight,6,"",&34-56.14-1256-16.34-34.56,|(12)(14)(1234)
+"Praseodymium","Praseodymium Delight",delight,6,"",&34-56.14-56-16-12-56,|14
+"Rubidium","Rubidium Delight",delight,6,"",&34-56.14-56-16-12-56,|(16)(14)(1456)
+"Strontium","Strontium Delight",delight,6,"",&34-56.14-56-16-14-56,|(12)(14)(1234)
+"Trendrein","Trendrein Delight",delight,6,"",&34-56.14-56-16-34-36,|(16)(14)(1456)
+"Neodymium","Neodymium Delight",delight,6,"",&34-56.14-56-16-34-56,|14
+"Argon","Argon Delight",delight,6,"",&34-56.14-56-16-34-56,|(16)(14)(1456)
+"Dun-Kerrygy","Dun-Kerrygy Delight",delight,6,"",&34-56.14-56-16.34-12.36,|(16)(14)(1456)
+"Promethium","Promethium Delight",delight,6,"",&34-56.14-56-16.34-12.56,|14
+"Yttrium","Yttrium Delight",delight,6,"",&34-56.14-56-16.34-12.56,|(16)(14)(1456)
+"Valle Crucis","Valle Crucis Delight",delight,6,"",&34-56.14-56-16.34-14.56,|(12)(14)(1234)
+"Abbey-Cwmhir","Abbey-Cwmhir Delight",delight,6,"",&34-56.14-56-16.34-14.56,|(16)(14)(1456)
+"Samarium","Samarium Delight",delight,6,"",&34-56.14-56-16.34-34.56,|14
+"Zirconium","Zirconium Delight",delight,6,"",&34-56.14-56-16.34-34.56,|(16)(14)(1456)
+"Ashford","Ashford Delight",delight,6,"",&34-56.14.12-56.16.12-34.16,|(16)(14)(1456)
+"Kimbolton","Kimbolton Delight",delight,6,"",&34-56.14.56-12.16.12-34.56,|(12)(14)(1234)
+"Newnham","Newnham Delight",delight,6,"",&34-56.1456-12-16-12-56,|(12)(14)(1234)
+"Woodford Halse","Woodford Halse Delight",delight,6,"",&34-56.1456-12-16-12.1234.56,|(12)(14)(1234)
+"Badby","Badby Delight",delight,6,"",&34-56.1456-12-16-34-56,|(12)(14)(1234)
+"East Haddon","East Haddon Delight",delight,6,"",&34-56.1456-12-16-34.1234.56,|(12)(14)(1234)
+"Dodford","Dodford Delight",delight,6,"",&34-56.1456-12-16.12-12.56,|(12)(14)(1234)
+"Exton","Exton Delight",delight,6,"",&34-56.1456-12-16.12-34.56,|(12)(14)(1234)
+"Braunston","Braunston Delight",delight,6,"",&34-56.1456-12-16.34-12.56,|(12)(14)(1234)
+"Nether Heyford","Nether Heyford Delight",delight,6,"",&34-56.1456-12-16.34-34.56,|(12)(14)(1234)
+"Wappenham","Wappenham Delight",delight,6,"",&3456.56-14-12-16.12-34.56,|(12)(14)(1234)
+"Grace Tambree","Grace Tambree Delight",delight,6,"",&36-34.14-12-16-12-56,|(12)(14)(1234)
+"Queenslea Drive","Queenslea Drive Delight",delight,6,"",&36-34.14-12-16-34-56,|(12)(14)(1234)
+"Tambree","Tambree Delight",delight,6,"",&36-34.14-12-16.34-34.56,|(12)(14)(1234)
+"Lincoln Curly","Lincoln Curly Delight",delight,6,"",&36-34.16-12-1236-12-36,|14
+"Tollesbury","Tollesbury Delight",delight,6,"",&36-34.16-12-1236-12-56,|(12)(14)(1234)
+"Westmorland","Westmorland Delight",delight,6,"",&36-34.16-12-1236-14-16,|(12)(14)(1234)
+"Sodium","Sodium Delight",delight,6,"",&36-34.16-12-1236-14-56,|(16)(14)(1456)
+"Hertfordshire","Hertfordshire Delight",delight,6,"",&36-34.16-12-1236-34-16,|(12)(14)(1234)
+"Barnby-in-the-Willows","Barnby-in-the-Willows Delight",delight,6,"",&36-34.16-12-1236-34-36,|(12)(14)(1234)
+"Middlesex","Middlesex Delight",delight,6,"",&36-34.16-12-1236-34-56,|(12)(14)(1234)
+"Tamworth","Tamworth Delight",delight,6,"",&36-34.16-12-36-12-16,|14
+"Saddleback","Saddleback Delight",delight,6,"",&36-34.16-12-36-12-36,|14
+"Peveril","Peveril Delight",delight,6,"",&36-34.16-12-36-12-56,|(12)(14)(1234)
+"Bradpole","Bradpole Delight",delight,6,"",&36-34.16-12-36-14-16,|(12)(14)(1234)
+"Stirling","Stirling Delight",delight,6,"",&36-34.16-12-36-14-36,|(12)(14)(1234)
+"Croome d'Abitot","Croome d'Abitot Delight",delight,6,"",&36-34.16-12-36-14-56,|(12)(14)(1234)
+"Large White","Large White Delight",delight,6,"",&36-34.16-12-36-34-16,|14
+"Gosfield","Gosfield Delight",delight,6,"",&36-34.16-12-36-34-36,|(12)(14)(1234)
+"Leasowe","Leasowe Delight",delight,6,"",&36-34.16-12-36-34-56,|(12)(14)(1234)
+"Wellington","Wellington Delight",delight,6,"",&36-34.16-12-36-34-56,|14
+"Landrace","Landrace Delight",delight,6,"",&36-34.16-12-36.12-12.36,|14
+"Melandra","Melandra Delight",delight,6,"",&36-34.16-12-36.12-12.56,|(12)(14)(1234)
+"Bucknall","Bucknall Delight",delight,6,"",&36-34.16-12-36.12-14.36,|(12)(14)(1234)
+"Natrium","Natrium Delight",delight,6,"",&36-34.16-12-36.12-14.56,|(16)(14)(1456)
+"Castleton","Castleton Delight",delight,6,"",&36-34.16-12-36.12-34.16,|(12)(14)(1234)
+"Beeston","Beeston Delight",delight,6,"",&36-34.16-12-36.12-34.56,|(12)(14)(1234)
+"Berkshire","Berkshire Delight",delight,6,"",&36-34.16-12-36.14-12.36,|14
+"Kingsley","Kingsley Delight",delight,6,"",&36-34.16-12-36.14-12.56,|(12)(14)(1234)
+"Chiseldon","Chiseldon Delight",delight,6,"",&36-34.16-12-36.14-14.36,|(12)(14)(1234)
+"Chelsea","Chelsea Delight",delight,6,"",&36-34.16-12-36.14-14.56,|(12)(14)(1234)
+"Gloucester","Gloucester Delight",delight,6,"",&36-34.16-12-36.14-34.16,|(12)(14)(1234)
+"Beauchief","Beauchief Delight",delight,6,"",&36-34.16-12-36.14-34.56,|(12)(14)(1234)
+"Kunzite","Kunzite Delight",delight,6,"",&36-34.16-1256-1236-12-56,|14
+"Obsidian","Obsidian Delight",delight,6,"",&36-34.16-1256-1236-14-56,|14
+"Quartz","Quartz Delight",delight,6,"",&36-34.16-1256-1236-34-56,|14
+"Tourmaline","Tourmaline Delight",delight,6,"",&36-34.16-1256-36-12-56,|14
+"Gold","Gold Delight",delight,6,"",&36-34.16-1256-36-14-56,|(12)(14)(1234)
+"Ulexite","Ulexite Delight",delight,6,"",&36-34.16-1256-36-34-56,|14
+"Vanadinite","Vanadinite Delight",delight,6,"",&36-34.16-1256-36.12-12.56,|14
+"Zircon","Zircon Delight",delight,6,"",&36-34.16-1256-36.12-14.56,|14
+"Amber","Amber Delight",delight,6,"",&36-34.16-1256-36.12-34.56,|14
+"Galena","Galena Delight",delight,6,"",&36-34.16-1256-36.14-12.56,|(12)(14)(1234)
+"Aurum","Aurum Delight",delight,6,"",&36-34.16-1256-36.14-14.56,|14
+"Jasper","Jasper Delight",delight,6,"",&36-34.16-1256-36.14-34.56,|(12)(14)(1234)
+"Hawksworth","Hawksworth Delight",delight,6,"",&36-34.16-56-1236-12-36,|(12)(14)(1234)
+"Tasker","Tasker Delight",delight,6,"",&36-34.16-56-1236-12-56,|14
+"Tutbury","Tutbury Delight",delight,6,"",&36-34.16-56-1236-14-56,|(12)(14)(1234)
+"Britannia","Britannia Delight",delight,6,"",&36-34.16-56-1236-34-36,|(12)(14)(1234)
+"Wallis & Steevens","Wallis & Steevens Delight",delight,6,"",&36-34.16-56-1236-34-56,|14
+"Besthorpe","Besthorpe Delight",delight,6,"",&36-34.16-56-36-12-36,|(12)(14)(1234)
+"Aveling & Porter","Aveling & Porter Delight",delight,6,"",&36-34.16-56-36-12-56,|14
+"Wowbagger the Infinitely Prolonged","Wowbagger the Infinitely Prolonged Delight",delight,6,"",&36-34.16-56-36-14-16,|(12)(14)(1234)
+"Niobium","Niobium Delight",delight,6,"",&36-34.16-56-36-14-56,|(12)(14)(1234)
+"Invicta","Invicta Delight",delight,6,"",&36-34.16-56-36-34-36,|(12)(14)(1234)
+"Burrell","Burrell Delight",delight,6,"",&36-34.16-56-36-34-56,|14
+"Shelton","Shelton Delight",delight,6,"",&36-34.16-56-36.12-12.36,|(12)(14)(1234)
+"Foden","Foden Delight",delight,6,"",&36-34.16-56-36.12-12.56,|14
+"Kenilworth","Kenilworth Delight",delight,6,"",&36-34.16-56-36.12-14.56,|(12)(14)(1234)
+"Fowler","Fowler Delight",delight,6,"",&36-34.16-56-36.12-34.56,|14
+"Funtington","Funtington Delight",delight,6,"",&36-34.16-56-36.14-12.36,|(12)(14)(1234)
+"Molybdenum","Molybdenum Delight",delight,6,"",&36-34.16-56-36.14-12.56,|(12)(14)(1234)
+"Reverse Canterbury","Reverse Canterbury Delight",delight,6,"",&36-34.16-56-36.14-14.56,|14
+"Technetium","Technetium Delight",delight,6,"",&36-34.16-56-36.14-34.56,|(12)(14)(1234)
+"Tickhill","Tickhill Delight",delight,6,"",&36-36.14-12-16-12-16,|14
+"Midsummer","Midsummer Delight",delight,6,"",&36-36.14-12-16-12-36,|(12)(14)(1234)
+"Combermere","Combermere Delight",delight,6,"",&36-36.14-12-16-12-56,|(12)(14)(1234)
+"Southwark","Southwark Delight",delight,6,"",&36-36.14-12-16-14-36,|(12)(14)(1234)
+"Jessica","Jessica Delight",delight,6,"",&36-36.14-12-16-14-36,|(16)(14)(1456)
+"Langsett","Langsett Delight",delight,6,"",&36-36.14-12-16-14-56,|(12)(14)(1234)
+"University College","University College Delight",delight,6,"",&36-36.14-12-16-34-16,|14
+"Hallamshire","Hallamshire Delight",delight,6,"",&36-36.14-12-16-34-36,|14
+"Vale Royal","Vale Royal Delight",delight,6,"",&36-36.14-12-16-34-56,|(12)(14)(1234)
+"Norwich","Norwich Delight",delight,6,"",&36-36.14-12-16.14-14.56,|(12)(14)(1234)
+"Crowland","Crowland Delight",delight,6,"",&36-36.14-12-16.34-12.56,|(12)(14)(1234)
+"Canterbury","Canterbury Delight",delight,6,"",&36-36.14-12-16.34-14.36,|(12)(14)(1234)
+"Abbeyville","Abbeyville Delight",delight,6,"",&36-36.14-12-16.34-34.16,|(12)(14)(1234)
+"St Werburgh","St Werburgh Delight",delight,6,"",&36-36.14-12-16.34-34.56,|(12)(14)(1234)
+"Waun Fach","Waun Fach Delight",delight,6,"",&36-36.14-1256-16-12-56,|(12)(14)(1234)
+"Snaefell","Snaefell Delight",delight,6,"",&36-36.14-1256-16-14-56,|(12)(14)(1234)
+"Beinn Mhor","Beinn Mhor Delight",delight,6,"",&36-36.14-1256-16-34-56,|(12)(14)(1234)
+"Sgurr Thuilm","Sgurr Thuilm Delight",delight,6,"",&36-36.14-1256-16.34-12.56,|(12)(14)(1234)
+"Sgurr Ghuibhsachain","Sgurr Ghuibhsachain Delight",delight,6,"",&36-36.14-1256-16.34-14.56,|(16)(14)(1456)
+"Carn Mor","Carn Mor Delight",delight,6,"",&36-36.14-1256-16.34-34.56,|(12)(14)(1234)
+"Potassium","Potassium Delight",delight,6,"",&36-36.14-56-16-12-16,|(12)(14)(1234)
+"Ruthenium","Ruthenium Delight",delight,6,"",&36-36.14-56-16-12-56,|(16)(14)(1456)
+"Jubilate","Jubilate Delight",delight,6,"",&36-36.14-56-16-14-16,|(12)(14)(1234)
+"St Andrew's","St Andrew's Delight",delight,6,"",&36-36.14-56-16-14-56,|(12)(14)(1234)
+"Rhodium","Rhodium Delight",delight,6,"",&36-36.14-56-16-34-56,|(16)(14)(1456)
+"Palladium","Palladium Delight",delight,6,"",&36-36.14-56-16.34-12.56,|(16)(14)(1456)
+"Confirmation","Confirmation Delight",delight,6,"",&36-36.14-56-16.34-14.36,|(12)(14)(1234)
+"Kalium","Kalium Delight",delight,6,"",&36-36.14-56-16.34-14.56,|(12)(14)(1234)
+"Seolfor","Seolfor Delight",delight,6,"",&36-36.14-56-16.34-34.56,|(16)(14)(1456)
+"Aish Tor","Aish Tor Delight",delight,6,"",&36-36.16-12-36-12-16,|(12)(14)(1234)
+"Bell Tor","Bell Tor Delight",delight,6,"",&36-36.16-12-36-34-36,|(12)(14)(1234)
+"Chinkwell Tor","Chinkwell Tor Delight",delight,6,"",&36-36.16-12-36.12-14.56,|(12)(14)(1234)
+"Dinger Tor","Dinger Tor Delight",delight,6,"",&36-36.16-12-36.34-12.36,|(12)(14)(1234)
+"East Mill Tor","East Mill Tor Delight",delight,6,"",&36-36.16-12-36.34-14.56,|(12)(14)(1234)
+"Frenchbere Tor","Frenchbere Tor Delight",delight,6,"",&36-36.16-56-36-34-36,|(12)(14)(1234)
+"Gutter Tor","Gutter Tor Delight",delight,6,"",&36-36.16-56-36.12-14.56,|(12)(14)(1234)
+"Honeybag Tor","Honeybag Tor Delight",delight,6,"",&36-36.16-56-36.34-12.36,|(12)(14)(1234)
+"Ivy Tor","Ivy Tor Delight",delight,6,"",&36-36.16-56-36.34-14.56,|(12)(14)(1234)
+"Kitty Tor","Kitty Tor Delight",delight,6,"",&36-36.16.12-12.36-14-16,|(12)(14)(1234)
+"Longtimber Tor","Longtimber Tor Delight",delight,6,"",&36-36.16.12-12.36-14-56,|(12)(14)(1234)
+"Mis Tor","Mis Tor Delight",delight,6,"",&36-36.16.12-12.36-34-36,|(12)(14)(1234)
+"Narra Tor","Narra Tor Delight",delight,6,"",&36-36.16.12-12.36.14-12.56,|(12)(14)(1234)
+"Pew Tor","Pew Tor Delight",delight,6,"",&36-36.16.12-12.36.34-12.36,|(12)(14)(1234)
+"Rundlestone Tor","Rundlestone Tor Delight",delight,6,"",&36-36.16.12-12.36.34-14.36,|(12)(14)(1234)
+"Sheeps Tor","Sheeps Tor Delight",delight,6,"",&36-36.16.12-12.36.34-34.16,|(12)(14)(1234)
+"Thornworthy Tor","Thornworthy Tor Delight",delight,6,"",&36-36.16.12-56.36-14-16,|(12)(14)(1234)
+"Ulles Tor","Ulles Tor Delight",delight,6,"",&36-36.16.12-56.36-14-56,|(12)(14)(1234)
+"Vixen Tor","Vixen Tor Delight",delight,6,"",&36-36.16.12-56.36-34-36,|(12)(14)(1234)
+"Watern Tor","Watern Tor Delight",delight,6,"",&36-36.16.12-56.36.14-12.56,|(12)(14)(1234)
+"Yes Tor","Yes Tor Delight",delight,6,"",&36-36.16.12-56.36.14-14.36,|(12)(14)(1234)
+"Zeal Tor","Zeal Tor Delight",delight,6,"",&36-36.16.12-56.36.14-34.16,|(12)(14)(1234)
+"Tor","Tor Delight",delight,6,"",&36-36.16.12-56.36.14-34.56,|(12)(14)(1234)
+"Litton","Litton Delight",delight,6,"",&36-36.16.12-56.36.34-12.36,|(12)(14)(1234)
+"British Victory","British Victory Delight",delight,6,"",&36-56.14-12-16-12-36,|14
+"Chloe Alicia","Chloe Alicia Delight",delight,6,"",&36-56.14-12-16-12-56,|(12)(14)(1234)
+"Puerto Rico","Puerto Rico Delight",delight,6,"",&36-56.14-12-16-14-16,|(12)(14)(1234)
+"Muness Castle","Muness Castle Delight",delight,6,"",&36-56.14-12-16-14-36,|(16)(14)(1456)
+"Celebration","Celebration Delight",delight,6,"",&36-56.14-12-16-34-16,|(12)(14)(1234)
+"Caroline's Birthday","Caroline's Birthday Delight",delight,6,"",&36-56.14-12-16-34-36,|(12)(14)(1234)
+"Joseph Bramah","Joseph Bramah Delight",delight,6,"",&36-56.14-12-16-34-56,|(12)(14)(1234)
+"Batty Muffin Puffin Moose","Batty Muffin Puffin Moose Delight",delight,6,"",&36-56.14-12-16.12-34.16,|(16)(14)(1456)
+"Hoylandswaine Millennium","Hoylandswaine Millennium Delight",delight,6,"",&36-56.14-12-16.34-12.36,|(12)(14)(1234)
+"Darling Buds of May","Darling Buds of May Delight",delight,6,"",&36-56.14-12-16.34-12.56,|(12)(14)(1234)
+"Emma Caroline","Emma Caroline Delight",delight,6,"",&36-56.14-12-16.34-14.36,|14
+"Leap Year","Leap Year Delight",delight,6,"",&36-56.14-12-16.34-14.56,|(12)(14)(1234)
+"Silkstone Millennium","Silkstone Millennium Delight",delight,6,"",&36-56.14-12-16.34-34.16,|14
+"St George","St George Delight",delight,6,"",&36-56.14-12-16.34-34.56,|(12)(14)(1234)
+"Ben Gorm","Ben Gorm Delight",delight,6,"",&36-56.14-1256-16-12-56,|14
+"Stob Coire Easain","Stob Coire Easain Delight",delight,6,"",&36-56.14-1256-16-14-56,|(12)(14)(1234)
+"An Caisteal","An Caisteal Delight",delight,6,"",&36-56.14-1256-16-34-56,|14
+"Penygadair","Penygadair Delight",delight,6,"",&36-56.14-1256-16.34-12.56,|14
+"Maumtrasna","Maumtrasna Delight",delight,6,"",&36-56.14-1256-16.34-14.56,|14
+"Ben Hee","Ben Hee Delight",delight,6,"",&36-56.14-1256-16.34-34.56,|14
+"Two Thousand and Five","Two Thousand and Five Delight",delight,6,"",&36-56.14-56-16-12-16,|(12)(14)(1234)
+"Wing Commander Hampton's","Wing Commander Hampton's Delight",delight,6,"",&36-56.14-56-16-12-36,|(12)(14)(1234)
+"Alderton","Alderton Delight",delight,6,"",&36-56.14-56-16-12-56,|(12)(14)(1234)
+"Hatfield College","Hatfield College Delight",delight,6,"",&36-56.14-56-16-14-36,|14
+"Phosphorus","Phosphorus Delight",delight,6,"",&36-56.14-56-16-14-56,|(12)(14)(1234)
+"Winchcombe","Winchcombe Delight",delight,6,"",&36-56.14-56-16-34-56,|(12)(14)(1234)
+"Toddington","Toddington Delight",delight,6,"",&36-56.14-56-16.34-12.56,|(12)(14)(1234)
+"Sulphur","Sulphur Delight",delight,6,"",&36-56.14-56-16.34-14.56,|14
+"Willersey","Willersey Delight",delight,6,"",&36-56.14-56-16.34-34.56,|(12)(14)(1234)
+"Jackie","Jackie Delight",delight,6,"",&56-34.16-12-1236-12-36,|(12)(14)(1234)
+"St Cuthbert","St Cuthbert Delight",delight,6,"",&56-34.16-12-1236-14-56,|(12)(14)(1234)
+"Mike's New Shed","Mike's New Shed Delight",delight,6,"",&56-34.16-12-1236-34-16,|(12)(14)(1234)
+"Saltisford","Saltisford Delight",delight,6,"",&56-34.16-12-1236-34-36,|(12)(14)(1234)
+"Leckhampton","Leckhampton Delight",delight,6,"",&56-34.16-12-36-12-36,|(12)(14)(1234)
+"Church Broughton","Church Broughton Delight",delight,6,"",&56-34.16-12-36-14-16,|14
+"Michannel","Michannel Delight",delight,6,"",&56-34.16-12-36-14-56,|(12)(14)(1234)
+"Barnton","Barnton Delight",delight,6,"",&56-34.16-12-36-34-36,|(12)(14)(1234)
+"St Mark's","St Mark's Delight",delight,6,"",&56-34.16-12-36.12-12.36,|(12)(14)(1234)
+"Gadolinium","Gadolinium Delight",delight,6,"",&56-34.16-12-36.12-14.56,|(12)(14)(1234)
+"Quendale","Quendale Delight",delight,6,"",&56-34.16-12-36.12-34.36,|(12)(14)(1234)
+"Rush","Rush Delight",delight,6,"",&56-34.16-12-36.14-12.56,|(12)(14)(1234)
+"Invisible","Invisible Delight",delight,6,"",&56-34.16-12-36.14-14.16,|(12)(14)(1234)
+"Armistice Day","Armistice Day Delight",delight,6,"",&56-34.16-12-36.14-34.56,|(12)(14)(1234)
+"Slievekimalta","Slievekimalta Delight",delight,6,"",&56-34.16-1256-1236-12-56,|(12)(14)(1234)
+"Cuilcagh","Cuilcagh Delight",delight,6,"",&56-34.16-1256-1236-14-56,|14
+"Beinn Alligin","Beinn Alligin Delight",delight,6,"",&56-34.16-1256-1236-34-56,|(12)(14)(1234)
+"Beinn a'Bheithir","Beinn a'Bheithir Delight",delight,6,"",&56-34.16-1256-36-12-56,|(12)(14)(1234)
+"Ben Wyvis","Ben Wyvis Delight",delight,6,"",&56-34.16-1256-36-14-56,|14
+"Foinaven","Foinaven Delight",delight,6,"",&56-34.16-1256-36-34-56,|(12)(14)(1234)
+"Lochnagar","Lochnagar Delight",delight,6,"",&56-34.16-1256-36.12-12.56,|(12)(14)(1234)
+"Beinn a'Ghlo","Beinn a'Ghlo Delight",delight,6,"",&56-34.16-1256-36.12-14.56,|14
+"Beinn Eighe","Beinn Eighe Delight",delight,6,"",&56-34.16-1256-36.12-34.56,|(12)(14)(1234)
+"Aonach Eagach","Aonach Eagach Delight",delight,6,"",&56-34.16-1256-36.14-12.56,|14
+"Ben Loyal","Ben Loyal Delight",delight,6,"",&56-34.16-1256-36.14-14.56,|(12)(14)(1234)
+"Beryl","Beryl Delight",delight,6,"",&56-34.16-1256-36.14-34.56,|14
+"Bernard","Bernard Delight",delight,6,"",&56-34.16-56-1236-12-56,|(12)(14)(1234)
+"Barium","Barium Delight",delight,6,"",&56-34.16-56-1236-14-56,|(12)(14)(1234)
+"Stanedge","Stanedge Delight",delight,6,"",&56-34.16-56-1236-34-36,|(12)(14)(1234)
+"Malcolm","Malcolm Delight",delight,6,"",&56-34.16-56-1236-34-56,|(12)(14)(1234)
+"Eric","Eric Delight",delight,6,"",&56-34.16-56-36-12-56,|(12)(14)(1234)
+"Lanthanum","Lanthanum Delight",delight,6,"",&56-34.16-56-36-14-56,|14
+"Harecastle","Harecastle Delight",delight,6,"",&56-34.16-56-36-34-36,|(12)(14)(1234)
+"Helen","Helen Delight",delight,6,"",&56-34.16-56-36-34-56,|(12)(14)(1234)
+"Hilda","Hilda Delight",delight,6,"",&56-34.16-56-36.12-12.56,|(12)(14)(1234)
+"Argentum","Argentum Delight",delight,6,"",&56-34.16-56-36.12-14.56,|(12)(14)(1234)
+"Clare","Clare Delight",delight,6,"",&56-34.16-56-36.12-34.56,|(12)(14)(1234)
+"Cerium","Cerium Delight",delight,6,"",&56-34.16-56-36.14-12.56,|14
+"Penrith","Penrith Delight",delight,6,"",&56-34.16-56-36.14-14.56,|(12)(14)(1234)
+"Calcium","Calcium Delight",delight,6,"",&56-34.16-56-36.14-34.56,|14
+"David","David Delight",delight,6,"",&56-36.14-12-16-12-16,|14
+"Jayne","Jayne Delight",delight,6,"",&56-36.14-12-16-12-56,|14
+"Doctor's","Doctor's Delight",delight,6,"",&56-36.14-12-16-14-56,|(12)(14)(1234)
+"Durolipons","Durolipons Delight",delight,6,"",&56-36.14-12-16-34-16,|(12)(14)(1234)
+"Aida","Aida Delight",delight,6,"",&56-36.14-12-16-34-56,|14
+"Earth","Earth Delight",delight,6,"",&56-36.14-12-16.34-12.36,|(12)(14)(1234)
+"Beryllium","Beryllium Delight",delight,6,"",&56-36.14-12-16.34-12.56,|14
+"Aslan","Aslan Delight",delight,6,"",&56-36.14-12-16.34-14.36,|(12)(14)(1234)
+"Ynys-Witrin","Ynys-Witrin Delight",delight,6,"",&56-36.14-12-16.34-14.56,|(12)(14)(1234)
+"Amelia","Amelia Delight",delight,6,"",&56-36.14-12-16.34-34.56,|14
+"Granite","Granite Delight",delight,6,"",&56-36.14-1256-16-12-36,|14
+"Graphite","Graphite Delight",delight,6,"",&56-36.14-1256-16-14-16,|14
+"Fluorite","Fluorite Delight",delight,6,"",&56-36.14-1256-16-34-36,|(12)(14)(1234)
+"Marble","Marble Delight",delight,6,"",&56-36.14-1256-16.34-12.36,|(12)(14)(1234)
+"Zincite","Zincite Delight",delight,6,"",&56-36.14-1256-16.34-14.56,|(12)(14)(1234)
+"Talc","Talc Delight",delight,6,"",&56-36.14-1256-16.34-34.36,|14
+"Midsummer Day","Midsummer Day Delight",delight,6,"",&56-36.14-56-16-12-56,|(12)(14)(1234)
+"Cadmium","Cadmium Delight",delight,6,"",&56-36.14-56-16-14-16,|14
+"Thulium","Thulium Delight",delight,6,"",&56-36.14-56-16-14-36,|(16)(14)(1456)
+"Piglet","Piglet Delight",delight,6,"",&56-36.14-56-16-34-16,|(12)(14)(1234)
+"Haymakers","Haymakers Delight",delight,6,"",&56-36.14-56-16-34-56,|(12)(14)(1234)
+"Graduation","Graduation Delight",delight,6,"",&56-36.14-56-16.34-12.56,|(12)(14)(1234)
+"St Francis of Assisi","St Francis of Assisi Delight",delight,6,"",&56-36.14-56-16.34-14.36,|(12)(14)(1234)
+"Indium","Indium Delight",delight,6,"",&56-36.14-56-16.34-14.56,|(12)(14)(1234)
+"Bristol Scholars","Bristol Scholars Delight",delight,6,"",&56-36.14-56-16.34-34.56,|(12)(14)(1234)
+"New Mill Victory","New Mill Victory Delight",delight,6,"",&56-56.14-12-16-12-16,|14
+"Lincolnshire Show","Lincolnshire Show Delight",delight,6,"",&56-56.14-12-16-12-36,|(12)(14)(1234)
+"Meysey Hampton","Meysey Hampton Delight",delight,6,"",&56-56.14-12-16-12-56,|(12)(14)(1234)
+"Xarifa","Xarifa Delight",delight,6,"",&56-56.14-12-16-14-56,|(12)(14)(1234)
+"Elmore","Elmore Delight",delight,6,"",&56-56.14-12-16-34-56,|(12)(14)(1234)
+"Hempsted","Hempsted Delight",delight,6,"",&56-56.14-12-16.34-12.56,|(12)(14)(1234)
+"Bromsberrow","Bromsberrow Delight",delight,6,"",&56-56.14-12-16.34-14.36,|(12)(14)(1234)
+"Carbon","Carbon Delight",delight,6,"",&56-56.14-12-16.34-14.56,|14
+"Eastnor","Eastnor Delight",delight,6,"",&56-56.14-12-16.34-34.16,|(12)(14)(1234)
+"Badgeworth","Badgeworth Delight",delight,6,"",&56-56.14-12-16.34-34.56,|(12)(14)(1234)
+"Jet","Jet Delight",delight,6,"",&56-56.14-1256-16-12-56,|(12)(14)(1234)
+"Sphene","Sphene Delight",delight,6,"",&56-56.14-1256-16-14-56,|(12)(14)(1234)
+"Californium","Californium Delight",delight,6,"",&56-56.14-1256-16-34-56,|(12)(14)(1234)
+"Einsteinium","Einsteinium Delight",delight,6,"",&56-56.14-1256-16.34-12.56,|(12)(14)(1234)
+"Mica","Mica Delight",delight,6,"",&56-56.14-1256-16.34-14.56,|14
+"Fermium","Fermium Delight",delight,6,"",&56-56.14-1256-16.34-34.56,|(12)(14)(1234)
+"Tin","Tin Delight",delight,6,"",&56-56.14-56-16-12-56,|14
+"Stannum","Stannum Delight",delight,6,"",&56-56.14-56-16-14-56,|(12)(14)(1234)
+"Antimony","Antimony Delight",delight,6,"",&56-56.14-56-16-34-56,|14
+"Scandium","Scandium Delight",delight,6,"",&56-56.14-56-16.34-12.56,|14
+"Stibium","Stibium Delight",delight,6,"",&56-56.14-56-16.34-14.56,|(12)(14)(1234)
+"Horsforth","Horsforth Delight",delight,6,"",&56-56.14-56-16.34-34.16,|(12)(14)(1234)
+"Tellurium","Tellurium Delight",delight,6,"",&56-56.14-56-16.34-34.56,|14
+"Kalgoorlie","Kalgoorlie Delight",delight,6,"",&56-56.16-12-36-14-56,|(12)(14)(1234)
+"Centrelink","Centrelink Delight",delight,6,"",&56-56.16-12-36.14-12.56,|(12)(14)(1234)
+"Micheldever","Micheldever Delight",delight,6,"",&-36-36-36-16-12-56-12-36-14-14-14-36,|(16)(14)(1456)
+"Girrawheen","Girrawheen Delight",delight,6,"",-34-14-12-16-12-1256.12-12.16-12-14-34-12
+"Lancelin","Lancelin Delight",delight,6,"",-34-14-12-16-12.1234.3456.12.1234.34.16-12-14-34-12
+"Aussie Christmas","Aussie Christmas Delight",delight,6,"",-34-14-12-16-12.34.1256.1234-12.16-12-14-34-12
+"Dalwallinu","Dalwallinu Delight",delight,6,"",-34-14-12-16-12.34.3456-1234.34.16-12-14-34-12
+"Uluru","Uluru Delight",delight,6,"",-34-14-12-16-34-3456.34-34.16-12-14-34-12
+"A Christmas Carol","A Christmas Carol Delight",delight,6,"",-34-14-12-16-34-3456.34-34.16-12-14-34-16
+"Enoggera","Enoggera Delight",delight,6,"",-34-14-12-16-34.12.3456.1234-34.16-12-14-34-12
+"Zanthus","Zanthus Delight",delight,6,"",-34-14-12-16.12-12.1256-12-16-12-14-34-12
+"Xantippe","Xantippe Delight",delight,6,"",-34-14-12-16.12-1234.3456.12.34.1234.16-12-14-34-12
+"Oombulgurri","Oombulgurri Delight",delight,6,"",-34-14-12-16.34-1234.3456.12.34-16-12-14-34-12
+"Woolloongabba","Woolloongabba Delight",delight,6,"",-34-14-12-16.34-34.3456-34-16-12-14-34-12
+"Woolloomooloo","Woolloomooloo Delight",delight,6,"",-34-14-12-16.34.1234-3456.34.12-16-12-14-34-12
+"Indooroopilly","Indooroopilly Delight",delight,6,"",-34-14-12-16.34.1234.12.3456.1234.12-16-12-14-34-12
+"Pen-Bloth","Pen-Bloth Delight",delight,6,"",-36-1456-56-16-12-1256.12-12.16-56-1456-36-12
+"Utter","Utter Delight",delight,6,"",-36-1456-56-16-12.1234.3456.12.1234.34.16-56-1456-36-12
+"Belated Birthday Compliment","Belated Birthday Compliment Delight",delight,6,"",-36-1456-56-16-12.34.3456-1234.34.16-56-1456-36-12
+"Cans ha Kensa","Cans ha Kensa Delight",delight,6,"",-36-1456-56-16-34-3456.34-34.16-56-1456-36-12
+"Something Interesting","Something Interesting Delight",delight,6,"",-36-1456-56-16-34.12.3456.1234-34.16-56-1456-36-12
+"Pymp ha Tryugans Bledhen","Pymp ha Tryugans Bledhen Delight",delight,6,"",-36-1456-56-16.12-12.1256-12-16-56-1456-36-12
+"Something Easy","Something Easy Delight",delight,6,"",-36-1456-56-16.12-1234.3456.12.34.1234.16-56-1456-36-12
+"TDGR","TDGR Delight",delight,6,"",-36-1456-56-16.12-34.3456-34.1234.16-56-1456-36-12
+"ANZAB","ANZAB Delight",delight,6,"",-36-1456-56-16.1234.34-3456.34-12.16-56-1456-36-12
+"Yorkshire Wedding","Yorkshire Wedding Delight",delight,6,"",-36-1456-56-16.1234.34.12.3456.1234-12.16-56-1456-36-12
+"Chapelfield Shopping Centre","Chapelfield Shopping Centre Delight",delight,6,"",-36-1456-56-16.1234.34.1234.1256.34.1234.34.16-56-1456-36-12
+"Thursday Lunchtime","Thursday Lunchtime Delight",delight,6,"",-36-1456-56-16.34-1234.3456.12.34-16-56-1456-36-12
+"Venn","Venn Delight",delight,6,"",-36-1456-56-16.34-34.3456-34-16-56-1456-36-12
+"Christmas Pudding","Christmas Pudding Delight",delight,6,"",-36-1456-56-16.34.1234-3456.34.12-16-56-1456-36-12
+"Ittle Beer","Ittle Beer Delight",delight,6,"",-36-1456-56-16.34.1234.12.3456.1234.12-16-56-1456-36-12
+"You'd not believe what some folk'll ring to complete the Treble Dodging Minor Alphabet","You'd not believe what some folk'll ring to complete the Treble Dodging Minor Alphabet Delight",delight,6,"",-36-1456-56-16.34.1234.34.1256.1234.34.1234.16-56-1456-36-12
+"Cullacabardee","Cullacabardee Delight",delight,6,"",-56-1456-12-16-12-1256.12-12.16-12-1456-56-12
+"Joondalup","Joondalup Delight",delight,6,"",-56-1456-12-16-12.1234.3456.12.1234.34.16-12-1456-56-12
+"Quinns Rocks","Quinns Rocks Delight",delight,6,"",-56-1456-12-16-12.34.3456-1234.34.16-12-1456-56-12
+"Innaloo","Innaloo Delight",delight,6,"",-56-1456-12-16-34-3456.34-34.16-12-1456-56-12
+"Cansves Forth Noweth war Whegh Clogh","Cansves Forth Noweth war Whegh Clogh Delight",delight,6,"",-56-1456-12-16.12-12.1256-12-16-12-1456-56-12
+"Gnangara","Gnangara Delight",delight,6,"",-56-1456-12-16.34-34.3456-34-16-12-1456-56-12
+"Neerabup","Neerabup Delight",delight,6,"",-56-1456-12-16.34.1234-3456.34.12-16-12-1456-56-12
+"Konnongorring","Konnongorring Delight",delight,6,"",-56-1456-12-16.34.1234.12.3456.1234.12-16-12-1456-56-12

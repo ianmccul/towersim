@@ -1,0 +1,21 @@
+Treble Bob Royal methods
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+15830	Oxford	-34-10-12-10-12-10-12-10-12-	10	10	m	cps/BDa	1741-05-30	London, St Sepulchre	1811-12-03	
+15831	Rotherham	-34-10-12-10-12-10.34-34.10-18-	10	12	1362485079		1986-05-11	Rotherham, All Saints		86/539
+15832	Violet	-30-10-12-10-12-10-12-10-12-	10	14	1826403957		1987-03-29	Ranmoor	1985-04-28	85/481 87/384
+15833	Berkeley	-50-10-58-10-12-10-14-10.34-14.	90	12	a	cps/BDEce	1984-10-20	Berkeley		84/1044
+15834	Kent	34-34.10-12-10-12-10-12-10-12-	10	10	m	cps/BDa	1778-01-05	Leeds (Kent)	1866-01-17	
+15835	Nile	34-38.10.58.12-10.78.12.34.10.36.12-10.38.12-	10	10	m	BCD/BD	1984-10-13	Charminster		84/1005
+15836	Windsor	56-56.10-12-10-12-10-12-10-12-	10	10	m	cps/BDa	2011-04-29	Hexham	1992-12-29	93/130 11/579
+15837	Albion	56-56.10.56-56.10.34-34.10.34-34.10.34-34.	10	12	a	cps/a	1980-09-15	Isleworth		80/881
+15838	Sowerbine	78-78.10-12-10-12-10-12-10-12-	10	10	m	cps/BDa			1986-04-20	86/450
+15839	Bockingford	78-78.10.78-78.10.3478-3478.10.34-34.10.34-34.	10	12	a	cps/a2	1980-06-10	Maidstone, All Saints		80/576 670 81/119
+
+Little Treble Bob Royal methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+15840	Albion Little	56-56.10.56-56.	14	12	e	cps/a1	1914-02-07	Stockport, St George	V6/102
+

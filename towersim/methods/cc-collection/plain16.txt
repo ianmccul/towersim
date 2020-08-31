@@ -1,0 +1,25 @@
+Single-hunt Sixteen methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3809	Plain Bob	-1D-1D-1D-1D-1D-1D-1D-	1D	12	a	2009-01-04	Birmingham, St Martin	94/537 09/84
+3810	Birmingham Bob	-1D-3D.12.5D.14.5D.14.5D.14.5D.14.5D.14.	5D	1D	k1	Spliced		10/1317
+
+Single-hunt Little Sixteen methods (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	Handbells	RW ref
+
+3811	Bastow Little Bob	-	12	1D	m	Spliced	06/838
+
+Single-hunt Little Sixteen methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3812	Little Bob	-1D-	14	12	e	2008-06-15	Birmingham, St Martin	1969-10-27	69/938 08/722
+
+Twin-hunt Sixteen methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	RW ref
+
+3813	Grandsire	3D.1D-1D-1D-1D-1D-1D-1D-1D	-	p	2007-01-07	Birmingham, St Martin	07/144
+

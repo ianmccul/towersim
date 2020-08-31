@@ -1,0 +1,6 @@
+"Forward","Forward",principle,12,"",34-34.1T
+"Duffield","Duffield",principle,12,"",-36-36-1T
+"Aston","Aston",principle,12,"",56.34.56-56.34.56.1T
+"Thursday","Thursday",principle,12,"",-30-58-149T-3670-1T-3670-149T-58-30
+"Quasar","Quasar",principle,12,"",1T-14.50.3T.14-18.30.9T-16.5T.1470-14.36.50.9T-18.7T-36
+"Orion","Orion",principle,12,"",36-7T.18-9T.50.36.14-1470.5T.16-9T.30.18-14.3T.50.14-1T

@@ -1,0 +1,16 @@
+"Original","Original",principle,8,"",-18
+"Forward","Forward",principle,8,"",34-34.18
+"Duffield","Duffield",principle,8,"",-36-36-18
+"Peak District","Peak District",principle,8,"",36.12-12.36.18
+"Winter","Winter",principle,8,"",58.14-36-58.14
+"Shilton","Shilton",principle,8,"",34-34.18-12-18
+"MUG","MUG",principle,8,"",34.12.34-34.12.34.18
+"Heywood","Heywood",principle,8,"",34.56.34-34.56.34.18
+"Handsworth","Handsworth",principle,8,"",56.12.56-56.12.56.18
+"Aston","Aston",principle,8,"",56.34.56-56.34.56.18
+"Mercury","Mercury",principle,8,"",-38-16-16-38-16
+"Caversham","Caversham",principle,8,"",36.18.34-34.56-34-18-34.56-
+"Shipway","Shipway",principle,8,"",-38.14-14-14-14.38-14-14-14
+"St Columb","St Columb",principle,8,"",56.34.18-18.56.34-34.56.18-18.34.56.18
+"Easton Neston","Easton Neston",principle,8,"",34.16-36.18-34.18.34-34.18.34-18.36-16.34.18
+"Isis","Isis",principle,8,"",-16.38-16.38.16-16-16.38-38.16.38-16-16.38.16.38.16-16-38-16-16-16.38-16.38-16-16

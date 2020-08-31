@@ -1,0 +1,391 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Alliance Minor methods (treble dodging in 1-2)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+15896	Liden	34-34.16-1236-	36	16	l	76/1072
+15897	Eldene	34-34.16-1236-	56	16	134625	76/1072
+15898	Darrington	34-34.16-36-	36	12	f	61/393
+15899	Thrybergh	34-34.16-36-	36	16	l	61/393
+15900	Covingham	34-34.16-36-	56	16	134625	76/1072
+15901	Adwick	34-34.16-36.12.	36	16	l	61/393
+15902	Dorcan	34-34.16-36.12.	56	16	134625	76/1072
+15903	Severn	34-36.14-1236-	56	12	142563	77/87
+15904	Thames	34-36.14-36-	56	12	142563	77/87
+15905	Avon	34-36.14-36.12.	56	12	142563	77/87
+
+Alliance Minor methods (treble dodging in 3-4)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+15906	Coate	-16-12-1236-	36	12	f	93/1108
+15907	Ferris	-16.12-12.16-	16	12	a	77/8
+
+Alliance Minor methods (treble dodging in 5-6)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+15908	Great Somerford	-14-1236-12-	16	12	e	73/1007
+15909	Preshute	-14-1236-12-	36	12	142563	66/467
+15910	Beckford	-14-1236-12-	56	12	f	63/588
+15911	Marlborough	-14-1236-12-	56	16	l	65/483
+15912	Lyddington	-14-1236-12.1234.	56	12	f	02/294
+15913	Heslington	-14-1236-14-	16	12	a	71/313
+15914	Exton	-14-1236-14-	36	12	165324	79/430
+15915	Winchcombe	-14-1236-34-	56	12	f	63/588
+15916	Mildenhall	-14-1236-34-	56	16	l	65/483
+15917	Whissendine	-14-1236-34.1234.	56	12	f	02/294
+15918	Belton-in-Rutland	-14-1236.12-12.	56	12	f	02/294
+15919	Empingham	-14-1236.12-34.	56	12	f	02/294
+15920	Glaston	-14-1236.1234.12-	56	12	f	02/294
+15921	Langham	-14-1236.34-12.	56	12	f	02/294
+15922	Ashwell	-14-1236.34-34.	56	12	f	02/294
+15923	Dennington	-14-16-12-	56	16	146532	66/467
+15924	Yaxley	-14-16-14-	16	12	a	
+15925	Harmondsworth	-14-16-14-	56	12	f	
+15926	Wordsley	-14-16-14-	56	16	l	
+15927	Clyst	-14-16-34-	36	16	m	
+15928	Bredfield	-14-16-34-	56	16	146532	66/467
+15929	Lavington	-14-16.34-12.	36	16	m	
+15930	Milton	-14-16.34-12.	56	16	146532	93/916
+15931	Shenfield	-14-16.34-14.	36	12	b	
+15932	Albury	-14-16.34-14.	36	16	g	
+15933	Cotgrave	-14-16.34-34.	16	12	b	
+15934	Weston	-14-16.34-34.	16	16	g	
+15935	Cavendish	-14-16.34-34.	56	16	146532	66/467
+15936	Kennet	-14-36-12-	36	12	142563	66/467
+15937	Sharnbrook	-14-36-12-	56	12	f	
+15938	Stratton	-14-36-12-	56	16	l	
+15939	Perivale	-14-36-14-	36	12	b	29/148
+15940	Alperton	-14-36-14-	36	16	g	
+15941	Hayes	-14-36-34-	56	12	f	
+15942	Stanhoe	-14-36-34-	56	16	l	
+15943	Overton	-14-36.12-12.	36	12	142563	66/467
+15944	Ringstead	-14-36.12-12.	56	12	f	
+15945	Mitcham	-14-36.12-12.	56	16	l	
+15946	Norwood	-14-36.12-14.	36	16	m	
+15947	Hampstead	-14-36.12-34.	16	16	m	
+15948	Stonehouse	-14-36.12-34.	56	12	f	
+15949	Blaxhall	-14-36.12-34.	56	16	l	
+15950	Bramfield	-14-36.14-14.	56	12	f	
+15951	Lamberhurst	-14-36.14-14.	56	16	l	
+15952	Bozeat	-14-36.34-12.	56	12	f	09/178
+15953	Ramsbury	-16-1236-12-	36	12	f	65/563
+15954	Minchinhampton	-16-1236-12-	36	16	l	62/767
+15955	Barnard	-16-1236-34-	36	12	142563	04/131
+15956	Walsingham	-16-16-12-	56	12	b	
+15957	Cromer	-16-16-12-	56	16	g	
+15958	Thurlby	-16-16-12.1234.	56	12	b	02/110
+15959	Harlington	-16-16-14-	36	16	m	28/745
+15960	Lammas	-16-16-34-	56	12	b	
+15961	Steventon	-16-16-34-	56	16	g	
+15962	Folkingham	-16-16.12-12.	56	12	b	03/81
+15963	Renhold	-16-16.1234.14-	36	12	f	01/782
+15964	Fulmer	-16-16.34-12.	56	12	b	
+15965	Chalfont	-16-16.34-12.	56	16	g	
+15966	Winterton	-16-16.34-14.	36	12	a	
+15967	Attleborough	-16-16.34-34.	16	12	a	
+15968	Olney	-16-16.34-34.	56	12	b	
+15969	Tibenham	-16-16.34-34.	56	16	g	
+15970	Buxton	-16-36-12-	36	12	f	
+15971	Ellacombe	-16-36-12-	36	16	l	
+15972	Amersham	-16-36-14-	36	12	a	28/745
+15973	Springfield	-16-36-34-	16	12	e	
+15974	Holbeton	-16-36-34-	16	16	h	
+15975	Barking	-16-36-34-	36	12	142563	04/131
+15976	Iver	-16-36.12-12.	36	12	f	
+15977	Finchley	-16-36.12-12.	36	16	l	
+15978	Penshurst	-16-36.12-14.	56	12	b	
+15979	Northaw	-16-36.12-14.	56	16	g	
+15980	Burstow	-16-36.14-12.	36	12	e	
+15981	Leyland	-16-36.14-12.	36	16	h	
+15982	Kimberley	-16-36.14-14.	36	16	m	
+15983	Balcombe	-16-36.14-34.	16	16	m	
+15984	Taylor	-16-36.14-34.	56	12	165324	79/368
+15985	Rushmere	34.16-16-12-	16	16	134625	97/688
+15986	Mendlesham	34.16-16-12-	36	12	f	
+15987	Tonbridge	34.16-16-12-	36	16	l	
+15988	Offton	34.16-16-12-	56	12	154632	66/500
+15989	Sproughton	34.16-16-12-	56	16	165243	66/500
+15990	Kilndown	34.16-16-14-	36	16	m	
+15991	Darlington	34.16-16-34-	16	12	a	
+15992	Nowton	34.16-16-34-	56	12	154632	66/500
+15993	Rougham	34.16-16-34-	56	16	165243	66/500
+15994	Preston	34.16-16.34-12.	56	12	154632	66/500
+15995	Tannington	34.16-16.34-12.	56	16	165243	66/500
+15996	Wilburton	34.16-16.34-14.	56	12	e	
+15997	Marden	34.16-16.34-14.	56	16	h	
+15998	Amport	34.16-16.34-34.	56	12	154632	70/900
+15999	Eccleston	34.16-36-14-	16	12	f	
+16000	Headcorn	34.16-36-14-	16	16	l	
+16001	Calverleigh	34.16-36-14-	56	12	e	
+16002	Hever	34.16-36-14-	56	16	h	
+16003	Kelly	34.16-36-34-	36	12	a	
+16004	Allesley	34.16-36.14-12.	56	12	e	
+16005	Snodland	34.16-36.14-12.	56	16	h	
+16006	Farleigh	34.16-36.14-14.	36	16	m	
+16007	Beltring	34.16-36.14-34.	16	16	m	
+16008	Wrentham	34.16-36.14-34.	56	12	e	
+16009	Swanscombe	34.16-36.14-34.	56	16	h	
+16010	Shere	36.14-1236-12-	56	12	a	93/916
+16011	Burpham	36.14-1236-34-	56	12	a	93/916
+16012	Isham	36.14-16-12-	36	12	e	
+16013	Clapham	36.14-16-14-	56	12	a	
+16014	Stapleford	36.14-36-12-	56	12	a	
+16015	Malmesbury	36.14-36-14-	16	12	e	
+16016	Cottenham	36.14-36-34-	16	12	b	
+16017	Rothwell	36.14-36-34-	56	12	a	
+16018	Merrow	36.14-36.12-12.	56	12	a	
+16019	Clandon	36.14-36.12-34.	56	12	a	
+16020	Thornham	36.14-36.14-12.	36	12	b	
+16021	Merstham	36.14-36.14-14.	56	12	a	
+
+Alliance Minor methods (treble dodging in 1-2 and 3-4)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16022	Foxhill	34-34.16-12-36-	36	12	f	93/1048
+
+Alliance Minor methods (treble dodging in 1-2 and 5-6)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16023	Dodd	-34-16-16-34-	16	12	a	77/8
+16024	Seafield	-36-14-36-34-	36	12	e	
+16025	Amesbury	34-34.16-36-12-	36	12	f	73/796
+16026	Andover	34-34.16-36-12-	36	16	l	73/796
+
+Alliance Minor methods (treble dodging in 3-4 and 5-6)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16027	Hannington	-14-12-1236-12-	36	12	142563	77/87
+16028	Saltwood	-14-12-1236-12-	56	12	f	63/852
+16029	Penhill	-14-12-1236-12-	56	16	l	64/585
+16030	Burmarsh	-14-12-1236-34-	56	12	f	63/852
+16031	Walcot	-14-12-1236-34-	56	16	l	64/585
+16032	Apsley End	-14-12-16-12-	36	12	a	
+16033	Bassingham	-14-12-16-14-	56	12	f	47/407
+16034	Bigby	-14-12-16-14-	56	16	l	47/407
+16035	Wrangle	-14-12-36-12-	16	12	e	36/535
+16036	Leake	-14-12-36-12-	16	16	h	
+16037	Castle Eaton	-14-12-36-12-	36	12	142563	73/796
+16038	Butterwick	-14-12-36-12-	56	12	f	36/408
+16039	Tattershall	-14-12-36-12-	56	16	l	36/408
+16040	Gamston	-14-12-36-14-	16	12	a	
+16041	Whaplode	-14-12-36-34-	16	16	m	
+16042	Frampton	-14-12-36-34-	56	12	f	36/408
+16043	Alford	-14-12-36-34-	56	16	l	36/408
+16044	Kempsford	-14-12-36.12-12.	36	12	142563	73/796
+16045	Freiston	-14-12-36.12-12.	56	12	f	36/408
+16046	Candlesby	-14-12-36.12-12.	56	16	l	36/408
+16047	Benington	-14-12-36.12-34.	56	12	f	36/408
+16048	Langton	-14-12-36.12-34.	56	16	l	36/408
+16049	Silk Willoughby	-14-12-36.14-12.	36	16	m	
+16050	Dunholme	-14-12-36.14-14.	56	12	f	47/407
+16051	Elsham	-14-12-36.14-14.	56	16	l	47/407
+16052	Langford	-14-56-1236-12-	36	12	f	77/87
+16053	Chalford	-14-56-1236-12-	56	12	142563	77/87
+16054	Avening	-14-56-1236-34-	56	12	142563	77/87
+16055	Lechlade	-14-56-36-12-	36	12	f	77/87
+16056	Brinkworth	-14-56-36-12-	56	12	142563	77/87
+16057	Dauntsey	-14-56-36-34-	56	12	142563	77/87
+16058	Filkins	-14-56-36.12-12.	36	12	f	77/87
+16059	Minety	-14-56-36.12-12.	56	12	142563	77/87
+16060	Kemble	-14-56-36.12-34.	56	12	142563	77/87
+16061	Flanshaw	-1456-56-1236-12-	56	16	l	72/443
+16062	Yatesbury	-1456-56-1236-34-	56	12	f	77/87
+16063	Eastmoor	-1456-56-1236-34-	56	16	l	72/443
+16064	Lupset	-1456-56-36-12-	56	16	l	72/443
+16065	Wrenthorpe	-1456-56-36-34-	56	16	l	72/443
+16066	Bremhill	-1456-56-36.12-12.	56	12	f	77/87
+16067	Clappergate	-1456-56-36.12-12.	56	16	l	72/443
+16068	Heddington	-1456-56-36.12-34.	56	12	f	77/87
+16069	Skelwith Bridge	-1456-56-36.12-34.	56	16	l	72/443
+16070	Alderbourne	-16-12-1236-12-	36	12	f	64/585
+16071	Witcombe	-16-12-1236-12-	36	16	l	63/852
+16072	Monk Fryston	-16-12-1236-12-	56	16	134625	72/443
+16073	Green Hammerton	-16-12-1236-34-	56	16	134625	72/443
+16074	Normanton	-16-12-16-12-	16	16	m	
+16075	Brailes	-16-12-16-12-	56	12	165324	68/387
+16076	Croft	-16-12-16-34-	36	12	e	
+16077	Algarkirk	-16-12-16-34-	36	16	h	
+16078	Staverton	-16-12-16-34-	56	12	165324	68/387
+16079	Hanley Castle	-16-12-16.34-12.	36	12	e	
+16080	Wickham Skeith	-16-12-16.34-12.	36	16	h	
+16081	Honington	-16-12-16.34-12.	56	12	165324	68/387
+16082	Felkirk	-16-12-16.34-14.	56	12	b	60/183
+16083	Crofton	-16-12-16.34-14.	56	16	g	60/183
+16084	Farnborough	-16-12-16.34-34.	56	12	165324	68/387
+16085	Sutton	-16-12-36-12-	36	12	f	
+16086	Chelford	-16-12-36-12-	36	16	l	
+16087	Coxley	-16-12-36-12-	56	16	134625	72/443
+16088	Morland	-16-12-36-14-	56	12	b	34/684
+16089	Bodenham	-16-12-36-14-	56	16	g	60/183
+16090	Kirkhamgate	-16-12-36-34-	56	16	134625	72/443
+16091	Denton	-16-12-36.12-12.	36	12	f	
+16092	Poynton	-16-12-36.12-12.	36	16	l	
+16093	Alwoodley	-16-12-36.12-12.	56	16	134625	72/443
+16094	Limpsfield	-16-12-36.12-14.	36	12	e	
+16095	Willesborough	-16-12-36.12-14.	36	16	h	
+16096	Biddenham	-16-12-36.12-34.	16	12	e	
+16097	Wistaston	-16-12-36.12-34.	16	16	h	
+16098	Hanging Heaton	-16-12-36.12-34.	56	16	134625	72/443
+16099	Pencombe	-16-12-36.14-12.	56	12	b	60/183
+16100	Eardisley	-16-12-36.14-12.	56	16	g	60/183
+16101	Kirkthorpe	-16-12-36.14-34.	56	12	b	60/183
+16102	Kippax	-16-12-36.14-34.	56	16	g	60/183
+16103	Sharlston	-16-56-1236-12-	36	16	134625	72/443
+16104	Tingley	-16-56-1236-12-	56	16	l	72/443
+16105	Westerton	-16-56-1236-34-	56	16	l	72/443
+16106	Snydale	-16-56-36-12-	36	16	134625	72/443
+16107	Carr Gate	-16-56-36-12-	56	16	l	72/443
+16108	Durkar	-16-56-36-34-	56	16	l	72/443
+16109	Ferry Bridge	-16-56-36.12-12.	36	16	134625	72/443
+16110	Emley	-16-56-36.12-12.	56	16	l	72/443
+16111	Flockton	-16-56-36.12-34.	56	16	l	72/443
+16112	Sibsey	34.16-12-16-12-	16	16	m	
+16113	Surfleet	34.16-12-16-12-	56	12	e	
+16114	Gedney	34.16-12-16-12-	56	16	h	
+16115	Cranford	34.16-12-16-14-	16	12	f	
+16116	Hitcham	34.16-12-16-14-	16	16	l	
+16117	Gosberton	34.16-12-16-34-	16	12	a	
+16118	Spalding	34.16-12-16-34-	56	12	e	
+16119	Gunby	34.16-12-16-34-	56	16	h	
+16120	Wainfleet	34.16-12-16.34-12.	56	12	e	
+16121	Bicker	34.16-12-16.34-12.	56	16	h	
+16122	Pinchbeck	34.16-12-16.34-34.	56	12	e	
+16123	Spilsby	34.16-12-16.34-34.	56	16	h	
+16124	Stisted	34.16-12-36-12-	16	12	b	
+16125	Llanelly	34.16-12-36-12-	16	16	g	
+16126	Clewer	34.16-12-36-34-	36	12	a	
+16127	Copt Oak	34.16-12-36.12-14.	56	12	e	
+16128	Charnwood	34.16-12-36.12-14.	56	16	h	
+16129	Cassington	36.14-12-16-14-	16	12	e	
+16130	Holywell	36.14-12-16-14-	56	12	a	
+16131	Hilperton	36.14-12-16-34-	36	12	b	
+16132	Newburn	36.14-12-16.34-12.	36	12	b	
+16133	Wonston	36.14-12-16.34-14.	36	12	f	
+16134	Lytchett	36.14-12-16.34-34.	16	12	f	
+16135	Stokesay	36.14-12-36-12-	56	12	a	
+16136	Stanwell	36.14-12-36-14-	36	12	f	
+16137	Perran	36.14-12-36-34-	56	12	a	
+16138	Angmering	36.14-12-36.12-12.	56	12	a	
+16139	Mathon	36.14-12-36.12-14.	36	12	b	
+16140	Haresfield	36.14-12-36.12-34.	16	12	b	
+16141	Whickham	36.14-12-36.12-34.	56	12	a	
+16142	Belton	36.14-12-36.14-14.	56	12	a	
+
+Alliance Minor methods (treble triple dodging in 5-6)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16143	Hudson	-16-16-14-34-12-	16	12	a	04/201
+
+Alliance Minor methods
+         (treble's path 1 2 3  4 5    6  6    5  5)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16144	Foxley	-14-1236-1236-	56	16	134625	94/685
+16145	Deene	-14-1236-3456-	56	12	f	91/1114 03/733
+16146	Creaton	-14-1236.12.3456.12.	56	12	f	03/733
+16147	ANZAC	-14-16-1236-	56	16	m	07/88
+16148	Godspeed	-14-16-36-	56	16	m	07/542
+16149	York Colleges Guild	-14-36-3456-	56	12	f	87/342 03/733
+16150	Roadshow	-16-16-1256-	56	12	b	03/256 394
+16151	Castlereagh	-16-36-16-	56	12	a	10/65
+
+Alliance Minor methods
+   (treble's path 1 2 3  3  4 4  5  6 6)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16152	Tillingbourne	-16.34-34.16-	16	12	a	92/1006
+
+Alliance Minor methods
+(treble's path 1 2  3  4 5  6 6    5 4  4)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16153	Brisley	36.14-16-1456-36.	14	12	f	94/685
+
+Alliance Minor methods
+(treble's path 1 2 1  2  3  4 5  6 6    5 5)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16154	Guist	34-36.14-36-1236-	56	12	f	94/378
+
+Alliance Minor methods
+(treble's path 1 2 3  4 3  4 5  6 6    5 5)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16155	Oxwick	-14-12-36-1236-	56	16	134625	94/685
+
+Alliance Minor methods
+    (treble's path 1 2 3  4 5  6 6    5 4  3 3)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16156	Kelling	-16-36-1236-36-	36	12	f	94/378
+
+Little Alliance Minor methods (treble to 3rds dodging in 1-2)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16157	Little Dunham Little	-34-16.	34	12	a	94/685
+
+Little Alliance Minor methods (treble to 4ths dodging in 1-2)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16158	River Wey Little	-34-16-	34	12	a	92/271
+16159	St Mary Little	34-34.16-	34	12	142563	92/595
+16160	Cornhill Little	34-36.14-	34	12	f	61/393
+16161	Cripplegate Little	34-36.14-	34	16	l	61/393
+
+Little Alliance Minor methods (treble to 4ths dodging in 3-4)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16162	Avebury Little	-14-12-	34	16	134625	90/324
+
+Little Alliance Minor methods
+          (treble's path 1 2 3  4 4    3 3)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16163	Brandon Parva Little	-14-1234-	34	16	134625	94/378
+16164	St Dympna Little	-16-34-	36	16	134625	92/595
+
+Little Alliance Minor methods
+        (treble's path 1 2 1  2 3  4 4  3 2  1 1)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16165	Offa's Dyke Little	-36-14-14-14-	12	12	e	92/1006
+
+Little Alliance Minor methods
+      (treble's path 1 2  1 2  3  4 4  3 2  1  2 1  1)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+16166	St Martha Little	34-34.16-34-16.34-34.	16	12	a	92/271
+
+Alliance Triples methods (treble dodging in 6-7)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+16167	Berkeley	7.1.5.3.7.345.5.345.	7	127	q	Spliced	97/510
+16168	Barbury	7.1.5.3.7.5.345.5.	7	127	q	Spliced	97/510
+16169	Buckfast Abbey	7.145.5.3.7.345.5.345.	7	127	q	Spliced	97/510
+16170	Blunsdon Abbey	7.145.5.3.7.5.345.5.	7	127	q	Spliced	97/510
+
+Alliance Triples methods
+   (treble's path 1 2 3 4 3   4 5 6 5   6 7 7 7)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+16171	J R Hartley's	7.1.7.127.7.1.7.127.7.1.7.	127	1	s	Spliced	04/202

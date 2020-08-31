@@ -1,0 +1,660 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Single-hunt Doubles methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+20	Ancaster Bob	3.1.125.1.	345	1	13452	1994-04-29	Heveningham		70/13 94/561
+21	Quirister Bob	3.1.125.1.	5	123	14532	1994-09-24	Acton (Suffolk)		94/1072
+22	Camelion Bob	3.1.125.1.	5	125	q	2004-02-07	Whiston (Northants)		04/204
+23	Dirt Monkey Bob	3.1.125.1.	5	145	15423				07/696
+24	Blaisdon Bob	3.1.125.123.	5	125	p	2004-01-21	Great Oxendon		66/125 04/129
+25	St Alphage Bob	3.1.125.3.	145	1	13452				
+26	St Vedast Bob	3.1.125.3.	5	125	p	2003-07-19	Marston Trussell		03/758
+27	Uffington Bob	3.1.5.1.	125	1	r	1994-01-28	Heveningham		94/209
+28	Reverse St Simon's Bob	3.1.5.1.	145	1	13452				
+29	Union Bob	3.1.5.1.	345	1	s	1963-02-02	Penhow		63/116
+30	St Augustine Bob	3.1.5.1.	5	123	15423	1957-09-26	Brampford Speke	1974-12-22	53/283 57/653 75/81
+31	Chase Bob	3.1.5.1.	5	145	14532	1960-06-10	Little Houghton		55/811 60/428
+32	Reverse St Nicholas Bob	3.1.5.123.	145	1	13452				
+33	Huntspill Bob	3.1.5.123.	5	125	p	1953-08-29	Stanwell		53/608
+34	Reverse New Bob	3.1.5.3.	145	1	s				
+35	New Bob	3.1.5.3.	5	125	p	1958-11-15	Silchester		58/789
+36	Helpringham Bob	3.145.125.1.	345	1	r				70/13
+37	Morning Star Bob	3.145.125.1.	5	123	15423				
+38	Slum Place	3.145.125.1.	5	145	14532				07/696
+39	Dragon Place	3.145.125.123.	5	125	p	1986-05-09	Skillington		66/125 86/564
+40	St Gregory Bob	3.145.125.3.	145	1	r				
+41	St Hilary Bob	3.145.125.3.	5	125	p			1958-09-04	58/622
+42	Datchet Bob	3.145.5.1.	125	1	13452				
+43	Reverse St Osmund Bob	3.145.5.1.	145	1	r				
+44	St Julian Bob	3.145.5.1.	345	1	15234				
+45	St James Bob	3.145.5.1.	5	123	14532	1963-03-09	Isham	1974-12-14	63/203 75/81
+46	Shipway Place	3.145.5.1.	5	125	q	1954-07-29	Midgham	1958-08-31	54/517 58/621
+47	St Piran Place	3.145.5.1.	5	145	15423				05/216
+48	Reverse St Remigius Bob	3.145.5.123.	145	1	r				
+49	Blackburn Place	3.145.5.123.	5	125	p	1989-04-22	Heveningham	1958-09-02	52/752 58/622 89/462
+50	Reverse St Vedast Bob	3.145.5.3.	145	1	15234				
+51	Westminster II Bob	3.145.5.3.	5	125	p			1958-09-03	58/622
+52	Newton Place	345.1.125.1.	345	1	r				70/13
+53	Evening Star Place	345.1.125.1.	5	123	15423				70/199
+54	Bradford-on-Tone Place	345.1.125.1.	5	145	14532				86/719
+55	Huntley Place	345.1.125.123.	5	125	p	1988-12-30	Wetheringsett		66/125 89/107
+56	St Andrew Place	345.1.125.3.	145	1	r	1960-12-03	Cotterstock		60/830
+57	St Remigius Bob	345.1.125.3.	5	125	p	1963-05-04	North Stoneham	1958-09-05	58/622 63/341
+58	Stowe Place	345.1.5.1.	125	1	13452				
+59	Reverse St Martin's Bob	345.1.5.1.	145	1	r				
+60	St Faith Place	345.1.5.1.	345	1	15234				
+61	All Saints Place	345.1.5.1.	5	123	14532	1952-12-06	Sutton Coldfield	1974-12-14	52/820 75/81
+62	Reverse Canterbury Pleasure Place	345.1.5.1.	5	125	q	1954-07-11	Goodworth Clatford	1958-06-22	58/461
+63	Brigstock Place	345.1.5.1.	5	145	15423				69/110
+64	Reverse Winchendon Place	345.1.5.123.	145	1	r				
+65	Winchendon Place	345.1.5.123.	5	125	p	1958-11-08	Abbotts Ann	1958-12-31	39/381 383 58/754 59/74
+66	Reverse Huntspill Bob	345.1.5.3.	145	1	15234				
+67	St Nicholas Bob	345.1.5.3.	5	125	p	1955-11-04	Hatherop	1958-09-01	39/381 383 55/740 58/622
+68	Braceborough Place	345.145.125.1.	345	1	13452				70/13
+69	Cathedral Place	345.145.125.1.	5	123	14532	1993-12-18	Little Glemham		70/199 94/61
+70	Honington Place	345.145.125.3.	145	1	13452				70/13
+71	Tallington Place	345.145.5.1.	125	1	r				
+72	Chapel-en-le-Frith Bob	345.145.5.1.	145	1	13452				69/548
+73	Rouen Place	345.145.5.1.	345	1	s	1995-12-15	Badingham		96/69 187
+74	Minster Place	345.145.5.1.	5	123	15423	1975-03-08	Leck	1974-12-15	75/81 320
+75	Sempringham Place	345.145.5.123.	145	1	13452				69/548
+76	Thurlby Bob	345.145.5.3.	145	1	s				70/13
+77	Wellington Place	5.1.125.1.	345	1	r				70/276
+78	Cippenham Place	5.1.125.1.	5	123	15423				70/659
+79	Oake Place	5.1.125.1.	5	145	14532				86/724
+80	Abbey Place	5.1.125.123.	345	1	13452				
+81	St Ouen Place	5.1.125.123.	5	123	14532				
+82	Eynesbury Bob	5.1.125.123.	5	125	q	2003-06-25	Sibbertoft		66/125 03/685
+83	Armston Place	5.1.125.123.	5	145	15423				02/823
+84	St Botolph Place	5.1.125.3.	125	1	15234				
+85	Reverse Shipway Place	5.1.125.3.	145	1	r				
+86	St Sebastian Bob	5.1.125.3.	345	1	13452				
+87	Fifield Bob	5.1.125.3.	5	123	14532				
+88	St Osmund Bob	5.1.125.3.	5	125	q	1962-09-08	Warmley	1958-09-02	58/622 62/652
+89	Wigsthorpe Bob	5.1.125.3.	5	145	15423				02/823
+90	Reverse Bob	5.1.5.1.	145	1	r			1958-08-29	58/621
+91	Plain Bob	5.1.5.1.	5	125	p	1782-09-26	Anstey (Leics)	1944-07-30	44/334
+92	Coxwell Place	5.1.5.123.	125	1	15234			1959-07-02	59/463
+93	Canterbury Place	5.1.5.123.	145	1	r			1958-09-02	58/622
+94	All Hallows Place	5.1.5.123.	345	1	13452				
+95	Bampton Place	5.1.5.123.	5	123	14532				53/417
+96	St Martin's Bob	5.1.5.123.	5	125	q	1955-02-05	Pentrich	1957-12-08	55/101 57/834
+97	Thurning Place	5.1.5.123.	5	145	15423				02/823
+98	Stedman Bob	5.1.5.3.	125	1	15234	1964-04-03	Croft (Leics)	1964-06-22	64/282 488
+99	St Bartholomew's Bob	5.1.5.3.	345	1	13452	1979-01-13	Church Minshull		79/99
+100	Twineham Bob	5.1.5.3.	5	123	14532	1994-11-18	Heveningham		94/1275
+101	St Simon's Bob	5.1.5.3.	5	125	q	1911-03-06	Bramfield	1951-07-20	BN V30/44 RW 51/487
+102	Eaglethorpe Bob	5.1.5.3.	5	145	15423				02/823
+103	Gedney Hill Place	5.145.125.123.	345	1	13452				70/418
+104	Montgomeryshire Place	5.145.125.123.	5	123	14532	1996-03-22	Badingham		96/444
+105	Middlesex Place	5.145.125.3.	125	1	15234				69/715
+106	Swinderby Bob	5.145.125.3.	345	1	13452				70/418
+107	Callender Bob	5.145.125.3.	5	123	14532				66/135
+108	Dunston Place	5.145.5.1.	125	1	r				70/418
+109	Hordle Place	5.145.5.1.	345	1	s				69/80
+110	Wainfleet Place	5.145.5.1.	5	123	15423	1989-03-12	Earl Stonham	1974-12-21	66/135 75/81 89/347
+111	Anglesey Place	5.145.5.123.	125	1	15234				69/715
+112	North Rauceby Place	5.145.5.123.	345	1	13452	1995-08-25	Heveningham		70/418 95/1054
+113	Chevasse Place	5.145.5.123.	5	123	14532				66/135
+114	Carmarthen Bob	5.145.5.3.	125	1	15234				69/715
+115	Barrowby Bob	5.145.5.3.	145	1	s				70/418
+116	Irnham Bob	5.145.5.3.	345	1	13452	1994-07-22	Heveningham		70/418 94/809 868
+117	Maltby Bob	5.145.5.3.	5	123	14532				66/135
+
+Single-hunt Little Doubles methods (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+118	Bistow Little Bob	5.	125	1	s	00/159
+
+Single-hunt Little Doubles methods (treble to 3rds)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+119	Stanwell Little Bob	3.1.	3	125	p	58/755
+120	Clewer Little Place	3.145.	3	125	p	58/755
+121	Hampton Little Bob	345.1.	3	125	p	58/755
+122	Littleton Little Bob	5.1.	123	1	15234	59/215
+123	Ashford Little Bob	5.1.	3	125	q	58/755
+124	Laleham Little Place	5.1.	345	1	13452	59/215
+125	Lathbury Little Place	5.145.	123	1	15234	59/215
+
+Single-hunt Little Doubles methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+126	Little Little Little Little Little Little Little Penultimus Little Place	5.1.5.	145	1	r	01/829
+
+Twin-hunt Doubles methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	Handbells	RW ref
+
+127	Breaston Bob	3.1.5.1.125.	3	f				65/624
+128	Grandsire	3.1.5.1.5.	1	a	1777-03-07	Alton (Hants), St Lawrence	1912-08-05	V3/89 70/450
+129	Double Grandsire	3.1.5.1.5.	3	f	1958-07-05	Neath		58/492
+130	Double Antelope Place	3.145.5.1.125.	3	a				
+131	Antelope Place	3.145.5.1.5.	1	f	1964-11-09	Barton Stacey	1961-01-11	61/110 64/808
+132	Spondon Bob	3.145.5.1.5.	3	a				65/624
+133	Reverse Antelope Place	5.1.5.1.125.	3	g				
+134	Reverse Grandsire	5.1.5.1.5.	3	g				
+
+Twin-hunt Doubles methods (b)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+135	Castlewood Bob	3.1.125.1.	345	123	14352				70/199
+136	Ditton Bob	3.1.125.1.	345	125	14235				70/659
+137	Screveton Bob	3.1.125.123.	345	125	13425				
+138	Chipstead Slow Course	3.1.125.3.	125	125	12534				
+139	Kiln Green Bob	3.1.125.3.	145	123	14352	1991-04-26	Heveningham		69/715 91/474
+140	Bethnal Bob	3.1.125.3.	145	125	14235				
+141	Bedingham Bob	3.1.125.3.	345	125	13425				
+142	Bedfordshire Bob	3.1.5.1.	125	123	15324				
+143	Cumberland Bob	3.1.5.1.	125	145	13542				69/243
+144	Bag Enderby Bob	3.1.5.1.	145	123	14352				69/489
+145	St Edward Bob	3.1.5.1.	145	125	14235				
+146	Poyle Slow Course	3.1.5.1.	345	123	12453				53/123
+147	Derbyshire Bob	3.1.5.1.	345	145	14235				69/243
+148	Oakley Slow Course	3.1.5.123.	125	125	12534				
+149	Hagworthingham Bob	3.1.5.123.	145	123	14352				69/489
+150	Perry Oaks Bob	3.1.5.123.	145	125	14235				
+151	Ellingham Bob	3.1.5.123.	345	125	13425				
+152	Itchingfield Slow Course	3.1.5.3.	125	125	12534	1975-02-15	Itchingfield		50/122 75/218
+153	Yeoveney Slow Course	3.1.5.3.	145	123	12453	1991-01-25	Heveningham		53/123 91/197
+154	Robert Beavis and the Beggar Bob	3.1.5.3.	145	145	14235				10/1016
+155	Forncett Bob	3.1.5.3.	345	125	13425				
+156	Hambledon Bob	3.145.125.1.	345	123	15324				70/199
+157	Strelley Place	3.145.125.123.	345	125	13425				
+158	Ockham Slow Course	3.145.125.3.	125	125	12534				
+159	Woughton-on-the-Green Bob	3.145.125.3.	145	123	15324				69/715
+160	Intwood Bob	3.145.125.3.	345	125	13425				
+161	Bristol Bob	3.145.5.1.	125	123	14352	1990-11-09	Heveningham		90/1171
+162	Tandridge Place	3.145.5.1.	125	125	14235				
+163	Claypole Bob	3.145.5.1.	145	123	15324				69/489
+164	Colne Slow Course	3.145.5.1.	345	123	12534				53/123
+165	Colnbrook Slow Course	3.145.5.1.	345	125	12453				53/123
+166	Broughton Slow Course	3.145.5.123.	125	125	12534				
+167	Bracebridge Heath Bob	3.145.5.123.	145	123	15324				69/489
+168	Lyng Place	3.145.5.123.	345	125	13425	1995-02-17	Heveningham		95/300
+169	Chesham Slow Course	3.145.5.3.	125	125	12534				53/123
+170	Crane Slow Course	3.145.5.3.	145	123	12534				53/123
+171	Cranford Slow Course	3.145.5.3.	145	125	12453				53/123
+172	Knapton Bob	3.145.5.3.	345	125	13425				
+173	Biddesden Place	345.1.125.1.	345	123	15324				70/199
+174	Ossington Place	345.1.125.123.	345	125	13425	1995-03-24	Badingham		95/473
+175	Hascombe Slow Course	345.1.125.3.	125	125	12534				
+176	Wisborough Green Place	345.1.125.3.	145	123	15324				69/715
+177	Harpley Bob	345.1.125.3.	345	125	13425				
+178	Berkshire Place	345.1.5.1.	125	123	14352				
+179	Dorton Place	345.1.5.1.	125	125	14235	1989-07-05	Needwood		89/690
+180	Great Dalby Bob	345.1.5.1.	145	123	15324				69/489
+181	Runemede Slow Course	345.1.5.1.	345	123	12534				53/123
+182	Raveningham Slow Course	345.1.5.1.	345	125	12453				50/170
+183	Thornborough Slow Course	345.1.5.123.	125	125	12534				
+184	Long Clawson Place	345.1.5.123.	145	123	15324				69/489
+185	Haddiscoe Place	345.1.5.123.	345	125	13425				
+186	Longford Slow Course	345.1.5.3.	125	125	12534				53/123
+187	Harmondsworth Slow Course	345.1.5.3.	145	123	12534				53/123
+188	Heathrow Slow Course	345.1.5.3.	145	125	12453				53/123
+189	Fundenhall Bob	345.1.5.3.	345	125	13425	1994-10-07	Ashbocking		94/1145
+190	Broadhalfpenny Place	345.145.125.1.	345	123	14352				70/199
+191	Weston-on-the-Green Place	345.145.125.3.	145	123	14352				69/715
+192	Buckinghamshire Place	345.145.5.1.	125	123	15324				
+193	Frithville Bob	345.145.5.1.	145	123	14352				69/489
+194	Cambridgeshire Slow Course	345.145.5.1.	345	123	12453				
+195	Yaddlethorpe Place	345.145.5.123.	145	123	14352				69/489
+196	Scarletts Slow Course	345.145.5.3.	145	123	12453				69/715
+197	Cowthorpe Place	5.1.125.1.	345	123	15324				
+198	Nunthorpe Place	5.1.125.123.	345	123	14352				
+199	Sutton-upon-Trent Bob	5.1.125.123.	345	125	14235				
+200	Southwick Place	5.1.125.123.	345	145	13425				02/823
+201	Eton Slow Course	5.1.125.3.	125	123	12534				55/811
+202	Merton Slow Course	5.1.125.3.	125	125	12453	1958-01-11	Merton (Surrey)		58/90
+203	Blatherwycke Place	5.1.125.3.	125	145	15243				02/823
+204	Kelleythorpe Place	5.1.125.3.	145	123	15324				
+205	Manthorpe Bob	5.1.125.3.	345	123	14352				
+206	Longworth Bob	5.1.125.3.	345	125	14235				
+207	Deenethorpe Bob	5.1.125.3.	345	145	13425				02/823
+208	Boxford Bob	5.1.5.1.	125	125	13425				
+209	Pensthorpe Bob	5.1.5.1.	145	123	15324				
+210	Candlesby Slow Course	5.1.5.1.	345	125	12534				53/75
+211	Boveney Slow Course	5.1.5.123.	125	123	12534				55/811
+212	Slapton Slow Course	5.1.5.123.	125	125	12453				
+213	Barnwell Place	5.1.5.123.	125	145	15243				02/823
+214	Freethorpe Place	5.1.5.123.	145	123	15324				
+215	Casthorpe Place	5.1.5.123.	345	123	14352				
+216	Welford Bob	5.1.5.123.	345	125	14235				
+217	Thorpe Waterville Place	5.1.5.123.	345	145	13425				02/823
+218	Bedfont Slow Course	5.1.5.3.	125	123	12534				53/123
+219	Rugby Slow Course	5.1.5.3.	125	125	12453				53/6
+220	Clopton Bob	5.1.5.3.	125	145	15243				02/823
+221	St Edmund Slow Course	5.1.5.3.	145	125	12534			1964-06-21	64/488
+222	Londonthorpe Bob	5.1.5.3.	345	123	14352				
+223	Braywood Bob	5.1.5.3.	345	125	14235				
+224	Luddington in the Brook Bob	5.1.5.3.	345	145	13425				02/823
+225	Radnorshire Place	5.145.125.123.	345	123	14352				
+226	Glamorgan Slow Course	5.145.125.3.	125	123	12534				
+227	Merionethshire Bob	5.145.125.3.	345	123	14352				
+228	Cheshire Place	5.145.5.1.	125	123	15324				
+229	Cornwall Slow Course	5.145.5.1.	345	123	12453				
+230	Denbighshire Slow Course	5.145.5.123.	125	123	12534				
+231	Flintshire Place	5.145.5.123.	345	123	14352				
+232	Cardiganshire Slow Course	5.145.5.3.	125	123	12534				
+233	Pinchbeck Slow Course	5.145.5.3.	145	123	12453				70/418
+234	Caernarvonshire Bob	5.145.5.3.	345	123	14352				
+
+Twin-hunt Doubles methods (c)
+
+No.	Name	Notation	lh	RW ref
+
+235	Bedfont Place	345.1.5.1.345.1.5.1.5.1	14235	55/763
+236	Double Portington Place	345.1.5.1.345.123.5.1.5.123	13425	90/657
+237	Cranbourne Place	5.1.5.1.5.123.5.1.5.123	14235	55/763
+
+Twin-hunt Little Doubles methods (a) (hunt bells to 3rds)
+
+No.	Name	Notation	hl	lh
+
+238	Bastow Little Bob	5.1.3.	1	m
+
+Twin-hunt Little Doubles methods (b) (treble to 3rds)
+
+No.	Name	Notation	hl	le	lh	RW ref
+
+239	Kempton Little Slow Course	3.1.	123	125	12534	58/755
+240	Hanworth Little Bob	3.1.	345	125	13425	58/755
+241	Spital Little Slow Course	3.145.	123	125	12534	58/755
+242	Dedworth Little Place	3.145.	345	125	13425	58/755
+243	Ickenham Little Slow Course	345.1.	123	125	12534	58/755
+244	Northolt Little Place	345.1.	345	125	13425	58/755
+245	Twyford Little Slow Course	5.1.	123	125	12453	58/755
+246	Greenford Little Bob	5.1.	345	125	14235	58/755
+
+Non-palindromic single-hunt Doubles methods
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+247	Weston-by-Welland Bob	3.1.125.1.345.123.125.1.5.125	q			02/652
+248	Thornby Bob	3.1.125.1.345.123.5.1.3.1	s			03/685
+249	Ragdale Bob	3.1.125.1.345.123.5.145.345.1	s			05/669
+250	Ashby St Ledgers Bob	3.1.125.1.345.3.125.1.3.1	s			03/685
+251	Seagrave Bob	3.1.125.1.345.3.125.145.345.1	s			05/669
+252	Great Oakley Bob	3.1.125.1.345.3.5.1.5.125	q			02/652
+253	Plantagenet Bob	3.1.125.1.5.1.5.1.5.1	r			10/1013
+254	Haselbech Bob	3.1.125.1.5.3.125.1.345.1	s			04/153
+255	Yarwell Bob	3.1.125.123.345.123.125.1.345.125	p			02/33
+256	Glapthorn Bob	3.1.125.123.345.123.125.145.3.125	p			01/1167
+257	Razoul the Head Palace Guard Bob	3.1.125.123.5.123.125.1.5.123	13452			11/13 364
+258	Stoke Albany Bob	3.1.125.123.5.123.5.1.5.1	s			03/1021
+259	East Farndon Bob	3.1.125.123.5.3.125.1.5.1	s			03/1094
+260	Culworth Bob	3.1.125.123.5.3.5.1.3.125	p			99/946
+261	Thomas Giddings Bob	3.1.125.123.5.3.5.1.5.123	13452			11/364
+262	Dibley Bob	3.1.125.3.125.123.5.1.5.1	s			09/754
+263	Wothorpe Bob	3.1.125.3.125.3.125.1.5.1	s			03/781
+264	Wilbarston Bob	3.1.125.3.125.3.5.1.3.125	p	2002-11-01	Wilbarston	76/248 02/1185
+265	Potterspury Bob	3.1.125.3.345.1.125.1.3.1	s			03/1142
+266	Harpole Bob	3.1.125.3.345.1.125.145.345.1	s			05/1063
+267	Tiffield Bob	3.1.125.3.345.1.5.1.5.125	q			02/293
+268	Bainton Bob	3.1.125.3.345.3.125.1.345.125	p			02/33
+269	Tansor Bob	3.1.125.3.345.3.125.145.3.125	p			01/1167
+270	Kelmarsh Bob	3.1.125.3.5.123.125.1.5.1	s			03/1094
+271	Gretton Bob	3.1.125.3.5.123.5.1.3.125	p			76/248
+272	Sidney J Daniels Bob	3.1.125.3.5.123.5.1.5.123	13452			11/364
+273	Bridgnorth District Bob	3.1.125.3.5.3.125.1.5.123	13452			11/364
+274	Corby Bob	3.1.125.3.5.3.5.1.5.1	s			04/85
+275	Whiston Bob	3.1.5.1.145.3.5.1.345.125	p			02/318
+276	Abington Bob	3.1.5.1.145.3.5.145.3.125	p			02/318
+277	Grafton Underwood Bob	3.1.5.1.345.1.125.1.5.125	q			02/389
+278	St Rumbald Bob	3.1.5.1.345.1.5.145.345.1	s			05/379
+279	St Hugh Bob	3.1.5.1.5.1.5.1.5.123	15234			66/135
+280	Barrow-upon-Humber Bob	3.1.5.1.5.1.5.1.5.125	15423	2006-10-08	Elsham	04/59 06/1029
+281	Jack of Both Sides Bob	3.1.5.1.5.3.5.1.3.125	14532			66/135
+282	Jack a Napes Bob	3.1.5.1.5.3.5.1.3.145	13452			66/167
+283	Woodford Bob	3.1.5.123.125.1.5.1.345.1	r			11/490
+284	Upper Benefield Bob	3.1.5.123.125.123.5.1.5.1	s			03/781
+285	East Carlton Bob	3.1.5.123.125.3.125.1.5.1	s			03/1021
+286	Bishops Caundle Bob	3.1.5.123.125.3.5.1.3.125	p			76/248
+287	Cosgrove Bob	3.1.5.123.345.1.125.1.3.1	s			03/1142
+288	Kislingbury Bob	3.1.5.123.345.1.125.145.345.1	s			05/1063
+289	Milton Malsor Bob	3.1.5.123.345.1.5.1.5.125	q			02/293
+290	Lutton Bob	3.1.5.123.345.123.5.1.345.125	p			02/33
+291	Woodnewton Bob	3.1.5.123.345.123.5.145.3.125	p			01/1167
+292	Desborough Bob	3.1.5.123.5.123.125.1.5.1	s			03/1021
+293	Grand Vizier Jafar Bob	3.1.5.123.5.123.5.1.5.123	13452			11/13 364
+294	Caldecote Bob	3.1.5.123.5.3.125.1.3.125	p			76/248
+295	Staverton Bob	3.1.5.123.5.3.5.1.5.1	s			03/1045
+296	Bledlow Bob	3.1.5.3.125.123.5.1.3.125	p			76/248
+297	Dingley Bob	3.1.5.3.125.3.125.1.3.125	p	2006-02-25	Dingley	76/248 06/282
+298	Mawsley Bob	3.1.5.3.125.3.5.1.5.1	s			03/781
+299	Castle Ashby Bob	3.1.5.3.145.1.5.1.345.125	p			02/111
+300	Sywell Bob	3.1.5.3.145.1.5.145.3.125	p			02/111
+301	Sibbertoft Bob	3.1.5.3.145.123.5.1.5.125	q			02/190
+302	Wakerley Bob	3.1.5.3.145.3.125.1.5.125	q			02/318
+303	Hemington Bob	3.1.5.3.345.3.5.1.345.125	p			02/33
+304	Hellidon Bob	3.1.5.3.345.3.5.145.3.125	p			02/83
+305	Denford Bob	3.1.5.3.5.1.5.1.345.1	r			09/462
+306	Woodwell Bob	3.1.5.3.5.1.5.145.3.1	r			09/462
+307	Guilsborough Bob	3.1.5.3.5.123.125.1.3.125	p			99/946
+308	Arthur Oakley Bob	3.1.5.3.5.123.125.1.5.123	13452			11/364
+309	Byfield Bob	3.1.5.3.5.123.5.1.5.1	s			03/1045
+310	Stanion Bob	3.1.5.3.5.3.125.1.5.1	s			04/85
+311	Aladdin Bob	3.1.5.3.5.3.5.1.5.123	13452			11/13 364
+312	Seaton Bob	3.145.125.123.345.123.125.1.3.125	p			01/1272
+313	Cottingham Place	3.145.125.123.5.123.125.1.345.125	p			01/1117
+314	E Peter Rock Bob	3.145.125.123.5.123.125.145.5.123	13452			11/364
+315	Tilton-on-the-Hill Bob	3.145.125.123.5.123.5.145.5.1	s			05/696
+316	Owston Bob	3.145.125.123.5.3.125.145.5.1	s			05/696
+317	Scaldwell Bob	3.145.125.123.5.3.5.1.345.125	p			01/1167
+318	Rutland Branch Bob	3.145.125.123.5.3.5.145.3.125	p			99/946
+319	Alfred Poulton Bob	3.145.125.123.5.3.5.145.5.123	13452			11/364
+320	Cottesbrooke Bob	3.145.125.3.125.123.5.145.5.1	s			05/871
+321	Woodend Bob	3.145.125.3.125.3.125.145.5.1	s			05/598
+322	Whittlebury Bob	3.145.125.3.125.3.5.1.345.125	p	2010-02-20	Whittlebury	01/1069 10/243
+323	Aldwinkle Bob	3.145.125.3.125.3.5.145.3.125	p			76/248
+324	Ryhall Bob	3.145.125.3.345.3.125.1.3.125	p			01/1272
+325	Radstone Bob	3.145.125.3.5.123.125.145.5.1	s			06/259
+326	Lamport Bob	3.145.125.3.5.123.5.1.345.125	p			01/1167
+327	Barrowden Bob	3.145.125.3.5.123.5.145.3.125	p			76/248
+328	Arthur W Davis Bob	3.145.125.3.5.123.5.145.5.123	13452			11/364
+329	Achurch Bob	3.145.125.3.5.3.125.1.345.125	p			02/83
+330	Great Creaton Bob	3.145.125.3.5.3.5.145.5.1	s			05/871
+331	Farthinghoe Bob	3.145.5.1.145.3.5.1.3.125	p			02/83
+332	Melvin Place	3.145.5.1.5.1.5.1.345.125	q			66/135
+333	Duncote Bob	3.145.5.123.125.123.5.145.5.1	s			05/598
+334	Cold Ashby Bob	3.145.5.123.125.3.125.145.5.1	s			05/871
+335	Great Doddington Bob	3.145.5.123.125.3.5.1.345.125	p			01/1047
+336	Thrussington Bob	3.145.5.123.125.3.5.145.3.125	p			76/248
+337	Wing Bob	3.145.5.123.345.123.5.1.3.125	p			01/1272
+338	Whitfield Bob	3.145.5.123.5.123.125.145.5.1	s			06/259
+339	Marston Trussell Place	3.145.5.123.5.123.5.1.345.125	p			02/111
+340	E Charles Biggs Bob	3.145.5.123.5.123.5.145.5.123	13452			11/364
+341	Stoke Bruerne Bob	3.145.5.123.5.3.125.1.345.125	p			01/1093
+342	Wappenham Bob	3.145.5.123.5.3.125.145.3.125	p			76/248
+343	Plumpton Bob	3.145.5.123.5.3.5.145.5.1	s			05/598
+344	Chelveston Bob	3.145.5.3.125.123.5.1.345.125	p			01/1047
+345	Beviow Bob	3.145.5.3.125.123.5.145.3.125	p			76/248
+346	Stanford-on-Avon Bob	3.145.5.3.125.3.125.1.345.125	p			01/997
+347	Sudborough Bob	3.145.5.3.125.3.125.145.3.125	p			76/248
+348	Blakesley Bob	3.145.5.3.125.3.5.145.5.1	s			05/598
+349	Stoke Doyle Bob	3.145.5.3.145.1.5.1.3.125	p			02/212
+350	South Collingham Bob	3.145.5.3.345.1.5.145.3.1	r			10/914
+351	Hambleton Bob	3.145.5.3.345.3.5.1.3.125	p			01/1272
+352	Great Oxendon Bob	3.145.5.3.5.123.125.1.345.125	p			01/997
+353	Thrapston Bob	3.145.5.3.5.123.125.145.3.125	p			99/946
+354	Leslie Evans Bob	3.145.5.3.5.123.125.145.5.123	13452			11/364
+355	Milthorpe Bob	3.145.5.3.5.123.5.145.5.1	s			05/598
+356	Brixworth Bob	3.145.5.3.5.3.125.145.5.1	s			05/871
+357	Ashley Bob	3.145.5.3.5.3.5.1.345.125	p			01/1047
+358	Mr Thompson with a "P" Bob	3.145.5.3.5.3.5.145.5.123	13452			11/13 364
+359	Fawsley Bob	345.1.125.123.345.123.125.1.3.125	p			02/83
+360	Loddington Place	345.1.125.123.5.123.125.145.3.125	p			02/83
+361	Hopton Heath Place	345.1.125.123.5.123.125.145.5.123	13452			11/364
+362	Wellingborough Bob	345.1.125.123.5.3.5.1.345.125	p			99/946
+363	Farthingstone Bob	345.1.125.123.5.3.5.145.3.125	p			01/1194
+364	Thomas Cooper Bob	345.1.125.123.5.3.5.145.5.123	13452			11/364
+365	Bulwick Bob	345.1.125.3.125.3.5.1.345.125	p	2001-06-18	Bulwick	75/113 01/686
+366	Denton Bob	345.1.125.3.125.3.5.145.3.125	p			02/83
+367	Thorpe Mandeville Bob	345.1.125.3.345.3.125.1.3.125	p			02/83
+368	Barnack Bob	345.1.125.3.5.123.5.1.345.125	p			75/113
+369	Great Billing Bob	345.1.125.3.5.123.5.145.3.125	p			02/83
+370	Percy Watkins Bob	345.1.125.3.5.123.5.145.5.123	13452			11/364
+371	Cranford St Andrew Bob	345.1.125.3.5.3.125.145.3.125	p			02/83
+372	Wilfred A Stokes Bob	345.1.125.3.5.3.125.145.5.123	13452			11/364
+373	Croughton Bob	345.1.5.1.145.3.5.1.3.125	p			02/83
+374	Nowell Place	345.1.5.1.5.1.5.145.3.125	q			66/167
+375	Arnesby Bob	345.1.5.123.125.3.5.1.345.125	p			75/113
+376	Apethorpe Bob	345.1.5.123.125.3.5.145.3.125	p			02/83
+377	Inglis Place	345.1.5.123.345.1.125.1.5.145	14253			05/306
+378	Greatworth Bob	345.1.5.123.345.123.5.1.3.125	p			02/83
+379	Old Place	345.1.5.123.5.123.5.145.3.125	p			02/365
+380	Leonard Colley Place	345.1.5.123.5.123.5.145.5.123	13452			11/364
+381	Thornaugh Bob	345.1.5.123.5.3.125.1.345.125	p			75/113
+382	Overstone Bob	345.1.5.123.5.3.125.145.3.125	p			02/83
+383	Great Easton Bob	345.1.5.3.125.123.5.1.345.125	p			75/113
+384	Alwalton Bob	345.1.5.3.125.123.5.145.3.125	p			02/83
+385	Nassington Bob	345.1.5.3.125.3.125.1.345.125	p			75/113
+386	Church Brampton Bob	345.1.5.3.125.3.125.145.3.125	p			02/83
+387	Pilton Bob	345.1.5.3.145.1.5.1.3.125	p			02/212
+388	Marston St Lawrence Bob	345.1.5.3.345.3.5.1.3.125	p			02/83
+389	Upper Dean Bob	345.1.5.3.5.123.125.1.345.125	p			99/1214
+390	Norton Bob	345.1.5.3.5.123.125.145.3.125	p			01/1194
+391	Rowland L Price Bob	345.1.5.3.5.123.125.145.5.123	13452			11/364
+392	Draughton Bob	345.1.5.3.5.3.5.145.3.125	p			02/83
+393	Genie Bob	345.1.5.3.5.3.5.145.5.123	13452			11/13 364
+394	Spratton Bob	345.145.125.1.345.123.5.1.3.1	s			05/1110
+395	Whiston Place	345.145.125.1.345.123.5.145.345.1	s			03/589
+396	Creaton Bob	345.145.125.1.345.3.125.1.3.1	s			05/1110
+397	Little Billing Bob	345.145.125.1.345.3.125.145.345.1	s			03/589
+398	Thorpe Underwood Bob	345.145.125.1.5.3.125.145.3.1	s			07/422
+399	Tokyo Joe's Place	345.145.125.123.345.1.125.145.345.123	13452			04/1166
+400	Iago the Parrot Place	345.145.125.123.5.123.125.1.5.123	13452			11/13 364
+401	Chadstone Bob	345.145.125.3.345.1.125.1.3.1	s			06/206
+402	Slapton Bob	345.145.125.3.345.1.125.145.345.1	s			03/589
+403	Harry Hatfield Bob	345.145.125.3.5.123.5.1.5.123	13452			11/364
+404	William E Morgan Bob	345.145.125.3.5.3.125.1.5.123	13452			11/364
+405	Brigstock Bob	345.145.5.1.345.1.5.1.3.1	s			07/422
+406	Cogenhoe Bob	345.145.5.123.345.1.125.1.3.1	s			06/206
+407	Bradden Place	345.145.5.123.345.1.125.145.345.1	s			03/589
+408	Grumpy Place	345.145.5.123.5.123.5.1.5.123	13452			11/13 364
+409	Wadenhoe Bob	345.145.5.3.145.3.5.1.3.1	s			07/422
+410	Colwall Bob	345.145.5.3.5.123.125.1.5.123	13452			11/364
+411	Princess Jasmine Bob	345.145.5.3.5.3.5.1.5.123	13452			11/13 364
+412	Presteigne Place	5.1.125.1.345.1.125.1.345.123	15423			11/364
+413	Stevington Bob	5.1.125.1.345.1.5.1.3.125	q			03/417
+414	Little Addington Bob	5.1.125.123.345.1.125.1.3.125	q			02/651
+415	Harlestone Place	5.1.125.123.345.1.5.1.5.1	r			07/33
+416	Blisworth Place	5.1.125.123.345.123.125.1.345.123	14253			02/1257
+417	West Farndon Bob	5.1.125.123.345.123.125.145.3.123	14253			03/58
+418	Laxton Bob	5.1.125.123.5.123.125.1.3.123	14253			03/58
+419	Charwelton Place	5.1.125.123.5.123.125.145.345.123	14253			02/947
+420	Little Cransley Bob	5.1.125.123.5.123.5.1.3.1	s			04/1023
+421	Newbottle Bob	5.1.125.123.5.3.125.1.3.1	s			05/696
+422	Pipewell Bob	5.1.125.123.5.3.5.1.3.123	14253			02/765
+423	Northampton Bob	5.1.125.123.5.3.5.1.5.125	q			99/946
+424	Shutlanger Bob	5.1.125.123.5.3.5.145.345.123	14253			02/947
+425	King's Sutton Bob	5.1.125.3.125.123.5.1.3.1	s			05/696
+426	Cranford St John Bob	5.1.125.3.125.3.125.1.3.1	s			04/422
+427	Clay Coton Bob	5.1.125.3.125.3.5.1.3.123	14253			02/871
+428	Litchborough Bob	5.1.125.3.125.3.5.1.5.123	14532			76/248
+429	Cotterstock Bob	5.1.125.3.125.3.5.1.5.125	q			75/113
+430	Bradden Bob	5.1.125.3.125.3.5.145.345.123	14253			02/970
+431	Great Brington Place	5.1.125.3.145.123.5.1.5.1	r			07/33
+432	Courteenhall Bob	5.1.125.3.145.3.5.1.3.125	q			02/651
+433	Collingtree Bob	5.1.125.3.345.3.125.1.345.123	14253			02/1257
+434	Aston le Walls Bob	5.1.125.3.345.3.125.145.3.123	14253			03/58
+435	Boughton Bob	5.1.125.3.5.1.125.145.5.1	s			06/59
+436	Astrop Bob	5.1.125.3.5.123.125.1.3.1	s			05/696
+437	Collyweston Bob	5.1.125.3.5.123.5.1.3.123	14253			02/823
+438	Pytchley Bob	5.1.125.3.5.123.5.1.5.123	14532			76/248
+439	Market Overton Bob	5.1.125.3.5.123.5.1.5.125	q			75/113
+440	Hinton Bob	5.1.125.3.5.123.5.145.345.123	14253			02/947
+441	Little Oakley Bob	5.1.125.3.5.3.125.1.3.123	14253			03/58
+442	Preston Capes Bob	5.1.125.3.5.3.125.145.345.123	14253			02/947
+443	Rothwell Bob	5.1.125.3.5.3.5.1.3.1	s			04/1023
+444	Pitsford Place	5.1.5.1.125.123.5.145.5.1	r			09/1167
+445	Strixton Bob	5.1.5.1.145.3.5.1.345.123	14253			03/370
+446	Little Houghton Bob	5.1.5.1.145.3.5.145.3.123	14253			03/565
+447	Clipston Place	5.1.5.1.345.123.125.1.5.1	r			09/1167
+448	Ashton Village Bob	5.1.5.1.345.123.5.1.3.125	q			02/524
+449	Stowe Bob	5.1.5.1.345.3.125.1.3.125	q			02/524
+450	Heathencote Bob	5.1.5.1.345.3.5.1.5.1	r			03/806
+451	Naseby Bob	5.1.5.1.5.1.125.1.3.1	r			07/1171
+452	Holy Orders Bob	5.1.5.1.5.1.5.1.3.123	13524			06/666
+453	Ordination Bob	5.1.5.1.5.1.5.1.3.125	13452			04/997
+454	Corley Bob	5.1.5.1.5.3.5.145.5.1	r			09/382
+455	Twywell Bob	5.1.5.123.125.123.5.1.3.1	s			04/422
+456	Brackley Bob	5.1.5.123.125.3.125.1.3.1	s			05/696
+457	Hollowell Bob	5.1.5.123.125.3.5.1.3.123	14253			03/57
+458	Blaby Bob	5.1.5.123.125.3.5.1.5.123	14532			76/248
+459	Hose Bob	5.1.5.123.125.3.5.1.5.125	q			75/113
+460	Nobottle Bob	5.1.5.123.125.3.5.145.345.123	14253			03/58
+461	Maidwell Place	5.1.5.123.145.3.125.1.5.1	r			06/717
+462	Catesby Bob	5.1.5.123.145.3.5.1.3.125	q			02/794
+463	Weston Favell Place	5.1.5.123.345.123.5.1.345.123	14253			02/1257
+464	Chipping Warden Bob	5.1.5.123.345.123.5.145.3.123	14253			03/58
+465	Great Cransley Bob	5.1.5.123.5.123.125.1.3.1	s			04/1023
+466	Rockingham Bob	5.1.5.123.5.123.5.1.3.123	14253			03/58
+467	Winwick Place	5.1.5.123.5.123.5.145.345.123	14253			03/58
+468	Old Fletton Bob	5.1.5.123.5.3.125.1.3.123	14253			02/823
+469	Cottingham Bob	5.1.5.123.5.3.125.1.5.123	14532			76/248
+470	Peterborough Bob	5.1.5.123.5.3.125.1.5.125	q	1999-05-06	Stoke Doyle	75/113 99/555 653
+471	Maidford Bob	5.1.5.123.5.3.125.145.345.123	14253			02/947
+472	Thorpe Malsor Bob	5.1.5.123.5.3.5.1.3.1	s			04/1023
+473	Ravensthorpe Bob	5.1.5.3.125.123.5.1.3.123	14253			03/57
+474	Fenny Drayton Bob	5.1.5.3.125.123.5.1.5.123	14532			76/248
+475	Kirby Muxloe Bob	5.1.5.3.125.123.5.1.5.125	q			75/113
+476	Bugbrooke Bob	5.1.5.3.125.123.5.145.345.123	14253			03/58
+477	Elkington Bob	5.1.5.3.125.3.125.1.3.123	14253			02/871
+478	Arthingworth Bob	5.1.5.3.125.3.125.1.5.123	14532			76/248
+479	Polebrook Bob	5.1.5.3.125.3.125.1.5.125	q			75/113
+480	Abthorpe Bob	5.1.5.3.125.3.125.145.345.123	14253			02/970
+481	Barton Seagrave Bob	5.1.5.3.125.3.5.1.3.1	s			04/422
+482	Knuston Bob	5.1.5.3.145.1.5.1.345.123	14253			03/370
+483	Great Houghton Bob	5.1.5.3.145.1.5.145.3.123	14253			03/565
+484	Aldwincle Bob	5.1.5.3.345.1.125.1.3.125	q			02/651
+485	Roade Bob	5.1.5.3.345.1.5.1.5.1	r			06/178
+486	Hardingstone Bob	5.1.5.3.345.3.5.1.345.123	14253			02/1257
+487	Appletree Bob	5.1.5.3.345.3.5.145.3.123	14253			03/58
+488	Sutton Bassett Bob	5.1.5.3.5.123.125.1.3.123	14253			02/765
+489	Kettering Bob	5.1.5.3.5.123.125.1.5.125	q			99/946
+490	Hartwell Bob	5.1.5.3.5.123.125.145.345.123	14253			02/947
+491	Broughton Bob	5.1.5.3.5.123.5.1.3.1	s			04/1023
+492	Harrington Bob	5.1.5.3.5.3.125.1.3.1	s			04/1023
+493	Lenton Bob	5.1.5.3.5.3.5.1.3.123	14253			02/737
+494	West Haddon Bob	5.1.5.3.5.3.5.145.345.123	14253			03/58
+495	Church Brampton Place	5.145.125.1.345.123.5.145.5.1	s			03/638
+496	Chapel Brampton Bob	5.145.125.1.345.3.125.145.5.1	s			03/638
+497	Thornhaugh Bob	5.145.125.1.5.3.125.1.5.1	s			03/832
+498	Brackley Hatch Bob	5.145.125.123.345.123.125.1.3.123	14253			03/266
+499	Barby Nortoft Place	5.145.125.123.345.123.125.145.345.123	14253			03/466
+500	Lilbourne Place	5.145.125.123.5.123.125.1.345.123	14253			03/58
+501	Hanging Houghton Bob	5.145.125.123.5.123.125.145.3.123	14253			03/152
+502	Bozeat Bob	5.145.125.123.5.123.5.145.3.1	s			05/330
+503	Paulerspury Bob	5.145.125.123.5.3.125.145.3.1	s			05/919
+504	Foxley Bob	5.145.125.123.5.3.5.1.345.123	14253			03/58
+505	Passenham Bob	5.145.125.123.5.3.5.145.3.123	14253			03/492
+506	Daventry Bob	5.145.125.123.5.3.5.145.5.123	14532			99/946
+507	Harringworth Bob	5.145.125.3.125.123.5.145.3.1	s			05/647
+508	Pailton Bob	5.145.125.3.125.3.125.145.3.1	s			05/284
+509	Orton Bob	5.145.125.3.125.3.5.1.345.123	14253			03/274
+510	Hinton-in-the-Hedges Bob	5.145.125.3.125.3.5.145.3.123	14253			03/466
+511	Yardley Gobion Bob	5.145.125.3.345.1.125.145.5.1	s			03/613
+512	Wood Burcote Bob	5.145.125.3.345.3.125.1.3.123	14253			03/266
+513	Ely St Mary's Bob	5.145.125.3.345.3.125.145.345.123	14253			94/1278
+514	Wicken Bob	5.145.125.3.5.123.125.145.3.1	s			05/919
+515	Little Preston Bob	5.145.125.3.5.123.5.1.345.123	14253			03/58
+516	Slipton Bob	5.145.125.3.5.123.5.145.3.123	14253			03/441
+517	Welton Bob	5.145.125.3.5.3.125.1.345.123	14253			03/58
+518	Holcot Bob	5.145.125.3.5.3.125.145.3.123	14253			03/152
+519	King's Cliffe Bob	5.145.125.3.5.3.5.145.3.1	s			05/647
+520	Old Stratford Bob	5.145.5.1.145.3.5.1.3.123	14253			02/1289
+521	Harby Bob	5.145.5.1.145.3.5.145.345.123	14253			03/396
+522	Welton Place	5.145.5.123.125.1.5.1.5.1	r			03/1164
+523	Woolscott Bob	5.145.5.123.125.123.5.145.3.1	s			05/284
+524	Weldon Bob	5.145.5.123.125.3.125.145.3.1	s			05/647
+525	Holdenby Bob	5.145.5.123.125.3.5.1.345.123	14253			03/274
+526	Quinton Bob	5.145.5.123.125.3.5.145.3.123	14253			03/441
+527	Alderton Place	5.145.5.123.345.1.125.145.5.1	s			03/613
+528	Pury End Bob	5.145.5.123.345.123.5.1.3.123	14253			03/266
+529	Kilsby Place	5.145.5.123.345.123.5.145.345.123	14253			03/466
+530	Easton Maudit Bob	5.145.5.123.5.123.125.145.3.1	s			05/330
+531	Litchborough Place	5.145.5.123.5.123.5.1.345.123	14253			03/58
+532	Hardwick Bob	5.145.5.123.5.123.5.145.3.123	14253			03/152
+533	Little Everdon Bob	5.145.5.123.5.3.125.1.345.123	14253			03/58
+534	Geddington Bob	5.145.5.123.5.3.125.145.3.123	14253			03/441
+535	Swinford Bob	5.145.5.123.5.3.5.145.3.1	s			05/284
+536	Teeton Bob	5.145.5.3.125.123.5.1.345.123	14253			03/274
+537	Rothersthorpe Bob	5.145.5.3.125.123.5.145.3.123	14253			03/441
+538	Braybrooke Bob	5.145.5.3.125.3.125.1.345.123	14253			03/274
+539	Evenley Bob	5.145.5.3.125.3.125.145.3.123	14253			03/466
+540	Churchover Bob	5.145.5.3.125.3.5.145.3.1	s			05/284
+541	Grafton Regis Bob	5.145.5.3.145.1.5.1.3.123	14253			02/1289
+542	Leicestershire Bob	5.145.5.3.145.1.5.145.345.123	14253			03/396
+543	Silverstone Bob	5.145.5.3.345.3.5.1.3.123	14253			03/266
+544	Barby Bob	5.145.5.3.345.3.5.145.345.123	14253			03/466
+545	Ellesmere St Mary's Bob	5.145.5.3.5.1.5.1.5.1	r			03/715
+546	Grimscote Bob	5.145.5.3.5.123.125.1.345.123	14253			03/58
+547	Deanshanger Bob	5.145.5.3.5.123.125.145.3.123	14253			03/492
+548	Towcester Bob	5.145.5.3.5.123.125.145.5.123	14532			99/946
+549	Catthorpe Bob	5.145.5.3.5.123.5.145.3.1	s			05/284
+550	Easton-on-the-Hill Bob	5.145.5.3.5.3.125.145.3.1	s			05/647
+551	Everdon Bob	5.145.5.3.5.3.5.1.345.123	14253			03/58
+552	Hannington Bob	5.145.5.3.5.3.5.145.3.123	14253			03/152
+
+Non-palindromic twin-hunt Doubles methods
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+553	Laurence T Mainwaring Bob	3.1.125.123.5.123.125.145.5.123	13542			11/364
+554	Charles Edwards Bob	3.1.125.123.5.3.5.145.5.123	13542			11/364
+555	Rev George M Custance Bob	3.1.125.3.5.123.5.145.5.123	13542			11/364
+556	Ernest F Willcox Bob	3.1.125.3.5.3.125.145.5.123	13542			11/364
+557	Bogan Slow Course	3.1.5.1.345.1.5.1.5.123	12534			10/174
+558	St Sepulcre's Slow Course	3.1.5.1.345.1.5.1.5.125	12453			98/763
+559	Barton-upon-Humber Bob	3.1.5.1.5.1.5.1.345.125	15243			11/729
+560	Clewer Bob	3.1.5.123.5.123.5.1.5.1	14352			
+561	Thomas E Wood Bob	3.1.5.123.5.123.5.145.5.123	13542			11/364
+562	William Poston Bob	3.1.5.3.5.123.125.145.5.123	13542			11/364
+563	Swanton Bob	3.1.5.3.5.3.5.1.5.1	14352			50/671
+564	Peter L Hughes Bob	3.1.5.3.5.3.5.145.5.123	13542			11/364
+565	David J Thompson Bob	3.145.125.123.5.123.125.1.5.123	13542			11/364
+566	Hay-on-Wye Bob	3.145.125.123.5.3.5.1.5.123	13542			11/364
+567	Tom Rushton Bob	3.145.125.3.5.123.5.1.5.123	13542			11/364
+568	J F Fox Bob	3.145.125.3.5.3.125.1.5.123	13542			11/364
+569	The Sultan of Agrabah Bob	3.145.5.123.5.123.5.1.5.123	13542			11/13 364
+570	Mrs E Chandler Bob	3.145.5.123.5.3.125.1.5.123	13542			11/364
+571	Dennis F Jaine Bob	3.145.5.3.5.123.125.1.5.123	13542			11/364
+572	Bromyard District Bob	3.145.5.3.5.3.5.1.5.123	13542			11/364
+573	Rajah the Tiger Place	345.1.125.123.5.123.125.1.5.123	13542			11/13 364
+574	Leominster District Bob	345.1.125.123.5.3.5.1.5.123	13542			11/364
+575	125th Anniversary Bob	345.1.125.3.5.123.5.1.5.123	13542			11/364
+576	G James R Price Bob	345.1.125.3.5.3.125.1.5.123	13542			11/364
+577	Double Newark Place	345.1.5.1.125.123.5.1.5.145	12534			
+578	Single Portington Place	345.1.5.1.5.1.5.1.5.123	14235			90/95
+579	Newark Place	345.1.5.1.5.1.5.1.5.145	12453	2008-03-28	Strensall	66/135 08/415
+580	Abu the Monkey Bob	345.1.5.123.5.123.5.1.3.125	13425			11/13 364
+581	Ross District Bob	345.1.5.3.5.123.125.1.5.123	13542			11/364
+582	What's my start Bob	345.1.5.3.5.3.5.1.5.123	13542			11/364
+583	Glasbury Place	345.145.125.123.5.123.125.145.5.123	13542			11/364
+584	Frederick A Jaine Bob	345.145.125.123.5.3.5.145.5.123	13542			11/364
+585	John J Webb Bob	345.145.125.3.5.123.5.145.5.123	13542			11/364
+586	Wilfrid F Moreton Bob	345.145.125.3.5.3.125.145.5.123	13542			11/364
+587	Wollaton Place	345.145.5.1.5.1.5.1.5.1	12534	1975-12-30	Hammerwood	66/135 76/96
+588	Double Wollaton Place	345.145.5.1.5.123.125.1.5.1	12453			
+589	George T Cousins Place	345.145.5.123.5.123.5.145.5.123	13542			11/364
+590	Austin T Wingate Bob	345.145.5.3.5.123.125.145.5.123	13542			11/364
+591	Robert A Hatcher Bob	345.145.5.3.5.3.5.145.5.123	13542			11/364
+592	Percy's Pleasure Place	5.1.125.123.5.123.125.1.345.123	14235			11/364
+593	Bashful Bob	5.1.125.123.5.123.125.145.3.123	14235			11/13 364
+594	Hereford District Bob	5.1.125.123.5.3.5.1.345.123	14235			11/364
+595	Percy Preece Bob	5.1.125.123.5.3.5.145.3.123	14235			11/364
+596	James P Hyett Bob	5.1.125.3.5.3.125.1.345.123	14235			11/364
+597	Trevor Jones Bob	5.1.125.3.5.3.125.145.3.123	14235			11/364
+598	Reverse Newark Place	5.1.5.1.125.123.5.1.5.1	12534			
+599	Reverse Portington Place	5.1.5.1.345.123.5.1.5.1	13425			90/221
+600	Reverse Wollaton Place	5.1.5.1.5.123.125.1.5.1	12534			
+601	Church Stretton District Place	5.1.5.123.5.123.5.1.345.123	14235			11/364
+602	Ledbury District Bob	5.1.5.123.5.123.5.145.3.123	14235			11/364
+603	Hereford D G Bob	5.1.5.123.5.3.125.1.345.145	12453			11/364
+604	Bill Lloyd Bob	5.1.5.123.5.3.125.145.3.123	14235			11/364
+605	Clifford & Kington District Bob	5.1.5.3.5.123.125.1.345.123	14235			11/364
+606	Robin J Andrews Bob	5.1.5.3.5.123.125.145.3.123	14235			11/364
+607	Solihull Bob	5.1.5.3.5.3.5.1.3.1	12453			20/398
+608	Sheila E M Parry Bob	5.1.5.3.5.3.5.1.345.123	14235			11/364
+609	Widow Twankey Bob	5.1.5.3.5.3.5.145.3.123	14235			11/13 364
+610	Frederick R Harris Bob	5.145.125.123.5.123.125.1.3.123	14235			11/364
+611	Clifford Place	5.145.125.123.5.123.125.145.345.123	14235			11/364
+612	William Saunders Bob	5.145.125.123.5.3.5.1.3.123	14235			11/364
+613	Ernest Drew Bob	5.145.125.123.5.3.5.145.345.123	14235			11/364
+614	John F I Turney Bob	5.145.125.3.5.3.125.1.3.123	14235			11/364
+615	Rev E G Benson Bob	5.145.125.3.5.3.125.145.345.123	14235			11/364
+616	Michael V Powell Bob	5.145.5.123.5.123.5.1.3.123	14235			11/364
+617	Dopey Place	5.145.5.123.5.123.5.145.345.123	14235			11/13 364
+618	George H Phillott Bob	5.145.5.123.5.3.125.1.3.123	14235			11/364
+619	Reginald G Powell Bob	5.145.5.123.5.3.125.1.5.123	14352			11/364
+620	William H Lloyd Bob	5.145.5.123.5.3.125.145.345.123	14235			11/364
+621	John G Buchanan Bob	5.145.5.3.5.123.125.1.3.123	14235			11/364
+622	Harold G Thomas Bob	5.145.5.3.5.123.125.145.345.123	14235			11/364
+623	Cyril E Jaine Bob	5.145.5.3.5.3.5.145.345.123	14235			11/364
+

@@ -1,0 +1,31 @@
+Maximus principles (4 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17444	Forward	34-34.1T	241638507T9E	1903-01-13	Birmingham, St Martin	BN V21/499
+
+Maximus principles (6 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17445	Duffield	-36-36-1T	251368407T9E	1891-03-17	Birmingham, St Martin	BN V9/624
+
+Maximus principles (8 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17446	Aston	56.34.56-56.34.56.1T	241638507T9E	2004-11-29	Aston (Warks)	04/1257
+
+Maximus principles (18 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17447	Thursday	-30-58-149T-3670-1T-3670-149T-58-30	0T8E69472513	1982-05-06	Birmingham Cathedral	82/468
+
+Maximus principles (24 changes per lead)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17448	Quasar	1T-14.50.3T.14-18.30.9T-16.5T.1470-14.36.50.9T-18.7T-36	T1234567890E	1993-06-03	Birmingham Cathedral	93/652
+17449	Orion	36-7T.18-9T.50.36.14-1470.5T.16-9T.30.18-14.3T.50.14-1T	234567890ET1	1992-03-05	Birmingham Cathedral	92/457
+

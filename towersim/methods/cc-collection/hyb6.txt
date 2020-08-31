@@ -1,0 +1,221 @@
+Hybrid Minor methods
+(treble's path 1 2 3  4 5  6  5 4  3 2  1)
+
+No.	Name	Notation	lh	RW ref
+
+17143	Evil	-14-36.12-36-14.36	142635	91/360
+
+Hybrid Minor methods
+        (treble's path 1 2 3  4 5  6 5  6 6  5 4  3 2  1 1)
+
+No.	Name	Notation	lh	RW ref
+
+17144	St Hilda's College	-16-16-14-16-16-14-1234	135264	02/1115
+
+Hybrid Minor methods
+       (treble's path 1 2 3  4 5  6 6  5 6  5 4  3 2  1 1)
+
+No.	Name	Notation	lh	RW ref
+
+17145	St Hugh's College	-14-16-16-14-16-16-1234	142563	02/1115
+
+Hybrid Minor methods
+(treble's path 1 2 3  4 5  6 6  6    5 4  3 2  1 1  1)
+
+No.	Name	Notation	lh	RW ref
+
+17146	Good	-14-36-56.1256-36-14-12.1236	142635	91/360
+
+Hybrid Minor methods
+     (treble's path 1 2 3  4 5  6 5  6 5  6 6  5 4  3 2  1 1)
+
+No.	Name	Notation	lh	RW ref
+
+17147	Lincoln College	-16-16-14-14-16-16-16-12	134625	02/1115
+
+Hybrid Minor methods
+    (treble's path 1 2 3  4 5  6 6  5 6  5 6  5 4  3 2  1 1)
+
+No.	Name	Notation	lh	RW ref
+
+17148	Wadham College	-16-16-16-14-14-16-16-12	164235	02/1115
+
+Hybrid Minor methods
+                    (treble's path 1 2 1  2 3  4 3  4 5  6 5  5  6 6  6    5 4  3 4  3 2  1 2  1 1)
+
+No.	Name	Notation	lh	RW ref
+
+17149	St David's Guild Annual Outing	-36-14-12-36-14.56-56.1456-36-12-14-36-12	156342	03/549
+
+Hybrid Minor methods
+      (treble's path 1 2  1  2    3  4  3  4  5    6    5  6    5  6    6    5    4    3  4  3  2  1    2  1  1)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17150	Warkton	-34-14-12-16-12.1234-1234.1256-16-12-14-34-12	142635	2001-04-24	Warkton	01/514
+17151	Potterspury	-34-14-12-16-34.1234-1234.3456-16-12-14-34-12	142635	2001-08-31	Potterspury	01/952
+17152	Cold Higham	-34-14-12-16.1234.34.1234-1234.3456.1234.16-12-14-34-12	142635	2001-05-11	Cold Higham	01/563
+17153	Eddone	-36-14-12-36-14.1234-1234.1456-36-12-14-36-12	156342	2001-03-09	East Haddon	01/322
+17154	Annie's Fancy	-36-14.12-12.16-12.1234-1234.1256-16.12-12.14-36-12	156342	2001-03-05	Greens Norton	01/298
+17155	Northamptonshire	-36-14.12-12.16-34.1234-1234.3456-16.12-12.14-36-12	156342	2011-03-05	Moreton Pinkney	11/287
+17156	Wadenhoe	-36.3456.16-56-36-34.1234-1234.3456-36-56-16.3456.36-12	142635	2004-01-02	Wadenhoe	04/85
+17157	Helmdon	-56-14-56-36-34.1234-1234.3456-36-56-14-56-12	142635	2002-01-19	Helmdon	02/138
+17158	Empingham	34-34.16-56-1236-12.1234-1234.1256-1236-56-16.34-34.12	142635	2002-08-31	Empingham	02/970
+17159	Badby	34-34.16-56-1236-34.1234-1234.3456-1236-56-16.34-34.12	142635	2001-11-17	Badby	01/1217
+17160	Sulgrave	34-34.16-56-36-12.1234-1234.1256-36-56-16.34-34.12	142635	2001-12-27	Sulgrave	02/83
+17161	King's Cliffe	34-34.16-56-36-34.1234-1234.3456-36-56-16.34-34.12	142635	2001-07-06	King's Cliffe	01/757
+17162	Cransley	34-34.16.12-12.16-12.1234-1234.1256-16.12-12.16.34-34.12	156342	2001-04-27	Great Cransley	01/514
+17163	Lyddington	34-34.16.12-12.16-34.1234-1234.3456-16.12-12.16.34-34.12	156342	2002-06-15	Lyddington	02/685
+17164	Great Casterton	34-34.16.12-56.36-12.1234-1234.1256-36.56-12.16.34-34.12	142635	2003-01-11	Great Casterton	03/103
+17165	Deene	34-36.16-12-1236-12.1234-1234.1256-1236-12-16.36-34.12	142635	2003-02-28	Weekley	03/274
+17166	Wollaston	34-36.16-12-1236-34.1234-1234.3456-1236-12-16.36-34.12	142635	2003-09-27	Wollaston (Northants)	03/998
+17167	Mears Ashby	34-36.16-12-36-12.1234-1234.1256-36-12-16.36-34.12	142635	2003-02-01	Mears Ashby	03/177
+17168	Twywell	34-36.16-12-36-34.1234-1234.3456-36-12-16.36-34.12	142635	2003-06-14	Twywell	03/638
+17169	Roade	34-36.16.12-12.1236-12.1234-1234.1256-1236.12-12.16.36-34.12	142635	2003-05-23	Piddington (Northants)	03/565
+17170	F1	36-34.16-12-36-34.12.34-56.12.36-12-16.34-36.12	156342			96/369 503
+
+Hybrid Minor methods
+(treble's path 1 2 1  2 3  4 3  4 5  6 6    5    6 5    6  5 4  3 4  3 2  1 2  1 1)
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+17171	Glaston	-34-14-12-16-1256.1234-1234.12-16-12-14-34-12	142635	2002-02-16	Glaston	02/241
+
+Hybrid Minor methods
+        (treble's path 1 2 1  2 3  4 3  4 5  6 6    6  5 5  6  5 4  3 4  3 2  1 2  1 1)
+
+No.	Name	Notation	lh	RW ref
+
+17172	Seavington St Mary	-36-14-12-36-1456.56-56.14-36-12-14-36-12	156342	03/549
+
+Hybrid Minor methods
+  (treble's path 1 1  2 1  2 3  3  4 4  5  6 5  6 6  5  4  4  3 2  1 2  1 1  2 3  4 5  6 6  5 6  5 4  3 3  2  1)
+
+No.	Name	Notation	lh
+
+17173	To The Devil	14-36-14.36-14.36-14-36.14.36.14-16-36-16-14-36-16-14-16-36.14.36	162345
+
+Little Hybrid Minor methods
+                   (hunt bell's path 2 1 1    2 1  2 2  1 1  2  1  2  2)
+
+No.	Name	Notation	lh	RW ref
+
+17174	S1 under Carlisle Little	-1256-36-12-14.36-34.12	521364	10/89
+17175	S1 under London Little	-1256-36-12-14.36-36.12	526341	10/89
+17176	S1 under George Orwell Little	-1256-36-12-14.56-36.12	526134	10/89
+17177	Cambridge under Cambridge Little	-1456-36-12-14-36-1234	526341	10/89
+17178	Cambridge under Carlisle Little	-1456-36-12-14.36-34.12	524163	10/89
+17179	Cambridge under London Little	-1456-36-12-14.36-36.12	526134	10/89
+17180	Cambridge under Dover Little	-1456-36-12-16-36-1236	521364	10/90
+
+Little Hybrid Minor methods
+           (hunt bell's path 2 1 2    1 2  1 1  2 3  4  3 3  2)
+
+No.	Name	Notation	lh	RW ref
+
+17181	S2 under Stotfold Little	-3456-36-12-14.56-34.14	521364	10/89
+
+Little Hybrid Minor methods
+          (hunt bell's path 3 3 4  3  2  1 1  2 1  2 1    2 3)
+
+No.	Name	Notation	lh	RW ref
+
+17182	Stotfold over S2 Little	34-56.14-12-36-3456-14	243561	10/89
+
+Little Hybrid Minor methods
+                      (hunt bell's path 3 3  4 3  2  1 1  2 1  2 3    4 3)
+
+No.	Name	Notation	lh	RW ref
+
+17183	George Orwell over Cambridge Little	36-56.14-12-36-1456-56	263514	10/89
+
+Little Hybrid Minor methods
+        (hunt bell's path 3 3  4 5  6  5 6  5 4    3 4    3 3)
+
+No.	Name	Notation	lh	RW ref
+
+17184	London over S5 Little	36-36.14-12-1236-1256-1236	253164	10/89
+
+Little Hybrid Minor methods
+        (hunt bell's path 3 4  3 3  2  1 1  2 1  2 1    2 3)
+
+No.	Name	Notation	lh	RW ref
+
+17185	Benets over S2 Little	56-36.14-12-36-3456-16	263145	10/89
+
+Little Hybrid Minor methods
+        (hunt bell's path 3 4  3 3  2  1 1  2 2    1 1    2 3)
+
+No.	Name	Notation	lh	RW ref
+
+17186	Benets over S5 Little	56-36.14-12-1236-1256-1456	243615	10/89
+
+Little Hybrid Minor methods
+               (hunt bell's path 3 4 4    3 2  1 1  2 3  3  4 4  3)
+
+No.	Name	Notation	lh	RW ref
+
+17187	Mendip under Carlisle Little	-1456-16-12-14.36-34.12	543162	10/90
+
+Little Hybrid Minor methods
+                     (hunt bell's path 3 4 4    3 3    4 3  4 4  3 3  4 3)
+
+No.	Name	Notation	lh	RW ref
+
+17188	Sedlescombe under Cambridge Little	-1456-1236-12-14-36-12	543621	10/89
+
+Little Hybrid Minor methods
+           (hunt bell's path 4 3 3  4 4  3 4  3 3    4 4    3 4)
+
+No.	Name	Notation	lh	RW ref
+
+17189	Cambridge over S6 Little	-36-14-12-1236-3456-56	265413	10/89
+17190	Cambridge over S2 Little	-36-14-12-36-3456-1256	265413	10/89
+
+Little Hybrid Minor methods
+         (hunt bell's path 4 3 3    4 5    6 5  6 5  4  3 4  4)
+
+No.	Name	Notation	lh	RW ref
+
+17191	S6 under Benets Little	-3456-1236-12-14.36-56.1456	512463	10/89
+
+Little Hybrid Minor methods
+                (hunt bell's path 4 3 4    3 2  1 1  2 3  4  3 3  4)
+
+No.	Name	Notation	lh	RW ref
+
+17192	D1 under George Orwell Little	-1256-16-12-14.56-36.12	516432	10/90
+
+Little Hybrid Minor methods
+           (hunt bell's path 4 3 4    3 3  4 3  4 4  3  4 4  4)
+
+No.	Name	Notation	lh	RW ref
+
+17193	S1 under Stotfold Little	-1256-36-12-14.56-34.14	512463	10/89
+
+Little Hybrid Minor methods
+                (hunt bell's path 6 5 5    6 6  5 6  5 6  6  5 5  6)
+
+No.	Name	Notation	lh	RW ref
+
+17194	S1 under Benets Little	-1256-36-12-14.36-56.14	512346	10/89
+17195	S1 under Chieveley Little	-1256-36-12-14.56-56.14	542136	10/89
+17196	Mendip under Benets Little	-1456-16-12-14.36-56.12	541326	10/90
+17197	Cambridge under Benets Little	-1456-36-12-14.36-56.14	542136	10/89
+
+Little Hybrid Minor methods
+                   (hunt bell's path 6 5  6 6  5  6 5  6 6    5 5    6 6)
+
+No.	Name	Notation	lh	RW ref
+
+17198	Carlisle over S5 Little	34-36.14-12-1236-1256-1456	234516	10/89
+17199	Carlisle over Sedlescombe Little	34-36.14-12-1236-1456-3456	435216	10/89
+17200	Carlisle over D1 Little	34-36.14-12-16-1256-16	235146	10/90
+17201	Carlisle over D2 Little	34-36.14-12-16-3456-36	254136	10/90
+17202	Carlisle over S1 Little	34-36.14-12-36-1256-56	245316	10/89
+17203	Carlisle over S2 Little	34-36.14-12-36-3456-16	254136	10/89
+17204	Stotfold over S5 Little	34-56.14-12-1236-1256-1236	235146	10/89
+17205	Stotfold over S6 Little	34-56.14-12-1236-3456-1456	342516	10/89
+17206	Stotfold over S1 Little	34-56.14-12-36-1256-36	235146	10/89
+17207	Stotfold over Cambridge Little	34-56.14-12-36-1456-36	254136	10/89
+

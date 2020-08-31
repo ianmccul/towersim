@@ -1,0 +1,8 @@
+"Original","Original",principle,4,"",-14
+"Badbury","Badbury",principle,4,"",-14.34.14
+"Reverse Finchampstead","Reverse Finchampstead",principle,4,"",12-12.14
+"Finchampstead","Finchampstead",principle,4,"",34-34.14
+"Reverse Erin","Reverse Erin",principle,4,"",-12.14.12.14.12
+"Erin","Erin",principle,4,"",-34.14.34.14.34
+"Reverse Stanton","Reverse Stanton",principle,4,"",12-12.14.34.14
+"Stanton","Stanton",principle,4,"",34-34.14.12.14

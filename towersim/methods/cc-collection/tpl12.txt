@@ -1,0 +1,36 @@
+Treble Place Maximus methods
+ (treble's path 1 2  1 2  3  3  4 4  5  6  5 6  7  8  7 8  9  10 9 10 11 12 11 12 12)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17116	Nightingale	34-34.1T.34-34.1T.34-34.1T.34-34.1T.34-34.1T.34-34.	1T	12	a	Spliced	08/1256
+
+Little Treble Place Maximus methods
+  (treble's path 1 2  2  1  1)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17117	Alma Little	3T.12-	1T	12	a	Spliced	09/461
+17118	Metis Little	5T.12.34.	1T	12	a	Spliced	07/983
+
+Little Treble Place Maximus methods
+      (treble's path 1 2 1  2 3  4  4  3 3)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17119	Balaclava Little	-5T-14.5T.14-	34	1T	m	Spliced	08/942
+
+Little Treble Place Maximus methods
+   (treble's path 1 2 3  4 4    3 2    1    1)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17120	Europa Little	-1T-145T-1478.3690.	12	1T	k2	Spliced	07/983
+
+Little Treble Place Maximus methods
+   (treble's path 1 2  1 2  3  3  4 4  5  6  5 6  7  8  7 8  9  10 9 10 10)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17121	Hussar Little	56-56.1T.34-34.1T.34-34.1T.34-34.1T.34-34.	10	1T	h	Spliced	09/1120
+

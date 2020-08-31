@@ -1,0 +1,16 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Treble Place Triples methods
+(treble's path 1 2   1   2   3 4 3   4 5 6 5   6 7 7 7)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+17092	Kent	347.7.347.1.7.127.7.1.7.127.7.1.7.	127	1	s	1842-11-05	Liversedge	58/532 58/767
+17093	Oxford	7.347.7.1.7.127.7.1.7.127.7.1.7.	127	1	s	1821-11-05	Huddersfield	58/532 58/767
+
+Twin-hunt Treble Place Triples methods (b)
+(treble's path 1 2 1   2 3 4 3   4 5 5 6 7 6   7 7)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+17094	Bushey	5.347.5.1.5.127.5.1.5.7.5.123.5.	167	127	1246375	1971-12-02	Bushey	72/31 378
+

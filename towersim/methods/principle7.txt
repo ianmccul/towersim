@@ -1,0 +1,10 @@
+"Original","Original",principle,7,"",7.1
+"Titanic","Titanic",principle,7,"",7.1.7.3
+"Erin","Erin",principle,7,"",7.3.1.3.1.3
+"Stedman","Stedman",principle,7,"",3.1.7.3.1.3.1.3.7.1.3.1
+"Birmingham Carter","Birmingham Carter",principle,7,"",3.1.7.3.1.3.1.3.7.1.3.7
+"Reverse Stedman","Reverse Stedman",principle,7,"",5.7.1.5.7.5.7.5.1.7.5.7
+"Carter","Carter",principle,7,"",7.3.1.3.7.1.3.5.3.5.3.1
+"Scientific","Scientific",principle,7,"",3.1.7.1.5.1.7.1.7.5.1.7.1.7.1.7.1.7.1.5.1.5.1.7.1.7.1.7.1.7
+"Martin's","Martin's",principle,7,"",5.3.1.7.1.7.3.1.7.3.7.1.3.1.7.1.7.3.1.3.1.3.7.1.7.3.1.3.7.1
+"Artistic","Artistic",principle,7,"",7.1.7.1.7.3.7.3.7.1.3.1.7.3.7.3.1.3.1.3.7.3.1.3.1.3.7.1.7.1

@@ -1,0 +1,1280 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Delight Major methods
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+13736	Caterham Hill	-34-14-12-16-14-18.36.14-	38	18	m	BDK/c	1998-10-11	Uxbridge, St Margaret-of-Antioch		98/1109
+13737	Brightstowe	-34-14-12-18-12-1258-12-	58	12	f	BD	2010-11-30	Shepton Beauchamp		10/1257
+13738	Merchants' Return	-34-14-12-18-12-18-12-	18	14	15278364		1859-03-19	Glossop		
+13739	Woodbine	-34-14-12-18-12-18-12-	18	18	15237486		1877-02-24	Denholme Gate	1978-10-24	78/1052
+13740	Barkers	-34-14-12-18-12-18-16-	18	12	a	BDN	1976-11-23	Highclere		77/9
+13741	Canal Street	-34-14-12-18-12-38-14-	78	18	j	BD/c	2007-12-22	Clitheroe		08/62
+13742	Christmas Steps	-34-14-12-18-12-38-1456-	78	18	j	BD	2010-12-19	Barrow Gurney		11/34
+13743	Great Shunner Fell	-34-14-12-18-12-38.14.56-	18	18	k	BD	2005-02-08	Dore		05/184
+13744	Yorkshire	-34-14-12-18-1234-18-1234-	18	18	m	BDK	1808-02-07	Ranmoor		
+13745	Old Peculier	-34-14-12-18-1234-58.16-56.	78	18	j	BD	2007-09-14	Sheffield, St Marie		07/1076
+13746	Bishop Stopford	-34-14-12-18-14-58-14-	58	12	f	BD/c	2003-04-22	Loughborough Bellfoundry		03/731
+13747	Oxford Treble Bob	-34-14-12-18-14-58-14-	58	18	l	BD/c	2002-04-18	Heptonstall		02/460
+13748	St Stephen's	-34-14-12-18-34-18-34-	38	18	m	BD/a	1900-02-24	Westminster, St Stephen		BN V18/487
+13749	Edale	-34-14-12-18-78-58-56-	18	18	k	BD	2006-01-11	Dore		06/108
+13750	Yorkshire Day	-34-14-12-18.34-34.18-16-	58	18	g	BD/a	2009-08-01	Handsworth (Yorks)		09/854
+13751	Felkirk	-34-14-12-18.34-34.18-56-	78	18	j	BD/a	2011-07-27	Dore		11/845
+13752	Idstone	-34-14-12-38-14-18-12-	78	18	j	BD/d	2011-11-10	Stratton St Margaret		11/1237
+13753	Pendragon	-34-14-56-16-34-18-3456-	18	18	m	BD/a	1997-11-15	Todmorden, St Mary		97/1245
+13754	Moondance	-34-14-56-16-34-18.56-14.	38	18	m	DK/a	1997-09-27	Whittle-le-Woods		97/1052
+13755	Ivernis	-34-14.58-12.38-34-18.36.12-	18	18	m	BD/ac	1982-03-06	Greasley		82/257
+13756	Soave	-34-14.58.12-18-14-58.14-14.	58	12	a	BDT/c	2002-05-02	Burnley		02/522
+13757	Velox	-34-1458-12-18-34-58.16-14.	38	18	m	BD/abd	1993-05-01	Pontefract, All Saints		93/522
+13758	Kingsbury	-34-16-58-16.78-34.18.56-16.	78	12	f	D/ae	1983-10-20	Hungerford		83/951
+13759	College Youths Pleasure	-34-18-12-18-14-38-14-	38	18	13462857		1973-03-14	Highclere		73/292
+13760	Volunteer	-34-18-12-36-14-58-14-	18	12	17586432		2003-01-24	Bristol Cathedral		03/177
+13761	Valerie	-34-18-12-36-14-58-34-	18	12	a	BD/ab	2002-08-09	Tring		02/917
+13762	Drury	-34-18-12-36-14-58-56-	78	12	18763524		2010-09-10	Conisbrough		10/991
+13763	Knightstone	-34-18-12-36-34-38.16-56.	78	12	18763524		2010-04-24	Weston-super-Mare		10/497
+13764	Little Waller	-34-18-12-36.14-1234.58-16-	58	12	15478263		2010-09-24	Barrow Gurney		10/1037
+13765	Darton Exercise	-34-18-12-38-14-58-16-	78	12	15478263		2003-06-14	Bristol Cathedral		03/637
+13766	Morning Exercise	-34-18-12-38-14-58-16-	78	18	17524386		1737-12-28	London, St Bride, Fleet Street		
+13767	Orland	-34-18-12-38.14-1234.58.1234-16.	78	12	15478263		2011-03-12	Conisbrough		11/365
+13768	Evening Star	-34-18-1256-38-12-18-12-	18	12	b	BDK	1985-04-15	Swindon, St Mark		85/435
+13769	Usk	-34-18-56-1236-14-58-14-	58	12	13624857		2007-02-10	Usk		07/218
+13770	Southam	-34-18-56-1236-34-38-14-	78	12	18763524		2010-07-24	Southam		10/816
+13771	St David's	-34-18-56-16-14-1458-12.36.	18	12	e	BDK/c	2002-04-15	Bushey		02/437
+13772	Quoditch	-34-18-56-16-14-1458-12.36.	18	18	k	BDK/c	2004-07-06	Clifton (Notts), St Mary		04/805
+13773	Peterborough	-34-18-56-16-14-1458-34-	58	18	l	D/ac	2001-02-19	Bushey		01/298
+13774	Ryhope	-34-18-56-16-14-18-56.14.	78	12	d	D/c	2001-07-19	Whickham		01/827
+13775	Sarah, Duchess of York	-34-18-56-16-14-58-14-	58	12	f	D/c	1986-07-23	Westhoughton		86/785
+13776	Buckland Dinham	-34-18-56-16-14-58-16-	58	12	14257386		2011-05-05	Buckland Dinham		11/561
+13777	Trentino	-34-18-56-16-14-58.14-12.	58	18	l	D/ac	2007-12-19	Heywood		08/62
+13778	Lincoln	-34-18-56-16.12-12.3458-12-	58	18	l	D/a	2000-09-18	Bushey		00/1014
+13779	October	-34-18-56-18-14-58-14-	18	18	m	D/c	1997-01-27	Bushey		97/218 415
+13780	Quayside	-34-18-56-36-14-58-14-	58	12	13624857		2010-03-26	Newcastle-upon-Tyne, St John Bapt.		10/417
+13781	York Exercise	-34-18-56-36-34-18-56-	78	12	18763524		2007-07-18	York, St Martin-le-Grand		07/906
+13782	Rochester	-34-18-56-36.14-14.38-12.36.	18	18	k	BD/ad	2001-03-12	Bushey		01/457
+13783	Rabs	-34-18-5678-123678-1234-18-56-	78	12	18763524		Spliced			
+13784	Beccy	-34-18-5678-123678-1234-18-56-	78	18	16857432		Spliced			
+13785	Quarries (dis)	-34.58.14-12-18-34-38-16-	58	18	j	BD	2007-04-18	Dore		07/496
+13786	New Bridge	-34.58.14-12-18-78-58.14.56-	18	18	m	BD	2008-07-04	Handsworth (Yorks)		08/795
+13787	Bleaklow	-34.58.14-12-36-12-18-12-	58	18	h	BD	2008-11-01	Norton (Yorks)		08/1207
+13788	Totley Moss	-34.58.14-1258-18-12-38.14.56-	18	18	k	BDT	2011-01-05	Dore		11/88
+13789	Ashton Court	-34.58.14-1258-18-1478-58.14.56-	18	18	k	DT	2006-02-17	Barrow Gurney		06/234
+13790	Quebec	-34.58.14-58-18-12.34.18-34-	18	18	m	DP/c	2001-03-05	Turners Hill		91/174 96/276 01/350
+13791	Kimberlow Hill	-34.58.16-56-1236-1234-18-1234-	58	12	c	D/a	2009-11-04	York, St Lawrence		09/1190
+13792	Tan Hill	-34.58.16-56-36-34-18-34-	58	12	c	D/a	2005-04-13	Dore		05/430
+13793	Dong	-34.58.16-56-36-34-18.34.12.56.	18	12	b	CD/a	2005-06-01	York, St Laurence		05/600
+13794	Cross Fell	-34.58.16-78-18-12-38.14.56-	78	12	e	BD	2005-05-11	Dore		05/528
+13795	Adenine	-3458-18-56-16-14-38.16-16.	38	12	a	DKN/a	Spliced			09/179
+13796	Newlands Pass	-36-14-12-38.14.78-18.36-16.	38	18	m	DEGI	1997-08-14	Highclere		97/953
+13797	Morebath	-36-14-1258-36-12-18-12-	78	12	b	BDE/d	2009-05-28	Huntsham		09/635
+13798	British Queen	-36-14-56-18-14-18-34-	18	18	m	BDE/d	1993-03-15	Meldreth		93/398 1156
+13799	Little Sodbury End	-36-14-56-18-34-58-56-	18	18	k	BE	1982-02-13	Witley		82/193
+13800	Newbury	-36-14-58-16-34-18-36-	38	12	f	E/acd	1974-04-21	Bourn		74/409
+13801	Double Lincolnshire	-36-14-58-18-14-58-36-	78	12	13827546		1999-07-06	Loughborough Bellfoundry		99/732
+13802	Rosso Piceno	-36-14.56.12-18-34-58.14-14.	58	12	f	DEK/ac	2003-08-10	Burnley		03/832
+13803	Bedwellty	-36-1456-58-18-12-1238-14-	78	12	b	BE/c	1997-10-18	Bedwellty		98/34
+13804	Whorlton Old Church	-36-1456-58-18-12-1458-14-	58	12	d	BE/c	2009-07-01	York, St Lawrence		09/754
+13805	Walmington-on-Sea	-36-1456-58-18-12-18-12-	78	12	b	BE/c	1998-08-03	Chalfont St Giles		98/824
+13806	Hereford	-36-1456-58-18-12-18.14-14.	78	12	b	BE/c	2000-08-21	Bushey		00/919
+13807	Brecon	-36-1456-58-18-12-18.36.12-	18	12	c	BE/ac	2002-05-13	Bushey		02/549
+13808	Great Uncle Bulgaria	-36-1456-58-18-12-38-14-	38	12	a	BE/cd	1974-11-28	Cholsey		75/8
+13809	Bustardthorpe	-36-1456-58-18-12-58-56-	18	12	c	BE/c	2009-12-02	York, St Lawrence		10/12
+13810	Salice Salentino	-36-1456-58-18-12-58.14-14.	58	12	d	BE/c	2003-05-22	Burnley		03/565
+13811	Impala	-36-1456-58-18-34-58.16-1234.	78	12	b	BDE/ac	2005-01-12	Loughborough Bellfoundry		05/107
+13812	Springbok	-36-1456-58-18-34-58.16.34-	78	12	b	E/ac	2004-10-25	Loughborough Bellfoundry		04/1093
+13813	Gazelle	-36-1456-58-18-34-58.16.34.12.	78	12	b	DE/ac	2005-05-25	Loughborough Bellfoundry		05/741
+13814	Eland	-36-1456-58-18-34-58.16.34.56.	78	12	b	BE/ac	2004-11-24	Loughborough Bellfoundry		04/1218
+13815	Fevrier	-36-1456-58-18.34-14.38.14.56.14.	78	12	b	BE/ac	1997-03-03	Bledlow		97/292 98/275 01/516
+13816	Maidens	-36-1458-12-18-34-38-12-	38	12	f	BDE	1976-02-14	East Tytherley		76/226
+13817	Orinoco	-36-1458-58-16-34-18-14-	78	12	d	E/acd	1975-01-17	Cholsey		75/217
+13818	Cambridge Blue	-36-18-58-36-14-18-36-	18	18	j	EL	Spliced			04/1045
+13819	Rothwell	-38-14-12-1238-12-18-16-	18	12	f	BDO	1998-11-28	Rothwell (Yorks)		99/16
+13820	Stratfield Mortimer	-38-14-12-1238-14-18-14-	78	12	b	BDK/d	1996-05-14	Stratfield Mortimer		96/611
+13821	Washingwell	-38-14-12-1238-14-18-1456-	78	12	b	BD/d	2004-12-18	Alrewas		05/129
+13822	Ugley Green	-38-14-12-1238-14-18.56.14.56.	78	12	b	BD/d	2010-05-05	Newcastle-upon-Tyne Cathedral		10/501
+13823	East Belfast	-38-14-12-16-12.34.18.36-12.	38	12	e	BDFL	Spliced			09/179
+13824	May	-38-14-12-16-14-18-12-	38	12	b	BD/d	1995-06-09	Thatcham		95/817
+13825	Keddington	-38-14-12-16-34-18-12.36.	18	12	e	BD/a	2006-05-02	West Bridgford		06/472
+13826	Irwell	-38-14-12-16-34-18-14-	58	12	f	BD/c	1982-01-25	Walkden		82/153
+13827	Valentine	-38-14-12-16-34-18.36.12-	18	12	e	BD/a	2009-02-14	Clayworth		09/226
+13828	New York	-38-14-12-18-12-1238-12-	38	12	f	BD	Spliced			11/990
+13829	Walsall	-38-14-12-18-12-1258-1456-	38	12	c	BD/e	1999-05-11	Kingsbury (Warks)		99/631
+13830	Pringle	-38-14-12-18-12-1258-36-	58	12	f	BD/d	1989-11-30	Leicester, St Mary de Castro		90/127
+13831	August	-38-14-12-18-12-1458-16-	78	12	b	BDG	1994-08-05	Thatcham		94/976
+13832	Elston	-38-14-12-18-12-38-12-	38	12	f	BD	1976-10-23	Over (Cambs)		76/990
+13833	Dorian	-38-14-12-18-12-58-1236-	58	12	f	BD/e	2007-03-03	Basingstoke, All Saints		07/293
+13834	Causey Arch	-38-14-12-18-12-58-14-	58	12	d	BD/c	1999-08-24	Oxford, St Mary Magdalen		99/1042
+13835	Coria	-38-14-12-18-12-58-36-	58	12	f	BD/d	1990-08-25	Creswell		90/939
+13836	Coniston Bluebird	-38-14-12-18-12-58.14-16.	78	12	b	BD/c	2004-05-12	York, St Laurence		04/519
+13837	Grace Darling	-38-14-12-18-12-58.14-16.	78	18	g	BD/c	2007-10-07	Bamburgh		07/1270
+13838	Seventy	-38-14-12-18-12-58.36-16.	78	12	b	BD/dY	2010-07-24	Barton Seagrave		10/816
+13839	Gordon	-38-14-12-18-1234-1238-16-	78	12	b	BDF/Y	2003-06-29	Westhoughton		03/732
+13840	Hartfield Castle	-38-14-12-18-14-1238-14-	78	12	b	BDK/d	2001-06-02	Petworth		01/634
+13841	Buckhurst Park	-38-14-12-18-14-1238-1456-	78	12	b	BD/d	2002-06-22	Withyham		02/824
+13842	Harthill	-38-14-12-18-14-1258.36.14.36.	58	12	f	BD/dZ	1999-09-25	Harthill		99/1020
+13843	Zenzizenzizenzic	-38-14-12-18-14-1458-1236-	78	12	b	BD/ad	2010-01-21	Huntsham		10/147
+13844	Ashbourne Royal Shrovetide Football	-38-14-12-18-14-1458-36-	78	12	b	BDE/d	1997-02-11	Ashbourne		97/266
+13845	Esau	-38-14-12-18-14-18-12-	18	12	a	BD/d	1983-05-14	Warsop		83/516
+13846	Dingley	-38-14-12-18-14-18-12-	78	12	b	BD/d	1980-02-23	Desborough	2011-10-26	80/254 11/1164
+13847	Friendly	-38-14-12-18-14-18-1234-	78	12	b	BD/d	1996-01-31	Thorverton		96/227
+13848	Brocklesby	-38-14-12-18-14-18-1256-	78	12	b	BD/ad	1984-05-01	Billingborough		84/515
+13849	Fiskerton	-38-14-12-18-14-18-34-	78	12	b	BD/ad	1983-11-05	Scunthorpe		83/1015
+13850	Rowlands Gill	-38-14-12-18-14-18-3456-	78	12	b	BD/d	2003-06-10	Kingsbury (Warks)		03/637
+13851	West Bridgford	-38-14-12-18-14-18-56-	78	12	b	BD/d	1983-09-03	West Bridgford		83/905
+13852	Don's	-38-14-12-18-14-18-56.12.	78	12	b	BD/ad	2010-08-03	Thorverton		10/841
+13853	Timothy	-38-14-12-18-14-18.34-12.	78	12	b	BD/ad	2009-09-10	Huntsham		09/997
+13854	M	-38-14-12-18-14-18.34-34.	78	12	b	BD/ad	2002-02-23	Amersham		02/263
+13855	Birstwith	-38-14-12-18-14-18.34-56.	78	12	b	BD/ad	2010-09-08	Birstwith		10/1040
+13856	Clayhanger	-38-14-12-18-14-18.34.12.34.	78	12	b	BD/d	2009-02-12	Huntsham		09/225
+13857	Avril	-38-14-12-18-14-18.56-56.	78	12	b	BD/d	1997-04-02	Dartmouth, St Saviour		97/480
+13858	Four Shires Guild	-38-14-12-18-14-18.56.12-	78	12	b	BD/ad	2009-11-14	Moreton in Marsh		09/1244 10/150
+13859	Northfield	-38-14-12-18-14-18.56.12.56.	78	12	b	BD/ad	1996-03-16	Northfield		96/394
+13860	Widecombe-in-the-Moor	-38-14-12-18-14-18.56.34-	78	12	b	BD/ad	2011-02-28	Widecombe-in-the-Moor		11/286
+13861	Novembre	-38-14-12-18-14-3458-14-	58	12	d	BDK/d	1996-11-06	Aston Clinton		96/1225
+13862	Second Chance	-38-14-12-18-14-38-16-	18	12	f	BDN/d	2009-05-02	Mandurah, WA		09/539
+13863	Grace	-38-14-12-18-14-58-14.36.	78	12	b	BDN/d	2007-11-26	Birmingham, AL, Cathedral		08/192
+13864	Zacatecas	-38-14-12-18-14-58.12-14.	58	12	d	BDK/d	1985-01-17	Beeston		85/199
+13865	Ribblesdale	-38-14-12-18-34-1458-12-	58	12	d	BD	2007-09-09	Dore		07/985
+13866	Halifax Minster	-38-14-12-18-34-1458-1234-	58	12	d	BD	2010-01-31	Halifax		10/171
+13867	Kindelein	-38-14-12-18-34-1458-14.36.	78	12	b	BDE/c	2006-11-28	Maidstone, St Michael		06/1226
+13868	Ireton	-38-14-12-18-34-1458-56-	18	12	c	BD	2003-09-19	Haselbech		03/972
+13869	Westhoughton	-38-14-12-18-34-38-16-	78	12	b	BD/Y	1970-12-27	Radcliffe		71/77
+13870	Mavesyn Victory	-38-14-12-18-34-38-34-	18	12	e	BD	1999-05-25	Kingsbury (Warks)		99/631
+13871	Quorn	-38-14-12-18-34-38.16-16.	78	12	b	BD/Y	2009-02-26	Leicester, St Mary de Castro		09/280
+13872	Hicks	-38-14-12-18-34-58-14-	58	12	d	BD/c	1998-11-15	Melbourn		98/1207
+13873	Christ Church Primary School 300	-38-14-12-18.34-14.58.14-1236.	78	12	b	BD/ac	2008-07-07	Spitalfields		08/817
+13874	New Burslem	-38-14-12-18.34-14.58.14-14.	58	12	d	BD/c	1963-11-23	Attenborough		63/835 65/228
+13875	St Brandon	-38-14-12-18.34-14.58.14-36.	78	12	b	BDE/c	2006-07-23	Brancepeth		06/864
+13876	Alford	-38-14-12-36-14-18-16-	18	12	b	BDK	1969-12-20	Barnes		70/37
+13877	Fairfax	-38-14-12-36-34-18-12-	58	12	f	BD	2001-09-21	Haselbech		01/1022
+13878	President	-38-14-12-36-34-18-1234-	58	12	f	BD	2010-11-06	Paignton		10/1181
+13879	Harcourt Arms	-38-14-12-36-34-18-34-	58	12	f	BD/a	1999-04-13	Oxford, St Mary Magdalen		99/409
+13880	Phuket	-38-14-12-36-34-18.34-12.	58	12	f	BD/a	2010-03-20	Basingstoke, All Saints		10/367
+13881	Lancre	-38-14-12-36-34-18.34-34.	58	12	f	BD/a	2010-05-03	Longcot		10/546
+13882	Ipswich	-38-14-12-38-14-18-14-	18	12	f	BDFK	1982-01-05	Ipswich, St Mary-le-Tower		82/135
+13883	Butt	-38-14-12-38-34-18-16-	78	12	b	BD/Y	2005-05-30	Kirkby-in-Ashfield		05/753
+13884	Houndkirk Moor	-38-14-12-38.14-34.18-16-	58	18	m	BDK/a	2010-08-11	Dore		10/890
+13885	Centenary	-38-14-12-38.14-34.18-34-	78	12	b	BDK/a	2007-12-17	Packwood		08/36
+13886	Keele University	-38-14-12-38.14-34.18-56-	78	12	b	BDK/a	2004-11-20	Broughton (Staffs)		05/133
+13887	Upham	-38-14-12-38.14-34.18.34-34.	18	12	a	BDK/a	1981-11-07	Upham		81/1118
+13888	January	-38-14-12-38.14-34.18.56-56.	18	12	a	BDK/a	1996-06-28	Hughenden		96/758
+13889	Exeenda	-38-14-12-38.14-34.18.56-56.	78	12	b	BDK/a	1996-05-13	Chalfont St Giles		96/611
+13890	No Hope	-38-14-12.56.18-12-58-16-	18	12	b	BD	2005-02-02	York, St Martin-le-Grand		05/184
+13891	Hope	-38-14-12.56.18-12-58-16-	18	18	g	BD	2009-08-08	Harthill		09/879
+13892	Varicella Zoster	-38-14-12.56.18-12-58-16-	78	12	a	BD	2005-04-20	York, St Laurence		05/455
+13893	Xerxes	-38-14-12.56.18-12-58.16-16.	78	12	a	BD	2005-05-03	West Bridgford		05/479
+13894	Hillingdon Green	-38-14-12.56.18.34-1234.58-16-	18	12	b	BD/a	2008-09-13	Pinhoe		08/1064
+13895	Rudgate Ruby Mild	-38-14-12.56.18.34-1234.58-16-	78	12	a	BD/a	2009-08-05	York, St Lawrence		09/879
+13896	Double Standard	-38-14-12.56.18.34.78-58-16-	78	12	d	BD	2006-04-29	Allendale		06/473
+13897	Pen-y-ghent	-38-14-12.58.16-12-18-12-	58	12	a	BD	2004-08-11	Dore		04/828
+13898	Golden Pippin	-38-14-12.58.16-12-18.34-12.	58	12	a	BD/a	2006-07-08	Heptonstall		06/716
+13899	Yarpole	-38-14-12.58.18-34-18-16-	58	12	b	BD/a	2009-03-03	West Bridgford		09/280
+13900	Cree	-38-14-12.58.36.12-34.18.36.14-	18	18	m	BDN/c	2009-05-07	Chorley, St Laurence		09/564
+13901	The Warrant	-38-14-1256-16-12-18-1456-	38	12	e	BR	2008-02-14	Leicester, St Mary de Castro		08/291
+13902	Quick March	-38-14-1256-16-12-18-36.14.	78	12	d	BG/d	2004-03-04	Leicester, St Mary de Castro		04/297
+13903	Wedding	-38-14-1256-16-34-18-12-	78	12	d	B/a	1999-09-15	Barrow Gurney		99/1087
+13904	Heptonstall	-38-14-1256-16-34-18-12.36.	18	12	e	B/a	2001-01-04	Heptonstall		01/113
+13905	Dordrecht	-38-14-1256-16-34-18-1234-	78	12	d	BD/a	2009-05-29	Dordrecht		09/659
+13906	Kilburn	-38-14-1256-16-34-18-1256-	78	12	d	B/a	1998-07-15	Salford, Sacred Trinity		98/799
+13907	Ketteringham	-38-14-1256-16-34-18-16-	58	12	b	B/a	1973-11-03	Worcester, St John-in-Bedwardine		73/982
+13908	Bevan's	-38-14-1256-16-34-18-34-	78	12	d	B/a	1998-06-28	Westhoughton		98/773
+13909	Gibside	-38-14-1256-16-34-18-3456-	78	12	d	B/a	2008-05-17	Kingsbury (Warks)		08/622
+13910	Burnopfield	-38-14-1256-16-34-18-56-	78	12	d	BD/a	2003-05-15	Leicester, St Mary de Castro		03/899 999
+13911	Rochdale Canal	-38-14-1256-16-34-18.36.12-	18	12	e	B/a	1998-08-24	Heptonstall		98/944
+13912	David's	-38-14-1256-16-34-18.56-56.	18	12	c	BD/a	1997-09-11	Burnley		97/1026
+13913	Chapel Row	-38-14-1256-16-34-18.56.12-	78	12	d	B/a	2011-05-11	Bucklebury		11/341 581
+13914	Verdicchio	-38-14-1256-16-34-18.56.12.34.	18	12	e	BD/a	2001-12-06	Burnley		02/8
+13915	Garnet	-38-14-1256-18-12-58-16-	18	12	b	B	2001-06-18	Willesden		01/687
+13916	Buxton	-38-14-1256-18-12-58-16-	18	18	g	B	2007-12-28	Buxton		08/88
+13917	Cooktown Orchid	-38-14-1256-18-12-58-16-	78	12	a	B	1992-12-31	Maryborough, QLD		93/198 93/336
+13918	X Fell	-38-14-1256-18-12-58-56-	58	12	f	B	2006-11-18	Norton (Yorks)		06/1174
+13919	Earnley Castle	-38-14-1256-18-12-58.16-16.	78	12	a	B	2000-12-18	Fairwarp		01/63
+13920	Mitchell	-38-14-1256-18-34-123458-16-	78	12	a	B/a	2010-06-06	Oldham		10/642
+13921	Romanby Green	-38-14-1256-18-3478-58-16-	78	12	d	B	2001-09-01	Romanby, Campanile		01/953
+13922	Llandaff	-38-14-1256-18-78.34.58-16-	18	18	h	BD	2001-10-08	Bushey		01/1242
+13923	Huntsham	-38-14-1256-36-14-18-1236-	18	12	b	BG/d	2005-12-11	Huntsham		06/10
+13924	Bardolino	-38-14-1256-36.12-34.18.34-56.	18	12	e	BD/a	2002-02-14	Burnley		02/240
+13925	Jefford	-38-14-1258-1236-14-18-12-	78	12	b	BDO/a	1992-05-16	Thorverton		92/641
+13926	Elvestone	-38-14-1258-1236-14-18-12.34.	78	12	b	BDO/a	1995-06-15	South Wigston		95/767 851
+13927	St James-the-Great	-38-14-1258-1236-14-18-12.56.	78	12	b	BDO/a	1995-07-29	Birstall (Leics)		95/935
+13928	Brindley	-38-14-1258-1236-14-18-1234-	78	12	b	BDO	1992-10-20	Newton Abbot		92/1178
+13929	Bishop Thomas	-38-14-1258-1236-14-18-1256-	78	12	b	BDO	1993-03-10	South Wigston		93/374
+13930	Lye	-38-14-1258-1236-14-18-34-	78	12	b	BDO	1982-08-25	Lye		82/802
+13931	Wicestan	-38-14-1258-1236-14-18-34.12.	78	12	b	BDO	1996-04-04	South Wigston		96/492
+13932	Rowley Regis	-38-14-1258-1236-14-18-34.56.	78	12	b	BDO/a	1993-12-18	Rowley Regis		94/85
+13933	Parklands	-38-14-1258-1236-14-18-3456-	78	12	b	BDO/a	1993-02-24	South Wigston		93/322
+13934	Alamein	-38-14-1258-1236-14-18-56-	78	12	b	BDO	1992-10-26	Countesthorpe		92/1156
+13935	Daffern	-38-14-1258-1236-14-18-56.12.	78	12	b	BDO	1995-11-06	Claybrooke		95/1252
+13936	Countess Judith	-38-14-1258-1236-14-18-56.34.	78	12	b	BDO/a	1995-05-09	Countesthorpe		95/605
+13937	Osferdebie	-38-14-1258-1236-14-18.34-12.	78	12	b	BDO/a	1996-04-01	Loughborough Bellfoundry		96/492
+13938	Shere	-38-14-1258-1236-14-18.34-1234.	78	12	b	BDO	1994-04-23	South Wigston		94/536
+13939	Jupiter	-38-14-1258-1236-14-18.34-1256.	78	12	b	BDO	1997-03-17	Countesthorpe		97/399
+13940	Sproxton	-38-14-1258-1236-14-18.34-34.	78	12	b	BDO	1992-11-17	Sproxton		92/1235
+13941	Ronaldsway	-38-14-1258-1236-14-18.34-3456.	78	12	b	BDO/a	1993-07-29	South Wigston		93/856
+13942	Coston	-38-14-1258-1236-14-18.34-56.	78	12	b	BDO	1995-03-01	South Wigston		95/383
+13943	Bristans	-38-14-1258-1236-14-18.34.12-	78	12	b	BDO/a	1994-03-31	South Wigston		94/464
+13944	Jerubbaal	-38-14-1258-1236-14-18.34.12.34.	78	12	b	BDO	1993-10-20	Loughborough Bellfoundry		93/1119
+13945	Malaita	-38-14-1258-1236-14-18.34.12.56.	78	12	b	BDO	1994-08-09	Countesthorpe		94/904
+13946	Ironbridge	-38-14-1258-1236-14-18.34.56-	78	12	b	BDO/a	1994-12-12	Loughborough Bellfoundry		95/90
+13947	Janus	-38-14-1258-1236-14-18.34.56.12.	78	12	b	BDO/a	1997-01-06	South Wigston		97/170
+13948	Chandler	-38-14-1258-1236-14-18.34.56.34.	78	12	b	BDO/a	1993-01-11	Gilmorton		93/152
+13949	Hoy	-38-14-1258-1236-14-18.3456-12.	78	12	b	BDO/a	1995-06-24	South Wigston		95/790
+13950	Epiphany	-38-14-1258-1236-14-18.3456-1234.	78	12	b	BDO/a	1995-01-06	South Wigston		95/167
+13951	Kilby	-38-14-1258-1236-14-18.3456-1256.	78	12	b	BDO/a	1995-07-14	Countesthorpe		95/885
+13952	Xoros	-38-14-1258-1236-14-18.3456-34.	78	12	b	BDO/a	1994-06-20	Loughborough Bellfoundry		94/735
+13953	Tungurahua	-38-14-1258-1236-14-18.3456-3456.	78	12	b	BDO/a	1993-07-12	South Wigston		93/807
+13954	Ash	-38-14-1258-1236-14-18.3456-56.	78	12	b	BDO/a	1994-02-16	South Wigston		94/282
+13955	Seagrave	-38-14-1258-1236-14-18.56-12.	78	12	b	BDO/a	1996-02-23	Aspley (Notts)		96/299
+13956	Sannat	-38-14-1258-1236-14-18.56-1234.	78	12	b	BDO	1997-07-28	South Wigston		97/874
+13957	Maundy	-38-14-1258-1236-14-18.56-1256.	78	12	b	BDO	1993-04-08	South Wigston		93/448
+13958	Odstone	-38-14-1258-1236-14-18.56-34.	78	12	b	BDO	1995-09-04	South Wigston		95/1058
+13959	Dalmuir	-38-14-1258-1236-14-18.56-3456.	78	12	b	BDO/a	1993-08-31	South Wigston		93/976
+13960	Vikingtun	-38-14-1258-1236-14-18.56-56.	78	12	b	BDO	1995-02-02	South Wigston		95/251 487
+13961	Sansum	-38-14-1258-1236-14-18.56.12-	78	12	b	BDO/a	1995-10-23	Loughborough Bellfoundry		95/1203
+13962	Diamond	-38-14-1258-1236-14-18.56.12.34.	78	12	b	BDO	1997-12-13	East Budleigh		98/61
+13963	Imogen	-38-14-1258-1236-14-18.56.12.56.	78	12	b	BDO	1993-11-29	Loughborough Bellfoundry		94/10
+13964	Xarro	-38-14-1258-1236-14-18.56.34-	78	12	b	BDO/a	1994-09-28	Loughborough Bellfoundry		94/1092
+13965	Tahiche	-38-14-1258-1236-14-18.56.34.12.	78	12	b	BDO/a	1996-07-08	South Wigston		96/830
+13966	St Michael's	-38-14-1258-1236-14-18.56.34.56.	78	12	b	BDO/a	1979-09-29	Brierley Hill		79/889
+13967	Hales Owen	-38-14-1258-1236-34-18-16-	18	12	a	BD/ae	1984-12-15	Halesowen		85/131
+13968	Colombo	-38-14-1258-16-12-18-34-	18	12	f	BD	1978-12-02	Windsor, St John-the-Baptist		79/83
+13969	Allendale	-38-14-1258-16-12-18-56-	58	12	c	BD/a	1974-03-26	Trumpington		74/390
+13970	Essef	-38-14-1258-16-1234-18-16-	78	12	b	BDK/Y	1993-01-09	Bishopstoke		93/176
+13971	Aldwickbury	-38-14-1258-16-14-18-14-	78	12	b	BDKO	1970-08-31	Hyde		70/802
+13972	Perscoran	-38-14-1258-16-14-18-14.56.	78	12	b	BDKO	2007-12-18	Pershore, St Andrew		08/38
+13973	St Brannock's	-38-14-1258-16-14-18-1456-	78	12	b	BDO	1993-07-17	Tawstock		93/830
+13974	Wellenkuppe	-38-14-1258-16-14-18.56.14.56.	78	12	b	BDO	2010-03-25	Thorverton		10/365
+13975	Morville	-38-14-1258-16-34-18-12-	58	12	d	BD	2009-06-24	Morville		09/730
+13976	Kirkstall	-38-14-1258-16-34-18-56-	18	12	c	BD	1971-08-25	Crowle		71/873
+13977	New Deane	-38-14-1258-36-34-18-36-	58	12	f	BD/ad	1983-08-29	Deane (Hants)		83/886 84/209
+13978	Janvier	-38-14-1258-36.14-34.18.34-14.	78	12	b	BDK/ae	1997-04-02	Buckfastleigh		97/480
+13979	Partington	-38-14-1258-36.14-34.18.34-1456.	78	12	b	BD/ae	2001-01-24	Heywood		01/190
+13980	Prince Edward	-38-14-1258-36.14-34.18.34.56.14.	78	12	b	BD/ace	1999-05-26	Heywood		99/554
+13981	Deorham	-38-14-56-1236-14-18.34-12.	38	18	m	BD/ad	1995-03-25	Swillington		95/449
+13982	Orwell	-38-14-56-1236-14-18.34.16-	38	12	f	BS/adZ	2009-03-26	Orwell		09/405
+13983	Swervin' Mervyn's	-38-14-56-16-12-18.3456-3456.	18	12	b	B/a	2008-04-08	Thorverton		08/441
+13984	Cherry Hinton	-38-14-56-16-12-18.56-56.	18	12	b	B/a	1976-01-09	Meldreth		76/204
+13985	Gressenhall	-38-14-56-16-34-18-14-	78	12	d	B/ac	1956-01-18	Gressenhall		56/68
+13986	Weston super Mare	-38-14-56-16-34-18-1456-	78	12	d	BD/a	2000-06-06	Weston-super-Mare		00/767
+13987	Arundel Castle	-38-14-56-16-34-18-56.14.	78	12	d	BD/a	1999-02-01	Buxted		99/216
+13988	Quentin's	-38-14-56-16-34-18.56-14.	78	12	d	BD/ac	2002-10-27	Burnley		02/1161
+13989	Jacob's Ladder	-38-14-56-18-12-1458-14-	18	18	m	B/ac	2005-08-10	Dore		05/850
+13990	Codsall	-38-14-56-18-12-1458-56-	58	12	f	B/a	2003-08-26	Codsall		03/902
+13991	Swindon	-38-14-56-18-12-58-36-	38	12	d	B/ac	1997-04-01	Swindon, St Mark		97/483 1159
+13992	Corda	-38-14-56-18-14-1458-34-	18	18	m	B/ad	1990-05-07	Birstall (Yorks)		90/538
+13993	Cornovii	-38-14-56-18-14-18.36-14.	58	12	f	B/abcd	1994-01-29	Creswell		94/210
+13994	Farnworth	-38-14-56-18-14-18.36-56.	18	18	m	B/abd	1981-08-03	Farnworth-with-Kearsley		81/831
+13995	Dumnonii	-38-14-56-18-14-38.16-34.	58	12	f	B/ade	1994-05-07	Birstall (Yorks)		94/590
+13996	Ruby	-38-14-56-18-34-1458-16-	18	12	b	B/a	1998-09-28	Bushey		98/1015
+13997	Bowes-Lyon	-38-14-56-18-34-1458-16-	78	12	a	B/a	1998-08-04	Broughton (Staffs)		98/894
+13998	Juniper Green	-38-14-56-18-34-1458-3456-	58	12	f	BE/a	Spliced			10/1234 11/1042
+13999	Longdon Green	-38-14-56-18-34-1458-3456.12.	58	12	f	BEU/a	Spliced			10/345 11/1042
+14000	Jalousie	-38-14-56-18-34-1458-56-	58	12	f	B/a	2005-05-31	Loughborough Bellfoundry		05/597
+14001	Ickwell Green	-38-14-56-18-34-1458-56.12.	58	12	f	BC/a	Spliced			10/742 11/1042
+14002	Halfpenny Green	-38-14-56-18-34-1458-56.1234.	58	12	f	BU/a	Spliced			10/373 11/1042
+14003	Mill Green	-38-14-56-18-34-1458-56.34.	58	12	f	BE/a	Spliced			10/766 11/1042
+14004	Pig-le-Tower	-38-14-56-18-34-38-1456-	18	12	f	B/ad	1998-08-04	Marston Bigot, Pig-le-Tower		98/821
+14005	Shedfield	-38-14-56-18-34-58-14-	18	18	m	B/ac	1972-10-28	Shedfield		73/32
+14006	Sear	-38-14-56-36-12-18-12-	38	12	a	BD/a	1997-07-15	Aldermaston		97/851
+14007	Icene	-38-14-56-36-12-18.34.16-	38	12	f	BD/afZ	2004-01-16	Haselbech		04/129
+14008	Holy Cross	-38-14-56-36-34-18-12-	18	12	c	BD/a	2005-09-14	Ryton (Durham)		05/965
+14009	Reedley Hallows	-38-14-56-36-34-18-12-	78	12	d	BD/a	1994-03-26	Burnley		94/407
+14010	St Chads	-38-14-56-36-34-18-34-	78	12	d	BD/a	2000-09-09	Burton-upon-Trent, St Chad		00/1214
+14011	Irnham	-38-14-56-36-34-18-3456-	18	12	e	BD/a	1983-07-28	Billingborough		83/707
+14012	Kingsbury500	-38-14-56-36-34-18-56-	78	12	d	BD/a	2000-07-04	Kingsbury (Warks)		00/1012
+14013	Arkle	-38-14-56-38-34-18.36-14.	58	12	f	BD/ac	1995-12-23	Harthill		96/127
+14014	Thomas Apostle	-38-14-56.12.36.12-34.18-12-	18	12	c	BD/a	2004-10-26	Heptonstall		04/1093
+14015	Ullscarf	-38-14-56.12.36.14-34.18.56-16.	78	12	d	B/ad	1992-11-19	Highclere		93/15
+14016	Headingley	-38-14-58-1236-14-18-12.34.	18	12	f	BL/ace	2006-04-08	Headingley		06/402
+14017	Lyddington	-38-14-58-1236-14-18-1234-	18	12	f	BL/ce	1989-07-22	Totternhoe		89/754 936
+14018	Buckhurst	-38-14-58-1236-14-18-16-	18	12	a	BO/ce	2000-03-25	Hadlow		00/573
+14019	Barrow-upon-Soar	-38-14-58-1236-34-18-1236-	58	12	f	B/ace	1978-02-28	Trumpington		78/249 326
+14020	Stapleford	-38-14-58-1236-34-18-36-	58	12	f	B/acd	1973-07-08	Cambridge, St Andrew-the-Great		73/596
+14021	Bradford	-38-14-58-16-12-18-12-	38	12	a	BD/c	1970-02-07	Bradford Cathedral		70/197
+14022	Longhorn	-38-14-58-16-12-18-16-	58	18	m	BN/c	2005-12-04	Houston, TX, St Thomas		06/105
+14023	Christmas	-38-14-58-16-12-18.34-14.	78	12	b	BDK/c	1988-12-24	Amersham	2000-12-20	89/82 01/91
+14024	Wallingford	-38-14-58-16-12-18.34-1456.	78	12	b	BD/c	1989-11-11	Wallingford		89/1090
+14025	Portsmouth	-38-14-58-16-12-18.34.56.14.	78	12	b	B/c	1979-12-13	Overton		80/49
+14026	Michigan	-38-14-58-16-12-18.3456-14.	78	12	b	BK/c	2004-11-21	Kalamazoo, MI		05/133 408
+14027	Porchester	-38-14-58-16-12-18.3456-1456.	78	12	b	B/c	1989-12-15	Highclere		90/72
+14028	Captain's	-38-14-58-16-12-18.56-56.	38	12	a	BD/c	1989-05-13	Leckhampton		89/507
+14029	Toseland	-38-14-58-16-12-18.56.12.56.	38	12	a	B/c	1976-03-12	Meldreth		76/351
+14030	Bampton	-38-14-58-16-14-18-12.34.	18	12	f	B/ace	1987-06-06	Bampton (Oxon)		87/628
+14031	West Sussex	-38-14-58-16-14-18-1234-	18	12	f	B/ce	1989-06-02	Chichester Cathedral	2011-07-31	89/575 11/846
+14032	Reverend Irons	-38-14-58-16-14-18-1256-	58	12	c	B/ceY	2004-04-24	Weston-super-Mare		04/469
+14033	Rockwood	-38-14-58-16-14-18-56-	58	12	c	B/ace	1972-03-11	Dewsbury		72/299
+14034	Elul	-38-14-58-16-14-18-56-	58	18	h	B/ace	2003-08-08	Middleton (Lancs)		03/901
+14035	Rutland	-38-14-58-16-14-18.34.12-	18	12	f	B/ace	1972-08-24	Castle Cary		72/885
+14036	Effingham	-38-14-58-16-14-18.56-16.	78	12	b	B/ace	1967-01-07	Harlington		67/86
+14037	Woodford	-38-14-58-16-14-18.56.12.36.	18	12	f	BE/ceY	2002-01-14	Woodford (Northants)		02/138
+14038	Luppitt	-38-14-58-16-34-18-1236-	58	12	f	B/ace	1988-12-08	Luppitt		89/78
+14039	Blackdown	-38-14-58-16-34-18-14-	58	12	d	B/ac	1961-06-03	Wellington (Somerset)		61/414
+14040	Eardisland	-38-14-58-16-34-18-36-	58	12	f	B/acd	1953-12-26	Eardisland	2011-05-11	54/34 64 11/539
+14041	Chisleu	-38-14-58-16-34-18-36-	58	18	l	B/acd	2003-11-14	Middleton (Lancs)		04/81
+14042	Jenny	-38-14-58-16-34-18-36.12.	58	12	f	B/acde	1996-04-19	Heywood		96/539
+14043	Bower	-38-14-58-16-34-18.36-16.	78	12	b	B/acdY	2006-02-05	East Crompton		06/281
+14044	Lincolnshire	-38-14-58-16-78-18-34-	58	12	b	B/c	2005-03-01	Clifton (Notts), St Mary	2010-11-24	05/284 10/1260
+14045	Yelling	-38-14-58-16.34-34.18-12-	78	12	b	B/ac	1977-07-10	Bourn	2011-09-19	77/761 11/1018
+14046	Gnilley	-38-14-58-16.34-34.18-12-	78	18	g	B/ac	1990-10-10	Loughborough Bellfoundry		90/1104
+14047	Psara	-38-14-58-16.34-34.18-12.34.	78	12	b	BD/ac	1990-04-23	Loughborough Bellfoundry		89/103 90/487
+14048	Arasp	-38-14-58-16.34-34.18-12.34.	78	18	g	BD/ac	2001-11-07	Loughborough Bellfoundry		01/1193
+14049	Pasadena	-38-14-58-16.34-34.18-12.56.	78	12	b	B/ac	1989-08-23	Thatcham		89/103 928
+14050	Anedasap	-38-14-58-16.34-34.18-12.56.	78	18	g	B/ac	1992-05-20	Loughborough Bellfoundry		92/600
+14051	Oaxaca	-38-14-58-16.34-34.18-1234-	78	12	b	BD/ac	1993-02-22	Loughborough Bellfoundry		93/322
+14052	Acaxao	-38-14-58-16.34-34.18-1234-	78	18	g	BD/ac	1997-08-27	Loughborough Bellfoundry		97/951
+14053	Sunderland	-38-14-58-16.34-34.18-1256-	78	12	b	B/ac	1980-05-08	Welbourn		80/533
+14054	Landersund	-38-14-58-16.34-34.18-1256-	78	18	g	B/ac	1992-08-10	Countesthorpe		92/893
+14055	Little Sparky	-38-14-58-16.34-34.18-14-	18	12	a	B/ac	2002-02-16	Kirby-le-Soken		02/239
+14056	Winchester	-38-14-58-16.34-34.18-34-	78	12	b	B/ac	1977-08-07	Bourn		77/798
+14057	Tercheswin	-38-14-58-16.34-34.18-34-	78	18	g	B/ac	1991-11-04	Countesthorpe		91/1183
+14058	Sparta	-38-14-58-16.34-34.18-34.12.	78	12	b	BD/ac	1990-05-01	Countesthorpe		89/103 90/512
+14059	Atraps	-38-14-58-16.34-34.18-34.12.	78	18	g	BD/ac	1997-09-29	Countesthorpe		97/1074
+14060	Apsley	-38-14-58-16.34-34.18-34.56.	78	12	b	B/ac	1990-04-18	Ashby Folville		89/103 90/487
+14061	Leyspa	-38-14-58-16.34-34.18-34.56.	78	18	g	B/ac	1992-03-04	South Wigston		92/330 420
+14062	Sleaford	-38-14-58-16.34-34.18-3456-	78	12	b	B/ac	1979-08-25	Sleaford	2011-08-10	79/845 11/871
+14063	Drofaels	-38-14-58-16.34-34.18-3456-	78	18	g	B/ac	1990-11-07	Loughborough Bellfoundry		90/1170 91/24
+14064	Ian's	-38-14-58-16.34-34.18-56-	78	12	b	BD/ac	1983-01-08	Norton (Yorks)		83/163
+14065	Snai	-38-14-58-16.34-34.18-56-	78	18	g	BD/ac	1994-06-01	Loughborough Bellfoundry		94/711
+14066	Sapello	-38-14-58-16.34-34.18-56.12.	78	12	b	BD/ac	1990-05-24	South Wigston		89/103 90/609
+14067	Aspen	-38-14-58-16.34-34.18-56.34.	78	12	b	BD/ac	1990-06-05	Countesthorpe		89/103 90/652
+14068	Nepsa	-38-14-58-16.34-34.18-56.34.	78	18	g	BD/ac	1997-06-09	Loughborough Bellfoundry		97/707
+14069	Siam	-38-14-58-16.34-34.18.34-12.	78	12	b	B/ac	1990-05-15	Loughborough Bellfoundry		89/103 90/560
+14070	Mais	-38-14-58-16.34-34.18.34-12.	78	18	g	B/ac	1991-07-03	Sproxton		91/720
+14071	Beechwood	-38-14-58-16.34-34.18.34-1234.	78	12	b	BD/ac	1993-04-09	Countesthorpe		93/448
+14072	Woodbeech	-38-14-58-16.34-34.18.34-1234.	78	18	g	BD/ac	1994-07-13	Loughborough Bellfoundry		94/782
+14073	Sisland	-38-14-58-16.34-34.18.34-1256.	78	12	b	B/ac	1990-06-06	South Wigston		89/103 90/652
+14074	Islands	-38-14-58-16.34-34.18.34-1256.	78	18	g	B/ac	1997-04-14	Countesthorpe		97/510
+14075	Hunsdon	-38-14-58-16.34-34.18.34-34.	78	12	b	B/ac	1984-04-21	Hunsdon	2010-11-10	84/411 10/1207
+14076	Nevilholt	-38-14-58-16.34-34.18.34-34.	78	18	g	B/ac	1990-11-21	South Wigston		91/11
+14077	Kashmir	-38-14-58-16.34-34.18.34-3456.	78	12	b	B/ac	1993-07-27	Loughborough Bellfoundry		93/856
+14078	Shmirka	-38-14-58-16.34-34.18.34-3456.	78	18	g	B/ac	1994-04-13	Loughborough Bellfoundry		94/487
+14079	Aistersheim	-38-14-58-16.34-34.18.34-56.	78	12	b	BD/ac	1990-06-11	Loughborough Bellfoundry		89/103 90/730
+14080	Miehsretsia	-38-14-58-16.34-34.18.34-56.	78	18	g	BD/ac	1997-11-10	Loughborough Bellfoundry		97/1243
+14081	Piacenza	-38-14-58-16.34-34.18.34.12-	78	12	b	BD/ac	1990-08-07	Kingsbury (Warks)		89/103 90/890
+14082	Aznecaip	-38-14-58-16.34-34.18.34.12-	78	18	g	BD/ac	1998-04-09	South Wigston		98/482
+14083	Plaistow	-38-14-58-16.34-34.18.34.12.34.	78	12	b	BD/ac	1990-06-25	Loughborough Bellfoundry		89/103 90/730
+14084	Wotsialp	-38-14-58-16.34-34.18.34.12.34.	78	18	g	BD/ac	2000-04-26	Loughborough Bellfoundry		00/502
+14085	Pisa	-38-14-58-16.34-34.18.34.12.56.	78	12	b	BD/ac	1990-06-29	Sproxton		89/103 90/730
+14086	Aipe	-38-14-58-16.34-34.18.34.56-	78	12	b	BD/ac	1990-07-16	Countesthorpe		89/103 90/777
+14087	Epia	-38-14-58-16.34-34.18.34.56-	78	18	g	BD/ac	1994-10-26	Loughborough Bellfoundry		94/1214
+14088	Sipora	-38-14-58-16.34-34.18.34.56.12.	78	12	b	B/ac	1990-03-05	Loughborough Bellfoundry		89/103 90/348
+14089	Arosip	-38-14-58-16.34-34.18.34.56.12.	78	18	g	B/ac	1993-07-28	Loughborough Bellfoundry		93/856
+14090	Alpine	-38-14-58-16.34-34.18.34.56.34.	78	12	b	B/ac	1990-03-19	Countesthorpe		89/103 90/398
+14091	Enipla	-38-14-58-16.34-34.18.34.56.34.	78	18	g	B/ac	1991-08-06	Loughborough Bellfoundry		91/881
+14092	Kiriath	-38-14-58-16.34-34.18.3456-12.	78	12	b	B/ac	1994-06-02	South Wigston		94/711
+14093	Glenne	-38-14-58-16.34-34.18.3456-1234.	78	12	b	BD/ac	1993-12-21	Great Glen		94/107
+14094	Dingli	-38-14-58-16.34-34.18.3456-1256.	78	12	b	B/ac	1993-12-23	South Wigston		94/107
+14095	Ilgnid	-38-14-58-16.34-34.18.3456-1256.	78	18	g	B/ac	1995-07-05	Loughborough Bellfoundry		95/816
+14096	Malcolmmas	-38-14-58-16.34-34.18.3456-34.	78	12	b	B/ac	1993-09-29	Loughborough Bellfoundry		93/1095
+14097	Sammloclam	-38-14-58-16.34-34.18.3456-34.	78	18	g	B/ac	1996-11-25	Loughborough Bellfoundry		97/35
+14098	Leysland	-38-14-58-16.34-34.18.3456-3456.	78	12	b	B/ac	1993-03-15	Countesthorpe		93/399
+14099	Landleys	-38-14-58-16.34-34.18.3456-3456.	78	18	g	B/ac	1993-10-27	Loughborough Bellfoundry		93/1143
+14100	Mosta	-38-14-58-16.34-34.18.3456-56.	78	12	b	BD/ac	1993-12-06	Loughborough Bellfoundry		94/34 119
+14101	Atsom	-38-14-58-16.34-34.18.3456-56.	78	18	g	BD/ac	2002-03-11	Loughborough Bellfoundry		02/317
+14102	St Helena	-38-14-58-16.34-34.18.56-12.	78	12	b	BD/ac	1990-07-23	Loughborough Bellfoundry		89/103 90/842
+14103	Asyut	-38-14-58-16.34-34.18.56-1234.	78	12	b	BD/ac	1994-02-07	Loughborough Bellfoundry		94/232
+14104	Salvador	-38-14-58-16.34-34.18.56-1256.	78	12	b	BD/ac	1990-08-06	Earl Shilton		89/103 90/890
+14105	Rodavlas	-38-14-58-16.34-34.18.56-1256.	78	18	g	BD/ac	2001-12-12	Loughborough Bellfoundry		02/56
+14106	Asia	-38-14-58-16.34-34.18.56-34.	78	12	b	BD/ac	1990-08-01	Loughborough Bellfoundry		89/103 90/842
+14107	Aisa	-38-14-58-16.34-34.18.56-34.	78	18	g	BD/ac	1994-05-04	Loughborough Bellfoundry		94/559
+14108	Scalborough	-38-14-58-16.34-34.18.56-3456.	78	12	b	BD/ac	1993-06-22	Countesthorpe		93/699
+14109	Calboroughs	-38-14-58-16.34-34.18.56-3456.	78	18	g	BD/ac	1994-08-30	Countesthorpe		94/999
+14110	Huancayo	-38-14-58-16.34-34.18.56-56.	78	12	b	BD/ac	1993-02-01	Loughborough Bellfoundry		93/251
+14111	Oyacnauh	-38-14-58-16.34-34.18.56-56.	78	18	g	BD/ac	1994-12-07	Loughborough Bellfoundry		95/90 155
+14112	Paisley	-38-14-58-16.34-34.18.56.12-	78	12	b	B/ac	1990-08-20	Countesthorpe		89/103 90/937
+14113	Yelsiap	-38-14-58-16.34-34.18.56.12-	78	18	g	B/ac	1993-03-08	Anstey (Leics)		93/374
+14114	Lucteburga	-38-14-58-16.34-34.18.56.12.34.	78	12	b	BD/ac	1994-03-14	Loughborough Bellfoundry		94/377
+14115	Palermo	-38-14-58-16.34-34.18.56.12.56.	78	12	b	B/ac	1991-01-08	Quorndon		89/103 91/171
+14116	Omrelap	-38-14-58-16.34-34.18.56.12.56.	78	18	g	B/ac	1992-04-29	Loughborough Bellfoundry		92/504
+14117	Sebat	-38-14-58-16.34-34.18.56.14.56.	18	12	a	BD/ac	2003-01-10	Middleton (Lancs)		03/176
+14118	Apiro	-38-14-58-16.34-34.18.56.34-	78	12	b	B/ac	1991-02-05	Loughborough Bellfoundry		89/103 91/242
+14119	Or	-38-14-58-16.34-34.18.56.34-	78	18	g	B/ac	1992-01-06	Quorndon		92/162
+14120	Spitsbergen	-38-14-58-16.34-34.18.56.34.12.	78	12	b	BD/ac	1991-02-19	Loughborough Bellfoundry		89/103 91/282
+14121	Aplinskiy	-38-14-58-16.34-34.18.56.34.56.	78	12	b	B/ac	1991-02-13	South Wigston		89/103 91/282
+14122	Willey	-38-14-58-16.34-34.18.56.34.56.	78	18	g	B/ac	1991-04-10	South Wigston		91/419
+14123	Towpath	-38-14-58-16.34.12.34.18-12-	38	12	a	BDE/c	2005-08-06	Thorverton		05/817
+14124	Faringdon Standard	-38-14-58-16.34.12.34.18.34-14.	78	12	b	BDEK/c	2001-05-19	Faringdon		01/585
+14125	Adnams Broadside	-38-14-58-16.34.12.34.18.34.56.14.	78	12	b	BE/c	2008-11-20	Englefield		08/1306
+14126	Tregear	-38-14-58-1678-78-18-1256-	78	12	b	B/c	1996-12-28	Kenwyn		97/122 183
+14127	Bewnans Meryasyk	-38-14-58-1678-78-18-34-	78	12	b	B/c	1996-12-14	Towednack		97/122 183
+14128	Turnon	-38-14-58-1678-78-18-56-	78	12	b	BD/c	2008-12-14	Ringmer		09/35 785
+14129	Muriel	-38-14-58-18-12-18-34-	78	12	a	B/ac	2008-10-18	Westhoughton		08/1184
+14130	Tebeth	-38-14-58-18-12-38-16-	58	18	m	B/ce	2003-12-12	Middleton (Lancs)		04/82
+14131	Dumna	-38-14-58-18-14-1258-12-	18	12	f	B/ace	1990-01-27	Birstall (Yorks)		90/253
+14132	Nisan	-38-14-58-18-14-18-36-	58	12	c	B/bce	2003-03-14	Middleton (Lancs)		03/491
+14133	Tigra	-38-14-58-18-14-38-12.34.	58	12	b	B/ace	2006-07-24	Moorside		06/863
+14134	Marchesvan	-38-14-58-18-14-38.12.56-	18	18	k	B/aceY	2003-10-10	Middleton (Lancs)		03/1117
+14135	Noble	-38-14-58-18-14-58-36-	38	12	b	BN/ce	1998-01-01	Darling Point, NSW		98/109
+14136	Sivan	-38-14-58-18-34-58-56-	18	12	e	B/ac	2003-05-09	Middleton (Lancs)		03/588
+14137	Tammuz	-38-14-58-18.34-34.58-14-	18	12	f	B/ace	2003-06-13	Middleton (Lancs)		03/685
+14138	Cassi	-38-14-58-36-12-18-12-	18	18	m	BD/ac	1990-09-01	Birstall (Yorks)		90/939
+14139	Trumpington	-38-14-58-36-12-18.34-36.	58	12	c	BD/ce	1999-09-23	Trumpington		99/968
+14140	Iron Horse	-38-14-58-36-1234-18-1236-	58	12	f	BG/ce	2009-04-12	Salisbury, St Thomas		09/462
+14141	Figaro	-38-14-58-36-1234-18-36-	58	12	f	BG/cd	2005-07-30	Milton		05/894 1087
+14142	Longstanton	-38-14-58-36-14-18-12-	78	12	b	BO/ac	1977-02-12	Longstanton		77/248
+14143	Cassandra	-38-14-58-36-14-18-12.34.	78	12	b	BDO/ac	1990-09-05	South Wigston		90/984
+14144	Ulverscroft	-38-14-58-36-14-18-12.56.	78	12	b	BO/ac	1990-09-18	Countesthorpe		90/1008
+14145	Oldebi	-38-14-58-36-14-18-1234-	78	12	b	BDO/c	1993-12-22	Oadby		94/107
+14146	Over	-38-14-58-36-14-18-1256-	78	12	b	BO/c	1977-12-29	Over (Cambs)		78/76
+14147	Uttlesford	-38-14-58-36-14-18-34-	78	12	b	BO/c	1977-10-15	Ashdon		77/1040
+14148	Tilton	-38-14-58-36-14-18-34.12.	78	12	b	BDO/c	1990-09-19	South Wigston		90/1008
+14149	Ecuador	-38-14-58-36-14-18-34.56.	78	12	b	BO/ac	1990-11-05	Loughborough Bellfoundry		90/1170
+14150	Fishponds	-38-14-58-36-14-18-3456-	78	12	b	BO/ac	1992-09-21	Loughborough Bellfoundry		92/1060
+14151	Knotty Ash	-38-14-58-36-14-18-56-	78	12	b	BDO/c	1970-02-28	Southport, Emmanuel		70/214
+14152	Willoughby	-38-14-58-36-14-18-56.12.	78	12	b	BDO/c	1991-03-09	Countesthorpe		91/373
+14153	Hamer	-38-14-58-36-14-18-56.34.	78	12	b	BDO/ac	1991-06-10	Loughborough Bellfoundry		91/648
+14154	Foston	-38-14-58-36-14-18.34-12.	78	12	b	BO/ac	1991-05-13	Loughborough Bellfoundry		91/567
+14155	Sproxcheston	-38-14-58-36-14-18.34-1234.	78	12	b	BDO/c	1994-04-18	Sproxton		94/510
+14156	Valerian	-38-14-58-36-14-18.34-1256.	78	12	b	BO/c	1991-09-09	Loughborough Bellfoundry		91/995
+14157	Hwange	-38-14-58-36-14-18.34-34.	78	12	b	BO/c	1992-08-03	Loughborough Bellfoundry		92/868
+14158	Pennclose	-38-14-58-36-14-18.34-3456.	78	12	b	BO/ac	1994-07-16	Countesthorpe		94/807
+14159	Valparaiso	-38-14-58-36-14-18.34-56.	78	12	b	BDO/c	1991-05-09	South Wigston		91/567
+14160	Quito	-38-14-58-36-14-18.34.12-	78	12	b	BDO/ac	1991-03-26	Loughborough Bellfoundry		91/395
+14161	Guaratingueta	-38-14-58-36-14-18.34.12.34.	78	12	b	BDO/c	1991-03-11	Loughborough Bellfoundry		91/373 664
+14162	Manaos	-38-14-58-36-14-18.34.12.56.	78	12	b	BDO/c	1991-12-17	Loughborough Bellfoundry		92/108
+14163	Pindamonhangaba	-38-14-58-36-14-18.34.56-	78	12	b	BDO/ac	1991-03-28	South Wigston		91/395
+14164	Uckinghall	-38-14-58-36-14-18.34.56.12.	78	12	b	BO/ac	1992-03-30	Loughborough Bellfoundry		92/432
+14165	Thurcaston	-38-14-58-36-14-18.34.56.34.	78	12	b	BO/ac	1991-01-03	Thurcaston		91/171
+14166	Glyncorrwg	-38-14-58-36-14-18.3456-12.	78	12	b	BO/ac	1995-06-24	Anstey (Leics)		95/790
+14167	Munxar	-38-14-58-36-14-18.3456-1234.	78	12	b	BDO/ac	1997-06-02	Loughborough Bellfoundry		97/687
+14168	Pednathise	-38-14-58-36-14-18.3456-1256.	78	12	b	BO/ac	1998-02-25	South Wigston		98/311
+14169	Ansteyheights	-38-14-58-36-14-18.3456-34.	78	12	b	BO/ac	1995-01-09	Anstey (Leics)		95/223 487
+14170	Daleacre	-38-14-58-36-14-18.3456-3456.	78	12	b	BO/ac	1993-10-25	Countesthorpe		93/1143
+14171	Tamia	-38-14-58-36-14-18.3456-56.	78	12	b	BDO/ac	1995-10-30	Loughborough Bellfoundry		95/1227
+14172	Canon's	-38-14-58-36-14-18.36-1236.	78	12	b	BLO/ac	2005-01-23	Drayton (Oxon)		05/131
+14173	Volcanello	-38-14-58-36-14-18.36-36.	78	12	b	BLO/c	1992-07-16	East Ilsley		92/821
+14174	Old Dutch	-38-14-58-36-14-18.36.12.36.	78	12	b	BO/ac	1994-03-13	Aldeburgh		94/344 351 1179
+14175	Ascension	-38-14-58-36-14-18.56-12.	78	12	b	BDO/ac	1992-05-28	South Wigston		92/642
+14176	Tophall	-38-14-58-36-14-18.56-1234.	78	12	b	BDO/c	1994-02-19	Countesthorpe		94/282
+14177	Xat	-38-14-58-36-14-18.56-1256.	78	12	b	BDO/c	1991-08-13	Loughborough Bellfoundry		91/881
+14178	Nictheroy	-38-14-58-36-14-18.56-34.	78	12	b	BDO/c	1992-03-02	Loughborough Bellfoundry		92/330
+14179	Etosha	-38-14-58-36-14-18.56-3456.	78	12	b	BDO/ac	1993-09-02	Sproxton		93/976
+14180	Breamore	-38-14-58-36-14-18.56-56.	78	12	b	BDO/c	1971-03-20	East Tytherley		71/337
+14181	Fortaleza	-38-14-58-36-14-18.56.12-	78	12	b	BO/ac	1992-06-15	Loughborough Bellfoundry		92/725
+14182	Etheldreda	-38-14-58-36-14-18.56.12.34.	78	12	b	BDO/c	1997-06-23	Gaddesby		97/755
+14183	Isle of Ely	-38-14-58-36-14-18.56.12.56.	78	12	b	BO/c	1978-05-13	Ely		78/500
+14184	Estley	-38-14-58-36-14-18.56.34-	78	12	b	BO/ac	1993-01-26	Broughton Astley		93/226
+14185	Tinajo	-38-14-58-36-14-18.56.34.12.	78	12	b	BDO/ac	1996-06-03	Loughborough Bellfoundry		96/683
+14186	Clifford	-38-14-58-36-14-18.56.34.56.	78	12	b	BO/ac	1983-08-27	Clifford		83/796
+14187	Steveleigh	-38-14-58-36-34-18-12-	58	12	d	B/ac	1974-08-04	Dewsbury		74/716
+14188	Shouldham	-38-14-58-36-34-18-16-	18	12	a	B/ace	1953-08-12	Hethersett		53/559 602
+14189	Ashbourne	-38-14-58-36-34-18-34-	58	12	d	B/ac	1976-07-17	Ashbourne	2011-07-18	76/719 11/799
+14190	Ethanim	-38-14-58-36-34-18-34-	58	18	j	B/ac	2003-09-12	Middleton (Lancs)		03/1020
+14191	North Tawton Five-O	-38-14-58-36-34-18-34.16.	78	12	b	BE/ac	2006-10-07	North Tawton		06/1029
+14192	Adar	-38-14-58-36-34-18.34-16.	78	12	b	B/ac	2003-02-14	Middleton (Lancs)		03/273
+14193	Ab	-38-14-58-36-34-18.34-16.	78	18	g	B/ac	2003-07-11	Horwich		03/780
+14194	Zif	-38-14-58-36-34-18.34-34.	58	12	d	B/ac	2003-04-11	Middleton (Lancs)		03/492
+14195	Double	-38-14-78-18-12-58-16-	78	12	b	B	2003-06-18	York, St Laurence		03/639
+14196	Pennsylvania	-38-14.56-56.18-12-1238-14-	78	12	b	B/ac	2003-08-30	Philadelphia, PA, St Mark		03/902
+14197	Ramblers	-38-14.56.12-16-34-18-16-	58	12	b	BD/a	1980-02-09	Edenham		80/230
+14198	Indian Queens	-38-14.56.12-18-12-58-16-	78	12	a	BD	2005-06-07	Clifton (Notts), St Mary		05/599
+14199	Jedburgh	-38-14.56.12-18-12-58.16-16.	78	12	a	BD	2006-11-07	West Bridgford		07/88
+14200	Magnum	-38-14.56.12-18-78.34.58-16-	18	18	h	BD	2009-01-10	Tetbury		09/129
+14201	St Asaph	-38-14.56.12-18-78.34.58-16-	78	12	d	BD	2002-03-18	Bushey		02/342
+14202	Duddleswell	-38-14.56.12.56.18-12-1458-16-	78	12	b	BG	2003-01-01	Fairwarp		03/83
+14203	Chapelfields	-38-14.56.12.56.18-12-58.14-16.	78	12	b	B/c	2005-09-07	York, St Laurence		05/942
+14204	Finlay	-38-14.56.12.56.18-14-18-12-	78	12	b	B/d	2006-05-08	Cholsey		06/526
+14205	The Good Shepherd	-38-14.56.12.56.18.34-14.58.14-14.	58	12	d	B/c	2004-12-02	Augusta, GA		05/160
+14206	Thetford	-38-14.58-12.36-12-18.36.14-	18	18	m	BDK/c	2005-10-03	Wandsworth, Holy Trinity		05/1015
+14207	Metaris	-38-14.58-12.38-14-18-34-	38	18	m	BD/acd	1993-10-30	Belper		93/1170
+14208	Premiership Rams	-38-14.58.12-18-12-1458-14-	58	12	f	BD/c	2007-08-09	Leicester, St Mary de Castro		07/882
+14209	Woolley	-38-14.58.12-18-12-58.14-14.	58	12	f	BD/c	1992-03-30	Bushey		92/455
+14210	Spalding	-38-14.58.12-18-12-58.16-12.	78	12	d	BD	1984-06-02	Spalding, St Mary		84/624
+14211	Hill Ridware	-38-14.58.12-18-12-58.16-56.	78	12	d	BD	2003-02-18	Mavesyn Ridware		03/346
+14212	Maestro	-38-14.58.12-18-12-58.36.12-	18	12	e	BDK	2011-04-08	Bristol Cathedral		11/631
+14213	Agrippa	-38-14.58.12-18-14-18-12-	18	12	b	BDK/a	1983-10-13	West Bridgford		83/973
+14214	Black Cats Return	-38-14.58.12-18-34-18-12-	78	12	d	BD/a	2007-05-24	Leicester, St Mary de Castro		07/618
+14215	Barbaresco	-38-14.58.12-18-34-18-12.34.	78	12	d	BD/a	2008-09-17	Heywood		08/1061
+14216	Hainton	-38-14.58.12-18-34-18-16-	58	12	b	BD/a	2008-04-01	West Bridgford		08/416
+14217	Hollinside	-38-14.58.12-18-34-18-34-	78	12	d	BD/a	2008-07-03	Leicester, St Mary de Castro		08/795
+14218	Blithbury	-38-14.58.12-18-34-18-56-	78	12	d	BD/a	2003-01-21	Mavesyn Ridware		03/128
+14219	Irish	-38-14.58.12-18-34.12.38-14-	78	12	d	BD/ac	2005-06-16	Holywood		05/744
+14220	Upper Booth	-38-14.58.12-18.34.12-38.14.56-	18	12	e	BD	2007-01-03	Dore		07/115
+14221	Cotton	-38-1456-12-16-34-18-12-	78	12	d	BD/a	2004-08-24	Mavesyn Ridware		04/926
+14222	Snodland	-38-1456-12-16-34-18-16-	58	12	b	BD/a	1973-08-24	Malpas		73/864
+14223	Rams Return	-38-1456-12-16-34-18-34-	78	12	d	BD/a	2007-07-12	Leicester, St Mary de Castro		07/786
+14224	Marley Hill	-38-1456-12-16-34-18-56-	78	12	d	BD/a	2003-11-22	Lapley		03/1188
+14225	The Judd	-38-1456-12-18-12-58-16-	18	12	b	BD	2005-03-08	Maidstone, St Michael		05/307
+14226	Queen Elizabeth II	-38-1456-12-18-12-58.34.56.34.	58	12	f	BDE	1977-08-30	Pendlebury		77/871
+14227	Naseby	-38-1456-1256-16-34-18-14-	58	12	f	B/c	2004-06-16	Haselbech		04/638
+14228	Hearts Delight	-38-1456-1256-18-12-1238-16-	78	12	b	BG	2006-11-14	Tunstall		07/35
+14229	Worth Abbey	-38-1456-1256-18-12-1458-12-	58	12	d	B/a	2000-03-14	Turners Hill		00/378
+14230	Vicki's	-38-1456-1256-18-12-1458-16-	78	12	b	BG	2001-02-17	Terling		01/272
+14231	Montana	-38-1456-1256-18-12-1458-34-	58	12	d	B	1998-04-12	Boston, MA, Christ Church		98/438
+14232	Priestfield	-38-1456-1256-18-12-38-12-	38	12	f	B	2005-06-04	Chatham		05/598
+14233	Leap Day	-38-1456-1256-18-12-58-14-	58	12	d	B/c	2004-02-29	Milton		04/274
+14234	Dancing Dicks	-38-1456-1256-18-12-58-36-	58	12	f	B/d	2007-05-12	Terling		07/565
+14235	Zeitgeist	-38-1456-1256-18-12-58.14-16.	78	12	b	B/c	2007-04-06	Darfield		07/422
+14236	Magi	-38-1456-1256-18-12-58.14-34.	58	12	d	B/ac	2011-01-06	Hughenden		11/85
+14237	Japanese	-38-1456-1256-18-14-18-12-	18	12	a	B/d	1985-01-05	Scunthorpe		85/133
+14238	Zebrina	-38-1456-1256-18-14-18-12-	78	12	b	B/d	1984-10-30	Billingborough		84/1023
+14239	Guinness	-38-1456-1256-18-14-18-12.34.	78	12	b	BD/d	2009-10-19	Claybrooke		09/1117
+14240	Whichford	-38-1456-1256-18-14-18-12.56.	78	12	b	B/ad	2011-04-30	Whichford		11/579
+14241	Harbury Festival	-38-1456-1256-18-14-18-1234-	78	12	b	BD/d	2000-09-02	Harbury		00/987
+14242	Wellesbourne	-38-1456-1256-18-14-18-1256-	78	12	b	B/ad	2002-01-21	Wellesbourne		02/136
+14243	Beerisa	-38-1456-1256-18-14-18-34-	78	12	b	B/ad	2001-09-01	Harbury		01/1043
+14244	Freeman's	-38-1456-1256-18-14-18-34.56.	78	12	b	B/ad	2003-07-12	Warwick, St Nicholas		03/732
+14245	Gordon Road	-38-1456-1256-18-14-18-3456-	78	12	b	B/d	2005-09-12	Maidstone, St Michael		06/233
+14246	Doris's	-38-1456-1256-18-14-18-56-	78	12	b	BD/d	2002-04-06	Warwick, St Nicholas		02/411
+14247	Sequor Ut Ducam	-38-1456-1256-18-14-18-56.12.	78	12	b	BD/ad	2003-12-20	Long Buckby		04/34
+14248	Zatisall	-38-1456-1256-18-14-18.34-34.	78	12	b	B/ad	2003-01-27	Wellesbourne		03/175
+14249	Quinn's	-38-1456-1256-18-14-18.34-56.	78	12	b	BD/ad	2005-05-02	Wellesbourne		05/502
+14250	Septuagenarian	-38-1456-1256-18-14-18.34.56.34.	78	12	b	B/d	2009-11-03	Hanbury (Worcs)		09/1168
+14251	70th Birthday	-38-1456-1256-18-14-18.3456-3456.	78	12	b	B/d	2009-10-06	Hanbury (Worcs)		09/1071
+14252	Olive Green	-38-1456-1256-18-14-18.56.12-	78	12	b	B/ad	2010-06-07	Mavesyn Ridware		10/174 665
+14253	Pipe Ridware	-38-1456-1256-18-14-58-56-	38	12	c	B/d	2003-06-17	Mavesyn Ridware		03/732
+14254	Odyssey	-38-1456-1256-18-34-1458-12-	58	12	d	B	2001-08-31	Desborough		01/952
+14255	Malham	-38-1456-1256-18-34-1458-56-	18	12	c	B	2006-07-19	Dore		06/765
+14256	Exeter	-38-1456-1256-18-34-18-16-	58	12	a	B/b	1999-05-02	Harpenden		99/578
+14257	Gary	-38-1456-1256-18-34-38-16-	78	12	b	B/Y	2003-01-25	Westhoughton		03/152
+14258	Advent	-38-1456-1256-18-34-38.16-16.	78	12	b	B/Y	2004-11-29	Milton		04/1219
+14259	Harpenden	-38-1456-1256-18-34-58-14-	58	12	d	B/c	1995-04-29	Bushey		95/550
+14260	Carmignano	-38-1456-1256-18-34-58.14-12.	58	12	d	B/ac	2007-08-22	Heywood		07/932
+14261	Gales	-38-1456-1256-18.34-14.58.14-14.	58	12	d	B/c	1997-09-27	Petersfield		97/1125
+14262	Byfield	-38-1456-1256-36-34-18-12-	58	12	f	BD	2007-04-21	Byfield		07/494
+14263	Creag MacRanaich	-38-1456-1256-36-34-18-34-	58	12	f	BD/a	2009-03-26	Wolborough		09/381
+14264	Old Romney	-38-1456-56-16-12-18-12-	38	12	b	B/a	1997-08-23	Speldhurst		97/951
+14265	Haselbech	-38-1456-56-16-34-18-12-	58	12	f	B/a	1998-05-15	Haselbech		98/579
+14266	Misterworth	-38-1456-56-16-34-18-12.36.	18	12	e	BK/a	2003-04-03	Burnley		03/395
+14267	Birthday	-38-1456-56-16-34-18-34-	58	12	f	B/a	1989-09-16	Edenbridge		89/907
+14268	Oxfordshire	-38-1456-56-16-34-18.34-12.	58	12	f	B/a	2008-12-26	Milton		09/59
+14269	Highworth	-38-1456-56-16-34-18.34-34.	58	12	f	B/a	2000-09-09	Highworth		00/1035
+14270	Lunar	-38-1456-56-18-12-1238-14-	78	12	b	B/ac	1994-07-22	Bristol Cathedral		94/854
+14271	Ura	-38-1456-56-18-12-1238-1456-	78	12	b	BD/a	2001-10-22	Wellesbourne		01/1115
+14272	China	-38-1456-56-18-12-1458-14-	58	12	d	B/ac	1998-11-01	Burnley		98/1158
+14273	Bowden	-38-1456-56-18-12-18-12-	78	12	b	B/a	2000-04-13	Barrow Gurney		00/477
+14274	Yate	-38-1456-56-18-12-18-1256-	78	12	b	B/a	2006-08-05	Bristol Cathedral		06/813
+14275	Creones	-38-1456-56-18-12-18-16-	58	18	m	B/a	1994-04-30	Wath-on-Dearne		94/589
+14276	Scudamore	-38-1456-56-18-12-18-34-	78	12	b	B/a	1992-10-07	Barrow Gurney		92/1084
+14277	Boudewijn	-38-1456-56-18-12-18-3456-	78	12	b	B/a	2010-09-24	Dordrecht		10/1037
+14278	Windy Gyle	-38-1456-56-18-12-18-56-	78	12	b	BD/a	2008-09-24	Dore		08/1086
+14279	Irchester	-38-1456-56-18-12-18.34-12.	78	12	b	B/a	2003-11-22	Irchester		03/1189
+14280	Vespasian	-38-1456-56-18-12-18.34-34.	18	12	a	B/a	1984-02-03	Edenham		84/236
+14281	Earls Barton	-38-1456-56-18-12-18.34-34.	78	12	b	B/a	2003-10-31	Earls Barton		03/1117
+14282	Yelford	-38-1456-56-18-12-18.34.56.12.	78	12	b	B/a	2009-04-05	Milton		09/406
+14283	Fixture Secretary	-38-1456-56-18-12-18.34.56.34.	78	12	b	B/a	2009-01-03	Long Buckby		09/83
+14284	Rushden	-38-1456-56-18-12-18.3456-3456.	78	12	b	B/a	2004-03-27	Rushden (Northants)		04/375
+14285	Keynsham	-38-1456-56-18-12-38.12-14.	78	12	b	B/ac	2011-07-14	Winford		11/797
+14286	Norton	-38-1456-56-18-12-58-56-	18	12	c	B/a	2009-12-12	Norton (Yorks)		10/45
+14287	Pendleton	-38-1456-56-18-12-58.14-14.	58	12	d	B/ac	1998-12-29	Pendleton		99/141
+14288	Xiphodon	-38-1456-56-18-34-1238-16-	58	12	a	B/ab	1984-06-22	Edenham		84/624
+14289	Horwich	-38-1456-56-18-34-1458-14-	58	12	d	B/ac	2000-08-05	Westhoughton		00/889
+14290	Church Stretton	-38-1456-56-18-34-1458-36-	58	12	f	B/ad	2006-04-20	Church Stretton		06/475
+14291	Frensham	-38-1456-56-18-34-18-16.34.	18	12	f	B/ade	1997-09-07	Frensham		97/1124
+14292	Magantia	-38-1456-56-18-34-3458-16-	18	12	a	B/ae	1994-07-30	Birstall (Yorks)		94/855
+14293	Aberdare	-38-1456-56-18-34-58.14-14.	58	12	d	B/ac	2011-08-10	Beaconsfield		11/894
+14294	Ulceby	-38-1456-56-18-34.12.38-16-	58	12	a	BD/ab	1980-03-01	Sutterton		80/297
+14295	Tring	-38-1456-56-18.34-14.58-14-	58	12	d	B/ac	2011-06-13	Bushey		11/678
+14296	Whimpton	-38-1456-56-18.34-14.58.36-16.	58	18	m	B/abcd	1994-06-11	Tuxford		94/738
+14297	Dawson Falls	-38-1456-56-18.34.12.34.18-34-	78	12	b	BD/a	2003-05-06	Loughborough Bellfoundry		03/491
+14298	LeMarechal	-38-1456-58-18-14-38-34-	18	12	f	BDK/e	1987-05-19	Bishopstoke		87/565
+14299	Dore	-38-1458-1256-18-3478-1458-16-	78	12	b	BK	2009-12-23	Dore		10/149
+14300	Spitfire	-38-1458-56-16-12-18-12-	78	12	b	B	1990-09-15	Wheathampstead		90/1103
+14301	Salwarpe	-38-1458-56-16-12-18-12.34.	78	12	b	BD	1992-04-28	Hanbury (Worcs)		92/601
+14302	All Souls	-38-1458-56-16-12-18-12.36.	18	12	c	B/a	2010-11-03	Sutton Courtenay		10/1182
+14303	Tornado	-38-1458-56-16-12-18-12.56.	78	12	b	B/a	1999-04-26	Loughborough Bellfoundry		99/507
+14304	Christingle	-38-1458-56-16-12-18-1234-	78	12	b	BD	1995-12-24	South Wigston		96/94
+14305	Hanbury	-38-1458-56-16-12-18-1256-	78	12	b	B/a	1991-03-19	Hanbury (Worcs)		91/374
+14306	Harford	-38-1458-56-16-12-18-16-	58	18	m	B			1991-05-19	91/591
+14307	Jellicoe	-38-1458-56-16-12-18-34-	78	12	b	B/a	1992-01-13	Loughborough Bellfoundry		92/162
+14308	Pelistry	-38-1458-56-16-12-18-34.12.	78	12	b	BD/a	1999-03-29	Loughborough Bellfoundry		99/432
+14309	Vittorioso	-38-1458-56-16-12-18-34.56.	78	12	b	B/a	1997-08-18	Loughborough Bellfoundry		97/951
+14310	Zalicat	-38-1458-56-16-12-18-3456-	78	12	b	B	1994-11-09	Loughborough Bellfoundry		94/1242
+14311	Iguassu	-38-1458-56-16-12-18-56-	78	12	b	BD	1992-01-20	Loughborough Bellfoundry		92/186
+14312	Gladiator	-38-1458-56-16-12-18-56.12.	78	12	b	BD/a	1999-12-15	Loughborough Bellfoundry		00/85 679
+14313	Aspley Park	-38-1458-56-16-12-18-56.34.	78	12	b	BD	1996-03-29	Aspley (Notts)		96/464 623
+14314	Ememem	-38-1458-56-16-12-18.34-12.	78	12	b	B/a	2001-03-03	South Wigston		01/321
+14315	Brothers	-38-1458-56-16-12-18.34-1234.	78	12	b	BD/a	1998-01-19	Loughborough Bellfoundry		98/164
+14316	Lancaster	-38-1458-56-16-12-18.34-1256.	78	12	b	B/a	2004-08-25	Loughborough Bellfoundry		04/926
+14317	Cobden	-38-1458-56-16-12-18.34-34.	78	12	b	B/a	1992-05-18	Loughborough Bellfoundry		92/600
+14318	Typhoon	-38-1458-56-16-12-18.34-3456.	78	12	b	B/a	1998-10-14	Loughborough Bellfoundry		98/1088
+14319	Camel	-38-1458-56-16-12-18.34-56.	78	12	b	BD/a	2002-05-15	Loughborough Bellfoundry		02/573
+14320	Hunter	-38-1458-56-16-12-18.34.12-	78	12	b	BD	2002-06-24	Loughborough Bellfoundry		02/710
+14321	Tempest	-38-1458-56-16-12-18.34.12.34.	78	12	b	BD	2001-01-01	Countesthorpe		01/114 406
+14322	Zero	-38-1458-56-16-12-18.34.12.56.	78	12	b	BD/a	2004-12-15	Loughborough Bellfoundry		05/57
+14323	Rosevear	-38-1458-56-16-12-18.34.56-	78	12	b	BD	1997-10-20	Loughborough Bellfoundry		97/1170
+14324	Zebbug	-38-1458-56-16-12-18.34.56.12.	78	12	b	B/a	1997-02-17	South Wigston		97/291 415
+14325	Elmesthorpe	-38-1458-56-16-12-18.34.56.34.	78	12	b	B	1992-08-11	Earl Shilton		92/893
+14326	Redbridge Millennium	-38-1458-56-16-12-18.3456-12.	78	12	b	B	2000-01-01	Wanstead		00/115
+14327	Zurrieg	-38-1458-56-16-12-18.3456-1234.	78	12	b	BD	1996-07-15	Loughborough Bellfoundry		96/856
+14328	Muncoy	-38-1458-56-16-12-18.3456-34.	78	12	b	B/a	1998-04-20	Loughborough Bellfoundry		98/507
+14329	Allhallows	-38-1458-56-16-12-18.3456-3456.	78	12	b	B	1993-11-01	Thurcaston		93/1168
+14330	Carnithen	-38-1458-56-16-12-18.3456-56.	78	12	b	BD	1998-03-16	Loughborough Bellfoundry		98/553
+14331	Cantigny	-38-1458-56-16-12-18.36.12-	18	12	c	B/a	2009-11-11	Augusta, GA		10/92
+14332	Meteor	-38-1458-56-16-12-18.56-12.	78	12	b	BD	2001-07-25	Loughborough Bellfoundry		01/829
+14333	Defiant	-38-1458-56-16-12-18.56-1234.	78	12	b	BD	2002-07-29	Loughborough Bellfoundry		02/845
+14334	Guadalajara	-38-1458-56-16-12-18.56-1256.	78	12	b	BD/a	1993-01-18	Loughborough Bellfoundry		93/175
+14335	Hurricane	-38-1458-56-16-12-18.56-34.	78	12	b	BD/a	1998-09-07	Loughborough Bellfoundry		98/991
+14336	Qawra	-38-1458-56-16-12-18.56-3456.	78	12	b	BD	1997-04-21	Loughborough Bellfoundry		97/538
+14337	Zephyr	-38-1458-56-16-12-18.56-56.	78	12	b	BD	1992-02-03	Loughborough Bellfoundry		92/261
+14338	Lysander	-38-1458-56-16-12-18.56.12-	78	12	b	B/a	2002-10-28	Loughborough Bellfoundry		02/1161
+14339	Cuntastorp	-38-1458-56-16-12-18.56.12.56.	78	12	b	B/a	1995-08-07	Countesthorpe		95/959
+14340	Kilbesham	-38-1458-56-16-12-18.56.34-	78	12	b	B/a	1996-09-09	Countesthorpe		96/1034
+14341	Birstall	-38-1458-56-16-12-18.56.34.12.	78	12	b	BD	1993-02-08	Birstall (Leics)		93/275
+14342	Mennecy	-38-1458-56-16-12-18.56.34.56.	78	12	b	B	1993-08-17	Countesthorpe		93/927
+14343	Botcheston	-38-1458-56-16.34.12.34.18-12-	78	12	b	BD	1992-02-24	Loughborough Bellfoundry		92/307
+14344	Floriana	-38-1458-56-16.34.12.34.18-12.34.	78	12	b	BD	2002-07-08	Loughborough Bellfoundry		02/793
+14345	Lammas	-38-1458-56-16.34.12.34.18-12.56.	78	12	b	BD/a	1999-05-22	Countesthorpe		99/603
+14346	Crebawethan	-38-1458-56-16.34.12.34.18-1234-	78	12	b	BD	1997-09-22	Loughborough Bellfoundry		97/1050
+14347	Ragendale	-38-1458-56-16.34.12.34.18-1256-	78	12	b	BD/a	1994-05-12	South Wigston		94/586
+14348	Linden	-38-1458-56-16.34.12.34.18-34-	78	12	b	BD/a	1992-12-01	Countesthorpe		93/52 436
+14349	Harrier	-38-1458-56-16.34.12.34.18-34.56.	78	12	b	BD/a	2001-06-27	Loughborough Bellfoundry		01/732
+14350	Tias	-38-1458-56-16.34.12.34.18-3456-	78	12	b	BD	1995-09-06	Loughborough Bellfoundry		95/1058
+14351	Stoneystanton	-38-1458-56-16.34.12.34.18-56-	78	12	b	BD	1993-01-01	Stoney Stanton		93/152
+14352	Nutter	-38-1458-56-16.34.12.34.18-56.34.	78	12	b	BD	1996-05-18	South Wigston		96/636
+14353	Gilstone	-38-1458-56-16.34.12.34.18.34-1234.	78	12	b	BD/a	1998-02-09	Loughborough Bellfoundry		98/235
+14354	Yosemite	-38-1458-56-16.34.12.34.18.34-34.	78	12	b	BD/a	1993-03-30	Loughborough Bellfoundry		93/423
+14355	Tarxien	-38-1458-56-16.34.12.34.18.34-3456.	78	12	b	BD/a	2002-09-23	Loughborough Bellfoundry		02/1041
+14356	Marfa	-38-1458-56-16.34.12.34.18.34.12-	78	12	b	BD	2002-08-28	Loughborough Bellfoundry		02/969
+14357	Quadraginta	-38-1458-56-16.34.12.34.18.34.12.34.	78	12	b	BD	1993-04-19	Thurcaston		93/472
+14358	Kercem	-38-1458-56-16.34.12.34.18.34.56-	78	12	b	BD	1997-06-30	Loughborough Bellfoundry		97/778
+14359	Canon Clayton	-38-1458-56-16.34.12.34.18.34.56.34.	78	12	b	BD	1992-08-14	Sproxton		92/893 93/436
+14360	Peninnis	-38-1458-56-16.34.12.34.18.3456-34.	78	12	b	BD/a	1998-04-27	Countesthorpe		98/531
+14361	Netherseale	-38-1458-56-16.34.12.34.18.3456-3456.	78	12	b	BD	1993-09-06	Netherseale		93/1049
+14362	Marsaxlokk	-38-1458-56-16.34.12.34.18.3456-56.	78	12	b	BD	1993-12-08	South Wigston		94/34
+14363	Dunecht	-38-1458-56-16.34.12.34.18.36-36.	78	12	b	BDE	1996-12-07	Aberdeen, St Machar's Cathedral		97/221
+14364	Wichingestone	-38-1458-56-16.34.12.34.18.56-12.	78	12	b	BD	1996-02-21	South Wigston		96/300
+14365	Centquatre	-38-1458-56-16.34.12.34.18.56-1234.	78	12	b	BD	2004-11-17	Loughborough Bellfoundry		04/1189
+14366	Hamrun	-38-1458-56-16.34.12.34.18.56-3456.	78	12	b	BD	2002-11-18	Loughborough Bellfoundry		02/1256
+14367	Titicaca	-38-1458-56-16.34.12.34.18.56-56.	78	12	b	BD	1992-02-01	South Wigston		92/261
+14368	Nortone	-38-1458-56-16.34.12.34.18.56.12-	78	12	b	BD/a	1995-11-04	King's Norton (Leics)		95/1252
+14369	Fury	-38-1458-56-16.34.12.34.18.56.12.56.	78	12	b	BD/a	2000-09-11	Countesthorpe		00/1012
+14370	Umtata	-38-1458-56-16.34.12.34.18.56.34-	78	12	b	BD/a	1996-11-11	Loughborough Bellfoundry		96/1245
+14371	Tiagua	-38-1458-56-16.34.12.34.18.56.34.12.	78	12	b	BD	1996-06-10	Loughborough Bellfoundry		96/706
+14372	Xiri	-38-1458-56-16.34.12.34.18.56.34.56.	78	12	b	BD	1994-09-19	Loughborough Bellfoundry		94/1070
+14373	Traditional Cumberland Sausage	-38-1458-56-18-12-123458-16-	78	12	f	B	2009-07-05	Wigton		09/753
+14374	Reverse Bowes-Lyon	-38-1458-56-18-34-58-16-	78	12	f	B/a	2001-08-07	Kingsbury (Warks)		01/1068
+14375	Bisley	-38-1458-56-36-14-18-14-	78	12	b	BK/d	1992-07-04	Bisley		92/747
+14376	Barnet	-38-1458-56-36-14-18-1456-	78	12	b	B/d	1992-03-28	Barnet		92/478
+14377	Nevada	-38-1478-78-18-12-18-12-	78	12	b	B	1998-07-04	Boston, MA, Christ Church		98/699 763
+14378	The Rainham End	-38-16-1256-18-34-58-16-	78	12	b	BGP	2005-01-22	Rainham		05/131
+14379	Old Woking	-38-16-56-18-12-38-12-	18	12	a	BD	2002-11-02	Woking		02/1232
+14380	Clifton	-38-16-56-18-34-1458-16-	58	12	f	BD/X	2009-01-04	Clifton (Beds)		09/81
+14381	Votadini	-38-18-12-1236-14-18-1236-	18	12	f	BDO/f	1994-01-03	Ilkley		94/160
+14382	Danbury	-38-18-12-1238-12-1238-12-	78	18	k	BD	1995-11-28	Danbury		96/39
+14383	Campsall	-38-18-12-1238-14-3458.16-16.	58	12	f	BDO/b	1993-03-20	Campsall		93/426
+14384	Vedra	-38-18-12-16-12-1458.36-16.	38	12	f	BD/ae	1992-09-12	Birstall (Yorks)		92/1015
+14385	Abissum	-38-18-12-16-12-1458.36-36.	18	12	f	BD/ae	1989-01-28	Birstall (Yorks)		89/189
+14386	Broxbourne	-38-18-12-16-12-18-16-	78	12	b	BD/a	2010-10-30	Broxbourne		10/1158
+14387	Tamarus	-38-18-12-16-12-38-14-	38	12	f	BD/ab	1988-11-26	Birstall (Yorks)		89/13
+14388	Westmill	-38-18-12-16-14-38-14-	78	12	b	BDO/c	1970-02-14	Aspenden		70/174
+14389	Cosgreave	-38-18-12-16-14-58-34-	38	18	m	BDO	2005-07-02	Barking (Essex)		05/695
+14390	Celovion	-38-18-12-36-14-1238-12-	18	12	f	BDN/a	1994-10-29	Swillington		94/1216
+14391	Calunio	-38-18-12-36.14-14.58.16-16.	38	12	f	BDN/e	1992-08-22	Rothwell (Yorks)		92/919 976 1000
+14392	Ogleforth	-38-18-12-38-14-58.14-14.	58	14	13758462		2007-02-07	York, St Laurence		07/241
+14393	Bowdon	-38-18-12-38-34-58-36-	78	12	e	BD/c	1980-10-18	Bowdon		80/1007 81/363
+14394	Thousand	-38-18-12.58.16-12-58-1456-	18	12	e	BDR/a	1997-03-12	Heywood		97/427
+14395	Vienna	-38-18-12.58.16-12-58.36-14.	58	12	e	BDFGR/a	1997-01-31	Burnley		97/243
+14396	Sjambok	-38-18-12.58.16-34-58.14-14.	78	18	j	BDR/c	Spliced			09/179
+14397	Stybarrow Dodd	-38-18-12.58.36.14-12.58-14-	78	12	d	BDR/cd	1994-01-20	Highclere		94/208 395
+14398	Town End	-38-18-1256-16-12-58-16-	58	12	f	BG/aX	2006-04-25	Maidstone, St Michael		06/449
+14399	Longus	-38-18-56-1236-14-58-36-	58	12	f	B/ad	1992-10-10	Campsall		92/1134
+14400	Deacons	-38-18-56-16-12-18-14-	78	12	b	B/ac	1993-07-04	Aldenham		93/768
+14401	Moorgate	-38-18-56-16-12-58-56-	18	12	c	B/a	1969-11-22	Barnes		69/1011
+14402	Uxela	-38-18-56-16-14-18-12-	38	12	f	B/ad	1985-10-19	Belper		85/1020
+14403	Massachusetts	-38-18-56-16-34-58-14-	58	12	d	B/ac			1990-09-19	90/1009
+14404	Penta	-38-18-56-18-14-1458-12.36.	78	12	f	B/ad	1993-05-22	Birstall (Yorks)		93/653
+14405	Devona	-38-18-56-18-14-1458-1236-	78	12	f	B/ad	1994-12-03	Rothwell (Yorks)		95/76
+14406	Basford	-38-18-56-36-14-38-14-	78	12	b	BK/ac	1964-07-18	Basford		64/535
+14407	The Inimitable Gordon Halls	-38-18-56-36-14-38-14-	78	18	g	BK/ac	2002-05-12	Derby, St Peter		02/945
+14408	Netherton	-38-18-56-36-14-38-14.56.	78	12	b	BDK/ac	1994-08-09	Netherton		94/978
+14409	Muttaburrasaurus Langdoni	-38-18-56-36-34-58-16-	78	18	g	BD/aY	2009-10-04	Turramurra, NSW		09/1069
+14410	Carvetii	-38-18-56-36.14-12.58.14.36-	58	12	f	BK/adZ	1994-03-12	Warsop		94/352
+14411	Wharfe	-38-18.56-12.36-14-1238-12-	38	12	f	BD/ad	1996-03-02	Ilkley		96/327
+14412	Gayle	-38-18.56-12.36-14-58-36-	58	12	f	BD/ad	1996-01-20	Creswell		96/178
+14413	Clent	-38-18.56-12.36.14-14.58.14-14.	58	14	17682543		1985-03-28	Highclere		85/415 98/1075
+14414	Midhopestones	-38-18.56-12.38-14-3458-12.36.	78	12	f	BD/ad	1997-01-25	Bolsterstone		97/245
+14415	Pilais	-38-18.56-56.1238-12-18-36-	18	12	f	BD/ae	1992-12-05	Birstall (Yorks)		93/77
+14416	Puddingstone	-38.56.14.56-58.16-14-18-34-	58	12	a	BE/acd	1984-06-23	Aldenham		84/624
+14417	Kelstedge	-38.56.18-56-16-34-18-12-	78	12	a	BE/a	1994-10-29	Burnley		94/1245
+14418	Uprington	-56-14-12-18-14-1258-34-	18	18	g	B/ac	1995-06-17	Bushey		95/790 971
+14419	Yetholm	-56-14-1256-18-14-1458-14-	58	18	l	E/ac	2005-06-08	Dore		05/622
+14420	Sloman Cross	-56-14-1256-18-14-18.36-14.	38	18	k	E/abcd	2007-05-24	Bermondsey		07/717
+14421	Bodiam Castle	-56-14-1256-18-14-38-12-	18	18	g	E/ac	1999-06-21	Turners Hill		99/679
+14422	Viginti	-56-14-1256-18-14-58-12-	58	18	l	E/ac	2006-12-08	Barrow Gurney		07/9
+14423	Finchale	-56-14-1256-18-14-58-16-	78	12	d	EG/ac	2010-10-20	Newcastle-upon-Tyne, St John Bapt.		10/1133	
+14424	Zummerzet	-56-14-1256-18-14-58-16-	78	18	j	EG/ac	2007-12-22	Barrow Gurney		08/61
+14425	Lugana	-56-14-1256-18-14-58.14-14.	58	18	l	E/ac	2003-01-19	Burnley		03/128
+14426	Shamrock	-56-14-1256-18-34-18-34-	38	18	m	BE/a	2006-03-16	Hungerford		06/425
+14427	Once Brewed	-56-14-56-1238-12-18-16-	58	18	g	B/a	2008-09-07	Handsworth (Yorks)		08/1014
+14428	Quince	-56-14-56-1238-12-18-34-	78	18	j	B/a	2007-05-09	Milton		07/590
+14429	Priddy	-56-14-56-18-12-18-34-	78	18	18756243		2004-02-12	Barrow Gurney		04/225
+14430	Luigi	-56-14-56-18-12-38-36-	58	18	m	DN/a	1987-03-05	Newton St Cyres		87/287
+14431	Prince Andrew	-56-14-56-18-12-58-16-	78	12	d	D/aY	1986-07-22	Heywood		86/785
+14432	Whitchurch	-56-14-56-18-12-58-16-	78	18	j	D/aY	1990-02-23	Bristol Cathedral		90/299
+14433	Theo	-56-14-56-18-14-1258-12-	58	18	l	K/a	1988-12-11	Upham		89/59
+14434	Fulking Castle	-56-14-56-18-14-1458-1236-	18	18	h	KO/a	2001-05-21	Turners Hill		01/634
+14435	Sussex	-56-14-56-18-14-1458-14-	58	18	l	K/a	1998-07-11	Arundel		98/776
+14436	Admiral Benbow	-56-14-56-18-14-3458-12-	58	18	l	K/a	2005-07-09	Milton		05/719
+14437	Bushy Leaze	-56-14-56-18-14-58-12-	58	12	f	K/a	1996-03-02	Alton (Hants), St Lawrence		96/326
+14438	Darracott	-56-14-56-18-14-58-12-	58	18	l	K/a	1985-10-01	Bishopstoke		85/916
+14439	Chichester Castle	-56-14-56-18-14-58-14.36.	58	18	k	K/aZ	2004-05-19	Lower Beeding		04/566
+14440	Downton	-56-14-56-18-14-58-34-	58	12	f	BK/a	1970-12-12	Downton		71/55
+14441	Ramsden	-56-14-56-18-14-58-34-	58	18	l	BK/a	1999-11-27	Skipton		00/8
+14442	Nottinghamshire	-56-14-56-18-14-58.14-14.	58	18	l	K/a	1983-12-29	West Bridgford		84/78
+14443	Knepp Castle	-56-14-56-18-14-58.14.36.14.	78	18	j	GK/a	1999-11-29	Buxted		00/62
+14444	Chew Valley	-56-14-56-18-34-1258-14-	58	18	l	DK/a	2000-09-21	Barrow Gurney		00/1040
+14445	Gheluvelt	-56-14-56-18-34-18-34-	18	18	m	D/a	1984-06-29	Kirton in Lindsey		84/644
+14446	Westminster	-56-14-56-18-34-38-34-	38	18	m	D/a	1898-05-16	Brighton, St Peter		BN V16/680
+14447	Novemberish	-56-14-56-18-34-38.14-12.	38	18	13462857		2001-11-23	Moorside		01/1240
+14448	Shadwell	-56-14-56-38-14-18.56-56.	18	12	b	cps/ac	1973-10-23	Trumpington		73/960
+14449	Grimoldby	-56-14-56-38-14-18.56-56.	18	18	g	cps/ac	1990-01-25	West Bridgford		90/229
+14450	Duffell	-56-14-56-38-34-18-1234-	38	18	m	G/a	2010-06-26	Whitley Bay		10/713
+14451	Meldreth	-56-14-56-38-34-18-34-	38	18	m	cps/a	1973-10-12	Meldreth		73/900
+14452	Nye	-56-14-56-38-34-18.34-12.	38	18	m	D/a	2004-11-24	Leeds, St Anne		04/1219
+14453	Berengaria	-56-14-56-38-34-18.34.12-	38	18	m	DG/a	2004-12-29	Headingley		05/59
+14454	Iona	-56-14-56-38.14-34.18-56-	58	12	e	B/ac	1993-11-06	Brockenhurst		93/1169
+14455	Barolo	-56-14-56.12.38-12-18-12.36.	18	18	k	BE/a	2003-02-09	Burnley		03/200
+14456	Amberley Castle	-56-14.56-58.16-14-18-14-	58	18	h	K/acd	1999-01-18	Lower Beeding		99/145
+14457	Hipporay	-56-14.56-58.16-14-18-34-	58	18	17528364		2004-12-11	Bristol Cathedral		05/8
+14458	Hastings Castle	-56-14.56-58.36-14-18-12-	18	18	j	B/ac	2000-05-01	Rudgwick		00/527
+14459	Rye Castle	-56-14.56-58.36-14-18-36-	38	18	h	O/ac	1999-03-15	Lower Beeding		99/364
+14460	Salem Bridge	-56-14.56-58.36-14-18.36-14.	38	18	g	O/acd	2004-05-15	Heptonstall		04/541
+14461	Clapham Common	-56-14.56-58.36-14-18.36.14.56.	38	18	m	K/acd	1999-01-16	Wimbledon		99/168
+14462	Unnamed	-56-1456-56-18-14-1258-1236-	18	12	d	cps/ad	2009-09-17	Huntsham		09/1021
+14463	Totley	-56-1456-56-18-14-1258-1236-	18	18	j	cps/ad	2009-11-25	Dore		09/1271
+14464	Greville Smyth	-56-1456-56-18-14-58-1236-	78	18	h	cps/ad	2009-11-07	Long Ashton		09/1189
+14465	Juillet	-56-1456-56-38-34-18-34-	38	18	m	B/a	1998-04-05	Shoreditch		98/415
+14466	St Marylebone	-56-1458-56-18-34-1458-34-	18	18	m	D/a	1985-04-28	Hackney, St John-at-Hackney		85/504
+14467	Freddykins	-56-16-56-16-34-18-1236-	58	12	b	BR/a	1982-09-12	Cambridge, St Andrew-the-Great		82/862
+14468	Eros	-56-16-56-18-14-38.14-14.	38	18	j	cps/ace	2000-04-08	Bromley		00/447
+14469	Moorhouses	-56-16.58-12.38-12-18-14-	78	12	f	BKN/a	1996-12-15	Burnley		97/89
+14470	Llangybi	-56-18-12-1236-14-58-16-	58	12	16732854		2006-11-18	Llangybi		07/143
+14471	Winford	-56-18-12-1238-12-1458-16-	78	12	16732854		2010-12-09	Winford		11/9
+14472	Sherriff	-56-18-12-1238-34-38-16-	78	12	16732854		2011-07-23	Southam		11/869
+14473	Queen Charlton	-56-18-12-16-14-58-12-	18	12	17863542		2004-08-21	Charlton Kings		04/876
+14474	X-mas	-56-18-12-16-14-58-1236-	58	12	16732854		2002-12-19	Barrow Gurney		03/55
+14475	Marston Bigot	-56-18-12-16-14-58-36-	58	12	16732854		2011-06-02	Marston Bigot		11/653
+14476	Hunter's Moon	-56-18-12-18-14-38-34-	78	12	16732854		2001-11-01	Barrow Gurney		01/1164
+14477	Nailsea	-56-18-12-36-14-58-14-	18	12	17863542		2001-06-28	Barrow Gurney		01/731
+14478	Mynyddislwyn	-56-18-12-36.14-12.58-34-	18	12	17863542		2005-04-30	Mynyddislwyn		05/478
+14479	Moss Road	-56-18-12-36.14-14.58-14-	78	12	18576423		2010-12-30	Dore		11/60
+14480	Twoone	-56-18-12-38-12-38-16-	78	12	16732854		2006-06-30	Barrow Gurney		06/693
+14481	Flax Bourton	-56-18-12-38-14-58-16-	78	12	16732854		2000-08-24	Barrow Gurney		00/939
+14482	Old Sodbury	-56-18-12-38-14-58.14-14.	58	12	18576423		2003-02-06	Barrow Gurney		03/199
+14483	Oldmixon	-56-18-12-38-34-1238-16-	78	12	16732854		2011-01-13	Weston-super-Mare		11/108
+14484	Arno's Vale	-56-18-12-38-34-1458-16-	78	12	16732854		2006-10-07	Knowle (Bristol)		06/1030
+14485	Ragged Staff	-56-18-12-38.14-14.38-12-	78	12	16732854		2008-10-11	Warwick, St Nicholas		08/1133
+14486	Longcot	-56-18-12-38.14-14.38-1256-	78	12	16732854		2010-09-16	Longcot		10/1013
+14487	Jubilation	-56-18-12-38.14-14.38-34-	78	12	16732854		2002-06-06	Barrow Gurney		02/643
+14488	Bournemouth	-56-18-12-38.14-14.58-14-	58	12	18576423		2011-10-15	Bournemouth, St John		11/1117
+14489	Chewton Mendip	-56-18-1256-36-14-58-14-	58	12	14258367		2007-01-13	Chewton Mendip		07/116
+14490	Bwell	-56-18-1256-36-34-38-14-	78	12	18576423		2009-12-13	Barrow Gurney		10/42
+14491	Backwell	-56-18-56-1236-14-58-14-	58	12	14258367		2003-02-22	Backwell		03/248 353
+14492	JB	-56-18-56-1236-34-38-14-	78	12	18576423		2008-04-12	Backwell		08/497
+14493	Compton Greenfield	-56-18-56-16-12-1258-14-	58	12	14258367		2010-10-08	Barrow Gurney		10/1086
+14494	Snowden	-56-18-56-16-14-1258.36.12.36.	18	12	16732854		2003-01-05	Buckland Dinham		03/223
+14495	Hillheads	-56-18-56-16-14-1458-14-	58	12	14258367		2010-05-14	Whitley Bay		10/569
+14496	Accrington	-56-18-56-16-14-1458-56-	58	12	a	B/ac	1981-08-05	Accrington		81/831
+14497	Eastfield	-56-18-56-16-14-58-12-	58	12	14258367		2001-11-15	Barrow Gurney		01/1215
+14498	Wootton Bassett	-56-18-56-16-14-58-16-	58	12	13624785		2002-04-27	Wootton Bassett		02/521
+14499	Harbourside	-56-18-56-16-14-58.14-14.	58	12	14258367		2005-12-02	Bristol Cathedral		05/1252
+14500	Greendown	-56-18-56-16-34-38-16-	58	12	16732854		2010-11-11	Barrow Gurney		10/1257
+14501	Tropicana	-56-18-56-16-34-38.14-14.	78	12	18576423		2005-12-30	Weston-super-Mare		06/56
+14502	Low Edges	-56-18-56-18-12-58.14-14.	78	12	a	K/a	2011-01-26	Dore		11/159
+14503	Congresbury	-56-18-56-18-14-1458-1236-	18	12	16732854		2010-09-04	Congresbury		10/991
+14504	Tunnel End	-56-18-56-36-14-58-14-	58	12	14258367		2010-07-31	Conisbrough		10/842
+14505	Zipadeedoodah	-56-18-56-36-14-58-36-	18	12	16732854		2011-10-07	Barrow Gurney		11/1115
+14506	Shortwood	-56-18-56-36-34-1238-14-	78	12	18576423		2011-03-10	Mangotsfield		11/313
+14507	Ditcheat	-56-18-56-36-34-1458.36-36.	18	12	17863542		2010-06-12	Ditcheat		10/665
+14508	Twerton on Avon	-56-18-56-36-34-18-1256-	78	12	18576423		2011-09-08	Twerton on Avon		11/1188
+14509	Isambard Kingdom Brunel	-56-18-56-36-34-18-16-	58	12	16732854		2006-03-03	Bristol Cathedral		06/280
+14510	Double Beeston	-56-18-56-36-34-18-34-	78	12	18576423		1969-02-22	Beeston		69/270
+14511	Marlborough	-56-18-56-36.14-14.58-12-	58	12	14258367		2008-10-18	Marlborough, St Mary		08/1158
+14512	Eccleshall	-56-18-58-16-14-58.14-16.	58	12	f	cps/abeX	1990-06-09	Eccleshall		90/687
+14513	Beaumont	-56-18.56-56.1238-14-58-16-	78	12	16732854		2000-07-13	Barrow Gurney		00/767
+14514	Eaves Wood	-56.38.16.58-12.36.14-34.18.36.14.36.	78	18	j	BDE/ade	1996-12-23	Heptonstall		97/118
+14515	Rider	-58-14-12-16-34-18.34-14.	58	12	f	BDK/c	2008-06-12	Spitalfields		08/721
+14516	Okanagan	-58-14-12-18-34-58-34-	38	12	a	BD/c	1992-11-07	Sherfield English		92/1206
+14517	Handsworth	-58-14-56-1236-12-18-12-	78	12	d	B/c	2009-01-16	Handsworth (Yorks)		09/37 130
+14518	Burton	-58-14-56-1236-12-18-16-	58	12	b	B/c	2006-08-13	York, St Laurence		06/838
+14519	Henlow	-58-14-56-16-14-18-14-	18	12	a	BFK/c	2008-01-28	Henlow		08/241
+14520	December	-58-14-56-16-34-18-16-	78	12	d	BD/cY	1997-01-10	Bushey		97/171 255
+14521	Marshall	-58-14-56-16-34-18-34-	18	18	m	BD/c	1970-08-09	Daventry		70/719
+14522	Durweston	-58-14-56-36-14-18.56-56.	18	12	b	B/ac	1975-10-25	Trumpington		75/931
+14523	Potterton	-58-14-56-36-34-18-34-	38	18	m	B/ac	1994-05-22	Potterton, Butterywells Campanile		94/709
+14524	Cairngorm McWomble the Terrible	-58-14-56-36-34-18-36-	18	12	b	BO/ac	1975-02-07	Cholsey		75/317 76/311 349
+14525	Wensleydale	-58-14-56-38-14-18-14-	58	12	d	BG/c	2011-02-14	Bow		11/208
+14526	Silver	-58-14-58-18-34-18-34-	18	18	m	cps/ac	1992-02-29	Claybrooke		92/353
+14527	Cherwell Valley	-58-14-58-18-34-18-34-	78	12	a	cps/ac	1995-01-21	Somerton (Oxon)		95/196 315
+14528	Holmes	-58-14-58-38-34-18-34-	18	18	13462857		1986-09-01	Staveley		86/851
+14529	E2E	-58-14.56-12.36-12-18-16-	58	12	b	B/c	2004-01-17	York, St Laurence		04/180
+14530	Outerside	-58-14.58-12.36-12-18-36-	18	12	c	BO/c	1991-07-25	Hungerford		91/816
+14531	Ickornshaw Moor	-58-14.58-12.36-34-18-34-	58	12	a	B/ac	2006-09-19	Dore		06/959
+14532	Dodd Fell	-58-14.58-12.38-12-18-12-	78	12	d	B/c	2008-06-25	Dore		08/819
+14533	Kilkenny	-58-14.58-12.38-12-18-12-	78	18	j	B/c	1991-08-02	Kilkenny		91/877
+14534	Partney	-58-14.58-12.38-12-18-12.36.	18	18	k	B/ac	2011-06-07	West Bridgford		11/655
+14535	The Judge's	-58-14.58-12.38-12-18-1256-	78	18	j	B/ac	1999-04-24	Wrotham		99/506
+14536	St Mary Abbots	-58-14.58-12.38-12-18-16-	58	12	b	B/c	2003-05-21	York, St Laurence		03/543
+14537	Watford	-58-14.58-12.38-12-18-16-	58	18	g	B/c	1992-11-21	Aston Clinton	1992-06-14	92/701 93/73
+14538	Campton	-58-14.58-12.38-12-18-34-	78	12	d	B/ac	2010-04-11	Campton		10/417
+14539	Michelle Pfeiffer	-58-14.58-12.38-12-18-34-	78	18	j	B/ac	1997-04-30	Willesden		97/592
+14540	Chianti	-58-14.58-12.38-12-18.34-12.	78	18	j	B/ac	2002-08-29	Burnley		02/969
+14541	St Edmundsbury	-58-14.58-12.38-12-18.36.12-	18	12	e	B/ac	2001-05-22	Bushey		01/687
+14542	Mareham	-58-14.58-12.38-12-18.36.12-	18	18	k	B/ac	2011-08-02	West Bridgford		11/845
+14543	Swillington	-58-14.58-12.38.12-34.18-34-	38	18	m	B/ac	1995-09-23	Swillington		95/1107
+14544	Trowse	-58-14.58-1258.36-14-18.36.14.56.	18	18	m	DET/cd	2008-06-19	Stamford Hill		08/992
+14545	Rare Hare	-58-14.58-56.18-12-58.36.14.36.	18	18	m	DS/ac	Spliced			07/696 1169
+14546	Pevensey Castle	-58-14.58-56.18-14-1258-1236-	18	18	j	cps/acd	2000-04-03	Turners Hill		00/480
+14547	Selham Castle	-58-14.58-56.18-14-18-12-	18	18	j	D/acd	2000-10-16	Fairwarp		00/1114
+14548	Decantae	-58-14.58-56.18-14-3458.16-16.	58	18	j	cps/acde	1994-02-05	Birstall (Yorks)		94/261
+14549	Aout	-58-14.58-56.18-14-38.16-34.	58	12	a	cps/acd	1998-06-23	Bushey		98/674
+14550	Golden	-58-14.58-56.18-14-58-1236-	78	18	h	cps/acd	1991-10-16	Barrow Gurney		91/1086
+14551	Bramber Castle	-58-14.58-56.18-14-58-36-	18	12	d	E/acd	1999-08-16	Turners Hill		99/898
+14552	Fowlmere	-58-14.58-56.18-14-58-36-	18	18	j	E/acd	1996-05-03	Meldreth		96/730
+14553	Barton Seagrave	-58-14.58-56.18-14-58-36-	78	18	h	E/acd	1996-04-20	Burton Latimer		96/587
+14554	Vinion	-58-14.58-56.38-14-18-1236-	18	18	j	cps/ac	1993-12-04	Birstall (Yorks)		94/85
+14555	Mai	-58-14.58-56.38-14-18-14-	38	12	e	G/ac	1998-02-23	Bushey		98/260
+14556	Herstmonceux Castle	-58-14.58-56.38-14-18-14-	38	18	k	G/ac	1999-07-05	Fairwarp		99/757
+14557	Spitalfields Festival	-58-14.58-56.38-14-18-56-	78	12	c	cps/ac	1991-05-31	Spitalfields		91/646
+14558	Thorney	-58-14.58-56.38-14-18.36-36.	18	18	g	E/ac	1998-04-20	Warnham, St Margaret		98/510
+14559	Beeding	-58-14.58-56.38-14-18.36.12.36.	78	12	c	cps/ac	1997-12-08	Steyning		98/62
+14560	Turners Hill	-58-14.58-56.38-14-18.36.12.36.	78	18	h	cps/ac	1998-01-05	Turners Hill		98/140
+14561	Albiniano	-58-14.58-56.38-34-18-34-	38	18	m	B/ac	1990-07-14	Eastwood (Yorks)		90/780
+14562	Hopwood	-58-14.58-56.38.14-34.18.34-34.	18	18	j	cps/ac	1995-09-15	Heywood		95/1080
+14563	Little Rock	-58-14.58-56.38.14-34.18.56-56.	18	18	j	cps/ac	1992-06-24	Little Rock, AR		92/843
+14564	Fructidor	-58-14.58-58.1236-12-18-36-	18	18	j	BG/c	2001-09-14	Middleton (Lancs)		01/1045
+14565	LXXVII	-58-14.58-58.1236-12-18.34.16-	18	18	m	BO/c	2000-08-25	Meldreth		01/84
+14566	Dame Vera	-58-14.58-58.1236-14-18-12-	58	18	h	B/cd	2009-09-17	Shoreditch		09/1021
+14567	Ventose	-58-14.58-58.1236-14-18-34-	58	12	c	cps/acd	2001-03-09	East Crompton		01/321
+14568	Thermidor	-58-14.58-58.1236-14-18-34-	58	18	h	cps/acd	2001-08-10	Middleton (Lancs)		01/877
+14569	Broughty Ferry	-58-14.58-58.1236-14-18.34-34.	58	12	c	cps/acd	2009-01-11	East Crompton		09/106
+14570	Petworth Festival	-58-14.58-58.1236-14-18.36.14.56.	18	18	m	DE/cd	1988-07-02	Petworth		88/730
+14571	Nivose	-58-14.58-58.1236-34-18-1236-	78	12	a	B/c	2001-01-12	Middleton (Lancs)		01/217 352
+14572	Frimaire	-58-14.58-58.1236-34-18.36.12.56.	18	18	m	B/ac	2001-12-14	Middleton (Lancs)		02/56
+14573	Edinburgh	-58-14.58-58.16-14-18-14-	58	12	c	K/cd	1948-11-20	Wigston Magna		48/535 578
+14574	Windsor	-58-14.58-58.16-14-18-14-	58	18	h	K/cd	1960-05-07	Wigston Magna		60/341 77/930
+14575	Kewstoke	-58-14.58-58.16-14-18-34-	58	18	17528364		2003-08-07	Weston-super-Mare		03/831
+14576	Pluviose	-58-14.58-58.16-14-18-3456-	38	12	b	cps/acd	2001-02-09	Middleton (Lancs)		01/376 434
+14577	Messidor	-58-14.58-58.16-14-18-3456-	38	18	g	cps/acd	2001-07-13	Middleton (Lancs)		01/828
+14578	Rudgwick Castle	-58-14.58-58.16-14-18.36.14-	78	12	a	KN/cd	2010-04-26	Warnham, Bell Meadow Peal		10/499
+14579	Prairial	-58-14.58-58.16-34-18-14-	18	12	f	D/ce	2001-06-08	Middleton (Lancs)		01/732
+14580	Burton Latimer	-58-14.58-58.16-34-18-14-	18	18	l	D/ce	1999-07-27	Burton Latimer		99/801
+14581	Kenley	-58-14.58-58.16-34-18.36-56.	18	18	m	DF/c	1998-08-17	Meldreth		98/965
+14582	Brumaire	-58-14.58-58.16-34-18.56.14.56.	18	18	l	DE/c	2001-11-09	Middleton (Lancs)		01/1240
+14583	Floreal	-58-14.58-58.36-12-18-14-	38	12	e	BE/c	2001-05-11	Middleton (Lancs)		01/633
+14584	Torksey	-58-14.58-58.36-12-18-14-	38	18	k	BE/c	1984-12-27	West Bridgford		85/85
+14585	Aldermaston Manor	-58-14.58-58.36-12-18-3456-	58	18	g	B/cY	2010-05-15	Aldermaston		10/594 631
+14586	Oswaldtwistle	-58-14.58-58.36-12-18-56-	58	12	b	B/ac	1981-08-06	Oswaldtwistle		81/831
+14587	Calderdale	-58-14.58-58.36-12-18-56-	58	18	g	B/ac	1994-05-08	Staveley		94/613
+14588	Vendemiaire	-58-14.58-58.36-12-18.56.14.56.	38	18	k	B/ce	2001-10-12	Middleton (Lancs)		01/1165
+14589	Germinal	-58-14.58-58.36-14-18-12-	18	12	d	B/c	2001-03-30	Middleton (Lancs)		01/404
+14590	Ferriby	-58-14.58-58.36-14-18-12-	18	18	j	B/c	1988-09-22	West Bridgford		88/1001
+14591	Hill	-58-14.58-58.36-14-18-1236-	38	12	c	cps/cf	2011-10-17	Southam		11/1115
+14592	Maeatae	-58-14.58-58.36-14-18-1236-	38	18	h	cps/cf	1994-03-05	Birstall (Yorks)		94/352
+14593	Eton	-58-14.58-58.36-14-18-36-	38	12	c	O/c	1986-03-01	Windsor, St John-the-Baptist		86/385
+14594	Greenjoint	-58-14.58-58.36-14-18-36-	38	18	h	O/c	1993-06-12	Moulton (Northants)		93/769
+14595	Lambeth	-58-14.58-58.36-14-18.34.16-	58	18	m	O/bc	1968-12-23	Lambeth, St Mary		69/88
+14596	Biggleswade	-58-14.58-58.36-14-18.34.16.34.	58	18	m	O/c	1997-05-31	Biggleswade		97/705 98/275
+14597	Bax Castle	-58-14.58-58.36-14-18.36-14.	38	18	g	O/cd	1999-03-01	Chiddingfold		99/316
+14598	Antrum	-58-14.58-58.36-14-18.36.14.36.	58	18	m	K/c	1989-03-04	Birstall (Yorks)		89/325 424
+14599	Babybush	-58-14.58-58.36-14-18.36.14.56.	38	18	m	K/cd	1998-04-12	Trumpington		98/554
+14600	West Virginia	-58-14.58-58.36-34-18-16-	58	12	d	BR/c	1998-11-22	Boston, MA, Christ Church		99/95
+14601	SRCY	-58-14.58-58.36-34-18-16-	58	18	j	BR/c	1997-06-29	Shoreditch		97/826
+14602	Fothergill	-58-14.58-58.36-34-18-56-	18	12	b	B/ac	2005-07-30	Standish (Lancs)		05/1191
+14603	New Romney	-58-14.58-58.36-34-18-56-	18	18	g	B/ac	2009-08-31	New Romney		09/951
+14604	Callanish	-58-14.58-58.36-34-18.34.16.34.	18	18	m	BN/c	2001-02-17	Headingley		01/323
+14605	Bengeo	-58-14.58-58.36-34-18.36-36.	58	18	m	BR/c	1998-12-04	Meldreth		99/96
+14606	Chapel Hill	-58-14.58-58.36-34-18.36-56.	38	18	m	BDR/c	1999-10-26	Raleigh, NC		99/1256
+14607	Exeter Diocesan	-58-14.58-58.36-34-18.36.12.36.	58	18	m	BN/c	2009-03-12	Huntsham		09/329
+14608	LXXV	-58-14.58-58.36-34-18.36.14.36.	18	18	m	BE/c	1998-08-25	Meldreth		98/965
+14609	Lake Garda	-58-14.58-58.36.12-34.18.36.12-	78	12	a	B/c	2009-07-16	Walkden		09/802
+14610	Parbold	-58-14.58-58.36.14-34.18-3456-	38	12	b	cps/ac	1981-08-04	Parbold		81/831
+14611	St Paul's	-58-14.58-58.36.14-34.18-3456-	38	18	g	cps/ac	1981-10-12	Walkden		81/1061
+14612	Salford	-58-14.58.12-18-14-58.14-14.	58	12	f	BT/c	2011-01-27	Walkden		11/158
+14613	Lee Wood	-58-14.58.12-18-14-58.14-14.	58	18	l	BT/c	2003-06-21	Heptonstall		03/661
+14614	Blacka Moor	-58-14.58.12.56.18-34-58-34-	18	18	g	ET/ac	2010-09-29	Dore		10/1063
+14615	Cantiaci	-58-1456-12-1236-34-18-34-	38	18	m	B/ac	1994-11-26	Kildwick		95/76
+14616	Bolsterstone	-58-1456-12-16-34-18-34-	38	18	m	B/ac	1992-11-07	Bolsterstone		92/1181
+14617	Longueville	-58-1456-12-16-34-18.34-12.	38	18	m	BD/ac	2006-12-13	Newton Longville		07/90
+14618	Heage	-58-1456-12-18-12-58.12-14.	18	18	m	B/c	1997-02-22	Belper		97/320
+14619	Traxula	-58-1456-12-18-12-58.14-12.	38	18	m	BD/cd	1993-02-27	Belper		93/324
+14620	Ohio	-58-1456-12-18-14-1458-14-	18	18	m	B/c	2003-10-18	Boston, MA, Advent		03/1071
+14621	Leucovia	-58-1456-12-18-14-58.14-14.	18	18	m	B/c	1992-12-12	Belper		93/77
+14622	Bertha	-58-1456-12-18-34-1258.34-14.	38	18	m	B/cd	1993-05-31	Wath-on-Dearne		93/653
+14623	Iceni	-58-1456-12-18-34-18.36-36.	58	18	m	BG/c	1994-02-26	Greasley		94/312
+14624	Tedertis	-58-1456-12-18-34-38.14.36.14.	38	18	m	BE/c	1993-01-30	Tadcaster		93/277
+14625	Royds	-58-1456-12-18.34-12.3458.12-14.	18	18	m	B/c	1997-04-26	Rothwell (Yorks)		97/564 743
+14626	Hind Leys	-58-1456-12-38-14-18-56-	38	12	f	BK/ac	1993-06-03	Hemsworth		93/653
+14627	Rednock	-58-1458-12-18-34-1238-34-	18	18	m	B/ac	1985-11-02	Dursley		86/79
+14628	Bedale	-58-1458-58-1238-34-18-14-	78	12	f	B/c	2008-12-05	York, St Lawrence		09/11
+14629	Romsey	-58-1458-58-36-14-18-1236-	38	12	c	cps/cf	1994-02-20	Romsey		94/285
+14630	Yarborough	-58-16-12-1238-14-18-12-	78	12	b	B/c	1984-02-21	Tuxford		84/259
+14631	Opava	-58-16-12-1238-14-18-12-	78	18	g	B/c	1999-07-27	Adlington		99/847
+14632	Ghaxaq	-58-16-12-1238-14-18-12.34.	78	12	b	BD/c	2005-05-18	Loughborough Bellfoundry		05/741
+14633	Phoenix	-58-16-12-1238-14-18-12.56.	78	12	b	B/ac	1999-07-15	Heywood		99/732
+14634	Quoich	-58-16-12-1238-14-18-1234-	78	12	b	BD/c	1984-07-27	St Bees		84/750
+14635	Londesborough	-58-16-12-1238-14-18-1256-	78	12	b	B/ac	1984-08-21	Billingborough		84/792
+14636	Elton	-58-16-12-1238-14-18-34-	78	12	b	B/ac	2001-03-07	Heywood		01/321
+14637	Mtarfa	-58-16-12-1238-14-18-34.56.	78	12	b	B/ac	2004-12-01	Loughborough Bellfoundry		04/1256
+14638	Canfield	-58-16-12-1238-14-18-3456-	78	12	b	B/c	2000-05-03	Heywood		00/573
+14639	Jacqueline	-58-16-12-1238-14-18-56-	78	12	b	BD/c	2003-06-16	Loughborough Bellfoundry		03/637
+14640	Mdina	-58-16-12-1238-14-18.34-34.	78	12	b	B/ac	2003-03-31	Loughborough Bellfoundry		03/369
+14641	Quail Green	-58-16-12-1238-14-18.34.12-	78	12	b	BD/c	2011-05-09	Prestwold		09/1222 11/538
+14642	Manikata	-58-16-12-1238-14-18.34.12.34.	78	12	b	BD/c	2005-01-26	Loughborough Bellfoundry		05/157
+14643	Gharb	-58-16-12-1238-14-18.34.56.34.	78	12	b	B/c	2003-07-21	Loughborough Bellfoundry		03/780
+14644	Sixcent	-58-16-12-1238-14-18.3456-3456.	78	12	b	B/c	2002-12-04	Loughborough Bellfoundry		03/33
+14645	Rayanwendy	-58-16-12-1238-14-18.56-56.	78	12	b	BD/c	2004-09-13	Loughborough Bellfoundry		04/949
+14646	Camberwick Green	-58-16-12-1238-14-18.56.34.12.	78	12	b	BD/c	2010-08-02	Mavesyn Ridware		10/18 841
+14647	Attard	-58-16-12-1238-14-18.56.34.56.	78	12	b	B/c	2004-11-10	Loughborough Bellfoundry		04/1168
+14648	Grafton	-58-16-12-18-12-1258-16-	78	12	b	BG/ac	1985-04-09	Hurst (Berks)		85/416
+14649	Chelmsford	-58-16-12-18-12-58.14-14.	58	12	d	BK/ac	2000-04-03	Bushey		00/477
+14650	Ormskirk	-58-16-12-18-14-1238-12-	78	12	b	B/c	1971-11-20	Ormskirk		71/1079
+14651	Bishop David	-58-16-12-18-14-1238-34-	78	12	b	B/ac	1994-10-18	Sefton		94/1167
+14652	Old Spot	-58-16-12-18-14-1238-56-	78	12	b	BD/c	2003-08-25	Dursley		03/474 877
+14653	William Champion	-58-16-12-18-14-1238.56-12.	78	12	b	BD/c	2005-09-12	Dursley		05/941
+14654	Up Hatherley	-58-16-12-18-14-1458-12-	58	12	d	B/c	2004-04-03	Leckhampton		04/396
+14655	Cheluvelt	-58-16-12-18-14-18-14-	78	12	b	B/c	1974-08-20	Wincanton		74/923
+14656	Bosel	-58-16-12-18-14-18-14.56.	78	12	b	BD/c	1980-06-03	Hanbury (Worcs)		80/577
+14657	Baldock Festival 2000	-58-16-12-18-14-18-1456-	78	12	b	BD/c	2000-12-02	Baldock		01/85
+14658	Wyre Forest	-58-16-12-18-14-18.56.14.56.	78	12	b	BD/c	1983-07-27	Rock		83/687
+14659	Amy	-58-16-12-18-14-3458-36-	78	12	b	BE/c	2010-10-06	Sproxton		10/1086
+14660	Underwood	-58-16-12-18-14-38-12-	18	12	a	B/c	1989-03-04	Selston		89/367
+14661	Chiddingstone	-58-16-12-18-14-38-12-	78	12	b	B/c	1993-06-09	Chiddingstone		93/768
+14662	Bicester	-58-16-12-18-14-38-1256-	78	12	b	B/ac	1997-11-24	Bicester		98/60
+14663	Broughton Astley	-58-16-12-18-14-38-34-	78	12	b	B/ac	1974-09-21	Broughton Astley		74/858
+14664	Jersey	-58-16-12-18-14-38-3456-	78	12	b	B/c	2009-04-13	St John in the Oaks		09/611
+14665	Chalfont St Giles	-58-16-12-18-14-38-56-	78	12	b	BD/c	1997-11-24	Chalfont St Giles		98/10
+14666	Wotton-under-Edge 750 Charter	-58-16-12-18-14-38.12-12.	78	12	b	B/c	2003-09-14	Wotton-under-Edge		03/948
+14667	Utah	-58-16-12-18-14-38.14-14.	78	12	b	BK/c	1979-09-07	Cambridge, St Andrew-the-Great		79/867
+14668	Derby	-58-16-12-18-14-38.56-34.	18	12	c	BD/ac	2000-05-08	Bushey		00/575
+14669	Prince Charles	-58-16-12-18-14-58-14-	58	12	d	B/c	1981-07-22	Heywood		81/760
+14670	Ligueil	-58-16-12-18-14-58-56-	18	12	c	B/c	1981-02-14	Hungerford		81/233
+14671	Juin	-58-16-12-18-14-58.34-36.	18	12	c	BE/c	1998-03-23	Bushey		98/359
+14672	Tervedunum	-58-16-12-18-14-58.36-16.	58	18	m	B/bcd	1993-04-17	Birstall (Yorks)		93/474
+14673	Yatton	-58-16-12-18-34-1258-16-	58	12	f	B/cX	1982-10-02	Yatton		82/903
+14674	Misbourne	-58-16-12-18-34-3458-16-	78	12	b	BG/c	1986-10-04	Amersham		86/964
+14675	Nidd	-58-16-12-18-34-58.36.12.36.	18	18	m	B/ce	1996-04-06	Belper		96/518
+14676	Play School	-58-16-12-18.34-12.58.14-1236.	78	12	b	B/ac	2009-04-04	Ruislip		09/406
+14677	Aldingbourne Castle	-58-16-12-36-12-18-14-	58	12	f	B/c	2000-07-29	Chichester Cathedral		00/963
+14678	Cold Christmas	-58-16-12-38-12-18-16-	58	12	a	B/bc	1970-12-19	Barnes		71/53
+14679	Dunelm	-58-16-12-38.14-34.18.34-14.	78	12	b	BD/cd	2001-09-15	Durham, St Oswald		01/997
+14680	Annabel	-58-16-1256-1238-34-18-34-	78	12	c	D/ac	2002-11-02	Bolton, St Peter		02/1210 03/91
+14681	Terrathebius	-58-16-1256-36-34-18.56-56.	78	12	d	D/ac	1995-11-07	Brockenhurst		95/1254
+14682	Newchurch	-58-16-1258-16-14-18-12-	78	12	b	K/abc	1981-08-01	Newchurch Kenyon		81/831
+14683	Taylor's Pleasure	-58-16-1258-16-34-18-14-	58	12	d	K/ac	1974-05-17	Cholsey		74/578
+14684	Normandy	-58-16-56-16-14-18-34-	38	12	a	BN/ac	1971-08-24	Hagley		71/873
+14685	St John's	-58-16-56-16-34-18-12-	78	12	d	B/ac	2007-07-07	Weston-super-Mare		07/761
+14686	Sparky	-58-16-56-36-14-18-12-	18	12	b	cps/ace	1998-06-19	Kirby-le-Soken		98/697
+14687	Paimpol	-58-16-56-36-34-18-12-	38	12	c	D/ac	1995-12-23	Romsey		96/97
+14688	Wormhill	-58-16-56-36.14-34.18.34.56.14.	58	12	e	D/ace	1993-01-09	Fairfield		93/150
+14689	Humberside	-58-16-56-38-34-18-34-	78	12	c	cps/ac	1975-08-18	Barrow-upon-Humber		75/790
+14690	Jerusalem	-58-16-56-38-34-18-34-	78	18	h	cps/ac	1989-12-28	West Bridgford		90/128
+14691	Golden Jubilee	-58-16-56-38-34-18-34.12.	78	12	c	B/ac	2002-06-01	Westhoughton		02/648
+14692	Jeffry's	-58-16-56-38-34-18.34-34.	78	12	c	cps/ac	2006-06-10	Streatham		06/623
+14693	Michaelmas	-58-16-58-16-12-18-12-	78	12	b	DN/ac	1999-09-28	Sunderland, St Michael		99/994
+14694	Heywood	-58-16-58-16-34-18-12-	58	12	d	N/ac	1981-08-03	Heywood		81/831
+14695	Miles	-58-16-58-36-14-18-14-	78	12	b	N/bc	2006-11-19	Sydney, NSW, St James		06/1172
+14696	Armistice	-58-18-1256-16-12-38-12-	58	12	d	K/ac	1981-11-08	Farnworth-with-Kearsley		81/1109
+14697	Walkden	-58-18-56-16-34-38-34-	78	12	c	BD/ac	1981-08-07	Walkden		81/831
+14698	Deane	-58-18-58-16-34-38-34-	58	12	c	D/ace	1981-08-08	Deane (Lancs)		81/831
+14699	Double Sally	34-34.16-56-18-34-38.56-56.	78	12	d	BD	2010-03-06	Kildwick		10/295
+14700	Zauner	34-34.18-12-1236-12-1458-1256-	78	12	d	BD	2008-04-25	Whitley Bay		08/545
+14701	Madresfield	34-34.18-12-1236-12-1458-56-	78	12	d	BD	2011-06-08	Dore		11/679
+14702	Pinner	34-34.18-12-1236-34-1458-16-	58	12	b	BD	2009-02-21	Pinner		09/360
+14703	Hitcham	34-34.18-12-1238-12-1238-12-	38	18	l	BD	1962-07-14	Burnham (Bucks)	2009-11-25	62/498 10/90
+14704	Liversedge	34-34.18-12-18-12-38-12-	58	18	14653827		1843-04-17	Liversedge		
+14705	Charlie	34-34.18-12-18-14-38-12-	78	12	b	BD/d	2010-04-12	Arundel		10/548
+14706	Kent	34-34.18-12-18-14-38-16-	58	18	m	BD/d	1980-12-13	Spitalfields		81/53
+14707	Bird	34-34.18-12-18-14-38-56-	78	12	b	BD/d	2007-08-15	York, St Laurence		07/906
+14708	Sammy	34-34.18-12-18-14-38-56-	78	18	g	BD/d	2008-09-15	Arundel		08/1062
+14709	Trinity Sunday	34-34.18-12-18-34-38-34-	38	12	e	BD/a	1963-06-09	Accrington		63/442
+14710	High Force	34-34.18-12-36-14-58-56-	78	12	d	BD/c	2007-06-08	Handsworth (Yorks)		07/667
+14711	Low Force	34-34.18-12-36.14-1234.58-16-	58	12	b	BD/c	2007-07-06	Handsworth (Yorks)		07/763
+14712	Pontefract	34-34.18-12-38-12-38-12-	38	12	f	BD	1952-04-15	Holywood		52/274
+14713	Wath	34-34.18-12-38-12-38-12-	38	18	l	BD	1952-01-16	Loddon		52/67 144
+14714	Atlanta	34-34.18-12-38-12-38-16-	78	18	g	BDG	2000-10-22	Kalamazoo, MI		00/1280
+14715	Newfoundland	34-34.18-12-38-14-38-12-	18	18	m	BD/ac	1983-12-11	Windsor, St John-the-Baptist		84/77
+14716	Barham	34-34.18-12-38-14-58-16-	78	12	b	BDG/c	1997-03-08	Uckfield		97/372
+14717	Oswald	34-34.18-12-38-14-58-16-	78	18	g	BDG/c	1947-01-17	Frodsham		47/67 229
+14718	Iowa	34-34.18-12-38-14-58-34-	58	12	d	BD/c	2011-11-19	Pittsburgh, PA		
+14719	Thea	34-34.18-12-38-14-58.14.36-	58	12	f	BD/cdZ	2009-06-07	Milton		09/660
+14720	Chant	34-34.18-12-38.12-12.58.14-16.	78	12	b	BD/c	2010-07-28	Dore		10/842
+14721	September	34-34.18-12-38.12-14.58.14-36.	18	12	c	BDE/d	1994-09-30	Thatcham		94/1144
+14722	Dringhouses	34-34.18-12-38.14-12.58.12-16.	78	12	b	BD/c	2005-07-06	York, St Laurence		05/772
+14723	Nether Hornpot Lane	34-34.18-12-38.14-1234.58-56-	18	12	c	BD/c	2008-11-19	York, St Lawrence		08/1279
+14724	Vallum	34-34.18-12-38.14-1234.58-56-	18	18	h	BD/c	2007-12-22	Harthill		08/88
+14725	Eliza	34-34.18-12-38.14-1234.58.1234-16.	78	12	b	BD/c	2007-04-18	York, St Laurence		07/495
+14726	Revolver	34-34.18-12-38.14-14.38-12-	18	12	a	BD/c	2007-02-23	Barrow Gurney		07/266
+14727	Alston	34-34.18-12-38.14-14.38-12-	78	12	b	BD/c	2007-12-18	Dore		08/38
+14728	Bowler	34-34.18-12-38.14-14.38-34-	78	12	b	BD/ac	2010-02-18	Harrow Weald		10/242
+14729	Fielder	34-34.18-12-38.14-14.38-56-	78	12	b	BD/c	2010-02-24	Reading, St Giles		10/269
+14730	Easton Neston	34-34.18-12-38.14-14.58.36-16.	58	18	m	BD/bcd	1975-06-28	Easton Neston		75/650
+14731	Fork Handles	34-34.18-56-1236-1234-18-16-	58	12	b	BD/a	2006-06-28	York, St Laurence		06/668
+14732	Mars	34-34.18-56-18-14-58-14-	18	18	m	D/ac	1997-12-15	Bushey		98/88 347
+14733	Snowball	34-34.18-56-36-34-18-16-	58	12	b	BD/a	2006-12-20	York, St Laurence		07/86
+14734	Clementhorpe	34-34.18-56-36-34-18-56-	78	12	d	D/a	2010-04-07	York, St Lawrence		10/419
+14735	Tricky	34-34.18-56-36-34-18.56-56.	18	18	h	D/a	2002-07-20	Wandsworth, Holy Trinity		02/822
+14736	Coathanger	34-34.18-56-36-34-18.56-56.	78	12	d	D/a	2007-02-11	Burwood, NSW		07/217
+14737	Christmas Eve	34-34.18-56-36-34-58-34-	58	12	f	D/a	1990-12-24	Enderby		91/115
+14738	Octobre	34-34.18-56-36.12-14.38.16-12.	38	18	k	BDE/ac	1998-10-19	Bushey		98/1089
+14739	Bishopthorpe	34-34.18-56-38-12-58-16-	18	12	b	BD/a	2005-12-14	York, St Laurence		06/34
+14740	Wormald's Cut	34-34.18-5678-123678-1234-18.56-56.	18	18	h	D	2010-02-03	York, St Lawrence		10/196
+14741	March	34-34.18.56.12.56.38-34-58-34-	58	18	17452386		1998-07-10	Bucklebury		98/724
+14742	St Saviourgate	34-38.14-56-16-1234-18-16-	58	12	13624857		2009-04-01	York, St Lawrence		09/407
+14743	Terdec	34-38.16-12-18-34-1458-34-	38	18	m	BDK/a	1993-07-31	Birstall (Yorks)		93/904
+14744	X	34-38.16-56-18.34-34.18.56-36.	58	12	c	BDK/a	1985-06-20	Highclere		85/627
+14745	Riddlesdown	34-38.16-56-38-14-18.36.14-	38	18	m	BDK/cdZ	1999-09-23	Spitalfields		99/970
+14746	Birmingham	34-38.18.56-58.36.14-14.58-14-	18	18	m	DK/ac	2000-03-06	Bushey		00/479
+14747	Oakwell Hall	34-58.14-12-1238-12-18.34-16.	18	18	m	BD/ace	1997-02-15	Birstall (Yorks)		97/319 499
+14748	Picturesque	34-58.14-12-16-14-18.36.14.36.	58	18	m	BDK/c	1993-11-27	Rothwell (Yorks)		93/1270
+14749	Marset	34-58.14-12-18-12-38.14-16.	58	18	m	BD/ace	1996-08-24	Durham, St Oswald		96/1010
+14750	Texarkana	34-58.14-12-18-14-1258-14.36.	58	18	m	BDK/cZ	2001-06-25	Spitalfields		01/731
+14751	Lupania	34-58.14-12-18-14-18.36.14-	38	18	m	BD/cdZ	1994-09-03	Birstall (Yorks)		94/1025
+14752	Walton Summit	34-58.14-12-18-14-3458.16-34.	58	18	m	BD/acf	1998-08-20	Walton-le-Dale		98/943 98/1075
+14753	Charleston	34-58.14-12-18-14-58.14-14.	58	12	a	BD/c	2000-03-18	Charleston, SC, St Michael		00/501
+14754	Arkadelphia	34-58.14-12-18-34-38.14-14.	78	18	l	BD/c	1999-12-07	Little Rock, AR		00/376
+14755	Belfast Lough	34-58.14-12-18.34-12.38.16-12.	38	18	m	BDE/c	1989-04-27	West Bridgford		89/485
+14756	Augusta	34-58.14-12-38-34-18-12.36.	18	18	m	BD/ac	2005-12-13	Augusta, GA		06/105
+14757	Belfast	34-58.14-12-38-34-18.36.12-	18	18	m	BD/ac	1979-11-24	Warsop		80/8
+14758	Petts Wood	34-58.14-12-38.12-34.18.36-12.	38	18	m	BDL/ac	2010-11-01	Rotherhithe		10/1159
+14759	Eastgate	34-58.14-12-38.14-34.18-1456-	58	18	m	BDK/ce	2001-04-06	Sleaford		01/433
+14760	Jubbergate	34-58.14-12-38.14-34.18.56.14-	58	18	m	BDEK/ce	2000-02-29	Romford		00/326
+14761	Wiela	34-58.14-58-1236-14-18-34.16.	58	18	m	D/cdX	1995-06-03	Birstall (Yorks)		95/715
+14762	Cantrell	34-58.14-58-1236-14-18.34-16.	58	18	m	D/cde	1997-01-04	Birstall (Yorks)		97/196
+14763	Ricina	34-58.14-58-1236-34-18.36.12-	18	18	m	BD/ac	1993-07-03	Mytholmroyd		93/769
+14764	Norbury	34-58.14-58-18-12-38-14-	78	18	18756243		2011-01-01	Hazel Grove		11/88
+14765	Lewes Castle	34-58.14-58-18-14-18-56.14.	78	12	d	BD/cd	2000-02-05	Henfield		00/201
+14766	Winchelsea Castle	34-58.14-58-18-14-38.14-14.	78	12	d	D/cd	2000-06-05	Fairwarp		00/671
+14767	Starshine	34-58.14-58-18-14-38.14-56.	18	18	k	D/cd	2008-09-27	Birstall		08/1085
+14768	Claude	34-58.14-58-18-14-38.56-56.	18	18	h	D/cd	2009-12-31	Headingley		10/89
+14769	Cocker Hoop	34-58.14-58-18-14-58-14-	58	18	14683725		2011-03-07	Birmingham, St Paul		11/287
+14770	Craven's Diamond	34-58.14-58-18-14-58.14-56.	18	18	16874532		2007-01-12	Barrow Gurney		07/242
+14771	Zabriskie Point	34-58.14-58-18-34-18-34-	18	18	m	D/ac	2007-12-30	Headingley		08/88
+14772	Magnis	34-58.14-58-36.12-34.18.36.12-	18	18	m	BD/ac	1980-12-27	Dore		81/99
+14773	Twenty One	34-58.14-58-38-34-18-1234-	38	18	m	BDG/c	2011-06-09	Weston-super-Mare		11/677
+14774	Araucaria	34-58.14.58-12.36.12-34.18.36-12.	38	18	m	BD/ace	1980-04-22	Shoreditch		80/423
+14775	Tilty	34-58.16-56-18-14-1458.36-16.	58	12	d	D/abcd	1998-06-15	Lower Beeding		98/675
+14776	Petworth Castle	34-58.16-56-18-14-58-12-	58	12	a	D/ac	1999-07-24	Petworth		99/801
+14777	Allington Castle	34-58.16-56-18-14-58-34-	58	12	a	BD/ac	1999-07-19	Maidstone, St Michael		99/801
+14778	Brambletye Castle	34-58.16-56-18-14-58.14-14.	58	12	a	D/ac	1999-11-15	East Grinstead		99/1165
+14779	Denny	34-58.16-56-18-34-18-34.16.	38	18	m	BD/acf	1976-07-31	Easton Neston		76/821
+14780	Ceodre	34-58.16-56-38-12-18.36.12-	18	18	m	BD/ac	1995-04-29	Creswell		95/578
+14781	St Bega	34.56.34.18.56-12.36.12-14.58.14-12.	58	12	14258367		1984-10-20	Chislehurst, St Nicholas		84/1067 85/572
+14782	Aborigine	34.58-14.58-58.36-14-18-36-	78	12	a	DL/c	Spliced			11/340
+14783	Carisbrooke	34.58.36.14-56-18-34-58.36.14.56.	78	12	b	DE/a	1935-08-17	Hazel Grove		35/535 539
+14784	Frederick	3456-3456.18-12-38-14-58-16-	78	12	b	BG/c	2006-05-13	Frederick, MD		06/526
+14785	Orsett	3456-36.14-58-18-14-58-14-	58	12	d	BE/c	2008-03-05	York, St Laurence		08/363
+14786	Southwell	3456-36.14-58-18-14-58-36-	78	18	g	BE/c	2000-01-17	Bushey		00/172
+14787	Guildford	3456-36.14-58-18-14-58.36-3456.	78	12	b	BE/c	2000-06-26	Bushey		00/718
+14788	Manchester	3456-36.18-56-38.14-14.58-14-	18	18	m	BE/c	1999-06-21	Bushey		99/729
+14789	Mid Belfast	36-34.16.58.12-18-12-18.56.12.34.	18	18	m	BDEFKR	Spliced			11/340
+14790	Oxhey	36-36.18-58-18-34-38.16-12.	38	12	b	DES/ac	1998-12-07	Bushey		99/46
+14791	Durham	36-36.18-58-18-34-38.16-12.	38	18	g	DES/ac	1999-04-12	Bushey		99/407
+14792	Raleigh	36-56.14.58-12.38-14-18.56.14-	38	18	m	BE/ce	1994-01-18	Raleigh, NC		94/406
+14793	Bruce	36-56.14.58-56.18-14-3458-12-	18	18	j	BE/ac	2004-11-15	Bushey		05/11
+14794	Sapcote	36-56.14.58-56.18-14-58-16-	18	18	m	BE/ace	1974-10-09	Sapcote, All Saints		74/920
+14795	Melrose School	36-56.14.58-58.16-14-18.36.12-	78	18	h	BE/ac	1994-01-13	Brewster, NY		94/406 843
+14796	Hewetson	36-56.14.58-58.36-14-18-12-	58	18	k	BE/cd	1994-10-24	Marsham		94/1240
+14797	April	36-56.14.58-58.36-14-18-34-	58	18	k	BE/acd	1997-08-11	Bushey		97/1003
+14798	Sheffield	36-56.14.58-58.36-14-18.34-56.	18	18	j	BE/acd	1999-10-12	Bushey		99/1043
+14799	Raise	36-56.14.58-58.36-14-18.36-14.	78	18	h	BEN/cd	1993-07-15	Highclere		93/857
+14800	Callipygean	36-58.14-58-18-14-38.16.34.56.	38	12	b	E/acdZ	1976-06-21	Highclere		76/621
+14801	Cheesecake	36.58-1456-58-18-14-58.14.56-	58	12	c	BKNT/cd	Spliced			09/179
+14802	Habergham Eaves	36.58-1458-12.58.36-12.34.18.56-14.	58	12	a	BKN/cde	1995-11-17	Burnley		95/1273
+14803	Colston	3678-58.14-58-18-14-58.14-1236.	78	12	c	cps/ac	2010-01-22	Barrow Gurney		10/147
+14804	High Dodd	38-34.18-12-36-12-18.56-16.	58	12	b	BDO	1993-08-19	East Ilsley		93/1050
+14805	New Chelsea	38-34.18-12-38-12-38.14-14.	78	12	b	BDL	2011-04-14	East Ilsley		11/466 509
+14806	Ottershaw	38-34.18-56-16-12-58.14-14.	58	12	a	B/ac	1994-09-16	Spitalfields		94/1046
+14807	Ganymede	38-34.18-56-36.14-34.18-14-	78	12	f	B/acd	1995-05-11	Shoreditch		95/641
+14808	Petton	38-38.14-12-18-12-1238.56-56.	18	12	f	BD/a	2009-08-06	Huntsham		09/877
+14809	Liverpool	38-38.14-12-18-12-1458-14-	58	12	c	BD/ac	1999-05-04	Beaconsfield		99/486
+14810	Londinium	38-38.14-12-18-12-1458.36-16.	58	12	f	BD/abd	1987-03-21	Birstall (Yorks)		87/384
+14811	Clapton	38-38.14-12-18-12-38-12-	18	12	f	BD/a	1978-07-21	Harrow Weald		78/713
+14812	Shoreditch	38-38.14-12-18-12-58-16-	78	12	a	BDG/a	1978-06-03	Willesden		78/562
+14813	Zeals Knoll	38-38.14-12-18-12-58.14-14.	58	12	c	BD/ac	1992-05-21	Highclere		92/679
+14814	Great Dodd	38-38.14-12-18-12-58.16-16.	78	12	a	BDG/a	1992-02-20	Highclere		92/354
+14815	Archdeacon	38-38.14-12-18-14-1238-1256-	18	12	b	BDK/c	1989-03-17	Broughton (Staffs)		89/366
+14816	Berlin	38-38.14-12-18-14-3458.16-16.	78	12	a	BDK/Y	2010-08-08	Marston Bigot, Pig-le-Tower		10/865
+14817	Kearsley	38-38.14-12-18-14-38-56-	18	12	b	BDK	1981-09-02	Farnworth-with-Kearsley		81/908
+14818	Tythorn	38-38.14-12-18-14-58-14-	58	12	c	BDK	1957-06-15	Wigston Magna		57/426
+14819	Atomic	38-38.14-12-18-14-58.16-16.	38	12	f	BDKO	1990-12-15	Harwell		91/87
+14820	Walworth	38-38.14-12-18-34-1258.36.12.36.	18	12	f	BD/e	2007-11-26	Walworth		07/1242
+14821	Milton	38-38.14-12-18-34-58-16-	58	12	e	BD/X	2003-02-02	Milton		03/177
+14822	Odell	38-38.14-12-18-34-58.14-14.	58	12	c	BD/c	2009-12-27	Campton		10/366
+14823	Norwich	38-38.14-12-18.14-14.58.14-14.	58	12	c	BDK	2001-01-22	Bushey		01/161
+14824	Fairfield	38-38.14-12-36.14-34.18-14-	58	12	e	BD/cd	1988-04-21	Overton		88/483
+14825	Hackpen	38-38.14-12-36.14-34.18-36-	78	12	c	BDE/d	1987-07-16	Hungerford		87/711
+14826	Lammermuir	38-38.14-12-38.12-34.18-12-	38	12	e	BD	1987-05-21	East Hagbourne		87/605
+14827	Torridon	38-38.14-12-38.12-34.18.56-14.	58	12	b	BDE/a	1988-01-21	Whitchurch (Hants)		88/207
+14828	Glaramara	38-38.14-12-38.14-34.18.36-34.	18	12	b	BD/ade	1988-02-25	Hungerford		88/352
+14829	Huguenot	38-38.14.56-56.18-12-58-14-	58	12	c	B/ac	1998-07-13	Spitalfields		98/776
+14830	Mortimer	38-38.16-56-16-12-18-12-	58	12	e	B	1987-01-29	Stratfield Mortimer		87/200
+14831	Penwood	38-38.16-56-18-12-1458-14-	58	12	c	B/c	1989-03-16	Highclere	1991-04-14	89/347 700 91/591
+14832	Jennifer	38-38.16-56-18-12-58.14-14.	58	12	c	B/c	1987-02-21	Wallingford		87/268
+14833	Yoke	38-38.16-56-18-12-58.14-56.	18	12	b	B/c	1988-11-17	Highclere		89/12
+14834	Granny Smith	38-38.16-56-18-12-58.16-12.	78	12	a	B	1995-10-07	Warnham, St Margaret		95/1153
+14835	Orcadia	38-38.16-56-18-12-58.16-16.	18	18	m	B	2011-11-01	West Bridgford		11/1163
+14836	Bramley	38-38.16-56-18-12-58.16-34.	78	12	a	B/a	2007-03-12	Bushey		07/339
+14837	Stanmore	38-38.16-56-18-12-58.16-3456.	78	12	a	B	2009-10-12	Bushey		09/1218
+14838	Aldenham	38-38.16-56-18-34-1458-1236-	78	12	a	B/a	1992-10-04	Aldenham		92/1178
+14839	Hertford	38-38.16-56-18-34-1458.36.12-	18	12	b	B/a	2007-02-19	Bushey		07/289
+14840	Cockcroft	38-38.16-56-18-34-18-12-	78	12	a	B/a	1985-12-14	Harwell		86/52
+14841	Cassiobury	38-38.16-56-18-34-18-12.36.	18	12	b	B/a	2006-02-20	Bushey		06/234
+14842	Bushey	38-38.16-56-18-34-18-16-	58	12	f	B/a	1990-11-17	Bushey		91/81
+14843	Bucklebury	38-38.16-56-18-34-18-34-	78	12	a	B/a	1986-01-04	Bucklebury		86/118
+14844	Monmouth	38-38.16-56-18-34-18.36.12-	18	12	b	B/a	2001-11-26	Bushey		01/1242
+14845	Cameron	38-38.16-56-18-34-58.14-14.	58	12	c	B/ac	2008-08-24	Sydney, NSW, St James		08/965
+14846	Ingleborough	38-38.16-56-18.34-12.38-14-	78	12	a	B/ac	1986-01-23	Hungerford		86/222
+14847	Skiddaw	38-38.16-56-18.34-14.58-14-	58	12	c	B/ac	1986-07-17	Hungerford		86/760
+14848	Catherine	38-38.16-58-16-14-18.36-14.	58	12	a	B/bcd	1981-02-28	Wallingford		81/324
+14849	Cumberland	38-38.16-58-18-14-38.16-16.	38	12	b	BE/d	1912-03-16	Waltham Abbey		V2/193
+14850	Caldicot	38-38.16-58-18-14-58.14-14.	38	12	b	B/d	1982-03-18	Caldicot		82/320 412
+14851	Wakefield	38-38.18-58-36-14-58-16-	78	12	f	BE/ce	2000-02-14	Bushey		00/227
+14852	Allwood's	38-56.14-56-18-12-1258-14-	58	12	a	B/ac	2004-04-15	Sheffield Cathedral		04/806
+14853	Ewhurst Castle	38-56.14-56-18-12-58.12-14.	58	12	a	B/ac	2001-06-18	Turners Hill		01/710
+14854	Mendip	38-56.14-56-18-12-58.14-14.	58	14	15427386		1984-07-26	Cholsey		84/729
+14855	Leiston	38-56.14-56-18-14-1458-14-	58	12	a	B/ac	1996-08-05	Steyning		96/911 97/500
+14856	Launde	38-56.14-56-18-14-58-12-	58	12	a	B/ac	1995-12-29	Petworth		96/97
+14857	Barrow Gurney	38-56.14-56-18-14-58-16-	78	12	f	BG/ac	1978-09-19	Barrow Gurney		78/892
+14858	Wells	38-56.14-56-18-14-58-34-	58	12	a	B/ac	1990-11-24	Yatton		91/10
+14859	Spitalfields	38-56.14-56-18-14-58.14-14.	58	12	a	B/ac	1981-01-17	Spitalfields		81/188
+14860	Fountains Fell	38-56.14-56-18-14-58.16-16.	78	12	f	BG/ac	2004-01-14	Dore		04/398
+14861	Worle	38-56.14-56-18-34-1458-16-	78	12	f	B/aY	1999-06-30	Barrow Gurney		99/677
+14862	Nethergreen	38-56.14-56-18-34-58.34-14.	58	12	a	B/ac	2011-03-16	Dore		11/339
+14863	Fidele	38-56.14-56-18-34-58.36-16.	78	12	f	BG/ac	2002-07-20	Leicester, St Mary de Castro		02/871 1193
+14864	Pulborough Castle	38-56.14-56-36-12-18-12-	38	12	f	B/a	2004-06-16	Steyning		04/685
+14865	Verdley Castle	38-56.14-56-38-12-18-12-	78	12	f	B/a	2001-11-05	Fairwarp		01/1168
+14866	Gordano	38-56.14-56-38-12-18-34-	78	12	f	B/a	2011-07-22	Barrow Gurney		11/869
+14867	Burghlow Castle	38-56.14-56-38-12-18.36.12.36.	78	12	f	B/a	2000-07-29	Westbourne		00/963
+14868	Lockskinners	38-56.14.56-58.16-34-18-14-	18	12	a	B/ace	1999-11-27	Chiddingstone		99/1187
+14869	Fruitcake	38-56.14.56.12.56.18-14-58-36-	18	12	f	BE/ad	Spliced			11/340
+14870	Enigma	38-58.14-12-1238-34-18-14-	78	12	a	B/c	1999-05-13	Bletchley		99/530 580
+14871	Asti	38-58.14-12-18-14-1258-14-	58	12	c	B/cd	2008-05-14	Heywood		08/622
+14872	February	38-58.14-12-18-14-18-1236-	18	12	f	BG/cd	1997-09-30	Ambrosden		97/1123
+14873	Burnley	38-58.14-12-18-14-58.12-14.	58	12	c	B/cd	1999-12-12	Burnley		99/1258
+14874	Decembre	38-58.14-12-36-14-18-12-	18	12	f	B/c	1997-11-04	Oswaldtwistle		97/1220 01/516
+14875	Rats Castle	38-58.14-12-38-14-18.36.14-	38	12	b	B/cdZ	1999-10-04	Maidstone, St Michael		99/1020
+14876	Newcastle	38-58.14-12-38.12-34.18-14-	78	12	a	B/c	1999-09-21	Bushey		99/969
+14877	Ashes	38-58.14-12-38.12-34.18.36.12-	18	12	b	BK/c	2005-09-13	Dore		05/1039
+14878	Hull Road	38-58.14-58-16.34.12-18-12.36.	18	12	b	BF/ac	2006-03-01	York, St Laurence		06/284
+14879	Old Hooky	38-58.14-58-18-12-1258-14-	58	12	a	B/c	2006-08-25	Weedon Bec		06/1008
+14880	Pimlico	38-58.14-58-18-14-1258-34-	58	12	a	B/c	2010-02-18	Pimlico, St Saviour		10/242
+14881	Canada	38-58.14-58-18-14-1458-14-	58	12	a	B/c	1992-07-01	Vancouver, BC, Cathedral		92/843
+14882	Honey	38-58.14-58-18-14-3458-34-	58	12	a	B/c	2007-06-24	Milton		07/657
+14883	Erdington	38-58.14-58-18-14-38.14.36.14.	78	12	f	B/ce	1982-01-16	Yardley (Warks)		82/216
+14884	Dry Drayton	38-58.14-58-18-14-58-12-	58	12	a	B/ac	1976-11-19	Meldreth		76/1052
+14885	St Wolstan's	38-58.14-58-18-14-58-16-	78	12	f	BG/c	1954-09-11	Wigston Magna		54/612 672
+14886	Highclere	38-58.14-58-18-14-58-34-	58	12	a	B/c	1986-12-04	Highclere		87/60
+14887	Syston	38-58.14-58-18-14-58.14-14.	58	12	a	B/c	1946-06-08	Wigston Magna		46/281 325
+14888	St Wistan's	38-58.14-58-18-14-58.14.36-	58	12	c	B/cdZ	1997-08-30	Wigston Magna		97/1001
+14889	Humberstone	38-58.14-58-18-14-58.16-16.	78	12	f	BG/c	1955-02-19	Wigston Magna		55/132 286
+14890	Whernside	38-58.14-58-18.34-34.58.14-16.	78	12	f	B/c	2004-10-12	Dore		04/1048
+14891	Crowhurst Castle	38-58.14-58-36-14-18.36.12.56.	78	12	a	BK/ac	1999-09-20	Fairwarp		99/1020
+14892	St James	38-58.14-58-36-34-18.36.12-	18	12	b	BK/ac	2005-07-25	Bushey		05/795
+14893	Hartspring	38-58.14-58-38-12-18-12-	78	12	f	B/c	1989-06-24	Aldenham	1990-01-21	89/798 90/205
+14894	Wheathampstead	38-58.14-58-38-12-18-1234-	78	12	f	BD/c	2009-12-14	Bushey		10/44
+14895	Hawksmoor	38-58.14-58-38-12-18-16-	58	12	d	B/c	1988-10-30	Spitalfields		88/1141
+14896	Summerville	38-58.14-58-38-12-18-34-	78	12	f	B/ac	2009-11-17	Augusta, GA		10/92
+14897	July	38-58.14-58-38-12-18.34-34.	18	12	e	B/ac	1994-07-15	Thatcham		94/855
+14898	Clerk's	38-58.14.56-56.18-14-58.14-12.	58	12	c	B/c	2010-05-25	Spitalfields		10/594
+14899	Fratton	38-58.14.56-56.18-14-58.14-16.	78	12	a	B/c	2006-08-20	Portsmouth, St Mary		06/862
+14900	Watership	38-58.16-12-16-14-18-34-	58	12	e	B/bc	1980-04-24	Whitchurch (Hants)		80/442
+14901	Walbury	38-58.16-12-38.12-34.18.36-56.	78	12	d	B/c	1980-05-22	Hungerford		80/533
+14902	Golden Ball	38-58.18-56-36-34-58.36-16.	18	18	m	BE/ac	1976-02-02	West Wycombe		76/226
+14903	Bangor	38-58.18-56-36.14-14.58.14-16.	78	12	a	B/ac	2001-09-10	Bushey		01/1242
+14904	Whitworth	38.56-14-56-38-12-18-34-	78	12	f	BE/a	2006-01-18	Walkden		06/129
+14905	Salisbury	56-34.16.58-56.18-14-1458-56-	58	18	h	BD/ac	2001-06-04	Bushey		01/805
+14906	Orvieto	56-34.16.58-58.16-14-18.36-12.	78	18	h	DL/ac	2002-03-07	Burnley		02/317
+14907	Vierum	56-36.1458-12-18-14-1258.36-16.	58	18	m	BEF/ac	1993-05-08	Belper		93/579
+14908	Ravenfield	56-36.1458-12-18-34-58.16-16.	38	18	m	BFK/a	1996-06-01	Birstall (Yorks)		96/685 97/500
+14909	Quantock	56-36.18-56-16-34-38.16-16.	78	14	17682543		1984-03-15	Whitchurch (Hants)		84/368
+14910	Blackburn	56-36.18-56-38.14-14.58-14-	18	18	m	BF/ac	1999-01-11	Bushey		99/121
+14911	Truro	56-38.18.56-58.36.14-14.58-14-	18	18	m	C/ac	2001-07-16	Bushey		01/851
+14912	Septembre	56-56.14.56-56.38-34-18-34-	38	18	m	cps/a	1998-07-20	Bushey		98/800
+14913	Warborough	56-56.18-12-1238-34-58-14-	58	12	d	B/ac	1991-02-16	Warborough		91/261
+14914	Holywood	56-56.18-12-38-12-38-12-	38	12	f	B/a	1954-01-30	Holywood		54/99 127
+14915	Loddon	56-56.18-12-38-12-38-12-	38	18	l	B/a	1953-03-14	Loddon		53/210 349
+14916	Anniversary	56-56.18-12-38-14-58-16-	78	12	b	BG/ac	1988-09-17	Yatton		88/971
+14917	Hodister	56-56.18-12-38-14-58-16-	78	18	g	BG/ac	2010-09-10	Bilston		10/990
+14918	June	56-56.18-12-38.12-14.58.14-36.	78	12	b	BE/ad	1994-06-10	Thatcham		94/713
+14919	Amersham	56-56.18-56-1236-14-58-14-	58	12	f	cps/ac	2005-10-20	Hughenden		05/1085
+14920	Odo	56-56.18-56-16-14-1258.36.12.36.	18	12	b	cps/ace	2009-07-09	Huntsham		09/777
+14921	Vigo Village	56-56.18-56-16-14-1458-14-	58	12	f	cps/ac	2007-01-23	Maidstone, St Michael		07/167
+14922	Baldock	56-56.18-56-16-14-58-12-	58	12	f	cps/ac	1972-09-23	Rushden (Northants)		72/900
+14923	Swinton	56-56.18-56-16-14-58-12-	58	18	l	cps/ac	1992-11-06	Swinton		92/1179
+14924	Royal Wootton Bassett	56-56.18-56-16-14-58-16-	58	12	a	cps/acX	2011-10-16	Wootton Bassett		11/1137
+14925	Win Hill	56-56.18-56-16-14-58.14-1236.	78	18	j	cps/ac	2011-01-02	Hope		11/88
+14926	Queensbridge	56-56.18-56-16-14-58.14-14.	58	12	f	cps/ac	1980-12-16	Shoreditch		81/52
+14927	Dashwood	56-56.18-56-16-14-58.14-14.	58	18	l	cps/ac	1981-02-07	West Wycombe		81/254
+14928	Upnor	56-56.18-56-16-14-58.14.36.12.	78	12	d	cps/ace	2001-11-24	Frindsbury		01/1240
+14929	Lexington	56-56.18-56-16-14-58.14.36.12.	78	18	j	cps/ace	2001-12-16	Boston, MA, Christ Church		02/243
+14930	Middlethorpe Hall	56-56.18-56-18-14-1458-1236-	18	12	b	cps/ac	2008-12-03	York, St Lawrence		09/11
+14931	May Week	56-56.18-56-18-14-58-14-	18	18	m	cps/ac	1983-06-17	Cambridge, St Mary-the-Great		83/601
+14932	Kinder Scout	56-56.18-56-18-14-58-56-	58	12	f	B/ac	2002-11-20	Dore		02/1234
+14933	Standedge	56-56.18-56-36-14-58-14-	58	12	f	K/a	2003-03-12	Dore		03/298
+14934	Bovey Tracey	56-56.18-56-36-34-1458-14-	58	12	f	cps/ac	2009-10-12	Bovey Tracey		09/1093
+14935	Toton	56-56.18-56-36-34-18-34-	78	12	d	cps/a	1991-09-16	Attenborough		91/996
+14936	New Cumberland	56-56.18-56-36-34-18.34-34.	18	18	h	cps/a	1886-05-31	Burton-upon-Trent, St Paul		BN V5/77
+14937	Portsea	56-56.18-56-36-34-18.34-34.	78	12	d	cps/a	1981-02-21	Portsmouth, St Mary		81/257
+14938	Stratton St Margaret	56-56.18-56-36.14-14.58.14-14.	58	12	f	K/a	1980-08-29	Stratton St Margaret		80/836
+14939	Aldermaston	56-56.18-58-16-12-1238-14-	78	12	b	B/ac	1997-05-24	Aldermaston		97/659
+14940	Ashway	56-56.18.56-56.1238-14-58-12-	58	12	d	cps/ac	1992-09-06	Saddleworth		92/968
+14941	Iddesleigh	56-56.18.56-56.18-12-38-14-	78	12	b	B/ac	1988-09-14	Barrow Gurney	2011-05-02	88/972 11/539
+14942	Herkomer	56-56.18.56-56.18-12-38-14-	78	18	g	B/ac	1991-11-07	Bushey		91/1182
+14943	Katenian	56-56.18.56-56.18-14-58-1236-	78	18	g	cps/ac	1992-05-02	Highworth	2011-09-05	92/526 11/967
+14944	Vermont	56-56.18.56-56.18-14-58-14-	58	18	j	cps/ac			1990-09-26	90/1106
+14945	Amadeus	56-56.18.56-56.18-14-58-36-	78	18	g	E/ac	1991-12-05	Bushey		92/59
+14946	Carlisle	56-56.18.56-56.38.14-14.58.1236-34.	78	18	g	cps/ad	1999-03-15	Bushey		99/315
+14947	Brighton	56-56.18.56-56.38.14-34.18-12-	18	18	m	D/ad	2011-07-21	Drayton		BN V16/384 11/821
+14948	Drumbo	56-56.18.56.12.56.18-14-1238.56.12.56.	18	12	a	E/ad	1990-06-23	Drumbo		90/730
+14949	Chiltern	56-58.14-58-18-14-58.14-14.	58	14	15428367		1981-10-15	Cholsey		81/992
+14950	Purbeck	56-58.16-56-18-14-58.14-14.	58	12	14263785		1984-09-27	Highclere		84/922 85/740
+14951	Great Western	56-58.16.58-56.18.34-14.38.14-34.	78	12	b	K/a	1985-12-04	Barrow Gurney		86/8
+14952	Double Somerleyton	56.34.56.14.56.12.56.18.34.78.34.58.34.56.34.	78	12	f	BE	1984-12-31	Bishopstoke		85/110
+14953	Cowdray Castle	58-34.16-56-18-14-1458.36-16.	58	12	d	D/abcd	2000-03-27	Easebourne		00/402
+14954	Camber Castle	58-34.16-56-18-14-58-34-	58	12	a	BD/ac	1999-06-07	Balcombe		99/656
+14955	Caburn Castle	58-34.16-56-18-14-58.14-14.	58	12	a	D/ac	2000-12-04	Turners Hill		01/11
+14956	Freezywater	58-34.18-12.58.36.12-14.58-14.36.	18	12	b	BDEKT/c	1999-05-08	Enfield, St Andrew		99/507
+14957	Hoof Stones Height	58-34.18-56-16-14-58-16-	78	12	f	BDG/c	1996-02-25	Burnley		96/299
+14958	Westhill	58-34.18-56-16-14-58.14-14.	58	12	a	BD/c	2010-09-20	Wandsworth, Holy Trinity		10/1014
+14959	Alderbury	58-34.18-56-18-12-58-34-	18	12	b	BD/c	1998-08-17	Bushey		98/896
+14960	Golden Bell	58-34.18-56-18-14-1458-14-	18	12	b	BD/c	2006-11-28	Augusta, GA		07/219
+14961	Ripon	58-34.18-56-38.12-14.58-1236-	78	12	c	BD/ac	1999-08-02	Bushey		99/801
+14962	Dunkery	58-34.18.56-12.36-14-58-14-	58	12	a	BD/c	1980-10-16	Cholsey		80/989
+14963	Slack Top	58-36.18.56.12.58.16-34-58.34-16.	78	12	a	BNO/ac	1994-03-09	Heptonstall		94/432
+14964	Dronfield	58-56.14-12.56.18-14-58.14-16.	78	12	f	BC/c	1976-06-19	Dronfield		76/736
+14965	Copertino	58-56.14-1256-18-14-58-14-	58	12	a	BC/c	2002-11-21	Burnley		02/1256
+14966	Gavi	58-56.14-1256-18.34.12-18-16-	58	12	d	BCD/c	2002-08-08	Burnley		02/892
+14967	Noddy	58-56.14-56-1238-34-18-14-	78	12	f	B/c	2011-10-05	Dore		11/1091
+14968	Middleton	58-58.14-58-18-14-58.12-14.	58	12	a	B/cd	1981-12-02	Middleton (Lancs)		82/50
+14969	Village	58-58.14.58-58.1236-34-18-34-	58	12	a	cps/ac	2011-06-22	Dore		11/727
+14970	Bon Jovi	58.34-14-12-18-78-58-56.14.	78	12	a	BD	2008-03-25	Dore		08/391
+14971	Frascati	58.34-1458-12-18-12-38-14-	78	12	d	BD/c	2002-01-10	Burnley		02/110
+14972	Durham White Gold	58.34-1458-12-18-12.34.58.14-14.	58	12	f	BD/c	2002-08-17	Heptonstall		02/916
+14973	Brighouse	58.34-1458-12-18-1234-58-1234-	58	12	f	BD	2010-06-26	Brighouse		10/715
+14974	San Gimignano	58.34-1458-12-18-14-58-14-	58	12	f	BD/c	2001-09-29	Burnley		01/1164
+14975	Valpolicella	58.34-1458-12-18-34.12.58.14-14.	58	12	f	BD/ac	2003-02-27	Burnley		03/273
+14976	Long Ashton	58.34-1458-12-18-78-1458-56.14.	78	12	f	BD	2007-03-09	Barrow Gurney		07/312
+14977	Rest Dodd	58.34-18-12-16-14-58-16-	78	12	f	BDE/e	1991-04-18	East Ilsley		91/520
+14978	Paddington	58.34-18-12-38-14-58-36-	78	12	e	BDN/c	1991-05-17	Buckland-in-the-Moor		91/611
+14979	Zigzag Path	58.34-18-12.58.36.14.78-18-56.14.	78	12	c	BDT	2009-09-02	Dore		09/1095
+14980	Todmorden	58.36-14-1256-18-12-18-14-	78	12	f	BNOP/c	1995-04-30	Todmorden, St Mary		95/550
+14981	Slack Bottom	58.36-14-1256-18-12-38-12-	18	12	e	BNOP	1994-02-01	Heptonstall		94/207
+14982	Sparrowhawk	58.36-14-1256-18-12-58.14-12.	58	12	a	BNOP/ac	1997-07-18	Burnley		97/827
+14983	Heptonstall Moor	58.36-14-1256-18-34-58-14-	58	12	a	BNOP/c	1994-05-16	Heptonstall		94/586 699
+14984	MacKillop	58.36-14-1256-18.34-14.58.14-14.	58	12	a	BNOP/c	1994-12-14	Darling Point, NSW		95/37
+14985	Double Dunkirk	78-78.16-1258-18-1478-38.12-12.	78	12	b	B/e	1984-02-25	Aspley (Notts)		84/323
+
+Little Delight Major methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+14986	Hollesley Little	-38-14-1256-18-12-	56	12	f	B	1988-04-17	Hollesley	88/484
+14987	Heywood Little	-38-14-1256-18-1234-	56	12	f	BD	1992-10-28	Heywood	92/1179
+14988	Spitalfields Festival Little	-38-14-56-18.34-14.	56	12	f	B/ac	2001-05-31	Spitalfields	01/631 755
+14989	Rothamsted Little	-38-14-58-18-34-	16	12	e	B/ac	1971-07-18	Harpenden	71/708 802
+14990	Pagham Little	-38-1456-1256-18-14-	36	12	c	B/d	1990-12-22	Arundel	91/89
+14991	Walkden Little	-38-1456-56-18-12-	16	12	c	B/a	1999-03-21	Walkden	99/387
+14992	Much Hadham Little	-38-1478-78-18-12-	16	12	c	B	1992-10-03	Much Hadham	92/1084
+14993	Elstow Little	-58-14-56-18-14-	56	12	f	BK/c	Spliced		08/1038
+14994	Great Orme Little	-58-14.58-56.18-14-	56	12	14257386		1998-12-31	Burnley	99/95
+14995	King Edward I Little	-58-14.58-56.18.34-14.	56	12	a	DK/ac	1989-10-28	Harpenden	89/1040
+14996	Wimbledon Little	-58-16-12-18-14-	16	12	c	B/c	1971-11-13	Hackney, St John-at-Hackney	71/1079
+14997	Luxembourg Little	56-56.18-56-36-34-	16	12	e	cps/a	1973-03-16	Meldreth	73/292
+14998	Colborne Little	56-56.18-56-36-34-	16	18	k	cps/a	1973-12-08	Warwick, St Nicholas	74/53
+
+Triple-hunt Delight Major methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+14999	Didymous	36-34.16.58-56.18.34-14.38.56-36.	58	14	12386745	1982-10-10	Barrow Gurney	82/946
+

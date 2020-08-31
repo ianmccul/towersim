@@ -1,0 +1,21 @@
+Treble Place Royal methods
+ (treble's path 1 2  1 2  3  3  4 4  5  6  5 6  7  8  7 8  9  10 9 10 10)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+17112	Nightingale	34-34.10.34-34.10.34-34.10.34-34.10.34-34.	10	12	a	2010-08-13	Bishopstoke	08/942 10/889
+
+Treble Place Royal methods
+           (treble's path 1 2 1  2 3  4 3  4 5  6 5    6 7  8 7  8 9  10 10   9 9)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+17113	Percy's Tea Strainer	-30-14-50-16-1270-38-14-50-1690-	90	12	b	2002-07-21	Saltby	02/844
+
+Triple-hunt Treble Place Royal methods
+(treble's path 1 2  1 2  3  3  4 4  5  6  5 6  7  8  7 8  9  10 10 9  9)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+17114	Marengo	56-56.10.34-34.10.34-34.10.34-34.10-10.56.	90	18	1426385790	Spliced	08/942
+

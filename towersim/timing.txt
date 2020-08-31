@@ -1,0 +1,37 @@
+
+When we get a call (go, that's all, bob, splice, etc), we need:
+
+If it is inside the call window then act on it immediately
+
+If we are prior to the call window, then schedule the call for a later row
+and allow cancelling up to the start of the call window
+
+If we are later than the call window, then the call should be disabled
+until the row has started.
+
+
+For 'go' and 'stand' we don't need to disable after the call window, it doesn't really
+matter if it's a bit late.  (although what happens if we have audible calls off?)
+
+
+
+Common controls:
+
+Start
+Rounds
+Stand
+Auto
+Stop
+
+
+
+Method ringing:
+Go
+Calls (bob, single, etc)
+Splice
+auto-go, auto-stand etc
+
+Touch:
+Go
+auto-go
+

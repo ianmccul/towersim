@@ -1,0 +1,8 @@
+"Original","Original",principle,10,"",-10
+"Forward","Forward",principle,10,"",34-34.10
+"Clewer","Clewer",principle,10,"",-14-14-10
+"Duffield","Duffield",principle,10,"",-36-36-10
+"Handsworth","Handsworth",principle,10,"",56.12.56-56.12.56.10
+"Aston","Aston",principle,10,"",56.34.56-56.34.56.10
+"Linkenholt","Linkenholt",principle,10,"",56.14.78.36-58.12.70.38.10
+"Shipway","Shipway",principle,10,"",-30.14-14-14-14.30-14-14-14

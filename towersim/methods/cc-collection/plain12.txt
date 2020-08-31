@@ -1,0 +1,96 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Single-hunt Maximus methods
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3771	Double Norwich Court Bob	-14-3T-1T-10-9T-	1T	1T	j1	1817-01-20	Norwich, St Peter Mancroft		59/202
+3772	Double Birmingham European Summit Bob	-14.5T.36.14.58.9T.70.18.9T-	1T	1T	g	1992-10-15	Birmingham Cathedral		92/1180 93/240
+3773	Double Coslany Court Bob	-14.5T.36.147T.58.169T.70.18.9T-	1T	1T	j	1980-02-05	Shoreditch		80/272
+3774	Plain Bob	-1T-1T-1T-1T-1T-	1T	12	a	1726-02-26	London, St Bride, Fleet Street	1888-03-12	BN V6/617 RW 59/202
+3775	Double Bob	-1T-1T-1T-1T-1T-	ET	12	b	1740-03-24	Southwark, St Saviour		59/202
+3776	Reverse Bob	-1T-1T-1T-1T-1T-	ET	1T	g	1769-05-15	London, St Bride, Fleet Street		59/202
+3777	Single Canterbury Pleasure Bob	34.1T-1T-1T-1T-1T-	1T	12	14257396E8T0	1930-05-24	Canterbury Cathedral		30/342
+3778	Liverpool Bob	3T.14-1T-5T.14.5T.14.5T.14.	5T	12	a	1991-09-28	St Albans Cathedral		91/1039
+
+Single-hunt Little Maximus methods (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3779	Bastow Little Bob	-	12	1T	m	Spliced	53/590
+3780	Kent Little Bob	34.	12	1T	m	Spliced	
+
+Single-hunt Little Maximus methods (treble to 3rds)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3781	Cawston Little Bob	30.1T.	30	12	a	Spliced	03/369
+
+Single-hunt Little Maximus methods (treble to 4ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	Handbells	RW ref
+
+3782	Little Bob	-1T-	14	12	e	1923-05-26	Newcastle-upon-Tyne Cathedral	1968-03-21	23/338 68/291
+3783	Crayford Little Bob	-1T-	14	1T	k	Spliced			53/590
+3784	Blink Little Bob	36.145T-	14	1T	13528T0E4967	Spliced			98/57
+
+Single-hunt Little Maximus methods (treble to 6ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3785	Clink Little Bob	-10-30.149T.	36	1T	196E4T230587	Spliced	98/163
+3786	Gainsborough Little Bob	-1T-1T-	16	12	d1	Spliced	
+3787	Wellington Little Bob	-1T-1T-	16	1T	k2	Spliced	53/590
+
+Single-hunt Little Maximus methods (treble to 8ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3788	Wakefield Little Bob	-14-36-5T-	18	1T	k	1974-07-28	Wakefield Cathedral	74/716
+3789	Burford Little Bob	-1T-1T-1T-	18	12	c2	Spliced		53/590
+3790	Churchill Little Bob	-1T-1T-1T-	18	1T	j1	Spliced		53/590
+
+Single-hunt Little Maximus methods (treble to 10ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3791	Sixty Little Bob	-1T-1238-125890-3T-	90	12	f	Spliced	10/524
+3792	Bampton Little Bob	-1T-1T-1T-1T-	10	12	c	Spliced	53/590
+3793	Cassington Little Bob	-1T-1T-1T-1T-	10	1T	h	Spliced	53/590
+3794	Brookside Little Bob	-1T-38-5890-3T-	90	12	f	Spliced	05/207
+
+Single-hunt Little Maximus methods (treble to 11ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+3795	Penultimus Little Place	-1T-1T-1T-1T-1T.	ET	1T	g	1994-11-05	Grundisburgh	94/1244 95/103
+
+Twin-hunt Maximus methods (a)
+
+No.	Name	Notation	hl	lh	Tower bells	Place	RW ref
+
+3796	Grandsire	3T.1T-1T-1T-1T-1T-1T	-	p	1792-05-07	Southwark, St Saviour	59/202
+
+Twin-hunt Little Plain Maximus methods (b) (treble to 2nds)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3797	Parkway Little Bob	-	123T	12	124638507T9E	Spliced	05/1221
+
+Five-hunt Little Maximus methods (b) (treble to 5ths)
+
+No.	Name	Notation	hl	le	lh	Tower bells	RW ref
+
+3798	Magenta Little Place	56.1T.56.1T.	56	1T	123459E7T608	Spliced	02/549
+
+Non-palindromic single-hunt Maximus methods
+
+No.	Name	Notation	lh	Tower bells	Place	RW ref
+
+3799	Double Ascension Cyclic Bob	-18-1890-189T-1T-9T-ET-5T-345T-145T-1T-14-12	1567890ET234	2002-11-10	London, St Sepulchre	02/1208
+
+Non-palindromic triple-hunt Little Maximus methods (treble to 5ths)
+
+No.	Name	Notation	lh	Tower bells	RW ref
+
+3800	Klink Little Place	56.1T.56.1T.56.123T.56.1T-1T	124E5937T608	Spliced	09/303
+

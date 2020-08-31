@@ -1,0 +1,418 @@
+Copyright Central Council of Church Bell Ringers, December 2011
+Alliance Major methods (treble dodging in 1-2)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16172	Fuller	-34-14.58.36-18-	58	18	h	D	1994-05-14	Northampton, St Peter	94/588
+16173	Leigh Sinton	-38-14-16-1258-	18	12	c	B	1995-02-01	Leigh Sinton, Lower House Farm	95/277
+16174	Teasmade	-38-14-16.34.58-	78	12	d	B	1994-08-27	Cockermouth	94/1074
+16175	Drill Bit	-38-14.58.36.14.58.12.	78	12	f	B	1993-10-01	Loughborough Bellfoundry	93/1270
+16176	Chuck Key	-58-14.58.36-58-	18	12	e	cps/c	1993-08-25	Loughborough Bellfoundry	93/1051
+16177	Howden	-58-14.58.36-58-	78	12	f	cps/c	1996-04-08	Howden	96/442
+16178	St Mary Magdalen	-58-14.58.36.14.38-	58	12	a	cps/c	1994-12-18	Oxford, St Mary Magdalen	95/119
+16179	Circular Saw	34-58.16-16-58.16.	78	12	a	D/c	1994-05-03	Birmingham, St Martin	94/588 699
+16180	Shifnal	56-56.18-18-18-	18	12	a	cps/a	1960-09-17	Shifnal	60/666
+
+Alliance Major methods (treble dodging in 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16181	Banwell	-18-12-38.14.58.16.	78	12	b	B	1976-05-01	Rayleigh	76/437
+
+Alliance Major methods (treble dodging in 4-5)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16182	Eskimo Blue Day	56.14-36.18.36-58.34.	18	18	m	M	1993-04-15	Basingstoke, St Michael	93/448
+
+Alliance Major methods (treble dodging in 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16183	Coventry Centenary	-18-1238-1458-12-	58	12	d	cps/a	2007-11-19	Allesley	07/1217
+16184	Reuben	-18-18-18-34-	78	12	b	cps/a	2000-05-29	Basford	00/599
+16185	Huncoat	-18-18-18.34-34.	18	12	a	cps/a	1957-01-25	Accrington	57/83 96
+16186	Stuart Gull	-18-18-18.34-34.	78	12	b	cps/a	2001-07-28	Clayworth	01/854
+
+Alliance Major methods (treble dodging in 1-2 and 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16187	Farnworth	-36-14-58-36-18-	78	12	b	E/d	1983-08-06	Farnworth-with-Kearsley	83/728
+16188	Three Elms	-38-14-1256-16-58-	58	12	f	B	1995-04-14	Burghill	95/523
+16189	Redditch	-38-14-56-36-1458-	58	12	f	B/a	1986-05-24	Redditch	86/590
+16190	Wealdstone	-38-14-58-16-18-	78	12	b	B/c	1976-03-26	Harrow Weald	76/331
+16191	Hoghton	-38-14-58-16-58.14.	38	12	e	B/c	1983-08-05	Hoghton	83/728
+16192	Hallow	-56-14.56-58.36.14.58-	18	18	m	cps/ac	1986-10-18	Hallow	86/986
+16193	Stretford	-58-14-56-16-1458-	58	12	f	B/c	1983-08-02	Stretford	83/728
+16194	Cumberland	-58-14-56-36-18-	18	12	c	B/c	1972-08-24	East Coker	72/885
+16195	Westhoughton	-58-14-56-36-18-	78	12	d	B/c	1984-08-04	Westhoughton	84/942
+16196	Zanussi	-58-14.58-12.38.14.58.14.	58	18	l	B/c	1987-07-29	Edgbaston	87/753
+16197	Horwich	-58-14.58-58.16-18-	18	18	j	cps/c	1983-08-02	Horwich	83/728
+16198	Burton Latimer	-58-14.58-58.36.12.58.34.	18	18	m	cps/c	1997-12-09	Burton Latimer	98/136
+16199	Daventry	-58-14.58-58.36.14.58-	18	18	m	cps/c	1975-05-03	Easton Neston	75/470
+16200	Easton Neston	-58-14.58-58.36.14.58-	78	12	a	cps/c	1975-04-12	Easton Neston	75/470
+16201	Harborne	-58-1458-58-36.14.58-	18	18	m	cps/c	1987-06-28	Harborne	87/668
+16202	Newchurch	-58-1458-58-38.14.38.16.	38	18	m	cps/c	1983-08-06	Newchurch Kenyon	83/728
+16203	Croston	-58-16-12-18-58-	58	12	d	B/c	1983-08-03	Croston	83/728
+16204	Ormskirk	-58-16-12-38.14.58.16.	78	12	b	B/c	1983-07-30	Ormskirk	83/728
+16205	Dore	34-38.14-12-16-18-	58	12	c	BDK	Spliced		11/514
+16206	Summer	38-38.14-12-18-38-	18	12	f	BD	1982-07-24	Netherton	82/720
+16207	Gadolinium	38-58.14-58-18-58.14.	58	12	a	B/c	2008-12-11	Shoreditch	09/33
+16208	Burghill Valley	56-56.18-56-1236-58-	58	12	f	cps/a	2007-05-24	Burghill	07/618
+16209	Heywood	56-56.18-56-16-1458-	58	12	f	cps/a	1992-12-18	Heywood	93/100
+16210	Ashton-under-Lyne	58-58.14-58-36-1458-	78	12	a	cps/c	1983-08-01	Ashton-under-Lyne, St Peter	83/728
+16211	Walkden	58-58.14.58-58.36.14.58.14.	78	12	f	cps/c	1983-08-04	Walkden	83/728
+
+Alliance Major methods (treble dodging in 1-2 and 5-6)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16212	Missus Woo	-38-14-18-12-18-	78	12	b	B	2005-05-16	Claybrooke	94/558 05/549
+16213	Umbrage	-38-18-16-12-38-	78	12	b	B	2006-08-21	Packwood	06/884
+
+Alliance Major methods (treble dodging in 1-2 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16214	Northfield	-36-1458-36-1458-36-	18	12	a	E	1996-11-05	Shirley	96/1225
+16215	Bicentennial	-36-1458-36-1458-36-	78	12	b	E	1988-08-11	Darling Point, NSW	76/736 88/1043
+16216	Bushey	-36-18-36-18-36-	78	12	b	E	1991-10-03	Bushey	91/1086
+16217	Zatisall	-38-14-1238-1458-34-	58	12	d	B	2007-06-18	Wellesbourne	07/689
+16218	Venus	-38-14-16-58-3456-	18	12	e	B	2006-10-16	Stoke (Warks)	06/1055
+16219	Ellesbourne	-38-14-18-38-14-	78	12	b	B/c	2004-01-19	Wellesbourne	04/398
+16220	Ionian	-38-14-18-58-12-	58	12	d	B	2004-08-23	Wellesbourne	04/876
+16221	Dorridge	-38-14-36-1458-12-	18	12	c	B	2004-07-19	Allesley	04/757
+16222	Keresley	-38-1456-36-1458-12-	58	12	f	B/a	2005-08-22	Allesley	05/870
+16223	Kenilworth	-38-1456-36-1458-34-	58	12	f	B	2005-02-21	Packwood	05/232
+16224	Godstone	-56-16-36-38-34-	78	12	f	cps/a	1994-04-09	Godstone	94/512
+16225	Thorner	-56-16.58.16-58.14-14.	78	12	a	cps/ac	1996-06-22	Thorner	96/732 97/500 575
+16226	Solent	-58-14.58.36-58-56-	78	12	f	D/c	1996-02-23	Brockenhurst	96/302
+16227	Ashurst	-58-14.58.36-58.34-34.	78	12	f	cps/ac	1996-06-16	Brockenhurst	96/738
+16228	Bristol	-58-14.58.36.14.58-14-	18	18	k	cps/c	1955-10-26	Loughborough Bellfoundry	55/722 736
+16229	Mendip	-58-14.58.36.14.58-14-	78	12	f	cps/c	2007-03-11	Marston Bigot, Pig-le-Tower	07/312
+16230	Bushmills	34-58.14-36.12.58.14-12.	38	18	m	DK/c	1995-07-08	Todmorden, St Mary	95/840
+16231	Clairedom	56-56.18-18-18-34-	78	12	b	cps/a	2009-06-06	Harbury	09/659
+16232	Dains	56-56.18-18-18.34-34.	18	12	a	cps/a	1894-11-08	Crawley (Sussex)	BN V13/307
+
+Alliance Major methods (treble dodging in 3-4 and 5-6)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16233	IDTD	-18-12-18-14-38-	78	12	b	B/d	2004-11-22	Stoke (Warks)	04/1188
+16234	Auld	-18-12-36-14-1258-	78	12	d	B/c	2004-02-16	Whilton	04/225
+
+Alliance Major methods (treble dodging in 3-4 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16235	Quinton	-1458-56-36-18-16-	58	12	b	B	2005-12-12	Stoke (Warks)	06/9
+16236	Oval Triumph	-18-58-16-38-14-	78	12	b	cps/c	2005-09-19	Packwood	05/965
+
+Alliance Major methods (treble dodging in 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16237	Perivale	-14-38-14-38-14-	38	12	b	N/c	1955-03-12	Accrington	55/179 184
+16238	Priors Marston	-18-18.34-34.18-1256-	78	12	b	cps/a	2005-11-21	Wellesbourne	05/1188
+16239	Wellesbourne	-18-18.34-34.18.56-56.	78	12	b	D/a	2006-12-18	Wellesbourne	07/32
+16240	Quasimodo	-18-18.34-34.18.56.12.56.	78	12	b	cps/a	2006-07-17	Claybrooke	06/741
+
+Alliance Major methods (treble dodging in 1-2, 3-4 and 5-6)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16241	Floreal	-3458-14.58-58.36.14-14.38-	18	12	e	D/c	2002-05-10	Middleton (Lancs)	02/683
+16242	Vendemiaire	-3458-14.58-58.36.14-14.38-	18	18	k	D/c	2002-11-08	Middleton (Lancs)	02/1288
+16243	Schofield	-38-14-12-18-12-38-	38	12	f	BD	1976-12-27	Irchester	77/53
+16244	Jorvik	-38-14-12-38.14-12.58.16.	78	12	b	BDK	2011-03-31	York, St Lawrence	11/390
+16245	Skipton	-38-14-1256-16-12-58-	58	12	f	B	2010-08-01	Skipton	10/841
+16246	Hill Ridware	-38-14-1256-16-12-58.16.	78	12	d	B	2004-04-24	Yardley (Warks)	04/686
+16247	Padiham	-38-14-1256-16-34-18-	18	12	c	B/a	2010-07-10	Padiham	10/762
+16248	Caistor	-38-14-1256-16-34-18-	78	12	d	B/a	2010-07-10	Tanworth in Arden	10/762
+16249	Heptonstall	-38-14-1256-16-34-58-	58	12	f	B/a	2011-01-31	Heptonstall	11/158
+16250	September	-38-14-56-16-12-1458-	58	12	f	B/a	1994-09-23	Tring	94/1071
+16251	Hyperion	-38-14-56-16-12-58.36.	78	12	d	B/a	2008-11-27	Leicester, St Mary de Castro	08/1307
+16252	Uxbridge	-38-14-56-16-34-1458-	58	12	f	B/a	1997-12-11	Leicester, St Mary de Castro	98/88
+16253	Swaton Fen	-38-14-56-36-34-18-	78	12	d	BD/a	2011-07-09	Castor	11/774
+16254	Cross Keys	-38-14-58-16-12-3458.16.	78	12	b	B/c	1999-05-21	Haselbech	99/604
+16255	June	-38-14-58-16-12-38.14.	78	12	b	B/c	1994-06-06	Harpenden	94/710
+16256	Petriburg	-38-14-58-16-12-38.1456.	78	12	b	B/c	1999-01-26	Burton Latimer	99/192
+16257	Catmose	-38-14-58-16-14-38.14.	38	12	f	B/ce	2003-02-25	Burton Latimer	03/250
+16258	Xocourt	-38-14.58.12-18-12-58.16.	78	12	d	BD	2007-11-06	West Bridgford	07/1171
+16259	Cotton	-38-1456-1256-1238-14-38-	78	12	b	B/d	2002-04-27	Nuthall	02/707
+16260	Smith	-38-1456-1256-16-12-1458-	78	12	d	B	2005-08-06	Hedon	05/967
+16261	Hexham	-38-1456-1256-16-34-1458-	78	12	d	B	2005-06-23	Leicester, St Mary de Castro	05/719
+16262	Haselbech	-38-1456-56-16-34-18-	58	12	f	B/a	1998-08-21	Haselbech	98/922
+16263	Golden	-58-14.58-12.38-14-1458-	58	12	f	BK/c	2008-09-27	Great Berkhamsted	08/1087
+16264	Leicester	-58-14.58-56.38-14-1458-	18	12	b	cps/ac	2002-08-17	Leicester, St Mary de Castro	02/970
+16265	Shelford	-58-14.58-56.38.14-14.58-	18	12	b	cps/ac	2002-08-06	West Bridgford	02/970
+16266	Pluviose	-58-14.58-58.1236-14-18.36.	18	12	b	cps/cd	2002-02-08	Middleton (Lancs)	02/316
+16267	Prairial	-58-14.58-58.1236-34-38-	38	12	f	B/c	2002-06-14	Middleton (Lancs)	02/736
+16268	Thermidor	-58-14.58-58.16-14-1238-	58	18	h	cps/cd	2002-07-26	Farnworth-with-Kearsley	02/845
+16269	Ventose	-58-14.58-58.16-14-38-	58	12	c	cps/cd	2002-03-08	Middleton (Lancs)	02/364
+16270	Abbeyfields	-58-14.58-58.16-14-38-	58	18	h	cps/cd	1998-12-23	Meldreth	99/96
+16271	Ampton Bog	-58-14.58-58.16-14-38.16.	78	12	a	cps/cd	1993-11-06	Westbury (Wilts)	94/134
+16272	Glamis	-58-14.58-58.16-34-58-	38	18	m	D/c	1996-08-04	Shoreditch	96/1031
+16273	Whittington	-58-14.58-58.16-34-58.12.	38	18	m	D/c	2006-07-30	Weston-super-Mare	06/789
+16274	Germinal	-58-14.58-58.16.34-34.18-	18	12	d	D/c	2002-04-26	Farnworth-with-Kearsley	02/522
+16275	Fructidor	-58-14.58-58.16.34-34.18-	18	18	j	D/c	2002-09-13	Middleton (Lancs)	02/1065
+16276	Nivose	-58-14.58-58.36-14-1258-	78	12	a	cps/c	2002-01-11	Middleton (Lancs)	02/188
+16277	Anniversary	-58-14.58-58.36-14-58-	78	12	a	cps/c	2001-06-16	Sevenoaks	01/685
+16278	Brumaire	-58-14.58-58.36-34-1238-	38	18	l	B/c	2002-11-29	Middleton (Lancs)	03/6
+16279	Windsor	-58-14.58-58.36-34-1258-	18	18	m	B/c	1997-11-21	Haselbech	97/1277
+16280	Messidor	-58-14.58-58.36.14-14.38.16.	38	18	g	cps/c	2002-07-12	Middleton (Lancs)	02/918
+16281	Upper Armley	-58-14.58-58.36.14-14.58.14.	78	12	a	cps/c	1990-05-19	Upper Armley	90/610
+16282	Frimaire	-58-14.58-58.36.14-34.58.14.	38	18	m	cps/ac	2002-12-13	Middleton (Lancs)	03/56
+16283	Hadrians Wall	-58-14.58-58.36.14-34.58.34.	18	18	m	cps/ac	1998-10-27	Allendale	98/1161
+16284	Lee Wood	-58-14.58.12-18-14-58-	58	12	f	BT/c	2011-05-05	Heptonstall	11/537
+16285	Rochester	-58-16-12-38.14-14.38-	18	12	a	B/cd	2004-07-17	Chiddingstone	04/758
+16286	December	-58-16-12-38.14-14.38-	78	12	b	B/cd	1994-12-17	Essendon	95/39
+16287	De Castro	34-58.14-12-18-12-58.16.	38	18	m	BD/c	2000-07-20	Leicester, St Mary de Castro	00/818
+16288	Peterborough	34-58.14-12-38.12-14.38.16.	38	18	m	BD/c	1999-01-05	Burton Latimer	99/192
+16289	Evergreen	38-38.16-56-16-12-18-	58	12	e	B	2011-10-27	Heptonstall	11/1162
+16290	August	38-58.14-12-38-14-18-	38	12	e	B/c	1994-08-15	Bushey	94/925
+16291	Contraflow	56-56.18.56-56.18.34-34.18-	18	12	a	cps/a	1988-07-09	Wetherby	88/754
+
+Alliance Major methods (treble dodging in 1-2, 3-4 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16292	Ketteringham	-38-14-1256-16.34.18-16-	58	12	b	B	2011-08-10	Birstall (Yorks)	11/894
+16293	Malaya	-38-14-1258-16-58-16-	78	12	b	BD/Y	1979-11-04	Windsor, St John-the-Baptist	80/7
+16294	Buckminster	-38-14-1258-36-1458-16-	78	12	b	BDE	2002-07-03	Sproxton	02/737
+16295	Thistleton	-38-14-56-16-1258-14-	58	12	f	B/ac	2002-10-02	Sproxton	02/1066
+16296	Colsterworth	-38-14-56-16.34.58-14-	58	12	f	B/ac	2003-02-05	Sproxton	03/201
+16297	Sproxton	-38-14-58-16-1238-14-	78	12	b	B/c	2002-05-01	Sproxton	02/524
+16298	Plantagenet	-38-14-58-16-1458-36-	78	12	b	BL/c	2010-01-02	Church Lawford, Plantagenet Ring	10/67
+16299	Harrow Weald	-38-14-58-16-18-14-	18	12	a	B/c	1975-10-31	Harrow Weald	75/1041
+16300	Tiggrrr	-38-14-58-16-18-34-	78	12	b	B/c	2001-08-12	York, St Laurence	01/952
+16301	Leamington Priors	-38-14-58-16-18-56-	78	12	b	BD/c	2006-05-15	Claybrooke	06/525
+16302	Boston	-58-14.58-58.36-58-14-	78	12	a	cps/c	1991-12-29	Boston, MA, Advent	92/134
+16303	Valhalla	-58-14.58-58.36.14.58.34-34.	18	18	m	cps/ac	1994-01-08	Clitheroe	94/160
+16304	Yate	-58-14.58.12.58.16-1258-34-	18	18	m	T/ac	2007-05-21	Claybrooke	07/589
+16305	Romulan	34-58.14-12-38.14.38-34.56.	38	18	m	BD/c	1997-10-26	Saddleworth	97/1199
+
+Alliance Major methods (treble dodging in 1-2, 4-5 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16306	Brunley	-38-18.56.18.36.18-58.14-14.	78	12	d	BE/c	1994-06-17	Burnley	94/735
+16307	Burnley	-56-14-36.18.36-58-34-	18	18	m	M/a	1997-05-16	Burnley	97/612
+16308	Proper Job	34-58.16-36.18.36-18.36-12.	78	12	c	DLS/ac	2011-11-06	Burnley	11/1186
+16309	Ightenhill	58.36-14.56.38.16.38.14.58.16-16.	58	12	e	EGNO	1994-10-14	Burnley	94/1192
+
+Alliance Major methods (treble dodging in 1-2, 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16310	Carriage Hall	-38-14-16-12-58-16-	58	12	b	B	2011-02-26	Plumtree	11/259
+16311	Newbury	-56-14.58.36.14-34.58-34-	18	18	m	B/ac	1989-05-18	East Ilsley	89/552
+16312	Highclere	-58-14.58.36.14-34.58-34-	18	18	14273586		1988-03-17	Highclere	88/419
+
+Alliance Major methods (treble dodging in 3-4, 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+16313	Normanton	-18-12-18-12-18-12-	18	18	m	BD/a			1983-06-12	83/605
+16314	Morland	-18-12-38-14-58-16-	78	12	b	BG/c	1972-11-28	Nottingham, St Peter		73/51
+16315	Bushey and Oxhey	38.14-12-38-12-38-14-	78	12	f	B/c	2008-08-18	Bushey		08/966
+
+Alliance Major methods (treble double dodging in 1-2 and single dodging in 3-4, 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16316	Whetstone	-38-56-14-56-18-12-18-34-	78	12	b	BE/a	1976-07-23	Harrow Weald	76/842
+
+Alliance Major methods (treble dodging in 1-2, 3-4, 5-6 and double dodging in 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16317	Headstone	-38-14-1256-16-34-18-16-34-	58	12	b	BE/a	1976-05-28	Harrow Weald	76/842
+16318	Atlantic	-38-14-1258-36-14-58-16-12-	78	12	b	BDE/ae	1976-07-04	Windsor, St John-the-Baptist	76/696
+16319	San Francisco	-38-14-58-1236-14-58-16-12-	78	12	b	BE/ace	2006-05-10	Stubbington, Midways Campanile	06/526
+16320	The Reverend Geoffrey and Mrs Ruth Stickland	-38-14-58-16-12-38-14-1234-	78	12	b	BD/c	2009-07-26	Northampton, Holy Sepulchre	09/854
+16321	Centenarian	-38-14-58-16-12-38-14-34-	78	12	b	BU/ac	Spliced		00/891
+16322	Colston Bassett	-38-14-58-16-12-38-14-56-	78	12	b	BD/c	1993-03-20	Colston Bassett	93/425
+16323	Wingrave	-38-14-58-16-12-38-1456-56-	78	12	b	BD/c	2010-01-02	Wingrave	10/195
+16324	Dexter Sheppard	-38-14-58-16-14-38-3456-56-	18	12	f	B/aceY	2007-07-10	Reading, St Mary	07/908
+16325	Ghirardelli	-38-14-58-16-14-58-1236-12-	78	12	b	BL/ace	2007-05-20	Stubbington, Narnia Campanile	07/716
+16326	Crocodile Hunter	-38-14-58-16-14-58-36-12-	78	12	b	BL/ace	2006-10-14	Stubbington, Narnia Campanile	06/1056
+16327	Greater London	38-38.14-12-38.14-14.58.16-16-12.	58	12	f	BDK/de	2004-07-27	Barking (Essex)	04/781
+
+Alliance Major methods (treble double dodging in 1-2 and 3-4 and single dodging in 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16328	Dewsbury	-58-58-14.58-58-58.36.14-14.58-14-	18	18	m	P/c	2004-08-29	Dewsbury	04/903
+
+Alliance Major methods (treble triple dodging in 1-2 and single dodging in 3-4, 5-6 and 7-8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16329	Kenton	56-56.38.56-56.14-58-16-12-38-14-	78	12	b	BE/ac	1976-12-31	Harrow Weald	77/99
+
+Alliance Major methods
+(treble's path 1 2 1  2 3  4  5  6  7  8 7  7)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16330	Bradman	-58-14.58.36.14.58-14.	78	12	f	cps/c	1997-04-30	Sydney, NSW, St Philip	97/537
+
+Alliance Major methods
+  (treble's path 1 2 3  4 4    5  6 6    7  8 7    8 8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16331	Xtraordinary	-18-1458.36-3456.18-1256-	78	12	b	C/ac	2007-02-19	Claybrooke	07/242
+
+Alliance Major methods
+(treble's path 1 2 1  2 3  4 3  4 5  6 7    8 7  7)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16332	Hampshire	-38-14-58-16-1238-14.	78	12	b	B/c	1991-05-16	Hungerford	90/1085 91/590
+
+Alliance Major methods
+                               (treble's path 1 2 1  2 3    4 5  6 5  6 7  8 7  7)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16333	Kent County Association of Change Ringers	-38-1458-16-12-38-14.	78	12	b	B/c	Spliced	95/693
+
+Alliance Major methods
+           (treble's path 1 2 1  2 3  4  3    4  5    6  5  6  7    8    7    7)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	Handbells	RW ref
+
+16334	Coventry	-36-14-1258-1236-14-58-36.	78	12	b	E/d	2008-11-01	Wellesbourne		08/1205
+16335	Great Western	-36-14-58-36-14-58-1236.	78	12	b	E/ad	2010-08-21	Swindon, St Mark		10/942
+16336	Bledlow Ridge	-36-14-58-36-14-58-36.	78	12	b	E/d	2003-11-28	Bledlow		03/1217
+16337	Rippingale	-38-14-12-18-14-18-12.	78	12	b	BD/d	2011-10-20	Saltby		11/1138
+16338	Queenstown	-38-14-12-38.14-12.58.16-	78	12	b	BDK	2011-03-03	Finedon		11/287
+16339	Ytterbium	-38-14-1256-16-12-58.16-	78	12	d	B	2009-06-02	West Bridgford		09/636
+16340	Southam	-38-14-1256-16-34-18-12.	78	12	d	B/a	2010-10-18	Southam		10/1109
+16341	Morton Fen	-38-14-1256-16-34-18-56.	78	12	d	BD/a	2011-06-01	Sproxton		11/654
+16342	Milton Manor	-38-14-1258-16-14-38-12.	78	12	b	BDO/a	2006-07-02	Milton		06/694
+16343	Jonah	-38-14-1258-16-14-38-1256.	78	12	b	BDO	2004-01-15	Wingrave		04/128 252
+16344	Iltios	-38-14-1258-16-14-38-34.	78	12	b	BDO	2011-02-27	Milton		11/258
+16345	Quartino	-38-14-1258-16-14-38-3456.	78	12	b	BDO/a	2011-07-31	Milton		11/845
+16346	Huntsham	-38-14-1258-16-14-38-56.	78	12	b	BDO	2005-01-11	Huntsham		05/330
+16347	Semiquincentenary	-38-14-1258-36-14-58-16.	78	12	b	BDE/e	1997-11-16	Boston, MA, Advent		97/1280
+16348	Putney	-38-14-58-1236-14-58-16.	78	12	b	BE/ce	2006-09-16	Warwick, St Nicholas		06/1081
+16349	Yorkshire	-38-14-58-16-12-38-14.	78	12	b	B/c	2009-07-16	Kintbury		03/465 09/1046
+16350	Chipping Campden	-38-14-58-16-14-1258-1236.	78	12	b	B/ace	2008-12-29	Chipping Campden		09/56
+16351	Century	-38-14-58-16-14-58-36.	78	12	b	BL/ce	2003-10-08	Jesmond		03/1044
+16352	East Coast	-38-14-58-16-14-58.12.36.	78	12	b	B/ace	2009-10-09	Berwick upon Tweed		09/1169
+16353	Ladybird	-38-14-58-36-14-18-12.	78	12	b	BO/ac	2011-01-05	Milton		11/87
+16354	Xylophone	-38-14-58-36-14-18-1234.	78	12	b	BDO/c	2011-07-03	Milton		11/750
+16355	Vitznau	-38-14-58-36-14-18-1256.	78	12	b	BO/c	2011-05-15	Milton		11/562
+16356	Dame Allan's	-38-14-58-36-14-18-34.	78	12	b	BO/c	2005-11-26	Fenham		05/1252
+16357	Kate & William	-38-14-58-36-14-18-3456.	78	12	b	BO/ac	2011-04-27	Milton		11/581
+16358	Rigi	-38-14-58-36-14-18-56.	78	12	b	BDO/c	2011-03-27	Milton		11/365
+16359	Septuaginta	-38-14-58-36-14-18.34-	78	12	b	BO/c	2005-10-03	Aldermaston		05/1015
+16360	Orbe	-38-14-58-36-14-18.3456-	78	12	b	BO/ac	2011-06-12	Milton		11/678
+16361	White	-38-14-58-36-14-18.56.34.	78	12	b	BO/ac	2011-05-25	Milton		11/630
+16362	Burnley Charter	-58-14.58-58.36.14-14.58-14.	78	12	a	cps/c	1994-08-11	Burnley		94/925
+16363	Wellington and Bubble	-58-16-12-38-14-58-16.	78	12	b	B/cdY			2004-10-27	05/36
+
+
+Alliance Major methods
+           (treble's path 1 2  1  2  3  4  3  4  5  6  7  8  7  6  5  5)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16364	Spitalfields Festival	-58-14.58-56.38-58-14.58-	56	12	a	cps/ac	1995-06-01	Spitalfields	95/713
+16365	Spitalfields	-58-14.58-58.36.14.58.36.12.58.14.	56	18	h	cps/ac	1999-10-25	Spitalfields	99/1091
+16366	Fazeley Junction	34-34.18-12-38.14.58.16-18-	58	18	m	BD	1997-03-01	Kingsbury (Warks)	97/344
+
+Alliance Major methods
+    (treble's path 1 2  1 2 3  4  3 4  5  4  5  6  5 6  7  8 7  8 8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16367	West Bridgford	-58-14.58-56.18.36.18.34-14.58-14-	18	18	m	FM/ac	2010-02-02	West Bridgford	10/644
+
+Alliance Major methods
+           (treble's path 1 2 3    4 3  2  1  2 3    4 5  6 7    8 7  6  5  6 7    8 8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16368	Burnley Supreme	-14-58.14.58-1458-36-1458-14.58.14-58-	18	18	m	P/c	1993-08-29	Burnley	93/976
+16369	Easton Neston Supreme	-1458-58.14.58-14-36-58-14.58.14-1458-	18	18	m	P/c	1975-08-30	Easton Neston	75/789
+
+Alliance Major methods
+(treble's path 1 2 1  2 3  4  5  4  3  4 5  6 5  4  5  6  7  8 7  8 8)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16370	Kalymnos	-58-14.56.38.16.58-36-14.38.16.34.58-14-	18	18	m	CKMS/ac	1995-02-05	Burnley	95/326
+
+Alliance Major methods
+(hunt bell's path 2 1  2 3  4  3 4  5  6  5 6  7  8 7  7)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+16371	Premier	58-14.58-58.36.14-14.58-14.	78	12	42163857	2004-01-27	Bushey	04/181
+
+Little Alliance Major methods (treble to 4ths dodging in 1-2)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16372	Avon Link Little	-34-18-	34	12	13826745		Spliced		05/306
+16373	Rapunzel Little	-38-14-	34	12	e	B	2002-04-27	Longstanton	02/520
+16374	Sorbet Little	-38-14.56.	34	12	e	B	Spliced		03/345
+16375	Craftey Cockney Little	36-56.14.58.	14	12	b	BE	Spliced		11/87
+16376	Croydon Little	36-56.14.58.	14	18	g	BE	Spliced		10/1230
+16377	The Power Little	58-56.18-	34	12	f	B/c	Spliced		11/87
+
+Little Alliance Major methods (treble to 4ths dodging in 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16378	Bobby Dazzler Little	-1456-12-	14	18	m	B	Spliced	11/87
+16379	Alan's 70th Birthday Little	-1458-1258-	14	18	m	T	Spliced	06/598
+
+Little Alliance Major methods (treble to 6ths dodging in 1-2 and 3-4)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16380	Northrepps Little	-56-14-56-38-	16	18	k	cps/a	1939-03-11	Marsham	39/168
+16381	Shelforde Little	-58-14.58-56.38.14.	56	12	a	cps/ac	2007-06-05	West Bridgford	07/642
+16382	Belfast Little	34-58.14-12-38.14.	36	18	m	BD/c	1997-06-20	Haselbech	97/732
+16383	Spin Dryer Little	38-38.14-56-18-	16	12	f	B/a	2008-06-09	Walworth	08/698
+16384	Checkendon Little	56-56.18.56-56.18-	16	18	h	cps/a	1939-03-04	East Dereham	39/167
+
+Little Alliance Major methods (treble to 7ths dodging in 1-2, 3-4 and 5-6)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16385	Rushden Little	-38-14-12-1238-14-38.	78	12	b	BD/d	Spliced	03/611
+
+Little Alliance Major methods
+       (treble's path 1 2 1  2 3  4 5  6  5 5)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16386	Deddington Little	-58-16-38.14-	58	12	d	cps/c	1962-03-31	Deddington	62/242
+
+Little Alliance Major methods
+    (treble's path 1 2 1  2 3  4 3  4 5  6 5  5)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	Place	RW ref
+
+16387	Heywood Little	-56-14-56-38-34.	58	18	l	cps/a	1992-12-29	Heywood	93/125
+
+Little Alliance Major methods
+  (treble's path 1 2 1  2 3  4 3  4 5    6 5  6 5  5)
+
+No.	Name	Notation	hl	le	lh	fch	Tower bells	RW ref
+
+16388	Davey Little	-58-16-12-1238-14-34.	58	12	d	BU/ac	Spliced	04/8
+
+Twin-hunt Alliance Major methods (b) (treble dodging in 1-2 and 7-8)
+
+No.	Name	Notation	hl	le	lh	Tower bells	Place	RW ref
+
+16389	Gorhambury	-56-16-18-38-16-	1458	12	12463785	2007-03-10	St Albans, St Michael	07/313
+
