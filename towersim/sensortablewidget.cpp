@@ -5,6 +5,8 @@
 #include <QDropEvent>
 #include <QLabel>
 #include <QApplication>
+#include <QMimeData>
+#include <QDrag>
 #include "common/trace.h"
 
 SensorTableWidget::SensorTableWidget(QWidget* Parent)
@@ -31,7 +33,7 @@ SensorTableWidget::SetSensorWindow(SensorTab* SensorWindow_)
 
 void SensorTableWidget::dragEnterEvent(QDragEnterEvent* event)
 {
-   if (event->mimeData()->hasText() && 
+   if (event->mimeData()->hasText() &&
        SensorWindow->HasAttachedSensor(event->mimeData()->text().toStdString()))
    {
       event->setDropAction(Qt::MoveAction);
@@ -41,19 +43,19 @@ void SensorTableWidget::dragEnterEvent(QDragEnterEvent* event)
    {
       event->ignore();
    }
-   
+
 }
 
 
 void
 SensorTableWidget::dragMoveEvent(QDragMoveEvent* event)
 {
-   if (event->mimeData()->hasText() && 
+   if (event->mimeData()->hasText() &&
        SensorWindow->HasAttachedSensor(event->mimeData()->text().toStdString()))
    {
       event->setDropAction(Qt::MoveAction);
       this->selectRow(this->rowAt(event->pos().y()));
-      
+
       QTableWidgetItem* Item = this->itemAt(event->pos());
       if (Item != DragSelectedItem)
       {
@@ -80,7 +82,7 @@ SensorTableWidget::dragLeaveEvent(QDragLeaveEvent*)
    }
 }
 
-void 
+void
 SensorTableWidget::mousePressEvent(QMouseEvent *event)
 {
    if (event->button() == Qt::LeftButton)
@@ -100,12 +102,12 @@ SensorTableWidget::mouseMoveEvent(QMouseEvent *event)
    int distance = (event->pos() - DragStartPos).manhattanLength();
    if (distance >= QApplication::startDragDistance())
    {
-            
+
       QLabel* Label = dynamic_cast<QLabel*>(this->childAt(DragStartPos));
       if (!Label)
       {
 	 return;
-      } 
+      }
 
       QPoint hotSpot = DragStartPos - Label->pos();
 
@@ -121,11 +123,11 @@ SensorTableWidget::mouseMoveEvent(QMouseEvent *event)
       drag->setHotSpot(hotSpot);
 
       Qt::DropAction dropAction = drag->exec(Qt::MoveAction);  // blocks
-      
+
       if (dropAction == Qt::MoveAction)
       {
 	 QTableWidgetItem* Where = this->itemAt(DragStartPos);
-	 
+
 	 this->setCellWidget(this->row(Where), this->column(Where), NULL);
 	 //delete Label;
 	 Label->close();
@@ -135,7 +137,7 @@ SensorTableWidget::mouseMoveEvent(QMouseEvent *event)
 
 void SensorTableWidget::dropEvent(QDropEvent* event)
 {
-   if (event->mimeData()->hasText() && 
+   if (event->mimeData()->hasText() &&
        SensorWindow->HasAttachedSensor(event->mimeData()->text().toStdString()))
    {
       QTableWidgetItem* Item = this->itemAt(event->pos());
@@ -172,7 +174,7 @@ void SensorTableWidget::dropEvent(QDropEvent* event)
       TRACE(Item)(Label);
       SensorWindow->AssociateSensor(event->mimeData()->text().toStdString(), Bell);
       this->setCurrentCell(Bell-1, 0);
-      
+
       event->acceptProposedAction();
    }
 }

@@ -14,7 +14,7 @@ int const RestartAfterSkip = 4;  // restart sounding the bell after this many ch
 std::vector<int> LastRowOfSensorInput(16,-1000);
 
 RingingScheduler::RingingScheduler(boost::shared_ptr<RingingServer> Server_)
-   : Server(Server_), 
+   : Server(Server_),
      NumBells(8),
      HandstrokeGap(1.0),
      HandstrokeError(0.0),
@@ -26,25 +26,25 @@ RingingScheduler::RingingScheduler(boost::shared_ptr<RingingServer> Server_)
 {
 }
 
-boost::posix_time::time_duration 
+boost::posix_time::time_duration
 RingingScheduler::Gap() const
 {
    double gap = 60.0 / ((NumBells + 0.5*HandstrokeGap) * ChangesPerMinute);
-   return boost::posix_time::microseconds(gap*1E6);
+   return boost::posix_time::microseconds(long(gap*1e6));
 }
 
-boost::posix_time::time_duration 
+boost::posix_time::time_duration
 RingingScheduler::Gap(int NBells) const
 {
    double gap = 60.0 / ((NBells + 0.5*HandstrokeGap) * ChangesPerMinute);
-   return boost::posix_time::microseconds(gap*1E6);
+   return boost::posix_time::microseconds(long(gap*1E6));
 }
 
-boost::posix_time::time_duration 
+boost::posix_time::time_duration
 RingingScheduler::RowDuration() const
 {
    double RowGap = 60.0 / ChangesPerMinute;
-   return boost::posix_time::microseconds(RowGap*1E6);
+   return boost::posix_time::microseconds(long(RowGap*1E6));
 }
 
 boost::posix_time::time_duration
@@ -132,14 +132,14 @@ RingingScheduler::Finish()
    Server->Finish();
 }
 
-inline 
-boost::posix_time::time_duration 
-abs(boost::posix_time::time_duration td) 
-{ 
-   if (td.is_negative()) 
-      return td *= -1; 
-   return td; 
-} 
+inline
+boost::posix_time::time_duration
+abs(boost::posix_time::time_duration td)
+{
+   if (td.is_negative())
+      return td *= -1;
+   return td;
+}
 
 void
 RingingScheduler::NextRow(change c)
@@ -171,15 +171,15 @@ RingingScheduler::NextRow(change c)
       // Generate the random component of the error
       double DelayFracRandom = this->RandomGen() * ErrorFrac;
       boost::posix_time::time_duration NextError = this->Gap() * (DelayFrac+DelayFracRandom);
-      
+
       if (RestartAfterSkip > 0 && (Rows.size() - LastRowOfSensorInput[Bell-1]) <= RestartAfterSkip)
       {
-         Server->CancelBell(Bell, NextRowStart+NextError, NextError, 
+         Server->CancelBell(Bell, NextRowStart+NextError, NextError,
                             DelayFracRandom, Rows.size()-1, i+1);
       }
       else
       {
-         Server->RingBell(Bell, NextRowStart+NextError, NextError, 
+         Server->RingBell(Bell, NextRowStart+NextError, NextError,
                           DelayFracRandom, Rows.size()-1, i+1);
       }
       RowTime.back().push_back(NextRowStart);
@@ -193,14 +193,14 @@ RingingScheduler::NextRow(change c)
       NextRowStart += this->Gap() * HandstrokeGap;
 }
 
-boost::posix_time::ptime 
+boost::posix_time::ptime
 RingingScheduler::NextRowStarts() const
 {
    return NextRowStart;
 }
 
-     
-int 
+
+int
 RingingScheduler::NumRows()
 {
    return Rows.size();
@@ -238,7 +238,7 @@ RingingScheduler::RingSensor(std::string const& Sensor, boost::posix_time::ptime
                double cpm = 60 / (BellGap*AutoStartRow.size() + 0.5*HandstrokeGap);
                this->SetChangesPerMinute(cpm);
                // now guess when the bell will sound again
-               boost::posix_time::ptime NextRing = At + boost::posix_time::milliseconds(Gap2*1000);
+               boost::posix_time::ptime NextRing = At + boost::posix_time::milliseconds(long(Gap2*1000));
                // and which place bell are we?
                int Place = AutoStartRow.place_of(Bell);
                this->Begin(NextRing - (Place-1)*this->Gap(AutoStartRow.size()), AutoStartRow);
@@ -293,7 +293,7 @@ RingingScheduler::RingSensor(std::string const& Sensor, boost::posix_time::ptime
       if (Row >= LastRowOfSensorInput[Bell-1]+RestartAfterSkip)
       {
          int Place = Rows[Row].place_of(Bell);
-         Server->CancelBell(Bell, RowTime[Row][Place-1], RowError[Row][Place-1], 
+         Server->CancelBell(Bell, RowTime[Row][Place-1], RowError[Row][Place-1],
                             RowFracError[Row][Place-1],
                             Row, Place);
       }
@@ -309,7 +309,7 @@ RingingScheduler::GetTimeOfRow(double AtRow) const
    DEBUG_CHECK(!Rows.empty());
    int Row = int(floor(AtRow));
    double Frac = AtRow - Row;
-   
+
    boost::posix_time::ptime Time;
    if (Row < 0)
    {
@@ -356,20 +356,20 @@ RingingScheduler::Call(double AtRow, std::string const& str1, std::string const&
 {
    Server->Call(this->GetTimeOfRow(AtRow), str1, str2, str3);
 }
-     
-void 
+
+void
 RingingScheduler::CallGoMethod(double AtRow, std::string const& Name)
 {
    Server->CallGoMethod(this->GetTimeOfRow(AtRow), Name);
 }
-      
-void 
+
+void
 RingingScheduler::CallSpliceMethod(double AtRow, std::string const& Name)
 {
    Server->CallSpliceMethod(this->GetTimeOfRow(AtRow), Name);
 }
 
-char BellVocalNames[][9] = {"one", "two", "three", "four", "five", "six", 
+char BellVocalNames[][9] = {"one", "two", "three", "four", "five", "six",
 			    "seven", "eight", "nine", "ten", "eleven",
 			    "twelve", "thirteen", "fourteen", "fifteen", "sixteen"};
 
@@ -515,8 +515,8 @@ RingingScheduler::MeanSensorErrorMS(int n) const
    double TotalTimeSq = 0;
 
    // iterate over all sensors
-   for (std::map<std::string, SensorRecordListType>::const_iterator I = SensorRecords.begin(); 
-        I != SensorRecords.end(); 
+   for (std::map<std::string, SensorRecordListType>::const_iterator I = SensorRecords.begin();
+        I != SensorRecords.end();
         ++I)
    {
       // iterate over at most n records, in reverse order from the end
@@ -539,7 +539,7 @@ RingingScheduler::MeanSensorErrorMS(int n) const
    return TotalCount == 0 ? 0.0 : std::sqrt(TotalTimeSq / TotalCount);
 }
 
-void 
+void
 RingingScheduler::SetSensorErrorMultiplier(double x)
 {
    ErrorFromSensorMultiplier = x;

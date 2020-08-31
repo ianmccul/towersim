@@ -1,25 +1,50 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'statisticswindow.h'
 **
-** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.7)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include "statisticswindow.h"
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'statisticswindow.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.7. It"
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.12.8. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_StatisticsWindow_t {
+    QByteArrayData data[4];
+    char stringdata0[33];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_StatisticsWindow_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_StatisticsWindow_t qt_meta_stringdata_StatisticsWindow = {
+    {
+QT_MOC_LITERAL(0, 0, 16), // "StatisticsWindow"
+QT_MOC_LITERAL(1, 17, 6), // "Update"
+QT_MOC_LITERAL(2, 24, 0), // ""
+QT_MOC_LITERAL(3, 25, 7) // "Analyze"
+
+    },
+    "StatisticsWindow\0Update\0\0Analyze"
+};
+#undef QT_MOC_LITERAL
+
 static const uint qt_meta_data_StatisticsWindow[] = {
 
  // content:
-       6,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        2,   14, // methods
@@ -29,22 +54,22 @@ static const uint qt_meta_data_StatisticsWindow[] = {
        0,       // flags
        0,       // signalCount
 
- // slots: signature, parameters, type, tag, flags
-      18,   17,   17,   17, 0x0a,
-      27,   17,   17,   17, 0x0a,
+ // slots: name, argc, parameters, tag, flags
+       1,    0,   24,    2, 0x0a /* Public */,
+       3,    0,   25,    2, 0x0a /* Public */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
-};
-
-static const char qt_meta_stringdata_StatisticsWindow[] = {
-    "StatisticsWindow\0\0Update()\0Analyze()\0"
 };
 
 void StatisticsWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
-        StatisticsWindow *_t = static_cast<StatisticsWindow *>(_o);
+        auto *_t = static_cast<StatisticsWindow *>(_o);
+        Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->Update(); break;
         case 1: _t->Analyze(); break;
@@ -54,29 +79,26 @@ void StatisticsWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     Q_UNUSED(_a);
 }
 
-const QMetaObjectExtraData StatisticsWindow::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
+QT_INIT_METAOBJECT const QMetaObject StatisticsWindow::staticMetaObject = { {
+    &QObject::staticMetaObject,
+    qt_meta_stringdata_StatisticsWindow.data,
+    qt_meta_data_StatisticsWindow,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
-const QMetaObject StatisticsWindow::staticMetaObject = {
-    { &QObject::staticMetaObject, qt_meta_stringdata_StatisticsWindow,
-      qt_meta_data_StatisticsWindow, &staticMetaObjectExtraData }
-};
-
-#ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &StatisticsWindow::getStaticMetaObject() { return staticMetaObject; }
-#endif //Q_NO_DATA_RELOCATION
 
 const QMetaObject *StatisticsWindow::metaObject() const
 {
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
 void *StatisticsWindow::qt_metacast(const char *_clname)
 {
-    if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_StatisticsWindow))
-        return static_cast<void*>(const_cast< StatisticsWindow*>(this));
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_StatisticsWindow.stringdata0))
+        return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
 
@@ -89,7 +111,12 @@ int StatisticsWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
         _id -= 2;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 2;
     }
     return _id;
 }
+QT_WARNING_POP
 QT_END_MOC_NAMESPACE

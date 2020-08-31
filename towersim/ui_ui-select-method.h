@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ui-select-method.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.8
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,19 +10,16 @@
 #define UI_UI_2D_SELECT_2D_METHOD_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QDialog>
-#include <QtGui/QDialogButtonBox>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QPushButton>
-#include <QtGui/QStackedWidget>
-#include <QtGui/QVBoxLayout>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QStackedWidget>
+#include <QtWidgets/QVBoxLayout>
 #include "lineedit.h"
 
 QT_BEGIN_NAMESPACE
@@ -335,34 +332,34 @@ public:
 
     void retranslateUi(QDialog *SelectMethodDialog)
     {
-        SelectMethodDialog->setWindowTitle(QApplication::translate("SelectMethodDialog", "Select Method", 0, QApplication::UnicodeUTF8));
-        FilterPrinciples->setText(QApplication::translate("SelectMethodDialog", "Principles", 0, QApplication::UnicodeUTF8));
-        FilterPlain->setText(QApplication::translate("SelectMethodDialog", "Plain", 0, QApplication::UnicodeUTF8));
-        FilterTrebleBob->setText(QApplication::translate("SelectMethodDialog", "Treble Bob", 0, QApplication::UnicodeUTF8));
-        FilterDelight->setText(QApplication::translate("SelectMethodDialog", "Delight", 0, QApplication::UnicodeUTF8));
-        FilterSurprise->setText(QApplication::translate("SelectMethodDialog", "Surprise", 0, QApplication::UnicodeUTF8));
-        FilterOther->setText(QApplication::translate("SelectMethodDialog", "Other", 0, QApplication::UnicodeUTF8));
-        FilterSelectAll->setText(QApplication::translate("SelectMethodDialog", "All", 0, QApplication::UnicodeUTF8));
-        FilterSelectNone->setText(QApplication::translate("SelectMethodDialog", "None", 0, QApplication::UnicodeUTF8));
-        Select03->setText(QApplication::translate("SelectMethodDialog", "Singles", 0, QApplication::UnicodeUTF8));
-        Select04->setText(QApplication::translate("SelectMethodDialog", "Minimus", 0, QApplication::UnicodeUTF8));
-        Select05->setText(QApplication::translate("SelectMethodDialog", "Doubles", 0, QApplication::UnicodeUTF8));
-        Select06->setText(QApplication::translate("SelectMethodDialog", "Minor", 0, QApplication::UnicodeUTF8));
-        Select07->setText(QApplication::translate("SelectMethodDialog", "Triples", 0, QApplication::UnicodeUTF8));
-        Select08->setText(QApplication::translate("SelectMethodDialog", "Major", 0, QApplication::UnicodeUTF8));
-        Select09->setText(QApplication::translate("SelectMethodDialog", "Caters", 0, QApplication::UnicodeUTF8));
-        Select10->setText(QApplication::translate("SelectMethodDialog", "Royal", 0, QApplication::UnicodeUTF8));
-        Select11->setText(QApplication::translate("SelectMethodDialog", "Cinques", 0, QApplication::UnicodeUTF8));
-        Select12->setText(QApplication::translate("SelectMethodDialog", "Maximus", 0, QApplication::UnicodeUTF8));
-        Select13->setText(QApplication::translate("SelectMethodDialog", "Sextuples", 0, QApplication::UnicodeUTF8));
-        Select14->setText(QApplication::translate("SelectMethodDialog", "Fourteen", 0, QApplication::UnicodeUTF8));
-        Select15->setText(QApplication::translate("SelectMethodDialog", "Septuples", 0, QApplication::UnicodeUTF8));
-        Select16->setText(QApplication::translate("SelectMethodDialog", "Sixteen", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("SelectMethodDialog", "Search:", 0, QApplication::UnicodeUTF8));
-        MethodSearch->setPlaceholderText(QApplication::translate("SelectMethodDialog", "Search", 0, QApplication::UnicodeUTF8));
-        EditMethod->setText(QApplication::translate("SelectMethodDialog", "Edit method...", 0, QApplication::UnicodeUTF8));
-        NewMethod->setText(QApplication::translate("SelectMethodDialog", "New method...", 0, QApplication::UnicodeUTF8));
-        LoadCCCollection->setText(QApplication::translate("SelectMethodDialog", "Load CC Collection", 0, QApplication::UnicodeUTF8));
+        SelectMethodDialog->setWindowTitle(QApplication::translate("SelectMethodDialog", "Select Method", nullptr));
+        FilterPrinciples->setText(QApplication::translate("SelectMethodDialog", "Principles", nullptr));
+        FilterPlain->setText(QApplication::translate("SelectMethodDialog", "Plain", nullptr));
+        FilterTrebleBob->setText(QApplication::translate("SelectMethodDialog", "Treble Bob", nullptr));
+        FilterDelight->setText(QApplication::translate("SelectMethodDialog", "Delight", nullptr));
+        FilterSurprise->setText(QApplication::translate("SelectMethodDialog", "Surprise", nullptr));
+        FilterOther->setText(QApplication::translate("SelectMethodDialog", "Other", nullptr));
+        FilterSelectAll->setText(QApplication::translate("SelectMethodDialog", "All", nullptr));
+        FilterSelectNone->setText(QApplication::translate("SelectMethodDialog", "None", nullptr));
+        Select03->setText(QApplication::translate("SelectMethodDialog", "Singles", nullptr));
+        Select04->setText(QApplication::translate("SelectMethodDialog", "Minimus", nullptr));
+        Select05->setText(QApplication::translate("SelectMethodDialog", "Doubles", nullptr));
+        Select06->setText(QApplication::translate("SelectMethodDialog", "Minor", nullptr));
+        Select07->setText(QApplication::translate("SelectMethodDialog", "Triples", nullptr));
+        Select08->setText(QApplication::translate("SelectMethodDialog", "Major", nullptr));
+        Select09->setText(QApplication::translate("SelectMethodDialog", "Caters", nullptr));
+        Select10->setText(QApplication::translate("SelectMethodDialog", "Royal", nullptr));
+        Select11->setText(QApplication::translate("SelectMethodDialog", "Cinques", nullptr));
+        Select12->setText(QApplication::translate("SelectMethodDialog", "Maximus", nullptr));
+        Select13->setText(QApplication::translate("SelectMethodDialog", "Sextuples", nullptr));
+        Select14->setText(QApplication::translate("SelectMethodDialog", "Fourteen", nullptr));
+        Select15->setText(QApplication::translate("SelectMethodDialog", "Septuples", nullptr));
+        Select16->setText(QApplication::translate("SelectMethodDialog", "Sixteen", nullptr));
+        label->setText(QApplication::translate("SelectMethodDialog", "Search:", nullptr));
+        MethodSearch->setPlaceholderText(QApplication::translate("SelectMethodDialog", "Search", nullptr));
+        EditMethod->setText(QApplication::translate("SelectMethodDialog", "Edit method...", nullptr));
+        NewMethod->setText(QApplication::translate("SelectMethodDialog", "New method...", nullptr));
+        LoadCCCollection->setText(QApplication::translate("SelectMethodDialog", "Load CC Collection", nullptr));
     } // retranslateUi
 
 };

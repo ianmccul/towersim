@@ -24,4 +24,4 @@ HEADERS         = towersim-mainwindow.h ringingscheduler.h methodcontroller.h \
                   movingaveragegraphicsview.h labels.h movingaveragetab.h lineedit.h
 INCLUDEPATH    += ../
 LIBS           += -lboost_date_time -lboost_system
-QT             += network
+QT             += network widgets

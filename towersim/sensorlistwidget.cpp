@@ -7,6 +7,7 @@
 #include <QApplication>
 #include <QPixmap>
 #include <QLabel>
+#include <QMimeData>
 #include "common/trace.h"
 #include "common/alphanum.h" // for alphanumeric sort
 
@@ -90,7 +91,7 @@ void
 SensorListWidget::dragEnterEvent(QDragEnterEvent* event)
 {
    // we probably should check the event source
-   if (event->mimeData()->hasText() && 
+   if (event->mimeData()->hasText() &&
        SensorWindow->HasAttachedSensor(event->mimeData()->text().toStdString())
        && event->source() != this)
    {
@@ -115,7 +116,7 @@ void SensorListWidget::dropEvent(QDropEvent *event)
       event->acceptProposedAction();
 
    // we probably should check the event source
-   if (event->mimeData()->hasText() && 
+   if (event->mimeData()->hasText() &&
        SensorWindow->HasAttachedSensor(event->mimeData()->text().toStdString())
        && event->source() != this)
    {
@@ -124,7 +125,7 @@ void SensorListWidget::dropEvent(QDropEvent *event)
    }
 }
 
-void 
+void
 SensorListWidget::mousePressEvent(QMouseEvent *event)
 {
    if (event->button() == Qt::LeftButton)
@@ -141,7 +142,7 @@ SensorListWidget::mouseMoveEvent(QMouseEvent *event)
    int distance = (event->pos() - DragStartPos).manhattanLength();
    if (distance >= QApplication::startDragDistance())
    {
-            
+
       QListWidgetItem* WItem = this->itemAt(DragStartPos);
       if (!WItem)
 	 return;
@@ -164,7 +165,7 @@ SensorListWidget::mouseMoveEvent(QMouseEvent *event)
       drag->setHotSpot(hotSpot);
 
       Qt::DropAction dropAction = drag->exec(Qt::MoveAction);  // blocks
-      
+
       if (dropAction == Qt::MoveAction)
       {
          this->removeItemWidget(WItem);

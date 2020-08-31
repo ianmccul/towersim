@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ui-towersim-mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.7
+** Created by: Qt User Interface Compiler version 5.12.8
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,35 +10,34 @@
 #define UI_UI_2D_TOWERSIM_2D_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QComboBox>
-#include <QtGui/QDockWidget>
-#include <QtGui/QDoubleSpinBox>
-#include <QtGui/QFormLayout>
-#include <QtGui/QFrame>
-#include <QtGui/QGridLayout>
-#include <QtGui/QGroupBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QListView>
-#include <QtGui/QMainWindow>
-#include <QtGui/QPushButton>
-#include <QtGui/QRadioButton>
-#include <QtGui/QScrollArea>
-#include <QtGui/QSlider>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QSpinBox>
-#include <QtGui/QStackedWidget>
-#include <QtGui/QStatusBar>
-#include <QtGui/QTimeEdit>
-#include <QtGui/QToolBar>
-#include <QtGui/QToolButton>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QDoubleSpinBox>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QListView>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QScrollArea>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QStackedWidget>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTimeEdit>
+#include <QtWidgets/QToolBar>
+#include <QtWidgets/QToolButton>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 #include "sensorlistwidget.h"
 #include "sensortablewidget.h"
 #include "strikingwindow.h"
@@ -348,6 +347,9 @@ public:
         horizontalLayout_24->addWidget(label_20);
 
         CCStyle = new QComboBox(centralwidget);
+        CCStyle->addItem(QString());
+        CCStyle->addItem(QString());
+        CCStyle->addItem(QString());
         CCStyle->setObjectName(QString::fromUtf8("CCStyle"));
         CCStyle->setEnabled(false);
         sizePolicy1.setHeightForWidth(CCStyle->sizePolicy().hasHeightForWidth());
@@ -699,7 +701,6 @@ public:
         Call12->setMinimumSize(QSize(10, 30));
         Call12->setAutoFillBackground(false);
         Call12->setAutoDefault(false);
-        Call12->setDefault(false);
         Call12->setFlat(false);
 
         horizontalLayout->addWidget(Call12);
@@ -2238,8 +2239,8 @@ public:
         sizePolicy1.setHeightForWidth(ChangesPerMinute->sizePolicy().hasHeightForWidth());
         ChangesPerMinute->setSizePolicy(sizePolicy1);
         ChangesPerMinute->setMinimumSize(QSize(70, 0));
-        ChangesPerMinute->setMinimum(4);
-        ChangesPerMinute->setValue(28);
+        ChangesPerMinute->setMinimum(4.000000000000000);
+        ChangesPerMinute->setValue(28.000000000000000);
 
         horizontalLayout_3->addWidget(ChangesPerMinute);
 
@@ -2439,6 +2440,7 @@ public:
         QObject::connect(RingingSpeedFromSensors, SIGNAL(valueChanged(int)), spinBox, SLOT(setValue(int)));
         QObject::connect(spinBox, SIGNAL(valueChanged(int)), RingingSpeedFromSensors, SLOT(setValue(int)));
 
+        Call12->setDefault(false);
         stackedWidget->setCurrentIndex(0);
 
 
@@ -2447,135 +2449,133 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Bell Ringing Simulator", 0, QApplication::UnicodeUTF8));
-        actionFile->setText(QApplication::translate("MainWindow", "Quit", 0, QApplication::UnicodeUTF8));
-        actionListen_for_connections->setText(QApplication::translate("MainWindow", "Listen for connections", 0, QApplication::UnicodeUTF8));
-        actionSetup_local_sensors->setText(QApplication::translate("MainWindow", "Configure local sensors...", 0, QApplication::UnicodeUTF8));
-        actionAbout_Bell_Ringing_Simulator->setText(QApplication::translate("MainWindow", "About Bell Ringing Simulator", 0, QApplication::UnicodeUTF8));
-        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences...", 0, QApplication::UnicodeUTF8));
-        actionSensors->setText(QApplication::translate("MainWindow", "Sensors", 0, QApplication::UnicodeUTF8));
-        RingingStart->setText(QApplication::translate("MainWindow", "Start", 0, QApplication::UnicodeUTF8));
-        RingingAuto->setText(QApplication::translate("MainWindow", "Auto", 0, QApplication::UnicodeUTF8));
-        RingingRounds->setText(QApplication::translate("MainWindow", "Rounds", 0, QApplication::UnicodeUTF8));
-        RingingStand->setText(QApplication::translate("MainWindow", "Stand", 0, QApplication::UnicodeUTF8));
-        RingingStop->setText(QApplication::translate("MainWindow", "Stop", 0, QApplication::UnicodeUTF8));
-        label_19->setText(QApplication::translate("MainWindow", "Number of bells:", 0, QApplication::UnicodeUTF8));
-        label_20->setText(QApplication::translate("MainWindow", "Call style:", 0, QApplication::UnicodeUTF8));
-        CCStyle->clear();
-        CCStyle->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Up", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("MainWindow", "Down", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("MainWindow", "Place bells", 0, QApplication::UnicodeUTF8)
-        );
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Bell Ringing Simulator", nullptr));
+        actionFile->setText(QApplication::translate("MainWindow", "Quit", nullptr));
+        actionListen_for_connections->setText(QApplication::translate("MainWindow", "Listen for connections", nullptr));
+        actionSetup_local_sensors->setText(QApplication::translate("MainWindow", "Configure local sensors...", nullptr));
+        actionAbout_Bell_Ringing_Simulator->setText(QApplication::translate("MainWindow", "About Bell Ringing Simulator", nullptr));
+        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences...", nullptr));
+        actionSensors->setText(QApplication::translate("MainWindow", "Sensors", nullptr));
+        RingingStart->setText(QApplication::translate("MainWindow", "Start", nullptr));
+        RingingAuto->setText(QApplication::translate("MainWindow", "Auto", nullptr));
+        RingingRounds->setText(QApplication::translate("MainWindow", "Rounds", nullptr));
+        RingingStand->setText(QApplication::translate("MainWindow", "Stand", nullptr));
+        RingingStop->setText(QApplication::translate("MainWindow", "Stop", nullptr));
+        label_19->setText(QApplication::translate("MainWindow", "Number of bells:", nullptr));
+        label_20->setText(QApplication::translate("MainWindow", "Call style:", nullptr));
+        CCStyle->setItemText(0, QApplication::translate("MainWindow", "Up", nullptr));
+        CCStyle->setItemText(1, QApplication::translate("MainWindow", "Down", nullptr));
+        CCStyle->setItemText(2, QApplication::translate("MainWindow", "Place bells", nullptr));
+
         groupBox_3->setTitle(QString());
-        CC1->setText(QApplication::translate("MainWindow", "1", 0, QApplication::UnicodeUTF8));
-        CC2->setText(QApplication::translate("MainWindow", "2", 0, QApplication::UnicodeUTF8));
-        CC3->setText(QApplication::translate("MainWindow", "3", 0, QApplication::UnicodeUTF8));
-        CC4->setText(QApplication::translate("MainWindow", "4", 0, QApplication::UnicodeUTF8));
-        CC5->setText(QApplication::translate("MainWindow", "5", 0, QApplication::UnicodeUTF8));
-        CC6->setText(QApplication::translate("MainWindow", "6", 0, QApplication::UnicodeUTF8));
-        CC7->setText(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
-        CC8->setText(QApplication::translate("MainWindow", "8", 0, QApplication::UnicodeUTF8));
-        CC9->setText(QApplication::translate("MainWindow", "9", 0, QApplication::UnicodeUTF8));
-        CC10->setText(QApplication::translate("MainWindow", "0", 0, QApplication::UnicodeUTF8));
-        CC11->setText(QApplication::translate("MainWindow", "E", 0, QApplication::UnicodeUTF8));
-        CC12->setText(QApplication::translate("MainWindow", "T", 0, QApplication::UnicodeUTF8));
-        CC13->setText(QApplication::translate("MainWindow", "A", 0, QApplication::UnicodeUTF8));
-        CC14->setText(QApplication::translate("MainWindow", "B", 0, QApplication::UnicodeUTF8));
-        CC15->setText(QApplication::translate("MainWindow", "C", 0, QApplication::UnicodeUTF8));
-        CC16->setText(QApplication::translate("MainWindow", "D", 0, QApplication::UnicodeUTF8));
+        CC1->setText(QApplication::translate("MainWindow", "1", nullptr));
+        CC2->setText(QApplication::translate("MainWindow", "2", nullptr));
+        CC3->setText(QApplication::translate("MainWindow", "3", nullptr));
+        CC4->setText(QApplication::translate("MainWindow", "4", nullptr));
+        CC5->setText(QApplication::translate("MainWindow", "5", nullptr));
+        CC6->setText(QApplication::translate("MainWindow", "6", nullptr));
+        CC7->setText(QApplication::translate("MainWindow", "7", nullptr));
+        CC8->setText(QApplication::translate("MainWindow", "8", nullptr));
+        CC9->setText(QApplication::translate("MainWindow", "9", nullptr));
+        CC10->setText(QApplication::translate("MainWindow", "0", nullptr));
+        CC11->setText(QApplication::translate("MainWindow", "E", nullptr));
+        CC12->setText(QApplication::translate("MainWindow", "T", nullptr));
+        CC13->setText(QApplication::translate("MainWindow", "A", nullptr));
+        CC14->setText(QApplication::translate("MainWindow", "B", nullptr));
+        CC15->setText(QApplication::translate("MainWindow", "C", nullptr));
+        CC16->setText(QApplication::translate("MainWindow", "D", nullptr));
         groupBox_7->setTitle(QString());
-        SelectCallChange->setText(QApplication::translate("MainWindow", "Call change", 0, QApplication::UnicodeUTF8));
-        SelectDodge->setText(QApplication::translate("MainWindow", "Dodging", 0, QApplication::UnicodeUTF8));
-        SelectRightPlaces->setText(QApplication::translate("MainWindow", "Right places", 0, QApplication::UnicodeUTF8));
-        SelectWrongPlaces->setText(QApplication::translate("MainWindow", "Wrong places", 0, QApplication::UnicodeUTF8));
-        Call12->setText(QApplication::translate("MainWindow", "1-2", 0, QApplication::UnicodeUTF8));
-        Call23->setText(QApplication::translate("MainWindow", "2-3", 0, QApplication::UnicodeUTF8));
-        Call34->setText(QApplication::translate("MainWindow", "3-4", 0, QApplication::UnicodeUTF8));
-        Call45->setText(QApplication::translate("MainWindow", "4-5", 0, QApplication::UnicodeUTF8));
-        Call56->setText(QApplication::translate("MainWindow", "5-6", 0, QApplication::UnicodeUTF8));
-        Call67->setText(QApplication::translate("MainWindow", "6-7", 0, QApplication::UnicodeUTF8));
-        Call78->setText(QApplication::translate("MainWindow", "7-8", 0, QApplication::UnicodeUTF8));
-        Call89->setText(QApplication::translate("MainWindow", "8-9", 0, QApplication::UnicodeUTF8));
-        Call90->setText(QApplication::translate("MainWindow", "9-0", 0, QApplication::UnicodeUTF8));
-        Call0E->setText(QApplication::translate("MainWindow", "0-E", 0, QApplication::UnicodeUTF8));
-        CallET->setText(QApplication::translate("MainWindow", "E-T", 0, QApplication::UnicodeUTF8));
-        CallTA->setText(QApplication::translate("MainWindow", "T-A", 0, QApplication::UnicodeUTF8));
-        CallAB->setText(QApplication::translate("MainWindow", "A-B", 0, QApplication::UnicodeUTF8));
-        CallBC->setText(QApplication::translate("MainWindow", "B-C", 0, QApplication::UnicodeUTF8));
-        CallCD->setText(QApplication::translate("MainWindow", "C-D", 0, QApplication::UnicodeUTF8));
-        RingMethod->setText(QApplication::translate("MainWindow", "Method", 0, QApplication::UnicodeUTF8));
-        RingTouch->setText(QApplication::translate("MainWindow", "Touch", 0, QApplication::UnicodeUTF8));
-        MethodGo->setText(QApplication::translate("MainWindow", "Go", 0, QApplication::UnicodeUTF8));
+        SelectCallChange->setText(QApplication::translate("MainWindow", "Call change", nullptr));
+        SelectDodge->setText(QApplication::translate("MainWindow", "Dodging", nullptr));
+        SelectRightPlaces->setText(QApplication::translate("MainWindow", "Right places", nullptr));
+        SelectWrongPlaces->setText(QApplication::translate("MainWindow", "Wrong places", nullptr));
+        Call12->setText(QApplication::translate("MainWindow", "1-2", nullptr));
+        Call23->setText(QApplication::translate("MainWindow", "2-3", nullptr));
+        Call34->setText(QApplication::translate("MainWindow", "3-4", nullptr));
+        Call45->setText(QApplication::translate("MainWindow", "4-5", nullptr));
+        Call56->setText(QApplication::translate("MainWindow", "5-6", nullptr));
+        Call67->setText(QApplication::translate("MainWindow", "6-7", nullptr));
+        Call78->setText(QApplication::translate("MainWindow", "7-8", nullptr));
+        Call89->setText(QApplication::translate("MainWindow", "8-9", nullptr));
+        Call90->setText(QApplication::translate("MainWindow", "9-0", nullptr));
+        Call0E->setText(QApplication::translate("MainWindow", "0-E", nullptr));
+        CallET->setText(QApplication::translate("MainWindow", "E-T", nullptr));
+        CallTA->setText(QApplication::translate("MainWindow", "T-A", nullptr));
+        CallAB->setText(QApplication::translate("MainWindow", "A-B", nullptr));
+        CallBC->setText(QApplication::translate("MainWindow", "B-C", nullptr));
+        CallCD->setText(QApplication::translate("MainWindow", "C-D", nullptr));
+        RingMethod->setText(QApplication::translate("MainWindow", "Method", nullptr));
+        RingTouch->setText(QApplication::translate("MainWindow", "Touch", nullptr));
+        MethodGo->setText(QApplication::translate("MainWindow", "Go", nullptr));
         MethodGoAfterBox->setTitle(QString());
-        MethodGoDelay->setText(QApplication::translate("MainWindow", "Go with delay", 0, QApplication::UnicodeUTF8));
-        label_50->setText(QApplication::translate("MainWindow", "whole pulls", 0, QApplication::UnicodeUTF8));
-        MethodTenorBehind->setText(QApplication::translate("MainWindow", "Tenor behind for odd numbers", 0, QApplication::UnicodeUTF8));
-        label_22->setText(QApplication::translate("MainWindow", "Current method:", 0, QApplication::UnicodeUTF8));
+        MethodGoDelay->setText(QApplication::translate("MainWindow", "Go with delay", nullptr));
+        label_50->setText(QApplication::translate("MainWindow", "whole pulls", nullptr));
+        MethodTenorBehind->setText(QApplication::translate("MainWindow", "Tenor behind for odd numbers", nullptr));
+        label_22->setText(QApplication::translate("MainWindow", "Current method:", nullptr));
         CurrentMethod->setText(QString());
-        label_24->setText(QApplication::translate("MainWindow", "Next method:", 0, QApplication::UnicodeUTF8));
+        label_24->setText(QApplication::translate("MainWindow", "Next method:", nullptr));
         NextMethod->setText(QString());
-        SelectMethod->setText(QApplication::translate("MainWindow", "Select next method...", 0, QApplication::UnicodeUTF8));
-        MethodCallRepeat->setText(QApplication::translate("MainWindow", "Repeat calls", 0, QApplication::UnicodeUTF8));
-        MethodRandomCalls->setText(QApplication::translate("MainWindow", "Random calls", 0, QApplication::UnicodeUTF8));
+        SelectMethod->setText(QApplication::translate("MainWindow", "Select next method...", nullptr));
+        MethodCallRepeat->setText(QApplication::translate("MainWindow", "Repeat calls", nullptr));
+        MethodRandomCalls->setText(QApplication::translate("MainWindow", "Random calls", nullptr));
         groupBox_9->setTitle(QString());
-        MethodCall0->setText(QApplication::translate("MainWindow", "Bob", 0, QApplication::UnicodeUTF8));
-        MethodCall1->setText(QApplication::translate("MainWindow", "Single", 0, QApplication::UnicodeUTF8));
-        MethodCall2->setText(QApplication::translate("MainWindow", "Extreme", 0, QApplication::UnicodeUTF8));
-        MethodCall3->setText(QApplication::translate("MainWindow", "Call 4", 0, QApplication::UnicodeUTF8));
-        MethodSplice->setText(QApplication::translate("MainWindow", "Splice", 0, QApplication::UnicodeUTF8));
-        groupBox_2->setTitle(QApplication::translate("MainWindow", "Keep going for", 0, QApplication::UnicodeUTF8));
-        label_23->setText(QApplication::translate("MainWindow", "course(s)", 0, QApplication::UnicodeUTF8));
-        MethodThatsAll->setText(QApplication::translate("MainWindow", "That's All", 0, QApplication::UnicodeUTF8));
-        MethodStandAfterBox->setTitle(QApplication::translate("MainWindow", "Stand after", 0, QApplication::UnicodeUTF8));
-        label_52->setText(QApplication::translate("MainWindow", "whole pulls", 0, QApplication::UnicodeUTF8));
-        groupBox->setTitle(QApplication::translate("MainWindow", "Striking", 0, QApplication::UnicodeUTF8));
-        groupBox_6->setTitle(QApplication::translate("MainWindow", "Statstics", 0, QApplication::UnicodeUTF8));
-        label_49->setText(QApplication::translate("MainWindow", "Sensor:", 0, QApplication::UnicodeUTF8));
-        label_42->setText(QApplication::translate("MainWindow", "Rows:", 0, QApplication::UnicodeUTF8));
+        MethodCall0->setText(QApplication::translate("MainWindow", "Bob", nullptr));
+        MethodCall1->setText(QApplication::translate("MainWindow", "Single", nullptr));
+        MethodCall2->setText(QApplication::translate("MainWindow", "Extreme", nullptr));
+        MethodCall3->setText(QApplication::translate("MainWindow", "Call 4", nullptr));
+        MethodSplice->setText(QApplication::translate("MainWindow", "Splice", nullptr));
+        groupBox_2->setTitle(QApplication::translate("MainWindow", "Keep going for", nullptr));
+        label_23->setText(QApplication::translate("MainWindow", "course(s)", nullptr));
+        MethodThatsAll->setText(QApplication::translate("MainWindow", "That's All", nullptr));
+        MethodStandAfterBox->setTitle(QApplication::translate("MainWindow", "Stand after", nullptr));
+        label_52->setText(QApplication::translate("MainWindow", "whole pulls", nullptr));
+        groupBox->setTitle(QApplication::translate("MainWindow", "Striking", nullptr));
+        groupBox_6->setTitle(QApplication::translate("MainWindow", "Statstics", nullptr));
+        label_49->setText(QApplication::translate("MainWindow", "Sensor:", nullptr));
+        label_42->setText(QApplication::translate("MainWindow", "Rows:", nullptr));
         StatisticsRows->setText(QString());
-        label_43->setText(QApplication::translate("MainWindow", "Average error:", 0, QApplication::UnicodeUTF8));
+        label_43->setText(QApplication::translate("MainWindow", "Average error:", nullptr));
         StatisticsCombinedError->setText(QString());
-        label_5->setText(QApplication::translate("MainWindow", "Last 10 blows:", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("MainWindow", "Last 10 blows:", nullptr));
         StatisticsLastTen->setText(QString());
-        label_44->setText(QApplication::translate("MainWindow", "Handstroke error:", 0, QApplication::UnicodeUTF8));
+        label_44->setText(QApplication::translate("MainWindow", "Handstroke error:", nullptr));
         StatisticsHandstrokeError->setText(QString());
-        label_45->setText(QApplication::translate("MainWindow", "Backstroke error:", 0, QApplication::UnicodeUTF8));
+        label_45->setText(QApplication::translate("MainWindow", "Backstroke error:", nullptr));
         StatisticsBackstrokeError->setText(QString());
-        label_2->setText(QApplication::translate("MainWindow", "Standard dev:", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("MainWindow", "Standard dev:", nullptr));
         StatisticsSD->setText(QString());
-        label_3->setText(QApplication::translate("MainWindow", "Handstroke SD:", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("MainWindow", "Handstroke SD:", nullptr));
         StatisticsHandstrokeSD->setText(QString());
-        label_4->setText(QApplication::translate("MainWindow", "Backstroke SD:", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("MainWindow", "Backstroke SD:", nullptr));
         StatisticsBackstrokeSD->setText(QString());
-        label->setText(QApplication::translate("MainWindow", "Inside 5%:", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("MainWindow", "Inside 5%:", nullptr));
         StatisticsInside5->setText(QString());
-        label_46->setText(QApplication::translate("MainWindow", "Inside 10%:", 0, QApplication::UnicodeUTF8));
+        label_46->setText(QApplication::translate("MainWindow", "Inside 10%:", nullptr));
         StatisticsInside10->setText(QString());
-        label_47->setText(QApplication::translate("MainWindow", "Inside 25%:", 0, QApplication::UnicodeUTF8));
+        label_47->setText(QApplication::translate("MainWindow", "Inside 25%:", nullptr));
         StatisticsInside25->setText(QString());
-        label_48->setText(QApplication::translate("MainWindow", "Inside 50%:", 0, QApplication::UnicodeUTF8));
+        label_48->setText(QApplication::translate("MainWindow", "Inside 50%:", nullptr));
         StatisticsInside50->setText(QString());
-        StatisticsAnalyze->setText(QApplication::translate("MainWindow", "Analyze...", 0, QApplication::UnicodeUTF8));
-        SensorDock->setWindowTitle(QApplication::translate("MainWindow", "Sensors", 0, QApplication::UnicodeUTF8));
+        StatisticsAnalyze->setText(QApplication::translate("MainWindow", "Analyze...", nullptr));
+        SensorDock->setWindowTitle(QApplication::translate("MainWindow", "Sensors", nullptr));
         AddSensorButton->setText(QString());
         RemoveSensorButton->setText(QString());
-        SensorClear->setText(QApplication::translate("MainWindow", "Clear", 0, QApplication::UnicodeUTF8));
-        label_17->setText(QApplication::translate("MainWindow", "Peal Speed:", 0, QApplication::UnicodeUTF8));
-        PealSpeed->setDisplayFormat(QApplication::translate("MainWindow", "HH:mm:ss", 0, QApplication::UnicodeUTF8));
-        label_18->setText(QApplication::translate("MainWindow", "Changes/minute:", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("MainWindow", "Revert to last", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("MainWindow", "Bell gap:", 0, QApplication::UnicodeUTF8));
-        BellGap->setText(QApplication::translate("MainWindow", "100", 0, QApplication::UnicodeUTF8));
-        AudibleCalls->setText(QApplication::translate("MainWindow", "Audible calls", 0, QApplication::UnicodeUTF8));
-        toolBar_2->setWindowTitle(QApplication::translate("MainWindow", "toolBar_2", 0, QApplication::UnicodeUTF8));
-        FeedbackDock->setWindowTitle(QApplication::translate("MainWindow", "Sensor feedback", 0, QApplication::UnicodeUTF8));
-        groupBox_4->setTitle(QApplication::translate("MainWindow", "Match speed of ringing to sensors", 0, QApplication::UnicodeUTF8));
-        label_29->setText(QApplication::translate("MainWindow", "Rate", 0, QApplication::UnicodeUTF8));
-        spinBox->setSuffix(QApplication::translate("MainWindow", "%", 0, QApplication::UnicodeUTF8));
-        groupBox_5->setTitle(QApplication::translate("MainWindow", "Match striking errors to sensors", 0, QApplication::UnicodeUTF8));
-        label_26->setText(QApplication::translate("MainWindow", "Rate", 0, QApplication::UnicodeUTF8));
-        SensorErrorMultiplier->setSuffix(QApplication::translate("MainWindow", "%", 0, QApplication::UnicodeUTF8));
+        SensorClear->setText(QApplication::translate("MainWindow", "Clear", nullptr));
+        label_17->setText(QApplication::translate("MainWindow", "Peal Speed:", nullptr));
+        PealSpeed->setDisplayFormat(QApplication::translate("MainWindow", "HH:mm:ss", nullptr));
+        label_18->setText(QApplication::translate("MainWindow", "Changes/minute:", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Revert to last", nullptr));
+        label_6->setText(QApplication::translate("MainWindow", "Bell gap:", nullptr));
+        BellGap->setText(QApplication::translate("MainWindow", "100", nullptr));
+        AudibleCalls->setText(QApplication::translate("MainWindow", "Audible calls", nullptr));
+        toolBar_2->setWindowTitle(QApplication::translate("MainWindow", "toolBar_2", nullptr));
+        FeedbackDock->setWindowTitle(QApplication::translate("MainWindow", "Sensor feedback", nullptr));
+        groupBox_4->setTitle(QApplication::translate("MainWindow", "Match speed of ringing to sensors", nullptr));
+        label_29->setText(QApplication::translate("MainWindow", "Rate", nullptr));
+        spinBox->setSuffix(QApplication::translate("MainWindow", "%", nullptr));
+        groupBox_5->setTitle(QApplication::translate("MainWindow", "Match striking errors to sensors", nullptr));
+        label_26->setText(QApplication::translate("MainWindow", "Rate", nullptr));
+        SensorErrorMultiplier->setSuffix(QApplication::translate("MainWindow", "%", nullptr));
     } // retranslateUi
 
 };
