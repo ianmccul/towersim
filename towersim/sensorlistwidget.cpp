@@ -8,6 +8,7 @@
 #include <QPixmap>
 #include <QLabel>
 #include <QMimeData>
+#include <QDrag>
 #include "common/trace.h"
 #include "common/alphanum.h" // for alphanumeric sort
 

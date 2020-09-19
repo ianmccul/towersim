@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ui-analysis-dialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.8
+** Created by: Qt User Interface Compiler version 5.9.5
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,13 @@
 #define UI_UI_2D_ANALYSIS_2D_DIALOG_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -50,32 +53,30 @@ public:
     void setupUi(QDialog *StrikingAnalysis)
     {
         if (StrikingAnalysis->objectName().isEmpty())
-            StrikingAnalysis->setObjectName(QString::fromUtf8("StrikingAnalysis"));
+            StrikingAnalysis->setObjectName(QStringLiteral("StrikingAnalysis"));
         StrikingAnalysis->resize(762, 393);
         verticalLayout = new QVBoxLayout(StrikingAnalysis);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         StrikingAnalysisInfo = new QTabWidget(StrikingAnalysis);
-        StrikingAnalysisInfo->setObjectName(QString::fromUtf8("StrikingAnalysisInfo"));
+        StrikingAnalysisInfo->setObjectName(QStringLiteral("StrikingAnalysisInfo"));
         MovingAverage = new QWidget();
-        MovingAverage->setObjectName(QString::fromUtf8("MovingAverage"));
+        MovingAverage->setObjectName(QStringLiteral("MovingAverage"));
         verticalLayout_2 = new QVBoxLayout(MovingAverage);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         MovingAverageSensor = new QComboBox(MovingAverage);
-        MovingAverageSensor->setObjectName(QString::fromUtf8("MovingAverageSensor"));
+        MovingAverageSensor->setObjectName(QStringLiteral("MovingAverageSensor"));
 
         horizontalLayout->addWidget(MovingAverageSensor);
 
         MovingAverageStatistic = new QComboBox(MovingAverage);
-        MovingAverageStatistic->addItem(QString());
-        MovingAverageStatistic->addItem(QString());
-        MovingAverageStatistic->setObjectName(QString::fromUtf8("MovingAverageStatistic"));
+        MovingAverageStatistic->setObjectName(QStringLiteral("MovingAverageStatistic"));
 
         horizontalLayout->addWidget(MovingAverageStatistic);
 
         MovingAverageToggleAxis = new QPushButton(MovingAverage);
-        MovingAverageToggleAxis->setObjectName(QString::fromUtf8("MovingAverageToggleAxis"));
+        MovingAverageToggleAxis->setObjectName(QStringLiteral("MovingAverageToggleAxis"));
 
         horizontalLayout->addWidget(MovingAverageToggleAxis);
 
@@ -84,22 +85,22 @@ public:
         horizontalLayout->addItem(horizontalSpacer);
 
         MovingAverageZoomIn = new QPushButton(MovingAverage);
-        MovingAverageZoomIn->setObjectName(QString::fromUtf8("MovingAverageZoomIn"));
+        MovingAverageZoomIn->setObjectName(QStringLiteral("MovingAverageZoomIn"));
 
         horizontalLayout->addWidget(MovingAverageZoomIn);
 
         MovingAverageZoomOut = new QPushButton(MovingAverage);
-        MovingAverageZoomOut->setObjectName(QString::fromUtf8("MovingAverageZoomOut"));
+        MovingAverageZoomOut->setObjectName(QStringLiteral("MovingAverageZoomOut"));
 
         horizontalLayout->addWidget(MovingAverageZoomOut);
 
         label = new QLabel(MovingAverage);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName(QStringLiteral("label"));
 
         horizontalLayout->addWidget(label);
 
         MovingAverageLength = new QSpinBox(MovingAverage);
-        MovingAverageLength->setObjectName(QString::fromUtf8("MovingAverageLength"));
+        MovingAverageLength->setObjectName(QStringLiteral("MovingAverageLength"));
         MovingAverageLength->setMinimum(1);
         MovingAverageLength->setValue(10);
 
@@ -109,25 +110,25 @@ public:
         verticalLayout_2->addLayout(horizontalLayout);
 
         MovingAverageGraphic = new MovingAverageGraphicsView(MovingAverage);
-        MovingAverageGraphic->setObjectName(QString::fromUtf8("MovingAverageGraphic"));
+        MovingAverageGraphic->setObjectName(QStringLiteral("MovingAverageGraphic"));
 
         verticalLayout_2->addWidget(MovingAverageGraphic);
 
         StrikingAnalysisInfo->addTab(MovingAverage, QString());
         t2 = new QWidget();
-        t2->setObjectName(QString::fromUtf8("t2"));
+        t2->setObjectName(QStringLiteral("t2"));
         StrikingAnalysisInfo->addTab(t2, QString());
         tab = new QWidget();
-        tab->setObjectName(QString::fromUtf8("tab"));
+        tab->setObjectName(QStringLiteral("tab"));
         StrikingAnalysisInfo->addTab(tab, QString());
         tab_2 = new QWidget();
-        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tab_2->setObjectName(QStringLiteral("tab_2"));
         StrikingAnalysisInfo->addTab(tab_2, QString());
 
         verticalLayout->addWidget(StrikingAnalysisInfo);
 
         Close = new QPushButton(StrikingAnalysis);
-        Close->setObjectName(QString::fromUtf8("Close"));
+        Close->setObjectName(QStringLiteral("Close"));
 
         verticalLayout->addWidget(Close);
 
@@ -143,19 +144,21 @@ public:
 
     void retranslateUi(QDialog *StrikingAnalysis)
     {
-        StrikingAnalysis->setWindowTitle(QApplication::translate("StrikingAnalysis", "Striking Analysis", nullptr));
-        MovingAverageStatistic->setItemText(0, QApplication::translate("StrikingAnalysis", "Average error", nullptr));
-        MovingAverageStatistic->setItemText(1, QApplication::translate("StrikingAnalysis", "Standard dev", nullptr));
-
-        MovingAverageToggleAxis->setText(QApplication::translate("StrikingAnalysis", "Toggle Y-axis %/ms", nullptr));
-        MovingAverageZoomIn->setText(QApplication::translate("StrikingAnalysis", "Zoom in", nullptr));
-        MovingAverageZoomOut->setText(QApplication::translate("StrikingAnalysis", "Zoom out", nullptr));
-        label->setText(QApplication::translate("StrikingAnalysis", "Sample length:", nullptr));
-        StrikingAnalysisInfo->setTabText(StrikingAnalysisInfo->indexOf(MovingAverage), QApplication::translate("StrikingAnalysis", "Graph", nullptr));
-        StrikingAnalysisInfo->setTabText(StrikingAnalysisInfo->indexOf(t2), QApplication::translate("StrikingAnalysis", "Striking", nullptr));
-        StrikingAnalysisInfo->setTabText(StrikingAnalysisInfo->indexOf(tab), QApplication::translate("StrikingAnalysis", "Statistics", nullptr));
-        StrikingAnalysisInfo->setTabText(StrikingAnalysisInfo->indexOf(tab_2), QApplication::translate("StrikingAnalysis", "Save", nullptr));
-        Close->setText(QApplication::translate("StrikingAnalysis", "Close", nullptr));
+        StrikingAnalysis->setWindowTitle(QApplication::translate("StrikingAnalysis", "Striking Analysis", Q_NULLPTR));
+        MovingAverageStatistic->clear();
+        MovingAverageStatistic->insertItems(0, QStringList()
+         << QApplication::translate("StrikingAnalysis", "Average error", Q_NULLPTR)
+         << QApplication::translate("StrikingAnalysis", "Standard dev", Q_NULLPTR)
+        );
+        MovingAverageToggleAxis->setText(QApplication::translate("StrikingAnalysis", "Toggle Y-axis %/ms", Q_NULLPTR));
+        MovingAverageZoomIn->setText(QApplication::translate("StrikingAnalysis", "Zoom in", Q_NULLPTR));
+        MovingAverageZoomOut->setText(QApplication::translate("StrikingAnalysis", "Zoom out", Q_NULLPTR));
+        label->setText(QApplication::translate("StrikingAnalysis", "Sample length:", Q_NULLPTR));
+        StrikingAnalysisInfo->setTabText(StrikingAnalysisInfo->indexOf(MovingAverage), QApplication::translate("StrikingAnalysis", "Graph", Q_NULLPTR));
+        StrikingAnalysisInfo->setTabText(StrikingAnalysisInfo->indexOf(t2), QApplication::translate("StrikingAnalysis", "Striking", Q_NULLPTR));
+        StrikingAnalysisInfo->setTabText(StrikingAnalysisInfo->indexOf(tab), QApplication::translate("StrikingAnalysis", "Statistics", Q_NULLPTR));
+        StrikingAnalysisInfo->setTabText(StrikingAnalysisInfo->indexOf(tab_2), QApplication::translate("StrikingAnalysis", "Save", Q_NULLPTR));
+        Close->setText(QApplication::translate("StrikingAnalysis", "Close", Q_NULLPTR));
     } // retranslateUi
 
 };
