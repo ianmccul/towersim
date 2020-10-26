@@ -95,7 +95,16 @@ void PlaySounds(const boost::system::error_code& e,
    boost::posix_time::ptime Now = boost::posix_time::microsec_clock::universal_time();
    while (!ActiveBells.empty() && ActiveBells.begin()->Time <= Now+Latency)
    {
-      Mix_PlayChannel(-1, BellSounds[ActiveBells.begin()->Bell-1], 0);
+      int b = ActiveBells.begin()->Bell - 1;
+      if (b < BellSounds.size())
+      {
+         Mix_PlayChannel(-1, BellSounds[b], 0);
+      }
+      else
+      {
+  	 // what do do here?  We could play some other sound
+	 Mix_PlayChannel(-1, BellSoundsList[16][b], 0);
+      }
       boost::posix_time::ptime Now2 = boost::posix_time::microsec_clock::universal_time();
       //      TRACE("Latency")(Now)(Now2- ActiveBells.begin()->Time);
       ActiveBells.erase(ActiveBells.begin());
@@ -626,6 +635,10 @@ main()
 
    BellSoundsList[16] = BellSoundsList[15];
    BellSoundsList[16].push_front(Front4[0]);
+
+   // Initialize the sounds, in the case that we get inputs before any
+   // simulator commands.
+   SetNumberOfBells(16);
 
    boost::asio::io_service io;
 
