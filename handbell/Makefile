@@ -39,7 +39,7 @@ VPATH = ..
 ###############################################################################
 # Project settings
 
-PROJECT := Joystick
+PROJECT := handbell
 
 
 # Project settings
@@ -57,7 +57,7 @@ OBJECTS += USBDevice/USBMSD/USBMSD.o
 OBJECTS += USBDevice/USBSerial/USBCDC.o
 OBJECTS += USBDevice/USBSerial/USBSerial.o
 OBJECTS += USBDevice/targets/TARGET_Freescale/USBHAL_KL25Z.o
-OBJECTS += USBJoystick/USBJoystick.o
+OBJECTS += USBKeyboardJoystick/USBKeyboardJoystick.o
 OBJECTS += mma8451/MMA8451Q.o
 
 OBJECTS += main.o
@@ -97,7 +97,7 @@ INCLUDE_PATHS += -I../USBDevice/USBMIDI
 INCLUDE_PATHS += -I../USBDevice/USBMSD
 INCLUDE_PATHS += -I../USBDevice/USBSerial
 INCLUDE_PATHS += -I../USBDevice/targets/TARGET_Freescale
-INCLUDE_PATHS += -I../USBJoystick
+INCLUDE_PATHS += -I../USBKeyboardJoystick
 INCLUDE_PATHS += -I../mbed
 INCLUDE_PATHS += -I../mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM
 INCLUDE_PATHS += -I../mbed/drivers
@@ -273,7 +273,7 @@ ASM_FLAGS += -I../USBDevice/USBMIDI
 ASM_FLAGS += -I../USBDevice/USBMSD
 ASM_FLAGS += -I../USBDevice/USBSerial
 ASM_FLAGS += -I../USBDevice/targets/TARGET_Freescale
-ASM_FLAGS += -I../USBJoystick
+ASM_FLAGS += -I../USBKeybardJoystick
 ASM_FLAGS += -I../mbed
 ASM_FLAGS += -I../mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM
 ASM_FLAGS += -I../mbed/drivers

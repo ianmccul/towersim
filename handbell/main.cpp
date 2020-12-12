@@ -1,6 +1,5 @@
 
-#include "USBJoystick.h"
-#include "USBKeyboard.h"
+#include "USBKeyboardJoystick.h"
 #include "MMA8451Q.h"
 #include "mbed.h"
 #include <chrono>
@@ -48,11 +47,7 @@ void SetupAccelerometer(MMA8451Q& acc)
    }
 }
 
-
-
-USBJoystick* J = NULL;
-USBJoystick& joystick = *J;
-USBKeyboard keyboard;
+USBKeyboardJoystick kj;
 
 enum class StateEnum { None, LeftKeyboard, RightKeyboard, Joy };
 
@@ -72,11 +67,11 @@ void TrySendBellRang()
    if (QueuedBells > 0 && BellRangDebouncer.read_ms() > BellRangDebounceTime_ms)
    {
       if (CurrentState == StateEnum::LeftKeyboard)
-         keyboard.putc('f');
+         kj.putc('f');
       else if (CurrentState == StateEnum::RightKeyboard)
-         keyboard.putc('j');
+         kj.putc('j');
       BellRangDebouncer.reset();
-      QueuedBells = (--QueuedBells) % 2;  // if we have lots of pending sounds, remove all but one of them
+      QueuedBells = (QueuedBells-1) % 2;  // if we have lots of pending sounds, remove all but one of them
 
    }
 }
@@ -85,15 +80,15 @@ void RedButton()
 {
    if (CurrentState == StateEnum::Joy)
    {
-      joystick.buttons(0x01);
+      kj.buttons(0x01);
    }
    else if (CurrentState == StateEnum::LeftKeyboard)
    {
-      keyboard.putc('t');
+      kj.putc('t');
    }
    else if (CurrentState == StateEnum::RightKeyboard)
    {
-      keyboard.putc('n');
+      kj.putc('n');
    }
 }
 
@@ -101,15 +96,15 @@ void BlackButton()
 {
    if (CurrentState == StateEnum::Joy)
    {
-      joystick.buttons(0x02);
+      kj.buttons(0x02);
    }
    else if (CurrentState == StateEnum::LeftKeyboard)
    {
-      keyboard.putc('l');
+      kj.putc('l');
    }
    else if (CurrentState == StateEnum::RightKeyboard)
    {
-      keyboard.putc('b');
+      kj.putc('b');
    }
 }
 
@@ -120,6 +115,8 @@ int main(void)
    bSwitch = 0;
    rSwitch = 0;
    tSwitch = 0;
+
+   kj.connect();
 
    bool BlackButtonPressed = false;
    bool RedButtonPressed = false;
@@ -154,12 +151,12 @@ int main(void)
    DigitalOut RedLed(LED_RED);
    DigitalOut BlueLed(LED_BLUE);
    DigitalOut GreenLed(LED_GREEN);
-   bool gl = false;
 
    int8_t buttons = 0;
 
    while (1)
    {
+      // see what state the toggle switches are in right now
       StateEnum NowState = StateEnum::None;
       if (LeftToggle.read() == 0)
          NowState = StateEnum::LeftKeyboard;
@@ -168,13 +165,13 @@ int main(void)
       else
          NowState = StateEnum::Joy;
 
+#if 0
       if (NowState == StateEnum::Joy)
       {
          RedLed = 1;
          BlueLed = 0;
          GreenLed = 1;
       }
-      #if 0
       if (NowState == StateEnum::LeftKeyboard)
       {
          RedLed = 0;
@@ -189,48 +186,30 @@ int main(void)
       }
 #endif
 
+      // If the state is now something different, then update
       if (NowState != CurrentState)
       {
          if (SwitchDebouncer.read_ms() > ToggleDebounce_ms)
          {
-            if (CurrentState == StateEnum::None)
-            {
-               if (NowState == StateEnum::Joy)
-               {
-                  RedLed = 0;
-                  GreenLed = 0;
-                  BlueLed = 0;
-                  //joystick.connect();
-               }
-               else if (NowState == StateEnum::LeftKeyboard)
-               {
-                  RedLed = 0;
-                  GreenLed = 1;
-                  BlueLed = 1;
-                  keyboard.connect();
-               }
-               else if (NowState == StateEnum::RightKeyboard)
-               {
-                  RedLed = 1;
-                  GreenLed = 0;
-                  BlueLed = 1;
-                  keyboard.connect();
-               }
-            }
-            else if (CurrentState == StateEnum::Joy)
+            CurrentState = NowState;
+            if (CurrentState == StateEnum::Joy)
             {
                RedLed = 1;
                GreenLed = 1;
-               BlueLed = 1;
-               joystick.disconnect();
-               //keyboard.connect();
+               BlueLed = 0;
             }
-            else if (NowState == StateEnum::Joy)
+            else if (CurrentState == StateEnum::LeftKeyboard)
             {
-               keyboard.disconnect();
-               joystick.connect();
+               RedLed = 0;
+               GreenLed = 1;
+               BlueLed = 1;
             }
-            CurrentState = NowState;
+            else if (CurrentState == StateEnum::RightKeyboard)
+            {
+               RedLed = 1;
+               GreenLed = 0;
+               BlueLed = 1;
+            }
          }
       }
       else
@@ -253,24 +232,19 @@ int main(void)
 
          float Joy = z * (1000.0 / 16384.0);
 
-         if (CurrentState == StateEnum::Joy)
+         kj.update(x, y, z, buttons);
+
+         if (AtHand && Joy < BackstrokeThreshold && BellDebouncer.read_ms() > BellDebounce_ms)
          {
-            joystick.update(x, y, z, buttons);
+            ++QueuedBells;
+            BellDebouncer.reset();
+            AtHand = false;
          }
-         else
+         else if (!AtHand && Joy > HandstrokeThreshold && BellDebouncer.read_ms() > BellDebounce_ms)
          {
-            if (AtHand && Joy < BackstrokeThreshold && BellDebouncer.read_ms() > BellDebounce_ms)
-            {
-               ++QueuedBells;
-               BellDebouncer.reset();
-               AtHand = false;
-            }
-            else if (!AtHand && Joy > HandstrokeThreshold && BellDebouncer.read_ms() > BellDebounce_ms)
-            {
-               ++QueuedBells;
-               BellDebouncer.reset();
-               AtHand = true;
-            }
+            ++QueuedBells;
+            BellDebouncer.reset();
+            AtHand = true;
          }
       }
 
