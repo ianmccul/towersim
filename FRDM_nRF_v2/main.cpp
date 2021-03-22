@@ -515,7 +515,19 @@ void SleepMode(PacketScheduler& Scheduler, MMA8451Q& Acc, GyroInterface<SPI>& Gy
 
       // See if we want to turn on or off the charger
       // and flash the led
-      led.green();
+      if (Emergency)
+      {
+         if (Charging)
+            led.magenta();
+         else
+            led.red();
+      }
+      else if (Charging)
+         led.green();
+      else
+         led.blue();
+
+//      led.green();
       float BatteryCharge = MeasureBatteryCharge(BatteryDetectEnable, AnalogBattery);
       // see if we want to enter charging mode
       if (CoilDetectBar == 0 && BatteryCharge <= Vthreshold)
