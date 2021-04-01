@@ -1,0 +1,44 @@
+2018-04-09
+
+Testing sensor 0EE2, battery at 3.5V
+
+Battery:
+Startup: 40mA
+Normal:  48.1mA
+Sleep:   15.83mA
+
+KL25z:
+Startup: 9.1mA
+Normal: 11.25mA
+Sleep:  250 uA
+
+OpenSDA:
+Startup: 5.36mA
+Normal:  5.36mA
+Sleep:   5.39mA
+
+Power entering unit:
+Startup: 25mA
+Normal:  28.1mA
+Sleep:   9.65mA
+
+
+With OpenSDA disabled (J3 and J11):
+
+Power entering unit:
+Startup: 20.8mA
+Normal:  23.9mA
+Sleep:   5.63mA
+
+Battery:
+Startup: 34.8mA
+Normal:  40.0mA
+Sleep:   9.14mA
+
+KL25z:
+Startup: 10.3mA
+Normal:  12.23mA
+Sleep:    1.51mA
+
+See https://mcuoneclipse.com/2013/10/20/tutorial-using-the-frdm-kl25z-as-low-power-board/
+
