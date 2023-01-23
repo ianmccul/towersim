@@ -73,14 +73,15 @@
 #define ICM20602_ZA_OFFSET_H        0x7D
 #define ICM20602_ZA_OFFSET_L        0x7E
 
-extern float aRes, gRes;
-extern Serial pc;
+// least sig bits per (degrees per second),
+// for 250, 500, 1000, 2000 ranges respectively.
+const float GyroSensitivityScale[4] = { 131.0f, 65.5f, 32.8f, 16.4f };
 
 class ICM20602
 {
    public:
       // data rate and bandwidth of the gyro
-      enum GyroRateBandwidth { ODR_32K_BW_8173=16, ODR_32K_BW_3281=32, ODR_8K_BW_3281=8, ODR_8K_BW_250=0,
+      enum GyroRateBandwidth { ODR_32K_BW_8173=8, ODR_32K_BW_3281=16, ODR_8K_BW_3281=7, ODR_8K_BW_250=0,
                                ODR_1K_BW_176=1,    ODR_1K_BW_92=2,     ODR_1K_BW_41=3,   ODR_1K_BW_20=4,
                                ODR_1K_BW_10=5,     ODR_1K_BW_5=6, };
 
@@ -93,6 +94,7 @@ class ICM20602
 
       void setBit(int reg, int bit);
       void clearBit(int reg, int bit);
+      void writeBit(int reg, int bit, bool d);
 
       SPI& bus() { return spi_; }
 
@@ -101,11 +103,8 @@ class ICM20602
       // returns true if the WHO_AM_I command returns the expected value 0x12
       bool OK();
 
-      // reset registers to their default values
-      void soft_reset();
-
       // hard reset via the PWR_MGMT_1 register.  Blocks until the reset is complete.
-      void hard_reset();
+      void reset();
 
       // Initialize the device.  This must be called on power-up and after a reset.
       // The device is in sleep mode after a reset, and stays in sleep mode after intiailization.
@@ -124,6 +123,10 @@ class ICM20602
 
       void SetGyroRateBandwidth(GyroRateBandwidth g);
 
+      // Only valid when the output data rate is 1KHz.
+      // The sensor register is updated at a rate of 1KHz / (x+1)
+      void SetSampleRateDivider(int x);
+
       // Set the gyroscope scale.  Valid values are 250, 500, 1000, 2000 degrees per second.
       void SetGyroScale(int DegreesPerSecond);
 
@@ -140,10 +143,40 @@ class ICM20602
       // reads the temperature sensor; returns value in degrees C
       float Temp();
 
+      // true = don't write to the FIFO once it is full
+      // false = overwrite oldest data when the FIFO is full
+      void SetFIFOMode(bool state);
+
+      // enable or disable writing the temperature and gryo outputs to the fifo
+      void EnableGyroFIFO(bool state = true);
+
+      // read and clear the interrupt status register.  The interrupts are:
+      enum InterruptStatus { DATA_RDY_INT = 0x01, GDRIVE_INT = 0x04, FIFO_OFLOW_INT = 0x10,
+                             WOM_Z_INT = 0x20, WOM_Y_INT = 0x40, WOM_X_INT = 0x80 };
+      uint8_t ReadClearInterruptStatus();
+
+      // Read and clear the FIFO_WM_INT fifo watermark interrupt
+      bool ReadClearFIFO_WM();
+
+      // set the FIFO watermark to 0 <= x <= 1008.  The FIFO_WM interrupt is generated once
+      // the FIFO reaches this point.  Set to 0 to disable the FIFO_WM interrupt.
+      void SetFIFOWatermark(int x);
+
+      // enable or disable reading from the FIFO
+      void EnableFIFO(bool state = true);
+
+      // Reset the FIFO.  This is asynchronous; the bit auto-clears after one clock cycle
+      void ResetFIFO();
+
+      // returns the number of bytes in the FIFO
+      int16_t FIFOCount();
+
+      // Reads Count number of bytes from the FIFO into the supplied buffer.
+      void ReadFIFO(uint8_t* Buffer, int Count);
+
    private:
       SPI spi_;
       DigitalOut csn_;
-
 };
 
 #endif

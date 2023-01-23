@@ -3,8 +3,8 @@
 #include "towersim/outputparser.h"
 #include "change/method.h"
 
-#include "SDL/SDL.h"
-#include "SDL/SDL_mixer.h"
+#include "SDL2/SDL.h"
+#include "SDL2/SDL_mixer.h"
 
 #include <boost/bind.hpp>
 
@@ -71,14 +71,14 @@ void LoadCallSound(std::string const& Name)
    if (CallSounds.find(Name) != CallSounds.end())
       return;
 
-   std::string File = std::string(std::getenv("HOME")) 
+   std::string File = std::string(std::getenv("HOME"))
 	 + "/.towersim/calls/" + Name + ".wav";
    CallSounds[Name] = Mix_LoadWAV(File.c_str());
    if (CallSounds[Name] == NULL)
    {
       std::cerr << "soundclient: warning: cannot load call sound file \"" << File << "\"\n";
    }
-}   
+}
 
 void PlaySounds(const boost::system::error_code& e,
                 boost::asio::deadline_timer* t)
@@ -159,14 +159,14 @@ void PlayCalls(const boost::system::error_code& e,
    }
 }
 
-inline 
-boost::posix_time::time_duration 
-abs(boost::posix_time::time_duration td) 
-{ 
-   if (td.is_negative()) 
-      return td *= -1; 
-   return td; 
-} 
+inline
+boost::posix_time::time_duration
+abs(boost::posix_time::time_duration td)
+{
+   if (td.is_negative())
+      return td *= -1;
+   return td;
+}
 
 void QueueBell(OutCom::RingBell const& B)
 {
@@ -205,7 +205,7 @@ void QueueBell(OutCom::RingBell const& B)
    {
       ++SensorCount[*B.Sensor];
       SensorTotalError[*B.Sensor] += abs(B.Error->get<0>());
-      std::cerr << "Bell " << B.Bell 
+      std::cerr << "Bell " << B.Bell
                 << " sensor " << (*B.Sensor)
                 << " row " << (B.Place->get<0>())
                 << " place " << (B.Place->get<1>())
@@ -346,7 +346,7 @@ void AbortRinging()
 {
    ActiveBells.clear();
    BellTimer->cancel();
-}  
+}
 
 void SetNumberOfBells(int n)
 {
@@ -416,8 +416,8 @@ class SoundServer
 {
    public:
       SoundServer(boost::asio::io_service& io_service)
-         : input(io_service, ::dup(STDIN_FILENO)), 
-           input_buffer(512) // buffer length 
+         : input(io_service, ::dup(STDIN_FILENO)),
+           input_buffer(512) // buffer length
       {
          // read input
          boost::asio::async_read_until(input, input_buffer, '\n',
@@ -425,7 +425,7 @@ class SoundServer
                                                    boost::asio::placeholders::error,
                                                    boost::asio::placeholders::bytes_transferred));
       }
-    
+
       void close()
       {
          input.close();
@@ -481,7 +481,7 @@ main()
    }
 
    int initted=Mix_Init(0);
-   
+
    if(Mix_OpenAudio(44100,MIX_DEFAULT_FORMAT,1,AudioBufferSize)<0)
    {
       PANIC("cannot initialize SDL_Mixer");
@@ -504,7 +504,7 @@ main()
    // load the sounds
    for (int i = 0; i < 12; ++i)
    {
-      std::string File = std::string(std::getenv("HOME")) 
+      std::string File = std::string(std::getenv("HOME"))
 	 + "/.towersim/bellsounds/bell_" + boost::lexical_cast<std::string>(i+1) + ".wav";
       AllBellSounds.push_back(Mix_LoadWAV(File.c_str()));
       CHECK(AllBellSounds.back() != NULL)(File);
@@ -651,7 +651,7 @@ main()
    CallTimer = &MyCallTimer;
    MyCallTimer.async_wait(boost::bind(PlayCalls,
                                       boost::asio::placeholders::error, &MyCallTimer));
-   
+
    SoundServer MyServer(io);
 
    io.run();
@@ -663,4 +663,3 @@ main()
 
     return 0;
 }
-

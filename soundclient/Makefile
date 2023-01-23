@@ -8,7 +8,7 @@ SRCDIR=.
 prefix = $(HOME)
 data_prefix = $(HOME)/.towersim
 
-VPATH=../:../towersim:../change
+VPATH=../towersim:../change
 
 CXXFLAGS:=$(CXXFLAGS) -pthread -I$(TRUNKDIR) -I../ -I/usr/include/qt4 -g3
 
@@ -25,6 +25,8 @@ change_obj = touch.o change.o
 ifeq (,$(filter $(nodep-targets),$(MAKECMDGOALS)))
 -include $(cxx_depend)
 endif
+
+default : soundclient
 
 dep : $(cxx_depend)
 
@@ -68,7 +70,7 @@ depclean :
 	rm -f *.d
 
 soundclient : soundclient.o outputparser.o method.o change.o touch.o
-LIBS_soundclient =  -lboost_date_time -lboost_system -lSDL_mixer -lSDL
+LIBS_soundclient =  -lboost_date_time -lboost_system -lSDL2_mixer -lSDL2
 
 install : soundclient
 	test -d $(prefix)/bin || mkdir -p $(prefix)/bin
@@ -81,5 +83,3 @@ install : soundclient
 	find calls/ -type f| while IFS= read file; do \
 	   install -m 0644 "$$file" $(data_prefix)/calls; \
         done
-
-

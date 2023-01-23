@@ -5,8 +5,8 @@
 // the number of bells being rung and the
 // mappings between sensors and bells.
 //
-// Users of this class register one or more 'sinks' with the 
-// RegisterCommandVisitor method.  The supplied pointer is 
+// Users of this class register one or more 'sinks' with the
+// RegisterCommandVisitor method.  The supplied pointer is
 // to a class that has an operator() defined for each
 // possible output command.
 
@@ -63,35 +63,35 @@ class RingingServer
       void SetNumberOfBells(int n);
 
       // schedules a computer-generated bell at the given time
-      void RingBell(int Bell, 
-                    boost::posix_time::ptime At, 
+      void RingBell(int Bell,
+                    boost::posix_time::ptime At,
                     boost::posix_time::time_duration Error);
 
-      void RingBell(int Bell, 
-                    boost::posix_time::ptime At, 
+      void RingBell(int Bell,
+                    boost::posix_time::ptime At,
                     boost::posix_time::time_duration Error,
                     double FracError,
                     int Row, int Place);
 
       // Cancels (rings 'SILENT') an already scheduled bell (eg, because a sensor has triggered)
-      void CancelBell(int Bell, 
-                      boost::posix_time::ptime At, 
+      void CancelBell(int Bell,
+                      boost::posix_time::ptime At,
                       boost::posix_time::time_duration Error,
                       double FracError,
                       int Row, int Place);
 
-      void RingSensor(int Bell, 
-                      boost::posix_time::ptime At, 
+      void RingSensor(int Bell,
+                      boost::posix_time::ptime At,
                       boost::posix_time::time_duration Error,
                       double FracError,
                       std::string const& Sensor);
 
-      void RingSensor(int Bell, 
-                      boost::posix_time::ptime At, 
+      void RingSensor(int Bell,
+                      boost::posix_time::ptime At,
                       std::string const& Sensor);
 
-      void RingSensor(int Bell, 
-                      boost::posix_time::ptime At, 
+      void RingSensor(int Bell,
+                      boost::posix_time::ptime At,
                       boost::posix_time::time_duration Error,
                       double FracError,
                       std::string const& Sensor,
@@ -122,6 +122,9 @@ class RingingServer
 
    private:
       class CommandDispatcherBase;
+
+      template <typename T> friend class CommandDispatcher;
+
       typedef std::list<CommandDispatcherBase*> DispatcherListType;
 
       template <typename T>
@@ -137,4 +140,3 @@ class RingingServer
 #include "ringingserver.cc"
 
 #endif
-
