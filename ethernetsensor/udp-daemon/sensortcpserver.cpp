@@ -44,7 +44,6 @@ void SensorTCPServer::StartAccept()
    Acceptor.async_accept(*Socket,
                          boost::bind(&SensorTCPServer::HandleAccept, this, Socket,
                                      boost::asio::placeholders::error));
-   std::cerr << "Accepting connections\n";
 }
 
 void SensorTCPServer::HandleAccept(SocketPtr Socket, boost::system::error_code const& e)

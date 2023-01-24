@@ -1,0 +1,143 @@
+{
+   "Bells" : [
+   {
+      "Name" : "1",
+      "Number" : 1,
+      "FriendlyName" : "StJ:1",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.4
+   },
+   {
+      "Name" : "2",
+      "Number" : 2,
+      "FriendlyName" : "StJ:2",
+      "HandstrokeDelay" : 310,
+      "BackstrokeDelay" : 350,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.4
+   },
+   {
+      "Name" : "3",
+      "Number" : 3,
+      "FriendlyName" : "StJ:3",
+      "HandstrokeDelay" : 300,
+      "BackstrokeDelay" : 304,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.4
+   },
+   {
+      "Name" : "4",
+      "Number" : 4,
+      "FriendlyName" : "StJ:4",
+      "HandstrokeDelay" : 318,
+      "BackstrokeDelay" : 334,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "HandstrokeStay" : 186.7,
+      "BackstrokeStay" : -189.7,
+      "ThetaR" : 0.3
+   },
+   {
+      "Name" : "5",
+      "Number" : 5,
+      "FriendlyName" : "StJ:5",
+      "HandstrokeDelay" : 350,
+      "BackstrokeDelay" : 330,
+      "ThetaR" : 0.3,
+      "HandstrokeStay" : 188.4,
+      "BackstrokeStay" : -187.5,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "lb" : 0.65,
+      "lbOld" : 0.63,
+      "kb" : 0.03,
+      "ks" : 1.8,
+      "Y" : 240
+   },
+   {
+      "Name" : "6",
+      "Number" : 6,
+      "FriendlyName" : "StJ:6",
+      "HandstrokeDelay" : 313,
+      "BackstrokeDelay" : 360,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "HandstrokeStay" : 187.3,
+      "BackstrokeStay" : -190.7,
+      "ThetaR" : 0.3
+   },
+   {
+      "Name" : "7",
+      "Number" : 7,
+      "FriendlyName" : "StJ:7",
+      "HandstrokeDelay" : 345,
+      "BackstrokeDelay" : 335,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.3
+   },
+   {
+      "Name" : "8",
+      "Number" : 8,
+      "FriendlyName" : "StJ:8",
+      "HandstrokeDelay" : 352,
+      "BackstrokeDelay" : 371,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "HandstrokeStay" : 186.80,
+      "BacktrokeStay" : -186.93,
+      "ThetaR" : 0.225,
+      "Oldlb" : 0.705,
+      "lb" : 0.703,
+      "WheelRadius" : 0.75,
+      "kb" : 0.03,
+      "ks" : 1.8,
+      "Y" : 80
+   },
+   {
+      "Name" : "9",
+      "Number" : 9,
+      "FriendlyName" : "StJ:9",
+      "HandstrokeDelay" : 380,
+      "BackstrokeDelay" : 378,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.1
+   },
+   {
+      "Name" : "10",
+      "Number" : 10,
+      "FriendlyName" : "StJ:10",
+      "HandstrokeDelay" : 413,
+      "BackstrokeDelay" : 399,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.2
+   },
+   {
+      "Name" : "11",
+      "Number" : 11,
+      "FriendlyName" : "StJ:11",
+      "HandstrokeDelay" : 403,
+      "BackstrokeDelay" : 440,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.1
+   },
+   {
+      "Name" : "12",
+      "Number" : 12,
+      "FriendlyName" : "StJ:12",
+      "HandstrokeDelay" : 420,
+      "BackstrokeDelay" : 446,
+      "BackstrokeCutoff" : 217,
+      "HandstrokeCutoff" : 50,
+      "ThetaR" : 0.1
+   }
+   ]
+}
