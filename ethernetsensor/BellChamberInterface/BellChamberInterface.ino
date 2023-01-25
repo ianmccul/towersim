@@ -109,6 +109,11 @@ void setup() {
   Serial.println(ip);
 
   Udp.begin(ListenPort);
+
+  // Initialize the SensorState to avoid spurious signals on startup
+  for (int i = 0; i < NumSensors; ++i) {
+    SensorState[i] = digitalRead(Sensors[i].Pin);
+  }
 }
 
 void loop() {
