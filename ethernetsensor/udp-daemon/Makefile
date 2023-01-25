@@ -4,7 +4,7 @@ SHELL = /bin/sh
 
 SRCDIR=.
 
-CXXFLAGS:=$(CXXFLAGS) -std=c++11 -pthread -I.. -O3 -g -I/usr/include/eigen3
+CXXFLAGS:=$(CXXFLAGS) -std=c++11 -pthread -I.. -O2 -g -I/usr/include/eigen3
 
 nodep-targets = clean mrproper dep uninstall dist distclean maintainer-clean dist-dir tar-dir tar
 
@@ -69,11 +69,14 @@ dep : $(cxx_depend)
 
 .SECONDARY: $(cxx_depend)
 
+
 LIBS_udp-daemon = -lboost_system -lboost_date_time
 
 udp-daemon : sensortcpserver.o bells.o
 
-all : udp-daemon
+executable = udp-daemon
+
+all : $(executable)
 
 clean :
 	rm -f *.o

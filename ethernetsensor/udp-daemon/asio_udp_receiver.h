@@ -8,6 +8,7 @@
 #include <boost/function.hpp>
 #include <boost/bind.hpp>
 #include <cstddef>
+#include <iostream>
 
 typedef boost::function<void(std::vector<char> const&)> TriggerFunc;
 
@@ -24,8 +25,6 @@ class UDPReceiver
    private:
       static int const bufsize = 100;
       char buf[100];
-
-      boost::asio::socket_base::message_flags Flags;
 
       void ReadPacket(const boost::system::error_code& e,
                       int BytesTransferred,
@@ -49,7 +48,7 @@ UDPReceiver::~UDPReceiver()
 void UDPReceiver::AsyncRead(TriggerFunc f_)
 {
 
-   Socket.async_receive(boost::asio::buffer(buf, bufsize), Flags,
+   Socket.async_receive(boost::asio::buffer(buf, bufsize),
                         boost::bind(&UDPReceiver::ReadPacket,
                                     this,
                                     boost::asio::placeholders::error,
@@ -61,6 +60,7 @@ void UDPReceiver::ReadPacket(const boost::system::error_code& e,
                                int BytesTransferred,
                                TriggerFunc Trigger)
 {
+   std::cerr << "Got a packet, size=" << BytesTransferred << '\n';
    // Copy the buffer
    std::vector<char> Buf(buf, buf+BytesTransferred);
    // Process the data (if we got any)
@@ -68,7 +68,7 @@ void UDPReceiver::ReadPacket(const boost::system::error_code& e,
       Trigger(Buf);
 
    // Schedule another async receive
-   Socket.async_receive(boost::asio::buffer(buf, bufsize), Flags,
+   Socket.async_receive(boost::asio::buffer(buf, bufsize),
                         boost::bind(&UDPReceiver::ReadPacket,
                                     this,
                                     boost::asio::placeholders::error,

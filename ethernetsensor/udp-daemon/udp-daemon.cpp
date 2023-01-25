@@ -17,7 +17,7 @@ using json = nlohmann::json;
 
 void Process(SensorTCPServer& MyServer, std::vector<char> const& Buf)
 {
-   boost::posix_time::ptime Time = boost::posix_time::microsec_clock::local_time();
+   boost::posix_time::ptime Time = boost::posix_time::microsec_clock::universal_time();
    for (auto c : Buf)
    {
       BellInfoType const& b = BellByName(std::string(1, c));
