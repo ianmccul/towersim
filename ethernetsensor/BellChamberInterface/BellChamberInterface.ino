@@ -1,11 +1,10 @@
 // Send sensor information via UDP, port 5702.
-// The remote IP address is determined by the remote client sending us a
-// UDP packet on port 5703.  Thereafter the sensor data is sent to that port.
-// The remote client can change the port by sending another packet.
+// The remote IP address to send the sensor information to is determined by the
+// remote client sending us a UDP packet on port 5703.
+// The remote client can change the IP address at any time by sending another packet on port 5702
+// (although normally that will never happen).
 // There is currently no facility to track whether the remote client is still
 // receiving packets.
-// A possible improvement would be to have a timeout, so that the remote client
-// needs to periodically send a UDP packet on port 5703.  (say every 10 minutes?)
 
 #include <Ethernet.h>
 #include <EthernetUdp.h>
@@ -36,7 +35,7 @@ int const NumSensors = 12;
 // Pins 10,11,12,13 are used for ethernet.
 // This leaves digital pins 2-9 available (8 pins), as well as analog pins A0 - A5 (pins 14 - 19, 6 pins).
 // This gives a maximum of 14 sensors that we can connect.
-// We also have our own LED pin (since pin 13 is no longer available), which we choose to be pin 9,
+// We also have our own LED pin (since pin 13 is no longer available),
 // leaving 13 possible pins (12 bells plus a dumbbell!)
 SensorInfo Sensors[NumSensors] = {
   { 2, Rise, '1' },
@@ -54,7 +53,7 @@ SensorInfo Sensors[NumSensors] = {
 };
 
 // Flashing LED indicator when we get a sensor signal
-int const LED = 9;
+int const LED = 18;
 int const LED_DURATION = 100;
 
 // Reed switches bounce.
