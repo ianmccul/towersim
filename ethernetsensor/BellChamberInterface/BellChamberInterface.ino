@@ -7,7 +7,7 @@
 // There is currently no facility to track whether the remote client is still
 // receiving packets.
 //
-// This version uses MDNS to arvertise the service.
+// This version uses MDNS to advertise the service.
 // We can obtain the arduino IP address using:
 // $ avahi-resolve -n bell_arduino.local
 //
@@ -88,7 +88,7 @@ void SensorTriggered(int i) {
 void setup() {
   delay(50);  // Allow the Ethernet to reset
   for (const auto& sensor : Sensors) {
-    pinMode(sensor.Pin, INPUT_PULLUP);  // Set sensor pins as input
+    pinMode(sensor.Pin, INPUT);  // Set sensor pins as input
   }
   pinMode(LED, OUTPUT);
   digitalWrite(LED, LOW);
@@ -118,7 +118,7 @@ void setup() {
     SensorState[i] = digitalRead(Sensors[i].Pin);
   }
 
-  mdns.begin(Ethernet.localIP(), "bell_arduino");
+  mdns.begin(Ethernet.localIP(), "StJohnsBellSensors");
   mdns.addServiceRecord("_sensor1._bellsensors", ListenPort, MDNSServiceUDP);
 }
 
